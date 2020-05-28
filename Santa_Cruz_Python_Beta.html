@@ -8,13 +8,77 @@
 Santa Cruz Preprocessor Additions to Python in Beta 1.2<br>
 Posted May 14th, 2020 by Blake Southwood.<br>
 <br>
+Update: May 28th, 2020<br>
+Making progress added choice for switch case as ifs or dictionary<br>
+More progress with goto engine.
+Preprocessor macro progress and four pass solution for generating Python<br>
+using a combination of templates and code generation via fuzzy logic.<brr>
+<br>
+Added feature to view/debug the python code before it's executed.<br>
+<br>
+Currently refining automatic-indent coupled with using braces { } ala C and JavaScript<nr>
+so if a programmer doesn't want to think about indentation no don't have to.<nr><nr>
+<br>
+Working on debugger checking syntax before conversion.<nbr>
+<nr>
+I need a car and I'm dirt poor so I decided to seek funding for this software.<br><br>
+Taking pre-orders for license of use of this software<br> You can wait till it's golden
+master but development will be accelerated with funds. This will include all updates.<br>
+I predict at least another month before the version 1.0 Santa Cruz Preprocessor is live.<br>
+The point of using the preprocessor is much more readable code, macros, switch case, do while,
+AUTO-INDENT, braces, in addition to adding Lisp defmacros to the preprocessor to extend the<br>
+language starting with when, unless, until, except, but, loop, nth, first, last, rest, etc.<br>
+<br>
+send money order for $300 to:<br>
+Blake Southwood<br>
+353 East 10th Street, Suite E,<br>
+Gilroy, CA 95020<br><br>
+<br>
+<br>
+Example switch case you will be able to write in Python at the preprocessor level
+You can use semicolons and curly braces.<br> I will also write a version to
+do the switch case in C which I will add much later this summer. First in Cython.<br>
+Fall thru will work and the switch case can be any size.<br>
+<br>
+<br>
+
+ switch(grade){  <br>
+   case 'A':<br>
+      print("Excellent!\n" );<br>
+      break;<br>
+         <br>
+   case 'B': <br>
+   case 'C':<br>
+      printf("Well done\n" );<br>
+      break;<br>
+     <br>
+   case 'D':<br>
+      print("You passed\n" );<br>
+      break;<br>
+     <br>
+   case 'F':<br>
+      printf"Better try again\n" );<br>
+      break;<br>
+     <br>
+   default: <br>
+      print("Invalid grade\n" );<br>
+      break;<br>
+       <br>  
+   }<br>
+   <br>
+
+
+
+
+<br>
+<br>
 I was inspired by the philosophy of Guido van Rossum taking ideas from other languages.
 <br>
 Santa Cruz Python Preprocessor Under Development<br>
 translates into Python.<br>
 The code is drool worthy and much cleaner and more readable. <br>
 <br>
-<b>Note: when I say "from C" that means inspired by C code's look and behavior</b><br>
+<b>Note: when I say "from C" that means inspired by C code's look and behavior.</b><br>
 <br>
 <br>
 Ideas came from C and Lisp and what I wanted to speed<br>
