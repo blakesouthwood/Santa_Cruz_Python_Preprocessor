@@ -38,7 +38,8 @@ Gilroy, CA 95020<br><br>
 <br>
 To be clear since this approach breaks the rules of Python for the interface<br>
 layer the actual code the human writes is within triple quotes and is seen<br>
-by python as a string with a name and not as code. Then it's executed using exec(stringname) <br>
+by python as a string with a name and not as code. It is parsed and put into another string <br>
+and then it's executed using exec(stringname) <br>
 But while debugging you can see the generated Python code and step through it<br>
 if you want to. So nothing is hidden. Everything is more streamlined this way<br>
 so you don't have to be bothered by indentation errors and code in a more<br>
