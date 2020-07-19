@@ -5,6 +5,39 @@
    
 </head>
 <body><br><br>
+    
+    update July 18th Added support to use numbers for case matches within a switch case including ranges of number such as 1 thru 10, etc<br>
+    and to use math formuals just like in C.<br>
+    Also in this interface mode you can comment just like in C with // and /* multi-line */  <br>
+    <br>
+    
+    var exp = 5  #notice you can use var
+    
+     switch(exp){  <br>
+   case 1:<br>
+      print("one!\n" );<br>
+      break;<br>
+         <br>
+   case 2 thru 5: <br> #thru is a macro
+  
+      printf("number between 2 and 5\n" );<br>
+      break;<br>
+     <br>
+   case 6:<br>
+      print("six\n" );<br>
+      break;<br>
+     <br>
+   case 7 thru 10:<br>
+      printf"number between 7 and 10\n" );<br>
+      break;<br>
+     <br>
+   default: <br>
+      print("no number match\n" );<br>
+      break;<br>
+       <br>  
+   }<br>
+   <br>
+    
     update July 17th. I'm optimizing the code and making it so it can handle massively huge switch cases.<br>
     My initial thought was a switch case that is merely one page or less and then it occurred to me that<br>
     someone might have big switch cases so I decided to add the dictionary version.<br>
