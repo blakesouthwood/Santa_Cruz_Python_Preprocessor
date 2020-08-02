@@ -6,10 +6,48 @@
 </head>
 <body><br><br>
     update August 2nd, 2020<br>
+    All features work in a docstring triple quoted as a multiline string var.<br>
+    Oh, you can use the word var for variables too - python will never see it but you can.<br>
+    And you can use let too.<br>
+    <br>
     <br>
     goto coming soon.<br>
     It's just like jmp in Assembly and uses labels.<br>
     It's entirely based on the ANSI  C implimentation of goto with labels.<br>
+    Just like switch case the contents with goto will be in a doc stringwithin a function<br>
+    and then executed as python after translation.<br>
+    <br><br>
+    macros coming soon<br>
+    Based on regular and parameter based macros in C and will use #define<br>
+    It is parsed and translated into Python. <br>
+    
+    #include file/module coming soon <br>
+    This is a macro that calls import and works inside of the docstring inside of a function<br>
+    <br>
+    
+    foreach  coming soon<br>
+    Already works, cool.<br>
+    <br>
+    
+    do while coming soon.<br>
+    already works coming soon.<br>
+    <br>
+    
+    { Braces }<br>
+    Coming soon. So much nicer and makes Python code look like REAL CODE too - added bonus.<br>
+    use C braces and don't even think of militant indentation - so. you. can. code. faster.<br>
+    I hate the required indentation rules that are part of the syntax. So I add the tabs into the <br>
+    generated Python code for you.<br>
+    <br>
+    <br>
+    Wait a minute, what motivated me to do all of this. Well, I heard a Harvard CS lecture about python<br>
+    by David Malan  that mentioned everything that Python didn't have (couldn't do) and I thought why not.<br>
+    So I wanted to blend Python with JavaScript and C and see how it went. Along the way I was horrified<br>
+    by the numerous number of bogus unfair indentation errors and decided I did indeed prefer braces and<br>
+    figured out how to do automatic smart indentations - using fuzzy logic.<br>
+    I also readon stackoverflow about the desire for a switch case and braces due to the hatred of invisible<br>
+    forced straightjacket indentation BS.<br>
+    
     <br>
     update August 1st,2020
     
@@ -17,6 +55,7 @@
     and is assigned a variable name. It will require a standard structure like from JavaScript on Mozilla's page.<br>
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch">JS switch</a>
     <br>
+    For total control switch works inside of a separate function to avoid interferance with nested and other switches.<br>
     This JS style switch case code is inside of the long-string is parsed and translated into Python and executed.<br>
     It will be possible to examine the generated Python code otherwise it's hidden.<br>
     There will be a function call to parse and generate the python code followed by an exec(string_name);<br>
