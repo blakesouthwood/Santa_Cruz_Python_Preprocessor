@@ -5,6 +5,30 @@
    
 </head>
 <body><br><br>
+    updated August 5th, 2020<br>
+    Made more progress on design and implimentation of code gen of the python switch case. <br>
+    Instead of juggling a multitude of variables I envisioned the switch case not as one big chunk of code<br>
+    but as several different sections that access different lists of information data from the parser<br>
+    this way the solution is more elegant and manageable. I got the idea watching the landing of the Dragon Capsule<br>
+    with the four massive parachutes and the solution just popped into my head.<br>
+    <br>
+    The other issue is that I'm normally used to writing code for myself and not for others and that<br>
+    way there's absolutely no pressure and suddenly it occurred to me that this code could conceivably<br>
+    be used by millions though I haven't heard one comment on the Python switch case I made so I realized<br>
+    that perhaps when the switch case has the same look and feel as a switch case from JavaScript in C<br>
+    and the ability to uses braces and not thinking about indentaiton and to use macros and defmacros<br>
+    there will be some appreciation. But mainly I was doing this for myself so that I wouldn't abandon<br>
+    Python due to the design decisions that make grappling with Python a pain - such as indentation and no<br>
+    switch case and no macros and no gotos. <br>
+    <br><br>
+    This morning at Stanford playing tennis with my friends I wrote some methods for the code gen<br>
+    to handle the inputs for the codegen. The solution seems so simple in hindsight but it was all consuming<br>
+    initialy. I clearly underestimated the complexity of it but now I'm moving forward and should see<br>
+    it working with different test runs this evening.<br>
+    <br>
+    For the Braces {  } for smart auto indentation I will add that next because I have battled so many <br>
+    pointless indentation errors due to errant spaces. <br>
+    <br>
     update August 2nd, 2020<br>
     All features work in a docstring triple quoted as a multiline string var.<br>
     Oh, you can use the word var for variables too - python will never see it but you can.<br>
@@ -103,10 +127,8 @@
     I will work on the fuzzy logic rules and flags for the braces to tabs later tonight and tomorrow.<br>
     <br>
     Everyone has different preferences, likes, and dislikes and I wanted to add some flexibility to this. I expect millions to adopt<br>
-    it - if they so wish. I recently read Snowden and saw the movie and thought about the implications of having a real (or imagined) switch case in Python<br>
-    which many (the pythonic die hards) won't use- their loss - and everyone else - it's just Python running - but I wanted to<br>
-    save time, make the code look like it should look like (though this is highly subjective). Many will call it syntactic sugar - but so go use Scratch or Alice then.<br>
-    The other issue that crossed my mind was if this is such a bad thing and will it be used for nefarious things - not my problem. <br>
+    it - if they so wish. 
+    
     All real programming languages have a switch case and to be honest this is all a big illusion and it's just Python ifs that are<br>
     really running but it sure looks beautiful. I was reading recently that biologists were using Python and I thought they would like a switch case.<br>
     <br>
