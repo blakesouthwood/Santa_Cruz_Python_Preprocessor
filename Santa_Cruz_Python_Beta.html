@@ -5,6 +5,107 @@
    
 </head>
 <body><br><br>
+	October 16th, 2020
+	Testing code generator right now. I spent inordinate time buiding smart tab engine
+	and then decided on a simpler and more elegant solution so the tabs used by the user
+	to write their case section code are used for the Python code.
+	Sample output of generated Python code just put together today on my tight schedule.
+	I had to put immense thought into this to make the output as minimal as possible so it
+	would look clean and at the same time accommodate everything. This is the string version.
+	Redoing number version for switch which will go up later. 
+	
+	Curently testing after battlling narly bugs. This is sample output of the generated python code
+	that will be in a string and then executed but it can also be written to a file and then executed
+	if someone is so inclined. 
+	
+	I will have more time to document everything and put the code up on github between Oct 23rd - 27th.
+	
+	
+	caselist1 = ['apple', 'money']
+	caselist2 = ['bananas', 'coconuts', 'strawberries', 'tangerines']
+	caselist3 = ['chocolate', 'marsbar']
+	caselist4 = ['fish', 'peanuts']
+	caselist5 = ['default']
+
+
+	#list input varholder=[] must be above function with switch
+	varholder.append(exp)
+	case = varholder[0]
+	exp  = varholder[0]
+
+
+	switch(exp)
+	while True:
+
+		if case in caselist1:
+			print('first case')
+			print('testing')
+			fallthru('bananas')
+
+		elif case in caselist2:
+			print('second case')
+			print('testing')
+			fallthru('chocolate')
+
+		elif case in caselist3:
+			print('third case')
+			print('testing')
+			fallthru('cherries')
+
+		elif case in caselist4:
+			print('fourth case')
+			print('testing')
+			break
+
+		elif case in caselist5:
+			print('fifth case')
+			print('testing')
+			break
+
+		elif case in caselist6:
+			print('default case')  #this default case is used if someone wants to fallthru to default
+			print('default')
+			break
+
+		else:
+			print('default case')
+			print('default')
+			break
+	
+	#################################################
+	## this is the main part of the code generator
+	#################################################
+	print('\t#list input varholder=[] must be above function with switch')
+	print("\tvarholder.append(exp)")
+	print("\tcase = varholder[0]")
+	print("\texp = varholder[0]")  
+	print("")
+	print("")
+	print("\tswitch(exp)\n\twhile True:\n")
+
+	#start loop
+	mycounter =1
+	while mycounter <= 6: 
+		if mycounter == 1:
+			print("\t\tif case in caselist" +str(mycounter) + ":") #should be first list of lists the sublists are caselistnumber
+		else: #greater than one
+			print("\t\telif case in caselist" +str(mycounter) + ":") 
+			
+		#case section  ======
+		print(case_main_body_list[mycounter])
+		#the tail   ====
+		print("\t\t\t" + tail_list[mycounter])
+		print("")
+		mycounter += 1 #this is our loop counter
+		#end loop ====
+	
+	print("\t\telse:")
+	print(case_main_body_list[-1])  #the last case 
+	print("\t\t\t" + tail_list[-1]) #the last break
+	print("")
+	print("")
+	
+	#=================================================================================
 	September 26th, 2020
 	switch case alpha and beta testing. First attempt worked at 6:03 am this morning. Persaverance. Dogged determination.
 	Alpha testing copied output from parser and codegen and pasted it into pydev and ran it.
