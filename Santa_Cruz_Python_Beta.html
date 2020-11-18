@@ -9,6 +9,19 @@
 	Nested switch cases works! so far one level down but it's a start.
 	The inner_switch is within a function to prevent interference.
 	It looks like this:  inner_switch('test1')
+	Just realized that at the inteface level it will appear 
+	as switch('test1') so I can convert it to inner_switch('exp') in the parser.
+	Therefore it will look like this:
+	
+	switch(grade) 
+		case 'apple':  #first input x
+		case 'money':
+			print(\"first  section!\");
+			switch("test1")
+			break
+	
+	
+	
 	So far pared the project down to 2,700 lines of code for the parser. The generator is just 75 lines.
 	Also have C comments working, macros, and goto label (looks and works just like in C ). Will add in next version.
 	
