@@ -6,7 +6,7 @@ switchcasetester = '''
 		case 'money':
 			print(\"first  section!\")
 			print("one")
-
+			fallthru
 
 		case 'candy':
 		case 'coconuts':
@@ -15,14 +15,14 @@ switchcasetester = '''
 				print(color)
 			else:
 				print(no color)
-
+			fallthrough  #different spellings for fallthru
 
 
 		case 'fish':
-		case 'marsbar':
+		case 'marsbar': #you can have as many cases as you wish
 			print('third  section')
 			print('working on this')
-
+			#missing break is implicit fallthru just like in JS
 
 
 		case 'panera':
@@ -32,12 +32,12 @@ switchcasetester = '''
 				print('failed')
 			else:
 				print("keep trying")
-
+			break
 
 		case 'tree':
 		case 'snow':
 			print('five christmas test')
-
+			fallthru
 
 		default:
 			print('six walking duck de fa ul t')
