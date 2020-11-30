@@ -4,7 +4,9 @@
 
 # It currently works with ifs and I will work on adding a dictionary version in a week.
 # I still need to test it more and add numbers and macro thru to do things like:  case 1 thru 10:
-# It's super complex but has a super simple design.
+# It's super complex but has a super simple design
+# After it's working as designed I will make the function names and variables more descriptive.
+# I will also remove the scaffolding.
 
 
 switchcasetester = '''
