@@ -2,6 +2,10 @@
 # later tonight to clean up the indentation for the output of the python.
 # I will add the documentation and design and description of what each section does and why.
 
+# It currently works with ifs and I will work on adding a dictionary version in a week.
+# I still need to test it more and add numbers and macro thru to do things like:  case 1 thru 10:
+# It's super complex but has a super simple design.
+
 
 switchcasetester = '''
 	switch(grade) {
