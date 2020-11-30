@@ -1,3 +1,6 @@
+# This is a javascript switch case for Python. In Beta right now. Will add fixes to make it work completely
+# later tonight to clean up the indentation for the output of the python.
+# I will add the documentation and design and description of what each section does and why.
 
 
 switchcasetester = '''
