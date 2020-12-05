@@ -1,4 +1,5 @@
-
+#working on the code right now so others can  start using it. Will make file self contained and so it can be used as import.
+#Been busy at work. Should be working tonight. 
 
 # This is a javascript switch case for Python. In Beta right now. Will add fixes to make it work completely
 # later tonight to clean up the indentation for the output of the python.
