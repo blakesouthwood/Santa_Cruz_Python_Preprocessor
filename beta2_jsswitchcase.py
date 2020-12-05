@@ -1,3 +1,4 @@
+# Friday Dec 4th
 #working on the code right now so others can  start using it. Will make file self contained and so it can be used as import.
 #Been busy at work. Should be working tonight. 
 
