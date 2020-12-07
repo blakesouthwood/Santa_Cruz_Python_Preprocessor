@@ -1,3 +1,10 @@
+# december 7th adding main to bottom to call the functions in seqwuence when triggered for parser call
+# removed cuplicate of a function. 
+# fixing bug that no longer reqwuires break at bottom of default and adds it automatically.
+# It is possible to have a switch without a default but I will add that possibility later right now it's required and will
+# be put in for bypass of no matches
+# working on having this file work as an import triggered on import when a switch is called imbedded in python code..........
+
 # Friday Dec 4th
 #working on the code right now so others can  start using it. Will make file self contained and so it can be used as import.
 #Been busy at work. Should be working tonight. 
