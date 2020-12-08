@@ -1,5 +1,5 @@
-# Dec 8. solved bug so I can now call the whole file to pase and generate the python switch code correctly.
-# Now it's usable. Finally. Dogged determination. In disbelief. Difficult bug. Will add code tonight after further testing.
+# Dec 8. solved bug so I can now call the whole file to parse and generate the python switch code correctly.
+# Now it's usable. Finally. Dogged determination. In disbelief it's working. Difficult bug. Will add code tonight after further testing.
 # Will update code here tonight. 
 
 
