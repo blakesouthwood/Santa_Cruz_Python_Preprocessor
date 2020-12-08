@@ -1,3 +1,9 @@
+# Dec 8. solved bug so I can now call the whole file to pase and generate the python switch code correctly.
+# Now it's usable. Finally. Dogged determination. In disbelief. Difficult bug. Will add code tonight after further testing.
+# Will update code here tonight. 
+
+
+
 # december 7th adding main to bottom to call the functions in seqwuence when triggered for parser call
 # removed cuplicate of a function. 
 # fixing bug that no longer reqwuires break at bottom of default and adds it automatically.
