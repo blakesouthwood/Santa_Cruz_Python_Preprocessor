@@ -1,3 +1,14 @@
+#Dec 10th late night. Made accidental discovery and am changing some aspecs
+# of the design. I was successfully executing the generated code that worked
+# and then I hit a wall and after contemplating what to do I had a revelation
+# and will try if it works tomorrow. Coded many hours today and made great progress
+# trying to make the code as fast as possible. I have made more progress the slower that I worked
+# on this project and things neatly came together as if by a divine plan and I have ended up reusing
+# a great deal of my methods. I have hit many walls on this project and each wall is higher up then the previous wall.
+# there were many unforeseen obstacles that truly bewildered me. Nonetheless I can generate code and execute it
+# but I was not happy with the restrictions preventing it from working the way that I desired and I chanced upon
+# a simple and ingenious solution for code generation.
+
 # Dec 8. solved bug so I can now call the whole file to parse and generate the python switch code correctly.
 # Now it's usable. Finally. Dogged determination. In disbelief it's working. Difficult bug. Will add code tonight after further testing.
 # Will update code here tonight. 
