@@ -1,3 +1,14 @@
+#dec 13th
+#working on code generator putting output into strings and concatting to exec(string)
+#this was a bit trickier than I first anticipated but gears are turning nicely after some flailing and experimenting
+#the key to good code is good music.
+#total rush the closer I get to victory. Aiming for christmas at latest for golden code documented
+#still need to make some simple fixes like if break missing for default it won't parse. Simple fix.
+#I have been exterminating the bugs in the code generator and yesterday night had a big breakthrough
+#and tonight massive progress. Never imainged it would be tricky and yet each solution 
+#has a simple elegant solution which is just a few lines. Using a lot of lists which surprised me.
+
+
 #Dec 10th late night. Made accidental discovery and am changing some aspecs
 # of the design. I was successfully executing the generated code that worked
 # and then I hit a wall and after contemplating what to do I had a revelation
