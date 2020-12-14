@@ -5,8 +5,9 @@
 #total rush the closer I get to victory. Aiming for christmas at latest for golden code documented
 #still need to make some simple fixes like if break missing for default it won't parse. Simple fix.
 #I have been exterminating the bugs in the code generator and yesterday night had a big breakthrough
-#and tonight massive progress. Never imainged it would be tricky and yet each solution 
-#has a simple elegant solution which is just a few lines. Using a lot of lists which surprised me.
+#and tonight massive progress. Never imagined it would be this tricky and yet each solution 
+#has a simple elegant solution which is just a few lines of code. Using a lot of lists which surprised me.
+#whenever I design a function the second refined attempt is so much clearer.
 
 
 #Dec 10th late night. Made accidental discovery and am changing some aspecs
