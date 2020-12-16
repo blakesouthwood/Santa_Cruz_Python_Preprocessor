@@ -2,6 +2,8 @@
 #Wow. it works. What a pain. What a relief. Dogged determination.
 #will clean up code and upload tomorrow night. So pleased.
 #It's fast too.
+Listenec to Mr. Kitty After Dark for my concentration to weave it together tonight and get it working.
+
 This means that with a JavaScript Switch case it will be parsed into Python ifs elif else and work.
 But what is nice is you can have automatic implicit fallthrus (no break) or use explicity fallthru or fallthrough
 You can also have breaks. If no break it does a fallthru.
