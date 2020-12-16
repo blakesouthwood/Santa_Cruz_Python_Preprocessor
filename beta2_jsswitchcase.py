@@ -10,6 +10,9 @@ You can also have breaks. If no break it does a fallthru.
 The point was making a legally viable switch case with C/JavaScript switch case rules and look and feel with
 the "expected" switch-case behavior which was the goal. I succeeded.
 
+In addition to C style comments for multiline and single // line comments I figured out using braces and bypassing indentation
+though the output is indented for the python to actually work but you don't have to think about indentation in your functions.
+
 I will work on doing numbers next week. Getting the code generator working was tricky but it finally works smoothly.
 Use python indentation for switch and case and body of cases. I will write up some examples and do the tab jazz rules.
 Next version no tabs needed it will take care of that for you. Also /* C comments work */ but not in this version. Will add
