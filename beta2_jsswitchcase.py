@@ -1,3 +1,16 @@
+#dec 15th 8 pm pacific time in Silicon Vally.
+#Wow. it works. What a pain. What a relief. Dogged determination.
+#will clean up code and upload tomorrow night. So pleased.
+#It's fast too.
+This means that with a JavaScript Switch case it will be parsed into Python ifs elif else and work.
+But what is nice if you can have automatic implicit fallthrus (no break) or use fallthru or fallthrough
+You can also have breaks. If no break it does a fallthru.
+I will work on doing numbers next week. Getting the code generator working was tricky but it finally works smoothly.
+Use python indentation for switch and case and body of cases. I will write up some examples and do the tab jazz rules.
+Next version no tabs needed it will take care of that for you. Also /* C comments work */ but not in this version. Will add
+them later. What a rush to finally see it actaully work.
+
+
 #dec 13th
 #working on code generator putting output into strings and concatting to exec(string)
 #this was a bit trickier than I first anticipated but gears are turning nicely after some flailing and experimenting
