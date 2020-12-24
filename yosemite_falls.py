@@ -1,4 +1,7 @@
 
+#dec 24, 2020 4pm pacific standard time progress putting code in module
+#talking to goldfish right now which will be input file
+
 #from triple_lindy import * 
 #imports the switch case
 
