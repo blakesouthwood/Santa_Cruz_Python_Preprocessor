@@ -1,4 +1,14 @@
 
+#dec 28thj 8:05 am 
+'''
+working on communicating with the switchcase module from other files to allow seamless
+operating of switch cases.
+Considering all options since I can't use a circular import.
+
+
+
+'''
+
 #dec 24, 2020 4pm pacific standard time progress putting code in module
 #talking to goldfish right now which will be input file
 
