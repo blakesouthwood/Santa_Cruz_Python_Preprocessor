@@ -1,3 +1,10 @@
+#dec 28th, 2020  6:03 pm
+finally works as designed
+V I C T O R Y  JavaScript switch case works in Python!!
+Will make it pretty now. Trial and error.
+Will likely update code to web tonight.
+
+
 
 #dec 28thj 8:05 am 
 '''
