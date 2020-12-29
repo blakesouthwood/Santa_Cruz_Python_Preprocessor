@@ -72,7 +72,8 @@ def cool():
 			break
 }
 '''
-	endswitch(sw)  #this calls the parser and codegenerator
+	endswitch(sw)  #this calls the parser and codegenerator and executes the generated python
+	#Output currently prints the generated python. Which is turned on for debugging purposes.
 
 	
 cool()  #function call
