@@ -3,6 +3,73 @@ finally works as designed
 V I C T O R Y  JavaScript switch case works in Python!!
 Will make it pretty now. Trial and error.
 Will likely update code to web tonight.
+Working on using more than one word in a case like "alpine meadows"
+
+what prototype looks like currently using switch case
+
+
+from yosemite_falls import *  #this is the switch case module
+#this module will be renamed switchcasemod
+
+def cool():
+	print("cool running now")
+	clever('olaf') #this fills the exp for switch
+	#this is a docstring multiline string used to hold tabbed switch case
+	sw = '''
+	switch(exp) {
+		case 'snoopy':  
+		case 'linus':
+			print(\"where's the dog house!\")
+			print("first prize")
+			break
+
+		case 'olaf':  
+		case 'tim':
+			print(\"tennis wannabees!\")
+			print("what is the score again")
+			break
+			
+		case 'tomato':  
+		case 'table':
+			print("make some ketchup")
+			print("== you gotta work===")
+			break
+
+		case 'tahoe':
+		case 'donner':
+			print("will I live there some day\")
+			
+			
+		case 'fish':
+		case 'marsbar':
+			print('third  section')
+			print('working on this')
+			
+		case 'panera':
+		case 'peanuts':
+			print('four try again')
+		
+		case 'bestwestern':
+		case 'travelcenter':
+			print('nice place to stay')
+			break
+			
+
+		case 'alpine':
+		case 'squaw':
+			print('ski fast in the powder')
+			break
+			
+		default:
+			print('six walking duck de fa ul t')
+			print("no matches")
+			break
+}
+'''
+	endswitch(sw)  #this calls the parser and codegenerator
+
+	
+cool()  #function call
 
 
 
