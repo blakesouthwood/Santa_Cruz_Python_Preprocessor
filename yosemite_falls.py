@@ -1,3 +1,9 @@
+#dec 28th 9pm.
+Switch in Beta.
+Just found a few bugs the more I test it.
+Just noticed Python doesn't generate teh default case but it's an easy fix.
+Now using Sublime and Visual Studio Code for testing. I only got it actually fully working tonight.
+
 #dec 28th, 2020  6:03 pm
 finally works as designed
 V I C T O R Y  JavaScript switch case works in Python!!
