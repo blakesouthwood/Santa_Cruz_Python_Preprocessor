@@ -8,6 +8,9 @@
 in JavaScript and C (not required) )in input switch so it won't crash.
 #Having fun.
 
+#fixed missing default case in list for output Python code
+#switch code running again (what a relief)
+
 
 #from goldfish import switchcasetester
 #dec 28th progress
