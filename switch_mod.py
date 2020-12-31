@@ -4,7 +4,8 @@
 #listening to Original Tron Soundtrack now
 <a href="https://www.youtube.com/watch?v=VvoSFQa60FI&list=PLnpIGDCblPQWPYm0ryIVyWM9yDW7-xfHX&index=2">Tron soundtrack</a>
 	
-#Found code I previously wrote in another file to add break to default in input switch so it won't crash.
+#Found code I previously wrote in another file to add break to default (if user didn't put in a break since it's optional
+in JavaScript and C (not required) )in input switch so it won't crash.
 #Having fun.
 
 
