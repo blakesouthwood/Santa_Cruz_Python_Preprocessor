@@ -1,3 +1,13 @@
+#December 30th, 2020 Debugging and testing using Visual Studio Code and BBEdit because Sublime locked me out.
+#found a few bugs but having fun
+#fixed some code and invisible indentation errors (oh joy)
+#listening to Original Tron Soundtrack now
+<a href="https://www.youtube.com/watch?v=VvoSFQa60FI&list=PLnpIGDCblPQWPYm0ryIVyWM9yDW7-xfHX&index=2">Tron soundtrack</a>
+	
+#Found code I previously wrote in another file to add break to default in input switch so it won't crash.
+#Having fun.
+
+
 #from goldfish import switchcasetester
 #dec 28th progress
 #Beta 3
