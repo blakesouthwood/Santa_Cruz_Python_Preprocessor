@@ -1,3 +1,10 @@
+#Dec 31st 7:14pm
+Figured out how to do mutiple words like "alpine meadows" rather then solitary words in a string for cases.
+Figured out how to do numbers and macro  so it's possible to do:   case 1 thru 10:
+Solved bug that crashed parser if no break in default by adding default. So now it's possible to write a true C switch case
+that doesn't require a break at end of default section but default is required per Yale C Standards.
+
+
 #dec 28th 9pm.
 Switch in Beta.
 Just found a few bugs the more I test it.
