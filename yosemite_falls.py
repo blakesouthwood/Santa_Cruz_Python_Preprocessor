@@ -1,3 +1,20 @@
+Jan 4th 2021
+Got case words working
+case “alpine meadows”:   # works
+It can be up to five words initially
+Will add higher limit later
+
+Got switch case using just numbers figured out.
+Not implimented yet but prototype works.
+case 1:
+   Bla bla bla
+
+case 2:
+   Bla bla bla
+
+case 3 thru 7:
+     Bla bla bla 
+
 #Dec 31st 7:14pm
 Fixed bugs and worked on new features: Will upload changes later.
 Figured out how to do multiple words like "alpine meadows" for cases rather then solitary words in a string for cases such as "Google".
