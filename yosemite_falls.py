@@ -13,7 +13,17 @@ case 2:
    Bla bla bla
 
 case 3 thru 7:
-     Bla bla bla 
+     Bla bla bla
+
+*experimenting* 
+With goto  label based on
+C design usage 
+
+
+    goto labelname;
+
+label:
+
 
 #Dec 31st 7:14pm
 Fixed bugs and worked on new features: Will upload changes later.
