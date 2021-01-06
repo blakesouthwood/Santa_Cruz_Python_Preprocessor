@@ -1,3 +1,10 @@
+Jan 5th. Made a lot of bug fixed and added more features that I dreaded of implimenting months ago.
+I made massive progress in the past few days and am extremely happy it's working as envisioned.
+Documenting and making the code pretty. Renaming everything so it's cohereent and easy to follow.
+Will also make a map diagram of the architectural structure. The program was made from about 50 modules
+and then pieced together. My first parser and code generator. I will gradually upload the working code
+in the new few days. I need to delete the dead code not being called. 
+
 Jan 4th 2021
 Got case words working
 case “alpine meadows”:   # works; origininally I only tested using one word and then I thought, try more words.
