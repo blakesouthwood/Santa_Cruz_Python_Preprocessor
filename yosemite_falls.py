@@ -1,3 +1,13 @@
+Jan 5th 10pm Pacific Time Jan 5th 2021
+Was testing the thru macro and realized there could be more than one occurance in a switch so 
+they figured out how to manage them so there can be innumerable thru macros for cases in a switch case.
+example
+case 1 thru 5:
+case 6 thru 15:
+case 16 thru 25:
+case 26 thru 50:
+
+
 Jan 5th. Made a lot of bug fixes and added more features that I dreaded of implimenting months ago.
 I made massive progress in the past few days and am extremely happy it's working as envisioned.
 Documenting and making the code pretty. Renaming everything so it's cohereent and easy to follow.
