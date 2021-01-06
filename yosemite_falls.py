@@ -16,7 +16,7 @@ case 1:
 case 2:
    Bla bla bla
 
-case 3 thru 7:  #working on thru macro currently
+case 3 thru 7:  #working on thru macro currently  #macro working at 7:42pm Jan 5th, 2021
      Bla bla bla
 
 *experimenting* 
