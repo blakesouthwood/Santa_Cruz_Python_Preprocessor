@@ -1,10 +1,14 @@
 Jan 4th 2021
 Got case words working
 case “alpine meadows”:   # works
-It can be up to five words initially
+It can be up to ten words initially
 Will add higher limit later
 
 Got switch case using just numbers figured out.
+This code now works. January 5th
+It tests if cases are numbers and then runs special code to handle numbers
+as opposed to words.
+
 Not implimented yet but prototype works.
 case 1:
    Bla bla bla
@@ -12,7 +16,7 @@ case 1:
 case 2:
    Bla bla bla
 
-case 3 thru 7:
+case 3 thru 7:  #working on thru macro currently
      Bla bla bla
 
 *experimenting* 
