@@ -1,15 +1,15 @@
 Jan 4th 2021
 Got case words working
-case “alpine meadows”:   # works
-It can be up to ten words initially
+case “alpine meadows”:   # works; origininally I only tested using one word and then I thought, try more words.
+It can be up to ten words now
 Will add higher limit later
 
-Got switch case using just numbers figured out.
+Got switch case using just numbers figured out (and working now) Jan 5th!!! 
 This code now works. January 5th
 It tests if cases are numbers and then runs special code to handle numbers
 as opposed to words.
 
-Not implimented yet but prototype works.
+Not implimented yet but prototype works. (works now) 
 case 1:
    Bla bla bla
 
@@ -19,7 +19,7 @@ case 2:
 case 3 thru 7:  #working on thru macro currently  #macro working at 7:42pm Jan 5th, 2021
      Bla bla bla
 
-*experimenting* 
+*experimenting*   #will work on this later. Got a lot figured out and working tonight. 
 With goto  label based on
 C design usage 
 
