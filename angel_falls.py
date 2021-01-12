@@ -1,4 +1,4 @@
-#January 12th 1:03pm PST Update
+#January 12th 2021 1:03pm PST Update
 Regular string switch case works with JavaScript/C appearance
 Regular number switch case works
 case 1 thru 10:  works with number switch
@@ -9,6 +9,8 @@ Add documentation and deep description and design info of project for switch cas
 0. continued: and "after" the docstring is endswitch(sw) which calls def endswitch() 
 0. continued: and parses the string, dynamically generates the python if elif code, and executes it.
 0. continued: Note: this impimentation uses eval() and exec()
+0. continued: I will include examples here over the next few days
+0. continued: I still need to add the sniffer/filter to detect if switch(exp) and cases are numbers.
 	
 1. The idea is to have a switch case that looks just like JavaScript and C switch.
 2. Rule 1 the tab (4 spaces) that are commonly used in Python are "required" for this switch case to work flawlessly.
