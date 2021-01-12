@@ -1,6 +1,9 @@
 ############################################################################################################
 #      January 12th 2021 1:03pm PST Update     Project TRON  JavaScript/C Hybrid Switch Case for Python    #
 ############################################################################################################
+update 3:30 pm January 12th writing style guide for switch case now with eamples
+this will be in an html file called switch_case_style_guide.html
+	
 This implimentation converts a JavaScript switch case into Python if elif else implimentation. 
 Regular string switch case works with JavaScript/C appearance and running behavior  i.e. case "alpine meadows":
 Regular number switch case works  i.e.   case 2:
