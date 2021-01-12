@@ -31,7 +31,7 @@ Currently adding documentation and deep description and design info of project f
 3. continued:  or you can use: fallthru, fallthrough  for the same effect. (lowercase)
 4. For version 1 the cases in strings are converted to lowercase. I will change this in the next version to be more flexible.
 5. What is this? It is a preprocessor and parser and codegenerator which parses the input JavaScript/Python code blend
-5. continued:  dynamically generats the python code equivalent of creating the "expected" JavaScript/C switch behavior
+5. continued:  dynamically generates the python code equivalent of creating the "expected" JavaScript/C switch behavior
 6. about to impliement(will work on right now) by adding #debugon just above switch word you can read the output of generated python code to assist in debugging
 7. I purposely did not look at anyone else's implimentation of a switch case in python to prevent clouding my design.
 8. I did glance at the rejected Python proposals for Python 3 and laughed at the new confusing match() proposal.
