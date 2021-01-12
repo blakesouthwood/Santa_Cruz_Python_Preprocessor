@@ -1,9 +1,9 @@
 ############################################################################################################
 #      January 12th 2021 1:03pm PST Update     Project TRON  JavaScript/C Hybrid Switch Case for Python    #
 ############################################################################################################
-Regular string switch case works with JavaScript/C appearance and running behavior
-Regular number switch case works
-macro "thru":   case 1 thru 10:  works with number switch
+Regular string switch case works with JavaScript/C appearance and running behavior  i.e. case "alpine meadows":
+Regular number switch case works  i.e.   case 2:
+macro "thru":   case 1 thru 10:  works with number switch  this generates case 1, case 2, ... case 10:
 Based on this code I can make any macro work now.
 Add documentation and deep description and design info of project for switch case.
 0. Major difference from what you might expect for the implimentation is that this is implimented
@@ -18,12 +18,13 @@ Add documentation and deep description and design info of project for switch cas
 0. continued: I will include examples here over the next few days
 0. continued: I still need to add the sniffer/filter to detect if switch(exp) and cases are numbers.
 0. continued: The code in the docstring is a hybrid blend of JavaScript and Python and C behavior and syntatic style
-0. continued: which uses a brace { after switch and ends with } brace at the bottom (though they are ignored.
+0. continued: which uses a brace { after switch and ends with } brace at the bottom (though they are ignored).
 0. continued: sticking with Python (a little) tabs are required. 1 tab before switch, 2 tabs before case, 3 tabs for case body
 0. continued: tabs must be equal to 4 spaces. The tabs used for the input are used for the output Python code.
 0. continued: the code within the body of a case still(for now) needs to be Python 3 code.
 	
-1. The idea is to have a switch case that looks just like JavaScript and C switch.
+1. The idea is to have a switch case that looks just like JavaScript and C switch except for all of the braces.
+1.a. Though I am working on allowing using braces with Python and macro that replaces Javascript style braces with tabs so writing python won't require insane indentation.
 2. Rule 1 the tab (4 spaces) that are commonly used in Python are "required" for this switch case to work flawlessly.
 3. Rule 2  in a case to fallthru either you leave it blank (empty) at bottom of a case before next case or default
 3. continued:  or you can use: fallthru, fallthrough  for the same effect. (lowercase)
