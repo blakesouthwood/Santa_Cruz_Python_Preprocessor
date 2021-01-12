@@ -3,7 +3,7 @@
 ############################################################################################################
 Regular string switch case works with JavaScript/C appearance and running behavior
 Regular number switch case works
-case 1 thru 10:  works with number switch
+macro "thru":   case 1 thru 10:  works with number switch
 Based on this code I can make any macro work now.
 Add documentation and deep description and design info of project for switch case.
 0. Major difference from what you might expect for the implimentation is that this is implimented
