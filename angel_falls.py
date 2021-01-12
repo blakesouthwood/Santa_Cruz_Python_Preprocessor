@@ -11,8 +11,13 @@ Add documentation and deep description and design info of project for switch cas
 0. continued: and "after" the docstring is endswitch(sw) which calls def endswitch() 
 0. continued: and parses the string, dynamically generates the python if elif code, and executes it.
 0. continued: Note: this impimentation uses eval() and exec()
+0. continued: input for exp for switch(exp) occurs thru a function above the switch case docstring
+0. continued: output of the "result" returned value from the switch is in a list called varholder[1] and there can be n returned outputs if desired
+0. continued: To be clear the input var for the switch case body is above and outside the switch case itself which is in a docstring
+0. continued: The output value(result) from the switch case is after and below the switch case doc string in a list of n size; default is one result item in varholder[1]
 0. continued: I will include examples here over the next few days
 0. continued: I still need to add the sniffer/filter to detect if switch(exp) and cases are numbers.
+0. continued: The code in the docstring is a hypbrid blend of JavaScript and Python and C behavior and syntatic style	
 	
 1. The idea is to have a switch case that looks just like JavaScript and C switch.
 2. Rule 1 the tab (4 spaces) that are commonly used in Python are "required" for this switch case to work flawlessly.
