@@ -1,5 +1,7 @@
-#January 12th 2021 1:03pm PST Update
-Regular string switch case works with JavaScript/C appearance
+############################################################################################################
+#      January 12th 2021 1:03pm PST Update     Project TRON  JavaScript/C Hybrid Switch Case for Python    #
+############################################################################################################
+Regular string switch case works with JavaScript/C appearance and running behavior
 Regular number switch case works
 case 1 thru 10:  works with number switch
 Based on this code I can make any macro work now.
