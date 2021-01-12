@@ -1,3 +1,29 @@
+#January 12th 1:03pm PST Update
+Regular string switch case works with JavaScript/C appearance
+Regular number switch case works
+case 1 thru 10:  works with number switch
+Based on this code I can make any macro work now.
+Add documentation and deep description and design info of project for switch case.
+0. Major difference from what you might expect for the implimentation is that this is implimented
+0. continued: by putting the JavaScript/Python hybrid blend into a docstring with a var name sw
+0. continued: and "after" the docstring is endswitch(sw) which calls def endswitch() 
+0. continued: and parses the string, dynamically generates the python if elif code, and executes it.
+0. continued: Note: this impimentation uses eval() and exec()
+	
+1. The idea is to have a switch case that looks just like JavaScript and C switch.
+2. Rule 1 the tab (4 spaces) that are commonly used in Python are "required" for this switch case to work flawlessly.
+3. Rule 2  in a case to fallthru either you leave it blank (empty) at bottom of a case before next case or default
+3. continued:  or you can use: fallthru, fallthrough  for the same effect. (lowercase)
+4. For version 1 the cases in strings are converted to lowercase. I will change this in the next version to be more flexible.
+5. What is this? It is a preprocessor and parser and codegenerator which parses the input JavaScript/Python code blend
+5. continued:  dynamically generats the python code equivalent of creating the "expected" JavaScript/C switch behavior
+6. about to impliement(will work on right now) by adding #debugon just above switch word you can read the output of generated python code to assist in debugging
+7. I purposely did not look at anyone else's implimentation of a switch case in python to prevent clouding my design.
+8. I did glance at the rejected Python proposals for Python 3 and laughed at the new confusing match() proposal.
+
+
+
+
 #from goldfish import switchcasetester
 
 #dec 31st
