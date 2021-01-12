@@ -23,7 +23,7 @@ Currently adding documentation and deep description and design info of project f
 0. continued: tabs must be equal to 4 spaces. The tabs used for the input are used for the output Python code.
 0. continued: the code within the body of a case still(for now) needs to be Python 3 code.
 	
-1. The idea is to have a switch case that looks just like JavaScript and C switch except for all of the braces.
+1. The idea is to have a switch case (with JavaScript behavior) that looks just like JavaScript and C switch except for all of the braces.
 1.a. Though I am working on allowing using braces with Python and macro that replaces Javascript style braces with tabs so writing python won't require insane indentation.
 2. Rule 1 the tab (4 spaces) that are commonly used in Python are "required" for this switch case to work flawlessly.
 3. Rule 2  in a case to fallthru either you leave it blank (empty) at bottom of a case before next case or default
