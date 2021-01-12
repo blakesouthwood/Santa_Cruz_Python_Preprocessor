@@ -1,7 +1,7 @@
 ############################################################################################################
 #      January 12th 2021 1:03pm PST Update     Project TRON  JavaScript/C Hybrid Switch Case for Python    #
 ############################################################################################################
-update 3:30 pm January 12th writing style guide for switch case now with eamples
+update 3:30 pm January 12th writing style guide for switch case now with examples
 this will be in an html file called switch_case_style_guide.html
 	
 This implimentation converts a JavaScript switch case into Python if elif else implimentation. 
