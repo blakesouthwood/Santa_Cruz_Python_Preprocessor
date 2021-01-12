@@ -5,7 +5,7 @@ Regular string switch case works with JavaScript/C appearance and running behavi
 Regular number switch case works  i.e.   case 2:
 macro "thru":   case 1 thru 10:  works with number switch  this generates case 1, case 2, ... case 10:
 Based on this code I can make any macro work now.
-Add documentation and deep description and design info of project for switch case.
+Currently adding documentation and deep description and design info of project for switch case.
 0. Major difference from what you might expect for the implimentation is that this is implimented
 0. continued: by putting the JavaScript/Python hybrid blend into a docstring with a var name sw
 0. continued: and "after" the docstring is endswitch(sw) which calls def endswitch() 
