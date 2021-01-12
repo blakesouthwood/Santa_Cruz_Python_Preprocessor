@@ -17,7 +17,11 @@ Add documentation and deep description and design info of project for switch cas
 0. continued: The output value(result) from the switch case is after and below the switch case doc string in a list of n size; default is one result item in varholder[1]
 0. continued: I will include examples here over the next few days
 0. continued: I still need to add the sniffer/filter to detect if switch(exp) and cases are numbers.
-0. continued: The code in the docstring is a hybrid blend of JavaScript and Python and C behavior and syntatic style	
+0. continued: The code in the docstring is a hybrid blend of JavaScript and Python and C behavior and syntatic style
+0. continued: which uses a brace { after switch and ends with } brace at the bottom (though they are ignored.
+0. continued: sticking with Python (a little) tabs are required. 1 tab before switch, 2 tabs before case, 3 tabs for case body
+0. continued: tabs must be equal to 4 spaces. The tabs used for the input are used for the output Python code.
+0. continued: the code within the body of a case still(for now) needs to be Python 3 code.
 	
 1. The idea is to have a switch case that looks just like JavaScript and C switch.
 2. Rule 1 the tab (4 spaces) that are commonly used in Python are "required" for this switch case to work flawlessly.
