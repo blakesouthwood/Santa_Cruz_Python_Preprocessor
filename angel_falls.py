@@ -1,6 +1,7 @@
 ############################################################################################################
 #      January 12th 2021 1:03pm PST Update     Project TRON  JavaScript/C Hybrid Switch Case for Python    #
 ############################################################################################################
+This implimentation converts a JavaScript switch case into Python if elif else implimentation. 
 Regular string switch case works with JavaScript/C appearance and running behavior  i.e. case "alpine meadows":
 Regular number switch case works  i.e.   case 2:
 macro "thru":   case 1 thru 10:  works with number switch  this generates case 1, case 2, ... case 10:
