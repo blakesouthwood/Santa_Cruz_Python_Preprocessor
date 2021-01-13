@@ -3,6 +3,82 @@
 ############################################################################################################
 update 3:30 pm January 12th writing style guide for switch case now with examples
 this will be in an html file called switch_case_style_guide.html
+
+Progress on documentation and rules for this switch case implimentation for Python.
+<html>
+  <body bgcolor=white>
+  <code>
+from switch_mod import *    <---- required to access the switch case module parser and generator and executing the code
+
+input('9') <----- required  #this will put the value into exp for the switch() method
+                  this will be just above each switch case
+                  
+# 1 tab  --> switch
+# 2 tabs --> case
+# 3 tabs --> body
+
+sw ='''
+#debugon   <--- required to trigger flag to print the output python code dynamically generated to debug
+
+	switch(exp) {  <--- required brace  and exp for var inside of switch
+		case 'snoopy':  <---- required single quotes
+		case 'linus':
+			print(\"where's the dog house!\")
+			print("first prize")
+			break
+
+		case 'Linus':  
+		case 'Woodstock':
+			print(\"tennis wannabees!\")
+			print("what is the score again")
+			break
+			
+		case 'tomato':  
+		case 'table':
+			print("make some ketchup")
+			print("== you gotta work===")
+			break  <-- break is standard 
+
+		case 'tahoe':
+		case 'donner':
+			print("will I live there some day\")
+			        <--- no break means implicit fallthru just like in JavaScript and C
+			
+		case 'fish':
+		case 'marsbar':
+			print('third  section')
+			print('working on this')
+			fallthru  <-- shorthand way of writing explicit fallthrough
+			
+		case 'panera':
+		case 'peanuts':
+			print('four try again')
+		        fallthrough  <-- explicitly can be spelled this way like in Swift
+		    
+		case 'bestwestern':
+		case 'travelcenter':
+			print('nice place to stay')
+			break
+			
+
+		case 'alpine meadows': <-- words in a quote for a case can be up to 10 so far
+		case 'squaw':
+			print('ski fast in the powder')
+			break 
+			#fallthru will work going into default from case just above default
+			#also no break here does the same expected behavior
+			 
+		default:  <----- required and *must* be at the bottom
+			print('six walking duck de fa ul t')
+			print("no matches")
+			break <----- this break is optional and is added if missing
+			
+}     <--- required
+'''   <---  required end of long multiline string called sw
+	endswitch(sw)  <-- required #this calls the parser and codegenerator
+	
+	
+	
 	
 This implimentation converts a JavaScript switch case into Python if elif else implimentation. 
 Regular string switch case works with JavaScript/C appearance and running behavior  i.e. case "alpine meadows":
