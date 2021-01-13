@@ -18,7 +18,7 @@ input('9') <----- required  #this will put the value into exp for the switch() m
 # 3 tabs --> body
 
 sw ='''
-#debugon   <--- required to trigger flag to print the output python code dynamically generated to debug
+#debugon   <--- required comment to trigger flag to print the output python code dynamically generated to debug
 
 	switch(exp) {  <--- required brace  and exp for var inside of switch
 		case 'snoopy':  <---- required single quotes
