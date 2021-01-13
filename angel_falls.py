@@ -136,6 +136,63 @@ switch(exp) {
 			
 }
 
+###this is the dynamically generated python code
+
+exp = varholder[0]
+
+caselist1 = ['1', '2', '3']
+caselist2 = ['4', '5', '6', '7', '8', '9', '10']
+caselist3 = ['11', '12']
+caselist4 = ['13']
+caselist5 = ['14', '15', '16', '17', '18', '19', '20']
+caselist6 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['1', '2', '3']
+		print("where's the dog house!")
+		print('first prize')
+		print('you block head Charlie Brown')
+		break
+
+	elif case in caselist2: # ['4', '5', '6', '7', '8', '9', '10']
+		print('keep going!')
+		print('taught me how to write code')
+		
+		break
+
+	elif case in caselist3: # ['11', '12']
+		print('make some ketchup')
+		print('== you gotta work===')
+
+		
+		break
+
+	elif case in caselist4: # ['13']
+		print('ski fast in the powder')
+		print('sweet powder snow, lovely snow')
+		
+		break
+
+	elif case in caselist5: # ['14', '15', '16', '17', '18', '19', '20']
+		print('Heavenly valley')
+		print('big snow flakes there and moggles')
+		
+		fallthru('default')
+
+	elif case in caselist6: # ['default']
+		print('six walking duck de fa ul t')
+		print('flying geese')
+		
+		break
+
+	else:
+		print('six walking duck de fa ul t')
+		print('flying geese')
+		
+		break
 
 
 #from goldfish import switchcasetester
