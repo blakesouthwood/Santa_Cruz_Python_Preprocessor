@@ -83,6 +83,58 @@ sw = '''
 '''
 endswitch(sw)
 
+#the macro for thru is called first and generates this version of the string before getting analyzed
+#for the parser
+
+switch(exp) {  
+		case 1:
+		case 2:
+		case 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			break
+
+		case 4:
+		case 5:
+		case 6:
+		case 7:
+		case 8:
+		case 9:
+		case 10:
+			print('keep going!')
+			print('taught me how to write code')
+			break
+			
+		case 11:  
+		case 12:
+			print('make some ketchup')
+			print('== you gotta work===')
+			break
+
+			
+
+		case 13:
+			print('ski fast in the powder')
+			print('sweet powder snow, lovely snow')
+			break
+			
+		case 14:
+		case 15:
+		case 16:
+		case 17:
+		case 18:
+		case 19:
+		case 20:
+			print('Heavenly valley')
+			print('big snow flakes there and moggles')
+			fallthru
+			
+		default:
+			print('six walking duck de fa ul t')
+			print('flying geese')
+			
+}
 
 
 
