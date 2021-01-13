@@ -41,6 +41,50 @@ Currently adding documentation and deep description and design info of project f
 
 
 
+This parses and generates python code and runs!! Demo of thru macro
+clever('16')  #input to switch case feeding exp for switch()
+
+sw = '''  
+	switch(exp) {  
+		case 1 thru 3:
+			print("where\'s the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			break
+
+		case 4 thru 10:
+			print('keep going!')
+			print('taught me how to write code')
+			break
+			
+		case 11:  
+		case 12:
+			print('make some ketchup')
+			print('== you gotta work===')
+			break
+
+			
+
+		case 13:
+			print('ski fast in the powder')
+			print('sweet powder snow, lovely snow')
+			break
+			
+		case 14 thru 20:
+			print('Heavenly valley')
+			print('big snow flakes there and moggles')
+			fallthru
+			
+		default:
+			print('six walking duck de fa ul t')
+			print('flying geese')
+			
+}
+'''
+endswitch(sw)
+
+
+
 
 #from goldfish import switchcasetester
 
