@@ -1,3 +1,12 @@
+###############################
+## update January  24th, 2021  5:58pm PST
+I have been debugging the design change (refactoring) so that more than one switch case can be used in a function
+and infinite switch cases can be used in a file. Making progress. I initially was going to reload the switch module (with no luck) but
+I am making good progress resetting the lists. I made good bug pinpoints the past two days and can see the light
+at the end of the tunnel. It turned out a bit more tricky then I imagined it would be. Testing with two switches
+currently that are stacked and the first works and the second switch is outputting python code now though much of the 
+parser data and output is wrong but getting more correct gradually.
+
 ############################################################################################################
 #      January 12th 2021 1:03pm PST Update     Project TRON  JavaScript/C Hybrid Switch Case for Python    #
 ############################################################################################################
