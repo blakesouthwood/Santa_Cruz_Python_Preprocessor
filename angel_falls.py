@@ -1,3 +1,8 @@
+Update 7:21pm PST  January 24th, 2021
+It works. I have two switches working. I have a few fixable bugs but it works. I don't believe it.
+Reload came thru and works. Saving me a ton of coding. So I can reload the module before each switch case.
+Thrilling.
+
 Update 7:07 Jan 24th starting to work
 used this reload code that worked
 that I will put into a function:
