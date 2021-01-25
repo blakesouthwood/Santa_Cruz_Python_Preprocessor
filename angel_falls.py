@@ -1,3 +1,15 @@
+Update 7:07 Jan 24th starting to work
+used this reload code that worked
+that I will put into a function:
+	
+import importlib
+import my_great_module
+importlib.reload(my_great_module)
+
+Just one small fallthru bug I will fix, so I have two switches working in a sequence that are completley different working in the
+same function!  Starting to believe it's going to finally work as envisioned.
+
+
 ###############################
 ## update January  24th, 2021  5:58pm PST
 I have been debugging the design change (refactoring) so that more than one switch case can be used in a function
