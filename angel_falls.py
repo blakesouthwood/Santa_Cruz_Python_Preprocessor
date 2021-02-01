@@ -6,6 +6,8 @@ I will also be diagramming the design structure of the structure so I can see it
 	
 Added ability for a falllthru to go to case with multiple words in the name such as  case "alpine meadows": and now n number of words
 Working on bug triggered after first switch case.
+I only just recently added the ability for cases to have more than one word such as .. case "Starship launch next week":
+Still need to add converting each string to lowercase()
 Multiple switch cases now works but I have a few bugs that I'm figuring out to circumvent the bugs.
 
 Happy that multiple switch cases works.
@@ -17,7 +19,9 @@ Everything works just debugging now. I will also work on adding a C style consta
 case BIG_WORDS_LIKE_THIS:  which will reuse my number code which converts it to strings.
 	
 case CONSTANTWORD: 
-
+	
+I will put up the gold master code (and take down this experimental code) after I finish paring it down and adding more documentation for the
+behavior of each function and a description of the super structure. 
 
 
 Update 7:21pm PST  January 24th, 2021
