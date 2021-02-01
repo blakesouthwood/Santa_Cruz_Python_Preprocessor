@@ -1,6 +1,8 @@
 Update 10:25AM PST Febraury 1st, 2021
-I havne't had a day off in a while and didn't have access to electricty which slowed me down.
+I haven't had a day off in a while and didn't have access to electricty which slowed me down.
 Still in total nirvana that I can reset the switch module for each switch.
+I am still doing a lot of testing and note taking of bug behavior.
+I will also be diagramming the design structure of the structure so I can see it visually in terms of the architecture.
 	
 Added ability for a falllthru to go to case with multiple words in the name such as  case "alpine meadows": and now n number of words
 Working on bug triggered after first switch case.
