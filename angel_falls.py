@@ -1,3 +1,23 @@
+Update 10:25AM PST Febraury 1st, 2021
+I havne't had a day off in a while and didn't have access to electricty which slowed me down.
+Still in total nirvana that I can reset the switch module for each switch.
+	
+Added ability for a falllthru to go to case with multiple words in the name such as  case "alpine meadows": and now n number of words
+Working on bug triggered after first switch case.
+Multiple switch cases now works but I have a few bugs that I'm figuring out to circumvent the bugs.
+
+Happy that multiple switch cases works.
+
+Currently merging different parts of working aspects of differnet files (while keeping backups) 
+and then using diff in BBEdit to make sure I'm changing the right parts.
+
+Everything works just debugging now. I will also work on adding a C style constant word like
+case BIG_WORDS_LIKE_THIS:  which will reuse my number code which converts it to strings.
+	
+case CONSTANTWORD: 
+
+
+
 Update 7:21pm PST  January 24th, 2021
 It works. I have two switches working. I have a few fixable bugs but it works. I don't believe it.
 Reload came thru and works. Saving me a ton of coding. So I can reload the module before each switch case.
