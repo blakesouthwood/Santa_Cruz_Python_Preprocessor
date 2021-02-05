@@ -109,7 +109,7 @@ from the bottom up (backwards) so that the case lines don't change that are refe
 about the code in the switch case and I use fuzzy logic and a fancy parser to analyze the contents of the switch and fill lists which are then
 utilized for the code generator. I didn't want to taint my design so I purposely didn't read any books  or anything online on parsers or code generators.
 I wanted it to be purely my design. I previously wrote thousands of lines of dynamic JavaScript so I wasn't phased by the attempt and effort
-but actually I chose python over other langauges just because it has eval() and exec(). I was pleased with writing the code generator in an hour and then it took three days to get it to actually work. The parser was extremely
+but I actually chose python over other languages just because it has eval() and exec(). I was pleased with writing the code generator in an hour and then it took three days to get it to actually work. The parser was extremely
 difficult and required great tenacity. The amount of fuzzy logic in the parser is mind boggling. 
 
 #====================================================================
