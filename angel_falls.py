@@ -101,7 +101,7 @@ input('9') <----- required  #this will put the value into exp for the switch() m
 sw ='''
 #debugon   <--- required comment to trigger flag to print the output python code dynamically generated to debug
 
-	switch(exp) {  <--- required brace  and exp for var inside of switch
+	switch(exp) {  <--- required brace  and exp for var inside of switch  #amended: Feb 4, 2021 { not necessary (purely optional)
 		case 'snoopy':  <---- required single quotes
 		case 'linus':
 			print(\"where's the dog house!\")
@@ -152,9 +152,9 @@ sw ='''
 		default:  <----- required and *must* be at the bottom
 			print('six walking duck de fa ul t')
 			print("no matches")
-			break <----- this break is optional and is added if missing
+			break <----- this break is optional and is added if missing automatically
 			
-}     <--- required
+}     <--- required  #amended  Feb 4, 2021 not necessary (completely optional) It's for looks, it's actually ignored
 '''   <---  required end of long multiline string called sw
 	endswitch(sw)  <-- required #this calls the parser and codegenerator
 	
