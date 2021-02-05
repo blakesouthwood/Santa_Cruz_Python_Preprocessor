@@ -46,7 +46,7 @@ and then using diff in BBEdit to make sure I'm changing the right parts.
 
 Everything works just debugging now. I will also work on adding a C style constant word like
 case BIG_WORDS_LIKE_THIS:  which will reuse my number code which converts it to strings.
-	
+### this one is on hold for now because it looks strange.	
 case CONSTANTWORD: 
 	
 I will put up the gold master code (and take down this experimental code) after I finish paring it down and adding more documentation for the
