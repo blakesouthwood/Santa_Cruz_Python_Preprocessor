@@ -6,6 +6,14 @@ but the code works.
 Update Feb 4th, 2021 11:25 PM
 This now works, it's more flexible as a macro based on how people want to think.
 #so as you can see you can use "to"  or "thru" for a span of numbers
+Both to and thru are macros that trigger a praser method to loop through a list populated starting with the first number
+and the list ends with the last number. Because the cases will expanded downward the number switch case is actually expanded
+from the bottom up (backwards) so that the case lines don't change that are referenced. Again Python really has no clue whatsoever
+about the code in the switch case and I use fuzzy logic and a parser to analyze the contents of the switch and fill lists which are then
+utilized for the code generator. I didn't want to taint my design so I purposely didn't read any books  or anything online on parsers or code generators.
+I wanted it to be purely my design. I previously wrote thousands of lines of dynamic JavaScript so I wasn't phased by the attempt and effort
+but actually I chose python over other langauges just because it has eval() and exec(). I was pleased with writing the code generator in an hour and then it took three days to get it to actually work. The parser was extremely
+difficult and required great tenacity. The amount of fuzzy logic in the parser is mind boggling. 
 
 #====================================================================
 
