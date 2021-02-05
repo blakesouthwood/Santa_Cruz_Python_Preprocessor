@@ -1,3 +1,8 @@
+Update Feb 5th, 2021  12:34 AM
+I'm currently working on the filter for whether a switch is taking in numbers or words in strings.
+The main engineering for the switch case works and is stable. I'm just dealing with a small number of bugs right now
+but the code works.
+
 Update Feb 4th, 2021 11:25 PM
 This now works, it's more flexible as a macro based on how people want to think.
 #so as you can see you can use "to"  or "thru" for a span of numbers
