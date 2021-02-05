@@ -2,6 +2,8 @@ Update Feb 4th, 2021 11:25 PM
 This now works, it's more flexible as a macro based on how people want to think.
 #so as you can see you can use "to"  or "thru" for a span of numbers
 
+#====================================================================
+
 switch(exp) {  
 		case 1 to 3:
 			print("where\'s the dog house!")
@@ -24,6 +26,24 @@ I have a nested switch working in pydev and I'll get  at least a triple nested s
 I am finishing up the switch project to move on to other python additions that I have planned.
 The bugs that I am encountering as I reach the finish line are sometimes baffling so I am
 making my functions smaller to manage it better.
+	
+goto label;  it coming up next.
+based on C design and behavior. This example is from Yale.https://www.cs.yale.edu/homes/aspnes/pinewiki/C(2f)Statements.html
+The way that the goto will work is goto is actually a fallthru that can go up or down within a function
+and giveUp is actually an if case == but it's all in the background just a switch case. This was my second motivation for making switch.
+So it works as a prescan level above a switch case and the function will exist within a special switch case. It's really a switch 
+case in disguise. Granted the label along the left margine is C-ish in appearance and goto is not a python reserved word.
+	
+   1     for(i = 0; i < n; i++) {
+   2         for(j = 0; j < n; j++) {
+   3             doSomethingTimeConsumingWith(i, j);
+   4             if(checkWatch() == OUT_OF_TIME) {
+   5                 goto giveUp;   <-------------- this is what it will look like in python
+   6             }
+   7         }
+   8     }
+   9 giveUp:  <------------------------------------ this label with the colon after it will look like this in python
+  10     puts("done");
 	
 
 ======================================
