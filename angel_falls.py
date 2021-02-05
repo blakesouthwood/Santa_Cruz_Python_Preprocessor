@@ -1,3 +1,32 @@
+Update Feb 4th, 2021 11:25 PM
+This now works, it's more flexible as a macro based on how people want to think.
+#so as you can see you can use "to"  or "thru" for a span of numbers
+
+switch(exp) {  
+		case 1 to 3:
+			print("where\'s the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			break
+
+		case 4 thru 10:
+			print('keep going!')
+			print('taught me how to write code')
+			fallthru
+	
+I have been figuring out and fixing the fallthru('') bug that was unable to use more than one word for a case name.
+I fixed it. 
+
+Working on stabilility  overall and will next try ten switches in a sequence.
+	
+I have a nested switch working in pydev and I'll get  at least a triple nested switch working
+	
+I am finishing up the switch project to move on to other python additions that I have planned.
+The bugs that I am encountering as I reach the finish line are sometimes baffling so I am
+making my functions smaller to manage it better.
+	
+
+======================================
 Update 10:25AM PST Febraury 1st, 2021
 I haven't had a day off in a while and didn't have access to electricty which slowed me down.
 Still in total nirvana that I can reset the switch module for each switch.
