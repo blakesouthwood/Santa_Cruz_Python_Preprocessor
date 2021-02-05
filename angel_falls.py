@@ -140,13 +140,15 @@ making my functions smaller to manage it better.
 goto label;  it coming up next.
 based on C design and behavior. This example is from Yale.https://www.cs.yale.edu/homes/aspnes/pinewiki/C(2f)Statements.html
 The switch case is invisible but for debugging purposes it will be possible to see the conversion  in the parser debug stage
-to see the switch case output that is representings the inner workings of the clever goto for Python. This is why I have been
+to see the switch case output that is representing the inner workings of the clever goto for Python. This is why I have been
 hell bent to get the switch case working. I love switch cases but I've also wanted to play with gotos.
 	
 The way that the goto will work is goto is actually a fallthru that can go up or down within a function
-and giveUp is actually an if case == but it's all in the background just a switch case. This was my second motivation for making switch.
-So it works as a prescan level above a switch case and the function will exist within a special switch case. It's really a switch 
-case in disguise. Granted the label along the left margine is C-ish in appearance and goto is not a python reserved word.
+and the label giveUp is actually " if case == giveUp:"  but it's all in the background just a switch case. This was my second motivation
+for making switch. So it works as a prescan level above a switch case and the function will exist within a special switch case. 
+It's really a switch  case veil in disguise. Granted the label along the left margine is C-ish in appearance and goto is not a 
+python reserved word. In PyDev it won't let me use a function called goto() which I found comical it will not run; so I named it 
+something else.
 	
    1     for(i = 0; i < n; i++) {
    2         for(j = 0; j < n; j++) {
