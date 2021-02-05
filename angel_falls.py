@@ -131,7 +131,15 @@ I fixed it.
 
 Working on stabilility  overall and will next try ten switches in a sequence.
 	
-I have a nested switch working in pydev and I'll get  at least a triple nested switch working
+I have a nested switch working in pydev and I'll get  at least a triple nested switch working.
+The way that the nested switch case actually works is in the "envelope plastic window view" where the C/JavaScript style
+switch is in the docstring with a var name of sw the switch code is nested and appears just a second embedded
+switch case but the parser will put the nested switch case into a seperate function so in actual python code
+it is a call to this function with a return value and that way the code is cleaner. And the way that the goto
+will work to jump out of deeply nested loops is it puts the last value before the goto is called into a list
+and the loops are inside of a function and return is called and I have a method called falling_goto_catcher(x)
+that catches the value that is in the list that was put there before return was called so that it can then
+trigger the behavior of the goto (which is really a fallthru) and it works.
 	
 I am finishing up the switch project to move on to other python additions that I have planned.
 The bugs that I am encountering as I reach the finish line are sometimes baffling so I am
@@ -164,12 +172,12 @@ something else.
 
 ======================================
 Update 10:25AM PST Febraury 1st, 2021
-I haven't had a day off in a while and didn't have access to electricty which slowed me down.
+I haven't had a day off in a while and didn't have access to electricity which slowed me down.
 Still in total nirvana that I can reset the switch module for each switch.
 I am still doing a lot of testing and note taking of bug behavior.
 I will also be diagramming the design structure of the structure so I can see it visually in terms of the architecture.
 	
-Added ability for a falllthru to go to case with multiple words in the name such as  case "alpine meadows": and now n number of words
+Added ability for a fallthru to go to case with multiple words in the name such as  case "alpine meadows": and now n number of words
 Working on bug triggered after first switch case.
 I only just recently added the ability for cases to have more than one word such as .. case "Starship launch next week":
 Still need to add converting each string to lowercase()
@@ -192,7 +200,7 @@ behavior of each function and a description of the super structure.
 Update 7:21pm PST  January 24th, 2021
 It works. I have two switches working. I have a few fixable bugs but it works. I don't believe it.
 Reload came thru and works. Saving me a ton of coding. So I can reload the module before each switch case.
-Thrilling.
+Thrilling. Had threes switches working in a sequence ... and then noticed a few bugs.
 
 Update 7:07 Jan 24th starting to work
 used this reload code that worked
