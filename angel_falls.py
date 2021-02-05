@@ -12,7 +12,7 @@ january 24th, 2021  8:18pm
 when using fallthru and next case is like 'alpine meadows"
 right now fallthru only works for one word 
 it only sees or looks for the first word and chops off the end like alpin
-the bug was I was only looking for teh second word which was position[1] #so this was a design bug I fixed
+the bug was I was only looking for the second word (the word just after the first word case) which was position[1] #so this was a design bug I fixed
 
 so I need to fix that. currently it can only use fallthru to a single case word like 'music'
 UPDATE: making progress can now use any number of words in a case
