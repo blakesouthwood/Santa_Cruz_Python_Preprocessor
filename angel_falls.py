@@ -1,3 +1,96 @@
+Feb 5th 2021  1 AM California Time
+================================================
+Current bugs working on switch case bug database 1.0
+
+Solved how to use macro "to" with number cases by doing a prescan of the switchcasecode input first
+and then replace "to" with "thru" since the code for using thru already works fine.
+
+
+january 24th, 2021  8:18pm
+
+
+when using fallthru and next case is like 'alpine meadows"
+right now fallthru only works for one word 
+it only sees or looks for the first word and chops off the end like alpin
+the bug was I was only looking for teh second word which was position[1] #so this was a design bug I fixed
+
+so I need to fix that. currently it can only use fallthru to a single case word like 'music'
+UPDATE: making progress can now use any number of words in a case
+still some persistent bugs of fallthru('words in here') failing with bad data
+so I'm adding some fuzzy logic to assert that the data is correctly dynamically added
+
+============================
+february 4th, 2021 thursday 
+Feature
+numbers switch works and thru works  using pumpkinfalls and yellowfish
+this is where I will test Yale constant  case FINDITNOW: 
+need to have filter to call that
+code to handle numbers turned into strings
+and look for thru macro
+
+
+in second switch it's chopping off the first letter
+of words and messing up the fallthru which
+is messed up if more than one word and
+even if just one word so bug in there.
+
+
+in newgoldfish  and firefall_yosemite  fallthru not right
+
+
+bug
+
+elif case in caselist9: # ['default']
+		print('six walking duck de fa ul t')
+		print("flying geese")
+		
+		fallthru('starter')   #bug should be break
+
+	else:
+		print('six walking duck de fa ul t')
+		print("flying geese")
+		
+		break
+		
+		        
+
+
+
+===============================
+===============================
+thursday night feb 4th, 2021
+This bug fix project is called Aristocats
+
+new_goldfish.py
+firefall_yosemite_falls.py
+
+fallthru('only works with one word')
+if it has more than one word it messes up
+and chops off from first word and fails
+
+
+it also does a fallthru("in default case")
+it actually says fallthru('starter') which is funny
+it should say 
+break
+
+it should be break and this is just above
+the  else:
+
+the second switch case fails with error message
+ doggy =starbuckslist[item] #just added -1   this is like fallthru('cherry')  #was starbucks
+IndexError: list index out of range
+
+
+
+==============
+in aristocrats experimental I'm working on a  bug fix
+for handling one word and many words
+
+I was having a bug with reading a string what was still a list
+that I just fixed.
+
+
 Update Feb 5th, 2021  12:34 AM
 I'm currently working on the filter for whether a switch is taking in numbers or words in strings.
 The main engineering for the switch case works and is stable. I'm just dealing with a small number of bugs right now
