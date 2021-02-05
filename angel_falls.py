@@ -38,14 +38,16 @@ even if just one word so bug in there.
 in newgoldfish  and firefall_yosemite  fallthru not right
 
 
-bug
+bug in generated python code just before it is executed
 
 elif case in caselist9: # ['default']
 		print('six walking duck de fa ul t')
 		print("flying geese")
 		
-		fallthru('starter')   #bug should be break
-
+		fallthru('starter')   #bug should be break since this is the default case
+                                      #will add conditional check to force feed it a "break" into list cranberries (the third main list tail)
+			              #this is supposed to be the last list item in cranberries so look at cranberries list with checks
+				      #where this last list item is being changed and use trace to pinpoint it 
 	else:
 		print('six walking duck de fa ul t')
 		print("flying geese")
@@ -59,14 +61,16 @@ elif case in caselist9: # ['default']
 ===============================
 ===============================
 thursday night feb 4th, 2021
-This bug fix project is called Aristocats
+This bug fix project is called Aristocats  this is fixing the fallthru('alpine meadows') bug and using more than one word
+And at the same time "sometimes" if there is just one word it has double quotes such as fallthru(''word'').
+An assertion and some simple fuzzy logic can detect this possibly use count(') and if more than 2 then the bug has been isolated.
 
 new_goldfish.py
 firefall_yosemite_falls.py
 
 fallthru('only works with one word')
 if it has more than one word it messes up
-and chops off from first word and fails
+and chops off from first word and fails and crashes switch
 
 
 it also does a fallthru("in default case")
@@ -77,18 +81,18 @@ break
 it should be break and this is just above
 the  else:
 
-the second switch case fails with error message
+the second switch case fails with error message: NOTE: var names will be changed soon to be more descriptive
  doggy =starbuckslist[item] #just added -1   this is like fallthru('cherry')  #was starbucks
 IndexError: list index out of range
 
 
 
-==============
+==================================
 in aristocrats experimental I'm working on a  bug fix
 for handling one word and many words
 
 I was having a bug with reading a string what was still a list
-that I just fixed.
+that I just fixed using a join. It is such a prevalent need I'm making a method to convert a list to a string to save time
 
 
 Update Feb 5th, 2021  12:34 AM
