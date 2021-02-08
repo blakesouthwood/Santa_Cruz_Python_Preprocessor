@@ -1,6 +1,7 @@
 Feb 7th 2021  8:22 PM California Time
 Simplified the logic to detect breaks and fallthrus in case sections so it's 100% accurate now.
-Fixed the fallthru generated construction bugs.
+The intial code was overly complex and 5 pages long. I reduced it to 5 lines of code.
+Fixed the fallthru generated construction bugs. This was a three week nightmare bug from hell. I rewrote it from scratch.
 None of these fixes and improvements have been uploaded as yet, but will be added soon.
 
 
