@@ -1,7 +1,7 @@
 Feb 7th 2021  8:22 PM California Time
-Simplified the logic to detect breaks and fallthrus in case secitons so it's 100% accurate now.
+Simplified the logic to detect breaks and fallthrus in case sections so it's 100% accurate now.
 Fixed the fallthru generated construction bugs.
-None of these fixes and improvements have been uploaded as yet, but soon.
+None of these fixes and improvements have been uploaded as yet, but will be added soon.
 
 
 Feb 5th 2021  1 AM California Time
