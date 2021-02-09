@@ -1,3 +1,40 @@
+February 9th, 2021  3:19 pm California time
+There isn't a replace word in a list in Python so I made one. There is already a replace method for strings.
+I needed to be able to replace a word in lists on the fly dynamically and ended up with this.
+I will likely rename it but it's in development.
+
+
+This is an important pair of methods to add words on-the-fly to a list.
+I'm working on the fallthru,break list which is part of the third tier of the parser preparing
+for the tail of the code generator.
+This will be implimented with some fuzzy logic that detects if a break is in a case
+and fills a list with "true" and if no break then "false"
+then with this 'true' and 'false' list
+I build the list with "break" and "fallthru" which moves to the next stage in the process.
+This was the stage that was buggy due to logic so I simplified the logic.
+
+new_replace_index(6,"break") 
+
+##  THIS IS TO REPLACE A WORD IN A LIST AND I AM NOT EVEN USING AN EVAL()
+#################################
+##  replace_in_list(number,word)    replace_in_list(2, 'fallthru')
+##################################
+# replace word in list by index position
+def replace_in_list(x,y,z):  # Note: this requires 3 parameters
+	z[x]= y   #listname[5] = 'word'  #this hardcodes a word change in a list directly
+	print(z)  #print(listname) #THIS IS OPTIONAL HAVING print(listname) here
+
+#  new_replace_index(x,y)  uses two variables and 
+#  hard code list name and call replace_in_list(x,y,z)
+#  this makes it possible to replace a word in the list using only two parameters and the third is done automatically
+def new_replace_index(x,y):  ###<<=========== I hardcode the list name NOT a string
+	z=fruits  #notice no quotes used as in regular ' strings' list name which is hard coded here and referenced with call below to function above
+	replace_in_list(x,y,z)   ##<<==== it calls the method above brilliant
+	#print(fruits)
+
+
+
+
 Feb 9th, 2021  2 PM California Time
 Now I am confident it's all going to work.
 
