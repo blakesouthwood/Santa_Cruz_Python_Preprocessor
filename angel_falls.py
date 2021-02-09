@@ -1,3 +1,26 @@
+Feb 9th, 2021  2PM California Time
+I reengineered how break is detected in the cases and fallthrus and missing breaks. I am quite pleased with it now.
+I reingineered how the fallthru function is dynamically filled.
+On the second pass for both of these sections of the code the second version is cleaner and more elegant and efficient.
+I'm throwing in a "do while loop" later tonight for fun. (if there is time after uplaoding the updates for the switch)
+
+While I was testing the code I was shocked to learn that breaks were being missed and fallthrus weren't set up correctly
+and weren't being dynamically generated 100% with accuracy. This has all been fixed now and rectified. 
+I am connecting the sections together for the breaks and fallthrus and creation of the switch case without bugs.
+I am against rushing good code and usually the second design is more refined and beautiful then the first design attempt.
+The reworking of the design, aka refeactoring has made a world of difference and the code should run at least five times faster too.
+I will add the time difference later.
+
+I had been working with a few sets of pairs of files and I localized it down to two files for simpicity and to reduce complexity.
+
+There is a lot that I want to add but I still need to verify that the multiple switches work
+and I will impliment the nested switches after the multiple switches are stable.
+===============================================================================================
+
+I will next merge the filter for whether words or numbers are going through the switch.
+The macro for case 1 to 10  and case 1 thru 10 now works.
+
+
 Feb 7th 2021  8:22 PM California Time
 Simplified the logic to detect breaks and fallthrus in case sections so it's 100% accurate now.
 The intial code was overly complex and 5 pages long. I reduced it to 5 lines of code.
