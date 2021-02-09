@@ -1,4 +1,6 @@
-Feb 9th, 2021  2PM California Time
+Feb 9th, 2021  2 PM California Time
+Now I am confident it's all going to work.
+
 I reengineered how break is detected in the cases and fallthrus and missing breaks. I am quite pleased with it now.
 I reingineered how the fallthru function is dynamically filled.
 On the second pass for both of these sections of the code the second version is cleaner and more elegant and efficient.
