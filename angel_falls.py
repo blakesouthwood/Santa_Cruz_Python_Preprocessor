@@ -1,5 +1,5 @@
 February 9th, 2021  3:19 pm California time
-There isn't a replace method for lists in Python so I made one. There is already a replace method for strings.
+There isn't a replace word in index method for lists in Python so I made one. There is already a replace method for strings.
 I needed to be able to replace a word in lists on the fly dynamically and ended up with this.
 I will likely rename it but it's in development.
 
