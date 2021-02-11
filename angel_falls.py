@@ -1,8 +1,8 @@
-Feb 11th, 2021  2:38 pm California time
+Thursday Feb 11th, 2021  2:38 pm California time
 
 With code that looks for a break in each case section in a loop
-I need to get the case name 
-Which is grabbed in this code inside of case_tail_list_maker(x,y)
+I need to get the case name. 
+The case name for this case section is grabbed in this code inside of case_tail_list_maker(x,y)
 
 for line in switchcasetester.splitlines(): #switch case in JS
        
