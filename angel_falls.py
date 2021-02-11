@@ -74,8 +74,10 @@ if no break in case section  then do nothing leave it as fallthru
 if fallthru in case section then do nothing leave it as fallthru
 
 if "break" in case_section:
-	#replace list location to ('break')
+	#replace  tail_list index position for this case section to 'break'# the case names are in sequential order from 1
+	# and they are referenced by number not name
 	# I get the current case name for this case section above from x which is the input parameter: which is 'snoopy'
+	# and then this returns the index number of the cases locaiton in the case section series
 	output =get_location_of_case("listoffirstcasenames",'snoopy') #example this returns 2
 	#this is fed below as input parama which then changes the 'tail_list' index position 2 with 'break'
 	do_replace(output, 'break')
@@ -83,7 +85,7 @@ else:
 	pass
 	
 	
-	
+==============================================================	
 February 9th, 2021  3:19 pm California time
 There isn't a replace word in index method for lists in Python so I made one. There is already a replace method for strings.
 I needed to be able to replace a word in lists on the fly dynamically and ended up with this.
