@@ -9,11 +9,12 @@ for line in switchcasetester.splitlines(): #switch case in JS
         #below this line the break is detected
         
         if smartcounter == x:   #x is an input parameter from the list of sets of the first case and next case line number
+	    #I know that "case" will be in this line because it comes from digital candy that already determined line numbers with case.
             print("x =",x,"and y=",y)   #which are stored in the list called digitalcandy
             print("this line =",line)
          
-            line = line.replace("case","") #remove case
-            line = line.replace(":","")    # remove :
+            line = line.replace("case","") # remove case
+            line = line.replace(":","")    # remove : chop off the end here
             the_section=line #should chop off the end
           
             print("we see for the_section ",the_section)
@@ -21,6 +22,7 @@ for line in switchcasetester.splitlines(): #switch case in JS
 	    #this gives me the case name in the_section
             
 #this method gets the index number of the case name in the list
+#the list that it is searching through is the list made up of just the first case name in each section which is used for fallthrus
 def get_location_of_case(listname,word):
     print("get location of case () called ")
     print("this is searching for ",word)
@@ -29,8 +31,8 @@ def get_location_of_case(listname,word):
 	    
             #this takes the case name as input to get the sequence index number within 
 	    #the list of first cases
-	    output =get_location_of_case("fruits",'orange')
-            print("result =",output)
+	    output =get_location_of_case("fruits",'orange')  #currently it's listname , first case name
+            print("result =",output)                         #to follow human thinking I may change it to casename, listname
 	
 	
 	then once I have the index location I will put that in as a parameter
