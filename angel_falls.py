@@ -1,3 +1,62 @@
+Feb 11th, 2021  2:38 pm California time
+
+With code that looks for a break in each case section in a loop
+I need to get the case name 
+Which is grabbed in this code inside of case_tail_list_maker(x,y)
+
+for line in switchcasetester.splitlines(): #switch case in JS
+       
+        #below this line the break is detected
+        
+        if smartcounter == x:
+            print("x =",x,"and y=",y)
+            print("this line =",line)
+         
+            line = line.replace("case","") #remove case
+            line = line.replace(":","")    # remove :
+            the_section=line #should chop off the end
+          
+            print("we see for the_section ",the_section)
+            print("")
+	    #this gives me the case name in the_section
+            
+#this method gets the index number of the case name in the list
+def get_location_of_case(listname,word):
+    print("get location of case () called ")
+    print("this is searching for ",word)
+    answer =eval("" + listname + ".index(" + "'" + word + "'" + ")")
+    return answer
+	    
+            #this takes the case name as input to get the sequence index number within 
+	    #the list of first cases
+	    output =get_location_of_case("fruits",'banana')
+            print("result =",output)
+	
+	
+	then once I have the index location I will put that in as a parameter
+	for replacing the contents of that index number in the trail list
+	which is by default filled with "fallthru"
+	so it would chnage that position with "break"
+	
+	# replace word in list by index position
+def replace_in_list(x,y,z):  
+	z[x]= y   #listname[5] = 'word'
+	print(z)  #print(listname)
+        
+#  new_replace_index(x,y)  uses two variables and 
+#  hard code list name and call replace_in_list(x,y,z)
+#########################
+##  do_replace(x,y)
+#########################
+def do_replace(x,y):  ###<<=========== I hardcode the list name NOT a string
+	z=tail_list  #list name
+	replace_in_list(x,y,z)
+	
+
+	
+	
+	
+	
 February 9th, 2021  3:19 pm California time
 There isn't a replace word in index method for lists in Python so I made one. There is already a replace method for strings.
 I needed to be able to replace a word in lists on the fly dynamically and ended up with this.
