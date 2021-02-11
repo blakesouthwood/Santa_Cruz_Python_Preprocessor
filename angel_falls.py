@@ -12,7 +12,9 @@ for line in switchcasetester.splitlines(): #switch case in JS
 	    #I know that "case" will be in this line because it comes from digital candy that already determined line numbers with case.
             print("x =",x,"and y=",y)   #which are stored in the list called digitalcandy
             print("this line =",line)
-         
+            ####################################
+	    # this is use of replace in a string
+	    ####################################
             line = line.replace("case","") # remove case
             line = line.replace(":","")    # remove : chop off the end here
             the_section=line #should chop off the end
@@ -90,7 +92,12 @@ then with this 'true' and 'false' list
 I build the list with "break" and "fallthru" which moves to the next stage in the process.
 This was the stage that was buggy due to logic so I simplified the logic.
 
+# this is replacing a word in a list at index location x;  
+# this shows the word "break" replacing  position 6 in the list [name] which is hardcoded into the method this method calls
+##############################  I still might add the third variable to have the listname here but did it this way for brevity
 new_replace_index(6,"break") 
+###############################
+
 
 ##  THIS IS TO REPLACE A WORD IN A LIST AND I AM NOT EVEN USING AN EVAL()
 #################################
@@ -105,7 +112,7 @@ def replace_in_list(x,y,z):  # Note: this requires 3 parameters
 #  hard code list name and call replace_in_list(x,y,z)
 #  this makes it possible to replace a word in the list using only two parameters and the third is done automatically
 def new_replace_index(x,y):  ###<<=========== I hardcode the list name NOT a string
-	z=fruits  #notice no quotes used as in regular ' strings' list name which is hard coded here and referenced with call below to function above
+	z=starbuckslist  #notice no quotes used as in regular ' strings' list name which is hard coded here and referenced with call below to function above
 	replace_in_list(x,y,z)   ##<<==== it calls the method above brilliant
 	#print(fruits)
 
