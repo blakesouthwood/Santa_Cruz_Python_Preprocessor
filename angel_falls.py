@@ -43,9 +43,12 @@ def get_location_of_case(listname,word):
 	# so it would chnage that position with "break"
 	
 	# replace word in list by index position
+	 #############################################
+	 # this is use of replace a word in a list .. by index position
+	 #############################################
 def replace_in_list(x,y,z):  
 	z[x]= y   #listname[5] = 'word'
-	print(z)  #print(listname)
+	print(z)  #print(listname) #for testing will remove this line
         
 #  new_replace_index(x,y)  uses two variables and 
 #  hard code list name and call replace_in_list(x,y,z)
