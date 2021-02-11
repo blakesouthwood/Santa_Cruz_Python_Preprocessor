@@ -72,11 +72,12 @@ if fallthru in case section then do nothing leave it as fallthru
 
 if "break" in case_section:
 	#replace list location to ('break')
+	# I get the current case name for this case section above from x which is the input parameter: which is 'snoopy'
 	output =get_location_of_case("listoffirstcasenames",'snoopy') #example this returns 2
 	#this is fed below as input parama which then changes the 'tail_list' index position 2 with 'break'
 	do_replace(output, 'break')
 else:
-	pass:
+	pass
 	
 	
 	
