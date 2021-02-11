@@ -37,10 +37,10 @@ def get_location_of_case(listname,word):
             print("result =",output)                         #to follow human thinking I may change it to casename, listname
 	
 	
-	then once I have the index location I will put that in as a parameter
-	for replacing the contents of that index number in the trail list
-	which is by default filled with "fallthru"
-	so it would chnage that position with "break"
+	# then once I have the index location I will put that in as a parameter
+	# for replacing the contents of that index number in the trail list
+	# which is by default filled with "fallthru"
+	# so it would chnage that position with "break"
 	
 	# replace word in list by index position
 def replace_in_list(x,y,z):  
