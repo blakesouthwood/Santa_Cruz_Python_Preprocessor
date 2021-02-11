@@ -8,8 +8,8 @@ for line in switchcasetester.splitlines(): #switch case in JS
        
         #below this line the break is detected
         
-        if smartcounter == x:
-            print("x =",x,"and y=",y)
+        if smartcounter == x:   #x is an input parameter from the list of sets of the first case and next case line number
+            print("x =",x,"and y=",y)   #which are stored in the list called digitalcandy
             print("this line =",line)
          
             line = line.replace("case","") #remove case
@@ -29,7 +29,7 @@ def get_location_of_case(listname,word):
 	    
             #this takes the case name as input to get the sequence index number within 
 	    #the list of first cases
-	    output =get_location_of_case("fruits",'banana')
+	    output =get_location_of_case("fruits",'orange')
             print("result =",output)
 	
 	
@@ -53,7 +53,23 @@ def do_replace(x,y):  ###<<=========== I hardcode the list name NOT a string
 	replace_in_list(x,y,z)
 	
 
-	
+What I did over the past few days is figure out the process and where I would add the new methods
+to build the tail_list which is used in the code generator as the last puzzle piece.
+
+The way that it works is the tail_list position 0 is "starter" and is just filler
+the length of the list is equal to the number of case sections plus adding one more case called default which makes 
+falling thru into default possible. The bug I was having was there was fallthru('starter') for default which is wrong
+and the breaks weren't working consistently and weren't in the right places in case sections. I rewrote the logic
+for detecting breaks. I reduced five pages of complex code down to five lines.
+To reduce calculations I prefill the tail list with "fallthru"
+If there is a break change "fallthru" to break
+if no break in case section  then do nothing leave it as fallthru
+if fallthru in case section then do nothing leave it as fallthru
+
+if "break" in case_section:
+	replace list location to ('break')
+else:
+	pass:
 	
 	
 	
