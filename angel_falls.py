@@ -1,3 +1,19 @@
+thursday, Feb 18th, 2021  8:22 am California Time
+	
+cleaned up some code and made some convenient methods
+do_replace_item_in_list()
+get_location_of_case()
+get_case_name()
+get_length_of_firstcase_list()
+
+# the refactoring was to simplify, stremaline, and speed up the code 
+# and reduce the code footprint with a new design for detecting breaks 
+# and assembling the fallthru function.
+# during testing I discovered that breaks were being missed
+# likley updating code here tonight since it's my day off I have time to work on this project
+
+//======================================================
+
 Thursday Feb 11th, 2021  2:38 pm California time
 
 With code that looks for a break in each case section in a loop
