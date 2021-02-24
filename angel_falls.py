@@ -15,7 +15,11 @@ Finally working again. Glad I had backups.
 I also got slowed down by fallthru not working with more than one word in a case, fixed it using a join
 
 new code:
-	
+'''
+this rips everything off the string except for the actual case name.
+the first case name is the representative for each case section no matter how many cases it may have.
+'''
+
 def get_case_name(y):  #y will be the line
     print("get_case_name called")
     #y = y.split()
@@ -25,6 +29,11 @@ def get_case_name(y):  #y will be the line
     print(y)
     return y
 
+
+'''
+this gets the case number in a sequence starting from 1 for each case section
+this uses listname.index('casestring') which is compared from the firstcaselist
+'''
 def get_location_of_case(listname,word):
     print("listname,word=",listname,word)
     print("get location of case () called ")
@@ -34,7 +43,11 @@ def get_location_of_case(listname,word):
     print("location of case",word," in listname=",answer)
     return answer
 
-
+'''
+there is no list method for replacing an index location so I made one
+it's just hardcoding listname[indexnumber] = string
+I am using two methods to make it work by just calling do_replace(number,word)
+'''
 def replace_in_list(x,y,z):  
 	z[x]= y   #listname[5] = 'word'
 	#this doesn't do print of the list afterwards
@@ -44,7 +57,11 @@ def do_replace(x,y):  ###<<=========== I hardcode the list name NOT a string
 	replace_in_list(x,y,z) 
 	
 	
-	
+'''
+this is deep inside of the parser
+get a case name and strip it down to just the word(s)
+
+'''
 print("HUGE TEST to make it work Tuesday feb 22nd")
     #this goes through the whole switch case 
     for line in switchcasetester.splitlines(): #switch case in JS
@@ -64,7 +81,11 @@ print("HUGE TEST to make it work Tuesday feb 22nd")
                 mrcase =mrcase.rstrip()
                 print(mrcase)
 		
-		
+		'''
+		when "break" is found in a line it's referenced by the counter line number in the switchcase string
+		and then the genius is I grab the casename from above that was found in the first line which is equal to x
+		with x, y in each sublist inside of the list digitalcandy for each case section parameters 
+		'''
 		
 		if "break" in line:
                 print("===== gold ======")
@@ -78,13 +99,26 @@ print("HUGE TEST to make it work Tuesday feb 22nd")
 # and after I detect breaks I put them into a list
 # and then based on their position surmised from their index location in palmtrees(firstcaselist)
 # I replace the location of the breaks in the list of fallthrus
-
+'''
+this is where the index location of the current case is located in the firstcaselist(palmtrees)
+then after getting the index number I insert it into roadrunner list which just holds index numbers
+from the firstcaselist of where a break resides(lives)
+'''
 	################################################
 	for item in wilecoyote: #goes through list of case sections with breaks
 		toad = get_location_of_case("palmtrees",str(item))
 		roadrunner.append(toad) #this returns a number the index position
 	print("ROADRUNNER list contains numbers of index locations of cases in palmtrees",roadrunner)
 #################################################
+
+'''
+instead of juggling with both breaks and fallthrus 
+I chanced on the idea of prefilling the whole list with fallthrus 
+and only add breaks if there are any. Bear in mind that no break (an absence of a beak) means fallthru
+and explicit fallthru or fallthrough means a fallthru. But I just wanted to detect breaks.
+This fills up a list called british  with just fallthrus 
+
+'''
 	# make a new list based on digitalcandy
 	for item in range(0,len(digitalcandy)): #using this for length of case sections sequence
 		#filling list with fallthrus
@@ -100,6 +134,16 @@ print("HUGE TEST to make it work Tuesday feb 22nd")
 	##################################################
 	#this is walking thru the british list and replacing fallthru with break where there was a break in a case
 	    #the bug is here 
+	'''
+	I loop through digitalcandy which has the dimensions of the switch case with x,y for each sublist of
+	where (line number) a case starts and the next case SECTION starts to designate case section structure.
+	if the counter (mycounter) is IN roadrunner (which contains the index numbers that we pretranslated from the case names)
+	then the method do_replace is called then the current counternumber is input for the method and break is 
+	put into the location of the british list which is used to build the break/fallthru list.
+	It's a terribly economic, elegant, simple and beautiful solution  that replaced and overly complicated previous solution
+	and it works which is an added bonus.
+	
+	'''
 	mycounter=0
 	for item in range(0,len(digitalcandy)):  #adding a case to it default
 		if mycounter in roadrunner:
@@ -110,6 +154,11 @@ print("HUGE TEST to make it work Tuesday feb 22nd")
 			
 	print("============================")
 	print("british is ",british) #break and fallthru list
+	'''
+	position 0 is changed to starter
+	position n (last position) MUST be break because it's the default case in the python version 
+	
+	'''
 	british[0] = "starter"
 	british[-1] = "break" #makes sure last one is break which is absolutely must be. 
 	print("british now =",british)
