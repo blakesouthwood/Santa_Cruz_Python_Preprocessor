@@ -1,3 +1,128 @@
+Tuesday, Feb 23, 2021
+Implimented the smart break fuzzy logic detector so it's faster and actually works.
+Found new bug (simple to solve) it won't work unless there is a break after default when scanning in parser.
+I enjoy the discovery process of the funcitons transformed from thought to running code.
+Always interesting what it takes to make it work. 
+
+For the switch case to meet with the criteria in the initial design of 
+a switch case in C for this python implimentation it requires a default:
+I finally got some momentum after getting stuck with the redesign of 
+detecting breaks.
+
+I had so much momentum and then when doing further testing I noticed that it was missing breaks. 
+Finally working again. Glad I had backups.
+
+I also got slowed down by fallthru not working with more than one word in a case, fixed it using a join
+
+new code:
+	
+def get_case_name(y):  #y will be the line
+    print("get_case_name called")
+    #y = y.split()
+    y = y.replace(":","")
+    y = y.replace("case","") #remove case
+    y = y.replace("\t","")    # remove :
+    print(y)
+    return y
+
+def get_location_of_case(listname,word):
+    print("listname,word=",listname,word)
+    print("get location of case () called ")
+    print("this is searching for ",word)  #below took out  + "'" + both sides of word
+    answer =eval("" + listname + ".index("  + word + ")")
+    print('====after running get_location_of_case we get this== should be a number==')
+    print("location of case",word," in listname=",answer)
+    return answer
+
+
+def replace_in_list(x,y,z):  
+	z[x]= y   #listname[5] = 'word'
+	#this doesn't do print of the list afterwards
+
+def do_replace(x,y):  ###<<=========== I hardcode the list name NOT a string
+	z=british  #list name for breaks and fallthrus final
+	replace_in_list(x,y,z) 
+	
+	
+	
+print("HUGE TEST to make it work Tuesday feb 22nd")
+    #this goes through the whole switch case 
+    for line in switchcasetester.splitlines(): #switch case in JS
+        #print("smartcounter =",smartcounter)
+        #print("======= TESTING THIS  ========")
+        #print("x =",x,"and y=",y)
+        if smartcounter >= x and smartcounter <= y:
+       #this is the range I want to print
+            ####################################
+            if smartcounter == x: #case line
+                print("GET CASE NAME")
+                mrcase =get_case_name(line);  #calling method here 
+                print("just here got the_section",mrcase)
+                print(mrcase)
+                
+                mrcase =mrcase.lstrip() 
+                mrcase =mrcase.rstrip()
+                print(mrcase)
+		
+		
+		
+		if "break" in line:
+                print("===== gold ======")
+                print("we found a break line number =",x,y,smartcounter)
+                
+                wilecoyote.append(mrcase) # first case number in digitalcandy
+                #I will put the case name instead of x
+		
+# some more code that fills list called british(for now) with fallthrus
+# the way this works is I only look for break otherwise it's already fallthru
+# and after I detect breaks I put them into a list
+# and then based on their position surmised from their index location in palmtrees(firstcaselist)
+# I replace the location of the breaks in the list of fallthrus
+
+	################################################
+	for item in wilecoyote: #goes through list of case sections with breaks
+		toad = get_location_of_case("palmtrees",str(item))
+		roadrunner.append(toad) #this returns a number the index position
+	print("ROADRUNNER list contains numbers of index locations of cases in palmtrees",roadrunner)
+#################################################
+	# make a new list based on digitalcandy
+	for item in range(0,len(digitalcandy)): #using this for length of case sections sequence
+		#filling list with fallthrus
+		british.append("fallthru")
+	british.append("break") #adds one more to list since default is extra case
+	
+	print("========== british list ======")
+	print("british filler list =",british)
+	#british[0] = "starter" #this is position 0 filler
+	#british[-1] = "break" #last one must be break for default case
+	print("========== british list ======")
+	print("british list =",british)
+	##################################################
+	#this is walking thru the british list and replacing fallthru with break where there was a break in a case
+	    #the bug is here 
+	mycounter=0
+	for item in range(0,len(digitalcandy)):  #adding a case to it default
+		if mycounter in roadrunner:
+			do_replace(int(item),"break")## do_replace(1, 'break')
+			mycounter += 1
+		else:
+			mycounter += 1
+			
+	print("============================")
+	print("british is ",british) #break and fallthru list
+	british[0] = "starter"
+	british[-1] = "break" #makes sure last one is break which is absolutely must be. 
+	print("british now =",british)
+	
+	print("now for british list of fallthus and breaks we have ",british)
+	########################################################
+	british[0] = "starter"
+	british[-1] = "break" #just to be sure 
+	print("british=",british)
+	
+	
+	
+
 thursday, Feb 18th, 2021  8:22 am California Time
 	
 cleaned up some code and made some convenient methods
