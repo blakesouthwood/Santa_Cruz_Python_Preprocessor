@@ -160,7 +160,7 @@ This fills up a list called british  with just fallthrus
 	
 	'''
 	british[0] = "starter"
-	british[-1] = "break" #makes sure last one is break which is absolutely must be. 
+	british[-1] = "break" #makes sure last one is a break absolutely. 
 	print("british now =",british)
 	
 	print("now for british list of fallthus and breaks we have ",british)
