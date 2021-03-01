@@ -15,6 +15,16 @@ of it to make it more efficient and more readable so it's comprehensible. I am c
 what was clearly flawed. The thought that millions and perhaps billions of coders will use these improvements for python is quite a rush.
 But for me coding and melding C, JavaScript, and Lisp into Python just seems more natural and the way that it should be. 
 
+I have absolutely no problem with braces after dealing with lame indentation. The IDEs I use are to see the indentation. It's stupid.
+I think that the forced indentaiton is a massive weakness in Python and freeing programmers from having to think in invisible white spaces
+and instead use tried and true braces is now an option that they can enjoy and revel in. Braces are tangible and visible and 
+they make complete sense and they have been time tested. Further if someone copies and pastes so code that they already wrote
+in C or JavaScript into what I refer to as the envelope plastic window parser and codegen to reuse (already working code) then
+more the better. This adds incredibly more flexibility to Python too and this way programmers don't waste time translating
+from one langue to the other when it can be done automatically.  I feel that what I am doing is liberating Python from its chains
+and liberating programmers so they can write more code and writer it faster and enjoy coding more - I know I am feeling better with
+these new revolutionary liberties. 
+
 let result = '';
 let i = 0;
 
