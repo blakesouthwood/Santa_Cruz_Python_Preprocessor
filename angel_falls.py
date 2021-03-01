@@ -8,7 +8,7 @@ of glaring omissions of language aspects that Python dearly needs I decided to a
 are coming from JavaScript and C and C++ will can think and write code the way that they want to and how they think.
 Every time I hear or read an article where some developer says "oh Python can't do this this or that I feel sick to my stomach."
 The issue is the designer of the langauge was not American and I am enjoying Americanizing Python or rather making python more Californian.
-My biggest bripe other than the indentation straightjacket is the glaring missing switch case which is now a working reality.
+My biggest gripe other than the indentation straightjacket is the glaring missing switch case which is now a working reality.
 
 Once the codebase is stable for the switch case I will upload it when I'm happier with it. Still need to document parts and I decided to refactor parts
 of it to make it more efficient and more readable so it's comprehensible. I am currently fixing the last bugs and finished reengineering
