@@ -1,4 +1,5 @@
-Monday, March 1st, 2021
+Monday, March 1st, 2021  7am Calfiornia Time Listening to Daf Punk today.
+
 Adding do while from Mozilla JavaScript today. Will have braces and also throwing in macro for doing ++ and -- from JavaScript/C
 It will have it's own parser and generator and work just like the switch case as a long variable docstring.
 Braces mandatory and semicolons are optional. Indentaiton for output will be automatic.
