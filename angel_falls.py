@@ -1,5 +1,20 @@
 Monday, March 1st, 2021
-Adding do while from JavaScript today. Will have braces and also throwing in macro for doing ++ and -- from JavaScript/C
+Adding do while from Mozilla JavaScript today. Will have braces and also throwing in macro for doing ++ and -- from JavaScript/C
+It will have it's own parser ang generator and work just like the switch case as a long veriable docstring.
+Braces mandatory and semicolons are optional. Indentaiton for output will be automatic.
+
+let result = '';
+let i = 0;
+
+do {
+  i = i + 1;
+  result = result + i;
+} while (i < 5);
+print(result);
+#// expected result: "12345"
+
+	
+
 
 Decided to finally impliment hash table dictionary version of python switch case
 so I will modify the codegen for if elif else structure for a verison that does dictionaries.
