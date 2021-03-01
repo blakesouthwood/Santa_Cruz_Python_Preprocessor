@@ -24,7 +24,10 @@ or
 #use dictionaries
 
 Will finish implimenting more efficient and elegant design for break fallthru construction adding methods
-to aid performance, reuse, and readability.
+to aid performance, reuse, and readability. Already designed it and nearly done impimenting it. Reduced
+the code for it by more than 95%. It's more intelligently designed now and much cleaner. Pure zen. 
+Solved fallthru bug to work with more than one word for case; now works for n words.
+Solved wrong break location bug. Solved proper fallthru construction bug.
 
 This will happen over the course of the day.
 Will be doing testing today.
