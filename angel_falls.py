@@ -1,3 +1,22 @@
+Monday, March 1st, 2021
+Adding do while from JavaScript today. Will have braces and also throwing in macro for doing ++ and -- from JavaScript/C
+
+Decided to finally impliment hash table dictionary version of python switch case
+so I will modify the codegen for if elif else structure for a verison that does dictionaries.
+
+Will finish implimenting more efficient and elegant design for break fallthru construction adding methods
+to aid performance, reuse, and readability.
+
+This will happen over the course of the day.
+Will be doing testing today.
+Getting paid version of Sublime Text (which I miss badly) on Thursday to increase my progress since BBEdit
+isn't the end all that I hoped it would be but is great for doing diff but I miss the indentation lines
+and look and feel of Sublime which locked me out because I haven't paid for it yet, but will on Thursday (payday).
+
+
+
+
+
 Tuesday, Feb 23, 2021
 Implimented the smart break fuzzy logic detector so it's faster and actually works.
 Found new bug (simple to solve) it won't work unless there is a break after default when scanning in parser.
