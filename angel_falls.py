@@ -3,6 +3,10 @@ Adding do while from JavaScript today. Will have braces and also throwing in mac
 
 Decided to finally impliment hash table dictionary version of python switch case
 so I will modify the codegen for if elif else structure for a verison that does dictionaries.
+#the switch will be in the code at the top with a comment
+#use ifs
+or
+#use dictionaries
 
 Will finish implimenting more efficient and elegant design for break fallthru construction adding methods
 to aid performance, reuse, and readability.
