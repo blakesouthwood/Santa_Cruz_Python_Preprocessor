@@ -1,4 +1,4 @@
-Monday, March 1st, 2021  7am California Time Listening to Daf Punk today and Eye in the Sky.
+Monday, March 1st, 2021  7am California Time Listening to Daft Punk today and Eye in the Sky.
 
 Adding do while from Mozilla JavaScript today. Will have braces and also throwing in macro for doing ++ and -- from JavaScript/C
 It will have it's own parser and generator and work just like the switch case as a long variable docstring.
