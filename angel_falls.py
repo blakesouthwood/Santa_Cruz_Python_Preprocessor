@@ -2,16 +2,18 @@ Monday, March 1st, 2021  7am California Time Listening to Daf Punk today and Eye
 
 Adding do while from Mozilla JavaScript today. Will have braces and also throwing in macro for doing ++ and -- from JavaScript/C
 It will have it's own parser and generator and work just like the switch case as a long variable docstring.
-Braces mandatory and semicolons are optional. Indentaiton for output will be automatic.
+Braces mandatory and semicolons are optional. Forced rediculous indentation for output will be automatic so you don't waste time indenting.
 #from Mozilla example in JavaScript for do while. The switch case was a dream and then when I learned
 of glaring omissions of language aspects that Python dearly needs I decided to add them so that progrmamers that
 are coming from JavaScript and C and C++ will can think and write code the way that they want to and how they think.
-Everytime I hear or read and article where some developer says "oh Python can't do this this or that I feel sick in my stomach."
+Every time I hear or read an article where some developer says "oh Python can't do this this or that I feel sick to my stomach."
 The issue is the designer of the langauge was not American and I am enjoying Americanizing Python or rather making python more Californian.
+My biggest bripe other than the indentation straightjacket is the glaring missing switch case which is now a working reality.
 
-Once the codebase is stable I will upload it when I'm happier with it. Still need to document parts and I decided to refactor parts
+Once the codebase is stable for the switch case I will upload it when I'm happier with it. Still need to document parts and I decided to refactor parts
 of it to make it more efficient and more readable so it's comprehensible. I am currently fixing the last bugs and finished reengineering
-what was clearly flawed. 
+what was clearly flawed. The thought that millions and perhaps billions of coders will use these improvements for python is quite a rush.
+But for me coding and melding C, JavaScript, and Lisp into Python just seems more natural and the way that it should be. 
 
 let result = '';
 let i = 0;
