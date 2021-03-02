@@ -1,3 +1,23 @@
+Tuesday, March 2nd, 2021 9:56 AM
+Indentation errors(bugs) due to missing or misaligned INVISIBLE tabs in Python are bullshit.
+I am adding braces this week. I shouldn't have to waste time thinking in terms of spaces and tabs when
+I want to concentrate ON THE CODE AND THE BOOLEAN LOGIC and not tab, tab, tab, tab, whoopse missed a tab, my life stops,
+my train of thought is interuppted. So tabs will be done with smart tab logic using braces for scopoe like
+in C, JavaScript, C++, Java, etc, etc, etc.
+
+Working on bug squashing today. Notably if missing break in default case the parser crashes (funny). Testing solution now.
+Adding filter for detecting if a switch case is using cases with numbers like case 44:  or string words case "apple pie":
+After rereading Tony Hoare's Turing Lecture decided to work and update the project in phases with frequent releases
+so I can have verified bonified progress and showing my code.
+
+end of line.
+
+
+
+
+
+
+
 Monday, March 1st, 2021  7am California Time Listening to Daft Punk today and Eye in the Sky.
 
 Adding do while from Mozilla JavaScript today. Will have braces and also throwing in macro for doing ++ and -- from JavaScript/C
