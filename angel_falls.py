@@ -1,9 +1,15 @@
-Tuesday, March 2nd, 2021 9:56 AM
+Tuesday, March 2nd, 2021   9:56 AM   California Time
+	
 Indentation errors(bugs) due to missing or misaligned INVISIBLE tabs in Python are bullshit.
-I am adding braces this week. I shouldn't have to waste time thinking in terms of spaces and tabs when
+95% of my bugs are missing tabs messing up the invisible scope.
+
+I am adding braces { this week} . I shouldn't have to waste time thinking in terms of spaces and tabs when
 I want to concentrate ON THE CODE AND THE BOOLEAN LOGIC and not tab, tab, tab, tab, whoopse missed a tab, my life stops,
 my train of thought is interuppted. So tabs will be done with smart tab logic using braces for scopoe like
 in C, JavaScript, C++, Java, etc, etc, etc.
+
+But wait Python doesn't understand braces except for dictionaries and fstrings. Of course it doesn't. It's just for the gui interface
+parser and then lovely sprinking tabs will be inserted using lovely fuzzy-logic to the generated pristine Python code.
 
 Working on bug squashing today. Notably if missing break in default case the parser crashes (funny). Testing solution now.
 Adding filter for detecting if a switch case is using cases with numbers like case 44:  or string words case "apple pie":
