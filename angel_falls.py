@@ -1,6 +1,6 @@
 Tuesday, March 2nd, 2021   9:56 AM   California Time
 	
-Indentation errors(bugs) due to missing or misaligned INVISIBLE tabs in Python are bullshit.
+Indentation errors(bugs) due to missing or misaligned INVISIBLE tabs in Python are balony.
 95% of my bugs are missing tabs messing up the invisible scope.
 
 I am adding braces { this week} . I shouldn't have to waste time thinking in terms of spaces and tabs when
