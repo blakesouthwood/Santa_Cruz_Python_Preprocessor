@@ -1,3 +1,16 @@
+Thursday, March 4th,2021
+Out of the blue companies started contacting me to interview.
+6 AM California Time
+
+Worked on code to add break into default since a legal switch case works with no breaks in C which is the design
+but the parser requires a break in default. So working on that impimentation currently.
+
+Making filter for using case "words": and case 4: // right now they are separate
+
+Working on bugs.
+
+
+
 Tuesday, March 2nd, 2021   9:56 AM   California Time
 	
 Indentation errors(bugs) due to missing or misaligned INVISIBLE tabs in Python are balony.
