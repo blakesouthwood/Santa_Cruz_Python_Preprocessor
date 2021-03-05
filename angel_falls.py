@@ -1,3 +1,75 @@
+Thursday, March 4th 2021  8:36 PM
+buggy function currently working on debugging
+
+#start_trigger()
+
+######################################
+default_location=''
+def get_default_location(): #line number location of the word default
+	print("=============get default location called =================")
+	mytrace('get_default_location')
+	counter =0
+	for line in switchcasetester.splitlines():
+		if "default" in line:
+			default_location = counter
+			break
+		else:
+			counter += 1
+			continue
+	return default_location
+##############################################
+##	add_break_to_bottom_of_default():
+##################################################
+lovely=''
+def add_break_to_bottom_of_default():   #this currently doesn't run yet 
+	print("just called ADD_BREAK_TO_BOTTOM_OF_DEFAULT()")
+	lovely = switchcasetester #the whole switch case string
+	x = lovely.count('break')
+	print("there are ",x ,"breaks in the switch case")
+	#test if break after default line
+	print('start phase 1 ....')
+	
+	counter =get_default_location() #the line number
+	print("counter starting value of default is",counter)
+	findbreak = False #by default unknown at this point if a break after default
+	print("findbreak=",findbreak)
+	print('start phase 2 ....')
+	
+	for line in switchcasetester.splitlines():
+		print('counter=',counter)
+		if "break" in line:
+			break_location = counter
+			findbreak = True
+			print('findbreak =',findbreak)
+			break
+		else:
+			counter += 1
+			continue
+	print('start phase 3 ....')		
+	
+	print("this is after the loop has gone through looking for break after default line")		
+	if findbreak == True:
+		print("do nothing break exists after default")
+		print("it will be interesting if this is true, but I can test it")
+		print("the number of breaks found in the switchcasetester was",x)
+		print("let's look in switchasetester and see for ourselves.")
+		print(switchcasetester)
+	else:
+		print("break is false and need to add it")
+		print("switchcasetester starting =")
+		print(switchcasetester)#have to add break with tabs before it
+		peach=switchcasetester.replace("}","			break \
+			\n}")
+		switchcasetester=''
+		switchcasetester = peach
+		print("after adding beak beneath default we have ")
+		print(switchcasetester)
+		print("end of BIG TEST for break in default addition")	
+	return break_location
+	
+	
+	//===============================
+
 Thursday, March 4th,2021
 Out of the blue companies started contacting me to interview.
 6 AM California Time
