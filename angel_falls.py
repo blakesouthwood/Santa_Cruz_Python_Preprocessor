@@ -4,7 +4,7 @@ I will then add separate modules that are addon modules to manage the complexity
 be imported from the switch case module to organize and manage the growing complexity of this beast of a program.
 Look for updates tonight.
 
-Solved some bad assumptions I made for the logic and possible senarios  for breaks and fallthroughs and default.
+Solved some bad assumptions I made for the logic and possible scenarios  for breaks and fallthroughs and default.
 I assumed there would be a default and there actually might not be a default.
 I assumed that there would be at least one break inside of a switch case and there could be none. I was being presumptious. 
 I had to reengineer my code to deal with these presumptions I made of what to expect from the user about what was out of the realm
