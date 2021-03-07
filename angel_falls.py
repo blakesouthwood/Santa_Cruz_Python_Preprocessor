@@ -4,13 +4,16 @@ I will then add separate modules that are addon modules to manage the complexity
 be imported from the switch case module to organize and manage the growing complexity of this beast of a program.
 Look for updates tonight.
 
-Solved some bad assumptions I made for breaks and fallthroughs and default.
-I assumed there would be a default and there might not be.
-I assumed that there would be at least one break inside of a switch case and there could be none.
-I had to reengineer my code to deal with these presumptions I made of what to expect from the user.
-I was happy that I realized that I needed to consider all possible scenarios. 
+Solved some bad assumptions I made for the logic and possible senarios  for breaks and fallthroughs and default.
+I assumed there would be a default and there actually might not be a default.
+I assumed that there would be at least one break inside of a switch case and there could be none. I was being presumptious. 
+I had to reengineer my code to deal with these presumptions I made of what to expect from the user about what was out of the realm
+of possibility to handle all what-if situations to guard against the failure of the switch case working as intended and expected.
+I was happy that I realized that I needed to consider all possible scenarios. Of course this all happened by accident.
+All of these changes were triggered by breaks being missed which was pure happy chance. 
 
-	
+More importantly the codebase has grown and to manage the complexity this morning I decided
+to divide and conquor and create separate modules for the features to more easily control the codebase.
 	
 	
 	Thursday, March 4th 2021  8:36 PM
