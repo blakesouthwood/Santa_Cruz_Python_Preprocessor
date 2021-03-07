@@ -1,4 +1,13 @@
-Thursday, March 4th 2021  8:36 PM
+Sunday, March 7th, 2021  10:34 am  California time
+Taking approach of updating the program in phases and putting stable vanilla switch case code up tonight.
+I will then add separate modules that are addon modules to manage the complexity that will
+be imported from the switch case module to organize and manage the growing complexity of this beast of a program.
+Look for updates tonight.
+
+	
+	
+	
+	Thursday, March 4th 2021  8:36 PM
 buggy function currently working on debugging
 
 #start_trigger()
