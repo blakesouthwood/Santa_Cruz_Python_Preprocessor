@@ -2,14 +2,17 @@
 import switch_config  #what do these two imports mean and do?????
 import switch_subfile
 
+import sw_module_extra
+#also do this for reset below
+
 digitalcandy=[]
 ######################### reset()  the module ##########
 ####### this makes it possible to call multiple switch cases that start out empty
 ######################################
 def reset():
     import importlib
-    import firefall_yosemite_falls
-    importlib.reload(firefall_yosemite_falls)
+    import march_4_21_firefall_yosemite_falls   #add to add new front of filename
+    importlib.reload(march_4_21_firefall_yosemite_falls)  #and add it here too
 
 def change_list(zoo):
     #print("change_list() calleed")
@@ -36,6 +39,8 @@ def get_case_name(y):  #y will be the line
     y = y.replace("\t","")    # remove :
     print(y)
     return y
+    
+    
     
     ############################
     ### get_location_of_case()
@@ -183,8 +188,12 @@ def resetting_up_case_body():
 ####################################################################
 ## get length of string()
 mrdefault = 0
+#this gets the line number of default (there must be a default)
+#this also gets the length of the switchasetester string
 def get_length_of_string():  #this only works if there is a default
-	print("get length of string called =============== door number 1 ")
+	mytrace('get_length_of_string()')
+	print("######## get_length_of_string() called")
+	print("get length of string() called ====== ")
 	counter =0
 	for line in switchcasetester.splitlines():
 		if "default" in line:
@@ -194,7 +203,29 @@ def get_length_of_string():  #this only works if there is a default
 		else:
 			pass
 		counter += 1
+		
+	#count backwards thru loop to get first break
+		
 	print("length of the string =",counter)
+	the_counter=mrdefault
+	print("we are starting to count from ",the_counter)
+	solution ="false"
+	for line in switchcasetester.splitlines():
+		if "break" in line:
+			print('yes break after default')
+			solution="true"
+			break
+	
+		else:
+			the_counter += 1
+	
+	
+	if solution == "true":
+		print("break after default")
+	else:
+		print("add the break at end")
+	
+
 	#the_last_line = counter
 	#the length of the string of switchcasetester is returned here 
 	return counter;  #it returns the length of the string in counter.
@@ -207,6 +238,8 @@ thebreak = False  #by default setting
 ##  wise_owl()  adds break to default case
 ############################################
 def wise_owl(t):
+	mytrace('wise_owl()')
+	print("##### wise_owl() called with",t)
 	print("WISE OWL CALLED with ",t)
 	print("wise owl() called to add break to default case if it is missing ====== door number 3")
 	print("wise_owl input t =",t)
@@ -215,6 +248,7 @@ def wise_owl(t):
 	else:
 		print("it's obviously FALSE so add break to switchcasetesterstring")
 		print('no break detected so adding break at bottom of default')
+		global switchcasetester
 		print("switchcasetester=",switchcasetester)
 		################################################################
 		#### THIS IS WHERE WE ADD A  BREAK AFTER DEFAULT IF ITS MISSING  ####### 
@@ -242,10 +276,17 @@ def wise_owl(t):
 ## so this tests that in default(is there a break and if not simply add a break
 
 def testing_if_break_in_default_tail(): #assumes that there is a default!!!!!
-	print("testing if break in default tail() called============== door number 2 ===")
+	mytrace('testing_if_break_in_default_tail()')
+	print("######## testing_if_break_in_default_tail() called############")
+	print("testing if break in default tail() called=====DOOR NUMBER 2 ===")
+	global mrdefault #I was missing this
+	print("mrdefault =",mrdefault)
+	#get_last_break_in_string()
 	#look at this carefully it starts the smartcounter with the line of default 
 	smartcounter = int(mrdefault) #the starting point   #the default line number retrieved before this
+	print("for smartcounter starting we have ",smartcounter)
 	thebreak = False #default setting boolean
+	global switchcasetester
 	for line in switchcasetester.splitlines():
 		if "break" in line:
 			thebreak = True
@@ -254,8 +295,24 @@ def testing_if_break_in_default_tail(): #assumes that there is a default!!!!!
 			pass
 			smartcounter += 1
 	print("thebreak=",thebreak) #this returns True in thebreak if there is a break in default
-	wise_owl(thebreak) #would be wise_owl(True) #adds break to default case if it is missing break
-	return thebreak  #would return True  or   False
+	print("new roller coaster testing if break missing after default and ")
+	print("now add the break at bottom of default ")
+	if thebreak == False:
+		print("add break to bottom of default case now right here")
+		#global switchcasetester
+		print("switchcasetester=",switchcasetester)
+		################################################################
+		#### THIS IS WHERE WE ADD A  BREAK AFTER DEFAULT IF ITS MISSING  ####### 
+		#######################################################################
+		staypuff=switchcasetester.replace("}","			break \
+			\n}")
+		switchcasetester=''
+		switchcasetester = staypuff
+		print("=====after adding break to bottom of default we have====== ")
+		print(switchcasetester)
+	
+	#wise_owl(thebreak) #would be wise_owl(True) #adds break to default case if it is missing break
+	#return thebreak  #would return True  or   False
     
 
 #switchcasetester=''
@@ -349,6 +406,7 @@ global sw
 
 #testing accessing switchcase from file goldfish
 def mountain2(c):
+	mytrace('mountain2()')
 	print("===mountain 2called===playing with switch case ")
 	var2[0]= c
 	global weasel
@@ -524,13 +582,18 @@ def get_default_location(): #line number location of the word default
 		else:
 			counter += 1
 			continue
+	print("the default location line number =",default_location)
 	return default_location
+	
+	
 ##############################################
 ##	add_break_to_bottom_of_default():
 ##################################################
 lovely=''
 def add_break_to_bottom_of_default():
-	print("just called ADD_BREAK_TO_BOTTOM_OF_DEFAULT()")
+	mytrace('add_break_to_bottom_of_default()')
+	global switchcasetester
+	print("=========just called ADD_BREAK_TO_BOTTOM_OF_DEFAULT()=========")
 	lovely = switchcasetester #the whole switch case string
 	x = lovely.count('break')
 	print("there are ",x ,"breaks in the switch case")
@@ -554,15 +617,17 @@ def add_break_to_bottom_of_default():
 			counter += 1
 			continue
 	print('start phase 3 ....')		
-	
+	print("the value of findbreak =",findbreak)
 	print("this is after the loop has gone through looking for break after default line")		
 	if findbreak == True:
+		print("findbreak = True so do nothing break exists after default")
 		print("do nothing break exists after default")
 		print("it will be interesting if this is true, but I can test it")
 		print("the number of breaks found in the switchcasetester was",x)
 		print("let's look in switchasetester and see for ourselves.")
 		print(switchcasetester)
 	else:
+		print("if at this point then break after default is False")
 		print("break is false and need to add it")
 		print("switchcasetester starting =")
 		print(switchcasetester)#have to add break with tabs before it
@@ -573,7 +638,7 @@ def add_break_to_bottom_of_default():
 		print("after adding beak beneath default we have ")
 		print(switchcasetester)
 		print("end of BIG TEST for break in default addition")	
-	return break_location
+	#return break_location   (maybe we don't need this)
 	
     
 		
@@ -587,18 +652,84 @@ def add_break_to_bottom_of_default():
 
 #########=============== get last break in string ==================
 listofbreaks=[]
+genius=''
+nobreaks = "false"
 def get_last_break_in_string(): #but what if no break??? march 1st bad assumption here
-	print("==============find last break in string============")
-	mytrace('find_last_break')
+	print("======BLINK182========get last break in string in the whole switch case string ============")
+	mytrace('get_last_break_in_string()')
 	counter=0
+	global switchcasetester
+	#test this right here and now
+	print("### @@@@@ simple test looking for any break in switch case string switchcasetester")
+	#if "break" in switchcasetester:
+	#	print("yes there is a break")
+	#	
+	#lse: #this means there are no breaks in the switchcase string
+	#	listofbreaks.append("0")  ## this is new 
+	#	print("no break in switch case")
+	
+	print("starting loop looking for breaks in switch case")
 	for line in switchcasetester.splitlines():
 		if "break" in line:
 			listofbreaks.append(counter)
+			nobreaks = "false"	
 			counter +=1
 		else:
 			counter += 1
 			continue
-	baby = listofbreaks[-1] #the last one
+		###=============
+	print(switchcasetester)
+	print("testing length of listofbreaks list")
+	print("if no breaks in switch case then add a break after default now")
+	if len(listofbreaks) == 0:
+		print("list of breaks is empty")
+		print("therefore there is no break in entire string ")
+		print("this means no break in default")
+		print("adding break at bottom of default case now")
+		#global switchcasetester
+		#this immediatley adds break after default
+		courage=switchcasetester.replace("}","			break \
+			\n}")
+		switchcasetester=''
+		switchcasetester = courage
+		print("we now have ((look for the new break in default")
+		print(switchcasetester)
+		#################### looks for location of break in default
+		newcounter =0
+		print("starting loop looking for breaks in switch case")
+		for line in switchcasetester.splitlines():
+			if "break" in line:
+				listofbreaks.append(counter)
+				nobreaks = "false"	
+				newcounter +=1
+			else:
+				newcounter += 1
+				continue
+			
+	else:
+		print("the list of breaks has",len(listofbreaks), " elements")
+	#idea if no breaks add one
+	genius = listofbreaks[-1]  #last break number
+	print("genius is the last break line number =",genius)
+	
+	if counter == 0: #means no breaks in string of switchcasetester
+		print("there aren't any breaks in the switch case")
+		nobreaks = "true"
+		print("nobreaks = true")
+	else: #counter greater than 0
+		nobreaks = "false"
+		print("nobreaks = false")
+		pass
+
+	print("lets see the list of breaks full list",listofbreaks)
+	print("the length of hits of lines with break so the length is ",len(listofbreaks))
+	print("the number of breaks = ",counter," if none then nobreaks = ",nobreaks)
+	if len(listofbreaks) >= 1:
+		baby = listofbreaks[-1] #the last one
+		print("the last break line number is ", baby)
+	else:
+		print("the number of breaks in the string is None",0)
+		
 	return baby #which is a string
 	
 	
@@ -628,26 +759,73 @@ last_line_of_string=0 #initializes it
 # so before convertind default to case default I need to count breaks from default down
 # and if there isn't one in default add a break
 
+
+
 ##################################
 ###  convert  default  case '':
+mrlastbreak=''
+lastbreak=''
 ###################################
 def convert_default_case(): #I got this working November 26th, 2020
 ######################################
-	add_break_to_bottom_of_default()  ##march 3rd, 2021
+	print("convert_default_case()  ===&&&&&-- CALLED Motel 6 test night")
+	#add_break_to_bottom_of_default()  ##march 3rd, 2021
 	mytrace('convert_default_case')
 	#print("===========convert default case called ===========")
 	############################################################
 	get_default= get_default_location()
+	print("=== GhostBusters===")
+	print("get_default line number=",get_default) #line number of default
+	print("lets see the LIST OF BREAKS  full list",listofbreaks)
+	
+	
+	#reverse the list
+	#print("trying to reverse this sucker")
+	#listofbreaks.reverse()
+	#print(listofbreaks)
+
+	
+	 
+	#print("the last break would be ",listofbreaks[-1])
+	if len(listofbreaks) == 0:  #maybe it will be None
+		print("no breaks in the whole switch case string")
+	else:
+		pass
+	
 	last_break=get_last_break_in_string() #what if it returns None???
 	#this is new march 1st 2021 starbucks coding in earlying
 	last_line_of_string = get_length_of_string()
+	print("the last line of string =",last_line_of_string)
+	print("NOW I HAVE ALL THAT I NEED TO GET THIS TO WORK CORRECTLY TONIGHT!!!!")
+	print("=====GhostBusters ===")
+	
 	print("WHAT DOES THIS NUMBER SAY===========........>>>>>>?")
-	print("last line number =",last_line_of_string)
+	print("======GhostBusters ==============")
+	print("get_default=",get_default) #line number of default
+	print("last break =",last_break)  #next figure out if NO BREAK WHATSOEVER
+	print("last line  =",last_line_of_string)
+	print("the result therefore is:")
+	if int(last_break) < int(get_default):
+		print("there is definitely no break in default case")
+		print("and a break needs to be added immediately")
+		######################################################
+		print("adding break at bottom of default case now")
+		global switchcasetester
+		tang=switchcasetester.replace("}","			break \
+			\n}")
+		switchcasetester=''
+		switchcasetester = tang
+		print("we now have ((look for the new break in default")
+		print(switchcasetester)
+	else:
+		print("there is a break inside of default")
+	
+	print("====================")
 	#last_line =get_closing_curly_brace() #its just the length of the string switchcasetester
 	################# just commented out line above march 1st, 2021
 	
 	############################################################
-	global switchcasetester
+	
 	# IF default(LINE NUMBER) < last break(LINE NUMBER)  There is a break
 	#########################################################################
 	#oh my god this assumes that there is a break
@@ -656,6 +834,13 @@ def convert_default_case(): #I got this working November 26th, 2020
 	#this is dependent on the last break existing or any break for that matter; it assumes a break
 	#however, if there is no break in the string I am hosed and need to realize that.
 	#I can't assume that there will be a break above the default or after the default either.
+	print("this if test for get_default < last_break fails if no break in string")
+	print("it's based on the bad assumption that there is a break in the switch case")
+	print("so I need to modify it to check if there is a break in the whole string")
+	print("and if count('break') == 0 then the answer is None")
+	#if line number of default is LOWER then last break line number
+	#then there is a break AFTER the default
+	
 	if int(get_default) < int(last_break):  #### if default  < last break  
 	#this means that last break in string is above the default. b
 	#########################################################################
@@ -670,6 +855,7 @@ def convert_default_case(): #I got this working November 26th, 2020
 		###==== tuesday coding project =====##
 		## test right here if a break or not
 		#need to test if break is after default or not
+		# and add a break here if no break so the switch case gets read.
 		
 		switchcasetester=''
 		switchcasetester = newton
@@ -742,6 +928,10 @@ def testingatheory():
     mytrace('testingtheory()')
 
     #apple = "one"
+    
+    
+    
+    
 ###=================== nov 19th new code ============
 ###================ get_closing_brace (line number) ==============
 closing_brace=''
@@ -751,6 +941,9 @@ def get_closing_brace():
 	counter =0
 	closing_brace =testing_number_of_lines_in_string()
 	return closing_brace
+
+
+
 
 ###=============================================
 default_location=''
@@ -835,6 +1028,7 @@ def start_trigger():
 	### convert default case and then test if break in default and add break if necessary
 	#this is done because in C and javascript it's just:   default: so it needs to be converted to a case
 	#I will have it add break inside of convert_default_case()
+	#convert default case called here 
 	convert_default_case() #this changes default: to case 'default': but default needs to exist!
 	# I can't assume that default has a break because in C it's not necessary but here it's needed 
 	output = testing_if_break_in_default_tail()
@@ -3246,7 +3440,9 @@ def p51_mustang(): #makes critical cranberries list which is the taillist for sw
 			
 	
 	print("THIS IS THE TAIL LIST CALLED CRANBERRIES")
-
+	print("cranberries=",cranberries)
+	print("penguin=",penguin)
+	
 
 ####### this was in working code
 '''
@@ -3458,6 +3654,7 @@ einstein=[] #resets einstein to empty
 	#========================================
 #this fills up smartcasemanager list
 def nightowl():
+	print("===== nightowl() called ======")
 	mytrace('nightowl')
 
 
@@ -4350,16 +4547,75 @@ switch_gen=''
 testlist=[]
 exp =''
 
-
+#########################################################
+#########################################################
+#########################################################
+#########################################################
 #########################################################
 #####          switch_code_gen()                      ###
 #########################################################
-
+#########################################################
+#########################################################
+#########################################################
+#########################################################
 #======================================
 #  ====== project mr coffee ========
 #this takes in lists calculated above and generates a string of python switch case code
 def switch_code_gen():
 	mytrace('switch_code_gen')
+	#####
+	##### march 7, 2021
+	#new change putting penguin into cranberries
+	print("=== march 7th, 2021 testing===================///================================")
+	print("penguin=",penguin)
+	#print("cranberries=",cranberries)
+	print("======")
+	#Here I am putting the contents of penguin into cranberries
+	print("this is where I empty cranberries list and fill it with penguin")
+	cranberries = []  #emptying cranberries here 
+	for item in penguin:  #this works - how wonderful
+		print(item)
+		cranberries.append(item)
+		
+	print("CrAnBeRRies-----  =",cranberries)
+	
+	###########  march 7, 20201  #######################################
+	# I think that I just need to loop through casemainbodylist
+	# and append cranberries based on teh counter and then eliminate the third tier below
+	# what I am doing is adding teh cranberris(one liner break or fallthru to the case_main_body_list
+	####################################################################
+	### FALLING IN LOVE 
+	print("======== Daft Punk =============")
+	print("theory that there are blank lines at end of each case section")
+	
+	case_main_body_list_with_tail =[]
+	case_main_body_list_with_tail.append('starter')
+	
+	acounter=1
+	for item in range(1,len(case_main_body_list)):
+		felix = case_main_body_list[item]
+		# removes newlines after lines of code
+		victory = felix.rstrip()
+		victory +="\n\t\t"+ cranberries[acounter] #tacks on break/fallthru
+		print(victory)  #testing outpout
+		case_main_body_list_with_tail.append(victory)  #appends the melding together to 
+		victory =''                                    #case_main_body_list_with_tail
+		print("--------------")
+		
+	
+		acounter += 1
+	
+	print("we now have")
+	print("this should be the case_main_body_list with the break and fallthurs ... we hope")
+	for item in range(1,len(case_main_body_list_with_tail)):
+		print(item)
+	
+	    
+	    #case_main_body_list_with_tail.append(item + cranberries)  #how to add an extra line    
+	    #create new list adding them together perhaps
+	    
+	
+	############################
 	print("================switch_code_gen () called ===========")
 	#here will be the caselists for each case section that will be generated
 	#I have to make a doctring with a name for the output python that will be run.
@@ -4375,7 +4631,7 @@ def switch_code_gen():
 	#the other is generating (and printing to see it)
 	#before it's executed the python switch case form
 
-
+#this is the input for exp for switch(exp)
 	##############
 	topvars2 = "\nexp = varholder[0]\n\n"
 
@@ -4459,7 +4715,7 @@ def switch_code_gen():
 	secondpart=[]
 	thirdpart =[]
 	extremelysmart=[]
-	for item in range(1,len(case_main_body_list)):       #second loop
+	for item in range(1,len(case_main_body_list_with_tail)):       #second loop
 		if mycounter == 1:
 		#============  first section case=============
 
@@ -4469,7 +4725,7 @@ def switch_code_gen():
 			newlist = [first_if, toosmart]
 
 
-			###########################
+			##############################################################
 			sofrustrated =str(newlist[0]) + " " + str(newlist[1]) #=== only catching last one==
 			extremelysmart.append(sofrustrated)
 			###### firstpart adding if line ###########
@@ -4481,22 +4737,21 @@ def switch_code_gen():
 			restofifs= tabs[1] + "elif " + front+str(mycounter)+ ": #"
 			toosmart = eval("caselist" + str(mycounter))
 			newlist = [restofifs, toosmart] #comments put case names to right of caselistnumber
-
-
 			caselistline = str(newlist[0]) + " " + str(newlist[1]) #=====
 			extremelysmart.append(caselistline)
 			firstpart.append(caselistline) #this ffeeds elif line into first part list
 
 		######################
 		#=== second part of each case section
-		weasel= case_main_body_list[mycounter]
+		weasel= case_main_body_list_with_tail[mycounter]   ### RIGHT HERE 
 		secondpart.append(weasel) #this feeds the string body into secondpart
 
 		######################
 		#=== third part of each case section
 		#this is the tail either break or fallthru(name)
-		crans =tabs[2] + cranberries[mycounter]  #=====
-		thirdpart.append(crans) #this feeds the tail into thirdpart
+		
+		###crans =tabs[2] + cranberries[mycounter]  #=====
+		###thirdpart.append(crans) #this feeds the tail into thirdpart
 
 
 		mycounter += 1     #loop counter
@@ -4508,18 +4763,18 @@ def switch_code_gen():
 	################
 	theelse = tabs[1] + "else:"  #this is just once
 	firstpart.append(theelse) #this feeds the else clause into first part
-	#this is the last real case after the regular caes
+	#this is the last real case after the regular cases
 
 	##################3
 	 #last case body for default
 
-	lastishcase =case_main_body_list[-1]
+	lastishcase =case_main_body_list_with_tail[-1]
 
 	secondpart.append(lastishcase)  #this feeds the body into secondpar
 
 	##########################
-	trying = tabs[2] + cranberries[-1] #=====
-	thirdpart.append(trying) #this feeds the tail into thirdpart
+	##trying = tabs[2] + cranberries[-1] #=====
+	##thirdpart.append(trying) #this feeds the tail into thirdpart
 
 
 	#practice printint out the three tier cakes for each section
@@ -4537,13 +4792,17 @@ def switch_code_gen():
 	#print("this is printing the string of each case from cool")
 	cool += "\n\n"
 
-	#===case sections three parts at once ==")
+
+################################################################################################
+##### march 7th, 2021  I think I just add thirdpart to end of second part (it's just one line)
+################################################################################################
+#===case sections three parts at once ==")
 	rocks=''
  #=====================
  #== LOOP
 	counter =0  #each section will have the same number of items
 	for item in firstpart:
-		rocks += str(firstpart[counter]) + "\n" + str(secondpart[counter]) + "\n" +str(thirdpart[counter]) + "\n\n"
+		rocks += str(firstpart[counter]) + "\n" + str(secondpart[counter]) + "\n\n"# +str(thirdpart[counter]) + "\n\n"
 		counter += 1
 		#printing out the three part case sections")
 

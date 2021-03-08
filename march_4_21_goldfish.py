@@ -12,7 +12,7 @@ from march_4_21_firefall_yosemite_falls import *  #this is the switch case modul
 #this is  input variable exp for switch(exp)
 print("===== FIRST 1st switch =====")
 
-clever('snoopy was flying') #this would change varholder[0] 
+clever('blake') #this would change varholder[0] 
 #maybe test put endswitch(sw) inside of clever function hidden
 sw = '''
 	switch(exp) {
@@ -22,33 +22,33 @@ sw = '''
 			print(\"where's the dog house!\")
 			print("first prize")
 			print("you block head Charlie Brown")
-			
+			break
 
 		case 'colin likes ice cream':  
 		case 'blake':
 			print("coding right now")
 			print("================")
-			
+			fallthrough
 			
 		case 'thank god':  
 		case 'table':
 			print("lucky to have bbedit")
 			print("=for my backups=")
 			print("----------------------")
-			
+			break
 
 		case 'william pilot':
 			print("jet figher pilot extroideniare\")
 			print("-------------")
 			get('phantom jet')
-			
+			fallthru
 			
 			
 		case 'xmas':
 		case 'newyears':
 			print('christmas')
 			print('new years eve')
-			
+			break
 			
 		case 'panera':
 		case 'peanuts':
@@ -56,10 +56,10 @@ sw = '''
 			
 			
 		
-		case 'motel6 in gilroy':
+		case 'motel 6 in gilroy':
 		case 'travelcenter':
 			print('nice place to stay')
-			
+			break
 			
 
 		case 'alpine meadows':
