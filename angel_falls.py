@@ -6,7 +6,7 @@ Now cleaning up the output so the breaks and fallthrus are attached to the botto
 Currently the beaks and fallthrus are a few spaces below each case section. It was a vexing problem months ago
 but I just came up with a simple solution that will definitely work and clean it up.
 The solution for determining if there was a break after default:
-The problem was if there as no break after default the parser would not run.
+The problem was if there was no break after default the parser would not run.
 '''
 example output during testing
 get_default= 53
