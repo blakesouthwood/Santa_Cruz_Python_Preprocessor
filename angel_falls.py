@@ -1,5 +1,5 @@
 
-Sunday, March 7th, 2021  8:34 am  California time.
+Sunday, March 7th, 2021  9:00 pm  California time.
 Smart break and fallthru detector works.
 If missing break in default it's added (finally)
 Now cleaning up the output so the breaks and fallthrus are attached to the bottom of the individual case sections.
