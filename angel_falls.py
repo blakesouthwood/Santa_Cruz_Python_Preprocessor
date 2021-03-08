@@ -6,6 +6,10 @@ Tested fallthru  fallthrough  and missing break and breaks worked flawlessly.
 Did testing last night and this morning and switch case is stable.
 Nirvana.
 
+Next I will test the switch module and test multiple switch cases in several different
+functions.
+
+
 
 
 Sunday, March 7th, 2021  10:57 pm California time
