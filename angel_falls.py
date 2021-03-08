@@ -1,5 +1,6 @@
 
 Monday, March 8th, 2021  8 am California time
+Victorious coding session. 
 Fixed bug so if no break it's added at bottom of default case.
 Tested fallthru  fallthrough  and missing break and breaks worked flawlessly.
 Did testing last night and this morning and switch case is stable.
