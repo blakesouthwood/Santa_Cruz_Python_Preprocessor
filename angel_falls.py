@@ -21,7 +21,44 @@ case_main_body_list_with_tail =[]
 		acounter += 1
 
 
+output of case main body for each case section
 
+		print("where's the dog house!")
+		print("first prize")
+		print("you block head Charlie Brown")
+		break
+--------------
+		print("coding right now")
+		print("================")
+		fallthru('thank god')
+--------------
+		print("lucky to have bbedit")
+		print("=for my backups=")
+		print("----------------------")
+		fallthru('william pilot')
+--------------
+		print("jet figher pilot extroideniare")
+		print("-------------")
+		get('phantom jet')
+		fallthru('xmas')
+--------------
+		print('christmas')
+		print('new years eve')
+		break
+--------------
+		print('four try again')
+		fallthru('motel 6 in gilroy')
+--------------
+		print('nice place to stay')
+		fallthru('alpine meadows')
+--------------
+		print('ski fast in the powder')
+		fallthru('default')
+--------------
+		print('six walking duck de fa ul t')
+		print("flying geese")
+		break
+--------------
 
 
 Sunday, March 7th, 2021  9:00 pm  California time.
