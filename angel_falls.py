@@ -3,7 +3,7 @@ Sunday, March 7th, 2021  8:34 am  California time.
 Smart break and fallthru detector works.
 If missing break in default it's added (finally)
 Now cleaning up the output so the breaks and fallthrus are attached to the bottom of the individual case sections.
-Currently the beaks and faltlhrus are a few spaces below each case section. It was a vexing problem months ago
+Currently the beaks and fallthrus are a few spaces below each case section. It was a vexing problem months ago
 but I just came up with a simple solution that will definitely work and clean it up.
 The solution for determining if there was a break after default:
 The problem was if there as no break after default the parser would not run.
@@ -68,6 +68,173 @@ def convert_default_case(): #I got this working November 26th, 2020
 		print("there is a break inside of default")
 	
 	print("====================")
+
+INPUT switch case inside of python program looks like this for testing
+
+#this is  input variable exp for switch(exp)
+print("===== FIRST 1st switch =====")
+
+clever('linus') #this would change varholder[0] 
+#maybe test put endswitch(sw) inside of clever function hidden
+sw = '''
+	switch(exp) {
+		case 'snoopy was flying':  
+		case 'linus':
+		case 'lucy':
+			print(\"where's the dog house!\")
+			print("first prize")
+			print("you block head Charlie Brown")
+			break
+
+		case 'colin likes ice cream':  
+		case 'blake':
+			print("coding right now")
+			print("================")
+			
+			
+		case 'thank god':  
+		case 'table':
+			print("lucky to have bbedit")
+			print("=for my backups=")
+			print("----------------------")
+			
+
+		case 'william pilot':
+			print("jet figher pilot extroideniare\")
+			print("-------------")
+			get('phantom jet')
+			
+			
+			
+		case 'xmas':
+		case 'newyears':
+			print('christmas')
+			print('new years eve')
+			break
+			
+		case 'panera':
+		case 'peanuts':
+			print('four try again')
+			
+			
+		
+		case 'motel 6 in gilroy':
+		case 'travelcenter':
+			print('nice place to stay')
+			
+			
+
+		case 'alpine meadows':
+		case 'squaw':
+			print('ski fast in the powder')
+			
+			
+		default:
+			print('six walking duck de fa ul t')
+			print("flying geese")
+			
+			
+}
+'''
+endswitch(sw)
+
+### TESTING OUTPUT OF GENERATED PYTHON CODE FOR THE PYTHON VERSION OF THE SWITCH CASE CODE ###
+Note it uses methods switch() and fallthru()
+
+exp = varholder[0]
+
+caselist1 = ['snoopy was flying', 'linus', 'lucy']
+caselist2 = ['colin likes ice cream', 'blake']
+caselist3 = ['thank god', 'table']
+caselist4 = ['william pilot']
+caselist5 = ['xmas', 'newyears']
+caselist6 = ['panera', 'peanuts']
+caselist7 = ['motel 6 in gilroy', 'travelcenter']
+caselist8 = ['alpine meadows', 'squaw']
+caselist9 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['snoopy was flying', 'linus', 'lucy']
+		print("where's the dog house!")
+		print("first prize")
+		print("you block head Charlie Brown")
+		break
+
+	elif case in caselist2: # ['colin likes ice cream', 'blake']
+		print("coding right now")
+		print("================")
+		
+		
+		fallthru('thank god')
+
+	elif case in caselist3: # ['thank god', 'table']
+		print("lucky to have bbedit")
+		print("=for my backups=")
+		print("----------------------")
+		
+		fallthru('william pilot')
+
+	elif case in caselist4: # ['william pilot']
+		print("jet figher pilot extroideniare")
+		print("-------------")
+		get('phantom jet')
+		
+		
+		
+		fallthru('xmas')
+
+	elif case in caselist5: # ['xmas', 'newyears']
+		print('christmas')
+		print('new years eve')
+		
+		break
+
+	elif case in caselist6: # ['panera', 'peanuts']
+		print('four try again')
+		
+		
+	
+		fallthru('motel 6 in gilroy')
+
+	elif case in caselist7: # ['motel 6 in gilroy', 'travelcenter']
+		print('nice place to stay')
+		
+		
+		fallthru('alpine meadows')
+
+	elif case in caselist8: # ['alpine meadows', 'squaw']
+		print('ski fast in the powder')
+		
+		
+		fallthru('default')
+
+	elif case in caselist9: # ['default']
+		print('six walking duck de fa ul t')
+		print("flying geese")
+		
+		
+		break
+
+	else:
+		print('six walking duck de fa ul t')
+		print("flying geese")
+		
+		
+		break
+
+
+===== executing generated  code=====
+the input exp in clever was::  linus
+
+where's the dog house!
+first prize
+you block head Charlie Brown
+
+ =====done executing output from switch ======
+ 
 
 Sunday, March 7th, 2021  10:34 am  California time
 Taking approach of updating the program in phases and putting stable vanilla switch case code up tonight.
