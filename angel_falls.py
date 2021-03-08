@@ -7,6 +7,113 @@ Currently the beaks and fallthrus are a few spaces below each case section. It w
 but I just came up with a simple solution that will definitely work and clean it up.
 The solution for determining if there was a break after default:
 The problem was if there was no break after default the parser would not run.
+
+######################################
+
+## get length of string()
+mrdefault = 0
+#this gets the line number of default (there must be a default)
+#this also gets the length of the switchasetester string
+def get_length_of_string():  #this only works if there is a default
+	mytrace('get_length_of_string()')
+	print("######## get_length_of_string() called")
+	print("get length of string() called ====== ")
+	counter =0
+	for line in switchcasetester.splitlines():
+		if "default" in line:
+		#this is where the default is located on this line number
+			mrdefault = counter;  #right here it assigns the counter number to mrdfault var
+			print("mrdefault=",counter) #this won't work without default word
+		else:
+			pass
+		counter += 1
+		
+	#count backwards thru loop to get first break
+		
+	print("length of the string =",counter)
+	the_counter=mrdefault
+	print("we are starting to count from ",the_counter)
+	solution ="false"
+	for line in switchcasetester.splitlines():
+		if "break" in line:
+			print('yes break after default')
+			solution="true"
+			break
+	
+		else:
+			the_counter += 1
+	
+	
+	if solution == "true":
+		print("break after default")
+	else:
+		print("add the break at end")
+	
+
+	#the_last_line = counter
+	#the length of the string of switchcasetester is returned here 
+	return counter;  #it returns the length of the string in counter.
+
+
+
+################
+default_location=''
+def get_default_location(): #line number location of the word default
+	print("=============get default location called =================")
+	mytrace('get_default_location')
+	counter =0
+	for line in switchcasetester.splitlines():
+		if "default" in line:
+			default_location = counter
+			break
+		else:
+			counter += 1
+			continue
+	print("the default location line number =",default_location)
+	return default_location
+	
+	
+#########=============== get last break in string ==================
+listofbreaks=[]
+genius=''
+nobreaks = "false"
+def get_last_break_in_string(): #but what if no break??? march 1st bad assumption here
+	print("======BLINK182========get last break in string in the whole switch case string ============")
+	mytrace('get_last_break_in_string()')
+	counter=0
+	global switchcasetester
+	for line in switchcasetester.splitlines():
+		if "break" in line:
+			listofbreaks.append(counter)
+			nobreaks = "false"	
+			counter +=1
+		else:
+			counter += 1
+			continue
+		###=============
+	genius = listofbreaks[-1]  #last break number
+	print("genius is the last break line number =",genius)
+	
+	if counter == 0: #means no breaks in string of switchcasetester
+		print("there aren't any breaks in the switch case")
+		nobreaks = "true"
+		print("nobreaks = true")
+	else: #counter greater than 0
+		nobreaks = "false"
+		print("nobreaks = false")
+		pass
+
+	print("lets see the list of breaks full list",listofbreaks)
+	print("the length of hits of lines with break so the length is ",len(listofbreaks))
+	print("the number of breaks = ",counter," if none then nobreaks = ",nobreaks)
+	if len(listofbreaks) >= 1:
+		baby = listofbreaks[-1] #the last one
+		print("the last break line number is ", baby)
+	else:
+		print("the number of breaks in the string is None",0)
+		
+	return baby #which is a string	
+	
 '''
 example output during testing
 get_default= 53
