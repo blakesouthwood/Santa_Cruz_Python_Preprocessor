@@ -1,3 +1,28 @@
+Sunday, March 7th, 2021  10:30 pm California time
+Solved cleaning up the breaks and fallthrus beneath the output Python code
+
+In the code generator I melded the third tier break/fallthru to the next line
+beneath the case_main_body_list which is done with a loop before actual generation
+of the output and it thus eliminates the third tier addition at the end of the
+code generation
+
+case_main_body_list_with_tail =[]
+	case_main_body_list_with_tail.append('starter')
+	
+	acounter=1
+	for item in range(1,len(case_main_body_list)):
+		felix = case_main_body_list[item]
+		# removes newlines after lines of code
+		victory = felix.rstrip()
+		victory +="\n\t\t"+ cranberries[acounter] #tacks on break/fallthru
+		print(victory)  #testing outpout
+		case_main_body_list_with_tail.append(victory)  #appends the melding together to 
+		victory =''                                    #case_main_body_list_with_tail
+		acounter += 1
+
+
+
+
 
 Sunday, March 7th, 2021  9:00 pm  California time.
 Smart break and fallthru detector works.
