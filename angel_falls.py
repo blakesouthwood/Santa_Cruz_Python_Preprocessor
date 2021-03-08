@@ -1,3 +1,74 @@
+
+Sunday, March 7th, 2021  8:34 am  California time.
+Smart break and fallthru detector works.
+If missing break in default it's added (finally)
+Now cleaning up the output so the breaks and fallthrus are attached to the bottom of the individual case sections.
+Currently the beaks and faltlhrus are a few spaces below each case section. It was a vexing problem months ago
+but I just came up with a simple solution that will definitely work and clean it up.
+The solution for determining if there was a break after default:
+The problem was if there as no break after default the parser would not run.
+'''
+example output during testing
+get_default= 53
+last break = 34
+last line  = 59
+
+the result therefore is:
+there is definitely no break in default case
+and a break needs to be added immediately
+adding break at bottom of default case now
+we now have look for the new break in default
+''	      
+	      
+###################################
+def convert_default_case(): #I got this working November 26th, 2020
+######################################
+	print("convert_default_case()  ===&&&&&-- ")
+	#add_break_to_bottom_of_default()  ##march 3rd, 2021
+	mytrace('convert_default_case')
+	#print("===========convert default case called ===========")
+	############################################################
+	get_default= get_default_location()
+	print("get_default line number=",get_default) #line number of default
+	print("lets see the LIST OF BREAKS  full list",listofbreaks)
+	
+        last_break=get_last_break_in_string() #what if it returns None???
+	#this is new march 1st 2021 starbucks coding in earlying
+	last_line_of_string = get_length_of_string()
+	print("the last line of string =",last_line_of_string)
+	'''
+	This is a simple math problem.
+	Using the line numbers in the string
+	get default line number
+	get last break line number (from list)
+	get last line of string determined by closing brace (yes)
+	The next scenario I will add will be if break count == 0 add break at bottom of default case
+	if int(last_break) < int(get_default):
+		add break using replace
+		this is done by using replace in the string and renaming it
+	
+	'''
+	print("get_default=",get_default) #line number of default
+	print("last break =",last_break)  #next figure out if NO BREAK WHATSOEVER
+	print("last line  =",last_line_of_string)
+	print("the result therefore is:")   #decided default will be required by the user
+	if int(last_break) < int(get_default):
+		print("there is definitely no break in default case")
+		print("and a break needs to be added immediately")
+		######################################################
+		print("adding break at bottom of default case now")
+		global switchcasetester
+		tang=switchcasetester.replace("}","			break \
+			\n}")
+		switchcasetester=''
+		switchcasetester = tang
+		print("we now have ((look for the new break in default")
+		print(switchcasetester)
+	else:
+		print("there is a break inside of default")
+	
+	print("====================")
+
 Sunday, March 7th, 2021  10:34 am  California time
 Taking approach of updating the program in phases and putting stable vanilla switch case code up tonight.
 I will then add separate modules that are addon modules to manage the complexity that will
