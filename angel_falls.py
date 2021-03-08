@@ -1,3 +1,84 @@
+Sunday, March 7th, 2021  10:57 pm California time
+generated output just now... wow.
+
+
+exp = varholder[0]
+
+caselist1 = ['snoopy was flying', 'linus', 'lucy']
+caselist2 = ['colin likes ice cream', 'blake']
+caselist3 = ['thank god', 'table']
+caselist4 = ['william pilot']
+caselist5 = ['xmas', 'newyears']
+caselist6 = ['panera', 'peanuts']
+caselist7 = ['motel 6 in gilroy', 'travelcenter']
+caselist8 = ['alpine meadows', 'squaw']
+caselist9 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['snoopy was flying', 'linus', 'lucy']
+		print("where's the dog house!")
+		print("first prize")
+		print("you block head Charlie Brown")
+		break
+
+	elif case in caselist2: # ['colin likes ice cream', 'blake']
+		print("coding right now")
+		print("================")
+		fallthru('thank god')
+
+	elif case in caselist3: # ['thank god', 'table']
+		print("lucky to have bbedit")
+		print("=for my backups=")
+		print("----------------------")
+		fallthru('william pilot')
+
+	elif case in caselist4: # ['william pilot']
+		print("jet figher pilot extroideniare")
+		print("-------------")
+		get('phantom jet')
+		fallthru('xmas')
+
+	elif case in caselist5: # ['xmas', 'newyears']
+		print('christmas')
+		print('new years eve')
+		break
+
+	elif case in caselist6: # ['panera', 'peanuts']
+		print('four try again')
+		fallthru('motel 6 in gilroy')
+
+	elif case in caselist7: # ['motel 6 in gilroy', 'travelcenter']
+		print('nice place to stay')
+		fallthru('alpine meadows')
+
+	elif case in caselist8: # ['alpine meadows', 'squaw']
+		print('ski fast in the powder')
+		fallthru('default')
+
+	elif case in caselist9: # ['default']
+		print('six walking duck de fa ul t')
+		print("flying geese")
+		break
+
+	else:
+		print('six walking duck de fa ul t')
+		print("flying geese")
+		break
+
+
+===== executing generated  code=====
+the input exp in clever was::  linus
+
+where's the dog house!
+first prize
+you block head Charlie Brown
+
+ =====done executing output from switch ======
+
+
 Sunday, March 7th, 2021  10:30 pm California time
 Solved cleaning up the breaks and fallthrus beneath the output Python code
 
