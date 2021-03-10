@@ -2,6 +2,10 @@ Tuesday, March 9th, 2021 4 PM Californai time
 testing valve for words or numbers for switch.
 putting two separate modules and then will merge into one once it's working correctly
 I will put the number operations into a few specific functions.
+But the code works and runs in Visual Studio Code which has a good step debugger and nice dark theme.
+Will try to add new features gradually instead of addding everyting and hoping. This way it's 
+more like the IBM 360 with frequent releases and slowly adding to the pyramid so it's always stable and always working
+and much easier to debug. 
 
 Got Sublime and got weird bug but code compiles in bbedit but not in Sublime with module reload.
 
