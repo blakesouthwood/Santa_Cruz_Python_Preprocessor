@@ -1,3 +1,9 @@
+Tuesday, March 9th, 2021 4 PM Californai time
+testing valve for words or numbers for switch.
+putting two separate modules and then will merge into one once it's working correctly
+I will put the number operations into a few specific functions.
+
+Got Sublime and got weird bug but code compiles in bbedit but not in Sublime with module reload.
 
 Monday, March 8th, 2021  8 am California time
 Victorious coding session. 
