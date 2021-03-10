@@ -10,7 +10,7 @@ added numbers          case 1:
 added macro thru       case 1 thru 10:
 added macro to         case 1 to 10: 
 For numbers in switch it's different because I added macros to write code faster
-and using numbers it will have to do match so I will add a macro to conver to int if math formula calculations are added
+and using numbers it will have to handle math so I will add a macro to conver to int, float, etc if math formula calculations are added
 
 def switch(x):
 #####################  filter to determine if input is number or word/letter/alpha
