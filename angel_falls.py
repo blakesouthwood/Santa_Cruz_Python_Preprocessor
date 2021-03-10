@@ -1,3 +1,23 @@
+switch input valve to determine if word/char or number
+this determines the path course for words or numbers for a given switch case.
+This just shows what has been added to the switch(x) and testin prints
+
+def switch(x):
+#####################  filter to determine if input is number or word/letter/alpha
+	print("we are inside of switch now",x)
+	global input
+	global valve_setting
+	theinput = x.isdigit()
+	if theinput == True:
+		#print("its a number ")
+		valve_setting = "number"
+	else:
+		valve_setting = "word"
+	print("this is inside of the switch statement")
+	print("that takes in input and checks if number or word")
+	print("the valve_setting =",valve_setting, "which is",x)
+
+
 Tuesday, March 9th, 2021 4 PM Californai time
 testing valve for words or numbers for switch. Valve inside of switch determines if cases are words or numbers.
 The way that it actually works is numbers are put into strings and that way it just works. That was a stroke of luck.
