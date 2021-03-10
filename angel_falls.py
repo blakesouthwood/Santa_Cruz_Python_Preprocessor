@@ -1,12 +1,24 @@
 switch input valve to determine if word/char or number
 this determines the path course for words or numbers for a given switch case.
-This just shows what has been added to the switch(x) and testin prints
+This just shows what has been added to the switch(x) and testing prints
+
+In review switch cases are phenomenally versatile with nearly endless configurations.
+I started with handling words and now adding numbers and slowly integrating them.
+Initially handled      case "word":
+added  phrase cases    case "merry christmas":
+added numbers          case 1:
+added macro thru       case 1 thru 10:
+added macro to         case 1 to 10: 
+For numbers in switch it's different because I added macros to write code faster
+and using numbers it will have to do match so I will add a macro to conver to int if math formula calculations are added
 
 def switch(x):
 #####################  filter to determine if input is number or word/letter/alpha
 	print("we are inside of switch now",x)
 	global input
 	global valve_setting
+	valve_setting ='' #clears it out if previously used
+	#here  x is tested if it is a number using builtin method isdigit()
 	theinput = x.isdigit()
 	if theinput == True:
 		#print("its a number ")
