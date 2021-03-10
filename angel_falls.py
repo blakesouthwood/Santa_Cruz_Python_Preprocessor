@@ -4,6 +4,8 @@ The way that it actually works is numbers are put into strings and that way it j
 I modified my regular switch to just handle numbers and so  I will keep them separate and then integrate them
 slowly with the alpha word switch the dominant main vein and then have a detour for numbers to convert them to strings.
 I will add a do_math() method if users want to do math inside of the switch with numbers.
+So the first phase is seeing it work with either words in cases or numbers and then I will integrate the code
+but initially the code is totally separate to prevent any conflict between the two code bases. 
 
 putting two separate modules and then will merge into one once it's working correctly
 I will put the number operations into a few specific functions.
