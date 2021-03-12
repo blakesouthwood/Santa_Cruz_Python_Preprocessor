@@ -15,7 +15,15 @@ and that way it determines whether it will be a word(s) or number(s) so this mea
 what type of switch it is characters/words or numbers happens before the switch code in python is generated so
 this should be faster.
 
-So much fun!
+I have been working on the diff between the normal (words) implimentation of the switch and my other switch that uses numbers and macros
+and how they are different to clearly divide them and thankfully the way that I implimented numbers will work perfectly as
+the top hat above the normal switch code and is triggered to run only if it is determined if the switch's first case is a number
+meaning it's a number switch. 
+
+I will also be testing using several switches tonight that waterfall from one down to the other two switches with one being numbers.
+And now that it should work without having to reload the switch module it should be faster.
+
+So much fun! Dogged determination. 
 
 
 
