@@ -1,3 +1,26 @@
+Friday, March 12, 2021 8am California time.
+Solved problem with Sublime not reloading modules (it has disabled it)
+So solved a work around that worked last night and I will add the code tonight to the switch case code base.
+So now I should be able to use infinite switch cases in real-time and reset them instantly so there are no 
+variable collisions. So the switch will be faster and not require reloading the switch case module which was
+my original goal.  
+
+Will start cleaning up the code and taking out the prints and adding the documentation.
+Such a thrill seeing this project blossom.
+
+Oh, I will finally impliment tonight using cases that takes words and then takes numbers next by adding the filter
+to the parser. I decided that instead of having the flow valve inside of the switch method I will instead have
+it in the preparser to look at what is in the first case in the switch code before parsing commenses
+and that way it determines whether it will be a word(s) or number(s) so this means that the decision for
+what type of switch it is characters/words or numbers happens before the switch code in python is generated so
+this should be faster.
+
+So much fun!
+
+
+
+
+
 switch input valve to determine if word/char or number
 this determines the path course for words or numbers for a given switch case.
 This just shows what has been added to the switch(x) and testing prints
