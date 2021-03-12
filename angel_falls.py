@@ -1,5 +1,6 @@
 Friday, March 12, 2021 8am California time.
-Solved problem with Sublime not reloading modules (it has disabled it)
+Solved problem with Sublime not reloading modules (it has disabled it). I am using Sublime now. Though using BBEdit for diffs.
+Quote: "SublimeText does not natively support module reloading"
 So solved a work around that worked last night and I will add the code tonight to the switch case code base.
 So now I should be able to use infinite switch cases in real-time and reset them instantly so there are no 
 variable collisions. So the switch will be faster and not require reloading the switch case module which was
