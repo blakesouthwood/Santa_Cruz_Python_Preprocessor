@@ -3,6 +3,11 @@ Listening to Neptune Currents (Sunday mornings only) on KKUP 91.5 FM
 Also listen to KZSU Stanford 90.1 FM
 Both available online Free on MyTuner Radio
 
+I should be putting up the workings switch case version 1.0 possibly tonight or at least this coming week.
+It will do strings, numbers, and multiple switch cases. I have done a lot of refactoring to simplify the codebase
+and I have been coding a lot of methods to make the code more readable and manageable so I can reuse more code.
+The nested switch case will be added a week later. (this means a switch case with a nested switch case in it)
+
 Starbucks morning coding.
 
 I had initially but the fawcett valve inside of the switch method and then I concluded that
