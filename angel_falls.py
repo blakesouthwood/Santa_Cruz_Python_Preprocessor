@@ -35,6 +35,180 @@ can't reload(module) so I did a work around and eliminated that route and wrote 
 to clear out vars and lists; each will be done with a loop going through a list one by one.
 Actually an elegant solution.
 
+Beta Conversion of numbers to strings in switch case.
+I still need to add some ifs to check if the macros exist or not before attempting to convert them.
+
+
+#if "thru" in a line
+#case is [0] first number [1] thru is [2]  second number [3]
+# case 1 thru 3:
+determine_if_cases_are_numbers=[]
+#this just grabs the word/number in the first case to determine what it is
+def check_if_cases_are_numbers():  #this does nothing currenlty
+	mytrace('check_if_cases_are_numbers')
+	global switchcasetester
+	grabit=''
+	print("========march 11th 2020====")
+	mycounter = 0
+	for line in switchcasetester.splitlines():
+	#loop do splitlines
+ 		if "case" in line:  #it only needs to test the first case to verify
+ 			grabit = line[4:-1]
+ 			print(grabit)
+ 			grabit = grabit.lstrip()
+ 			grabit = rstrip()
+ 			print(grabit)
+ 			answer = grabit.isdigit()
+ 			print(answer)
+ 			determine_if_cases_are_numbers.append(answer)
+ 			break # I only need to grab the contents of the first case
+ 		else:
+ 			mycounter += 1
+ 			continue
+
+			
+#########################################
+def change_to_into_thru():
+	mytrace('change_to_into_thru')
+	print("change macro to into thru")
+	print("=========")
+	#print("this is presuming we know it's a number switch case")
+	#print("if the macros to and thru are used they need to be change")
+	#print("to is converted into thru")
+	############
+	global switchcasetester
+	print("=========looping thru looking for to===feb 5th 2020====")
+	print(switchcasetester)
+	mycounter = 0
+	for line in switchcasetester.splitlines():
+		simple = mycounter-1
+		
+		if "case" and "to" in line:  #this means the macro to
+			print(line)
+			
+			banana=''
+			banana=switchcasetester.replace(" to "," thru ")  #just addded spaces
+			switchcasetester='' #this nukes it resets it
+			switchcasetester = banana
+			print("the result of changing macro to to thru is this:")
+			#print(switchcasetester)
+		else:
+			pass
+		
+		
+
+
+		
+def make_list_of_lines_using_thru_macro():
+	mytrace('make_list_of_lines_using_thru_macro')
+	print("===----------=== make list of lines using thru macros() ====--------=")
+	#go thru list and if thru in line add that line to list
+	global mouse
+	thru_counter = 0
+	for line in mouse.splitlines():
+		#just added the word to that means the same thing as thru
+		if  "case" and "thru" in line:  #on
+			list_with_thru_macros.append(thru_counter)
+			thru_counter += 1
+		else:
+			thru_counter += 1
+			continue
+	print("==@@@@@@@@@==THIS IS the list with thru macros line numbers====")
+	print(list_with_thru_macros)		
+	#then I need to reverse the list
+	backwards_thru_list = list_with_thru_macros
+	backwards_thru_list = backwards_thru_list.reverse()
+	print("########### backwards order now #####")
+	print("backwards we have",backwards_thru_list)
+	bottom_up_change_of_thru_line_test()
+
+##### testing january 10th to go to each case thru from bottom up and change line
+##### to prove it's working
+####################################################################
+## what this does is change the thru macro line starting at the bottom
+## by accessing the backwards list made above 
+##  backwards_thru_list  that took in the line number of each thru line and reversed it
+##########
+def bottom_up_change_of_thru_line_test():
+	mytrace('bottom_up_change_of_thru_line_test')
+	global mouse
+	global opal
+	opal = ''
+	print("=========bottom_up_change_of_thru_line_test()===january 10th 2020====palo alto tennis")
+	print("tennis  ====4444455555666666666677778888#go thru the entire string")
+	#and change each case number  into a string for preparing for python handling
+	## this uses backwards_thru_list
+	mycounter = 0
+	print("value of mycounter should be zero",mycounter)
+	#this makes sure that the backwards list is in reverse order and exists 
+	print("the backwards list",backwards_thru_list)
+	print("===")
+	print("=====")
+	print("=======")
+	print("==========")
+	print("==============")
+	 #this is governed by just looping thru the bckwards thru list
+	for item in backwards_thru_list: 
+	#set mycouter to a number for line in mouse.splitlines() : #this goes thru the mouse string
+		#beta = mycounter-1
+		
+		#if counter == item(line number)
+			print(line)
+			
+
+
+smart =''
+beta =''
+opal=''
+import re
+foolish =''
+newline=''
+####### case_numbers_to_strings changes number cases to strings with the number inside
+#######  I still need to sniff and detect if the cases are numbers before calling this 
+##############################################################################
+#################### case_numbers_to_strings() ###############################
+##############################################################################
+###### this converts the numbers to strings such as case 1:  to case '1': ####
+##############################################################################
+def case_numbers_to_strings():
+	mytrace('case_numbers_to_strings')
+	global switchcasetester
+	print("======THURSDAY TEST ===testing case_numbers_to_strings===january 5th 2020====")
+	mycounter = 0
+	for line in switchcasetester.splitlines():
+		beta = mycounter-1
+		if "case" in line:
+			print(line)
+			print(" ")
+			smart=line.split() #separates case from casename
+			#checks if case name is a number returns True or False
+			cat =is_number(smart[1])  #calling method to check if the case name is a number
+			print(cat)
+			cool = smart[1][:-1]  #chops off : from end
+			holder = "'" + cool + "'"
+			cool = "case " + holder + ":"  #this is essentially rewriting the line with number in quotes
+			newline = cool
+			print("\t\t" + newline)  #adds tabs to front of it
+			print("next I will use replace to each case line")
+			#see if it works here inside of the switch case line by line
+			############################
+			# see if this works
+			opal=switchcasetester.replace(line,"\t\t" +newline)
+			switchcasetester=''
+			switchcasetester = opal
+
+
+			############################
+			mycounter += 1
+		else:
+			mycounter += 1
+			continue
+	print(switchcasetester) #this is to see the switch case input string after the modification
+	#after the numbers have been converted into strings
+	#HERE is where the changed case numbers as strings are put into switchcasetester
+	#will use a replace here to the switchcasetester string
+			
+
 =======================================================================================================
 
 Friday, March 12, 2021 8am California time.
