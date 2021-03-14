@@ -11,10 +11,19 @@ a number or string before generating the Python switch implimentation. I designe
 with a simple if else with if number in first case equals True then it's a number case.
 Now I will add a detector for if int, float, or number with commas.
 
+The original code for strings is the main body and an if else at the top determines whether to convert the
+numbers in cases into strings and then proceed with the normal switch conversion behavior treating
+the entire switch case as strings. If the first case is not numbers then it just skips the stage of 
+converting numbers to strings.
 
 I designed the code for using numbers and words in switch cases.
 The initial design was: ex   case 4:   but now tonight it will handle case 4.5564:  and case 3,445,444:
 I am just trying to show some latitude and expandability and flexibility of the design.
+
+The body of each case that uses numbers will have a converter to treat the number as it's original state
+so it can be used for math calculations. I have not added that feature yet. Likely it will be a var value
+so it's live for doing math as opposed to the implimented case state where everything is a string for convenience.
+This way numbers are in one state for the case as a string and exist as a playable number for math.
 
 I will be adding ints and floats and numbers with commas too for full support.
 I designed the reset mechanism to bypass having to reload the switch module for
