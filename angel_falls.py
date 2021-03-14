@@ -1,3 +1,18 @@
+Sunday, March 14th, 2021 5:51 am California time
+Listening to Neptune Currents (Sunday mornings only) on KKUP 91.5 FM
+Also listen to KZSU Stanford 90.1 FM
+Both available online Free on MyTuner Radio
+
+Starbucks morning coding.
+
+I designed the code for using numbers and words in switch cases.
+I will be adding ints and floats and numbers with commas too for full support.
+I designed the reset mechanism to bypass having to reload the switch module for
+each instance of a switch case. Will simply flush the vars and lists in the parser and codegen.
+I will have time to add this code and test it later this afternoon.
+
+=======================================================================================================
+
 Friday, March 12, 2021 8am California time.
 Solved problem with Sublime not reloading modules (it has disabled it). I am using Sublime now. Though using BBEdit for diffs.
 Quote: "SublimeText does not natively support module reloading"
