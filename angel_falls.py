@@ -105,7 +105,7 @@ def make_list_of_lines_using_thru_macro():
 	#go thru list and if thru in line add that line to list
 	global mouse
 	thru_counter = 0
-	for line in mouse.splitlines():
+	for line in switchcasetester.splitlines():
 		#just added the word to that means the same thing as thru
 		if  "case" and "thru" in line:  #on
 			list_with_thru_macros.append(thru_counter)
