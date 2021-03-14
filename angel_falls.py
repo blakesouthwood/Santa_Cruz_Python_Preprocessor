@@ -5,11 +5,26 @@ Both available online Free on MyTuner Radio
 
 Starbucks morning coding.
 
+I had initially but the fawcett valve inside of the switch method and then I concluded that
+it would be much more practical to detect whether a particular switch implimentation was
+a number or string before generating the Python switch implimentation. I designed the valve
+with a simple if else with if number in first case equals True then it's a number case.
+Now I will add a detector for if int, float, or number with commas.
+
+
 I designed the code for using numbers and words in switch cases.
+The initial design was: ex   case 4:   but now tonight it will handle case 4.5564:  and case 3,445,444:
+I am just trying to show some latitude and expandability and flexibility of the design.
+
 I will be adding ints and floats and numbers with commas too for full support.
 I designed the reset mechanism to bypass having to reload the switch module for
 each instance of a switch case. Will simply flush the vars and lists in the parser and codegen.
 I will have time to add this code and test it later this afternoon.
+
+I recently was perplexed when my switch code broke in Sublime with an error 
+can't reload(module) so I did a work around and eliminated that route and wrote two methods
+to clear out vars and lists; each will be done with a loop going through a list one by one.
+Actually an elegant solution.
 
 =======================================================================================================
 
