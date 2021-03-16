@@ -1,5 +1,5 @@
 Big release tomorrow Tuesday March 16th.
-Organized and streamline code for switch case.
+Organized and streamlined code for switch case.
 Redid reset so no module reliad necessary. 
 Macros work.
 
