@@ -1,4 +1,11 @@
 Tuesday, March 16th, 2021
+12:42 PM California time.
+
+Officially connecting the functions together after unit testing to
+ensure that switch with words works and then switch using numbers works
+and then that reset works so that multiple switch cases can be use without
+interference by wiping previous switch case input data and output data.
+
 Unit testing for release and connecting the functions together.
 Example functions in the process of testing.
 This is a function that determines if words or numbers are used in the switch case and directs methods to be called
