@@ -1,7 +1,8 @@
 Big release tomorrow Tuesday March 16th.
 Organized and streamlined code for switch case.
-Redid reset so no module reliad necessary. 
-Macros work.
+Redid reset so no module reload necessary. 
+Macros work. Multiple switches support will be working.
+
 
 
 
