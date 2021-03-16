@@ -1,6 +1,9 @@
 Big release tomorrow Tuesday March 16th.
 Organized and streamlined code for switch case.
 Redid reset so no module reload necessary. 
+Support for words and numbers.
+Example case “dream on”:
+Exanple case 1 thru 10:
 Macros work. Multiple switches support will be working.
 
 
@@ -5206,3 +5209,5 @@ def endswitch(y):
 #starter_sequence() #this will be triggered from the parser
 
 # I need to have a function start the code running
+
+Support 
