@@ -3,7 +3,7 @@ Tuesday, March 16th, 2021
 
 Officially connecting the functions together after unit testing to
 ensure that switch with words works and then switch using numbers works
-and then that reset works so that multiple switch cases can be use without
+and then that reset works so that multiple switch cases can be used without
 interference by wiping previous switch case input data and output data.
 
 Unit testing for release and connecting the functions together.
