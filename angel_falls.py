@@ -6,6 +6,117 @@ if numbers are used in cases. If words are used it flows through as a bypass.
 Having fun. Nice to seeing the software grow in a controlled manner. Not tested yet. Coded a lot last few days
 Dijkstra and Knuth method writing raw code and thinking it thru with minor testing.
 
+
+#code for resetting switch case module vars and lists in parser and codegen so they are wiped clean.
+#zap var method
+def zap_var(y):
+	eval("y=''")  #this empties the var
+	return y:    
+
+#empty_list method
+def empty_list(x): #might need to have it take in with string
+	# and then do this x = x[1:-1] possibly
+	eval("x.clear()") #this empties the list by the name entered
+
+	
+
+list_of_lists=[['applepie'],['peachpie'],['lemonpie']]
+
+applepie=["one","two","three",'four','five']
+peachpie =["fun","silly","iceplant",'seagulls']
+lemonpie=["lemon tree", "plum tree", "pear tree"]
+################################
+##  see_each_list_contents()
+###############################
+def see_each_list_contents():
+	print("see each list contents testing this now")
+	counter=0
+	print(list_of_lists[0])
+	print(list_of_lists[1])
+	print(list_of_lists[2])
+	for item in list_of_lists:
+		weasel=item[counter]
+		print("list name=",weasel)
+		#this loops through the list item from list above
+		for item in eval(weasel):
+			print(item)
+		print("------------")
+	
+	print("==== did it work ====")
+	
+	
+see_each_list_contents()
+
+
+ # flush all vars and all lists which will be done after codegen completed
+ # this flushes the lists to empty and vars set to ''
+ #################################
+ ##      american_standard()  
+ #################################
+def american_standard():
+	#empty lists used in parser and codegen
+	#note the list_of_lists does not get emptied, these are necessary for the data structure
+	for item in list_of_lists:
+		weasel=item[counter]
+		print("list name=",weasel)
+		#this loops through the list item from list above
+		for item in eval(weasel):
+			print(item)
+			empty_list(item) 
+			print(item)
+		print("------------")
+		#empty_list(item) #this empties this list to []
+
+    #empty vars used  in parser and codegen
+    #the list_of_vars[] does not itself get cleared it is for the loops reference
+	for item in list_of_vars:   #which have their names in a list for convenience
+		vartime=item[counter]
+		print("list name=",vartime)
+		for item in eval(vartime):
+			print(item)
+			zap_var(item) 
+			print(item)
+		 #this empties this var to ''
+
+
+		
+		
+	
+#this is a flag to determine if macros thru and to are in the switch case
+do_macro_conversion= False # by default
+# I can't assume that there is a to or thru macro in use
+def detect_if_thru_and_or_to_macros_exist():
+	if numbers == True:
+		#do a count
+		number_of_thrus=switchcasetester.count(" thru ")
+		number_of_tos = switchcasetester.counter(" to ")
+		print("the number of thrus =", number_of_thrus)
+		print("number of tos =",number_of_tos)
+
+		global switchcasetester
+		print("=========testing case_numbers_to_strings===january 5th 2020====")
+		mycounter = 0; thru_count = 0; 
+		for line in switchcasetester.splitlines():
+			#case in line     AND   either thru or to
+			if "case" in line :
+				if " thru " or " to " in line: #they mean the same
+					thru_count += 1
+					mycounter += 1
+				else:
+					mycounter += 1
+					pass
+		print("thru_count",thru_count)
+		# determining what the thru/to count is which turns on do_macro_conversion 
+		if int(thru_count) >= 1:
+			print("yes thru_counter >= 1 so do macro conversion")
+			do_macro_conversion = True
+		else:
+			do_macro_conversion = False
+
+
+
+			
+
 # fawcett_value function 
 # this function uses the following methods:
 
