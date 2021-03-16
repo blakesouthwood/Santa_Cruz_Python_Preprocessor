@@ -1,3 +1,10 @@
+Big release tomorrow Tuesday March 16th.
+Organized and streamline code for switch case.
+Redid reset so no module reliad necessary. 
+Macros work.
+
+
+
 Sunday, March 14th, 2021 5:51 am California time
 Listening to Neptune Currents (Sunday mornings only) on KKUP 91.5 FM
 Also listen to KZSU Stanford 90.1 FM
