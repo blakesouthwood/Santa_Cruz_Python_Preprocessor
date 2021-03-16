@@ -1,3 +1,68 @@
+Tuesday, March 16th, 2021
+Unit testing for release and connecting the functions together.
+Example functions in the process of testing.
+This is a function that determines if words or numbers are used in the switch case and directs methods to be called
+if numbers are used in cases. If words are used it flows through as a bypass.
+Having fun. Nice to seeing the software grow in a controlled manner. Not tested yet. Coded a lot last few days
+Dijkstra and Knuth method writing raw code and thinking it thru with minor testing.
+
+# fawcett_value function 
+# this function uses the following methods:
+
+#           check_if_first_case_is_number()
+#           detect_if_thru_and_or_to_macros_exist()
+#           make_list_of_lines_using_thru_macro()
+#			bottom_up_change_of_thru_line_test()
+#			change_to_into_thru()
+#			expand_thru_macro()
+#			case_numbers_to_strings() 
+
+##########################################
+#             fawcett_value()
+##########################################
+def fawcett_valve():
+	print("fawcett_value called control flow of words or numbers")
+	mytrace('fawcett_value()')
+
+	#test if first case is number and not a word or character
+	check_if_first_case_is_number() #puts True or False put into valve[0]
+	firstcase = valve[0]            #True if number otherwise a string so False
+	
+	# detects if cases are numbers not words
+	# if firstcase is True it's numbers else it's False and words
+	if firstcase == True: # ex case 1:    #if firstcase is a number (not a word) True it's a number
+	
+		print("numbers detected for cases   firstcase == True ")
+		#tests if there are 'thru' and/or 'to' macros in case lines with numbers
+		#in ex: case 1 thru 10:   ..and..    case 11 to 15:
+		do_macro_conversion=detect_if_thru_and_or_to_macros_exist()
+		# This if runs if there are macros to and/or thru in use in this switchcase
+		#determine if macros thru and/or to in case being used in this switch case
+		
+		if do_macro_conversion == True:
+			print("do_macro_conversion == True so expanding the macros")
+			#so these methods are only called if the switch case uses only numbers
+			make_list_of_lines_using_thru_macro()
+			bottom_up_change_of_thru_line_test()
+			change_to_into_thru()
+			expand_thru_macro()
+			case_numbers_to_strings() # this changes case 1:  into case "1": etc
+		
+		else:  #if case number like case 1:
+			print(" do_macro_conversion == False:  meaning no macros to expand")
+			#this means not numbers but words so do nothing else different 
+			#do nothing becase if we reach here it's words
+			print("string words  detected in cases")
+			pass
+		
+		#end inner if
+	else:  #False meaning first case is string and not a number
+		pass
+	#end outter if
+
+
+
+
 Big release tomorrow Tuesday March 16th.
 Organized and streamlined code for switch case.
 Redid reset so no module reload necessary. 
