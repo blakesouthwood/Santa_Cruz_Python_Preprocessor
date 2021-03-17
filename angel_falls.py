@@ -1,3 +1,10 @@
+Wed March 17th, 2021  7:32 am California Time
+words in cases works through fawcett_valve control switch case
+debugging and testing cases with numbers adding flags, step by step sequence
+discovered I needed to add scenario for if case 1:  without a to or thru whoopse.
+slow and steady wins the race. the turtle won the race and the rabbit lost. slow and methodical.
+
+
 Tuesday, March 16th, 2021
 12:42 PM California time.
 
