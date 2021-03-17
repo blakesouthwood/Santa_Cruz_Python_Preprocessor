@@ -4,7 +4,7 @@ Wed March 17th, 2021
 Figured out how to make it work.
 Putting numbers methods in separate module
 Which already works.
-Fawcett_valve correctly detects words or
+Faucet_valve correctly detects words or
 Numbers now and so tonight the dream
 Will become reality.
 Will also add reset() method to start each switch with virgin settings.
@@ -17,7 +17,7 @@ adding fuzzy logic and flags to make it work
 
 
 7:32 am California Time
-words in cases works through fawcett_valve control switch case
+words in cases works through faucet_valve control switch case
 debugging and testing cases with numbers adding flags, step by step sequence
 discovered I needed to add scenario for if case 1:  without a to or thru whoopse.
 slow and steady wins the race. the turtle won the race and the rabbit lost. slow and methodical.
@@ -43,7 +43,7 @@ Dijkstra and Knuth method writing raw code and thinking it thru with minor testi
 #zap var method
 def zap_var(y):
 	eval("y=''")  #this empties the var
-	return y:    
+	return y  
 
 #empty_list method
 def empty_list(x): #might need to have it take in with string
