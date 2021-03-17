@@ -1,4 +1,9 @@
-Wed March 17th, 2021  7:32 am California Time
+Wed March 17th, 2021  
+8:03 am
+adding fuzzy logic and flags to make it work
+
+
+7:32 am California Time
 words in cases works through fawcett_valve control switch case
 debugging and testing cases with numbers adding flags, step by step sequence
 discovered I needed to add scenario for if case 1:  without a to or thru whoopse.
