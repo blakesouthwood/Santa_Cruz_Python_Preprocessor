@@ -4,7 +4,7 @@ Wed March 17th, 2021
 Figured out how to make it work.
 Putting numbers methods in separate module
 Which already works.
-Fawcett_valve correctly detects 
+Fawcett_valve correctly detects words or
 Numbers now and so tonight the dream
 Will become reality.
 Will also add reset() method to start each switch with virgin settings.
