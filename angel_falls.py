@@ -8,7 +8,10 @@ Fawcett_valve correctly detects words or
 Numbers now and so tonight the dream
 Will become reality.
 Will also add reset() method to start each switch with virgin settings.
- 
+And will test several switches in sequence.
+Was also pleased by happenchance to notice sql calls done
+With same technique I use for switch case in long string var.
+
 8:03 am
 adding fuzzy logic and flags to make it work
 
