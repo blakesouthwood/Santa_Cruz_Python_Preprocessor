@@ -1,4 +1,14 @@
 Wed March 17th, 2021  
+
+9:07 am
+Figured out how to make it work.
+Putting numbers methods in separate module
+Which already works.
+Fawcett_valve correctly detects 
+Numbers now and so tonight the dream
+Will become reality.
+Will also add reset() method to start each switch with virgin settings.
+ 
 8:03 am
 adding fuzzy logic and flags to make it work
 
