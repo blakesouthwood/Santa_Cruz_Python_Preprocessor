@@ -1,5 +1,10 @@
 Wed March 17th, 2021  
 10:36 pm 
+
+By putting the numbers methods into a separate module that changes the switch case string from number version to strings 
+it's easier to keep track of what is going on and understand the code and reduce the complexity.
+It dawned on me to just keep the numbers transformation code in its own module. So simple in hindsight.
+
 Very close now. Managing complexity is only possible with divide and conquor.
 Luckily I developed the numbers version of the switch case separately.
 Testing it. Some interesting bugs but it's nearly there. A labor of love. Lot of code.
