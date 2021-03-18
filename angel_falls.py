@@ -1,5 +1,27 @@
 Wed March 17th, 2021  
+10:36 pm 
+Very close now. Managing complexity is only possible with divide and conquor.
+Luckily I developed the numbers version of the switch case separately.
+Testing it. Some interesting bugs but it's nearly there. A labor of love. Lot of code.
+I was thinking today that not only will I be using this switch case daily in my code
+but the whole world will be able to use it too. It's a rush thinking of someone contemplating
+how they want their code to look and they learn that there is a beautiful smart and cool
+switch case in python with identical switch case behavior (and look and feel) to JavaScript and C.
 
+I never imagined how deep this program would be. Never wrote a parser before. First code generator too.
+I've generated dynamic JavaScript before which gave me the courage to attempt this.
+My saving grace was a year back I made a Python if elif else: and added a switch() and fallthru()
+and that's what gets generated. If I hadn't already lucked out making that work in PyDev I never
+would have attempted this.
+
+In review the switch using words, multiple words for cases works and the switch using numbers and macros to and thru works
+and I made a faucet valve method to test what the first case is number or word and then control if it bypasses
+the rest of the valve and does the string words by default or if a number is detected it calls the methods
+that converts the case numbers into strings (ex: case "1": from case 1: )and detects and expands macros to and thru.
+Macros work. I love macros. Knuth liked them and they are in Lisp and C and now in Python.
+
+Look for the working code tomorrow. 
+	
 9:07 am
 Figured out how to make it work.
 Putting numbers methods in separate module
