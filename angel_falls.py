@@ -1,4 +1,12 @@
 Wed March 17th, 2021  
+11:44pm 
+Much cleaner implimentation. Simplicity trumping complexity.
+The fawcett valve now faucet_valve was confusing, hard to follow and overly complicated.
+The faucet valve governes the flow of control first detecting if case number or case word.
+I ripped out the number code and placed it into a seperate module.
+Easier to follow what's going on now. Pure zen. Elegant.
+
+
 10:36 pm 
 
 By putting the numbers methods into a separate module that changes the switch case string from number version to strings 
