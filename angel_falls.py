@@ -1,3 +1,115 @@
+thursday, March 18th, 2021  6:32 pm California time PST
+Strings, words already work. I had trouble with the faucet_valve.
+I made a bunch of methods for manipulating lists faster and more easily.
+
+Absolute disbelief. Numbers working (starting to). I almost fell out of my chair.
+I thought NO WAYYYYYY.
+Everything I'm working on is preparser so it's not that tough.
+I put the module into the regular switch module at the top and leaped ahead in progress.
+It's like seeing the light at the end of the tunnel and like the Wright Brothers
+first achieving first powered and sustained flight twenty feet off the ground.
+What a feeling. It's like driving on a pot holed bumpy road and the getting onto the freeway
+280 and driving 100 mph. What a rush.
+
+input:
+	sw = '''
+	switch(exp) {  
+		case 1 thru 5:
+			print("where\'s the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			break
+
+		case 6 to 8:
+			print('keep going!')
+			print('taught me how to write code')
+			fallthru
+			
+		case 9:  
+		case 10:
+			print('make some ketchup')
+			print('== you gotta work===')
+			break;
+
+			
+
+		case 11 to 15:
+			print('ski fast in the powder')
+			print('sweet powder snow, lovely snow')
+			
+			
+		case 16 thru 20:
+			print('Heavenly valley')
+			print('big snow flakes there and moggles')
+			break
+			
+		default:
+			print('six walking duck de fa ul t')
+			print('flying geese')
+			
+			
+}
+'''
+endswitch(sw)
+
+
+
+output before hitting a wall of another bug
+	switch(exp) {  
+		case '1':
+		case '2':
+		case '3':
+		case '4':
+		case '5':
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			break
+
+		case '6':
+		case '7':
+		case '8':
+			print('keep going!')
+			print('taught me how thru write code')
+			fallthru
+			
+		case '9':
+		case '10':
+			print('make some ketchup')
+			print('== you gotta work===')
+			break;
+
+			
+
+		case '11':
+		case '12':
+		case '13':
+		case '14':
+		case '15':
+			print('ski fast in the powder')
+			print('sweet powder snow, lovely snow')
+			
+			
+		case '16':
+		case '17':
+		case '18':
+		case '19':
+		case '20':
+			print('Heavenly valley')
+			print('big snow flakes there and moggles')
+			break
+			
+		case 'default':
+			print('six walking duck de fa ul t')
+			print('flying geese')
+			
+			
+			break 			
+						
+}
+	
+	
+
 Wed March 17th, 2021  
 11:44pm 
 Much cleaner implimentation. Simplicity trumping complexity.
