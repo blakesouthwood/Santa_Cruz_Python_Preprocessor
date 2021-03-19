@@ -11,6 +11,45 @@ first achieving first powered and sustained flight twenty feet off the ground.
 What a feeling. It's like driving on a pot holed bumpy road and the getting onto the freeway
 280 and driving 100 mph. What a rush.
 
+Made progress on flushing the lists clean and vars so that multiple switches can be used
+without reloading. Faster too. 
+
+#target = list_of_lists[0]  this represents a list in a list position 0
+#print_out_a_list(target) 
+
+def print_out_a_list(target):
+	nicejob= " ".join(str(x) for x in target)
+	nicejob = nicejob.lstrip()
+	nicejob = nicejob.rstrip()
+	for item in eval(nicejob):
+		print(item)
+	
+#target = list_of_lists[0] #get name of list in list by position
+#empty_a_list(target)
+#target = list_of_lists[1] #get name of list in list by position
+#empty_a_list(target)
+def empty_a_list(target):
+	nicejob= " ".join(str(x) for x in target)
+	nicejob = nicejob.lstrip()
+	nicejob = nicejob.rstrip()
+	sweet = eval(nicejob) #applepie
+	del sweet[:] # will this work
+	print(sweet) #should be []
+
+
+def clear_out_list(i): # clear_out_list('fox')
+	print("clear_out_list() called")
+	nicejob = i
+	nicejob = nicejob.lstrip()
+	nicejob = nicejob.rstrip()
+	sweet = eval(i) #fox
+	print(sweet) #['apps','balls','craps']
+	del sweet[:] # will this work
+	print(sweet) #should be []
+
+fox = ['apps','jacks','popcorn','mtv'] #so an outside free floating list not in a list
+
+
 input:
 	sw = '''
 	switch(exp) {  
