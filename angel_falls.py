@@ -11,6 +11,34 @@ first achieving first powered and sustained flight twenty feet off the ground.
 What a feeling. It's like driving on a pot holed bumpy road and the getting onto the freeway
 280 and driving 100 mph. What a rush.
 
+The point of the faucet_value is so that the switch case can either do words or numbers on the fly.
+The key is that it does numbers as strings but it has to convert them first.
+
+##########################################
+#             faucet_valve()  #this governs whether to convert numbers to strings, otherwise if strings(it falls thru)
+##########################################
+def faucet_valve():
+	print("=====faucet VALVE=======")
+	print("=====faucet VALVE=======")
+	print("=====faucet VALVE=======")
+	mytrace('faucet_valve()')
+	icetea =finbar()  #method finbar() determines if case has a number like case 4:
+	print("icetea =",icetea) #True if numbers
+	#decided to just return True or False for now
+	valve.append(icetea) #valve[0] = icetea
+	firstcase = valve[0]  #True if number otherwise a string so False
+	print("contents of valve[0]",valve[0])
+	print(valve[0])
+	print("firstcase =",firstcase)
+	if firstcase == True: 
+		print("here means firstcase == True meaning a NUMBER:")
+		convert_case_numbers_to_strings()
+	else:
+		print('firstcase == False  meaning strings words')
+		pass #meaning to the strings words as normal
+
+	
+
 Made progress on flushing the lists clean and vars so that multiple switches can be used
 without reloading. Faster too. 
 
