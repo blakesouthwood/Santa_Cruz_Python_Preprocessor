@@ -1,3 +1,10 @@
+thursday, March 18th, 20201 8:52 pm California time
+Solved bug
+reengineered flow of control and connected the dots to make it work.
+Will upload tonight or tomorrow. The solution was obvious.
+
+
+
 thursday, March 18th, 2021  6:32 pm California time PST
 Strings, words already work. I had trouble with the faucet_valve.
 I made a bunch of methods for manipulating lists faster and more easily.
