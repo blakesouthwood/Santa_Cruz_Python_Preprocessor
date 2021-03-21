@@ -1,4 +1,8 @@
-thursday, March 18th, 20201 8:52 pm California time
+Saturday, march 20th, 2021
+Isolated bug.
+Will fix Monday and Tuesday.
+
+thursday, March 18th, 2021 8:52 pm California time
 Solved bug
 reengineered flow of control and connected the dots to make it work.
 Will upload tonight or tomorrow. The solution was obvious.
