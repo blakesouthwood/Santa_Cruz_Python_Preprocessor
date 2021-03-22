@@ -6,6 +6,11 @@ For Python 3 Monday afternoon.
 Will handle strings and numbers.
 It’s a working version.
 
+Still testing multiple switches
+Shoukd work using automatic reset
+that clears vars and lists.
+Doesn’t use reload module anymore.
+
 
 Saturday, march 20th, 2021
 Isolated bug.
