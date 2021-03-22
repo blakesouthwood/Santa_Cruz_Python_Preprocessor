@@ -1,7 +1,10 @@
+Sunday March 21, 2021 
+8:16 pm California time
+
 Launching version 1.0 switch case 
 For Python 3 Monday afternoon.
 Will handle strings and numbers.
-Its a working version.
+It’s a working version.
 
 
 Saturday, march 20th, 2021
