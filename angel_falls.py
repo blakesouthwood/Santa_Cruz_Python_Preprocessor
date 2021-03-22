@@ -3,6 +3,9 @@ Sunday March 21, 2021
 
 Launching version 1.0 switch case 
 For Python 3 Monday afternoon.
+Javascipt/C style switch case
+With their expected switch behavior.
+ 
 Will handle strings and numbers.
 It’s a working version.
 
