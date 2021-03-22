@@ -10,7 +10,7 @@ Will handle strings and numbers.
 It’s a working version.
 
 Still testing multiple switches
-Shoukd work using automatic reset
+Should work using automatic reset()
 that clears vars and lists.
 Doesn’t use reload module anymore.
 
