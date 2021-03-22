@@ -1,3 +1,9 @@
+Launching version 1.0 switch case 
+For Python 3 Monday afternoon.
+Will handle strings and numbers.
+Its a working version.
+
+
 Saturday, march 20th, 2021
 Isolated bug.
 Will fix Monday and Tuesday.
