@@ -6,6 +6,8 @@ the programmer can add as many as they would like to the code.
 Unfortunately the python language won't allow generating lists on-the-fly programmatically.
 I will include a function to generate (( caselist100 =[] ) dynamically with a loop and they can be 
 copied and pasted into the code rather than doing it manually.
+				      
+Will put up code for switch case 1.0 in a little while tonight.
 				       
 				  
 
