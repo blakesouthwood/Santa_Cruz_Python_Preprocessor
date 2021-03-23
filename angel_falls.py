@@ -1,8 +1,9 @@
 Monday, March 22, 2021
 6pm California time
 
-The initial setting for number of case sections is 1,000 but
-the programmer can add as many as they would like. 
+The initial setting for the number of case sections is 1,000 but
+the programmer can add as many as they would like to the code. 
+Unfortunately the python language won't allow generating lists on-the-fly programmatically.
 I will include a function to generate (( caselist100 =[] ) dynamically with a loop and they can be 
 copied and pasted into the code rather than doing it manually.
 				       
