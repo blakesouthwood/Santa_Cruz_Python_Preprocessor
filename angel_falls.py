@@ -1,3 +1,15 @@
+Monday, March 22, 2021
+6pm California time
+
+The initial setting for number of case sections is 1,000 but
+the programmer can add as many as they would like. 
+I will include a function to generate (( caselist100 =[] ) dynamically with a loop and they can be 
+copied and pasted into the code rather than doing it manually.
+				       
+				  
+
+
+
 Sunday March 21, 2021 
 8:16 pm California time
 
