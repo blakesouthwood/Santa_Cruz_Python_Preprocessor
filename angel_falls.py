@@ -1,5 +1,5 @@
 Tuesday March 23rd 2021
-7 pm Califirnia time
+7 pm California time
 
 Refined architectural design
 So the main switch case process mgr
