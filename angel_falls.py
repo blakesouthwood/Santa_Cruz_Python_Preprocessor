@@ -14,13 +14,14 @@ And the main file orchestrates
 the two parsers. 
 
 The second module is customized for
-dealing with case numbers and the nacros to 
+dealing with case numbers and the macros to 
 and thru and expanding the macros and converting 
 the numbers to strings. 
 
 The faucet_valve is a fork for
 directing to the words parser and codegen
-through main list def mode_1()
+through main list mode_1  words or mode_2 numbers
+def mode_1()
 if numbers == False.
 mode_2() is triggered by 
 if numbers == True: # to do numbers.
