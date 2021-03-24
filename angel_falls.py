@@ -7,22 +7,25 @@ is in one file with faucet_valve
 and pretest to determine if cases 
 are words or numbers C style.
 
+I settled on 2 modules to reduce complexity and
+simplifyb debugging.
+
 And the main file orchestrates
 the two parsers. 
 
-The second module is customized fir
+The second module is customized for
 dealing with case numbers and the nacros to 
 and thru and expanding the macros and converting 
 the numbers to strings. 
 
-Fawcet_valve is a fork fir
-directing to words parser and codegen
-Through main list def mode_1()
+The faucet_valve is a fork for
+directing to the words parser and codegen
+through main list def mode_1()
 if numbers == False.
 mode_2() is triggered by 
-if numbers == True:
+if numbers == True: # to do numbers.
 Which is directed to the second imported 
-module with a modified parser and preoarser for numbers.
+module with a modified parser and preparser for numbers.
 
 Reset of vars and list occurs after 
 Either codegen is completed.
