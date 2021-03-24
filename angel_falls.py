@@ -1,3 +1,43 @@
+Tuesday March 23rd 2021
+7 pm Califirnia time
+
+Refined architectural design
+So the main switch case process mgr
+is in one file with faucet_valve
+and pretest to determine if cases 
+are words or numbers C style.
+
+And the main file orchestrates
+the two parsers. 
+
+The second module is customized fir
+dealing with case numbers and the nacros to 
+and thru and expanding the macros and converting 
+the numbers to strings. 
+
+Fawcet_valve is a fork fir
+directing to words parser and codegen
+Through main list def mode_1()
+if numbers == False.
+mode_2() is triggered by 
+if numbers == True:
+Which is directed to the second imported 
+module with a modified parser and preoarser for numbers.
+
+Reset of vars and list occurs after 
+Either codegen is completed.
+
+I will commense testing multiple switch cases 
+now.
+
+I need to test a nested switch now that will
+convert  to residing in a function 
+in actual python code to work.
+ 
+ 
+
+
+
 Monday, March 22, 2021
 6pm California time
 
