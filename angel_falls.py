@@ -8,7 +8,7 @@ and pretest to determine if cases
 are words or numbers C style.
 
 I settled on 2 modules to reduce complexity and
-simplifyb debugging.
+simplify debugging. Nearing 10,000 lines of code.
 
 And the main file orchestrates
 the two parsers. 
