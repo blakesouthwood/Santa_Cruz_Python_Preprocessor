@@ -1,6 +1,8 @@
+Thursday March 26th 2021 8:20 am 
+
 Fixed bug for comparing switch input string to case 
 Making both lowercase with comparing
-case == casename.lower()
+case == string.lower()
 Otherwise if a word in a case name has
 A capital letter it wont match.
 
