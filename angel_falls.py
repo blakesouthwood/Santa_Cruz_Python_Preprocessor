@@ -1,5 +1,10 @@
 Thursday March 26th 2021 8:20 am 
 
+
+Adding capacity initially
+To handle 10,000 cases.
+And more can be added.
+
 Fixed bug for comparing switch input string to case 
 Making both lowercase with comparing names in cases
 such as “Russia” “India” “Canada”
