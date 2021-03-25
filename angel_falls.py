@@ -1,3 +1,10 @@
+Fixed bug for comparing switch input string to case 
+Making both lowercase with comparing
+case == casename.lower()
+Otherwise if a word in a case name has
+A capital letter it wont match.
+
+
 Modified design to be completely modular to be 
 able to add new features more easily
 over time. It has 2 modes currently 
