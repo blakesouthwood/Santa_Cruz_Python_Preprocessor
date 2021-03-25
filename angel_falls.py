@@ -1,7 +1,16 @@
 Thursday March 26th 2021 8:20 am 
 
 Fixed bug for comparing switch input string to case 
-Making both lowercase with comparing
+Making both lowercase with comparing names in cases
+such as “Russia” “India” “Canada”
+
+Input can be lowercase or uppercase or
+Various combinations with a capital letter to stsrt with
+But in the process at point if seitch input
+Reduced to lowercase and all case names
+For comaring are briefly transfirmed to
+Lowercase for strcmp.
+
 case == string.lower()
 Otherwise if a word in a case name has
 A capital letter it wont match.
