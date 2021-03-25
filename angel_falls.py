@@ -1,5 +1,6 @@
-Modified design to be completely modularcto be able to add new features morev
-Simply over time. It has 2 modes currently 
+Modified design to be completely modular to be 
+able to add new features more easily
+over time. It has 2 modes currently 
 And adding more modes including C constant words not in strings
 And nested switches. 
 
