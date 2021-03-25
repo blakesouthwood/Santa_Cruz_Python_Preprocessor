@@ -1,3 +1,8 @@
+Modified design to be completely modularcto be able to add new features morev
+Simply over time. It has 2 modes currently 
+And adding more modes including C constant words not in strings
+And nested switches. 
+
 Tuesday March 23rd 2021
 7 pm California time
 
@@ -5720,3 +5725,5 @@ def endswitch(y):
 # I need to have a function start the code running
 
 Support 
+
+
