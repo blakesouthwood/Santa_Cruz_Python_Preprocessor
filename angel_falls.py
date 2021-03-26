@@ -10,6 +10,12 @@ They will run separately.
 Implimenting fix tomorrow morning.
 Adding flow valve and fuzzy logic.
 
+This has taken longer to impliment
+because I wanted to duplicate the
+C language switch appearance and
+behavior described in detail by
+Yale University.
+
 8:20 am 
 
 Adding capacity initially
