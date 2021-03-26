@@ -12,9 +12,12 @@ Adding flow valve and fuzzy logic.
 
 This has taken longer to impliment
 because I wanted to duplicate the
-C language switch appearance and
+C language style switch appearance and
 behavior described in detail by
-Yale University.
+Yale University. I had no idea what I was
+up against. Along the way I decided to take
+the liberty to add some new features. 
+Further, one of my aims was adding macros.
 
 8:20 am 
 
