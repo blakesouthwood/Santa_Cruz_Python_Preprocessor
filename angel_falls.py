@@ -1,5 +1,14 @@
-Thursday March 26th 2021 8:20 am 
+Thursday March 26th 2021 
 
+9:12 pm
+I think it will be working tomorrow.
+I have switch wirds wirking in ine file and switch numbers 
+Working in another file with Macros.
+Combining them into one file was a bad idea.
+They will run separately.
+Implimenting fix tomorrow morning.
+
+8:20 am 
 
 Adding capacity initially
 To handle 10,000 cases.
