@@ -2,7 +2,7 @@ Thursday March 26th 2021
 
 9:12 pm
 I think it will be working tomorrow.
-I have switch words wirking in one file 
+I have switch words working in one file 
 and switch numbers 
 Working in another file with Macros.
 Combining them into one file was a bad idea.
