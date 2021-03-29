@@ -2,7 +2,9 @@ Having import issues whereby two imported files
 Cant see or talk to each other so putting two files into one
 So everything is accessible without debate.
 Python isnt as smart ( in its design) as C in its design.
-#include in C just works
+#include in C just works.
+Now by having just one imported file
+I will have complete control.
 
 
 
