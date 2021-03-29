@@ -1,3 +1,13 @@
+Sunday March 28th 2021 9:13 pm
+Redesign nearly complete
+Switch with words works
+Switch with numbers works
+Fixing flow valve to preven function name collisions.
+Likely wirking in the morning
+
+
+
+
 Thursday March 26th 2021 
 
 9:12 pm
