@@ -1,3 +1,11 @@
+Having import issues whereby two imported files
+Cant see or talk to each other so putting two files into one
+So everything is accessible without debate.
+Python isnt ss smart as C in its design.
+#include in C just works
+
+
+
 Sunday March 28th 2021 9:13 pm
 Redesign nearly complete
 Switch with words works
