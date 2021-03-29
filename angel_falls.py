@@ -3,7 +3,7 @@ Redesign nearly complete
 Switch with words works
 Switch with numbers works
 Fixing flow valve to prevent function name collisions.
-Likely wirking in the morning
+Likely working in the morning
 
 
 
