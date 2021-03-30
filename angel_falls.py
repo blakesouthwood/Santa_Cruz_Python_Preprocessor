@@ -1,3 +1,14 @@
+March 30th 9am 2021
+Oh MY God it's going to work. PURE NIRVANA !!!!
+all successful tests this morning. I added a number detector to input function clever(will be renamed)
+and then in endswitch() function I have my if else flow valve using valve[0] with True or False to determine
+which parser to run mode_1 or mode_2.   Simple is always better. So obvious.
+Everything going in one file. Just tested again with separate files to make sure each of the two files works and they work perfectly.
+So pleased. Will upload tonight. What a f'n rush. 
+
+
+
+
 Having import issues whereby two imported files
 Cant see or talk to each other so putting two files into one
 So everything is accessible without debate.
