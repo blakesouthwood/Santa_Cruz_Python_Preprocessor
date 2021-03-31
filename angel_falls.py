@@ -1,3 +1,16 @@
+March 31st, 2021
+Uploading working.switch.case.in.python tonight for sure.
+
+undaunted. wow. flow valve works. greatness awaits.... (this means using switches with words and then with numbers works.
+Will test using multiple switches in a row next. Clearing out vars and lists works too.
+							
+it's really going to work. This is mind blowing. This shouldn't work but it does.
+I feel like I have opened the genie's bottle. The possibilities are endless.
+I did discover a bug with a fix that will generate an error message if different case sections
+have duplicate case names. 
+
+
+
 March 30th 9am 2021
 Oh MY God it's going to work. PURE NIRVANA !!!!
 all successful tests this morning. I added a number detector to input function clever(will be renamed)
