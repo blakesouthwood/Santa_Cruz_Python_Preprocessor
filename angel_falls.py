@@ -1,3 +1,93 @@
+April 1st, 2021 7:46 pm California Time
+Fork Valve to determine whether to do switch case with words/chars or numbers
+These functions determine with a prescan of the switch case string whether it's going to use words or numbers
+and it produces an output of True if numbers == True determined by looking in the first case in the switch case input string
+and if the output is False as in if numbers == False then it chooses the parser for strings words.
+
+coffee =[]
+# April 1, 2021 6:39 pm 
+# the test is if numbers == True then do numbers switch case
+# and then    if numbers == False then do words switch case
+# this is done before the parser runs thru the switch string and determines
+# which switch-case mode to parse numbers or words
+# this grabs the var passed as a parameter sw so this is going to be called
+# in endswitch which receives the paramater sw as an argument
+# this doesn't call the switch case, it scans thru the input string in a loop
+# and analyzes the first line with case in it 
+# this is the input for the flow valve which is based on football[0]
+# which has an if else. if number True in first case in switch then do numbers swith
+# if not number False then do switch for words
+#it returns the line number of first case in coffee[0]
+#########################################
+##  grab_first_case()
+#########################################
+
+
+
+def grab_first_case_of_switch_string(): 
+	print("== $$$$$ == grab_first_case_name_or_number() called")
+	global sw
+	mycounter = 0
+	#this takes in sw to test for finding out if numbers like case 2: or words case "apple"
+	for line in sw.splitlines():
+		if "case" in line:
+			print("the line number with first instance of case is", str(mycounter))
+			#this gets the line number of first case and puts it into coffee[0]
+			coffee.append(mycounter)
+			#smart=line.split() #separates case from casename
+			#print(smart)
+			#cat =smart[1]  #calling method to check if  case name is a number
+			#print(cat)
+			#print('line number of first case =',coffee[0])
+			break  #here after getting the first instance of a case we leave the loop
+		else:
+			mycounter += 1
+			continue
+
+football=[]
+football.append("nada")# 0
+football.append("sway")# 1
+
+def remove_tabs_from_string(y):
+	y=y.replace("\t","")
+	return y
+
+def grab_first_case_line_in_switch_case_string():
+	getline= eval("sw.splitlines()[" + str(coffee[0]) + "]")
+	return getline
+
+def check_if_number_in_string(x):
+	 theresult = any(char.isdigit() for char in x)  #this line from stackoverflow
+	 return theresult
+
+def flow_fork_input():
+    getline   = grab_first_case_of_switch_string()
+    toocool   = grab_first_case_line_in_switch_case_string() 
+    toocool   = remove_tabs_from_string(toocool)
+    print(toocool)
+    getresult = check_if_number_in_string(toocool)#looks in case line
+    football[0] = getresult
+    football[1] = toocool
+    print("output football[0]=",football[0])
+    print("true means numbers")
+    print("false means words")
+    if football[0] == True:
+    	print(" === using numbers === ")
+    	print("proof  football[1]=",football[1])
+    else:
+    	print(" === using words === ")
+    	print("proof  football[1]=",football[1])
+
+	#print("proof  football[1]=",football[1])
+
+
+
+
+
+flow_fork_input()
+
+
+
 March 31st, 2021
 Uploading working.switch.case.in.python tonight for sure.
 
