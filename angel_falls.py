@@ -1,3 +1,8 @@
+April 2nd 2021 Friday
+Flow valve works and added
+And refactored to simplify the complexity
+
+
 April 1st, 2021 7:46 pm California Time
 The fork valve is called before the parser and chooses which of the two parsers to execute
 based on if the switch case string contains numbers or words.
