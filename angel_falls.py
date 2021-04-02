@@ -1,5 +1,10 @@
 April 1st, 2021 7:46 pm California Time
 Fork Valve to determine whether to do switch case with words/chars or numbers
+This utilizes the input var sw for the switch case string that will be parsed
+which is triggered inside of the endswitch(sw) function.
+The result of this number detector in the first case is utilized in a simple
+if else to call mode_1() parser for strings or mode_2() parser for numbers.
+
 These functions determine with a prescan of the switch case string whether it's going to use words or numbers
 and it produces an output of True if numbers == True determined by looking in the first case in the switch case input string
 and if the output is False as in if numbers == False then it chooses the parser for strings words.
