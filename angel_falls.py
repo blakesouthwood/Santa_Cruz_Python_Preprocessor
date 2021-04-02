@@ -74,8 +74,7 @@ def flow_fork_input():
     football[0] = getresult
     football[1] = toocool
     print("output football[0]=",football[0])
-    print("true means numbers")
-    print("false means words")
+    
     if football[0] == True:
     	print(" === using numbers === ")
     	print("proof  football[1]=",football[1])
