@@ -1,4 +1,9 @@
 April 1st, 2021 7:46 pm California Time
+The fork valve is called before the parser and chooses which of the two parsers to execute
+based on if the switch case string contains numbers or words.
+What the code below does is determine what type of switch case it is numbers or strings/words
+this is to work in the same way as switch case defined in ANSI C. 
+
 Fork Valve to determine whether to do switch case with words/chars or numbers
 This utilizes the input var sw for the switch case string that will be parsed
 which is triggered inside of the endswitch(sw) function.
