@@ -14,7 +14,7 @@ These functions determine with a prescan of the switch case string whether it's 
 and it produces an output of True if numbers == True determined by looking in the first case in the switch case input string
 and if the output is False as in if numbers == False then it chooses the parser for strings words.
 
-coffee =[]
+
 # April 1, 2021 6:39 pm 
 # the test is if numbers == True then do numbers switch case
 # and then    if numbers == False then do words switch case
@@ -33,7 +33,7 @@ coffee =[]
 #########################################
 
 
-
+coffee =[]
 def grab_first_case_of_switch_string(): 
 	print("== $$$$$ == grab_first_case_name_or_number() called")
 	global sw
