@@ -44,11 +44,6 @@ def grab_first_case_of_switch_string():
 			print("the line number with first instance of case is", str(mycounter))
 			#this gets the line number of first case and puts it into coffee[0]
 			coffee.append(mycounter)
-			#smart=line.split() #separates case from casename
-			#print(smart)
-			#cat =smart[1]  #calling method to check if  case name is a number
-			#print(cat)
-			#print('line number of first case =',coffee[0])
 			break  #here after getting the first instance of a case we leave the loop
 		else:
 			mycounter += 1
