@@ -1,3 +1,10 @@
+April 4th, 2021 10pm California Time PST
+My code worked. I am in total shock. On my fifth attempt at merging the code to avoid name collissions
+and going through everything carefully I tried a word switch case scenario and then a number case scenario
+and they both worked. Wow.
+
+
+
 April 2nd 2021 Friday
 Flow valve works and added
 And refactored to simplify the complexity
