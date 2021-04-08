@@ -1,5 +1,16 @@
 April 7th, 2021 5:45 pm California time
 Debugging.
+
+Found number bug for case number with fallthru in switch case using numbers.
+My brother suggested I test it the switch case to make sure it works inside of a for loop
+which is commonly done in C and C++. I will give it a go. Nice challenge.
+
+Currently the code runs fine once for fone switch but if I have two switches the first works
+and the second one crashes. I have been clearing out the lists and vars and narrowing down
+the possiblities of where the bug is as I eliminate the print statements peppered throughout the code.
+
+I have started using Visual Studio Code's debugger to step thru the code.
+
 My merged parser codegen works with words and with numbers but only for one switch curently.
 If I run two separate switch cases in a sequence it crashes.
 
