@@ -2,6 +2,9 @@ April 7th, 2021 5:45 pm California time
 Debugging.
 
 Found number bug for case number with fallthru in switch case using numbers.
+The fallthru currenlty points to the case after the the closest one. So I need to
+evidently test fallthrus with the numbers switch case version more thoroughly.
+
 My brother suggested I test the switch case to make sure it works inside of an infinite loop
 which is commonly done in C and C++. I will give it a go. Nice challenge.
 To impliment the switch inside of the infinite loop they will both be in the parser strings:
