@@ -2,10 +2,13 @@ April 7th, 2021 5:45 pm California time
 Debugging.
 
 Found number bug for case number with fallthru in switch case using numbers.
-My brother suggested I test it the switch case to make sure it works inside of a for loop
+My brother suggested I test the switch case to make sure it works inside of an infinite loop
 which is commonly done in C and C++. I will give it a go. Nice challenge.
+To impliment the switch inside of the infinite loop they will both be in the parser strings:
+	
+	
 
-Currently the code runs fine once for fone switch but if I have two switches the first works
+Currently the code runs fine once for one switch but if I have two switches the first works
 and the second one crashes. I have been clearing out the lists and vars and narrowing down
 the possiblities of where the bug is as I eliminate the print statements peppered throughout the code.
 
