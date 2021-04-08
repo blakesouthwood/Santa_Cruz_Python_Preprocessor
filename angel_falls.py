@@ -1,3 +1,15 @@
+April 7th, 2021 5:45 pm California time
+Debugging.
+My merged parser codegen works with words and with numbers but only for one switch curently.
+If I run two separate switch cases in a sequence it crashes.
+
+I can execute a switch using numbers by itself and it works.
+I can execute a switch using words by itself and it works.
+But if I do more than one switch in a sequence it crashes.
+I am working on resetting the code's initial state to prevent
+the overflow of values which is messing it up currently.
+
+
 April 4th, 2021 10pm California Time PST
 My code worked. I am in total shock. On my fifth attempt at merging the code to avoid name collissions
 and going through everything carefully I tried a word switch case scenario and then a number case scenario
