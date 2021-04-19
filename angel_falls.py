@@ -1,6 +1,6 @@
 April 18th,2021 9:37 pm California time
 Nearly there so the switch resets for each occurance of a switch to avoid using a reload(module).
-Discovered if I have a function call in the swith  in a case to another function it doesn't work
+Discovered if I have a function call in the switch  in a case to another function it doesn't work
 but I know how to make it work since it's within a case it's called after the switch is completed
 so it's trivial though nonetheless annoying but still doable. 
 
