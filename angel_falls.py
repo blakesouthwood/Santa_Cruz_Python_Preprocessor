@@ -2,7 +2,21 @@ April 18th,2021 9:37 pm California time
 Nearly there so the switch resets for each occurance of a switch to avoid using a reload(module).
 Discovered if I have a function call in the switch  in a case to another function it doesn't work
 but I know how to make it work since it's within a case it's called after the switch is completed
-so it's trivial though nonetheless annoying but still doable. 
+so it's trivial though nonetheless annoying but still doable. A function within a switch case section
+for generating it just as text isn't called and only when the Python output is called does the 
+function get called which means it's within an elif  just as the fallthru is in
+the generated python code and is actually a function call so it means
+that I will have the function there but it's triggered after the switch 
+and so it will leave from a break in the case section and do what I refer to
+as a falling star that is triggered if the particular case has a function in it
+and then the "feet" of the switch calls the function triggered inside the function.
+And the function inside of a case section must reside  in the same file
+as the switchcase.  So it seems as if it's calling it from within the C style
+switch but it's really called in the Python simulated switch case code. Of course
+I will have to thoroughly test it to ensure it works flawlessly.
+
+I honestly didn't anticipate running multiple switch cases would be an issue until I tested it
+and it totally crashed. 
 
 My flow_valve works forking for mode1 if string word cases and mode2 if a number case like case 3:
 Right now I have combined the two unique parsers together though still separate. Macros work in numbers
