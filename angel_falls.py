@@ -1,3 +1,23 @@
+April 18th,2021 9:37 pm California time
+Nearly there so the switch resets for each occurance of a switch to avoid using a reload(module).
+Discovered if I have a function call in the swith  in a case to another function it doesn't work
+but I know how to make it work since it's within a case it's called after the switch is completed
+so it's trivial though nonetheless annoying but still doable. 
+
+My flow_valve works forking for mode1 if string word cases and mode2 if a number case like case 3:
+Right now I have combined the two unique parsers together though still separate. Macros work in numbers
+for case 1 thru 10:   and case 30 to 40: (Tricky but it works)
+Right now I have written methods to reset lists actually empty them and that works.
+Now working on a few bugs to do multiple switch cases in sequences. Running one switch works.
+It's when I have a second switch that it crashes and I isolated the bug so almost there.
+
+The bug is it's looking in a list for a case name to get the number
+and the previous switch case info is still there so it was appending the second switch numbers/words
+to the list in question. Apparently this has occurred in several of the lists. Wittling it down.
+Then I discovered that the breaks and fallthrus were suddenly wrong and the way that the code gen works
+is it is split into three tiers and so it's just the third list that is wrong and so I will compare the
+codegen from a recent file to see the diff and what changed. 
+
 April 7th, 2021 5:45 pm California time
 Debugging.
 
