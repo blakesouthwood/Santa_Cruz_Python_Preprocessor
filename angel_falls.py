@@ -11,7 +11,7 @@ for item in range(0,len(palmtrees)):
 if len(palmtrees) > 0:
     palmtrees.pop()
 		
-Figured out how to add Ruby Chaining Functions/methods in Python which will make coding Pythong faster and more elegant.
+Figured out how to add Ruby Chaining Functions/methods in Python which will make coding Python faster and more elegant.
 And don't have to use classes or self to make it work. So it will work methods and functions.
 
 Adding option to do switch case with braces with no indentation/or whatever you want for indentation and then
