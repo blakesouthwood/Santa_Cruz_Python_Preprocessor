@@ -12,6 +12,7 @@ if len(palmtrees) > 0:
     palmtrees.pop()
 		
 Figured out how to add Ruby Chaining Functions/methods in Python which will make coding Pythong faster and more elegant.
+And don't have to use classes or self to make it work. So it will work methods and functions.
 
 Adding option to do switch case with braces with no indentation/or whatever you want for indentation and then
 it will be reformated to the correct tab insertion to conform with the current working switch case that has tab indentation
