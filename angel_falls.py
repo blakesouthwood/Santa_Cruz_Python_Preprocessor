@@ -1,13 +1,15 @@
 April 29th, 2021 10:51PM
 Just tested the numbers (not working) I will fix the numbers tomorrow. The way it works
-is there is a seperate parsers for words and one for numbers and I didn't expect words to be working today.
+is there are separate parsers for words and numbers and I didn't expect words to be working today.
 I will fix it tomorrow or this weekend so people can play with it.
 Found working numbers switch case.  switch_module3.py and switchcasetester_numbers.py
 
 I will upload a file with numbers working for the impatient people.
 
 Switch case with the identical style from C and JavaScript works in Python now!!!
-I just tested three unique switch cases in a row and they worked.
+A user can use implicit fallthrus with no break or explicit fallthrus  using either fallthru or fallthrough.
+
+I just tested three unique switch cases in a row and they worked for words.
 Granted it reloads the switch module for this prototype. Still working on making it work without reloading the module
 but it is still nonetheless cool. Numbers works too with macros  case 1 thru 10:     and   case 12 to 15:
 Taking out the print statements now.... I need to clean up the code but I will upload it.
