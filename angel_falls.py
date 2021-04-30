@@ -6,6 +6,13 @@ but it is still nonetheless cool. Numbers works too with macros  case 1 thru 10:
 Taking out the print statements now.... I need to clean up the code but I will upload it.
 I'll end up taking a lot of the code. 
 
+Was working on different versions so I need to integrate them together but still hell of a rush seeing it work.
+I added a more advanced break and fallthru manager which I don't think is in this version but I'll add it soon (it works).
+
+Beta files are switchmodtrial7.py and swtest.py
+
+Very cool. 
+
 
 
 april 29th, 2021  at 1:34 pm PST
