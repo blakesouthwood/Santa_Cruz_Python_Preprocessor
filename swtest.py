@@ -30,7 +30,7 @@ sw = '''
 			
 		case 'gone fishing':
 			print('fallen leaf lake')
-			break
+			fallthru
 			
 		case 'driving car':
 			print('where is the gti')
@@ -40,6 +40,7 @@ sw = '''
 		case 'macbook pro':
 			print('fast laptop')
 			print("when will the code work...")
+			fallthrough
 
 		default:
 			print('six walking duck de fa ul t')
@@ -81,7 +82,7 @@ sw ='''
 			print("going up...")
 			print("straight into the clouds...")
 			print("...")
-			
+			break
 			
 				
 		default:
@@ -124,7 +125,7 @@ sw = '''
 			print("Sesame Street")
 			print(" groucho and animal")
 			print("this is so fun")
-			break
+			fallthru
 
 		case 'Israel canal':
 			print("massive ship blocking canal in Egypt")
