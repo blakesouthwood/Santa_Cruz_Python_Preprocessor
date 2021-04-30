@@ -1,3 +1,17 @@
+April 30th, 2021 7:22am
+I timed how long it takes to reload the switch module.
+The time to do reload the switch module was in 0.0008 seconds.
+
+def sw_reset():
+	importlib.reload(switchmodtrial7)
+	
+start_clock = time.perf_counter()
+sw_reset()
+stop_clock = time.perf_counter()
+print(f"time to do reload of module was  in {stop_clock - start_clock:0.4f} seconds")
+
+
+
 April 29th, 2021 10:51PM
 Just tested the numbers (not working) I will fix the numbers tomorrow. The way it works
 is there are separate parsers for words and numbers and I didn't expect words to be working today.
