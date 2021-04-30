@@ -1,4 +1,10 @@
 April 29th, 2021 10:51PM
+Just tested the numbers (not working) I will fix the numbers tomorrow. The way it works
+is there is a seperate parsers for words and one for numbers and I didn't expect words to be working today.
+I will fix it tomorrow or this weekend so people can play with it.
+
+I will upload a file with numbers working for the impatient people.
+
 Switch case with the identical style from C and JavaScript works in Python now!!!
 I just tested three unique switch cases in a row and they worked.
 Granted it reloads the switch module for this prototype. Still working on making it work without reloading the module
