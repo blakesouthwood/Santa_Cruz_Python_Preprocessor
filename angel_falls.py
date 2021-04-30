@@ -2,7 +2,7 @@ April 29th, 2021 10:51PM
 Just tested the numbers (not working) I will fix the numbers tomorrow. The way it works
 is there is a seperate parsers for words and one for numbers and I didn't expect words to be working today.
 I will fix it tomorrow or this weekend so people can play with it.
-Found working numbers switch case.  switch_module3.py and switchcasetester.py
+Found working numbers switch case.  switch_module3.py and switchcasetester_numbers.py
 
 I will upload a file with numbers working for the impatient people.
 
