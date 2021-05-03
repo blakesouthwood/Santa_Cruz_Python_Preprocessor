@@ -1,3 +1,11 @@
+May 2nd, 2021 Sunday 10pm PST California.
+I did it! I ran two switch cases in sequence without using reload of the module.
+That was my original goal. Pure nirvana. No reload necessary.
+Will experiment with my flow valve to handles number cases and integrate it.
+I didn't think it was possible.  In total shock right now.
+
+
+
 April 30th, 2021 7:22am
 I timed how long it takes to reload the switch module.
 The time to do reload the switch module was in 0.0008 seconds.
