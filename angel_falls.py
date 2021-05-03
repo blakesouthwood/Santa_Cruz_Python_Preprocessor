@@ -1,7 +1,7 @@
 May 2nd, 2021 Sunday 10pm PST California.
 I did it! I ran two switch cases in sequence without using reload of the module.
 That was my original goal. Pure nirvana. No reload necessary.
-Will experiment with my flow valve to handles number cases and integrate it.
+Will experiment with my flow valve to handle number cases and integrate it.
 I didn't think it was possible.  In total shock right now.
 
 
