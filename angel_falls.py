@@ -1,5 +1,9 @@
 May 3rd, 2021 Monday 9:21 pm 
 Just tested 10 unique different switch cases in a sequence and they worked.
+All switch cases were in a row and each one ran in order so all ten were done
+immediately. I didn't start and stop for each one. I just ran them all at once
+to test the stability and durability of the switch module and it worked.
+
 Again this new version doesn't use reload module anymore.
 
 May 3rd, 2021 Monday 7:56pm California time.
