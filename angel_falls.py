@@ -13,7 +13,7 @@ I made a new method to empty a list in Python that works in Sublime. I'll update
 tomorrow so the switch works in Sublime Text 3. I wonder why JavaScript is a million times more stable than Python.
 
 def empty_mylist(name):
-	del name[:]
+    del name[:]
 	
 testlist =["one","two","three"]
 empty_mylist(testlist)	
