@@ -1,3 +1,7 @@
+May 3rd, 2021 Monday 9:21 pm 
+Just tested 10 unique different switch cases in a sequence and they worked.
+Again this new version doesn't use reload module anymore.
+
 May 3rd, 2021 Monday 7:56pm California time.
 Note: it runs in BBEDit but just tried it in Sublime and it doesn't work on Mac.
 listname.clear() doesn't work in Sublime for some lame assed reason.
