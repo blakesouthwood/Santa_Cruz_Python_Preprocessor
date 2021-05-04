@@ -1,4 +1,7 @@
 May 3rd, 2021 Monday 7:56pm California time.
+Note: it runs in BBEDit but just tried it in Sublime and it doesn't work on Mac.
+listname.clear() doesn't work in Sublime for some lame assed reason.
+		
 After the nirvana of seeing the beautiful generated python I noticed ... a few bugs.
 I solved them today. I just ran three switches (without reloading the switch module)
 and they worked perfectly and they correctly included the default case which was missing previously
