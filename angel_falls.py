@@ -8,6 +8,54 @@ The frustraton and agony of the bugs was arguous. I persevered though.
 What a victory. I had to use Visual Studio Code to step through the code to see what it was doing and see what was what.
 I will upload it in a few minutes. I feel like I can walk on water right now and fly through the clouds. It actually works.
 
+I will test and integrate the numbers version of switch case. This will take a few days. I made the valve switch
+to direct to the word parser or the numbers parser but haven't modified the numbers code to work with the new design yet.
+looks like this: it already works but I have to integrate it into the refactored design. Words now works.
+	
+sw = '''
+	switch(exp) {  
+		case 1 thru 5:
+			print("where\'s the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			break
+
+		case 6 to 10:
+			print('kangaroo hop hop!')
+			print('taught me how to write code')
+			break
+			
+		 
+		case 11 to 15:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+
+			
+
+		case 16 to 20:
+			print('ski fast in the powder')
+			print('sweet powder snow, lovely snow')
+			
+			
+		case 21:
+			print('Heavenly valley')
+			print('big snow flakes there and moggles')
+			fallthrough
+			
+			
+		case 26:
+			print('oh yeah')
+			print('tahoe here I come')
+			break
+			
+		default:
+			print('six walking duck de fa ul t')
+			print('flying geese')
+           		break
+}
+'''
+
 
 
 
