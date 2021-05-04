@@ -1,6 +1,15 @@
 May 3rd, 2021 Monday 7:56pm California time.
 Note: it runs in BBEDit but just tried it in Sublime and it doesn't work on Mac.
 listname.clear() doesn't work in Sublime for some lame assed reason.
+I made a new method to empty a list in Python that works in Sublime. I'll update
+tomorrow so the switch works in Sublime Text 3. I wonder why JavaScript is a million times more stable than Python.
+
+def empty_mylist(name):
+	del name[:]
+	
+testlist =["one","two","three"]
+empty_mylist(testlist)	
+
 		
 After the nirvana of seeing the beautiful generated python I noticed ... a few bugs.
 I solved them today. I just ran three switches (without reloading the switch module)
