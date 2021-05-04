@@ -1,3 +1,17 @@
+May 3rd, 2021 Monday 7:56pm California time.
+After the nirvana of seeing the beautiful generated python I noticed ... a few bugs.
+I solved them today. I just ran three switches (without reloading the switch module)
+and they worked perfectly and they correctly included the default case which was missing previously
+and the first case was being skipped. 
+The euphoria and rush I feel at this moment is indescribable. It's like a successful launch of a rocket.
+The frustraton and agony of the bugs was arguous. I persevered though.
+What a victory. I had to use Visual Studio Code to step through the code to see what it was doing and see what was what.
+I will upload it in a few minutes. I feel like I can walk on water right now and fly through the clouds. It actually works.
+
+
+
+
+
 May 2nd, 2021 Sunday 10pm PST California.
 I did it! I ran two switch cases in sequence without using reload of the module.
 That was my original goal. Pure nirvana. No reload necessary.
