@@ -12,6 +12,9 @@ I will test and integrate the numbers version of switch case. This will take a f
 to direct to the word parser or the numbers parser but haven't modified the numbers code to work with the new design yet.
 looks like this: it already works but I have to integrate it into the refactored design. Words now works.
 	
+I still need to code some fuzzy logic to empty caselists used which hold the casenames so just for now it works
+with just 6 cases but it can be modified to work with millions. I will have a default handling up to 1,000 for now. 
+	
 sw = '''
 	switch(exp) {  
 		case 1 thru 5:
