@@ -1,3 +1,12 @@
+MAY 10TH, 2021  7:31 pm
+	
+Currently working on getting number switches like case 1 thru 10:  to work.
+Up till now only one numbers switched work. Just got two number switches in a sequence working,
+but with a few bugs but closer than I've gotten before.
+Also testing a word switch followed by a numbers switch.
+
+
+
 May 3rd, 2021 Monday 9:21 pm 
 Just tested 10 unique different switch cases in a sequence and they worked.
 All switch cases were in a row and each one ran in order so all ten were done
