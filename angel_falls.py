@@ -1,3 +1,19 @@
+May 12th, 2021  8:47 am
+ONE BUG AWAY FROM ViCTory.
+
+I can run a bunch of word switches it runs.
+I can run a bunch of number switches it runs.
+but when I mix them together going from word switches to a number switch it crashes.
+I have the numbers switches going through the string word paraser and codegen now to cut the code size in half
+and to streamline the flow.
+One last bug I will conquor tonight.
+
+
+
+
+
+
+
 MAY 10TH, 2021  7:31 pm
 	
 Currently working on getting number switches like case 1 thru 10:  to work.
