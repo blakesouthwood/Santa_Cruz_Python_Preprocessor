@@ -1,3 +1,7 @@
+May 13th, 2021 The code works. I am so happy. I investigated the bug and solved it.
+I can run 1 trillion switches with numbers or words intermixed. Bad ass.
+
+
 May 12th, 2021  8:47 am
 ONE BUG AWAY FROM ViCTory.
 
