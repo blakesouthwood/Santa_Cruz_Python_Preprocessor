@@ -14,7 +14,8 @@ out the ten trillion print statements. I used visual Studio code to debug the la
 and College Ruled papers and lots of print statements to determine what was different.
 
 The two files that are beta are mrcoffee_mocha.py which is the switch module
-and sip_coffee.py which is the input switches file.
+and sip_coffee.py which is the input switches file. I will take out 95% of the parser_2 and code_gen_2 this weekend which
+is now not being used. 
 
 I just have to add the preprocessor macros code (already works) and then it will be complete.
 This solution eliminated 4,000 lines of code using tricky coding and smart reuse that I didn't originally envision.
