@@ -1,3 +1,21 @@
+thursday night 10ish pm May 13th, 2021
+
+Working on the flow of control and updating the filter for if numbers in cases used
+but for the time being here is the code that is testing word switch cases and 
+number switches (already unfurlled) which I used for testing purposes to solve the bug
+that was preventing running numbers and word switches after each other. Previously
+word switches ran fine in any number but if I added a number switch it crashed
+and conversely if I had all number switches and then tailed with a word switch it crashed.
+So I decided to upload the working code at this point that I'm working on and modifying
+the flow_valve code which detects if numbers in cases in a switch and does the
+expansion of the "to" and "thru" macros which will be implimented (they work) in the next 
+few days and I'm taking out the unused dead code and cleaning up the code and taking
+out the ten trillion print statements. I used visual Studio code to debug the last few bugs
+and College Ruled papers and lots of print statements to determine what was different.
+
+The two files that are beta are mrcoffee_mocha.py which is the switch module
+and sip_coffee.py which is the input switches file.
+
 I just have to add the preprocessor macros code (already works) and then it will be complete.
 This solution eliminated 4,000 lines of code using tricky coding and smart reuse that I didn't originally envision.
 Deepest code I've ever written. What a thrill. Total disbelief it duplicates C's switch case behavior and look and feel .
