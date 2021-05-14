@@ -1,3 +1,7 @@
+I just have to add the preprocessor macros code (already works) and then it will be complete.
+This solution eliminated 4,000 lines of code using tricky coding and smart reuse that I didn't originally envision.
+Deepest code I've ever written. What a thrill. Total disbelief it duplicates C's switch case behavior and look and feel .
+
 May 13th, 2021 The code works. I am so happy. I investigated the bug and solved it.
 I can run 1 trillion switches with numbers or words intermixed. Bad ass.
 
