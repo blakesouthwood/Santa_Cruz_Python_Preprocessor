@@ -1,3 +1,40 @@
+May 19th, 10:46 pm
+Testing beta code of expansion of macros  in Blender and Tang before I make a separate module
+for macros.
+The most important main function that controls how the expasion works is this method.
+
+########################################################
+def convert_case_numbers_to_strings(): #onlky to be called for numbers at this point
+	print("just starting convert_case_numbers_to_strings()")
+	mytrace('convert_case_numbers_to_strings()')
+	macro_found[0]== False  #starting default
+	print("macro_found[0]=",macro_found[0]) #starting state of flag
+	detect_if_thru_and_or_to_macros_exist()
+	print("TESTING output of macro_found[0]",macro_found[0])
+	if macro_found[0]== True:
+		print("macro_found[0] = True")
+	else:
+		print("macro_found[0]== False")
+	#endif
+#################################################################
+	print("============= here the flag for macros in use trigers if = to True ===")
+	if macro_found[0] == True: #added May 17th 2021  this checks in the entire switch case string
+		print("macro_found[0]== 'True'")
+		global switchcasetester
+		print("WE MADE IT TO HERE so we have positive identified a switch")
+		make_list_of_lines_using_thru_macro()
+		expand_thru_macro() #expands all of them 
+		print("just after expanding the macros we have ")
+		print(switchcasetester)
+		##################
+	else:
+		print("macro_found[0]=='False'")	
+	#end if
+	print(switchcasetester)
+	case_numbers_to_strings()
+	print(switchcasetester)
+	#######################################################
+
 May 19th 10:12 pm
 the macro expansion behaves like a preprocessor and I imagine others will want to use this code to make macros
 of their own so the macro expansion will be in a separate module. I imagine that I will be adding
