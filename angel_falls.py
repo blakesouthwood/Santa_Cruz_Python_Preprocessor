@@ -2,6 +2,11 @@ May 19th, 2021 7pm California time
 Finally got prototype working for converting switch case strings with numbers into strings and expanding the macros.
 It was a bit more complicated then I anticipated but I persevered. I had to work on it in a separate file
 to make it easier to debug and reduce the amount of code that I was swimming through and keeping straight in my head.
+I will add it to the codebase tonight and upload it. I just remembered I need to create and clear 100 caselists
+numbered caselist1 ... caselist100
+"thru" and "to"  mean the same thing but I wanted to give people flexiblity.
+Thru idea came from Drive Thru  and to came from a parking sign no parking from 10pm to 5am.
+
 So this input is converted 
 
 '''
