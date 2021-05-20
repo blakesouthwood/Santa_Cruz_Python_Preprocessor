@@ -1,3 +1,8 @@
+May 19th 10:12 pm
+the macro expansion behaves like a preprocessor and I imagine others will want to use this code to make macros
+of their own so the macro expansion will be in a separate module. I imagine that I will be adding
+more macros and to manage them it's easier if they are in one place.
+
 May 19th, 2021 7pm California time
 I have word switches and number switches working starting from words and numbers in strings like: case '1':  case "rabbit":
 And what I did was reroute the number switches thru the string parser(luckily it worked) and that cut the code in half.
