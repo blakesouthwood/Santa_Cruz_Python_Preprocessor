@@ -399,6 +399,139 @@ def detect_if_thru_and_or_to_macros_exist():  #this requires TWO NUMBERS in Case
 
 
 
+#####################################
+# reset_list_to_empty
+#####################################
+def reset_list_to_empty(listname):
+	del listname[:]
+
+  
+###++++$$$$$$$$$$$$$$$$$$$$$$$$$ working on this sunday january 10th $$$$$$$$$$$$$$$$$
+###++++$$$$$$$$$$$$$$$$$$$$$$$$$ working on this sunday january 10th $$$$$$$$$$$$$$$$$
+####////////////===========================================
+## will use this one to replaceing the macro with the expanded macro
+## which is a string I reference in a list by order number like string_1, string_2
+## these will be
+## I need to have my macroexpand function go thru a list of thru lines
+## and dynamicallyh build each case thru expanded and the stringname
+## added to a list
+##  and change each case number  into a string for preparing for python handling
+## this isn't called yet #go thru the entire string
+####################################################
+##      swap_thru_lines_with_expanded_cases()     ##  this is for number cases
+####################################################
+def swap_thru_lines_with_expanded_cases():
+	mytrace('swap_thru_lines_with_expanded_cases()')
+	global switchcasetester
+	print("=========testing case_numbers_to_strings===january 5th 2020====")
+	mycounter = 0
+	for line in switchcasetester.splitlines():
+		beta = mycounter-1
+		if "case" in line:
+			print(line)
+			print(" ")
+			smart=line.split() #separates case from casename
+			#checks if case name is a number returns True or False
+			# this is where it gets number that is now a string
+			cat =is_number(smart[1])  #calling method to check if 
+									  #the case name is a number
+			print(cat)
+			cool = smart[1][:-1]  #chops off : from end last char
+			holder = "'" + cool + "'"  #this puts the number in quotes
+			cool = "case " + holder + ":"  #this is essentially rewriting the line with number in quotes
+			newline = cool
+			opal=switchcasetester.replace(line,"\t\t" +newline)
+			switchcasetester=''
+			switchcasetester = opal
+			#HERE is where the changed case numbers as strings are put into switchcasetester
+			#will use a replace here to the switchcasetester string
+			mycounter += 1
+		else:
+			mycounter += 1
+			continue
+	#print(switchcasetester) #this is to see the switch case input string after the modification
+	#after the numbers have been converted into strings
+
+
+
+###////////////////////////////////////////////===========
+    
+
+list_with_thru_macros=[]
+list_with_thru_macros.append(0) #position 0 nothing
+backwards_thru_list =[]  #initializing the list
+
+#### ### this needs to happen first 
+################ case 1 to 10: becomes case 1 thru 10:######################
+######################################################
+#### change to into thru ()       created friday feb 5th, 2021 morning
+######################################################
+
+#########################################
+def change_to_into_thru():  #this is a simple way of doing it
+	mytrace('change_to_into_thru()')
+	print("change macro to into thru")
+	global switchcasetester
+	mycounter = 0; banana=''
+	for line in switchcasetester.splitlines():
+		simple = mycounter-1
+		if "case" and "to" in line:  #this means the macro to
+			banana=switchcasetester.replace(" to "," thru ")  #just addded spaces
+			switchcasetester=''; switchcasetester = banana
+			#print(switchcasetester)
+		else:
+			pass
+		
+		
+
+
+
+
+
+def make_list_of_lines_using_thru_macro():
+	mytrace('make_list_of_lines_using_thru_macro()')
+	print("* * * * WORKING ON FUNCTION make_list_of_lines_using_thru_macro()")
+	print("===----------=== make list of lines using thru macros() ====--------=")
+	#go thru list and if thru in line add that line to list
+	global mouse
+	thru_counter = 0
+	for line in switchcasetester.splitlines():
+		#just added the word to that means the same thing as thru
+		if  "case" and "thru" in line:  #on
+			list_with_thru_macros.append(thru_counter)
+			thru_counter += 1
+		else:
+			thru_counter += 1
+			continue
+	print(list_with_thru_macros)		
+	#then I need to reverse the list
+	backwards_thru_list=list_with_thru_macros
+	backwards_thru_list.reverse()
+	print("backwards we have",backwards_thru_list)
+	bottom_up_change_of_thru_line_test() #this just shows the result but really does nothing
+
+
+
+##### testing january 10th to go to each case thru from bottom up and change line
+##### to prove it's working
+####################################################################
+## what this does is change the thru macro line starting at the bottom
+## by accessing the backwards list made above 
+##  backwards_thru_list  that took in the line number of each thru line and reversed it
+##########
+def bottom_up_change_of_thru_line_test():
+	mytrace('bottom_up_change_of_thru_line_test()')
+	global mouse
+	global opal
+	opal = ''
+	mycounter = 0
+	print("value of mycounter should be zero",mycounter)
+	for item in backwards_thru_list: 
+	#set mycounter to a number for line in mouse.splitlines() : #this goes thru the mouse string
+		print(line)
+		
+	
+	
 
 	
 May 19th 10:12 pm
