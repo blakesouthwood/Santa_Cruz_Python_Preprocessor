@@ -1,3 +1,110 @@
+May 19th, 2021 7pm California time
+Finally got prototype working for converting switch case strings with numbers into strings and expanding the macros.
+It was a bit more complicated then I anticipated but I persevered. I had to work on it in a separate file
+to make it easier to debug and reduce the amount of code that I was swimming through and keeping straight in my head.
+So this input is converted 
+
+'''
+switch(exp) {  
+		case 1 thru 3:
+			print("where\'s the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+			
+		case 11 to 17:
+			print('where the beef')
+			print('==good times ==')
+			fallthru
+			
+			
+				
+		case 21:
+			print('Heavenly valley')
+			print('big snow flakes there and moggles')
+			fallthru
+			
+			
+		default:
+			print('six walking duck de fa ul t')
+			print('flying geese')
+			break
+}
+'''
+#converted into this
+'''
+switch(exp) {  
+		case '1':
+		case '2':
+		case '3':
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case '4':
+		case '5':
+		case '6':
+		case '7':
+			print('kangaroo hop hop!')
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case '8':
+		case '9':
+		case '10':
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+			
+		case '11':
+		case '12':
+		case '13':
+		case '14':
+		case '15':
+		case '16':
+		case '17':
+			print('where the beef')
+			print('==good times ==')
+			fallthru
+			
+			
+				
+		case '21':
+			print('Heavenly valley')
+			print('big snow flakes there and moggles')
+			fallthru
+			
+			
+		default:
+			print('six walking duck de fa ul t')
+			print('flying geese')
+			break
+}
+
+#which is what is required for the number switch string code to run through the parser which already works 
+#what is up above is before any parsing so it's a preprocessor that expands the macros and will later 
+change default into case 'default':
+
+This seemed super simple but it was a little complicated (several pages of complex code that I kept simplifying
+and refactoring.
+
+
+
+
+
 thursday night 10ish pm May 13th, 2021
 
 Working on the flow of control and updating the filter for if numbers in cases used
