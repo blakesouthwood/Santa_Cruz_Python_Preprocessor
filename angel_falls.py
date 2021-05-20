@@ -1,4 +1,8 @@
-May 19th, 10:46 pm
+May 19th, 2021  10:46 pm California Time
+I will put the methods and functions into a separate module tomorrow. I wanted to post a few of the methods
+so that everyone knows it's real. I took the output from the macro expansion and used that generated switch string
+as input in my working multiple switch file and it ran. Surreal.
+
 Testing beta code of expansion of macros  in Blender and Tang before I make a separate module
 for macros.
 The most important main function that controls how the expansion works is this method.
