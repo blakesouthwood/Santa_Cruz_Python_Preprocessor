@@ -1,4 +1,11 @@
 May 19th, 2021 7pm California time
+I have word switches and number switches working starting from words and numbers in strings like: case '1':  case "rabbit":
+And what I did was reroute the number switches thru the string parser(luckily it worked) and that cut the code in half.
+There's kind of a lot of code. I thought this would take a month. I was wrong. Making lots of helper methods helped manage
+the complexity. So I spent a lot of time getting macros to work and felt bad that I hadn't been able to add them yet and
+then I realized I could convert the macros and produce the current input as output from the preparser and then it would work.
+Looking forward to that test.
+
 Finally got prototype working for converting switch case strings with numbers into strings and expanding the macros.
 It was a bit more complicated then I anticipated but I persevered. I had to work on it in a separate file
 to make it easier to debug and reduce the amount of code that I was swimming through and keeping straight in my head.
