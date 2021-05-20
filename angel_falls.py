@@ -195,7 +195,211 @@ def chomp(x):
 	return x
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+############################################
+## make_list_of_lines_using_thru_macro()
+############################################
+def make_list_of_lines_using_thru_macro():
+	mytrace('make_list_of_lines_using_thru_macro()')
+	#print("===----------=== make list of lines using thru macros() ====--------=")
+	#go thru list and if thru in line add that line to list
+	global switchcasetester
+	thru_counter = 0
+	for line in switchcasetester.splitlines():
+		#just added the word to that means the same thing as thru
+		if  "case" and "thru" in line:  #on
+			list_with_thru_macros.append(thru_counter)
+			thru_counter += 1
+		else:
+			thru_counter += 1
+			continue
+	#print("==@@@@@@@@@==THIS IS the list with thru macros line numbers====")
+	backwards_thru_list = list_with_thru_macros
+	backwards_thru_list = backwards_thru_list.reverse()
+	#print("backwards we have",backwards_thru_list)
+	bottom_up_change_of_thru_line_test()
+
+
+
+
+
+
+smart =''
+beta =''
+opal=''
+import re
+foolish =''
+newline=''
+####### case_numbers_to_strings changes number cases to strings with the number inside
+#######  I still need to sniff and detect if the cases are numbers before calling this 
+##############################################################################
+###### this converts the numbers to strings such as case 1:  to case '1': ####
+##############################################################################
+#################### case_numbers_to_strings() ###############################
+##############################################################################
+
+def case_numbers_to_strings():
+	mytrace('case_numbers_to_strings()')
+	global switchcasetester
+	mycounter = 0
+	for line in switchcasetester.splitlines():
+		beta = mycounter-1
+		if "case" in line:
+			print(line)
+			print(" ")
+			smart=line.split() #separates case from casename
+			#checks if case name is a number returns True or False
+			cat =is_number(smart[1])  #calling method to check if the case name is a number
+			print(cat)
+			cool = smart[1][:-1]  #chops off : from end
+			holder = "'" + cool + "'"
+			cool = "case " + holder + ":"  #this is essentially rewriting the line with number in quotes
+			newline = cool
+			opal=switchcasetester.replace(line,"\t\t" +newline)
+			switchcasetester=''
+			switchcasetester = opal
+			
+			#HERE is where the changed case numbers 
+			#as strings are put into switchcasetester
+			mycounter += 1
+		else:
+			mycounter += 1
+			continue
+	#print(switchcasetester) #this is to see the switch case input string after the modification
+	#after the numbers have been converted into strings
+
+
+
+#where is numbers accesing????
+#it must be in the numbers yes section
+macro_found=[]
+macro_found.append('False') #default setting is False
+kingmula=[]
+kingmula.append("False")
+numbers=''
+
+#this check the entire switch case fed to it
+######################################################
+##       detect_if_thru_and_or_to_macros_exist():  #numbers true must be set before this will run
+######################################################
+def detect_if_thru_and_or_to_macros_exist():  #this requires TWO NUMBERS in Case line
+	mytrace('detect_if_thru_and_or_to_macros_exist()')
+	print("the switchase input is")
+	#global switchcasetester
+	print(switchcasetester)
+	print("testing in Half Moon Bay")
+	print("============DETECT IF THRU AND OR TO MACROS EXIST() TRIGGERED========")
 	
+	print("======1======")
+	
+	
+	print("====called   detect if thru and or to macros exist ===")
+	#print("numbers in method detect_if_thru_and_or_to_macros_exist:",numbers)
+	#print("where is numbers coming from",numbers)
+	print("======2======")
+	print("about to change line into a list to test theory with cow list")
+	numbers = "True" #for this to work it has hard coded True
+	print(numbers)
+	 #just added this in case it needs it
+	
+	#global numbers#this might be necessary probably need to put it in a list
+	if numbers == 'True': #if True then there are 2 numbers detected in a case  line
+		zeecounter=1
+		####################################################
+		for line in switchcasetester.splitlines(): #this doesn't change the switchcase whatsoever
+		
+		################################################
+			print("this should really work it's so simple actually")
+			#the way that this works is that as soon as it detects thru or to
+			#it immediately sets the macro_found[0]=True and breaks out of the loop
+			#so as soon as it detects a thru or to it bails after setting
+			#the flag to True (boolean) for macro_found[0]
+			if "case" in line and "thru" in line:
+			#and line.startswith("case") and len(line) == 4:
+			###############################
+				
+				print("=========THRU DETECTED=========")
+				print("batman we have a match c-ase and t-hru")
+				macro_found[0]=True
+				print(line)
+				zeecounter += 1
+				print("linevnumber =",zeecounter)
+				break
+			elif "case" in line and "to" in line:
+				print("=========TO DETECTED=========")
+				print("robin there is a case with a to in it holy makril")
+				macro_found[0]=True
+				print(line)
+				zeecounter += 1
+				print("linevnumber =",zeecounter)
+				break
+				
+				#adding these scenarios that happened
+			elif "case" not in line and "thru" in line:
+				print("=========FAlse Positive=========")
+				print("robin there is a case with a to in it holy makril")
+				macro_found[0]=False
+				print(line)
+				zeecounter += 1
+				print("linevnumber =",zeecounter)
+				continue
+				#adding these scenarios that happened
+				
+			elif "case" not in line and "to" in line:
+				print("=========FAlse Positive=========")
+				print("robin there is a case with a to in it holy makril")
+				macro_found[0]=False
+				print(line)
+				zeecounter += 1
+				print("linevnumber =",zeecounter)
+				continue
+				#adding these scenarios that happened
+				
+			elif "case" not in line and "fallthru" or "fallthrough" in line:
+				print("=========FAlse Positive=========")
+				print("robin there is a case with a to in it holy makril")
+				macro_found[0]=False
+				print(line)
+				zeecounter += 1
+				print("linevnumber =",zeecounter)
+				continue
+				#adding these scenarios that happened
+			else:
+				print(line)
+				zeecounter += 1
+				continue
+	
+		print("__________________________________")
+		
+		
+
+	print("======6======")
+	print("the result of detect_if_thru_and_or_to_macros_exist()")
+	
+	print("the end is near will this ever f'n work")
+	print("new test if macros being used macro_found[0]= ",macro_found[0])
+	
+	if macro_found[0] == 'True':
+		print("== macros to and thru are being used ")
+	else:
+		print("== no macros are being used")
+	
+####################################################################################
+
+
+
+
 	
 May 19th 10:12 pm
 the macro expansion behaves like a preprocessor and I imagine others will want to use this code to make macros
