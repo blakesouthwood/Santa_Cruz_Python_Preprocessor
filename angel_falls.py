@@ -1,7 +1,9 @@
 May 19th 10:12 pm
 the macro expansion behaves like a preprocessor and I imagine others will want to use this code to make macros
 of their own so the macro expansion will be in a separate module. I imagine that I will be adding
-more macros and to manage them it's easier if they are in one place.
+more macros and to manage them it's easier if they are in one place. In case anyone is wondering it does a few passes
+and there is no limit to how many passes for the macros so they can become as complex as you want. I never expected it
+to actually work.  I was awestruck tonight when it worked flawlessly. 
 
 May 19th, 2021 7pm California time
 I have word switches and number switches working starting from words and numbers in strings like: case '1':  case "rabbit":
