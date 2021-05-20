@@ -35,6 +35,168 @@ def convert_case_numbers_to_strings(): #onlky to be called for numbers at this p
 	print(switchcasetester)
 	#######################################################
 
+	
+More of the macro expansion and analysis code...
+
+
+############################################
+## make_list_of_lines_using_thru_macro()
+############################################
+def make_list_of_lines_using_thru_macro():
+	mytrace('make_list_of_lines_using_thru_macro()')
+	#print("===----------=== make list of lines using thru macros() ====--------=")
+	#go thru list and if thru in line add that line to list
+	global switchcasetester
+	thru_counter = 0
+	for line in switchcasetester.splitlines():
+		#just added the word to that means the same thing as thru
+		if  "case" and "thru" in line:  #on
+			list_with_thru_macros.append(thru_counter)
+			thru_counter += 1
+		else:
+			thru_counter += 1
+			continue
+	#print("==@@@@@@@@@==THIS IS the list with thru macros line numbers====")
+	backwards_thru_list = list_with_thru_macros
+	backwards_thru_list = backwards_thru_list.reverse()
+	#print("backwards we have",backwards_thru_list)
+	bottom_up_change_of_thru_line_test()
+
+
+
+
+
+
+smart =''
+beta =''
+opal=''
+import re
+foolish =''
+newline=''
+####### case_numbers_to_strings changes number cases to strings with the number inside
+#######  I still need to sniff and detect if the cases are numbers before calling this 
+##############################################################################
+###### this converts the numbers to strings such as case 1:  to case '1': ####
+##############################################################################
+#################### case_numbers_to_strings() ###############################
+##############################################################################
+
+def case_numbers_to_strings():
+	mytrace('case_numbers_to_strings()')
+	global switchcasetester
+	mycounter = 0
+	for line in switchcasetester.splitlines():
+		beta = mycounter-1
+		if "case" in line:
+			print(line)
+			print(" ")
+			smart=line.split() #separates case from casename
+			#checks if case name is a number returns True or False
+			cat =is_number(smart[1])  #calling method to check if the case name is a number
+			print(cat)
+			cool = smart[1][:-1]  #chops off : from end
+			holder = "'" + cool + "'"
+			cool = "case " + holder + ":"  #this is essentially rewriting the line with number in quotes
+			newline = cool
+			opal=switchcasetester.replace(line,"\t\t" +newline)
+			switchcasetester=''
+			switchcasetester = opal
+			
+			#HERE is where the changed case numbers 
+			#as strings are put into switchcasetester
+			mycounter += 1
+		else:
+			mycounter += 1
+			continue
+	#print(switchcasetester) #this is to see the switch case input string after the modification
+	#after the numbers have been converted into strings
+
+
+
+#above and before stage_one()
+
+#####===================================================
+# this is the one line function that does the magic conversion
+# from numbers to stings and expands the macros to and thru
+# convert_case_numbers_to_strings()
+
+
+
+
+	
+#this will need to be called for each specific thru line
+###==============================================================
+###           expand_thru_macro()  
+###==============================================================
+inputnum = 1
+def expand_thru_macro():
+	mytrace('expand_thru_macro()')
+	global switchcasetester
+	print("expand_thru_macro just called")
+	####################################################
+	#### this is where macro "to" is changed to "thru"
+	####################################################
+	change_to_into_thru()   #<====== this is where "to macro" swapped changed to "thru"
+	
+							## with "thru" in switchcasetester input
+	newlist=[] #resets newlist
+	global mouse;global ajax;global snowy; snowy=''
+	mycounter = 0 ### mouse 
+	for line in switchcasetester.splitlines():  
+		#reinitialize what I'm using with each loop iteration
+		smart=[];ajax='';newlist=[];
+		#this is the bug fix so if thru in line (accidentally) confused thru in fallthru
+		#so I say if "thru" in line but NOT "fallthru" in line.
+		if  "thru" in line and "case" in line and "fallthru" not in line:  #only used with numbers
+			if ":" in line and line.endswith(":"):
+				line = chomp(line) #moved taking off colon here 
+				print(line)
+			else:  #so now if the line doesn't end with a colon it doesn't chomp it
+				pass
+			
+			smart=line.split() #separates case from casename
+			print("=============================")
+			print(smart[0] + " " + smart[1] + " " + smart[2] + " " + smart[3] + ":")
+			counter = smart[1]
+			#### THIS FILLS newlist with the case info
+			# ======LOOP  ==================
+			print("smart[3]=",smart[3])
+			for counter in range(int(smart[1]),int(smart[3]) + int(1)): #just added int() around 1
+				newlist.append(counter)
+				counter += 1
+			ajax =''
+			# LOOP ====================
+			for item in newlist:  #this list has the number in it
+				ajax += "\t\tcase " +   str(item)   + ":" + "\n"
+				
+			ajax = ajax.rstrip() #see if this works takes off last "\n" whcih was extra
+			ajax = ajax[:-1] #chops off last char on end which is the :
+			#this is where the expandef macros is inserted in the line with "thru"
+		
+			snowy=switchcasetester.replace(line, ajax)
+			switchcasetester=''
+			switchcasetester = snowy
+			print("result of new switch case after running expand_thru_macro()")
+			print(switchcasetester)
+			
+			
+	
+
+
+####################################
+###       CHOMP(x)  
+####################################
+## this bites off the last character in a string ##
+def chomp(x):
+	mytrace('chomp()')
+	#print("####################======== chomp called",x)
+	x = x[:-1] 
+	#print("x=",x)
+	return x
+
+
+	
+	
 May 19th 10:12 pm
 the macro expansion behaves like a preprocessor and I imagine others will want to use this code to make macros
 of their own so the macro expansion will be in a separate module. I imagine that I will be adding
