@@ -1,7 +1,7 @@
 May 19th, 10:46 pm
 Testing beta code of expansion of macros  in Blender and Tang before I make a separate module
 for macros.
-The most important main function that controls how the expasion works is this method.
+The most important main function that controls how the expansion works is this method.
 
 ########################################################
 def convert_case_numbers_to_strings(): #onlky to be called for numbers at this point
