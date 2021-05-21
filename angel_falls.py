@@ -1,3 +1,16 @@
+May 21st, 2021  9:47am
+Yesterday the macros to and thru worked properly. will ikely upload this weekend.
+So I am in the process of adding the macro expansion code to the main file likely this weekend.
+
+And just now I figured out how to do tumbler of either concatting strings or doing math using
+the fallthru feature in the swith case just like the behavior in C with fallthrus and in JavaScript.
+That was tricky. It took 30 minutes to solve. I put it off for months becuase I had no idea how to make
+it work. Quite thrilling actually and a simple solution. Not obvious at first. Had a few Type errors that
+through me off track but I got right back onto the track.
+
+
+
+
 May 19th, 2021  10:46 pm California Time
 I will put the methods and functions into a separate module tomorrow. I wanted to post a few of the methods
 so that everyone knows it's real. I took the output from the macro expansion and used that generated switch string
