@@ -1,13 +1,22 @@
 May 21st, 2021  9:47am
 Yesterday the macros to and thru worked properly. will likely upload it this weekend.
 So I am in the process of adding the macro expansion code to the main file likely this weekend.
+This means that a switch case with numbers can look like this:  case 1 thru 20:   and also like this case 23 to 56:
+And the stringifying works so it turns all numbers into strings which  then run through the string based parser.
+Accidents in code are great learning experiences for finding a radical new way of doing soething. 
 
 And just now I figured out how to do tumbler of either concatting strings or doing math using
 the fallthru feature in the swith case just like the behavior in C with fallthrus and in JavaScript.
 That was tricky. It took 30 minutes to solve. I put it off for months because I had no idea how to make
 it work. Everything I tried failed and then I saw my fallthru and I thought, why not try a function
 and it worked like a charm. Quite thrilling actually and a simple solution. Not obvious at first. Had a few Type errors that
-through me off track but I got right back onto the track.
+through me off track but I got right back onto the track. I didn't think it would ever work and nearly gave up
+but I knew people would complain if I couldn't perfectly duplicate the behavior of C and JavaScript Switch cases.
+
+C constant case names have been solved. 
+Oh, more news. I solved doing this type of case just like in C. 
+Using CONSTANTS   so like this case TARGET:    and case LAKE_TAHOE:  which then I will just convert into strings
+like what I wo with numbers. 
 
 
 
