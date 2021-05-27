@@ -1,3 +1,8 @@
+May 27th, 2021 4:51pm
+Separated macros functions for preprocessor and reworked endswitch(). I will upload it tonight. 
+So now by tonight numbers using macros to and thru will work.  case 1 thru 10:  and case 11 to 20:
+It also means I can now do (soon)  when, unless, until in conditions just like in Lisp and CoffeeScript and Ocaml.
+
 May 21st, 2021  9:47am
 Yesterday the macros to and thru worked properly. will likely upload it this weekend.
 So I am in the process of adding the macro expansion code to the main file likely this weekend.
