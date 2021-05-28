@@ -1,5 +1,5 @@
 May 27th, 2021, 7:36 pm California Time
-This is the macro expansion showing the input switch string with macros and after the amcros to and thru are expanded.
+This is the macro expansion showing the input switch string with macros and after the macros 'to' and 'thru' are expanded.
 I made this a separate module to reduce the complexity. It was a bear to get working but I prevailed. 
 #INPUT 
 
@@ -67,11 +67,11 @@ sw ='''
 '''
 endswitch(sw)
 
-#I will put the functions here the order makes a difference they have to be in a particular sequence which works
-#and the lists are key and where they are declared matters. I will take out the unused lists ina  few minutes but
-#putting it hear incase my computer crashes.
+#I will put the functions here - the order makes a difference -  they have to be in a particular sequence which works
+#and the lists are key and where they are declared matters. I will take out the unused lists in a few minutes but
+#putting it hear in case my computer crashes.
 # This will be added to the main switch program tonight and uploaded to github tonight.
-endswitch has been redesigned with number sniffer and cherry_pie will be called
+endswitch has been redesigned with number sniffer input_flow_valve() and cherry_pie will be called
 macro_expansion(). the final version has numbers and words going thru the stirng parser
 
 # I will take out the print statements soon and beautify the code with more documenation
