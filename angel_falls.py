@@ -1,3 +1,13 @@
+May 27th 8:27pm California Time
+A fallthru can be explicitly stated with a word fallthru or fallthrough
+or implicitly represented by the absence of a break
+
+in the switch case a fallthru is designated at the bottom of a case with:
+either explicitly as fallthru or fallthrough or implicityly with nothing -the absence of a break
+a break is designated with break
+so the absence of a break means fallthru implicitly
+fallthru is my preference but I added fallthrough from Swift
+
 May 27th, 2021, 7:36 pm California Time
 This is the macro expansion showing the input switch string with macros and after the macros 'to' and 'thru' are expanded.
 I made this a separate module to reduce the complexity. It was a bear to get working but I prevailed. 
