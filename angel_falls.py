@@ -1,3 +1,62 @@
+May 27th, 2021  7:20 pm California time
+I separted macros in the prototype and realized I needed to finish the fallthru tumbler. I already had
+it adding numbers while falling thru fallthus in each case. I fixed the math. So that works.
+I then thought of how I have used fallthrus in switch cases in JavaScript and it's to build strings concatting.
+So I now have concatting strings thru falling thru fallthrus between cases. That was relatively easy.
+
+I will upload the macro expansion preprocessor file and then add it to the main file and upload that.
+I will add the string concat tumbler and the math adder tumbler later depending on how things go.
+I felt like I was done and realized fallthrus are used a lot to concat strings so I had put that off a while
+and just modified the adder of numbers to adding strings.
+The program just kept growing and blossoming. I never expected to make it this far because it was a nightmare to engineer.
+I got really lucky through sheer persaverance and dedication.
+
+targetlist=[]
+targetlist.append(0)
+
+#math demonstration adding numbers between cases using fallthru
+############ sutter() ############## added may 27th
+def sutter(x): #this should be 3
+	print("targetlist[0]=",targetlist[0])
+	print("SUTTER called with ",x)
+	if targetlist[0] == 0: #first time thru
+		#x =x + 1
+		print('targetlist[0]',targetlist[0])
+		
+		x = str(x)
+		targetlist[0] = x
+		print(targetlist[0])
+	else:   #already something in here
+		#targetlist[0] = targetlist[0] + x
+		#x =x + 1
+		x = str(x)
+		targetlist[0] = int(targetlist[0]) + int(x)
+	print(targetlist[0])
+	#return(x)
+	
+buildstringlist=[]
+buildstringlist.append(0)
+################################################
+##### concatting a string in fallthrus in switch case
+############ buildstring() ############## added may 27th
+def buildstring(x): #this should be 3
+	print("buildstring called with ",x)
+	if buildstringlist[0] == 0: #first time thru
+		#x =x + 1
+		x = str(x)
+		buildstringlist[0] = x # example 'Cola'
+	else:   #already something in here
+		#targetlist[0] = targetlist[0] + x
+		#x =x + 1
+		x = str(x)
+		buildstringlist[0] = str(buildstringlist[0]) + str(x)
+	print(buildstringlist[0])
+	#return(x)
+		
+	
+
+
+
 May 27th, 2021 4:51pm
 Separated macros functions for preprocessor and reworked endswitch(). I will upload it tonight. 
 So now by tonight numbers using macros to and thru will work.  case 1 thru 10:  and case 11 to 20:
