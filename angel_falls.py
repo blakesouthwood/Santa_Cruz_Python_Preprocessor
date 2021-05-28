@@ -1,3 +1,882 @@
+May 27th, 2021, 7:36 pm California Time
+This is the macro expansion showing the input switch string with macros and after the amcros to and thru are expanded.
+I made this a separate module to reduce the complexity. It was a bear to get working but I prevailed. 
+#INPUT 
+
+
+
+clever('21') 
+
+
+sw ='''
+	switch(exp) {  
+		case 1 thru 5:
+			print(" 1..5...")
+			print("where\'s the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			
+
+		case 6 to 10:
+			print(" 6....10.")
+			print('kangaroo hop hop!')
+			print('taught me how to write code')
+			break
+			
+		 
+		case 11 thru 15:
+			print(" 11....15.")	
+			print('mocha blast')
+			print('== 31 flavors===')
+			
+
+			
+
+		case 16 to 20:
+			print(" 16....20.")
+			print('ski fast in the powder')
+			print('sweet powder snow, lovely snow')
+			break
+			
+		case 21:
+			print(" 21")
+			print('Heavenly valley')
+			print('big snow flakes there and moggles')
+			print('')
+			break
+		
+		case 22 to 30:
+			print(" 22....30.")
+			print('sitting in the shade')
+			print('writing code')
+			break
+
+		case 31 to 33:
+			print(" 31....33.")
+			print('sitting in the shade')
+			print('writing code')
+			break
+
+
+		default:
+			print(" default")
+			print('six walking duck de fa ul t')
+			print('flying geese')
+            break
+}
+'''
+endswitch(sw)
+
+#I will put the functions here the order makes a difference they have to be in a particular sequence which works
+#and the lists are key and where they are declared matters. I will take out the unused lists ina  few minutes but
+#putting it hear incase my computer crashes.
+# This will be added to the main switch program tonight and uploaded to github tonight.
+endswitch has been redesigned with number sniffer and cherry_pie will be called
+macro_expansion(). the final version has numbers and words going thru the stirng parser
+
+# I will take out the print statements soon and beautify the code with more documenation
+# when time permits.
+
+
+
+disney_tron_trace_list=['starter']
+######## show tron trace path
+def show_tron_trace_path():
+	print("#######==== showing TRON TRACE path list =====#####")
+	counter=0
+	last =''
+	disney_tron_trace_list.pop(0) #delete's starter position 0
+	#reading thru looking for pairs
+	for item in disney_tron_trace_list: #loops thru it
+		print(item) #gives us the line number
+
+#### mytrace
+def mytrace(x): #just checks if first item is the same if slo don't load it
+	disney_tron_trace_list.append(x)
+
+
+
+
+
+
+############################
+varholder=[]
+#def flush_lists():
+#	varholder=[]
+varholder.append("zilch") #if nothing changes it's default
+
+var2=[]
+var2.append("zilch")
+
+def is_number(inputString):
+	return any(char.isdigit() for char in inputString)
+valve=[]
+###############################
+#apparently this needs to exist in this file
+
+
+
+
+
+
+
+
+
+
+
+#####################		
+newlist =[];count =''
+######################
+####################################################
+##      swap_thru_lines_with_expanded_cases()     ##  this is for number cases
+####################################################
+def swap_thru_lines_with_expanded_cases():
+	mytrace('swap_thru_lines_with_expanded_cases()')
+	global switchcasetester
+	print("=========testing case_numbers_to_strings===january 5th 2020====")
+	mycounter = 0
+	for line in switchcasetester.splitlines():
+		beta = mycounter-1
+		if "case" in line:
+			print(line)
+			print(" ")
+			smart=line.split() #separates case from casename
+			#checks if case name is a number returns True or False
+			# this is where it gets number that is now a string
+			cat =is_number(smart[1])  #calling method to check if  #the case name is a number
+									 
+			print(cat)
+			cool = smart[1][:-1]  #chops off : from end last char
+			holder = "'" + cool + "'"  #this puts the number in quotes
+			cool = "case " + holder + ":"  #this is essentially rewriting the line with number in quotes
+			newline = cool
+			print("\t\t" + newline)  #adds tabs to front of it
+			print("next I will use replace to each case line")
+			opal=switchcasetester.replace(line,"\t\t" +newline)
+			switchcasetester=''
+			switchcasetester = opal
+			#HERE is where the changed case numbers as strings are put into switchcasetester
+			#will use a replace here to the switchcasetester string
+			mycounter += 1
+		else:
+			mycounter += 1
+			continue
+	print(switchcasetester) #this is to see the switch case input string after the modification
+	#after the numbers have been converted into strings
+
+
+
+###////////////////////////////////////////////===========
+    
+############################
+list_with_thru_macros=[]
+list_with_thru_macros.append(0) #position 0 nothing
+backwards_thru_list =[]  #initializing the list
+#############################
+################ case 1 to 10: becomes case 1 thru 10:######################
+######################################################
+#### change to into thru ()       created friday feb 5th, 2021 morning
+######################################################
+
+#########################################
+def change_to_into_thru():  #this is a simple way of doing it
+	mytrace('change_to_into_thru()')
+	print("change macro to into thru")
+	global switchcasetester
+	mycounter = 0; banana=''
+	for line in switchcasetester.splitlines():
+		simple = mycounter-1
+		if "case" and "to" in line:  #this means the macro to
+			banana=switchcasetester.replace(" to "," thru ")  #just addded spaces
+			switchcasetester=''; switchcasetester = banana
+			print(switchcasetester)
+		else:
+			pass
+
+
+###########################################		
+## make_list_of_lines_using_thru_macro():		
+###########################################
+def make_list_of_lines_using_thru_macro():
+	mytrace('make_list_of_lines_using_thru_macro()')
+	print("=====WARNING WILL ROBINSON LOST IN SPACE====")
+	print("* * * * WORKING ON FUNCTION make_list_of_lines_using_thru_macro()")
+	print("===----------=== make list of lines using thru macros() ====--------=")
+	#go thru list and if thru in line add that line to list
+	global switchcasetester #just added this 
+	#how comes this works without global switchcasetester?
+
+	#global switchcasetester #it should work now
+	thru_counter = 0
+	for line in switchcasetester.splitlines():
+		#just added the word to that means the same thing as thru
+		if  "case" and "thru" in line:  #on
+			list_with_thru_macros.append(thru_counter)
+			thru_counter += 1
+		else:
+			thru_counter += 1
+			continue
+	print(list_with_thru_macros)		
+	#then I need to reverse the list
+	backwards_thru_list=list_with_thru_macros
+	backwards_thru_list.reverse()
+	print("backwards we have",backwards_thru_list)
+	bottom_up_change_of_thru_line_test() #this just shows the result but really does nothing
+
+
+
+##### testing january 10th to go to each case thru from bottom up and change line
+##### to prove it's working
+####################################################################
+## what this does is change the thru macro line starting at the bottom
+## by accessing the backwards list made above 
+##  backwards_thru_list  that took in the line number of each thru line and reversed it
+##########
+def bottom_up_change_of_thru_line_test():
+	mytrace('bottom_up_change_of_thru_line_test()')
+	#global mouse
+	global opal; opal = ''; mycounter = 0
+	print("value of mycounter should be zero",mycounter)
+	for item in backwards_thru_list: 
+	#set mycounter to a number for line in mouse.splitlines() : #this goes thru the mouse string
+		print(line)
+		
+	
+	
+
+####=========== test here concatting little chunks for the switch case
+
+###############
+smart =''
+beta =''
+opal=''
+import re
+foolish =''
+newline=''
+#################
+
+
+##############################################################################
+#################### case_numbers_to_strings() ###############################
+##############################################################################
+######  converts numbers to strings case 1: to case '1': #####################
+##############################################################################
+def case_numbers_to_strings():
+	mytrace('case_numbers_to_strings()')
+	global switchcasetester
+	print("=========testing case_numbers_to_strings===january 5th 2020====")
+	print("========  CASE NUMBERS TO STRINGS  ====")#go thru the entire string
+	#and change each case number  into a string for preparing for python handling
+	mycounter = 0
+	global switchcasetester ## just addded thismay 27th
+	for line in switchcasetester.splitlines():
+		beta = mycounter-1
+		if "case" in line:
+			print(line)
+			smart=line.split() #separates case from casename
+			#checks if case name is a number returns True or False
+			cat =is_number(smart[1])  #calling method to check if the case name is a number
+			print(cat)
+			cool    = smart[1][:-1]  #chops off : from end
+			holder  = "'" + cool + "'" #this puts the ' on both flanks of the number
+			cool    = "case " + holder + ":"  #this is essentially rewriting the line with number in quotes
+			newline = cool
+			opal=switchcasetester.replace(line,"\t\t" +newline)
+			switchcasetester=''
+			switchcasetester = opal
+			mycounter += 1
+		else:
+			mycounter += 1
+			continue
+	print(switchcasetester) #this is to see the switch case input string after the modification
+	#after the numbers have been converted into strings
+
+
+
+
+
+
+list1 =[]
+list1.append("four")
+
+
+
+exp =''; case =''
+exp = ""
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+mycounter=0
+turtle_tab1=[]
+turtle_tab2=[]
+turtle_tab1.append('starter')
+turtle_tab2.append('starter')
+#print('looking for tabs in lines================')
+#this is just testing in one case for now
+#what I am trying to do is 2 loops one for each case section
+#so for the second pass it should start at the next case occurrence
+#so first I need to prescan it and get the line number of each case
+#apparently the solution is using the digitalcandy list with
+#the range of case line numbers which I already have calcualted
+#this way I can reuse that and focus on just one case section at a time
+#and loop through the digital candy list
+#I should fill a two dimensional loop
+#I can make each new loop and apppend it to the big loop
+
+
+
+
+
+
+
+
+
+
+
+#what I already solved was how many sections of case groups there are
+#now I need to get the remaining case locations
+#if case not in line meaning after first case section so this would start after the last case in the first section
+#July 30th, 2020 fun
+# i should know how many cases in each section
+####THIS GETS THE FIRST CASE IN EACH CASE SECTION THE LINE NUMBER
+starbuckslist=[]
+#starbuckslist.append('starter')
+genius =''
+#diamonds=[[2,7],[7,19],[19,26],[26,36]] #this is input
+#I have that list 2,7,19,26,36
+
+
+#so quite simply I just need to cascade it down like a waterfall from above
+#which shouldn't be too hard
+
+
+
+
+
+
+
+
+#this_needs_to_work_badly();[2, 7, 17, 24, 34]
+#theinputlist =[2,7,17,24,34]  #5 which is case_sections + 1 (default)
+case_sections = 0
+total = 5
+#==========================
+#I will have to dynamically initialize these
+
+
+mainlist=[]
+#diamonds=[[2,7],[7,19],[19,26],[26,36]]  what I am aiming to make
+#these are lines of the first case line numbers and then the default line number
+
+
+#theinputlist= [2, 7, 17, 24, 34]  #last one is default which is really a case
+
+
+
+
+find_default=''
+lastbrace=''
+
+list_trex=[]
+listcandy=[]
+defaultlist=[]  #here defaultlist is declared as empty
+
+
+
+
+
+
+
+#================ this gets the case names from all cases
+#talk about militant bull0 indentation -wasting my precious time unreal.
+firstline =""
+#additions on Sunday August 23rd, 2020
+royallist=[]  #mythical list of tail for case section codegen
+royallist.append('starter'); #which fills position0
+
+varholder=[]
+varholder.append('0')
+
+
+
+#apparently this needs to exist in this file
+def clever(i): #so it already exists we are changing its value
+	#sw_reset()
+	 #this reloads the module
+	varholder[0]='' #this should reset it to nothing
+	#reset()  #reset() is hidden inside of clever for input to the switch
+	mytrace('clever()')
+	print("clever() called in switch_mgrcat")
+	#faucet_valve()
+	#print("valve[0]",valve[0])
+	print("if true then number in first case in switch so using numbers")
+	print("if false then string word in first case in switch using words or char")
+	print("clever called for input to switch case exp")
+	varholder[0]= i
+	#===this works and it fills a list with input from an argument
+	print('varholder[0]=',varholder[0])
+	print(varholder[0]) #to actually see proof
+	return varholder[0]
+	angel = varholder[0]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tail_list=[]
+cranberries=[]
+cranberries.append('starter')
+  ##===========================
+  ##==== def p51_mustang_2f() ===  adds the number to  fallthru(3) like that
+  ##===========================
+  #thi
+
+
+
+
+
+
+#autumn()
+
+
+
+crushit =[]
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+#======== sutterrsmill==============================
+case_main_body_list=[]
+case_main_body_list.append('starter')  #this is to fill up position 0
+
+z =''
+
+
+# big gears filling list with case bodies of python code
+
+
+
+
+
+import re  #for regular expressions
+#this one
+handy_list_of_tabs=[]
+dual_slots=[]
+crummy =[]
+fiasco =[]
+n_count_per_section=''
+case_section_lines_of_code=[]
+
+#n
+
+	#print("experimenting here in here we go")
+	#get length (number of lines) of each
+	#body_size = len(case_main_body_list[3])
+	#print("the number of lines =",body_size)
+
+print("")
+
+acounter=0
+#for item in case_main_body_list:
+#	print(len(item))
+#	acounter += 1
+
+
+
+
+
+
+
+
+
+
+
+
+#print("tail_list cranberries =",cranberries)
+###=============================================================================
+x = 0;y =0
+smart=''
+#cranberries=[]
+list_of_rows_of_case_names=[]
+##################################
+
+#making case section sublists here
+#this is for making the variable lists to fill the case sections of cases
+# and to refer to each of these caselists with ifs and elifs
+
+
+
+
+
+
+
+
+#I just need the lists to build my code generation now to generation
+#the logic right
+
+#codegen is using the output lists from the parser
+
+#this is the taillist
+
+#this is bringing it altogether simulating it creating the
+#switch case in three parts
+#with a counter and a loop
+
+#trace()
+#lists for starbuvks_drive_thru_code.py
+caselist     =[]
+breaklist    =[]
+fallthrulist =[]
+defaultlist  =[]
+blanklines   =[]
+mixedlist    =[]
+batterondeck =[] #I can have item to comapore with in here
+seriestogether =[]
+res =[]
+
+
+alphalist =  ["a", "b", "c","d", "e","f","g", "h", "i","j","k","l","m","n", "o","p","q","r", "s", "t", "u","v", "w","x","y",":",";","(",")","{","}"]
+
+#this will be the first
+#print("this will run at the top of the page and call the functions in sequence\n")
+#cranberries=[]
+my_godzilla_list=[]
+newlist=[]
+smartylist=[]
+tryagain=[]
+coollist=[]
+#test data here it will be one file and just flow down with no imports
+#rodan=[2,7,17,24,34]
+
+tabs =['starter',"\t","\t\t","\t\t\t","\t\t\t\t","\t\t\t\t\t","\t\t\t\t\t\t"]
+
+
+
+#I just turned these off at the bottom
+
+'''
+sunrise=[]
+fishfood()
+fortunate()
+test1()
+testhere()
+'''
+
+
+
+
+firstcaselist=[]
+
+#digital_candy=[[2, 7], [7, 17], [17, 24], [24, 34]]
+
+switch_python_gen=''
+
+
+
+
+
+
+
+
+#this will need to be called for each specific thru line
+###==============================================================
+###================  expand_thru_macro()  ===================
+###==============================================================
+
+inputnum = 1
+def expand_thru_macro():
+	mytrace('expand_thru_macro()')
+	print('expand_thru_macro called')
+	global switchcasetester
+	print(switchcasetester)
+	change_to_into_thru()   #<====== this is where "to macro" swapped with "thru" in switch case input
+	newlist=[] #resets newlist
+	global mouse; global ajax; global snowy; snowy=''
+	mycounter = 0 ### mouse 
+	for line in switchcasetester.splitlines():  #doing mouse not doing switchcasetester yet
+		#beta = mycounter-1
+										#reinitialize what I'm using with each loop iteration
+		smart=[]; ajax=''; newlist  =[]
+		#this is the bug fix so I say if "thru" in line but NOT "fallthru" in line.
+		if "thru" in line and "case" in line and "fallthru" not in line:  #only used with numbers
+			print(line)
+			if ":" in line and line.endswith(":"): #referring to one : in line
+				line = chomp(line) #moved taking off colon here  line=line[:-1] 
+				print(line)
+			else:  #so now if the line doesn't end with a colon it doesn't chomp it
+				pass
+			
+			smart=line.split() #separates case from casename
+			print("what does smart list have",smart)  #fallthr  missing a u
+			print("smart alleck result for smart[3]",smart[3])
+			print("does thisfix   smart list now!! have",smart)  #fallthr  missing a u
+			print("this should be case", smart[0])
+			print("first number ",int(smart[1]) )     #first number  don't need int
+			print("this should be --thru--",smart[2]) #thru
+			print("last number", smart[3])            #last number 
+			print("will then write perhaps from list yes")
+			print("the input for this macros test")
+			print("=============================")
+			print(smart[0] + " " + smart[1] + " " + smart[2] + " " + smart[3] + ":")
+			print("")
+			counter = smart[1]
+			#this is filling up the newlist
+			
+			#### THIS FILLS newlist with the case info
+			# ======LOOP  ==================
+			for counter in range(int(smart[1]),int(smart[3]) + 1):
+				newlist.append(counter)
+				counter += 1
+			print('newlist sees contents',newlist)
+			ajax =''
+			print("length of list =",len(newlist))
+			print("this is GENERATED case code from macro with 2 prefix tabs") 
+			#this is reading out the contents of the cases one on each line
+			
+			##==============================================================
+			# LOOP ====================
+			#print("just took out  + "'" + str(item)  + "'" + 
+			for item in newlist:  #this list has the number in it
+				ajax += "\t\tcase " +   str(item)   + ":" + "\n"
+				#now delete last \n on end 
+			#print("==== big test of replacing it ====")
+			ajax = ajax.rstrip() #see if this works takes off last "\n" whcih was extra
+			ajax = ajax[:-1] #chops off last char on end which is the :
+			#this is where the expandef macros is inserted in the line with "thru"
+			print("this is expand thru macro in pumpkin-falls line 286")
+			print("right here== ajax  is",ajax)
+			snowy=switchcasetester.replace(line, ajax)
+			switchcasetester='';switchcasetester = snowy
+			print("=== testing $$ this is the result of the macro thru unfurled")
+			print("=== testing $$ the unfurled macro should show up")
+			print(switchcasetester) #was mouse here 
+			#return ajax
+			
+
+
+
+######################################
+##  convert_case_numbers_to_strings()
+#######################################  #if no macros it just adds strings around numbers
+def convert_case_numbers_to_strings():
+	print("we are here in convert case numbers to strings did this reach this far")
+	print("convert_case_numbers_to_strings() called ")
+	mytrace('convert_case_numbers_to_strings()')
+	global switchcasetester
+	make_list_of_lines_using_thru_macro()
+	expand_thru_macro()
+	case_numbers_to_strings() #stringifies the numbers like this 3 becomes '3'
+
+
+
+
+##############################
+##         cherry_pie()  this calls convert_case_numbers_to_strings
+############################## # may 26th testing this 
+#this is reading numbers in cases NOT STRINGS and converting them into strings
+cray=[]
+cray.append('starter')
+def cherry_pie(y): #expands macros to and thru (if they exist)
+	mytrace('cherry_pie()')
+	print("cherry_pie called")
+	if valve[0] == True:    #meaning numbers in cases detected
+		mytrace('starter_sequence_mode_2()')
+		global switchcasetester; switchcasetester=y;
+		print("what is in switchcasetester before expanding macros if they exist")
+		print(switchcasetester)
+		##CONVERT CASE NUMBERS TO STRINGS()
+		#################################
+		convert_case_numbers_to_strings()  ## <<=== expands macros here 
+		#################################
+		print("after expanding macros we have...")
+		print(switchcasetester)
+		cray[0] =switchcasetester  #this assigns the output string to cray[0]
+	
+		
+
+
+
+
+daisy=''
+
+
+
+##############  added April 2nd, 2021  ###############################################
+# this is a pre scan of the switch case input string to determine if
+# the cases are numbers like case 1 thru 5: or case 10 OR words like case "apple":
+coffee=[]  #holds line number of first case in switch case
+valve=[]
+valve.append("nada")# 0
+valve.append("sway")# 1
+
+# this gets the line number of the first case in the switch case string
+#####################################################
+##  grab_first_case_of_switch_string(y)
+##################################################### 
+def grab_first_case_of_switch_string(y): 
+	mytrace("grab_first_case_of_switch_string()") 
+	#global switchcasetester
+	mycounter = 0
+	#this takes in sw to test for finding out if numbers like case 2: or words case "apple"
+	for line in y.splitlines():
+		if "case" in line:
+			print("the counter for spotting word case is ")
+			print(mycounter)
+			print("coffee has in it at this point ",coffee)
+			coffee.append(mycounter)
+			print(coffee[0]) #just added this 
+			break  #here after getting the first instance of a case we leave the loop
+		else:
+			mycounter += 1
+			continue
+
+
+#####################################################
+##  remove_tabs_from_string(y)
+##################################################### 
+def remove_tabs_from_string(y):
+	mytrace("remove_tabs_from_string()") 
+	y=y.replace("\t","")
+	return y
+
+
+#####################################################
+##  grab_first_case_line_in_switch_case_string(y)
+##################################################### 
+def grab_first_case_line_in_switch_case_string(y):
+	#global sw
+	mytrace("grab_first_case_line_in_switch_case_string()") 
+	print(coffee[0])  #testing what's in this
+	getline= eval("y.splitlines()[" + str(coffee[0]) + "]")
+	print(getline)
+	return getline
+
+
+##################################
+##  check_if_number_in_string(x)
+################################## 
+def check_if_number_in_string(x):
+	mytrace("check_if_number_in_string()") 
+	theresult = any(char.isdigit() for char in x)  #this line from stackoverflow
+	return theresult
+
+##################
+## testing April 3rd 2021 seeing if this works or not. 
+
+
+# flow_fork_input()  #this fills valve[0] with True or False
+# if valve[0] is True  it means numbers = True  (thus numbers      )
+# if valve[0] is False it means numbers = False (thus words strings)
+## the new code will go in here Friday morning.. April 2, 2021
+#this fills valve[0] with True or False for numbers in cases
+#################################
+##  flow_valve_input(y)
+##################################
+def flow_valve_input(y):  #this determines if switch case string is numbers or words
+    mytrace('flow_valve"input')
+    print("Flow Valve input")
+    print("Flow valve[0] = True  if numbers")
+    print("Flow valve[0] = False if word(s)")
+    mytrace("flow_valve_input()")  
+    getline  = grab_first_case_of_switch_string(y)
+    toocool  = grab_first_case_line_in_switch_case_string(y) 
+    toocool  = remove_tabs_from_string(toocool)
+    valve[0] = check_if_number_in_string(toocool) #looks in case line
+    valve[1] = toocool
+    print("valve[0]=",valve[0]," and valve[1]=",valve[1])
+    print("========")
+################################################
+
+
+#this fills valve[0] with True or False
+#based on analyzing the switch case string first case if number or not
+############################
+#this controls calling numbers parser if True
+#this controls calling words   parser if False
+#this is in great_pumpkincat2.py
+#cherry_pie outputs the expanded macros into cray[0]
+	# this will convert macros if they exist and stringify
+	#valve[0] contrains the result of test for number in first case line
+	# so the result of the test in flow_valve_input is in valve[0]
+	## this expands the macros if they exist then does stringify  may 26th testing
+	##### this calls the preprocessor here ##########################
+	#IF NUMBERS ARE DETECTED THEN PREPROCESSOR MACROS EXPANSION  IS CALLED
+	# puts True or False into valve[0] added April 2nd, 2021
+	                                   # ====== this is new may 26th, 2021 testing it
+########################
+##     endswitch(y)      this calls flow_valve_input which checks if cases are numbers or words
+########################  and if numbers = True then call parser_mode_2(y); If numbers = False parser_mode_1(y)
+def endswitch(y): #pulls in sw 
+	mytrace('endswitch')# detects if numbers in cases then valve[0] = True (it checks first case)
+	###################
+	flow_valve_input(y)  #output to valve[0]  True or False             
+	###################
+	print("valve[0]=",valve[0])
+	if valve[0] == True: #this means cases are numbers
+		# does macro expansion of input switch case string stored into cray[0] 
+		cherry_pie(y); y=None; del y; y = cray[0];   
+		# also stringifies numbers ie: case 1:  becomes case "1":                             
+		# calls parser
+		show_tron_trace_path()
+		return #stop it dead in it's tracks here ----
+		#parser_mode_2(y)    
+	else: # if numbers == False does words as strings
+		# for production it would just call the parser and not call cherry_pie
+		print("valve[0] == False thus do strings its words", valve[0])
+		#print("valve[1]=",valve[1])
+		#parser_mode_1(y)               #this calls parser() strings  above and passes in 
+	
+
+
+
+
 May 27th, 2021  7:20 pm California time
 I separted macros in the prototype and realized I needed to finish the fallthru tumbler. I already had
 it adding numbers while falling thru fallthus in each case. I fixed the math. So that works.
