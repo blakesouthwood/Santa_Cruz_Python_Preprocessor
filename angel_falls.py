@@ -53,9 +53,90 @@ def buildstring(x): #this should be 3
 	print(buildstringlist[0])
 	#return(x)
 		
+targetlist[0] = 0
+buildstringlist[0] = 0
 	
+sw ='''
+	
+	switch(exp) {
+		case 'cholpolty':  
+			print(\"burrito!\")
+			print("bowl")
+			print("lemonade")
+			break
+	
+		
+		case 'panda express':
+			print('good food')
+			print("in hollister ")
+			sutter(2)
+			buildstring('merry')
+			print('BARK')
+			fallthru
+		
+		case 'starbucks':
+			print('where is my mocha')
+			print("and my sausage sandwich...")
+			sutter(3) #this won't do anything until it is executed
+			buildstring(' christmas')
+			fallthru
+		
+		case 'big testing':
+			print('where is my mocha')
+			print("and my sausage sandwich...")
+			sutter(7)
+			buildstring(' and happy new year')
+			
+			
+			
+			
+			break
+				
+		default:
+			print('no results')
+			print("that is all")
+			break
+}
+'''
+endswitch(sw)	
 
 
+output
+we are inside of switch now panda express
+case = panda express
+good food
+in hollister 
+targetlist[0]= 0
+SUTTER called with  2
+targetlist[0] 0
+DING DONG  in first if of Sutter
+2
+2
+buildstring called with  merry
+merry
+BARK
+we are inside of switch now starbucks
+case = starbucks
+where is my mocha
+and my sausage sandwich...
+targetlist[0]= 2
+SUTTER called with  3
+5
+buildstring called with   christmas
+merry christmas
+we are inside of switch now big testing
+case = big testing
+where is my mocha
+and my sausage sandwich...
+targetlist[0]= 5
+SUTTER called with  7
+12
+buildstring called with   and happy new year
+merry christmas and happy new year
+
+final result=
+result of sutter adding 12
+result of buildstring concatting  merry christmas and happy new year
 
 May 27th, 2021 4:51pm
 Separated macros functions for preprocessor and reworked endswitch(). I will upload it tonight. 
