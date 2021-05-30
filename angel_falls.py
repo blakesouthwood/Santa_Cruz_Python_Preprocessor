@@ -1,3 +1,14 @@
+May 30th 2021 Sunday 5:33 am
+It works. Switch case works mimicing look and feel style and running behavior of C switch.
+Just need to take out print statements.
+Numbers works. Macros work. Preprocessor works. Words for cases works.
+Works without reloading module. Cutting out unused code. Surreal feeling seeing it work.
+Also tumbler works to do math in waterfall mode via fallthrus in switch case as it cascades down.
+And tumber for concatting a string dynamically works using the fallthru waterfall.
+
+
+
+
 May 29th 7:29 pm California time.
 cases with macros and numbers now works!
 But I have a bug whereby cases with words stopped working so that's likely a boolean bug.
