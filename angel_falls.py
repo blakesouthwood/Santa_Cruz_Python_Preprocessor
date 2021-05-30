@@ -1,5 +1,5 @@
 May 30th 2021 Sunday 5:33 am
-It works. Switch case works mimicing look and feel style and running behavior of C switch.
+It works. Switch case works mimicing look and feel style and running behavior of C switch described in Yale University C style guide.
 Just need to take out print statements.
 Numbers works. Macros work. Preprocessor works. Words for cases works.
 Works without reloading module. Cutting out unused code. Surreal feeling seeing it work.
