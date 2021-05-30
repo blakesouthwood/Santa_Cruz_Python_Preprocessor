@@ -1,3 +1,9 @@
+May 29th 7:29 pm California time.
+cases with macros and numbers now works!
+But I have a bug whereby cases with words stopped working so that's likely a boolean bug.
+Will work on it tonight.
+Exciting progress.
+
 May 27th 8:27pm California Time
 A fallthru can be explicitly stated with a word fallthru or fallthrough
 or implicitly represented by the absence of a break
