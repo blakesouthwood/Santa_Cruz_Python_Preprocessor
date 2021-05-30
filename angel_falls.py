@@ -5,6 +5,7 @@ Numbers works. Macros work. Preprocessor works. Words for cases works.
 Works without reloading module. Cutting out unused code. Surreal feeling seeing it work.
 Also tumbler works to do math in waterfall mode via fallthrus in switch case as it cascades down.
 And tumber for concatting a string dynamically works using the fallthru waterfall.
+Testing nested switch this week.
 
 
 
