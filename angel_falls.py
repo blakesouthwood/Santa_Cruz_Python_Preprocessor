@@ -1,3 +1,113 @@
+May 31st, 2021 Monday 9:19pm California time.
+I never thought that this would work but it just did. Will upload it likely tomorrow or the next day.
+It converts it to lowercase and it works. I wrote a few functions that I will test more tomorrow but it works.
+It's a Constant uppercase switch case based on C style. Oh, I am working on auto-indent but that will take
+a while so maybe in a week or two for that feature. I will add examples of tumbler adding thru fallthru
+and concating a string in the next few days (they already work).
+Also right now the upper limit is 10 cases (sections) I will move it up to 256 matching the C standard this week.
+
+Results down below.
+clever('LAKE_TAHOE') 
+
+sw =''' 
+	switch(exp) {
+		case CASPER:
+			print("swimming upstream!")
+			print("water everywhere")
+			break
+			
+		case COYOTE:
+			print("Sesame Street")
+			print(" groucho and animal")
+			print("this is so fun")
+			break
+			
+		case LAKE_TAHOE:
+			print("big dipper")
+			print("constellation")
+			print("milky way galaxy")
+			break
+			
+		case FRANCE:
+			print("massive ship blocking canal in Egypt")
+			print("it was stuck for six days")
+			
+			
+		case AMERICA:
+			print('manure')
+			print("no more horses")
+			break
+		
+				
+		default:
+			print('one walking quack d')
+			print("walking geese")
+			break
+}
+'''
+endswitch(sw)
+
+# output of the switch case that is then executed
+# so this would all be invisible in the background
+
+exp = varholder[0]
+
+caselist1 = ['casper']
+caselist2 = ['coyote']
+caselist3 = ['lake_tahoe']
+caselist4 = ['france']
+caselist5 = ['america']
+caselist6 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['casper']
+		print("squirt gun!")
+		print("water everywhere")
+		break
+
+	elif case in caselist2: # ['coyote']
+		print("Sesame Street")
+		print(" groucho and animal")
+		print("this is so fun")
+		break
+
+	elif case in caselist3: # ['lake_tahoe']
+		print("big dipper")
+		print("constellation")
+		print("milky way galaxy")
+		break
+
+	elif case in caselist4: # ['france']
+		print("massive ship blocking canal in Egypt")
+		print("it was stuck for six days")
+		fallthru('america')
+
+	elif case in caselist5: # ['america']
+		print('manure')
+		print("no more horses")
+		break
+
+	elif case in caselist6: # ['default']
+		print('one walking quack d')
+		print("walking geese")
+		break
+
+	else:
+		print('one walking quack d')
+		print("walking geese")
+		break
+
+
+the input exp in clever was::  LAKE_TAHOE
+we are inside of switch now LAKE_TAHOE
+case = lake_tahoe
+big dipper
+constellation
+milky way galaxy
+
 May 31st Monday 5:12 pm
 Taking out print statements in code.
 Deleting unused code. Will upload latest version tonight.
