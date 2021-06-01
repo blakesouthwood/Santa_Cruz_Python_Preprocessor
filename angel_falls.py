@@ -1,7 +1,7 @@
 May 31st Monday 5:12 pm
 Taking out print statements in code.
 Deleting unused code. Will upload latest version tonight.
-Working on case CONSTANTALLCAPS:  style from C currently but it won't be upload for a few days.
+Working on case CONSTANTALLCAPS:  style from C currently but it won't be uploaded for a few days.
 Irregardless I will be updating the working switch with macros for numbers works to and thru and numbers switches
 running before and after word switches. The module I made is solid.
 I will add a feature for debugging to see the generated python for the switch which would be
