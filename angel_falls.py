@@ -1,3 +1,19 @@
+May 31st Monday 5:12 pm
+Taking out print statements in code.
+Deleting unused code. Will upload latest version tonight.
+Working on case CONSTANTALLCAPS:  style from C currently but it won't be upload for a few days.
+Irregardless I will be updating the working switch with macros for numbers works to and thru and numbers switches
+running before and after word switches. The module I made is solid.
+I will add a feature for debugging to see the generated python for the switch which would be
+#show_generated_code_on  this is not implimented yet
+
+Also working on auto-indent so a swith can be done without indentations ala C and JavaScript and then it
+is automatically indented with tabs. The flag to trigger this would be #auto_indent_on  at top of input string above switch(exp)
+The idea for this came from copy and pasting which is disasterous in Python but this would use fuzzy logic to determine where
+to indent properly in the code generator. But actually it doesn't really have to be indented. Information can be gleanded from
+the input switch string without indentation as a guide.
+
+	
 May 30th 2021 Sunday 5:33 am
 It works. Switch case works mimicing look and feel style and running behavior of C switch described in Yale University C style guide.
 Just need to take out print statements.
