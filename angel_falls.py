@@ -1,4 +1,6 @@
-June 5th, 2021 Decided to let it work in all lowercase and alphanumeric too as an option.
+June 5th, 2021 
+Right now number of case sections is limited to 10. I will up it to 256 tonight. It can be as many as you wish actually.
+Decided to let it work in all lowercase and alphanumeric too as an option.
 So it could work as case lake_tahoe:   and as case lake_tahoe2:  and as case LAKE_TAHOE5 and case lake_tahoe_6:
 in addition to standard ANSI C   as case LAKE_TAHOE:
 Right now it works converting the stringified version into python code and I'm adding the sniffer tonight 
