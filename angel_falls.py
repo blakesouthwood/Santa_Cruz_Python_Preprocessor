@@ -6,6 +6,12 @@ as a filter to detect whether it's a nonstring word constant and if so to string
 Nearly done taking out the print statements with comments in the code base.
 I added flags for viewing the input string switch and viewing the output generated python code
 so these can be flipped at will for each switch case whenever a developer chooses.
+Just above switch case string.
+hide_input_switch_string()   # input string in doc string with var sw
+hide_generated_code()         #this is the generated python code
+or 
+show_input_switch_string()   
+show_generated_code() 
 
 Also, the other night I changed Sutter to Adder(x) for the fall thrus to do math and looking at the function
 a developer can easily modify it for doing more complex math. In example each element can be added to a list
