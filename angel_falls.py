@@ -1,4 +1,12 @@
-June 5th, 2021 
+June 5th 8pm  2021
+Encouraging progress. Can correctly detect number. Looks like lowercase, uppercase, and alphanumeric will work.
+It's all really about detecting if a solid number or alphanumeric and converting it into a string.
+Scary test where nothign worked and I realized whoopse I didn't have it converted into a string first and the parser
+choked on it. Funny. But initially scary. More progress tomorrow and updates.
+
+
+
+June 5th, 2021  6pm
 Will just do C style UPPERCASE case for now to get it up and usable and add the other versions later.
 
 Right now number of case sections is limited to 10. I will up it to 256 tonight. It can be as many as you wish actually.
