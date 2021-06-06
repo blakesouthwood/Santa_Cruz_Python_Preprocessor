@@ -1,4 +1,6 @@
 June 5th, 2021 
+Will just do C style UPPERCASE case for now to get it up and usable and add the other versions later.
+
 Right now number of case sections is limited to 10. I will up it to 256 tonight. It can be as many as you wish actually.
 Decided to let it work in all lowercase and alphanumeric too as an option.
 So it could work as case lake_tahoe:   and as case lake_tahoe2:  and as case LAKE_TAHOE5 and case lake_tahoe_6:
