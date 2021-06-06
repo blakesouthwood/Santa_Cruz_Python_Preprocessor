@@ -1,8 +1,12 @@
 June 5th 8pm  2021
+
+8:10pm Just found my nested switch code I coded a year ago. What a rush.
+	
 Encouraging progress. Can correctly detect number. Looks like lowercase, uppercase, and alphanumeric will work.
 It's all really about detecting if a solid number or alphanumeric and converting it into a string.
 Scary test where nothign worked and I realized whoopse I didn't have it converted into a string first and the parser
 choked on it. Funny. But initially scary. More progress tomorrow and updates.
+Successful testing across the board tonight.
 
 
 
