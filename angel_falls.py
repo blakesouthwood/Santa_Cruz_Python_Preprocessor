@@ -1,3 +1,26 @@
+June 5th, 2021 Decided to let it work in all lowercase and alphanumeric too as an option.
+So it could work as case lake_tahoe:   and as case lake_tahoe2:  and as case LAKE_TAHOE5 and case lake_tahoe_6:
+in addition to standard ANSI C   as case LAKE_TAHOE:
+Right now it works converting the stringified version into python code and I'm adding the sniffer tonight 
+as a filter to detect whether it's a nonstring word constant and if so to stringify it.
+Nearly done taking out the print statements with comments in the code base.
+I added flags for viewing the input string switch and viewing the output generated python code
+so these can be flipped at will for each switch case whenever a developer chooses.
+
+Also, the other night I changed Sutter to Adder(x) for the fall thrus to do math and looking at the function
+a developer can easily modify it for doing more complex math. In example each element can be added to a list
+and then eval(result) to use a formula and do a complex calculation. I left BuildString(x) the way it is
+for concatting a string thru fallthrus.
+
+Going through my previous code to see how I got a nested switch case working.
+
+I will show working goto label next.
+
+I will also add when, unless, until macros via the preprocessor the same way I made to and thru work
+for numbers in the switch case using replace and a prescan of the input string.
+
+
+
 May 31st, 2021 Monday 9:19pm California time.
 I never thought that this would work but it just did. Will upload it likely tomorrow or the next day.
 It converts it to lowercase and it works. I wrote a few functions that I will test more tomorrow but it works.
