@@ -26,7 +26,7 @@ for concatting a string thru fallthrus.
 
 Going through my previous code to see how I got a nested switch case working.
 
-I will show working goto label next.
+I will show working goto label next. The goto works already but I wanted to get the switch case working first.
 
 I will also add when, unless, until macros via the preprocessor the same way I made to and thru work
 for numbers in the switch case using replace and a prescan of the input string.
