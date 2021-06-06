@@ -7,6 +7,12 @@ Nearly done taking out the print statements with comments in the code base.
 I added flags for viewing the input string switch and viewing the output generated python code
 so these can be flipped at will for each switch case whenever a developer chooses.
 Just above switch case string.
+
+I still need to add ERROR CODE MESSAGES for bad input for nontraditional switch case style.
+Such as missing default. Default not at bottom. No break after default. Improper indentation.
+Bear in mind I will be adding a freestyle no indentation necessary version soon that will add
+the proper format indnetation automatically. I prefer to think about my code and not dwell on tabs myself.
+
 hide_input_switch_string()   # input string in doc string with var sw
 hide_generated_code()         #this is the generated python code
 or 
