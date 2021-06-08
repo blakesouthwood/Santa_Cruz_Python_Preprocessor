@@ -2,6 +2,11 @@ June 8th 7:15am
 case WORDS_LIKE_THIS:
 case TAHOE:  now works in switch case code just upadated 
 file names:  official_switch_case_silver.py and test_inputs_beta.py
+	
+	
+adder(3) and buildstring('new words')
+works for fallthru adding or concatting strings in switch
+example in file too and code works
 
 June 5th 8pm  2021
 
