@@ -1,4 +1,5 @@
 June 8th 7:15am
+Another victory duplicating the different varied facets of the C style switch case implimented for python.
 case WORDS_LIKE_THIS:
 case TAHOE:  now works in switch case code just upadated 
 file names:  official_switch_case_silver.py and test_inputs_beta.py
