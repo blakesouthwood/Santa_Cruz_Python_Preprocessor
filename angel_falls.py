@@ -1,3 +1,8 @@
+June 8th 7:15am
+case WORDS_LIKE_THIS:
+case TAHOE:  now works in switch case code just upadated 
+file names:  official_switch_case_silver.py and test_inputs_beta.py
+
 June 5th 8pm  2021
 
 8:10pm Just found my nested switch code I coded a year ago. What a rush.
