@@ -4,6 +4,10 @@ The current updated version is:  official_switch_case_silver.py
 The test input file is:  test_inputs_beta.py
 Documentation and how it works:  angel_falls.py
 
+Using the switchcase  underneath I am going to impliment as macros in the preprocessor
+goto label: I was in awe of goto in C and macros so that was my ultimate goal for Python
+but only after getting switch case to work identical in appearanceand behavior as ANSI C.
+#will likely take a week or two. Coded the goto label  a year ago but just refining it.
 
 June 9th, 2021 8 am California time.
 The switch case now works and macros work for numbers case 1 thru 10:   and case 100 to 200:
