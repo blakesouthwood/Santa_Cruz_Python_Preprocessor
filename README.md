@@ -1,5 +1,15 @@
 # Santa_Cruz_Python_Preprocessor
+What is unique and different about how this switch case works is to break the rules of Python
+it works inside of a docstring that has a variable name sw to break the constraining restraints of Python
+so think of it like a plastic window on an envelope and this freestyle C looking code is converted into python.
+It's a multiline variable string that is interpreted in a parser and then put into lists and then fed to the code generator
+that generates a multiline string which is then exec(string).
 
+For debugging I added some methods 
+hide_input_switch_string()   show_input_switch_string()  #<<==== this shows the input string for the switch before it's parsed
+hide_generated_code()  show_generated_code()             #<<=== this is shows and hides the generated python code of the switche:
+                                                         # it uses if elif else 
+							 
 The current updated version is:  official_switch_case_silver.py
 The test input file is:          test_inputs_beta.py
 Documentation and how it works:  angel_falls.py
