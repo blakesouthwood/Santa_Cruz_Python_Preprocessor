@@ -1,3 +1,159 @@
+June 9th, 21021  11AM
+So put this at the top of your input code.
+
+import official_switch_case_silver
+from official_switch_case_silver import *  
+
+#And in the file that has your code 
+# it looks like this
+
+#you can rename clever to whatever you want
+clever('STARBUCKS')
+
+hide_input_switch_string()   #input so what the string right below here
+hide_generated_code()
+
+print("== switch 1 ==")
+print("--------")
+
+sw =''' 
+	switch(exp) {
+		case CASPER:  
+			print(\"squirt gun!\")
+			print("water everywhere")
+			break
+			
+		case COYOTE:
+			print("Sesame Street")
+			print(" groucho and animal")
+			print("this is so fun")
+			break
+			
+		case PALOMAR:
+			print("it actually works")
+			print(" third attempt")
+			print("deer and quail about")
+			
+			
+		case LAKE_TAHOE:
+			print("good skiing")
+			print(" alpine meadows")
+			print("all of the stars")
+			break
+			
+		case FRANCE:
+			print("massive ship blocking canal in Egypt")
+			print("it was stuck for six days")
+			
+			
+		case AMERICA:
+			print('manure')
+			print("no more horses")
+			break
+		
+				
+		default:
+			print('sorry no matches')
+			print("out of mocha")
+			break
+}
+'''
+endswitch(sw)
+
+
+#going up in a few days from May 13th so by the 15th.
+clever('2') #this would change varholder[0] 
+
+
+
+hide_input_switch_string()   #input so what the string right below here
+show_generated_code()
+#show_generated_code()
+#this switch use macros thru and to
+print("== switch 12 ==")
+print("--------")
+ 
+sw ='''
+	switch(exp) {  
+		case 1 thru 3:
+			print("where\'s the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+			
+			
+		case 21:
+			print('Blake you did it a real good job')
+			print('macros working in Python')
+			print(' I did it - it works')
+			
+			
+			
+		default:
+			print('six walking duck de fa ul t')
+			print('flying geese')
+			break
+}
+'''
+endswitch(sw)
+
+
+
+clever('big bird') #this would change varholder[0] 
+
+#hide_generated_code()
+#this is the code being run
+
+print(" == switch 11 ==")
+print("--------")
+
+sw =''' 
+	switch(exp) {
+		case 'fishy':  
+		case 'two da':
+		case 'three da':
+			print(\"squirt gun!\")
+			print("water everywhere")
+			
+			
+		case 'big bird':
+			print("Sesame Street")
+			print(" groucho and animal")
+			print("this is so fun")
+			fallthrough
+			
+		case 'Israel canal':
+			print("massive ship blocking canal in Egypt")
+			print("it was stuck for six days")
+			fallthru
+			
+		case 'ufos are real':
+			print('manure')
+			print("no more horses")
+			break
+		
+				
+		default:
+			print('one walking quack d')
+			print("walking geese")
+			break
+}
+'''
+endswitch(sw)
+
+
+
 June 9th, 2021 8:27 am 
 Taking out print statements and cleaning up the code.
 It works. I just got the UPPERCASE CONSTANT style of C working like this:   case CALIFORNIA:  which is converted to a string.
