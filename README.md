@@ -1,8 +1,16 @@
 # Santa_Cruz_Python_Preprocessor
 
 The current updated version is:  official_switch_case_silver.py
-The test input file is:  test_inputs_beta.py
+The test input file is:          test_inputs_beta.py
 Documentation and how it works:  angel_falls.py
+
+Required: default case last ending with a break beneath it.
+Currently indentation of 1 tab before switch(exp)
+2 tabs for case line.
+3 tabs for inside of case.
+The next version I'm working on will be freestyle that does auto-indentation converting the input
+since currently the input string is the guide post for the required indentation for die hard python finantics.
+
 
 Using the switchcase  underneath I am going to impliment as macros in the preprocessor
 goto label: I was in awe of goto in C and macros so that was my ultimate goal for Python
