@@ -1,6 +1,11 @@
 June 9th, 21021  11AM
 So put this at the top of your input code.
 
+# the trigger for each switch isn't switch itself but it is endswitch(sw)
+# there is,however, a switch method which passes the input to a case variable.
+
+#PHP has an endswitch so it was a happy compromise
+
 import official_switch_case_silver
 from official_switch_case_silver import *  
 
