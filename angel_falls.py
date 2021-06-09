@@ -152,7 +152,57 @@ sw ='''
 '''
 endswitch(sw)
 
+#this one demonstrates the fallthru math adder(x) and buildstring(x) which concats strings
+clever('panda express') #this would change varholder[0] 
 
+
+hide_input_switch_string()   #input so what the string right below here
+show_generated_code()
+
+sw ='''
+	
+	switch(exp) {
+		case 'cholpolty':  
+			print(\"burrito!\")
+			print("bowl")
+			print("lemonade")
+			break
+	
+		
+		case 'panda express':
+			print('good food')
+			print("in hollister ")
+			adder(1)
+			buildstring('soon it')
+			print('BARK')
+			
+		
+		case 'starbucks':
+			print('where is my mocha')
+			print("and my sausage sandwich...")
+			adder(2) #this won't do anything until it is executed
+			buildstring(' will work')
+			
+		
+		case 'big testing':
+			print('where is my mocha')
+			print("and my sausage sandwich...")
+			adder(3)  #this does a running total essentially after adding
+			buildstring(' and I will celebrate')
+			break
+				
+		default:
+			print('no results')
+			print("that is all")
+			break
+}
+'''
+endswitch(sw)
+
+#output of adder and buildstring
+final result=
+result of adder adding 6
+result of buildstring concatting  soon it will work and I will celebrate
 
 June 9th, 2021 8:27 am 
 Taking out print statements and cleaning up the code.
