@@ -1,3 +1,19 @@
+
+June 10th, 2021 7:31 am California Time
+Making progress on parser and code gen and design logic for nested switches.
+Working code that will be the running output.
+Uploaded proof of concept workikng three level deep nested switch case
+which demonstrates it working. It will be generated but this
+show the python implimentation.
+nested_switches_gold.py
+
+I'm designing the special parser and code gen.
+The parser will be a multiple pass using a loop and lists
+to generate each nested switch  and fill the incoming data
+with the logic done with fuzzy logic.
+It will be working within a week.
+
+
 June 9th, 21021  11AM
 So put this at the top of your input code.
 
