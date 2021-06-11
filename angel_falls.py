@@ -2,9 +2,9 @@
 June 10th, 2021 7:31 am California Time
 Making progress on parser and code gen and design logic for nested switches.
 Working code that will be the running output.
-Uploaded proof of concept workikng three level deep nested switch case
+Uploaded proof of concept working three level deep nested switch case
 which demonstrates it working. It will be generated but this
-show the python implimentation.
+show the python implimentation that will be generated.
 nested_switches_gold.py
 
 I'm designing the special parser and code gen.
