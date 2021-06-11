@@ -1,11 +1,15 @@
-#mrcoffee module 
-  
+#######################################################
+# official_switch_case_silver.py  works in conjuction with test file test_inputs_beta.py
+# developed solely by Blake Southwood  this is version 1.0
+# June 10th, 2021  I live in Silicon Valley south of San Jose in California
+# southwood.blake@gmail.com
+# I live in Gilroy, CA and will relocate.
+# I am currently looking for a full time python developer job.
+# I am in the process of refactoring this code base but wanted
+# to get it working and stable first.
+####################################################### 
 # -*- coding: utf-8 -*-
-#from bugsbunny import * 
 
-#from goldfish import switchcasetester
-#import switch_config  #what do these two imports mean and do?????
-#import switch_subfile
 disney_tron_trace_list=['starter']
 
 ######## show tron trace path
@@ -32,8 +36,8 @@ line_numbers_of_first_cases=[]
 show_code=[]
 show_code.append(False)
 #show_code[0]= False
-print('starting out what the flag for show code shows')
-print("default setting for show_code[0]",show_code[0])
+#print('starting out what the flag for show code shows')
+#print("default setting for show_code[0]",show_code[0])
 #show_code.append(False) # by default
 #############################################
 #to show or hide the docstring switch input in C style
@@ -53,6 +57,7 @@ def hide_input_switch_string():
 ### show_generated_code
 def show_generated_code():
     show_code[0]= True
+    
 ### hide_generated_code
 def hide_generated_code():  #test this if it really works
     show_code[0]= False
@@ -271,23 +276,15 @@ varholder=[]
 varholder.append('0')
 ###############################============
 
-
+#perhaps this is the clever() being called afterall june 9th 2021
 #apparently this needs to exist in this file
 def clever(i): #so it already exists we are changing its value
-	#sw_reset()
-	 #this reloads the module
+	print("clever() on line 276")
 	varholder[0]='' #this should reset it to nothing
-	#reset()  #reset() is hidden inside of clever for input to the switch
 	mytrace('clever()')
-	#print("clever() called in switch_mgrcat")
-	#faucet_valve()
-	#print("valve[0]",valve[0])
-	#print("if true then number in first case in switch so using numbers")
-	#print("if false then string word in first case in switch using words or char")
-	#print("clever called for input to switch case exp")
 	varholder[0]= i
 	#===this works and it fills a list with input from an argument
-	print('varholder[0]=',varholder[0])
+	#print('varholder[0]=',varholder[0])
 	#print(varholder[0]) #to actually see proof
 	return varholder[0]
 	angel = varholder[0]
@@ -297,33 +294,23 @@ def clever(i): #so it already exists we are changing its value
 
 z =''
 import re  #for regular expressions
-#this one
-
 acounter=0
 x = 0;y =0
 smart=''
-
 res =[]
 newlist=[]
-
-
-
-#tabs =['starter',"\t","\t\t","\t\t\t","\t\t\t\t","\t\t\t\t\t","\t\t\t\t\t\t"]
-
 switch_python_gen=''
 ###########################================
 
-#this will need to be called for each specific thru line
+
 ###==============================================================
-###================  expand_thru_macro()  ===================
+###================  expand_thru_macro()  =======================
 ###==============================================================
 
 inputnum = 1
 def expand_thru_macro():
 	mytrace('expand_thru_macro()')
-	#print('expand_thru_macro called')
 	global switchcasetester
-	#print(switchcasetester)
 	change_to_into_thru()   #<======  "to macro" swapped with "thru" in switch case input
 	newlist=[] #resets newlist
 	global mouse; global ajax; global snowy; snowy=''
@@ -362,30 +349,22 @@ def expand_thru_macro():
 			for counter in range(int(smart[1]),int(smart[3]) + 1):
 				newlist.append(counter)
 				counter += 1
-			#print('newlist sees contents',newlist)
+			
 			ajax =''
-			#print("length of list =",len(newlist))
-			#print("this is GENERATED case code from macro with 2 prefix tabs") 
-			#this is reading out the contents of the cases one on each line
 			
 			##==============================================================
 			# LOOP ====================
-			#print("just took out  + "'" + str(item)  + "'" + 
+			 
 			for item in newlist:  #this list has the number in it
 				ajax += "\t\tcase " +   str(item)   + ":" + "\n"
 				#now delete last \n on end 
 			#print("==== big test of replacing it ====")
 			ajax = ajax.rstrip() #see if this works takes off last "\n" whcih was extra
 			ajax = ajax[:-1] #chops off last char on end which is the :
-			#this is where the expandef macros is inserted in the line with "thru"
-			#print("this is expand thru macro in pumpkin-falls line 286")
-			#print("right here== ajax  is",ajax)
+			
 			snowy=switchcasetester.replace(line, ajax)
 			switchcasetester='';switchcasetester = snowy
-			#print("=== testing $$ this is the result of the macro thru unfurled")
-			#print("=== testing $$ the unfurled macro should show up")
-			#print(switchcasetester) #was mouse here 
-			#return ajax
+			
 			
 
 
@@ -487,21 +466,16 @@ def check_if_number_in_string(x):
 	theresult = any(char.isdigit() for char in x)  #this line from stackoverflow
 	return theresult
 
-##################
-## testing April 3rd 2021 seeing if this works or not. 
 
 
 
 
-############################
 
 
-
-
-	################################
-	########### CHOMP(x)  ##########
-	################################
-	## this bites off the last character in a string ##
+################################
+########    CHOMP(x)  ##########
+################################
+## this bites off the last character in a string ##
 def chomp(x):
 	mytrace('chomp()')
 	#print("====== chomp called",x)
@@ -514,36 +488,45 @@ def chomp(x):
 
 ##### end of woodstock code =========================
 
+
+
+
+###=====================
+##      adder(x)
+##======================
+
 targetlist=[] #just added this 
 targetlist.append(0) #initializes it
 
 #math demonstration adding numbers between cases using fallthru
-############ adder() ############## added may 27th
-def adder(x): #this should be 3
+############ adder() ############## added may 27th 2021
+def adder(x): #this can be modified to do more
 	#print("targetlist[0]=",targetlist[0])
 	print("adder called with ",x)
-	if targetlist[0] == 0: #first time thru
-		#x =x + 1
-		#print('targetlist[0]',targetlist[0])
-		
+	#first time thru
+	if targetlist[0] == 0:    
 		x = str(x)
 		targetlist[0] = x
 		#print(targetlist[0])
 	else:   #already something in here
-		#targetlist[0] = targetlist[0] + x
-		#x =x + 1
 		x = str(x)
 		targetlist[0] = int(targetlist[0]) + int(x)
 	print(targetlist[0])
 	#return(x)
 
-
+##====================================================================
 	
 buildstringlist=[]
 buildstringlist.append(0)
+# this can be used to create a math formula on the fly too
+# from my experience 
 ################################################
 ##### concatting a string in fallthrus in switch case
 ############ buildstring() ############## added may 27th
+
+###=========================
+##      buildstring(x)
+##==========================
 def buildstring(x): #this should be 3
 	#print("buildstring called with ",x)
 	if buildstringlist[0] == 0: #first time thru
@@ -558,7 +541,11 @@ def buildstring(x): #this should be 3
 	print(buildstringlist[0])
 	#return(x)
 		
-	
+
+
+
+
+###================================================================	
 #bugsbunny.py
 #march 18th, 2021
 global sw
@@ -594,10 +581,9 @@ def empty_list(name): #might need to have it take in with string
 
 
 ############## june 8th attempt ###########========= works==============================
-####################################
-##  TOP OF CASE CONSTANT UPPERCASE
-##  AND CONVERSION TO STRINGS
-#####################################
+###################################################################
+##  TOP OF CASE CONSTANT UPPERCASE AND CONVERSION TO STRINGS
+###################################################################
 if_strings_found=[]
 if_strings_found.append(False) #to initialize it with something
 
@@ -622,7 +608,7 @@ found_number_in_case.append(False)
 #####################################
 def detect_if_number_in_cases():
 	global sw
-	print(sw)
+	#print(sw)
 	mycounter = 0
 	contains_digit= False
 	#global sw ## just addded thismay 27th
@@ -647,9 +633,9 @@ def detect_if_number_in_cases():
 
 
 
-#####################################
-##  detect_if_no_quotes_around_word()
-#####################################
+###########################################
+##     detect_if_no_quotes_around_word()
+###########################################
 def detect_if_no_quotes_around_word():
 	#print("detect if no quotes aorund word called")
 	global sw
@@ -683,8 +669,8 @@ def detect_if_no_quotes_around_word():
 	
 	
 	
-#########################################   
-##  check if case word is uppercase()
+##########################################   
+##    check if case word is uppercase()
 ##########################################
 def check_if_case_word_is_uppercase():  #returns uppercase_test[0]
 	global sw
@@ -711,7 +697,7 @@ def check_if_case_word_is_uppercase():  #returns uppercase_test[0]
 			#print("verify that it's all uppercase constant")
 			if cat.isupper() ==  True:
 				#print("=====yes all UPPERCASE=====")
-				uppercase_test[0] = True
+				uppercase_test[0] = True  #sets flag to True
 				#print("===============")
 				#print("uppercase_test[0]=",uppercase_test[0])
 				#print("==============")
@@ -728,7 +714,7 @@ def check_if_case_word_is_uppercase():  #returns uppercase_test[0]
 ###############################################
 def case_constant_uppercase_word_to_strings(): # case WORDINCAPS: becomes case 'WORDSHERE':
 	#print("case constant uppercase word to strings() called")
-	#mytrace('case_numbers_to_strings()')
+	mytrace('case_numbers_to_strings()')
 	#print("called case constant uppercase word to strings()")
 	#print('starting this function we have this test view of uppercase',uppercase_test[0])
 	global sw
@@ -844,9 +830,9 @@ def case_constant_uppercase_word_to_strings(): # case WORDINCAPS: becomes case '
 
 
 
-############################################
-##  check_if_uppercase_constant_cases()
-############################################
+###############################################
+##      check_if_uppercase_constant_cases()
+###############################################
 def check_if_uppercase_constant_cases(y):
     global sw
     sw = y
@@ -859,27 +845,31 @@ def check_if_uppercase_constant_cases(y):
     else:
         pass #print("it is lowercase")
     # this is if numbers in case and if strings found and if uppercase (3 booleans))
-    if found_number_in_case[0]  == False  \
+    ##===========================================
+    ### BOOLEAN test to determine if case UPPERCASE: no numbers, no strings and uppercase True
+    if found_number_in_case[0]  == False \
         and if_strings_found[0] == False \
         and uppercase_test[0]   == True:
+    ### BOOLEAN test to determine if meets criteria of uppercase word for a case
+    ##============================================
         ## this is where the case words are converted to strings
         ########################################
         case_constant_uppercase_word_to_strings()
         ########################################
         #print("MEETS criteria to convert inputs string uppercase constants to strings")
     else:
-        baseline[0] = "nada"
-        pass #do nothing if critiera not met for converting to strings
-        #later will add ability to handle lowercase and numbers 
-        #print("doesn't meet criterial to do uppercase to strings")
-        #	#adds strings
+        baseline[0] = "nada"  # doesn't meet criteria of case UPPERCASE
+        pass                  # do nothing if critiera not met for converting to strings
+                              # later will add ability to handle lowercase and numbers 
+                              # print("doesn't meet criterial to do uppercase to strings")
+                              #	adds strings
 
 
 #print("BIG TEST HERE ===>>")
 
 ############## end of june 8th attempt #########
 ############## end of june 8th attempt #########
-############## end of june 8th attempt #########
+############## end of june 8th attempt #########=========================================
 
 
 
@@ -4855,11 +4845,15 @@ input = ''
 
 #it would already be tested if a number in the first case already 
 
-
+#this is the clever() that is actually being called line 4847
 # this calls faucet_valve to determine if cases are numbers or words
 #apparently this needs to exist in this file
+# I need to number them because I have several functions called clever()
 def clever(i): #so it already exists we are changing its value
+	print("clever() line 4851")
 	#sw_reset()
+	print("this is the clever() that is being called line 4850")
+
 	 #this reloads the module
 	varholder[0]='' #this should reset it to nothing
 	reset()  #reset() is hidden inside of clever for input to the switch
@@ -4872,8 +4866,8 @@ def clever(i): #so it already exists we are changing its value
 	print("clever called for input to switch case exp")
 	varholder[0]= i
 	#===this works and it fills a list with input from an argument
-	print('varholder[0]=',varholder[0])
-	print(varholder[0]) #to actually see proof
+	#print('varholder[0]=',varholder[0])
+	#print(varholder[0]) #to actually see proof
 	return varholder[0]
 	angel = varholder[0]
 	## ===check if input is a number or a word with letters
@@ -4891,8 +4885,8 @@ def moreclever(i): #so it already exists we are changing its value
 	print("clever called for input to switch case exp")
 	varholder[0]= i
 	#this works and it fills a list with input from an argument
-	print('varholder[0]=',varholder[0])
-	print(varholder[0]) #to actually see proof
+	#print('varholder[0]=',varholder[0])
+	#print(varholder[0]) #to actually see proof
 
 
 
@@ -4915,11 +4909,13 @@ def mountain2(c):
 	#    show_input_string[0]= False
 	#end if
 	#so bug is this is set to True when I set it to False june 4th, 2021  
-	if show_input_string[0] == True:
-	    #pass
-	    print(weasel) #it was printing the switchcasetester right here
-	else:
-	    pass #otherwise it wont print the input string
+	
+	##### just commented this out for the time being #########################
+	#if show_input_string[0] == True:
+	#   #pass
+	#   print(weasel) #it was printing the switchcasetester right here
+	#else:
+	#   pass #otherwise it wont print the input string
 	    
 	global switchcasetester
 	switchcasetester =''
@@ -5288,7 +5284,8 @@ last_line_of_string=0 #initializes it
 # so before convertind default to case default I need to count breaks from default down
 # and if there isn't one in default add a break
 
-
+#idea first pass makes switch with place holder innerswitch functionname with input
+#but on second pass I make the second internal switch BRILLIANt
 
 ##################################
 ###  convert  default  case '':
@@ -5297,7 +5294,7 @@ lastbreak=''
 ###################################
 def convert_default_case(): #I got this working November 26th, 2020
 ######################################
-	print("convert_default_case()  ===&&&&&-- CALLED Motel 6 test night")
+	#print("convert_default_case()  ===&&&&&-- CALLED Motel 6 test night")
 	#add_break_to_bottom_of_default()  ##march 3rd, 2021
 	mytrace('convert_default_case')
 	#print("===========convert default case called ===========")
@@ -5306,7 +5303,7 @@ def convert_default_case(): #I got this working November 26th, 2020
 	
 	#print("the last break would be ",listofbreaks[-1])
 	if len(listofbreaks) == 0:  #maybe it will be None
-		print("no breaks in the whole switch case string")
+		pass  #print("no breaks in the whole switch case string")
 	else:
 		pass
 	
@@ -5606,6 +5603,7 @@ def solid():
 #solid()    
 
 def badass():
+    return  #don't need this now
     print("badass callsed")
     global foo
     foo=[]
@@ -5619,7 +5617,7 @@ def badass():
     foo.append("red barron")
     foo.append("coffee")
     foo.append("starbucks")
-    print(foo)
+    #print(foo)
     print("==============")
     
 
