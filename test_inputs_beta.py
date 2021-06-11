@@ -1,45 +1,22 @@
-
+# test_inputs_beta.py  showing proof of concept of C style switch case in python
+# also demonstrating macros to and thru working with numbers cases
+#######################################################
+# official_switch_case_silver.py  works in conjuction with test file test_inputs_beta.py
+# developed solely by Blake Southwood  this is version 1.0
+# June 10th, 2021  I live in Silicon Valley south of San Jose in California
+# southwood.blake@gmail.com
+# I live in Gilroy, CA and will relocate.
+# I am currently looking for a full time python developer job.
+# I am in the process of refactoring this code base but wanted
+# to get it working and stable first.
+####################################################### 
 
 # -*- coding: utf-8 -*-
 
-
-#from snoopy1 import *     # case numbers
-#from switch_module3 import *  #normal case words
-#from switch_mod2backup import *  #normal case words
-#from switchmod4gold import *
-
-#import mrcoffee_mocha  #uses adder to add numbers try string concat
-#from mrcoffee_mocha  import * 
-
-#### this one below is good onemay 27th
 import official_switch_case_silver
-from official_switch_case_silver  import *  #May 29th, 2021 flailing
+from official_switch_case_silver  import *  
 
 
-
-
-################################################
-#      soon drum roll macros module 
-#import blender_macros
-#from blender_macros  import *  #may 25th, 2021 
-########################################################
-
-
-#import switchmodtrial7  #the one I ahve been using
-#import switch_module3
-#from switchmodtrial7  import *  #april 29th, 2021 flailing
-
-#import switch_mod2backup
-#from switch_mod2backup  import *  #april 29th, 2021 flailing
-
-#from pre_versionworkingfallsjan26th import *
-
-######################
-##   clear()
-#######################
-#reset switchmodtrial7 module
-#def clear():#reset sw
-#	importlib.reload(switchmodtrial7)
 	
 
 print('drinkcoffee file being used here"')
@@ -69,11 +46,15 @@ print("now to string switch see what happens")
 #txt = "compnay12"
 #x = txt.islower() #lowercase
 
-clever('PALOMAR')
+clever('STARBUCKS')
 #right now it NEEDS to take strings to digest and parse it"
 #I need to add my new code for this to work properly"
 show_input_switch_string()   #input so what the string right below here
 show_generated_code()
+print("what does it show True or False to show input string")
+print(show_input_string[0])
+print("== switch 1 ==")
+print("--------")
 
 sw =''' 
 	switch(exp) {
@@ -92,7 +73,7 @@ sw ='''
 			print("it actually works")
 			print(" third attempt")
 			print("deer and quail about")
-			break
+			
 			
 		case LAKE_TAHOE:
 			print("good skiing")
@@ -112,8 +93,8 @@ sw ='''
 		
 				
 		default:
-			print('one walking quack d')
-			print("walking geese")
+			print('sorry no matches')
+			print("out of mocha")
 			break
 }
 '''
@@ -125,13 +106,17 @@ endswitch(sw)
 #see if this works 
 #show_input_switch_string() #for testing this shows the input string
 #hide_input_switch_string()
-#clever('FRANCE')	
-hide_input_switch_string()   #input so what the string right below here
-hide_generated_code()  #show_  hide_
+clever('COYOTE')	
+show_input_switch_string()   #input so what the string right below here
+show_generated_code()  #show_  hide_
 # this example goes through strings since nonumber detected
 # this works as is as regular string
-#sw =
-''' 
+
+print("switch 2")
+print("--------")
+
+
+sw =''' 
 	switch(exp) {
 		case 'CASPER':
 			print("squirt gun!")
@@ -168,15 +153,18 @@ hide_generated_code()  #show_  hide_
 			break
 }
 '''
-#endswitch(sw)
+endswitch(sw)
 
 print("===== end of first test of switch case with flags ====")
-hide_input_switch_string()   #input so what the string right below here
-hide_generated_code()
+show_input_switch_string()   #input so what the string right below here
+show_generated_code()
 
 clever('rasberries and cream') #this would change varholder[0] 
 
 #show_generated_code()
+
+print("switch 3")
+print("--------")
 
 sw ='''
 	switch(exp) {
@@ -219,28 +207,21 @@ endswitch(sw)
 
 
 
-print("duplicate switch doign first one a second time to see the difference")
-print("=== tennis soon ===")
 
 
-
-print("========MIDDLE EARTH THERE ======")
-print("========MIDDLE EARTH THERE ======")
-print("========MIDDLE EARTH THERE ======")
-
-print("remember for testing the macro expansions should already")
-print("be completed for it to work in the strings parser")
 
 
 hide_input_switch_string()   #input so what the string right below here
-hide_generated_code()
+show_generated_code()
 
-#clever('gone fishing') #this would change varholder[0] 
+clever('gone fishing') #this would change varholder[0] 
 
 #show_generated_code()
+print("switch 4")
+print("--------")
 
-#sw = 
-'''
+
+sw = '''
 	switch(exp) {
 		case 'rasberries and cream':  
 			print("where's the cream house!")
@@ -267,18 +248,19 @@ hide_generated_code()
 			break
 }
 '''
-#endswitch(sw)
+endswitch(sw)
 
 
 
-hide_input_switch_string()   #input so what the string right below here
-hide_generated_code()
+show_input_switch_string()   #input so what the string right below here
+show_generated_code()
 #
 clever('star wars') #this would change varholder[0] 
 
 #hide_generated_code() #from this point forward
 
-print("-----3rd switch -------")
+print("switch 5")
+print("--------")
 
 sw ='''
 	switch(exp) {
@@ -340,14 +322,18 @@ def reset_sutter_and_buildstring():
 #buildstring(x) concats string thru fallthrus
 
 reset_sutter_and_buildstring() #for adder() and buildstring()
-#clever('panda express')
+clever('panda express')
 #show_input_string()   #input so what the string right below here
 #show_generated_code() #output
-hide_input_switch_string()   #input so what the string right below here
-hide_generated_code()
 
-#sw =
-'''
+
+show_input_switch_string()   #input so what the string right below here
+show_generated_code()
+
+print("switch 6")
+print("--------")
+
+sw ='''
 	
 	switch(exp) {
 		case 'cholpolty':  
@@ -385,7 +371,7 @@ hide_generated_code()
 			break
 }
 '''
-#endswitch(sw)
+endswitch(sw)
 
 print("after the switch case we have... drum roll please")
 #print("apple=",apple)
@@ -399,7 +385,7 @@ print("result of buildstring concatting ",buildstringlist[0])
 #buildstringlist[0] = 0
 
 
-#clever('panda express') #this would change varholder[0] 
+clever('panda express') #this would change varholder[0] 
 
 
 targetlist[0] = 0
@@ -408,12 +394,14 @@ reset_sutter_and_buildstring() #adder and buildstring
 
 
 
-hide_input_switch_string()   #input so what the string right below here
-hide_generated_code()
+show_input_switch_string()   #input so what the string right below here
+show_generated_code()
 #hide_generated_code()	
 
-#sw =
-'''
+print("switch 7")
+print("--------")
+
+sw ='''
 	
 	switch(exp) {
 		case 'cholpolty':  
@@ -451,7 +439,7 @@ hide_generated_code()
 			break
 }
 '''
-#endswitch(sw)
+endswitch(sw)
 
 print("after the switch case we have... drum roll please")
 #print("apple=",apple)
@@ -521,8 +509,11 @@ print("now for the numbers test after a word test")
 print("BIG TEST CAFE")
 clever('7')
 
-hide_input_switch_string()   #input so what the string right below here
-hide_generated_code()
+show_input_switch_string()   #input so what the string right below here
+show_generated_code()
+
+print("switch 8")
+print("--------")
 
 sw = '''
 	switch(exp) {  
@@ -592,14 +583,17 @@ endswitch(sw)
 
 #print("third times a charm")
 
-#clever('ufos are real') #this would change varholder[0] 
+clever('ufos are real') #this would change varholder[0] 
 
 print("testing with: ufos are real")
 #hide_generated_code()
 hide_input_switch_string()   #input so what the string right below here
-hide_generated_code()
-#sw = 
-'''
+show_generated_code()
+
+print("switch 9")
+print("--------")
+
+sw = '''
 	switch(exp) {
 		case 'fishy':  
 		case 'two da':
@@ -629,7 +623,7 @@ hide_generated_code()
 			break
 }
 '''
-#endswitch(sw);
+endswitch(sw);
 
 
 
@@ -642,10 +636,13 @@ print('first a string swith test')
 
 #print("testing with big bird")
 hide_input_switch_string()   #input so what the string right below here
-hide_generated_code()
+show_generated_code()
 #this is the code being run
-#sw = 
-'''
+print("switch 10")
+print("--------")
+
+
+sw = '''
 	switch(exp) {
 		case 'fishy':  
 		case 'two da':
@@ -677,7 +674,7 @@ hide_generated_code()
 			break
 }
 '''
-#endswitch(sw)
+endswitch(sw)
 
 #this is what the input will look like after the macros expand
 #this is trying to run numbers through string paraser and codegen
@@ -687,21 +684,22 @@ hide_generated_code()
 
 
 
-#clever('12')
+clever('12')
 
 #number test faster just uncomment it and above comment endswitch(sw)#sw ='''
 
 #sw_reset()
 
 
-#clever('big bird') #this would change varholder[0] 
-hide_input_switch_string()   #input so what the string right below here
-hide_generated_code()
+clever('big bird') #this would change varholder[0] 
+
 #hide_generated_code()
 #this is the code being run
 
-#sw =
-''' 
+print(" == switch 11 ==")
+print("--------")
+
+sw =''' 
 	switch(exp) {
 		case 'fishy':  
 		case 'two da':
@@ -733,7 +731,7 @@ hide_generated_code()
 			break
 }
 '''
-#endswitch(sw)
+endswitch(sw)
 print("===========")
 print("now we will test numbers switch case")
 print("===========")
@@ -749,10 +747,13 @@ print("this is a REAL MACRO TEST ON THE REAL CODE ENGINE ")
 #show_input_switch_string()   #input so what the string right below here
 #show_generated_code()
 
-hide_input_switch_string()   #input so what the string right below here
-hide_generated_code()
+show_input_switch_string()   #input so what the string right below here
+show_generated_code()
 #show_generated_code()
-  
+ 
+print("== switch 12 ==")
+print("--------")
+ 
 sw ='''
 	switch(exp) {  
 		case 1 thru 3:
@@ -793,11 +794,14 @@ endswitch(sw)
 #print("about to attempt 2nd numbers switch case")
 clever('1') #this would change varholder[0] 
 
-hide_input_switch_string()   #input so what the string right below here
-hide_generated_code()
+show_input_switch_string()   #input so what the string right below here
+show_generated_code()
 ####=========== this is what the true input would look like"
 #show_generated_code()
  	
+print("== switch 13 ==")
+print("--------")
+
 sw ='''
 	switch(exp) {  
 		case 1 thru 3:
@@ -834,14 +838,17 @@ endswitch(sw)
 
 
 
-#clever('fishy') #this would change varholder[0] 
+clever('fishy') #this would change varholder[0] 
 
 #hide_generated_code()
 hide_input_switch_string()   #input so what the string right below here
-hide_generated_code()
+show_generated_code()
 #this is the code being run
-#sw =
-''' 
+
+print("== switch 14 ==")
+print("--------")
+
+sw =''' 
 	switch(exp) {
 		case 'fishy':  
 		case 'two da':
@@ -873,7 +880,7 @@ hide_generated_code()
 			break
 }
 '''
-#endswitch(sw)
+endswitch(sw)
 
 
 
@@ -892,10 +899,13 @@ hide_generated_code()
 
 #print("this is a REAL MACRO TEST ON THE REAL CODE ENGINE ")
 #show_generated_code()
-hide_input_switch_string()   #input so what the string right below here
-hide_generated_code()
-#sw =
-'''
+show_input_switch_string()   #input so what the string right below here
+show_generated_code()
+
+print("== switch 15 ==")
+print("--------")
+
+sw ='''
 	switch(exp) {  
 		case 1 thru 3:
 			print("where\'s the dog house!")
@@ -928,5 +938,5 @@ hide_generated_code()
 			break
 }
 '''
-#endswitch(sw)
+endswitch(sw)
    
