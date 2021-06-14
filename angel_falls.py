@@ -2,7 +2,7 @@ June 13th, 2021  7:50pm California time
 Did proof of concept running test switch with two nested switches(as methods) and it worked.
 So the theory is sound. The first time I tested it in a real world situation.
 Working on parser now for nesting. The parser for the nesting is unique but I will use the initial parser and
-codegen to create each individual nested switch translation which is then added as a strong concatted top down
+codegen to create each individual nested switch translation which is then added as a string concatted top down
 to create the illusion of the nested switch whereby each nested switch is actually a method inner_switch_n with a sequence
 number so it can be called. Thankfully I designed this back a year ago in pydev and it involved a great deal of thought.
 
