@@ -16,9 +16,9 @@ Working on parser now for nesting. The theory is based on runners(each nested sw
 at the problem as one big chunk of code it's managing the chaos by reducing the problem set to similar problems.
 So what could be mind boggling chaos can be conquered with order and simple design techniques. I never imagined
 that this was all going to actually work. On StackOverflow whenever someone dreams up their design and implimenation of a switch case
-for Python they always get a comment (unaswered) can it do a nested switch? I was determined to make mine work. 
+for Python they always get a comment (unanswered) can it do a nested switch? I was determined to make mine work. 
 I actually got the idea of putting the nested switch into a function from the solution of how to break out of a 
-nested for loop with a return inside of a function. It works nicely here too. But the solution isn't obvious at first
+nested for loop with a return inside of a function since break only breaks out of one but not both loops. It works nicely here too. But the solution isn't obvious at first
 but it works. It's quite profound. Seeing code work is such a thrill. 
 
 The parser for the nesting is unique but I will use the initial parser and
