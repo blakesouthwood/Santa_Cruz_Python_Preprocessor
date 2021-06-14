@@ -12,7 +12,7 @@ are all the keys to victory.
 
 Did proof of concept running test switch with two nested switches(as methods) and it worked.
 So the theory is sound. The first time I tested it in a real world situation.
-Working on parser now for nesting. The theory is based on runners on bases in baseball. Instead of looking
+Working on parser now for nesting. The theory is based on runners(each nested switch) on bases in baseball. Instead of looking
 at the problem as one big chunk of code it's managing the chaos by reducing the problem set to similar problems.
 So what could be mind boggling chaos can be conquered with order and simple design techniques. I never imagined
 that this was all going to actually work. On StackOverflow whenever someone dreams up their design and implimenation of a switch case
