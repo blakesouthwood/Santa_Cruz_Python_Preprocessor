@@ -14,9 +14,10 @@ and then all concacted together above the main switch so they all live within th
 which is then executed together. I already thought thru the parser and the way it works
 is I number the switches (I get the count first) and then I note the location (line number)
 of each switch and endswitch and the case that each inner switch resides in which case (numbered
-sequentially and the level of depty derived from the tab count in front of each nested switch.
-Bear in mind in reading the input switch string it will look just like C/JavaScript code
-so I need to deduce the level and depth and number each nested switches precise location.
+sequentially and the level of depth derived from the tab count in front of each nested switch to determine depth.
+Bear in mind in reading the input switch string it will look just like C/JavaScript code so a deeply nested
+switch might be many levels deep and I need to derive the exact case it's in and count tabs to determine it's location
+so I need to deduce the level and depth and number each nested switches precise location which could be several levels down.
 											
 
 June 10th, 2021 7:31 am California Time
