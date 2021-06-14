@@ -1,3 +1,19 @@
+June 13th, 2021  7:50pm California time
+Did proof of concept running test switch with two nested switches(as methods) and it worked.
+So the theory is sound. The first time I tested it in a real world situation.
+Working on parser now for nesting.
+first_string_test_nested_switch.py  and test_generated_code.py
+Designing special parser which translates the inners switches first concats to a string
+and then adds the main switch at the bottom and then executes it as one block.
+So the individual nested switches are translated into a python string and referenced in a list
+and then all concacted together above the main switch so they all live within the same string
+which is then executed together. I already thought thru the parser and the way it works
+is I number the switches (I get the count first) and then I note the location (line number)
+of each switch and endswitch and the case that each inner switch resides in which case (numbered
+sequentially and the level of depty derived from the tab count in front of each nested switch.
+Bear in mind in reading the input switch string it will look just like C/JavaScript code
+so I need to deduce the level and depth and number each nested switches precise location.
+											
 
 June 10th, 2021 7:31 am California Time
 Making progress on parser and code gen and design logic for nested switches.
