@@ -1,4 +1,15 @@
 June 13th, 2021  7:50pm California time
+Designingf the multiple switches parse at first seemed tricky but I simplified
+it to treating each nested switch as a domino. I then realized I can just make
+a list with each nested switch as a string and then run them thru the existing parser to
+create the output string(but not run it) and then the output string can be added to a second list
+and then in order I concat each of these nested switched along with the special methods for handling
+the nested switches above these and then I do the main switch again thru the existing switch module
+to translate it into a string and then 	(my thinking was actually from the stripes in the American flag)
+and then run the produced finished string. The test I just did on test output proves the concept is sound.
+Chipping away at the boulder one by one and modular development is the key and absolute confidence it can be done
+are all the keys to victory.
+
 Did proof of concept running test switch with two nested switches(as methods) and it worked.
 So the theory is sound. The first time I tested it in a real world situation.
 Working on parser now for nesting. The parser for the nesting is unique but I will use the initial parser and
