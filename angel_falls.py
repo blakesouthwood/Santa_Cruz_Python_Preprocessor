@@ -12,7 +12,13 @@ are all the keys to victory.
 
 Did proof of concept running test switch with two nested switches(as methods) and it worked.
 So the theory is sound. The first time I tested it in a real world situation.
-Working on parser now for nesting. The parser for the nesting is unique but I will use the initial parser and
+Working on parser now for nesting. The theory is based on runners on bases in baseball. Instead of looking
+at the problem as one big chunk of code it's managing the chaos by reducing the problem set to similar problems.
+So what could be mind boggling chaos can be conquered with order and simple design techniques. I never imagined
+that this was all going to actually work. On StackOverflow whenever someone dreams up their view of a switch case
+for Python they always get a comment (unaswered) can it do a nested case. I was determined to make mine work. 
+
+The parser for the nesting is unique but I will use the initial parser and
 codegen to create each individual nested switch translation which is then added as a string concatted top down
 to create the illusion of the nested switch whereby each nested switch is actually a method inner_switch_n with a sequence
 number so it can be called. Thankfully I designed this back a year ago in pydev and it involved a great deal of thought.
