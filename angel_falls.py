@@ -2,7 +2,7 @@ June 13th, 2021  7:50pm California time
 Designing the multiple switches parser at first seemed tricky but I simplified
 it to treating each nested switch as a domino. I then realized I can just make
 a list with each nested switch as a string and then run them thru the existing parser to
-create the output string(but not run it) and then the output string can be added to a second list
+create the output string(but not exec() it) and then the output string can be added to a second list
 and then in order I concat each of these nested switched along with the special methods for handling
 the nested switches above these and then I do the main switch again thru the existing switch module
 to translate it into a string and then 	(my thinking was actually from the stripes in the American flag)
