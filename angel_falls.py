@@ -6,7 +6,7 @@ create the output string(but not exec() it) and then the output string can be ad
 and then in order I concat each of these nested switched along with the special methods for handling
 the nested switches above these and then I do the main switch again thru the existing switch module
 to translate it into a string and then 	(my thinking was actually from the stripes in the American flag)
-and then run the produced finished string. The test I just did on test output proves the concept is sound.
+and then exec() the produced finished string. The test I just did on test output proves the concept is sound.
 Chipping away at the boulder one by one and modular development is the key and absolute confidence it can be done
 are all the keys to victory.
 
