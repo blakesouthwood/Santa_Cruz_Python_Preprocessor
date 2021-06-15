@@ -19,7 +19,7 @@ Made dummy test data switch with two nested switches  and doing step analysis to
 to generate the python variant which will have unique sequentially numbered innerswitches inserted into main switch
 strategicially positioned in precise case sections.
 
-I have tomorrow off so should have process figured out and step squence clear by tomorrow night
+I have tomorrow off so should have process figured out and step sequence clear by tomorrow night.
 
 
 June 13th, 2021  7:50pm California time
