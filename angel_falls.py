@@ -1,3 +1,20 @@
+June 14th, 2021  8:33pm
+NESTED SWITCH IMPLIMENTATION special parser and special code generator.
+Have to detect inner switches first.
+Will hopefully see blossoming of nested switch analysis and generation within next few days.
+The theory is strong it's just a bunch of little steps. 
+Doing step through design of parser detecting inner switches
+copying and storing inner switches in separate named strings
+creating template for the code gen
+
+copying modifying the module for generating a switch to generate nested switches with unique method names
+Made dummy test data switch with two nested switches  and doing step analysis to convert into code gen layout
+to generate the python variant which will have unique sequentially numbered innerswitches inserted into main switch
+strategicially positioned in precise case sections.
+
+I have tomorrow off so should have process figured out and step squence clear by tomorrow night
+
+
 June 13th, 2021  7:50pm California time
 Designing the multiple switches parser at first seemed tricky but I simplified
 it to treating each nested switch as a domino. I then realized I can just make
