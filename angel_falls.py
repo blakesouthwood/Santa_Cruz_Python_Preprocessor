@@ -1,9 +1,10 @@
 June 14th, 2021  8:33pm
 DESIGNING UNIQUE PARSER AND UNIQUE CODE GENERATOR TO IMPLIMENT... nested switches in Python.
 First I'm looking for the patterns to reveal themselves so I can create the formula and templates.
+Alpha attempt will be a switch with 2 nested separate switches depth 1.
 First attempt will be one nested depth 1
 Second attempt will be two nested depth 2
-third attempt will be thre nested depth 3
+third attempt will be three nested depth 3
 
 NESTED SWITCH IMPLIMENTATION special parser and special code generator.
 Have to detect inner switches first.
