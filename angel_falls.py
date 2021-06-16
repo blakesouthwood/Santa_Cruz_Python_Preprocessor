@@ -1,3 +1,13 @@
+June 15th, 20201 10:00 pm
+Made more progress with code gen for nested switch design and tab counter and tab inserter for auto-indentation
+Made progress on parser yesterday and today leaps ahead of where I thought I would be due to dogged determination.
+Working on both parser and code gen and will next generate the python code with regular module by
+just adding a flag if nested_switch[0] == True so the generated module won't be executed but will
+instead be added as a string to a list with each position representing the number of each "nested switch" within 
+all encompassing main switch that they reside in no matter how deeply nested the switches are.
+First doing two one level deep nested switches. Will try triple level after success.
+
+
 June 15th, 2021 7:31 pm 
 Good progress at Starbucks this morning. At this pace it should be working in sections by this weekend and then
 I will connect it together by Sunday.
