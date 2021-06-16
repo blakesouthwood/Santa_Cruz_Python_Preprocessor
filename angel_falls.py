@@ -1,3 +1,11 @@
+June 15th, 2021 7:31 pm 
+Good progress at Starbucks this morning.
+Grabbing nested switches and copying as a new string to a list.
+Swapping switch and fallthru for unique method names works
+Working on calling switch_module to translate each nested switch to python tonight.
+Steady progress. Bringing the realization of each phase of the translation conversion into reality.
+Just like falling dominos once each independent stage works the whole system will work. 
+
 June 14th, 2021  8:33pm
 DESIGNING UNIQUE PARSER AND UNIQUE CODE GENERATOR TO IMPLIMENT... nested switches in Python.
 First I'm looking for the patterns to reveal themselves so I can create the formula and templates.
