@@ -1,5 +1,7 @@
 June 15th, 2021 7:31 pm 
-Good progress at Starbucks this morning.
+Good progress at Starbucks this morning. At this pace it should be working in sections by this weekend and then
+I will connect it together by Sunday.
+
 Grabbing nested switches and copying as a new string to a list.
 Swapping switch and fallthru for unique method names works
 Working on calling switch_module to translate each nested switch to python tonight.
