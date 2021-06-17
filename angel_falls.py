@@ -24,7 +24,12 @@ to a list which it is appended to. And then I already wrote teh code to reassemb
 that will then be executed. For this mulity layer cake string to work I first insert (add) the 
 methods for the inswitch() and infallthru() which are used in the nested functions and each nested switch
 is encased in a separate method to prevent interference with other switch and fallthru calls.
-example of some code of a nested switch function
+example of some code of a nested switch function.
+
+Note. I decided on a rule for nested switches to aid the parser. At the bottom of a nested switch
+the progarmmer must use "endswitch".  It aids readability and it's used in PHP but it differentiates
+from the } and it's easier to ascertain that the switch being examined by the human(s) is definitely
+a nested switch. 
 
 def inner_switch_2(n): #test2 is the test
     print("=======inner_switch called==2==",n)
