@@ -27,7 +27,8 @@ is encased in a separate method to prevent interference with other switch and fa
 example of some code of a nested switch function.
 
 Note. I decided on a rule for nested switches to aid the parser. At the bottom of a nested switch
-the progarmmer must use "endswitch".  It aids readability and it's used in PHP but it differentiates
+the progarmmer must use "endswitch". However, so I don't get flamed I will allow "}" for C purists to end a 
+nested switch and not absolutely require "endswitch". So both camps are happy. It aids readability and it's used in PHP but it differentiates
 from the } and it's easier to ascertain that the switch being examined by the human(s) is definitely
 a nested switch. 
 
