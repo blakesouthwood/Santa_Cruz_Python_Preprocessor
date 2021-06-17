@@ -8,6 +8,24 @@ and the main switch that has the innerswitches embedded in it. Working on the co
 The parser part now works for grabbing the nested switches. I just have to trigger calling the switch module
 from the input string switches in a list for each nested switch and the main switch and then putting the output
 strings into another list that will be used to concat them all together before calling them.
+More progress testing the generated python methods for the nested switches and the main switch
+which has the nested methods inside of a case to represent doing a true nested switch. Unreal - it's working.
+Battled bug from hell last night for 5 hours ValueError: None not in list. It was seeing the word "case"
+in a print statement which crashed the program. I will add an if to fix it later. Case works but case crashes. 
+Massive momentum this morning on constructing parser and working on codegen.
+I put each input nested switch and the main switch in raw C style switch form in a list that each is appended to.
+Then I will call the switch module and translate with nested_switch[0] set to True so that the generated python string
+is not executed but instead is added to another list which then will be used to build
+the large multline string in the proper sequence and then and only then executed.
+I refer this technique to trapeze from my experiences at Club Med. It's all a process and lists make
+it so much simpler to follow the logic of the steps and manage it.
+I use a flag to deactivate executing the python translation and instead save the output python string
+to a list which it is appended to. And then I already wrote teh code to reassemble it building a string
+that will then be executed. For this mulity layer cake string to work I first insert (add) the 
+methods for the inswitch() and infallthru() which are used in the nested functions and each nested switch
+is encased in a separate method to prevent interference with other switch and fallthru calls.
+
+
 
 
 June 15th, 20201 10:00 pm
