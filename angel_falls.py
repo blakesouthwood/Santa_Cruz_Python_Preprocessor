@@ -24,7 +24,25 @@ to a list which it is appended to. And then I already wrote teh code to reassemb
 that will then be executed. For this mulity layer cake string to work I first insert (add) the 
 methods for the inswitch() and infallthru() which are used in the nested functions and each nested switch
 is encased in a separate method to prevent interference with other switch and fallthru calls.
+example of some code of a nested switch function
 
+def inner_switch_2(n): #test2 is the test
+    print("=======inner_switch called==2==",n)
+    casetest1 = ['test5','test6']
+    #this is switch inside of inner_switch
+    
+    # 1 tab depth
+    inswitch(n)                           #<<====== inswitch() method is here
+    # 1 tab
+    while True:                  #<==== infinite loop used for fall thru method
+        #2 tabs depth
+        if   case  == "test1":
+            # 3 tabs words within the case
+            print("dam did it work?")
+            print("yes it's test == one")
+            tahoe[0]="victory" #puts victory into tahoe[0]
+            infallthru('test2')
+	
 
 
 
