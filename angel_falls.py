@@ -44,6 +44,364 @@ def inner_switch_2(n): #test2 is the test
             infallthru('test2')
 	
 
+input string what programmer would write that is put into a string (example)
+tennis ='''
+	
+	switch(exp) {
+		case 'cholpolty':  
+			print(\"burrito!\")
+			print("bowl")
+			print("lemonade")
+			break
+	
+		case 'panda express':
+			print('good food')
+			##===============================
+			##===== inner s w i t c h  ======
+			iexp = 'code express'
+			switch(iexp) {
+				case 'cholpolty':  
+					print(\"burrito!\")
+					print("bowl")
+					print("lemonade")
+					break
+	
+		
+				case 'code express':
+					print('good food')
+					print("in hollister ")
+					adder(1)
+					buildstring('soon it')
+					print('run')
+			
+				default:
+					print('no results')
+					print("that is all")
+					break
+			endswitch
+			##===============================
+			##===============================
+		case 'starbucks':
+			print('where is my mocha')
+			print("and my sausage sandwich...")
+			adder(2) #this won't do anything until it is executed
+			buildstring(' will work')
+			
+			
+		
+		case 'starbucks':
+			print('where is my mocha')
+			print("and my sausage sandwich...")
+			adder(2) #this won't do anything until it is executed
+			buildstring(' will work')
+			
+		
+		case 'big testing':
+			print('where is my mocha')
+			print("and my sausage sandwich...")
+			adder(3)
+			buildstring(' and I will celebrate')
+			break
+				
+		default:
+			print('no results')
+			print("that is all")
+			break
+}
+'''
+here is an example of what the generated stack of nested switch as functions with
+the main function at the bottom would look like so visualize the stacking.
+
+aqua ='''  
+global x
+x = "one" #it was "one" 
+
+tahoe=[]
+tahoe.append(0)
+# =======  main  ===================================
+
+
+victory=[]
+victory.append(0)
+
+  
+####THIS IS WHAT IT MUST LOOK LIKE
+
+def inner_switch_1(n): #test2 is the test
+    print("=======inner_switch called==1==",n)
+    casetest1 = ['test5','test6'] #look at this right here 
+    #this is switch inside of inner_switch
+    # 1 tab
+    inswitch(n)        #<<====== inswitch() method is here
+    # 1 tab
+    while True:         #<==== infinite loop used for fall thru method
+        #2 tabs
+        if   case  == "test1":
+            # 3 tabs
+            print("dam did it work?")
+            print("yes it's test == one")
+            tahoe[0]="victory" #puts victory into tahoe[0]
+            infallthru('test2')
+        #2 tabs
+        elif case  == "test2":
+            print("this is inside of inners witch test2")
+            
+            print ("switch case behavior works in Python now!")
+            break         #<<===== fallthru() method is here *don't use* break with fallthru()
+                                        #<<===== currently it requires the next case match in quotes 
+        elif case  == "test3":        #<<===== but later I will make it work using just fallthru()
+            print ("go reindeer")
+            break
+
+        elif case  == "test4":
+            print ("testi  first nested switch ol...")
+            tahoe[0]="sublime" #puts victory into tahoe[0]
+            #######################
+            # 3 tabs
+            #inner_switch_2('test7')
+            #######################
+            print("out of inner switch 1")
+            break
+
+        elif case in casetest1: #['google', 'fishfood', 'probability']:   #<<==== several cases in list on one line
+            print ("successful test in casetest1")                            #<<==== I just put case here to show which word matched
+            break
+
+        elif case  == "test7":
+            print ("gui design")
+            break
+
+    #default:
+        else:
+            print('None')
+            break   
+###================
+
+
+
+### inner switch_1
+#######################
+### this is inner_switch()
+# looking at what is different from the regular switch 
+# what is differnet is the nested switch is inside of a function
+# and instead of switch it's called inswitch(n)
+# instead of fallthru('something') it's infallthru('test2')
+# if missing break it's infallthru('nextcase')
+
+#notice this is in a method
+
+def inner_switch_1(n): #test2 is the test
+    print("=======inner_switch called==1==",n)
+    casetest1 = ['test5','test6'] #look at this right here 
+    #this is switch inside of inner_switch
+    # 1 tab
+    inswitch(n)        #<<====== inswitch() method is here
+    # 1 tab
+    while True:         #<==== infinite loop used for fall thru method
+        #2 tabs
+        if   case  == "test1":
+            # 3 tabs
+            print("dam did it work?")
+            print("yes it's test == one")
+            tahoe[0]="victory" #puts victory into tahoe[0]
+            infallthru('test2')
+        #2 tabs
+        elif case  == "test2":
+            print("this is inside of inners witch test2")
+            
+            print ("switch case behavior works in Python now!")
+            break         #<<===== fallthru() method is here *don't use* break with fallthru()
+                                        #<<===== currently it requires the next case match in quotes 
+        elif case  == "test3":        #<<===== but later I will make it work using just fallthru()
+            print ("go reindeer")
+            break
+
+        elif case  == "test4":
+            print ("testi  first nested switch ol...")
+            tahoe[0]="sublime" #puts victory into tahoe[0]
+            #######################
+            # 3 tabs
+            #inner_switch_2('test7')
+            #######################
+            print("out of inner switch 1")
+            break
+
+        elif case in casetest1: #['google', 'fishfood', 'probability']:   #<<==== several cases in list on one line
+            print ("successful test in casetest1")                            #<<==== I just put case here to show which word matched
+            break
+
+        elif case  == "test7":
+            print ("gui design")
+            break
+
+    #default:
+        else:
+            print('None')
+            break   
+###================
+
+
+
+
+
+
+#######################
+### inner switch_2
+#######################
+### this is inner_switch()
+
+
+
+def inner_switch_2(n): #test2 is the test
+    print("=======inner_switch called==2==",n)
+    casetest1 = ['test5','test6']
+    #this is switch inside of inner_switch
+    
+    # 1 tab
+    inswitch(n)                           #<<====== inswitch() method is here
+    # 1 tab
+    while True:                  #<==== infinite loop used for fall thru method
+        #2 tabs
+        if   case  == "test1":
+            # 3 tabs
+            print("dam did it work?")
+            print("yes it's test == one")
+            tahoe[0]="victory" #puts victory into tahoe[0]
+            infallthru('test2')
+
+        elif case  == "snowman":
+            print("this is inside of inners witch test2")
+            
+            print ("switch case behavior works in Python now!")
+            break         #<<===== fallthru() method is here *don't use* break with fallthru()
+                                        #<<===== currently it requires the next case match in quotes 
+        elif case  == "test3":        #<<===== but later I will make it work using just fallthru()
+            print ("go reindeer")
+            break
+
+        elif case  == "rabbit":
+            print ("te what do we have here ool...")
+            tahoe[0]="mickey mouse" #puts victory into tahoe[0]
+            print("tahoe[0]",tahoe[0])
+           
+            print("out of inner switch 2")
+            break
+
+        elif case in casetest1: #['google', 'fishfood', 'probability']:   #<<==== several cases in list on one line
+            print ("successful test in casetest1")                            #<<==== I just put case here to show which word matched
+            break
+
+        elif case  == "test7":
+            print ("gui design")
+            break
+
+    #default:
+        else:
+            print('None')
+            break   
+
+
+
+
+
+# =======  switch  =================================
+def switch(x):
+    if type(x) != str:  #checks to make sure it's a string if for example a number is passed as x
+        x = str(x)
+    global case
+    case = x.lower() 
+    
+# =======  fallthru       =========================
+def fallthru(y):
+    eval("switch('" + y + "')")
+    
+    
+#==================
+#for inswitch
+def inswitch(n):
+    if type(x) != str:  #checks to make sure it's a string if for example a number is passed as x
+        n = str(n)
+    global case
+    case = n.lower() 
+
+#=====================
+# for infallthru    
+def infallthru(n):
+    eval("inswitch('" + n + "')")
+
+
+
+# by definition a switch will reside within a function, that's obvious.
+
+casetest1 =['google', 'fishfood', 'probability']
+
+#=====  SWITCH CASE CODE  demonstration is inside function testfunction(x) below =========
+# this is a function with a switch case
+# which has a nested switch case within it inside of a function called inner_switch_1
+# =======   testfunction    ========================
+def testfunction(x):
+    print("=== testfunction called with x====TESTING THIS JUNE 17th======= ",x)
+    print('test function testing switch case behavior')
+#this is the switch called 
+#this is the FIRST switch the main switch 
+# ========  switch case code =======================
+    #1 tab
+    switch(x)                           #<<====== switch() method is here
+    while True:                  #<==== infinite loop used for fall thru method
+        # 2 tabs
+        if   case  == "one":
+            # 3 tabs
+            print("this is the first case in the main switch")
+            ######################
+            inner_switch_1('test4') #force feeding it for testing switch case function actually 
+            ######################
+            print("out of from innerswitch1 below")
+            print("tahoe[0]=",tahoe[0]) #result of innerswitch running
+            #what output is there from inner_switch?? use a list to capture it
+            fallthru('word')
+
+        elif case  == "word":
+            print ("this is back in main switch now !")
+            fallthru("rudolph")         #<<===== fallthru() method is here *don't use* break with fallthru()
+                                        #<<===== currently it requires the next case match in quotes 
+        elif case  == "rudolph":        #<<===== but later I will make it work using just fallthru()
+            print ("go reindeer")
+            print("=== this is 2nd nested swith differnet case switches have ended")
+            ######################
+            inner_switch_2('rabbit') #force feeding it for testing switch case function actually 
+            ######################
+            print("out of from innerswitch2 below")
+            print("tahoe[0]=",tahoe[0])    
+            break
+
+        elif case  == "phrase":
+            print ("testing wow works on Sublime now Coooool...")
+            break
+
+        elif case in casetest1: #['google', 'fishfood', 'probability']:   #<<==== several cases in list on one line
+            print ("successful test in casetest1") 
+                                   #<<==== I just put case here to show which word matched
+            break
+
+        elif case  == "22":
+            print ("gui design")
+            break
+
+    #default:
+        else:
+            print('none')
+            break         
+#end loop
+#end switch
+
+testfunction('one')
+
+'''
+
+print('it is all in one big string about to execute it')
+exec(aqua)
+print("after wards we have the results above this line")
+
 
 
 June 15th, 20201 10:00 pm
