@@ -3,6 +3,11 @@ Fixed bug that crashed module finally determined it was triggered by the word "c
 Built auto-tab method creationg for my generator.
 Built string stacker method to build nested switches stack in correct order with main switch at bottom.
 Nearly done with stars of the constellation to make the small system work. Coming together quickly now.
+Working on building output stack of strings of inner nested switch methods with generated python code
+and the main switch that has the innerswitches embedded in it. Working on the code gen half now.
+The parser part now works for grabbing the nested switches. I just have to trigger calling the switch module
+from the input string switches in a list for each nested switch and the main switch and then putting the output
+strings into another list that will be used to concat them all together before calling them.
 
 
 June 15th, 20201 10:00 pm
