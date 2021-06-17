@@ -1,3 +1,10 @@
+June 17th, 2021  10:55 am
+Fixed bug that crashed module finally determined it was triggered by the word "case" in a print statement within a case.
+Built auto-tab method creationg for my generator.
+Built string stacker method to build nested switches stack in correct order with main switch at bottom.
+Nearly done with stars of the constellation to make the small system work. Coming together quickly now.
+
+
 June 15th, 20201 10:00 pm
 Made more progress with code gen for nested switch design and tab counter and tab inserter for auto-indentation
 Made progress on parser yesterday and today leaps ahead of where I thought I would be due to dogged determination.
