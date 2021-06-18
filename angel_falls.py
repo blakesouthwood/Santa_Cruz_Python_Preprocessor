@@ -1,3 +1,19 @@
+June 17th, 2021  1020 pm
+Progress on code generator.
+Flag worked to detect if nested switch
+added generated python switch to list.
+Practiced adding 4 separate nested switches python to list as strings.
+Then I started writing methods to manipulate them transforming them for behaving as nested switches.
+Converted switch to inswitch and fallthru to infallthru.
+Made method to generate nested switch method names dynamically for level and depth since each has an address.
+Made auto-tab method.
+It's all coming together, building the puzzle pieces and practicing what needs to do what and when.
+Did click thru walk thru of process of transformation and building the string with the
+nested switches in methods and now working on transformation for
+the main switch with the nested switch method which looks like this:
+inner_switch_1('test4') #however it can also accept a variable so it can be a list[0] input or x, etc.
+Probably till end of weekend till this feature is solid and I'll upload it.
+
 June 17th, 2021  10:55 am
 Fixed bug that crashed module finally determined it was triggered by the word "case" in a print statement within a case.
 Built auto-tab method creationg for my generator.
