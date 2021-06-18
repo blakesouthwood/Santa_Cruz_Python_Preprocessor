@@ -1,5 +1,5 @@
 June 17th, 2021  1020 pm
-Progress on code generator.
+Progress on code generator for nested switch cases. This is massively complex and I have simplified it to make it work.
 Flag worked to detect if nested switch
 added generated python switch to list.
 Practiced adding 4 separate nested switches python to list as strings.
