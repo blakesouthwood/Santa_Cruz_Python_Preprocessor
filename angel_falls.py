@@ -1,3 +1,18 @@
+June 19th, 2021 9:32 pm
+successful test detecting innerswitch JavaScript/ C style input string copying to list
+successfully translated it into Python (didn't execute when attempted though)
+Did some fiddling to get it working 
+Successfully ran test python innerswitch encased in a function nested_switch_1(n):  
+and I learned what needs to be included for it to work. And the the nested switch
+ran with exec(fiddler[1]).
+For some strange reason the generated python of the nested switch (which wasn't in a method) 
+had unforeseen issues so I worked backwards to a file with working python and will figure out
+how to correclty generate the correct code. Tomorrow I will correct the translation process 
+from input string in list to translated to python string neighboring list.
+Bear in mind that the reasoning behind this is the nested switches should ONLY run when they
+are triggered to run and not to run otherwise willy nilly. That would be bad.(not good)
+								   
+
 June 17th, 2021  1020 pm
 Progress on code generator for nested switch cases. This is massively complex and I have simplified it to make it work.
 Flag worked to detect if nested switch
