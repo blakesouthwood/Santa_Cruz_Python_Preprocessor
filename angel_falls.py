@@ -18,7 +18,111 @@ however all of the necessary ingredients to make it actually run were lacking. I
 a custom method and it was lacking access to the lists of the cases and so it was learn as you go to solve it.
 Listening to https://www.youtube.com/watch?v=8wLwxmjrZj8 Space Ambient Music to focus.
 When I tried to exec() the generated python representing the nested switch it didn't run. So I had to backtrack
-to working experiemental code and then it made more sense how to get it working.								   
+to working experiemental code and then it made more sense how to get it working.
+								   
+Another issue popped up to add a tab to each line in the nested switch which is glued inside of
+unique nested switch name. Wrote that the other day thankfully and it works like a charm.
+
+happydays='''
+#==================
+#for inswitch
+def inswitch(n):
+    if type(x) != str:  #checks to make sure it's a string if for example a number is passed as x
+        n = str(n)
+    global case
+    case = n.lower() 
+
+#=====================
+# for infallthru    
+def infallthru(n):
+    eval("inswitch('" + n + "')")
+
+
+
+
+
+global x
+x = "one" #it was "one"              #<<=== x must be a string just as matching case == "string", 
+                                       #<<=== if using a number it will be converted to a string
+                                       #<<=== so x = 22   will work and be converted to "22"
+tahoe=[]
+tahoe.append(0)
+
+victory=[]
+victory.append(0)
+
+#######################
+### inner switch_1(n):
+#######################
+
+
+def inner_switch_1(n): #test2 is the test
+    print("=======inner_switch called==1==",n)
+    casetest1 = ['test5','test6']
+    caselist2= ['google', 'fishfood', 'probability']
+    #this is switch inside of inner_switch
+    
+    inswitch(n)                           #<<====== inswitch() method is here
+
+    while True:                  #<==== infinite loop used for fall thru method
+        if   case  == "test1":
+            print("dam did it work?")
+            print("yes it's test == one")
+            tahoe[0]="victory" #puts victory into tahoe[0]
+            infallthru('test2')
+
+        elif case  == "test2":
+            print("this is inside of inners witch test2")
+            
+            print ("switch case behavior works in Python now!")
+            infallthru('test3')         #<<===== fallthru() method is here *don't use* break with fallthru()
+                                        #<<===== currently it requires the next case match in quotes 
+        elif case  == "test3":        #<<===== but later I will make it work using just fallthru()
+            print ("go reindeer")
+            infallthru('test4')
+
+        elif case  == "test4":
+            print ("testi  first nested switch ol...")
+            tahoe[0]="sublime" #puts victory into tahoe[0]
+            #######################
+            #inner_switch_2('test7')
+            #######################
+            print("out of inner switch 1")
+            break
+
+        elif case in caselist2: #['google', 'fishfood', 'probability']:   #<<==== several cases in list on one line
+            print ("successful test in casetest2")   
+            print("solving the last few probs now") 
+            print("oh my god it worked")               #<<==== I just put case here to show which word matched
+            print("========= coolness ====")
+            print('wow this is really sweet coding genius')
+            break
+
+        elif case  == "test7":
+            print ("gui design")
+            break
+
+    #default:
+        else:
+            print('None')
+            break   
+###================
+
+inner_switch_1('google')
+
+'''
+
+fiddle=[]
+fiddle.append(0)
+fiddle.append(happydays)
+#print(fudge[1])
+print("TESTING BLADE RUNNER SERIES =what does an innerswitch by itself need")
+print('it is all in one big string about to execute it')
+exec(fiddle[1])
+print("___________")
+print("after wards we have the results above this line")
+print("it should return four words starting with succ")
+
 
 June 17th, 2021  1020 pm
 Progress on code generator for nested switch cases. This is massively complex and I have simplified it to make it work.
