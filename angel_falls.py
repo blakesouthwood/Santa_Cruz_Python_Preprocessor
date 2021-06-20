@@ -11,7 +11,14 @@ how to correclty generate the correct code. Tomorrow I will correct the translat
 from input string in list to translated to python string neighboring list.
 Bear in mind that the reasoning behind this is the nested switches should ONLY run when they
 are triggered to run and not to run otherwise willy nilly. That would be bad.(not good)
-								   
+I have been focusing on detecting the nested switches and copying them and placing them in a separate
+string and then appending to a list in order of occurence. That went smoothly.
+I was able to set the nested flag to True and the codegen correclty added the output string to a list
+however all of the necessary ingredients to make it actually run were lacking. I neglected to put it into
+a custom method and it was lacking access to the lists of the cases and so it was learn as you go to solve it.
+Listening to https://www.youtube.com/watch?v=8wLwxmjrZj8 Space Ambient Music to focus.
+When I tried to exec() the generated python representing the nested switch it didn't run. So I had to backtrack
+to working experiemental code and then it made more sense how to get it working.								   
 
 June 17th, 2021  1020 pm
 Progress on code generator for nested switch cases. This is massively complex and I have simplified it to make it work.
