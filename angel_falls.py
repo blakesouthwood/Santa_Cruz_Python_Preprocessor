@@ -1,4 +1,6 @@
-June 21 Monday, 2021 time 12:35 pm
+June 21 Monday, 2021 time 12:35 pm starbucks Santa Cruz Avenue in Menlo Park, California (Cafe Borrone closed today)
+Finishing the last aspects of connected the layers of the cake together.
+
 Looks like July 4th project Tron will be completed.
 C style switch converts to python 3 on-the-fly and runs.
 Right now bug if case used inside of a block of code beneath a case. I will have it ignored to bypass it. 
