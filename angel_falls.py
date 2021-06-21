@@ -19,7 +19,13 @@ Everything for the engienering is been broken down into small pieces. Working on
 string representing the already translated python switch representation. 
 Battling bugs with careful maticulous design and frequent testing.
 Created a staged apporoach of rocket modules that are independent but run together in a sequence to manage the complexity.
-Victory approaches. Still need to make simple numbering of nested switches x for depth level y case(as sequence number) residing in, z if multiple (as a number) within a case
+Note: each nested switch is represented as a method that is made on the fly and triggerd by the method name call.
+This aids readabiliy and clears away clutter and allows the management of the insane complexity of juggling literally possibly
+thousands of nested functions within the maze of a switch case that could conceivable reach millions and depth of an unknown n
+since all code morphs and changes seemingly at will as design requirements evolve.
+This address feature might involve a fourth parameter for safety perhaps. Time will tel..
+Victory approaches. Address location of nested switchs. Still need to make simple numbering of nested switches x for depth level y case(as sequence number) residing in, 
+z if multiple (as a number in sequence of nested switch possibly in a series) within a case. ie, 3 nested switches in a series within a case
 	
 June 19th, 2021 9:32 pm
 successful test detecting innerswitch JavaScript/ C style input string copying to list
