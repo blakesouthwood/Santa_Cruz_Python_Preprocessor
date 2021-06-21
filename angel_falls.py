@@ -17,9 +17,9 @@ which is accessed when the nested which (living in a string) is called the inner
 and then it functions perfectly. If lists were not mutable this would be extremely difficult.
 Everything for the engienering is been broken down into small pieces. Working on the creation of the goal
 string representing the already translated python switch representation. 
-Battling bugs with careful maticulous design and frequent teseting.
+Battling bugs with careful maticulous design and frequent testing.
 Created a staged apporoach of rocket modules that are independent but run together in a sequence to manage the complexity.
-Victory approaches.
+Victory approaches. Still need to make simple numbering of nested switches x for depth level y case residing in, z if multiple within a case
 	
 June 19th, 2021 9:32 pm
 successful test detecting innerswitch JavaScript/ C style input string copying to list
