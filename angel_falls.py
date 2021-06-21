@@ -1,3 +1,24 @@
+June 21 Monday, 2021 time 12:35 pm
+Looks like July 4th project Tron will be completed.
+C style switch converts to python 3 on-the-fly and runs.
+Right now bug if case used inside of a block of code beneath a case. I will have it ignored to bypass it. 
+Nested switches as deep as you want.
+Just finishing the nested switch engine. Parser works. Working backwards on Codegen to assemble and link
+together the output generated python with nested switches treated as methods which is done with encapulation within a string.
+So after a nested switch is extracted from a regular switch  it is copied to a list.
+Then it is run through the switch module and converted into python.
+This is where the fun begins.
+Swapping words switch to inswitch and fallthru to infallthru.
+I then create a new unique method name and concat the generated python and add indentation.
+Just solved problem of adding input var to trigger the switch by putting it into a list
+which is accessed when the nested which (living in a string) is called the innerswitch method (when called) accesses the list[x]
+and then it functions perfectly. If lists were mutable this would be extremely difficult.
+Everything for the engienering is been broken down into small pieces. Working on the creation of the goal
+string representing the already translated python switch representation. 
+Battling bugs with careful maticulous design and frequent teseting.
+Created a staged apporoach of rocket modules that are independent but run together in a sequence to manage the complexity.
+Victory approaches.
+	
 June 19th, 2021 9:32 pm
 successful test detecting innerswitch JavaScript/ C style input string copying to list
 successfully translated it into Python (didn't execute when attempted though)
