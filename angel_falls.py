@@ -14,7 +14,7 @@ Swapping words switch to inswitch and fallthru to infallthru.
 I then create a new unique method name and concat the generated python and add indentation.
 Just solved problem of adding input var to trigger the switch by putting it into a list
 which is accessed when the nested which (living in a string) is called the innerswitch method (when called) accesses the list[x]
-and then it functions perfectly. If lists were mutable this would be extremely difficult.
+and then it functions perfectly. If lists were not mutable this would be extremely difficult.
 Everything for the engienering is been broken down into small pieces. Working on the creation of the goal
 string representing the already translated python switch representation. 
 Battling bugs with careful maticulous design and frequent teseting.
