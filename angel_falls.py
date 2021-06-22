@@ -3,7 +3,7 @@ I just saw and an example of the new match case (the new switch case for python)
 It had an example with function calls from inside of cases. I realized I hadn't tested that scenario other than
 my buildstring() method and adder() for math water fall style so I just got that feature working. Bad ass.
 To work the new functions(methods) are put into a file called method_calls and that file is imported
-at the top of official_switch)case_silver this way the user (developer) doesn't have to
+at the top of official_switch_case_silver this way the user (developer) doesn't have to
 actually fiddle inside directly in the switch module but this way it will work and it's 
 easy to use and clean.
 
