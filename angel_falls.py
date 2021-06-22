@@ -1,4 +1,7 @@
 June 21, Monday 2021 time 11:08 pm 
+	
+With my new approach the code generator has fewer hiccups.
+
 Had difficulty with nested stages so for safety using working switch case and s l o w l y connecting the
 stages together to prepare the python generated switch which is extremely different then a regular switch.
 Slow and easy wins the race, and rushing is never good. Working continually backwards and now only sticking
