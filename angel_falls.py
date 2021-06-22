@@ -1,3 +1,58 @@
+June 22nd, 2021 Tuesday time 12 noon Santa Cruz Avenue Starbucks near Stacks and Cafe Borrone in Menlo Park.
+I just saw and an example of the new match case (the new switch case for python) that I'm competing with.
+It had an example with function calls from inside of cases. I realized I hadn't tested that scenario other than
+my buildstring() method and adder() for math water fall style so I just got that feature working. Bad ass.
+To work the new functions(methods) are put into a file called method_calls and that file is imported
+at the top of official_switch)case_silver this way the user (developer) doesn't have to
+actually fiddle inside directly in the switch module but this way it will work and it's 
+easy to use and clean.
+
+In other news I successfully have started the conversion process of taking the output of a nested switch and 
+changing it into nested mode this way I can run it threw the parser and codegen with zero changes and then make
+changes afterwards which is more zen like. And I will merely use the nested_switch flag to determine which
+switch case going through needs to have changes to the nested mode after the code gen is done.
+
+
+Example below
+sw ='''
+	switch(exp) {  
+		case 1 thru 3:
+			print("where\'s the dog house!")
+			print('first prize')
+			do_something()
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			print('taught me how to write code')
+			do_something_else()
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+			
+			
+		case 21:
+			print('Blake you did it a real good job')
+			print('macros working in Python')
+			print(' I did it - it works')
+			
+			
+			
+		default:
+			print('six walking duck de fa ul t')
+			print('flying geese')
+			break
+}
+'''
+endswitch(sw)
+
+
+
 June 21, Monday 2021 time 11:08 pm 
 	
 With my new approach the code generator has fewer hiccups.
