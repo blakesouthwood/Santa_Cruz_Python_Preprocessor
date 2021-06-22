@@ -8,7 +8,7 @@ actually fiddle inside directly in the switch module but this way it will work a
 easy to use and clean.
 
 In other news I successfully have started the conversion process of taking the output of a nested switch and 
-changing it into nested mode this way I can run it threw the parser and codegen with zero changes and then make
+changing it into nested mode this way I can run it through the parser and codegen with zero changes and then make
 changes afterwards which is more zen like. And I will merely use the nested_switch flag to determine which
 switch case going through needs to have changes to the nested mode after the code gen is done.
 
