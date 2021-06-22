@@ -1,5 +1,25 @@
+June 21, Monday 2021 time 11:08 pm 
+
+
 June 21 Monday, 2021 time 12:35 pm starbucks Santa Cruz Avenue in Menlo Park, California (Cafe Borrone closed today)
 Finishing the last aspects of connected the layers of the cake together.
+Had difficulty with nested stages so for safety using working switch case and s l o w l y connecting the
+stages together to prepare the python generated switch which is extremely different then a regular switch.
+Slow and easy wins the race, and rushing is never good. Working continually backwards and now only sticking
+to the set up and not trying any curve balls to make it work. Making more methods for the delicate engineering
+so it will ultimately mean less code and easier to manage and comprehend.
+What I got working today was inputing the input for the generated nested switch method. It was tricky but I solved it.
+Since I made the end output which runs the real tricky part was getting the input nested switch to translate
+and then after extreme difficulty I ended up keeping it in regular switch mode to run thru the parser and code gen
+to generate the switch code output and then I am making the changes to make it work within a method which then calls
+itself. When the bugs started stopping all forward progress I was forced to break it into smaller chunks and greatly
+simplify the stages of the transformation. Fortunately the prototype works and using a representation of a nested switch
+within a method is the saving grace for this actaully working. 
+I also had to detect tabs and had no fun in figuring out how to subtract tabs from the front of lines and add tabs
+to create the correct indentation since the switch is within a method. But I overcame that obstacle with steadfast 
+determination and absolute commitment. The end of this project is near. I am going to make a new folder with
+the key files in it so that I can focus on the end game. Right now it's coming together and by having smaller chunks
+that I can manage it's easier to control the behavior of the nested switch methods.
 
 Looks like July 4th project Tron will be completed.
 C style switch converts to python 3 on-the-fly and runs.
