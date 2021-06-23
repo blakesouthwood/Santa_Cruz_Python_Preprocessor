@@ -12,7 +12,7 @@ the indentation is correct. So I will next workon auto-indent detection and fixi
 
 Right now I am heading full steam ahead on finishing up the construction of the output python generated
 from the input switch case string for nested cases which is extremely tricky but luckily through sheer determination
-I am making daily progress. I expect it to be solid and bug free and wokring by the 4th of July at this point.
+I am making daily progress. I expect it to be solid and bug free and working by the 4th of July at this point.
 The project has exceeding my expectations and had I known how deep it was going to be like one hundred fathoms
 deep I might not have attempted it but it's a fun project nonetheless.
 
