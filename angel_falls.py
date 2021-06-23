@@ -1,3 +1,21 @@
+June 22nd, 9:17pm California time
+Did some more testing. I was just copying and pasting C switch cases off the web to see if they would run.
+So far a missing break in default doesn't crash anymore.
+But using the word "case" anywhere other than for case name; like in a print statement causes a crash.
+And since it's python if the indentation isn't correct per the design it will crash.
+one tab in front of switch
+two tabs in front of case
+three tabs in front of line below case word
+etc, etc
+So, this means if a programmer copies and pastes C or JavaScript code it won't parse and run unless
+the indentation is correct. So I will next workon auto-indent detection and fixing for switch cases.
+
+Right now I am heading full steam ahead on finishing up the construction of the output python generated
+from the input switch case string for nested cases which is extremely tricky but luckily through sheer determination
+I am making daily progress. I expect it to be solid and bug free and wokring by the 4th of July at this point.
+The project has exceeding my expectations and had I known how deep it was going to be like one hundred fathoms
+deep I might not have attempted it but it's a fun project nonetheless.
+
 June 22nd, 2021 Tuesday time 12 noon Santa Cruz Avenue Starbucks near Stacks and Cafe Borrone in Menlo Park.
 I just saw and an example of the new match case (the new switch case for python) that I'm competing with.
 It had an example with function calls from inside of cases. I realized I hadn't tested that scenario other than
