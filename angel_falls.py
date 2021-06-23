@@ -1,4 +1,4 @@
-June 22nd, 9:17pm California time
+June 22nd, 2021  9:17pm California time
 Did some more testing. I was just copying and pasting C switch cases off the web to see if they would run.
 So far a missing break in default doesn't crash anymore.
 But using the word "case" anywhere other than for case name; like in a print statement causes a crash.
