@@ -1,4 +1,7 @@
 June 24th, Thursday, 2021
+11pm. After I got it working I redid it in lists and it's much more streamlined and automating it will be simpler.
+It's much cleaner now.
+
 8:32 pm California time
 Working on functions to insert the nested_switch_method into the parser just before code generation(first one for testing).
 After detecting the correct case number where the nested switch is and the line number in sequence within the case
