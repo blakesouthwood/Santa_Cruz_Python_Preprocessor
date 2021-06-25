@@ -1,6 +1,6 @@
 June 24th, Thursday, 2021
 8:32 pm California time
-Working on functions to insert the nested_switch(first one for testing).
+Working on functions to insert the nested_switch_method into the parser just before code generation(first one for testing).
 After detecting the correct case number where the nested switch is and the line number in sequence within the case
 I worked on tonight copying the case body lines and then insert the nested_switch on the proper line
 and rewrite the case body lines to insert it. Refinining the algorithm now that it works. Decided to just use strings and not lists for this one.
