@@ -1,3 +1,8 @@
+June 28th Monday, 2021 3:53 pm
+Engineered how nested switches parser and code gen will work. Code name Juggler.
+Should be working in a few days. Building it in small components and then
+will connect them together and it should work. Using 2 flags. I love fuzzy logic.
+
 June 24th, Thursday, 2021
 11pm. After I got it working I redid it in lists and it's much more streamlined and automating it will be simpler.
 It's much cleaner now.
