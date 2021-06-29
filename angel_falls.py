@@ -1,4 +1,9 @@
 June 28th Monday, 2021 3:53 pm
+Next Three days just doing the design engineering and prototyping of building a nested switch and running it thru
+the module to build the concatted strings and then executing it. Each nested switch is represented by a method
+and each is generated seperately. It  alpha phase it might work tonight. beta by Wednesday evening. Working on using
+lots of methods to simplify and reuse as much as possible. Thankfully the hardest part already works. Just juggling now really.
+	
 Engineered how nested switches parser and code gen will work. Code name Juggler.
 Should be working in a few days. Building it in small components and then
 will connect them together and it should work. Using 2 flags. I love fuzzy logic.
