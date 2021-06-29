@@ -1,3 +1,8 @@
+
+June 28th Monday, 2021 10:15 pm
+Significant progress. modified initial design slightly aiding the construction of the nested switch more easily.
+Happy with progress past few days. Going well. Good momentum. 
+
 June 28th Monday, 2021 3:53 pm
 Next Three days just doing the design engineering and prototyping of building a nested switch and running it thru
 the module to build the concatted strings and then executing it. Each nested switch is represented by a method
