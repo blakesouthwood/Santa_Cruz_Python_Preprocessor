@@ -14,7 +14,10 @@ The gathering of this data (harvesting) is completely independent of whether an 
 This is important because it's less to think about, dwell on, and less complexity; it's utter simplicity.
 
 And what I have been spending my time on already works. I can take a nested switch string in python output and convert it into
-an inner nest method. I can name the method name correctly in sequence with depth(tab count), case number in sequence, and line number.
+an inner nest method. I can name the method name correctly in sequence with depth(tab count), 
+case number in sequence(where it resides within), and line number that the original switch was so it's in the exact line within the case.
+Further I still need to add the input list which will feed the input var n or exp, right now settled on n that will fall into the method input
+via the list in the background since lists are mutable and so Lispish.
 I can also replace the main(mother) switch with the nested_switch method and completely remove the nested switch.
 One works, I will work on more nested switches. I am also doing the automatic indentation (smart tabs) for the nested switch methods which are within
 methods.
