@@ -6,6 +6,8 @@ I can detect switches (and count them) within a switch case input string.
 I can extract the nested switch(s) from the main switch and put it/them into a separate string.
 I can then put all of these switches into separate strings into a list.
 
+For each run Stanford is emptied at the top before anything happens. This can be controlled at will though.
+
 I can run the list thru a loop calling endswitch(x) to generate the python code version.
 I can "now" feed each output python string into a list. This is list stanford.
 The gathering of this data (harvesting) is completely independent of whether an output switch runs or not (based on flags)
