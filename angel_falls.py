@@ -1,7 +1,8 @@
 June 30th, 2021 Wednesday 8:45 am California Time @ starbucks Santa Cruz Avenue, Menlo Park, California
 	
 Just solved the missing puzzle piece which turned out to be simple actually. Nested switches will work - as many levels deep as you want.
-Now I just have to connect the puzzle pieces. And innumerable number of nesting is possible. You want to do 1,000 nested switches within oen switch. - go for it.
+Now I just have to connect the puzzle pieces. And innumerable number of nesting is possible. You want to do 1,000 nested switches within
+one switch. - go for it. Go wild.
 I can detect switches (and count them) within a switch case input string.
 I can extract the nested switch(s) from the main switch and put it/them into a separate string.
 I can then put all of these switches into separate strings into a list.
