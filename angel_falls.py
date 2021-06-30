@@ -14,7 +14,9 @@ This is important because it's less to think about, dwell on, and less complexit
 And what I have been spending my time on already works. I can take a nested switch string in python output and convert it into
 an inner nest method. I can name the method name correctly in sequence with depth(tab count), case number in sequence, and line number.
 I can also replace the main(mother) switch with the nested_switch method and completely remove the nested switch.
-One works, I will work on more nested switches.
+One works, I will work on more nested switches. I am also doing the automatic indentation (smart tabs) for the nested switch methods which are within
+methods.
+
 Any depth nesting switches is possible based on this design.
 
 Next I'm working on the layered cake.This includes the method names which are unique to nested switches.
