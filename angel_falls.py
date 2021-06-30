@@ -6,7 +6,14 @@ I can detect switches (and count them) within a switch case input string.
 I can extract the nested switch(s) from the main switch and put it/them into a separate string.
 I can then put all of these switches into separate strings into a list.
 
-For each run Stanford is emptied at the top before anything happens. This can be controlled at will though.
+For each run the Stanford list is emptied at the top before anything happens. This can be controlled at will though.
+
+So the strings of the output strings of generated python are collected in the stanford list in order that the switches are encountered
+within the main switch.
+
+If there is just one switch then it's just stanford[0].
+All nested switches within the main switch are loaded in the list stanford based on order of apperance(location)
+and the count of the stanford list is used to manage everything.
 
 I can run the list thru a loop calling endswitch(x) to generate the python code version.
 I can "now" feed each output python string into a list. This is list stanford.
