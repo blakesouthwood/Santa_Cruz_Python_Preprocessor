@@ -1,4 +1,29 @@
+June 30th, 2021 Wednesday 8:45 am California Time
+Just solved the missing puzzle piece which turned out to be simple actually.
+Now I just have to connect the puzzle pieces.
+I can detect switches (and count them) within a switch case input string.
+I can extract the nested switch(s) from the main switch and put it/them into a separate string.
+I can then put all of these switches into separate strings into a list.
 
+I can run the list thru a loop calling endswitch(x) to generate the python code version.
+I can "now" feed each output python string into a list. This is list stanford.
+The gathering of this data (harvesting) is completely independent of whether an output switch runs or not (based on flags)
+This is important because it's less to think about, dwell on, and less complexity; it's utter simplicity.
+
+And what I have been spending my time on already works. I can take a nested switch string in python output and convert it into
+an inner nest method. I can name the method name correctly in sequence with depth(tab count), case number in sequence, and line number.
+I can also replace the main(mother) switch with the nested_switch method and completely remove the nested switch.
+One works, I will work on more nested switches.
+Any depth nesting switches is possible based on this design.
+
+Next I'm working on the layered cake.This includes the method names which are unique to nested switches.
+Each nested switch method has a unique name. Further that will be a list variable for input to each nested switch and 
+an output list for maintaining the output being live within the running switch.
+The bottom layer is the main switch and the nested switches are methods above it.
+These are concatted together and then executed.
+	
+	
+	
 June 28th Monday, 2021 10:15 pm
 Significant progress. modified initial design slightly aiding the construction of the nested switch more easily.
 Happy with progress past few days. Going well. Good momentum. 
