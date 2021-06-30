@@ -36,6 +36,10 @@ Each nested switch method has a unique name. Further that will be a list variabl
 an output list for maintaining the output being live within the running switch.
 The bottom layer is the main switch and the nested switches are methods above it.
 These are concatted together and then executed.
+
+Fixed bug in converting a nested switch from a regular switch into a nested switch which uses different methods: inswitch() and infallthru()
+and is encased inside of a unique numbered(named) method. For some reason replace() wasn't working and it was missing changing the
+switch and fallthru into inswitch and infallthru so I did a work around since there is an aparent bug in the replace() method.
 	
 	
 	
