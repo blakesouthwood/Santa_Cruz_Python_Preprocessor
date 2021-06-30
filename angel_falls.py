@@ -1,4 +1,5 @@
-June 30th, 2021 Wednesday 8:45 am California Time
+June 30th, 2021 Wednesday 8:45 am California Time @ starbucks Santa Cruz Avenue, Menlo Park, California
+	
 Just solved the missing puzzle piece which turned out to be simple actually.
 Now I just have to connect the puzzle pieces.
 I can detect switches (and count them) within a switch case input string.
