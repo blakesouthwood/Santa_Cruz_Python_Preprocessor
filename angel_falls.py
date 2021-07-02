@@ -1,3 +1,12 @@
+July 1st, 2021 Thursday 7:48pm California time Starbucks Gilroy, California
+Working on proof of concept of taking a switch with nested switches and separating it into individual switches. (that works)
+Working right now on testing taking the input strings of the (3 test strings) representing separate switches)
+and running it through a loop with conctents of function endswitch() and then generating the python with codegen
+which is NOT exec() but stored into a list.  That is what I'm attempting right now. It is critical for nested switches
+to work. It involves fuzzy logic and flags. Once it works I will add more methods and reduce the code to simplify
+and streamline it.
+
+
 June 30th, 2021 Wednesday 8:45 am California Time @ starbucks Santa Cruz Avenue, Menlo Park, California
 	
 Just solved the missing puzzle piece which turned out to be simple actually. Nested switches will work - as many levels deep as you want.
