@@ -1,8 +1,9 @@
 July 1st, 2021 Thursday 7:48pm California time Starbucks Gilroy, California
 Working on proof of concept of taking a switch with nested switches and separating it into individual switches. (that works)
-Working right now on testing taking the input strings of the (3 test strings) representing separate switches)
-and running it through a loop with the same contents of function endswitch() but will use bypass205 (oregon) 
-so that it's controlled and can do more than one string sent to teh code gen,
+Working right now on testing taking the input strings of the (3 test strings) representing separate switches
+and running it through a loop with the same contents of function endswitch() but will use bypass205 on 5 (bypasses traffic in Portland, Oregon) 
+so that it's controlled and can do more than one string sent to th code generator and grab the string of the python code
+and put each generated python switch into a list.
 it will do all three separately and then generating the python with codegen
 which is NOT exec() but stored into a list which I will do other modifications to before exec().  
 That is what I'm attempting right now. It is critical for nested switches
