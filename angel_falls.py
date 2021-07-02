@@ -1,3 +1,8 @@
+July 1st, 2021 Thursday 8:17 pm California time Starbucks Gilroy, California
+Critical test worked on first try. I didn't expect it to actually work the first time.
+Of course I spent days designing it. The rest of nested switch management
+is a cakewalk. Stunned silence. Wow. Holy Toledo.
+
 July 1st, 2021 Thursday 7:48pm California time Starbucks Gilroy, California
 Working on proof of concept of taking a switch with nested switches and separating it into individual switches. (that works)
 Working right now on testing taking the input strings of the (3 test strings) representing separate switches
