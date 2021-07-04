@@ -1,3 +1,27 @@
+July 3rd, 2021 Saturday coding working on automatic nested switch management
+I have the design figured out and tested the bypass205() which does the multi switch string - meaning a switch with nested switches.
+Everything works. I just need to turn the current raw code into methods so I can automate it.
+My example uses one switch with a nested switch and I need to write some fuzzy logic to automate separating the nested switch(es)
+from the main switch that they reside in and determine their address position within the switch. I decided for convenience that
+all nested switches must use endswitch to end nested switch.
+I'm working on the automating of the method naming for the nested switches.
+I am working on each new component outside of the main code base and playing with it and then slowly adding each one to the
+main code base. This might take another week to refine it.
+Last night I had a revelation for creating the main switch and separating the nested switches from the main switch.
+Rather than deleting the lines within the nested switches (my original strategy) I decided instead to 
+create a new string that I concat and just don't add those strings within the nested switch that I have already copied for
+each nested switch. This was out of left field and then I realized that it was a brilliant and simple solution  that is easily workable.
+
+So in review I am working on the section of the code where the switch with nested switches is read and analyzed to determine
+what is in it and managing the separtion of the nested switches, noting their locations, naming the switches by location
+and then modifying the main switch string so that it looks like the design with the nested switches turned into methods that are called.
+
+Next after that I will work on modifying the python generated for each switch and preparing it to be put into the unique method names
+and indented by one tab more to the right and they will each be placed in a list.
+I will be using lists heavily for the manageing and analysis.
+
+
+
 July 1st, 2021 Thursday 8:17 pm California time Starbucks Gilroy, California
 Critical test worked on first try. I didn't expect it to actually work the first time.
 Of course I spent days designing it. The rest of nested switch management
