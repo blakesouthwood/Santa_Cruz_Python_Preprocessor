@@ -1,7 +1,10 @@
 July 5th, 2021 Monday. 9:47 am Starbucks Santa Cruz Avenue, Menlo Park, California.
 	
-Decided to divide the nested code in half so manage the complexity. Reducing the complexity is key.
-So the beginning is called the Before parsed and codegen and the After is juggling the building of the python.
+Decided to divide the nested switch code  component in half to manage the complexity. Reducing the complexity is key.
+There was just too much to think about all at once. 
+So the beginning is called the Before parsed and codegen and the After is juggling the building of the python components.
+I have already make prototype working code for each puzzle piece but now I have to turn them into methods.
+
 The Before part involves determining the switch count, but first checking if the input string has more than
 one switch and at least one endswitch. All nested switches in the input string must use an endswitch which differentiates
 the nested switches from the main switch. Also indentation is key as always in Python.
