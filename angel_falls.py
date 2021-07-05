@@ -47,14 +47,19 @@ that identify the location in the sequence and level of cases and line number
 and then it's executed.
 ##========================================
 #In the sequence of the function calls for the parser
-switch_code_gen()
-managing_nested_switch_scenario() #<<========this is called after each code generation
+switch_code_gen() #the parser and codegen are called multiple times and add the output to stanford list uninterupted
+managing_nested_switch_scenario() #<<========this is called after the stanfordlist has the python switch strings
 # this normally by default does just one exec(string)
 # but it doesn't execute the string if it's a nested switch
 # but it does nothing if it's not a nested switch which is determined by 
 # whether the stanford list is not empty
 # if the stanford list len is greater than 0
 # then it modifies each switch string with methods and concats them with makecake and executes it
+#
+#so for a normal one switch case string managing_nested_switch_scenario does nothing
+#but if a nested_switch is True then it takes the python output strings from the stanford list and
+# converts it into a gigantic multiline string encapsulating the methods of the nested switches above the main switch and
+#calls the main switch.
 #=========================================
 
 A normal endswitch(y) call takes in one switch input string and checks if macros and expands them
