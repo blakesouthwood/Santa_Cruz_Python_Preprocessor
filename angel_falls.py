@@ -1,3 +1,23 @@
+July 5th, 2021 Monday. 9:47 am Starbucks Santa Cruz Avenue, Menlo Park, California.
+	
+Decided to divide the nested code in half so manage the complexity. Reducing the complexity is key.
+So the beginning is called the Before parsed and codegen and the After is juggling the building of the python.
+The Before part involves determining the switch count, but first checking if the input string has more than
+one switch and at least one endswitch. All nested switches in the input string must use an endswitch which differentiates
+the nested switches from the main switch. Also indentation is key as always in Python.
+
+This was a happenchance discovery. When I make the main switch with the nested method names placed within it they get called.
+so I comment them out until just before the main switch is called.
+First half deals with the input preparing it for running thru the parser and code gen.
+Second half modifies the nested output builds the nested methods in the layered cake to concat it together and then it's exec(combined_string)
+Thankfully, the bridge of bypass205() (works) which is triggered in the endswitch after a nested switch string is detected
+in input can take in a string of n nested switches and separates them.
+I also refined and perfectec my switch detector to detect the accurate number of switches (one main and n nested)
+which is critical in terms of accuracy. These are put into a list.
+For the second half the nested switches are put into unique method names and then will put into a list.
+The list is then concatted and called exec(combined_cake)
+
+
 July 3rd, 2021 Saturday coding working on automatic nested switch management
 I have the design figured out and tested the bypass205() which does the multi switch string - meaning a switch with nested switches.
 Everything works. I just need to turn the current raw code into methods so I can automate it.
