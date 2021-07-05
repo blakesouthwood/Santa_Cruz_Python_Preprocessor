@@ -31,12 +31,25 @@ else:            # in the code gen they are put into stanford list (appended)  a
     nested_switch[0] = False
 </code>		
 
+What exactly bypass205() does is quite remarkable.
+A normal endswitch(y) call takes in one switch input string and checks if macros and expands them
+But what is different is we are still using endswitch(y) for handling a nested switch by using bypass205()
+which is called within the beginning of the endswitch() after the switch counter sensor determines if the input switch string
+has more than one switch (meaning it has nested switches) each that must end in endswitch which aids readability, but is also 
+a determining factor if a nested switch is indeed nested.
+So after sensing that due to multiple switches is true then bypass205 is triggered and just after the switch counter senses more than
+one switch is encased in the input switch string then these are separated and put into the list quail. Like a mother quail and her little
+babies walking in single file behind her. This separation of the nested switches is done before bypass205 is called.
+Then within bypass205 I simply loop thru the list and call the parser and codegen multiple times till n and 
+these each run thru the parser and codegen like a regular switch and each is appended to the stanford list to hold the python output
+for each switch. From this point the second half of the transformation of managing and executing the nested switch in python continues.
+
 
 #Looks like this inside of bypass205 when it's called :
 	def bypass205(y): #this runs the input strings thru parser and code gen 
-	    print("==== bypass205 test =======") #and puts them into stanford list
-	    del stanford[:] #this empties the stanford list
-	    #loop thru quail and call everything that I normally do for an end switch
+	    print("==== bypass205 test =======") #and puts them into stanford list at the end of the codegen
+	    del stanford[:] #this empties the stanford list: this initializes the stanford list to empty
+	    #loop thru quail and call everything that I normally do for an endswitch()
 	    for item in quail: # 0, 1, 2 #so it should call the parser and code gen three times
 		y = item #this puts the contents of each string in quail into y 
 		#rest of calls within endswitch()
