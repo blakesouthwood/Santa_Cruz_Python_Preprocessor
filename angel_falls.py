@@ -32,6 +32,22 @@ else:            # in the code gen they are put into stanford list (appended)  a
 </code>		
 
 What exactly bypass205() does is quite remarkable.
+A normal endswitch(y) handles just one switch case string. But with this bypass we can still just use one endswitch()
+but we can deal with a multi-combo-nested-switch of any size. So the bypass205() is triggered by a switch counter > 1 essentially
+and then after the nested switch string is divided up into individual switch cases and added to a list I simply loop
+thru the list and call the parser and codegen. The other aspect that's different is that at the bottom of codegen()
+normally the concatted string of python that is assembled on-the-fly using lists it's executed. 
+But in the situation of the scenario of a nested_switch which will have a flag
+the output for each generated python switch is stored in the stanford list and NOT executed.
+
+But upon finishing the entire list being finished and filled after translating into python
+then another function is called after codegen which takes the stanford list and
+adds infallthru and inswitch replaces and puts the nested switches into custome method names
+that identify the location in the sequence and level of cases and line number
+and then it's executed.
+
+
+
 A normal endswitch(y) call takes in one switch input string and checks if macros and expands them
 But what is different is we are still using endswitch(y) for handling a nested switch by using bypass205()
 which is called within the beginning of the endswitch() after the switch counter sensor determines if the input switch string
