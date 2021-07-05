@@ -45,8 +45,17 @@ then another function is called after codegen which takes the stanford list and
 adds infallthru and inswitch replaces and puts the nested switches into custome method names
 that identify the location in the sequence and level of cases and line number
 and then it's executed.
-
-
+##========================================
+#In the sequence of the function calls for the parser
+switch_code_gen()
+managing_nested_switch_scenario() #<<========this is called after each code generation
+# this normally by default does just one exec(string)
+# but it doesn't execute the string if it's a nested switch
+# but it does nothing if it's not a nested switch which is determined by 
+# whether the stanford list is not empty
+# if the stanford list len is greater than 0
+# then it modifies each switch string with methods and concats them with makecake and executes it
+#=========================================
 
 A normal endswitch(y) call takes in one switch input string and checks if macros and expands them
 But what is different is we are still using endswitch(y) for handling a nested switch by using bypass205()
