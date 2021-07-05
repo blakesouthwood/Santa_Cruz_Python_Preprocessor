@@ -13,6 +13,34 @@ This was a happenchance discovery. When I make the main switch with the nested m
 so I comment them out until just before the main switch is called.
 First half deals with the input preparing it for running thru the parser and code gen.
 Second half modifies the nested output builds the nested methods in the layered cake to concat it together and then it's exec(combined_string)
+
+Inside of endswitch() I prescan the input switch string to count how many switches are in the string.
+I then have an if condition. 
+
+if switch_count > 1 :  
+    bypass205() #this loops thru a list of the input strings of multiple swith strings
+else:
+   #does regular parser and codegen()
+
+<code>
+if switchcounter > 1 and endswitchcounter >=1:
+    nested_switch[0] = True
+    # the nested switches have already been sensed and put into a list called quail
+    bypass205(y) #this runs each switch string in the list thru the parser and code gen and 
+else:            # in the code gen they are put into stanford list (appended)  and not executed at this juncture
+    nested_switch[0] = False
+</code>		
+
+
+#Looks like this inside of bypass205 when it's called :
+	def bypass205(y): #this runs the input strings thru parser and code gen 
+	    print("==== bypass205 test =======") #and puts them into stanford list
+	    del stanford[:] #this empties the stanford list
+	    #loop thru quail and call everything that I normally do for an end switch
+	    for item in quail: # 0, 1, 2 #so it should call the parser and code gen three times
+		y = item #this puts the contents of each string in quail into y 
+		#rest of calls within endswitch()
+		
 Thankfully, the bridge of bypass205() (works) which is triggered in the endswitch after a nested switch string is detected
 in input can take in a string of n nested switches and separates them.
 I also refined and perfectec my switch detector to detect the accurate number of switches (one main and n nested)
