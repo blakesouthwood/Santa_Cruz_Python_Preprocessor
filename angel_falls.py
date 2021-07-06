@@ -1,3 +1,11 @@
+July 6th, 2021 Tuesday 12:41 pm Starbucks Hollister, California near Target
+Working on mapping out procedural steps to create the process of taking the output python switches in the stanford list
+and converting it for concatting the cake with layers (each layer a nested switch)
+Each nested switch has a unique numerical number in it's name and has to be above the main switch to be called.
+The location of each nested switch has essentially an address for the swith it directly lives within in which case and what line number.
+So I have been working backwards from the end goal of the switch case in python.
+
+	
 July 5th, 2021 Monday. 9:47 am Starbucks Santa Cruz Avenue, Menlo Park, California.
 	
 Decided to divide the nested switch code  component in half to manage the complexity. Reducing the complexity is key.
