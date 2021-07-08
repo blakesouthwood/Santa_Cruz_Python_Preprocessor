@@ -1,3 +1,10 @@
+July 8th, 2021 1:08 pm Starbucks Santa Cruz Avenue, Menlo Park, California near Stacks.
+Made progress with parser to read and copy nested switch cases and then delete them and glue in a method numbered
+within the bounds of the main switch on the same line and in the case where the nested switch was. Again, nested switches
+are placed into their own methods for simplicity. Yesterday I was able to replace two nested switches with methods correctly.
+There is a great deal of juggling that goes and and so I have broken everything down into stages and I work on the behavior
+for each stage and soon the constellation of the componenents will be ready to connect together.
+
 July 6th, 2021 Tuesday 12:41 pm Starbucks Hollister, California near Target
 Working on mapping out procedural steps to create the process of taking the output python switches in the stanford list
 and converting it for concatting the cake with layers (each layer a nested switch)
