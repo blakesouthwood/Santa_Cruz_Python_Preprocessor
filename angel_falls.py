@@ -87,10 +87,10 @@ def build_stacked_cake_string_combining_stanford_list():
     print("volleyball =",volleyball)	#this is the output that will generate the final combined concatted string	
 
 ##=============================	
-Last night and this morning I refined the methd to add the nested switch method into the input string where the 
-switch(n){ is currently and replacing it with a serial sequential numbered method is. Each inner switch is numbered top down
+Last night and this morning I refined the method to add the nested switch method into the input string where the 
+switch(n){ is currently and replace it with a serial sequential numbered method. Each inner switch is numbered top down
 in order. The last part I will add is starting with 1 at the top. Right now it's hard coded. But the method works that replaces
-the switch to the nested switch method name.
+the switch to the nested switch method name. I still need to next put this into a loop to do it automatically instead of manually.
 ### this started working on july 9th, 2021 Friday. I forgot that it was friday.
 genius=[]
 genius.append(0)
