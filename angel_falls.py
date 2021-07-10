@@ -3,7 +3,7 @@ Final push to tie together all of the loose strings.
 Working  on aspects of after the bypass205 has been called and filled the stanford list with the main switch string 
 and n number of nested switches.
 I modified bypass205 cutting the code by 80% by making a method of parser chunk of code which was in endswitch()
-I make the build layered cake.
+I make the build layered cake for concatting the final python nested switch strings and main string and inswitch and infallthru methods.
 
 reverse_stanford_list() #so the order is the nested switches first and the main switch is last on the far right
 #this is so that when the concatted string is executed it's in the correct order
@@ -112,18 +112,26 @@ def swap_switch_to_nested_method(stringname,linenumber,series_num):
 #string_change =coolstring
 #stringname=coolstring
 print("now change the inner switches to the nested method numbered")
-swap_switch_to_nested_method(coolstring,10,1)	
-
+# the params are STRINGNAME to modify, LINE NUMBER in this string, number that will be the SEQUENCE SERIAL NUMBER for this nested method
+swap_switch_to_nested_method(coolstring,10,1)
+############# still to do next ############## haven't added this feature yet
+#NEXT part will be putting this into a loop with just the line numbers in a list to do this 
+# with method calls to swap_switch_to_nested_method()
+##############################################
 print("after first change ====>>>>>>>")
-coolstring =genius[0]
+coolstring =genius[0] #this copies what is in genius[0] into the immutable string name
 #series_num = number_series[0] 
-swap_switch_to_nested_method(coolstring,18,2)	
+swap_switch_to_nested_method(coolstring,18,2)	#this does the next nested switch change
 print("after the 2nd change ...")
 #coolstring =genius[0]
 print(genius[0])
 print("done with this test of the new method")	  
 
 INPUT string looks like this at this stage:
+# this represents AFTER the nested switch cases have been cut out except for the line with switch
+# I cut out the nested switches after copying them and then 
+# I made a copy of the whole string line by line but skipped the lines in the range of the inners switches except the top line with switch
+# which I left as a marker
 	  
 coolstring='''
 switch(exp) {  
