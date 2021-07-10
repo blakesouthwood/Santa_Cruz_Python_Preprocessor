@@ -1,6 +1,7 @@
 JULY 10TH, 2021  9:51 Am Gilroy Starbucks near Panera Bread
 Final push to tie together all of the loose strings.
-Working  on aspects of after the bypass205 has been called and filled the stanford list with the main switch string 
+Working  on aspects of after the bypass205 has been called and filled the stanford list 
+aftger the input strings have been parsed and code generated with the generated python of the main switch string 
 and n number of nested switches.
 I modified bypass205 cutting the code by 80% by making a method of parser chunk of code which was in endswitch()
 I make the build layered cake for concatting the final python nested switch strings and main string and inswitch and infallthru methods.
