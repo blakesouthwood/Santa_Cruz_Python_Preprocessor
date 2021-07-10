@@ -98,6 +98,7 @@ genius.append(0)
 number_series=[]
 number_series.append(0)
 #I made the method to change the switch for the nested switch into the method numbered
+# Note: I have a method (I made a few days ago) that makes a list of the line numbers of all switches in a string 
 def swap_switch_to_nested_method(stringname,linenumber,series_num):
 	#print(coolstring)
 	str_list = stringname.split('\n')
