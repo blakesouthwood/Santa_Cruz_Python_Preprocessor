@@ -87,6 +87,98 @@ def build_stacked_cake_string_combining_stanford_list():
     print("volleyball =",volleyball)	#this is the output that will generate the final combined concatted string	
 
 ##=============================	
+Last night and this morning I refined the methd to add the nested switch method into the input string where the 
+switch(n){ is currently and replacing it with a serial sequential numbered method is. Each inner switch is numbered top down
+in order. The last part I will add is starting with 1 at the top. Right now it's hard coded. But the method works that replaces
+the switch to the nested switch method name.
+### this started working on july 9th, 2021 Friday. I forgot that it was friday.
+genius=[]
+genius.append(0)
+# the number series will always start from 1 and then increase in number
+number_series=[]
+number_series.append(0)
+#I made the method to change the switch for the nested switch into the method numbered
+def swap_switch_to_nested_method(stringname,linenumber,series_num):
+	#print(coolstring)
+	str_list = stringname.split('\n')
+	print('changing line',linenumber)
+	#series_num = number_series[0] 
+	str_list[linenumber] = "\t\t\tnested_switch_" + str(series_num) + "(n)"
+	stringname = "\n".join(str_list)
+	genius[0]=stringname   #strings are immutable but lists are mutable(changeable)
+	
+	
+# example of input and the output result	
+#string_change =coolstring
+#stringname=coolstring
+print("now change the inner switches to the nested method numbered")
+swap_switch_to_nested_method(coolstring,10,1)	
+
+print("after first change ====>>>>>>>")
+coolstring =genius[0]
+#series_num = number_series[0] 
+swap_switch_to_nested_method(coolstring,18,2)	
+print("after the 2nd change ...")
+#coolstring =genius[0]
+print(genius[0])
+print("done with this test of the new method")	  
+
+INPUT string looks like this at this stage:
+	  
+coolstring='''
+switch(exp) {  
+		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			switch(exp){          
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			switch(exp){          
+			fallthru
+
+		default:
+			print('the end')
+}
+'''
+	  
+OUTPUT result of replacing original switch (the body of the switch was already removed beforehand and copied)
+	  switch(exp) {  
+		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			nested_switch_1(n)
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			nested_switch_2(n)
+			fallthru
+
+		default:
+			print('the end')
+}
+	  
+	  
+	  
+	  
 	
 July 8th, 2021 1:08 pm Starbucks Santa Cruz Avenue, Menlo Park, California near Stacks.
 Made progress with parser to read and copy nested switch cases and then delete them (after they have been copied and added to a list) and glue in a method numbered
