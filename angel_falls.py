@@ -114,7 +114,7 @@ def swap_switch_to_nested_method(stringname,linenumber,series_num):
 #string_change =coolstring
 #stringname=coolstring
 print("now change the inner switches to the nested method numbered")
-# the params are STRINGNAME to modify, LINE NUMBER in this string, number that will be the SEQUENCE SERIAL NUMBER for this nested method
+# the params are STRINGNAME to modify, LINE NUMBER OF SWITCH(TO CHANGE) in this string, number that will be the SEQUENCE SERIAL NUMBER for this nested method
 swap_switch_to_nested_method(coolstring,10,1)
 ############# still to do next ############## haven't added this feature yet
 #NEXT part will be putting this into a loop with just the line numbers in a list to do this 
