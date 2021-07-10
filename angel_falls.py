@@ -1,3 +1,93 @@
+JULY 10TH, 2021  9:51 Am Gilroy Starbucks near Panera Bread
+Final push to tie together all of the lose strings.
+Working  on aspects of after the bypass205 has been called and filled the stanford list with the main switch string 
+and n number of nested switches.
+I modified bypass205 cutting the code by 80% by making a method of parser chunk of code which was in endswitch()
+I make the build layered cake.
+
+reverse_stanford_list() #so the order is the nested switches first and the main switch is last on the far right
+#this is so that when the concatted string is executed it's in the correct order
+
+build_stacked_cake_string_combining_stanford_list() #this loops thru the stanford list and concats it into a string
+# which will be executed
+
+bypass205() now looks like this:
+	########### bypass 205 ########### july 1st 2021 testing starbucks in gilroy
+def bypass205(y): #this runs the input strings thru parser and code gen 
+	print("==== bypass205 test =======") #and puts them into stanford list
+	del stanford[:] #this empties the stanford list
+	#loop thru quail and call everything that I normally do for an end switch
+	for item in quail: # 0, 1, 2 #so it should call the parser and code gen three times
+		y = item #this puts the contents of each string in quail into y 
+		
+		#everything below here is the same in parser code
+		switchcasetester='';switchcasetester=None;
+		del switchcasetester;switchcasetester='';
+		mytrace("endswitch() bypass205  in switch_cat called")
+		show_input_switch_string() #flag for testing this shows the input string
+		###############
+		parser_guts(y)
+
+		
+#this is parser_guts()
+####    parser_guts()           #dreamed up on July 10th, 2021 to see if it would work
+####============================
+def parser_guts(y):
+	print("parser_guts called =======")
+	check_if_uppercase_constant_cases(y)  #if UPPCASE this senses it and converts to string
+	
+	if baseline[0] != "nada": #means it converted to uppercase
+		y = baseline[0]
+			#else:   #added this else  and pass on June 16th
+			#	 pass #this puts the input string from baseline[0] into y
+		#####################
+		#this checks if first case is a number like case 2: returning True if numbers 
+	flow_valve_input1(y)   #puts True or False into valve[0] added April 2nd, 2021
+	#####################
+	print("if number in first case",valve[0])
+		# the key is macro expansion is only called if numbers are True
+	if valve[0] == True:    #meaning numbers like case 12:
+		macro_expansion(y); #checks if macros and expands them and converts numbs to strings
+		y=None; del y; y = cray[0];
+		#end if
+		#####################################
+	flush_lists() 
+	parser_mode_1(y) 	
+
+
+#note: I will rename the vars after it all works. Approaching the finish line and I want to see it work before I beautify it.
+# building stacked cake is where I will combine top down the generated python strings.
+# I am doing this trial run to see what is missing. Victory approaches.
+
+# JULY 10TH, 2021
+##====================================================
+## BUILD STACKED CAKE STRING COMBINING STANFORD LIST
+##====================================================
+def build_stacked_cake_string_combining_stanford_list(): 
+    print("PRETENDING THAT THE LISTS HAVE BEEN MODIFIED THOUGH NOT REALLY YET")
+    print("==================")
+    print('lets pretend that the strings are finished and I will concat them together')
+    print("but not run them")
+    print("remember after the stanford list has been reversed the LAST list will be the main")
+    volleyball ='' #initialized
+    print("about to concat a string called volleyball")
+    count =0
+    for item in stanford:
+        volleyball += "\n"
+        volleyball += "count="
+        volleyball += str(count) + "\n"
+        volleyball += item
+        volleyball += "\n\n" #spacer 2 lines
+        count += 1
+        print(count)
+    
+    # here I can manipulate the output python code 
+    # uppercase_test[0] == True:
+    # baseline[0]="nada"
+    print("volleyball =",volleyball)	#this is the output that will generate the final combined concatted string	
+
+##=============================	
+	
 July 8th, 2021 1:08 pm Starbucks Santa Cruz Avenue, Menlo Park, California near Stacks.
 Made progress with parser to read and copy nested switch cases and then delete them (after they have been copied and added to a list) and glue in a method numbered
 within the bounds of the main switch on the same line and in the case where the nested switch was. Again, nested switches
