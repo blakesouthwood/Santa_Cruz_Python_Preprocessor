@@ -1,3 +1,128 @@
+July 10th, 2021  11:12 am Starbucks in Gilroy.
+Loop works to change switch to nested switch numbered in order from switch line number list!
+
+loop_thru_switch_locations() #this calls swap_switch_to_nested_method(stringname,linenumber,series_num):
+
+==INPUT==
+
+#-------------------  july 10th, 2021   11:03 pm  -------starbucks coding-------
+
+coolstring='''
+switch(exp) {  
+		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			switch(exp){          
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			switch(exp){          
+			fallthru
+
+		default:
+			print('the end')
+}
+'''
+
+
+
+### this started working on july 9th, 2021 Friday. I forgot that it was friday.
+genius=[]
+genius.append(0)
+# the number series will always start from 1 and then increase in number
+number_series=[]
+number_series.append(0)
+#I made the method to change the switch for the nested switch into the method numbered
+#######################################
+##  swap_switch_to_nested_method()
+#######################################
+def swap_switch_to_nested_method(stringname,linenumber,series_num):
+	#print(coolstring)
+	str_list = stringname.split('\n')
+	print('changing line',linenumber)
+	#series_num = number_series[0] 
+	str_list[linenumber] = "\t\t\tnested_switch_" + str(series_num) + "(n)"
+	stringname = "\n".join(str_list)
+	genius[0]=stringname   #strings are immutable but lists are mutable(changeable)
+	
+	
+First successful test of looping method that goes thru switch line number list and changes switch to nested method
+on-the-fly and modfies the string before it goes into the parser and code gen
+I figured out that it's simpler to modify the input strings in JavScript switch case mode instead of in python mode later
+
+##=================== section I just added just now july 10th this morning 2021 ===================	
+switch_list=[]
+switch_list.append(10)
+switch_list.append(18)
+# test list of switch_list[10,18] representing the line numbers gleaned earlier in the input string of nested switches
+
+#Testing this out now
+
+genius[0]=coolstring  #assignment here 
+###=====================================
+###  loop_thru_switch_locations():
+###=====================================
+def loop_thru_switch_locations():  #looping thru  switch_list[10,18]
+    print("loop_thru_switch_locations called")
+    print("switch_list=",switch_list)
+    le_number=1 #number sequence for the nested switches starting from 1 by default
+    for item in switch_list:
+        print("item in switch_list",item)
+        swap_switch_to_nested_method(genius[0],item,le_number) #I had to modify this to use the list genius[0] which holds the mutable string
+        coolstring =genius[0] #this copies whats' in genius[0]
+        le_number += 1
+    #it can't be this simple can it?
+    
+loop_thru_switch_locations()
+print("did it work=============MMMMMMMMMM----======MMMMMMMMM==========")
+print(genius[0])   
+
+OUTPUT of the changed modified string
+
+loop_thru_switch_locations called
+switch_list= [10, 18]
+item in switch_list 10
+changing line 10
+item in switch_list 18
+changing line 18
+did it work=============MMMMMMMMMM----======MMMMMMMMM==========
+
+switch(exp) {  
+		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			nested_switch_1(n)
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			nested_switch_2(n)
+			fallthru
+
+		default:
+			print('the end')
+}
+
+
+
+
 JULY 10TH, 2021  9:51 Am Gilroy Starbucks near Panera Bread
 Final push to tie together all of the loose strings.
 Working  on aspects of after the bypass205 has been called and filled the stanford list 
