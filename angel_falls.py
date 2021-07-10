@@ -161,6 +161,11 @@ switch(exp) {
 '''
 	  
 OUTPUT result of replacing original switch (the body of the switch was already removed beforehand and copied)
+# this part is funny but true. I will add one more step to prevent a bug.
+# when concatting the strings in cake I have to comment out the nested_swithes with # in front of them so they don't get called
+# and then the last step is taking out the # in front of the nested_switches and then executing the combined string
+# at this current stage it's okay to have them uncommented
+	  
 	  switch(exp) {  
 		case 1 thru 3:
 			print("where's the dog house!")
