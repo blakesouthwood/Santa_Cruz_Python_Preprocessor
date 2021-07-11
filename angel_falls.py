@@ -1,3 +1,16 @@
+
+July 11th, 2021  11:07 am
+Exciting times
+did a run thru of how the output code needs to look and ran it worked.
+so I now know for sure how to have the output python strings of the different switch cases to
+cooperate and work together. Last file called playtime_testing.py
+Monumental last hurdle cleared. What a relief. So cool. 
+	
+	
+	
+	
+	
+	
 July 10th, 2021  11:12 am Starbucks in Gilroy.
 Loop works to change switch to nested switch numbered in order from switch line number list!
 
