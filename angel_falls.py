@@ -1,4 +1,55 @@
+July 12th, 2021 10:20am
+This now runs in Python.
+I will try deeper nesting next.
 
+	exp = '4'
+	switch(exp) {  
+		case 1 thru 3:
+			print("where\'s the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			exp = 'blable'
+			switch(exp){          
+				case 'blable':
+					print("do something")
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			exp = 'fish'
+			switch(exp){          
+				case 'fish':
+					print("do something")
+					print("yep")
+					fallthru
+				case 'trout':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			fallthru
+
+		default:
+			print('the end')
+}
+				
+				
 July 11th, 2021  11:07 am
 Exciting times
 did a run thru of how the output code needs to look and ran it worked.
