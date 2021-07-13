@@ -1,3 +1,181 @@
+July 13th, 2021  919am
+Example of generated python for doing two nested switches
+and the results of it running.
+# =======  switch  =================================
+def switch(x):
+	if type(x) != str:  #checks to make sure it's a string if for example a number is passed as x
+		x = str(x)
+	global case
+	case = x.lower() 
+    
+# =======  fallthru       =========================
+def fallthru(y):
+	eval("switch('" + y + "')")
+    
+    
+#==================
+#for inswitch
+def inswitch(n):
+	if type(x) != str:  #checks to make sure it's a string if for example a number is passed as x
+		n = str(n)
+	global case
+	case = n.lower() 
+
+#=====================
+# for infallthru    
+def infallthru(n):
+	eval("inswitch('" + n + "')")
+
+
+#exp = varholder[0]
+
+def nested_switch_1(n):
+	print("====starting nested_switch1===",n)
+	
+	caselist1 = ['zoo time', 'more']
+	caselist2 = ['the beach in santa cruz']
+	caselist3 = ['default']
+
+
+	inswitch(n)
+	while True:
+		print("case=",case)
+		if case in caselist1: # ['zoo time','more']
+			print("swe are now in nested switdh 1")
+			print("an francisco zoo")
+			print("feed the flamingos")
+			infallthru('the beach in santa cruz')
+
+		elif case in caselist2: # ['the beach in santa cruz']
+			print("volleyball and boardwalk")
+			break
+
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+
+		else:
+			print("we are done here")
+			break
+
+
+
+def nested_switch_2(n):
+	print("======starting nested_switch2=====",n)
+	caselist1 = ['blable']
+	caselist2 = ['more']
+	caselist3 = ['default']
+
+
+	inswitch(n)
+	while True:
+		print("case=",case)
+		if case in caselist1: # ['blable']
+			print("do this is in nestedswitch 2")
+			print("yep")
+			infallthru('more')
+
+		elif case in caselist2: # ['more']
+			print("nice")
+			break
+
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+
+		else:
+			print("we are done here")
+			break
+
+
+
+
+varholder=[]
+varholder.append(0)
+
+varholder[0] = 1
+exp = varholder[0]
+
+x = varholder[0]
+def call_main_switch(x):
+	print("call main switch called with",x)
+	caselist1 = ['1']
+	caselist2 = ['4']
+	caselist3 = ['8']
+	caselist4 = ['default']
+	# main switch test
+
+	switch(x)
+	while True:
+
+		if case in caselist1: # ['1']
+			print("inside of main switch first case")
+			print("where's the dog house!")
+			print('first prize')
+			n = 'more' #input to nst swtch
+			nested_switch_1(n)  # nest 1 test ============
+			print('after doing nested switch 1')
+			fallthru('4')
+
+		elif case in caselist2: # ['4']
+			print("inside of main switch second case ")
+			print('kangaroo hop hop!')
+			 #maybe keep it a comment until it's in python        
+			print('taught me how thru write code')
+			n = 'blable' #input to nes swtch
+			nested_switch_2(n)  # nest 2 test==========
+			print("after doing nested sw tch 2 ===")
+			fallthru('8')
+
+		elif case in caselist3: # ['8']
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru('default')
+
+		elif case in caselist4: # ['default']
+			print('the end')
+			break
+
+		else:
+			print('the end')
+			break
+
+
+
+
+ 
+#notice no indentation for this line
+call_main_switch(x) # see if this works
+#this calls the main switch when this is executed
+
+
+call main switch called with 1
+inside of main switch first case
+where's the dog house!
+first prize
+====starting nested_switch1=== more
+case= more
+swe are now in nested switdh 1
+an francisco zoo
+feed the flamingos
+case= the beach in santa cruz
+volleyball and boardwalk
+after doing nested switch 1
+inside of main switch second case 
+kangaroo hop hop!
+taught me how thru write code
+======starting nested_switch2===== blable
+case= blable
+do this is in nestedswitch 2
+yep
+case= more
+nice
+after doing nested sw tch 2 ===
+mocha blast
+== 31 flavors===
+the end
+
+
 July 12th, 2021 10:20am
 This now runs in Python.
 I will try deeper nesting next.
