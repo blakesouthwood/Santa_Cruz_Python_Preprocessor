@@ -6,7 +6,8 @@ are completed and I am connecting them together today. Then I will be doing more
 Example of generated python for doing two nested switches
 and the results of it running. What you see below is all chunks from a list
 that is looped thru and concatted into a triple multiline string
-and then executed.
+and then executed. I just added the ability to get an output result from a nested switch
+that is put into a list and accessible after the inner switch has completed.
 
 # =======  switch  =================================
 def switch(x):
@@ -35,6 +36,8 @@ def infallthru(n):
 
 
 #exp = varholder[0]
+nest_output=[]
+nest_output.append(0)
 
 def nested_switch_1(n):
 	print("====starting nested_switch1===",n)
@@ -55,6 +58,7 @@ def nested_switch_1(n):
 
 		elif case in caselist2: # ['the beach in santa cruz']
 			print("volleyball and boardwalk")
+			nest_output[0]='santa cruz beach boardwalk output'
 			break
 
 		elif case in caselist3: # ['default']
@@ -121,6 +125,8 @@ def call_main_switch(x):
 			print('first prize')
 			n = 'more' #input to nst swtch
 			nested_switch_1(n)  # nest 1 test ============
+			#example getting output from the nested switch
+			print(nest_output[0]) #output from nested switch
 			print('after doing nested switch 1')
 			fallthru('4')
 
@@ -149,6 +155,39 @@ def call_main_switch(x):
 
 
 
+
+ 
+#notice no indentation for this line
+call_main_switch(x) # see if this works
+#this calls the main switch when this is executed
+
+
+call main switch called with 1
+inside of main switch first case
+where's the dog house!
+first prize
+====starting nested_switch1=== more
+case= more
+swe are now in nested switdh 1
+an francisco zoo
+feed the flamingos
+case= the beach in santa cruz
+volleyball and boardwalk
+santa cruz beach boardwalk output
+after doing nested switch 1
+inside of main switch second case 
+kangaroo hop hop!
+taught me how thru write code
+======starting nested_switch2===== blable
+case= blable
+do this is in nestedswitch 2
+yep
+case= more
+nice
+after doing nested sw tch 2 ===
+mocha blast
+== 31 flavors===
+the end
 
  
 #notice no indentation for this line
