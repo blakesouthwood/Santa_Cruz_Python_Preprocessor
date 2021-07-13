@@ -1,6 +1,9 @@
 July 13th, 2021  919am
 Example of generated python for doing two nested switches
-and the results of it running.
+and the results of it running. What you see below is all chunks from a list
+that is looped thru and concatted into a triple multiline string
+and then executed.
+
 # =======  switch  =================================
 def switch(x):
 	if type(x) != str:  #checks to make sure it's a string if for example a number is passed as x
