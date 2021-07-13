@@ -9,6 +9,7 @@ and the results of it running. What you see below is all chunks from a list
 that is looped thru and concatted into a triple multiline string
 and then executed. I just added the ability to get an output result from a nested switch
 that is put into a list and accessible after the inner switch has completed.
+BELOW IS THE GENERATED CODE
 
 # =======  switch  =================================
 def switch(x):
@@ -196,7 +197,12 @@ the end
 July 12th, 2021 10:20am
 This now runs in Python.
 I will try deeper nesting next.
+THIS IS WHAT THE INPUT SWITCH CASE CODE LOOKS LIKE
+THOUGH IT MUST BE IN A TRIPLE STRING AS NOTED WITH NECESSARY LINES
+ALSO THIS IS CRUCIAL. THIS VERSION STILL REQUIRES PYTHON STANDARD INDENTATION.
+MY NEXT VERSION WILL DO SMART-AUTO-INDENT.
 
+sw=''' <-----NECESSARY at beginning
 	exp = '4'
 	switch(exp) {  
 		case 1 thru 3:
@@ -242,8 +248,9 @@ I will try deeper nesting next.
 
 		default:
 			print('the end')
-}
-				
+        }     <----NECESSARY at end
+'''           <----NECESSARY at end 
+endswitch(sw) <--- NECESSARY at end (this is a method that calls the parser and codegen)		
 				
 July 11th, 2021  11:07 am
 Exciting times
