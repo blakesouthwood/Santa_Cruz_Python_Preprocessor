@@ -203,7 +203,7 @@ I will try deeper nesting next.
 			print("where\'s the dog house!")
 			print('first prize')
 			print('you block head Charlie Brown')
-			fallthru
+			fallthrough #this spelling works too from Swift
 			
 		case 4 to 7:
 			print('kangaroo hop hop!')
@@ -218,7 +218,7 @@ I will try deeper nesting next.
 					break
 				default:
 					print("we are done here")
-			endswitch 
+			endswitch #this is from php
 			print('taught me how to write code')
 			fallthru
 			
