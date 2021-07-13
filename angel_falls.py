@@ -1,7 +1,7 @@
 July 13th, 2021  919am
 Today I am working on the trapeze the last part connecting the generated python with building the doc string with
 the variable to be executed. Adding def nested_switch_number to strings and indenting properly. The puzzle pieces
-are completing and I am connecting them today. Then I will be doing more testing. Then I will upload the code to github.
+are completed and I am connecting them together today. Then I will be doing more testing. Then I will upload the code to github.
 
 Example of generated python for doing two nested switches
 and the results of it running. What you see below is all chunks from a list
