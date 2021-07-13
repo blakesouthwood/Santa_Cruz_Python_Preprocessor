@@ -1,4 +1,5 @@
-July 13th, 2021  919am
+July 13th, 2021  9:45am Gilroy, California
+	
 Today I am working on the trapeze the last part connecting the generated python with building the doc string with
 the variable to be executed. Adding def nested_switch_number to strings and indenting properly. The puzzle pieces
 are completed and I am connecting them together today. Then I will be doing more testing. Then I will upload the code to github.
@@ -190,36 +191,6 @@ mocha blast
 the end
 
  
-#notice no indentation for this line
-call_main_switch(x) # see if this works
-#this calls the main switch when this is executed
-
-
-call main switch called with 1
-inside of main switch first case
-where's the dog house!
-first prize
-====starting nested_switch1=== more
-case= more
-swe are now in nested switdh 1
-an francisco zoo
-feed the flamingos
-case= the beach in santa cruz
-volleyball and boardwalk
-after doing nested switch 1
-inside of main switch second case 
-kangaroo hop hop!
-taught me how thru write code
-======starting nested_switch2===== blable
-case= blable
-do this is in nestedswitch 2
-yep
-case= more
-nice
-after doing nested sw tch 2 ===
-mocha blast
-== 31 flavors===
-the end
 
 
 July 12th, 2021 10:20am
