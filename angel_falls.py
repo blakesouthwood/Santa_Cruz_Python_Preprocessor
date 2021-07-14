@@ -1,4 +1,4 @@
-Wednesday, July 14th, 2021 11am California Time
+Wednesday, July 14th, 2021 11am California Time Santa Cruz Avenue, Menlo Park, California down the street from Cafe Borrone
 
 Working on the last stages of connecting the dots for
 transforming the nested switches into python and putting them into methods
