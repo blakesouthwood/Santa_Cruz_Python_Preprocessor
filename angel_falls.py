@@ -1,4 +1,9 @@
 12:13 pm July 14th
+	
+Have working code to count the number of switches and endswitches in a switch string
+which is used to determine if there are in fact at least one or more nested switches
+This is used to set the nested_switch[0] to True also
+
 working on the transformation stage of the input nested switch string sequence
 getting the location and end point of each nested switch
 copying each nested switch and storing the string into a list
@@ -10,6 +15,17 @@ Then repeat the process for other nested switches if there are any.
 Then loop thru the modified switch string and replace each nested switch word with a nested switch method that is numbered 
 top down in order of occurence.
 
+Next stage
+This is done to each nested switch string
+take a nested switch string which left adjusted by default
+and add the nested method def at the top and then indent the entire
+switch string by one tab added to the left side
+
+Last Stage
+Last stage is concatting the layers of the string sections by concatting
+the elements of the list which is full switch case strings which have already been reversed
+so that the main switch is last since they will be put into a triple string with a variable
+and then executed.
 
 
 Wednesday, July 14th, 2021 11am California Time Santa Cruz Avenue, Menlo Park, California down the street from Cafe Borrone
