@@ -1,3 +1,17 @@
+12:13 pm July 14th
+working on the transformation stage of the input nested switch string sequence
+getting the location and end point of each nested switch
+copying each nested switch and storing the string into a list
+working on one nested string at a time
+copy the whole nested string and then only copy and concat the first line of th nested string
+copy the string after the nested switch 
+glue together the two halfs
+Then repeat the process for other nested switches if there are any.
+Then loop thru the modified switch string and replace each nested switch word with a nested switch method that is numbered 
+top down in order of occurence.
+
+
+
 Wednesday, July 14th, 2021 11am California Time Santa Cruz Avenue, Menlo Park, California down the street from Cafe Borrone
 
 Working on the last stages of connecting the dots for
