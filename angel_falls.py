@@ -2,7 +2,7 @@ Wednesday, July 14th, 2021 11am California Time Santa Cruz Avenue, Menlo Park, C
 
 Working on the last stages of connecting the dots for
 transforming the nested switches into python and putting them into methods
-and into a single docstring and executing it.
+and into a single docstring and executing it. Doing each stage in a separate file today to get them debugged. They all work already. Six I believe.
 
 Macros are cool. These will be put into methods later.
 Had to have a little fun this morning.
