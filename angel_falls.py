@@ -1,3 +1,99 @@
+Wednesday, July 14th, 2021 11am California Time
+
+Working on the last stages of connecting the dots for
+transforming the nested switches into python and putting them into methods
+and into a single docstring and executing it.
+
+Macros are cool. These will be put into methods later.
+Had to have a little fun this morning.
+Made working macros: when, unless, until  right out of the Lisp playbook. Since CoffeeScript and Ruby also have when,unless,until
+I decided to add them for the fun of it. Still in the primordial  stage. 
+
+##===========================================================
+## == macro when ============================================
+##===========================================================
+
+
+#if condition = true
+#condition = "('apple == 1 and banana == 10')"
+
+starbucks='''
+apple = "1"
+banana = "2"
+
+when condition == True:
+    print("they are TRUEEEE")
+else:
+    print('they are False')
+
+'''
+#runthis(starbucks)
+print(starbucks)
+starbucks =starbucks.replace('when','if ')
+starbucks=starbucks.replace('condition', "(apple == '1' and banana == '1')")
+
+print(starbucks)
+print("the moment of truth nears...")
+print("")
+exec(starbucks)
+print('=====')
+print("===== end of testing when===============")
+
+
+##==================================================
+### macro  until ===================================
+##==================================================
+funny='''
+print("now trying until")   
+ 
+total = 0
+# u n t i l condition == True
+until total < 10:
+    print("not yet ",total)
+    total += 1
+print("now total has reached 10")
+'''
+print(funny)
+funny =funny.replace('until','while ')
+print(funny)
+exec(funny)
+
+
+#===================================================
+### macro unless ===================================
+#===================================================
+
+#The code in the unless block will be executed
+# if the given condition is false.
+#trying u n l e s s
+# if  when condition not true(meaning = False)
+condition = "(score >= 40)"
+stars='''
+score = 22
+
+unless condition == False:
+   print("score =",score)
+   print("this worked if this shows up")
+   print(" special code would run here")
+   print("proving the condition was FALSE ==")
+else:
+   print("it is indeed true")
+   print("score =",score)
+   print("if it was True this would show up")
+
+'''
+print(stars)
+stars =stars.replace('unless','if ')
+print(stars)
+print("====")
+stars =stars.replace('condition',"(score >= 40)")
+print(stars)
+print("=====")
+exec(stars)
+
+
+
+
 July 13th, 2021  9:45am Gilroy, California
 	
 Today I am working on the trapeze the last part connecting the generated python with building the doc string with
