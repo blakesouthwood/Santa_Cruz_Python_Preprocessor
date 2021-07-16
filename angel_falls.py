@@ -1,4 +1,4 @@
-Friday, July 16th, 2021 Gilroy, California 9:10 am
+Friday, July 16th, 2021 Gilroy, California 9:10 am Starbucks
 Working on nested switch process integration. It has ten modular pieces and I'm reducing the code currently.
 Putting the code in separate files for testing before integration is completed.
 First half separates the switch strings and put the result into a list.
