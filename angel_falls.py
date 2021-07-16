@@ -1,3 +1,13 @@
+Friday, July 16th, 2021 Gilroy, California 9:10 am
+Working on nested switch process integration. It has ten modular pieces and I'm reducing the code currently.
+Putting the code in separate files for testing before integration is completed.
+First half separates the switch strings and put the result into a list.
+Second half puts the generated python into a list that is then modified. Each string is put into a framework
+with a def method. Lot going on so it must be maticulous. Had a rocky road connecting the puzzle pieces
+so decided to get unstuck by creating completely separate modules to avoid conflicts. And to go slow and easy to
+get to the finish line. Working on first half the next few days to get it solid and automated using lots of
+helper methods which aids readability.
+
 12:13 pm July 14th
 	
 Have working code to count the number of switches and endswitches in a switch string
