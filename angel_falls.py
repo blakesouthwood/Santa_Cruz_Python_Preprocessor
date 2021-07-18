@@ -1,6 +1,6 @@
 Sunday July 18th, 2021 time 11:20 am
 I initially made a function that copied one nested switch and it uses many methods to do procedures but works perfectly.
-I was then considering making a funtion to grab two nested switches within a main switch and realized
+I was then considering making a function to grab two nested switches within a main switch and realized
 that I could just use the copy_one_nested_switch function that grabs just one nested switch and use it repeatedly for any more
 of nested functions so it behaves like a method. Saves a lot of time. I would then just have to change
 the input parameters which are the line numbers within the main switch for the
