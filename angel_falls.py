@@ -10,7 +10,7 @@ They will become methods in the background like this in the preprocessor:
 # so they aren't free floating apperations there is this behind the curtain in the preprocessor.
 
 	when(condition   == True)
-	until(condition  == True) 
+	until(condition  == True) #loop
 	unless(condition == False)
 	
 so that's how they work in reality in the background.
