@@ -1,8 +1,8 @@
 Sunday July 18th, 2021 time 11:20 am
-I initially made a function that copied one nested switch and it uses many methods but works perfectly.
+I initially made a function that copied one nested switch and it uses many methods to do procedures but works perfectly.
 I was then considering making a funtion to grab two nested switches within a main switch and realized
-that I could just use the function that grabs just one nested switch and use it repeatedly for any more
-of nested functions so it behaves like a method. Saves a lot of time. I just change
+that I could just use the copy_one_nested_switch function that grabs just one nested switch and use it repeatedly for any more
+of nested functions so it behaves like a method. Saves a lot of time. I would then just have to change
 the input parameters which are the line numbers within the main switch for the
 nested switch start line number and endswitch line number.
 
@@ -13,10 +13,17 @@ Looks like nested switch feature will be working within a few days. Most difficu
 have already been conquered. 
 
 Later this week I am adding the macro between. This will be used as:
+This came up because it would make for more elegant Z E N code.
 	
 	if x is between y and z; representing a range. But these would all be numbers.
 	
-From Wolfram language between[x[min,max]]  min<= x <=max
+From Wolfram language between[x[min,max]] 
+
+alpha = int(list_of_switch_range[1]) #min switch line number
+beta  = int(list_of_switch_range[2]) #max endswitch line number
+if counter >= alpha and counter <= beta:    
+#would become
+if counter between int(list_of_switch_range[1] and int(list_of_switch_range[2]:
 
 Note regarding macros when, unless, until:
 I just tested them to prove that it will work. 
