@@ -1,3 +1,10 @@
+Sunday, July 18th, 2021 time 8:48 am
+Adding #include filename to the preprocessor. It expands to import filename
+Made progress with splitting up a switch string with several switches.
+I can detect the number of switches and get their starting line and stop line.
+I can copy the nested switch thus extract it and remove the extraneous indentation so it's flush
+with the left margin with just one tab for a gutter. 
+
 Friday, July 16th, 2021 Gilroy, California 9:10 am Starbucks
 Working on nested switch process integration. It has ten modular pieces and I'm reducing the code currently.
 Putting the code in separate files for testing before integration is completed.
