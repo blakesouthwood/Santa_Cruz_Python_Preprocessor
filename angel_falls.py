@@ -2,13 +2,13 @@ Sunday, July 18th, 2021 time 8:48 am
 	
 Note regarding macros when, unless, until:
 I just tested them to prove that it will work. 
-They are based on Lisp, Ruby, CoffeeScript implimentation of these expressive and powerful word.
+They are based on the Lisp, Ruby, and CoffeeScript implimentations of these expressive and a powerful words.
 
 They will become methods in the background like this in the preprocessor: 
 # so they aren't free floating apperations there is this behind the curtain in the preprocessor.
 
-	when(condition == True)
-	until(condition) #loop
+	when(condition   == True)
+	until(condition  == True) 
 	unless(condition == False)
 	
 so that's how they work in reality in the background.
