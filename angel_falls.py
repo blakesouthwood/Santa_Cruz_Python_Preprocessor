@@ -1,4 +1,32 @@
 Sunday, July 18th, 2021 time 8:48 am
+	
+Note regarding macros when, unless, until:
+I just tested them to prove that it will work. 
+They are based on Lisp, Ruby, CoffeeScript implimentation of these expressive and powerful word.
+
+They will become methods in the background like this in the preprocessor: 
+# so they aren't free floating apperations there is this behind the curtain in the preprocessor.
+
+	when(condition == True)
+	until(condition) #loop
+	unless(condition == False)
+	
+so that's how they work in reality in the background.
+
+Further I am adding C style comments for the preprocessor too.
+/*
+comments here
+like this
+*/
+
+#which gets translated into
+# 
+#
+#
+#
+
+#========================================================
+
 Adding #include filename to the preprocessor. It expands to import filename.
 It must be within a multiline string with var name and be called within a function.
 The point is that this way the code is more natural as a blend with the heritage of C to all programming
