@@ -4,7 +4,7 @@ I was then considering making a function to grab two nested switches within a ma
 that I could just use the copy_one_nested_switch function that grabs just one nested switch and use it repeatedly for any more
 of nested functions so it behaves like a method. Saves a lot of time. I would then just have to change
 the input parameters which are the line numbers within the main switch for the
-nested switch start line number and endswitch line number. Like simply moving the needleon the record.
+nested switch start line number and endswitch line number. Like simply moving the needle on the record.
 
 
 Sunday, July 18th, 2021 time 9:16 am Gilroy, California Starbucks Wifi
