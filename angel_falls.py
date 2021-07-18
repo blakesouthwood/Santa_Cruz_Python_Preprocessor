@@ -11,7 +11,7 @@ I just tested them to prove that it will work.
 They are based on the Lisp, Ruby, and CoffeeScript implimentations of these expressive and powerful words.
 
 They will become methods in the background like this in the preprocessor: 
-# so they aren't free floating apperations there is this behind the curtain in the preprocessor.
+# so they aren't free floating apparitions - this is behind the curtain in the preprocessor.
 
 	when(condition   == True)
 	until(condition  == True) #loop
