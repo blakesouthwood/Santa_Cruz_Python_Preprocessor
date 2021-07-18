@@ -3,7 +3,10 @@ Coding helper methods today to reduce code and aid readability.
 Looks like nested switch feature will be working within a few days. Most difficult aspects 
 have already been conquered. 
 
-Later this week I am adding the macro between.
+Later this week I am adding the macro between. This will be used as:
+	
+	if x is between y and z; representing a range. But these would all be numbers.
+	
 From Wolfram language between[x[min,max]]  min<= x <=max
 
 Note regarding macros when, unless, until:
