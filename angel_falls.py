@@ -1,4 +1,5 @@
 Sunday, July 18th, 2021 time 9:16 am Gilroy, California Starbucks Wifi
+Coding helper methods today to reduce code and aid readability.
 
 Later this week I am adding the macro between.
 
