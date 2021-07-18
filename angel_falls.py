@@ -8,7 +8,7 @@ From Wolfram language between[x[min,max]]  min<= x <=max
 
 Note regarding macros when, unless, until:
 I just tested them to prove that it will work. 
-They are based on the Lisp, Ruby, and CoffeeScript implimentations of these expressive and a powerful words.
+They are based on the Lisp, Ruby, and CoffeeScript implimentations of these expressive and powerful words.
 
 They will become methods in the background like this in the preprocessor: 
 # so they aren't free floating apperations there is this behind the curtain in the preprocessor.
