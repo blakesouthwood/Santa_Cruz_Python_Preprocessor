@@ -1,4 +1,4 @@
-Sunday, July 18th, 2021 time 9:16 am
+Sunday, July 18th, 2021 time 9:16 am Gilroy, California Starbucks Wifi
 	
 Note regarding macros when, unless, until:
 I just tested them to prove that it will work. 
