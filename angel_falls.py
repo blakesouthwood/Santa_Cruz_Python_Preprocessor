@@ -1,5 +1,7 @@
 Sunday, July 18th, 2021 time 9:16 am Gilroy, California Starbucks Wifi
-	
+
+Later this week I am adding the macro between.
+
 Note regarding macros when, unless, until:
 I just tested them to prove that it will work. 
 They are based on the Lisp, Ruby, and CoffeeScript implimentations of these expressive and a powerful words.
