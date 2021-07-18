@@ -2,7 +2,7 @@ Sunday, July 18th, 2021 time 9:16 am Gilroy, California Starbucks Wifi
 Coding helper methods today to reduce code and aid readability.
 
 Later this week I am adding the macro between.
-From Wolfram langauge between[x[min,max]]  min<= x <=max
+From Wolfram language between[x[min,max]]  min<= x <=max
 
 Note regarding macros when, unless, until:
 I just tested them to prove that it will work. 
