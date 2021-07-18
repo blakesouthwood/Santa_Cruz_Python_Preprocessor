@@ -1,5 +1,20 @@
 Sunday, July 18th, 2021 time 8:48 am
-Adding #include filename to the preprocessor. It expands to import filename
+Adding #include filename to the preprocessor. It expands to import filename.
+It must be within a multiline string with var name and be called within a function.
+The point is that this way the code is more natural as a blend with the heritage of C to all programming
+while at the same time not violating any of Python's rules - it just bends them a bit.
+Also it will invariably be encased in an existing triplestring var that is being executed and thus would only take one line.
+The point is to make the code more palatable and "natural" to true programmers in terms of how they think.
+It also plays homage to the heritage and legacy of C.
+
+example:
+avar='''
+#include filename; 
+'''
+exec(avar)
+
+#it would produce: import filename
+
 Made progress with splitting up a switch string with several switches.
 I can detect the number of switches and get their starting line and stop line.
 I can copy the nested switch thus extract it and remove the extraneous indentation so it's flush
