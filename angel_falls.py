@@ -1,7 +1,7 @@
 Sunday, July 18th, 2021 time 9:16 am Gilroy, California Starbucks Wifi
 Coding helper methods today to reduce code and aid readability.
 Looks like nested switch feature will be working within a few days. Most difficult aspects 
-have already been conquered.
+have already been conquered. 
 
 Later this week I am adding the macro between.
 From Wolfram language between[x[min,max]]  min<= x <=max
