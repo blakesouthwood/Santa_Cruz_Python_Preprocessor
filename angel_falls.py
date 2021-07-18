@@ -1,3 +1,12 @@
+Sunday July 18th, 2021 time 11:20 am
+I initially made a function that copied one nested switch and it uses many methods but works perfectly.
+I was then considering making a funtion to grab two nested switches within a main switch and realized
+that I could just use the function that grabs just one nested switch and use it repeatedly for any more
+of nested functions so it behaves like a method. Saves a lot of time. I just change
+the input parameters which are the line numbers within the main switch for the
+nested switch start line number and endswitch line number.
+
+
 Sunday, July 18th, 2021 time 9:16 am Gilroy, California Starbucks Wifi
 Coding helper methods today to reduce code and aid readability.
 Looks like nested switch feature will be working within a few days. Most difficult aspects 
