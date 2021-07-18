@@ -5,7 +5,7 @@ The point is that this way the code is more natural as a blend with the heritage
 while at the same time not violating any of Python's rules - it just bends them a bit.
 Also it will invariably be encased in an existing triplestring var that is being executed and thus would only take one line.
 The point is to make the code more palatable and "natural" to true programmers in terms of how they think.
-It also plays homage to the heritage and legacy of C. And I decided to add it becase I can. I don't like the word "can't".
+It also plays homage to the heritage and legacy of C. And I decided to add it because I can. I don't like the word "can't".
 
 example:
 avar='''
