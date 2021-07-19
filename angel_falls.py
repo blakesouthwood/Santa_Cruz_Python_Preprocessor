@@ -1,3 +1,12 @@
+Monday,July 19th, 2021 10:29am Morgan Hill Starbucks California
+between macro works!!!  9 lines of code.
+
+Working on storing and accessing switch and endswitch pairs stored in a dictionary
+to run thru my function that copies one nested switch. Dictionary uses lists to store pairs
+of switch and endswitch line numbers. I will loop thru the dictionary and call the copy_nested_switch function.
+
+
+
 Sunday July 18th, 2021 time 11:20 am
 I initially made a function that copied one nested switch and it uses many methods to do procedures but works perfectly.
 I was then considering making a function to grab two nested switches within a main switch and realized
