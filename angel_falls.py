@@ -1,6 +1,16 @@
 Monday,July 19th, 2021 10:29am Morgan Hill Starbucks California
 between macro works!!!  9 lines of code.
 
+2pm  In short my dictionary works, and I can loop thru the dictionary and call the function to copy a nested string with x and y
+params which are now passed along and put into switch_location[0] and endswitch_location[0].
+My test used a hard coded dictionary already populated. What was different is I decided to pass the switch and endswitch location
+that are in the dictionary value to the copy nested string method. That made it work.
+
+Made my dictionary and can loop thru it to grab each nested string based on the params of start switch and end switch
+as value into the dictionary and then when I loop thru the dictionary called pears it copies that switch endswitch set
+with the function copy one nested switch. Now I will automate the buiding of the pears list dynamically and 
+for the output of running the loop I will have it fill a list before it's passed onto the convert to python stage which already works.
+
 I have a function that loops thru the input switch string and stores the locations of the switches and endswitches already.
 Working on storing and accessing switch and endswitch pairs (line numbers) stored in a dictionary
 to run thru my function that copies one nested switch. Dictionary uses lists to store pairs
