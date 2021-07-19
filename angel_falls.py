@@ -1,7 +1,8 @@
 Monday,July 19th, 2021 10:29am Morgan Hill Starbucks California
 between macro works!!!  9 lines of code.
 
-Working on storing and accessing switch and endswitch pairs stored in a dictionary
+I have a function that loops thru the input switch string and stores the locations of the switches and endswitches already.
+Working on storing and accessing switch and endswitch pairs (line numbers) stored in a dictionary
 to run thru my function that copies one nested switch. Dictionary uses lists to store pairs
 of switch and endswitch line numbers. I will loop thru the dictionary and call the copy_nested_switch function.
 
