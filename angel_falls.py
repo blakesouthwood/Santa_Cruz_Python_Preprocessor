@@ -213,6 +213,16 @@ def loop_thru_switch_locations():  #looping thru switch_list[10,18]
         coolstring =genius[0]
         le_number += 1
 #######################################
+
+			      
+#this calls the change of swapping the inner switch word into a numbered nested method
+#where to find the inner switches to replace with a nest method
+## calling LOOP THRU SWITCH LOCATIONS (INNER)
+## this calls the main function above to swap the inner switch to a method that is numbered			      
+loop_thru_switch_locations() #inside of the main switch string and replace with a nested method
+#this calls the function to add the inner nested methods where the inner switches currently reside
+			      
+			      
 			      
 This was the initial starting string:
 			      coolstring='''
