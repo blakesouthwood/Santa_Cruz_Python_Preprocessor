@@ -7,7 +7,8 @@ Some code. What this does is replace the first line of each nested switch which 
 and replaces it with a numbered nested method in a sequence. At this point the inner switch
 has already been copied and stored in a list and the body of each inner switch in this current 
 string has been deleted. This is the last stage before running the code thru the parser using
-bypass205() which can do multiple parser and codegens of several strings and concat them to build the nested switch.
+bypass205() which can do multiple parser and codegens of several strings and concat them to build 
+the combined nested switch on the fly and run it with exec().
 	
 	So the starting point looks like this:
 	switch(exp) {  
