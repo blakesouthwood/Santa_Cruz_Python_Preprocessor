@@ -1,3 +1,9 @@
+Wednesday, July 21st, 2021 Gilroy Starbucks 5pm
+Massive progress.
+The nested cases are copied and put into a list and the main switch string too just now.
+I have to fix the indentation for the main string right now. And I have a few more lose ends
+but good significant progress. 
+
 Monday,July 19th, 2021 10:29am Morgan Hill Starbucks California
 between macro works!!!  9 lines of code.
 
