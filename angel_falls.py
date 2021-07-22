@@ -1,8 +1,250 @@
 Thursday, July 22nd, 2021 Gilroy
 Looks like nested switches will be working seamlessly this weekend.
 Good progress.
+9:49 am
+	
+Some code. What this does is replace the first line of each nested switch which has switch(exp){
+and replaces it with a numbered nested method in a sequence. At this point the inner switch
+has already been copied and stored in a list and the body of the inner switch in this current 
+string has been deleted. This is the last stage before runing the code thru the parser using
+bypass205() which can do multiple parser and codegens of several strings and concat them to build the nested switch.
+	
+	So the starting point looks like this:
+	switch(exp) {  
+		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			switch(exp){   #here       
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			switch(exp){     #here     
+			fallthru
+			
+		
+		case 11 to 12:
+			print('this is so frustrating')
+			print('== window won't go back up===')
+			break
+			
+		
+		case 13 to 15:
+			print('at starbucks')
+			print('== where is my mocah?===')
+			switch(exp){     #here     
+			fallthru
 
+		default:
+			print('the end')
+}
 
+The output result looks like this:
+			      switch(exp) {  
+		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			nested_switch_1(n)
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			nested_switch_2(n)
+			fallthru
+			
+		
+		case 11 to 12:
+			print('this is so frustrating')
+			print('== window won't go back up===')
+			break
+			
+		
+		case 13 to 15:
+			print('at starbucks')
+			print('== where is my mocah?===')
+			nested_switch_3(n)
+			fallthru
+
+		default:
+			print('the end')
+}
+The code looks like this that creates the behavior.
+### this started working on july 9th, 2021 Friday. I forgot that it was friday.
+			      
+			      ##########################################
+#### get switch and endswitch locations 
+##########################################
+def get_switch_and_endswitch_locations(z): #from string z input parameter
+	#this empties switch and endswitch lists
+	empty_switch_and_endswitch_list_locations()
+	print("get_switch_and_endswitch_locations(z) called ....")
+	print("====== THIS IS THE ONE THAT I NEED ======")	#this catalogues the switch and endswitch locations for an entire input string
+	print(" GET SWITCH AND ENDSWITCH LOCATIONS ADDED TO LIST")
+	print(" ========  MICKEY MOUSE HOUSE  =========")
+	counter=0 #it was 0 starting counting from 1
+	for line in z.splitlines(): #determine if "endswitch" is in line
+		#this should skip lines between 10 thru 20
+		#we know that the lines that the inner switch resides in is between 10 and 20 
+		#skip over 10 thru 20
+		#print(line) #this should be revealing
+		#if line.isspace():
+		
+		if "switch" in line and "end" not in line:
+			print("switch found",counter)
+			
+			switch_location.append(counter)
+			counter += 1
+			
+			
+		elif "endswitch" in line:
+			print("endswitch found",counter)
+			
+			endswitch_location.append(counter)
+			counter += 1
+			
+			
+		else:
+			counter += 1
+			
+			
+			
+	del switch_location[0]	#empties it what am I doing here??? july 7th deleting first switch
+	print(z)                #now I remember that is the first switch which doesn't matter
+	print("I deleted the first switch since I'm not bothering with it")
+	print("switchlocations=",switch_location)
+	print("the length of switch list =",len(switch_location))
+	answer = len(switch_location)
+	answer = answer -1
+	print("this is how many nested switches are here")
+	print("now we should have this many nested switches to contend with",answer)
+	print("and the answer is above this line .....")
+	#this prevents a bug if I don't have endswitch in the string
+	if len(endswitch_location) > 0: #this only proceeds if there is at least one endswitch
+		print("endswitch locations =",endswitch_location)
+		print("out of curiosity print the number of endswitches", len(endswitch_location))
+	else:
+		pass
+		
+	print("this might be simpler to test and use actually======/////???????//////===")
+	print("======================================")
+	print(" ===  THESE ARE THE SWITCH AND ENDSWITCH LOCATIONS === ")
+	print("I need to delete teh first swithc location")
+	
+	#del switch_location[0] #ALREADY DELETING FIRST SWITCH ABOVE BECAUSE IT'S NOT NEEDED NOT NESTED
+	print('switch_location=',switch_location)
+	print('endswitch_location=',endswitch_location)
+	# I need to feed these into the pear dictionary now down below
+	#I will feed the pears list with a loop thru the switch_location list
+	########## WORKING ON THIS TODAY MONDAY TO MAKE SOME SERIOUS PROGRESS 
+	##########  MONDAY JULY 19TH APPROACHING 12 NOON 
+	
+	#make pairs here
+	#might have to delete teh first switch which throws everything off
+	
+	
+			      
+			      
+genius=[]
+genius.append(0)
+# the number series will always start from 1 and then increase in number
+number_series=[]
+number_series.append(0)
+switch_list=[]
+##########################################
+##  put_switch_locations_into_switch_list()  #this is making the nested_switch_ number  
+##########################################
+def put_switch_locations_into_switch_list():
+    get_switch_and_endswitch_locations(coolstring)
+    for item in switch_location:
+        switch_list.append(int(item))  #was -1 on here #off by one in the string for some reason
+    print(" ");print("switch_list=")
+    print(switch_list)
+
+#######################################
+##  swap_switch_to_nested_method()  #this is making the nested_switch_ number  
+#######################################
+def swap_switch_to_nested_method(stringname,linenumber,series_num):
+	print(" THIS IS BEING CALLED TO DO THE MAGICswap switch to nested method called....")
+	str_list = stringname.split('\n')
+	print('changing line',linenumber)
+	#series_num = number_series[0] 
+	str_list[linenumber] = "\t\t\tnested_switch_" + str(series_num) + "(n)"
+	stringname = "\n".join(str_list)
+	genius[0]=stringname   #strings are immutable but lists are mutable(changeable)
+
+######################################	
+
+#this is the control center main that runs this operation
+#this numbers the nested switch methods top down
+genius[0]=coolstring  #assignment here 
+def loop_thru_switch_locations():  #looping thru  switch_list[10,18]
+    put_switch_locations_into_switch_list()
+    print(genius[0])
+    print("switch_list=",switch_list)
+    le_number=1
+    for item in switch_list:
+        print("item in switch_list",item)
+        #string,switch,line number
+        swap_switch_to_nested_method(genius[0],item,le_number)
+        coolstring =genius[0]
+        le_number += 1
+#######################################
+			      
+This was the initial starting string:
+			      coolstring='''
+switch(exp) {  
+		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			switch(exp){   #here       
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			switch(exp){     #here     
+			fallthru
+			
+		
+		case 11 to 12:
+			print('this is so frustrating')
+			print('== window won't go back up===')
+			break
+			
+		
+		case 13 to 15:
+			print('at starbucks')
+			print('== where is my mocah?===')
+			switch(exp){     #here     
+			fallthru
+
+		default:
+			print('the end')
+}
+'''
 
 Wednesday, July 21st, 2021 Gilroy Starbucks 5pm
 Massive progress.
