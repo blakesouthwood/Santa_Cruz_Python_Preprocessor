@@ -206,10 +206,10 @@ def loop_thru_switch_locations():  #looping thru  switch_list[10,18]
     print(genius[0])
     print("switch_list=",switch_list)
     le_number=1
-    for item in switch_list:
-        print("item in switch_list",item)
+    for item in switch_list:                                    #<<== this has the line numbers in the string of the word "switch(exp){"
+        print("item in switch_list",item)                       #<<== this grabs the current item (number)
         #string,switch,line number
-        swap_switch_to_nested_method(genius[0],item,le_number)
+        swap_switch_to_nested_method(genius[0],item,le_number)  #<<== item is fed into this as a parameter
         coolstring =genius[0]
         le_number += 1
 #######################################
