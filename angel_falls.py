@@ -199,7 +199,7 @@ def swap_switch_to_nested_method(stringname,linenumber,series_num):
 ######################################	
 
 #this is the control center main that runs this operation
-#this numbers the nested switch methods top down
+#this numbers the nested switch methods top down starting from 1
 genius[0]=coolstring  #assignment here 
 def loop_thru_switch_locations():  #looping thru switch_list[10,18]
     put_switch_locations_into_switch_list()
