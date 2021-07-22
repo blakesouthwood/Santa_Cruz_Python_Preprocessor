@@ -3,6 +3,12 @@ Massive progress.
 The nested cases are copied and put into a list and the main switch string too just now.
 I have to fix the indentation for the main string right now. And I have a few more lose ends
 but good significant progress.
+Next I will turn on the main switch cleaner that replaces the nested switches with a method name.
+That code works and I just need to integrate it.
+
+Creating the pair list like this:  [10,20] and adding it to the dictionary was a pain but now works. 
+The big leap forward was looping thru the keys in the dictionary and calling the copy_one_nested_switch_string()
+Progress accelerated after that finally worked. 
 
 Made many methods to automate everything. Adding records to dictionary. Building records on the fly. 
 I am now looping thru the dictionary with the switch case start and stop as params and then calling
