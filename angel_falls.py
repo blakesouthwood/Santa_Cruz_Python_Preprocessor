@@ -48,7 +48,7 @@ bypass205() which can do multiple parser and codegens of several strings and con
 }
 
 The output result looks like this:
-			      switch(exp) {  
+	switch(exp) {  
 		case 1 thru 3:
 			print("where's the dog house!")
 			print('first prize')
