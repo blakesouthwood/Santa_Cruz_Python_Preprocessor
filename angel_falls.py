@@ -2,7 +2,12 @@ Wednesday, July 21st, 2021 Gilroy Starbucks 5pm
 Massive progress.
 The nested cases are copied and put into a list and the main switch string too just now.
 I have to fix the indentation for the main string right now. And I have a few more lose ends
-but good significant progress. 
+but good significant progress.
+
+Made many methods to automate everything. Adding records to dictionary. Building records on the fly. 
+I am now looping thru the dictionary with the switch case start and stop as params and then calling
+the copy nested string method and creating the string for a nested switch which then put into a list of the switch strings.
+Just figured out how to automatically add the main switch params to the dictionary.
 
 Monday,July 19th, 2021 10:29am Morgan Hill Starbucks California
 between macro works!!!  9 lines of code.
