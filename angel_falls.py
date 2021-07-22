@@ -175,7 +175,7 @@ number_series=[]
 number_series.append(0)
 switch_list=[]
 ##########################################
-##  put_switch_locations_into_switch_list()  #this is making the nested_switch_ number  
+##  put_switch_locations_into_switch_list()  #put the line nubmers of all switch locations into switch_list  
 ##########################################
 def put_switch_locations_into_switch_list():
     get_switch_and_endswitch_locations(coolstring)
@@ -201,7 +201,7 @@ def swap_switch_to_nested_method(stringname,linenumber,series_num):
 #this is the control center main that runs this operation
 #this numbers the nested switch methods top down
 genius[0]=coolstring  #assignment here 
-def loop_thru_switch_locations():  #looping thru  switch_list[10,18]
+def loop_thru_switch_locations():  #looping thru switch_list[10,18]
     put_switch_locations_into_switch_list()
     print(genius[0])
     print("switch_list=",switch_list)
