@@ -87,7 +87,15 @@ The output result looks like this:
 The code looks like this that creates the behavior.
 ### this started working on july 9th, 2021 Friday. I forgot that it was friday.
 			      
-			      ##########################################
+endswitch_location=[]
+switch_location=[]
+
+def empty_switch_and_endswitch_list_locations():
+    print("called empty_switch_and_endswitch_list_locations()")
+    del endswitch_location[:]
+    del switch_location[:]
+			      
+##########################################
 #### get switch and endswitch locations 
 ##########################################
 def get_switch_and_endswitch_locations(z): #from string z input parameter
