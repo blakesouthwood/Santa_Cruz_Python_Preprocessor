@@ -57,7 +57,7 @@ The output result looks like this:
 			
 		case 4 to 7:
 			print('kangaroo hop hop!')
-			nested_switch_1(n)
+			nested_switch_1(n)                 #<<=== this is now a method
 			print('taught me how to write code')
 			fallthru
 			
@@ -65,7 +65,7 @@ The output result looks like this:
 		case 8 to 10:
 			print('mocha blast')
 			print('== 31 flavors===')
-			nested_switch_2(n)
+			nested_switch_2(n)                  #<<=== this is now a method call
 			fallthru
 			
 		
@@ -78,7 +78,7 @@ The output result looks like this:
 		case 13 to 15:
 			print('at starbucks')
 			print('== where is my mocah?===')
-			nested_switch_3(n)
+			nested_switch_3(n)               #<<=== this is now a method call
 			fallthru
 
 		default:
