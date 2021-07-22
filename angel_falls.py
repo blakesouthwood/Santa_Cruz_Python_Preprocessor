@@ -1,3 +1,9 @@
+Thursday, July 22nd, 2021 Gilroy
+Looks like nested switches will be working seamlessly this weekend.
+Good progress.
+
+
+
 Wednesday, July 21st, 2021 Gilroy Starbucks 5pm
 Massive progress.
 The nested cases are copied and put into a list and the main switch string too just now.
