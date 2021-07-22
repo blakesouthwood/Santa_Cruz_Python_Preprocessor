@@ -225,45 +225,7 @@ loop_thru_switch_locations() #inside of the main switch string and replace with 
 			      
 			      
 			      
-This was the initial starting string:
-			      coolstring='''
-switch(exp) {  
-		case 1 thru 3:
-			print("where's the dog house!")
-			print('first prize')
-			print('you block head Charlie Brown')
-			fallthru
-			
-		case 4 to 7:
-			print('kangaroo hop hop!')
-			switch(exp){   #here       
-			print('taught me how to write code')
-			fallthru
-			
-		 
-		case 8 to 10:
-			print('mocha blast')
-			print('== 31 flavors===')
-			switch(exp){     #here     
-			fallthru
-			
-		
-		case 11 to 12:
-			print('this is so frustrating')
-			print('== window won't go back up===')
-			break
-			
-		
-		case 13 to 15:
-			print('at starbucks')
-			print('== where is my mocah?===')
-			switch(exp){     #here     
-			fallthru
 
-		default:
-			print('the end')
-}
-'''
 
 Wednesday, July 21st, 2021 Gilroy Starbucks 5pm
 Massive progress.
