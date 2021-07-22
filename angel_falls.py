@@ -6,7 +6,7 @@ Good progress.
 Some code. What this does is replace the first line of each nested switch which has switch(exp){
 and replaces it with a numbered nested method in a sequence. At this point the inner switch
 has already been copied and stored in a list and the body of the inner switch in this current 
-string has been deleted. This is the last stage before runing the code thru the parser using
+string has been deleted. This is the last stage before running the code thru the parser using
 bypass205() which can do multiple parser and codegens of several strings and concat them to build the nested switch.
 	
 	So the starting point looks like this:
