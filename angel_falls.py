@@ -1,3 +1,10 @@
+Friday, July 23rd, 2021 Gilroy Starbucks Wifi
+I decided to make it possible for a user to create custom macros and will
+have a file for just macros all in one spot.
+
+Today working on the main switch string formatting before it is fed to the parser and codegen.
+
+
 Thursday, July 22nd, 2021 Gilroy
 Looks like nested switches will be working seamlessly this weekend.
 Good progress.
