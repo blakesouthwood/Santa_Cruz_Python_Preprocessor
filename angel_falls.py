@@ -5,6 +5,8 @@ https://www.youtube.com/watch?v=oNup6h7Y--k
 Saturday, July 24th, 2021  12 noon Morgan Hill, California Starbucks WiFi
 
 Putting chunks of code into methods to clean up the code and reduce the amount of code involved.
+Four hours of refining the code to make it beautiful. Beautiful counts. Will add the code here tomorrow.
+
 Made methods for taking out the nested switches from the main switch (after copying them)
 Made methods to swap out the remaining switch word residue of each nested switch and replace it with
 a number nested_switch method. Gotta get to work so will add more details later.
