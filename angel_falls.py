@@ -1,4 +1,4 @@
-The rush is profound. It works!!!!
+The rush is profound. It works!!!! Nested switches in python works. And everyone said it couldn't be done.
 Gigi D´Agostino i´ll fly whit you Defectnoise trance mix 2016
 https://www.youtube.com/watch?v=oNup6h7Y--k
 
