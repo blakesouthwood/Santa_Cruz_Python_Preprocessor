@@ -16,6 +16,8 @@ before sending it thru the parser and code gen are now working.
 And, this is good, I already finished the methods for the transformation of the python code
 strings to put them each into methods and indent them properly and concat them together 
 and then like a class the methods are all within a docstring with a var and called.
+This way there is no interference with other switches. They are each completely isolated
+and only work together within the string that they all temporarily reside in and then they vanish.
 
 
 Friday, July 23rd, 2021 Gilroy Starbucks Wifi
