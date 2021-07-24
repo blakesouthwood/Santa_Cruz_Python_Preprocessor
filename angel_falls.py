@@ -1,3 +1,21 @@
+The rush is profound. It works!!!!
+Gigi D´Agostino i´ll fly whit you Defectnoise trance mix 2016
+https://www.youtube.com/watch?v=oNup6h7Y--k
+
+Saturday, July 24th, 2021  12 noon Morgan Hill, California Starbucks WiFi
+
+Putting chunks of code into methods to clean up the code and reduce the amount of code involved.
+Made methods for taking out the nested switches from the main switch (after copying them)
+Made methods to swap out the remaining switch word residue of each nested switch and replace it with
+a number nested_switch method. Gotta get to work so will add more details later.
+
+So the transformation of grabbing the switch string and converting it into separate strings
+before sending it thru the parser and code gen are now working.
+And, this is good, I already finished the methods for the transformation of the python code
+strings to put them each into methods and indent them properly and concat them together 
+and then like a class the methods are all within a docstring with a var and called.
+
+
 Friday, July 23rd, 2021 Gilroy Starbucks Wifi
 I decided to make it possible for a user to create custom macros and will
 have a file for just macros all in one spot.
