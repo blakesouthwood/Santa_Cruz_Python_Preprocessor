@@ -21,6 +21,66 @@ This way there is no interference with other switches. They are each completely 
 and only work together within the string that they all temporarily reside in and then they vanish.
 
 
+This is the bypass205() in endswitch() that manages the building of the nested switches. It's sweet.
+# what you don't see yet is the crucial if (which governs if bypass205() is called
+# which is dependent upon if more than one switch inside of input switch string
+
+if switchcount in inputstring> 1:
+	bypass205()
+#endif
+This will be added last. I decided to build the bypass205 sepaately from the code base to get it working first	
+
+
+
+####============================
+####      parser_guts()           #dreamed up on July 10th, 2021 to see if it would work
+####============================
+def parser_guts(y):
+	print("parser_guts called =======")
+	check_if_uppercase_constant_cases(y)  #if UPPCASE this senses it and converts to string
+	
+	if baseline[0] != "nada": #means it converted to uppercase
+		y = baseline[0]
+			#else:   #added this else  and pass on June 16th
+			#	 pass #this puts the input string from baseline[0] into y
+		#####################
+		#this checks if first case is a number like case 2: returning True if numbers 
+	flow_valve_input1(y)   #puts True or False into valve[0] added April 2nd, 2021
+	#####################
+	print("if number in first case",valve[0])
+		# the key is macro expansion is only called if numbers are True
+	if valve[0] == True:    #meaning numbers like case 12:
+		macro_expansion(y); #checks if macros and expands them and converts numbs to strings
+		y=None; del y; y = cray[0];
+		#end if
+		#####################################
+	flush_lists() 
+	parser_mode_1(y) 	
+	
+	
+##==============================	
+##   bypass205(y)   #this is homage to the 205 bypass I took all the time to bypass the traffic in Portland Oregon
+##=================================
+def bypass205(y): #this runs the input strings thru parser and code gen 
+	print("==== bypass205 test =======") #and puts them into stanford list
+	del stanford[:] #this empties the stanford list
+	#loop thru quail and call everything that I normally do for an end switch
+	#######################################
+	# THIS IS LOOPING THRU THE QUAIL LIST which was filled above and before bypass205()
+	#######################################
+	for item in quail: # 0, 1, 2 #so it should call the parser and code gen three times
+		y = item #this puts the contents of each string in quail into y 
+		
+		#everything below here is the same in parser code
+		switchcasetester='';switchcasetester=None;
+		del switchcasetester;switchcasetester='';
+		mytrace("endswitch() bypass205  in switch_cat called")
+		show_input_switch_string() #flag for testing this shows the input string
+		###############
+		parser_guts(y)
+		
+
+
 Friday, July 23rd, 2021 Gilroy Starbucks Wifi
 I decided to make it possible for a user to create custom macros and will
 have a file for just macros all in one spot.
