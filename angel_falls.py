@@ -28,6 +28,16 @@ This is the bypass205() in endswitch() that manages the building of the nested s
 if switchcount in inputstring> 1:
 	bypass205()
 #endif
+
+#also what yuou don't see is that at the bottom of the CODEGEN
+SO THE CODE IS SAVED AND NOT RUN IMMEDIATELY WHEN A NESTED SWITCH IS TRUE
+there is a mighty if if nested_switch[0] == True:
+#then it doesn't exec(string)
+but instead add the stringto the stanford list
+which is later combined and then executed AFTER each string is turned into a method
+and reversed so the main switch is at the bottom
+	
+	
 This will be added last. I decided to build the bypass205 sepaately from the code base to get it working first	
 
 
