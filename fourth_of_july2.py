@@ -124,7 +124,7 @@ switch(exp) {
 			
 		case 4 to 7:
 			print('kangaroo hop hop!')
-			switch(exp){          
+			switch(exp){   #here       
 			print('taught me how to write code')
 			fallthru
 			
@@ -132,7 +132,7 @@ switch(exp) {
 		case 8 to 10:
 			print('mocha blast')
 			print('== 31 flavors===')
-			switch(exp){          
+			switch(exp){     #here     
 			fallthru
 			
 		
@@ -145,7 +145,7 @@ switch(exp) {
 		case 13 to 15:
 			print('at starbucks')
 			print('== where is my mocah?===')
-			switch(exp){          
+			switch(exp){     #here     
 			fallthru
 
 		default:
@@ -154,11 +154,11 @@ switch(exp) {
 '''
 
 #working on this July 15th, 2021 10:16am Starbucks
-get_switch_and_endswitch_locations(coolstring)
+#get_switch_and_endswitch_locations(coolstring)
 #output to these lists
 #switch_location #skips the first main switch not included
 #endswitch_location (if any)
-
+#get_switch_and_endswitch_locations(coolstring)
 print("done with test to get the nested switch locations within the big switch")
 
 ### this started working on july 9th, 2021 Friday. I forgot that it was friday.
@@ -167,22 +167,49 @@ genius.append(0)
 # the number series will always start from 1 and then increase in number
 number_series=[]
 number_series.append(0)
-#I made the method to change the switch for the nested switch into the method numbered
+switch_list=[]
+##########################################
+##  put_switch_locations_into_switch_list()  #this is making the nested_switch_ number  
+##########################################
+def put_switch_locations_into_switch_list():
+    get_switch_and_endswitch_locations(coolstring)
+    for item in switch_location:
+        switch_list.append(int(item))  #was -1 on here #off by one in the string for some reason
+    print(" ");print("switch_list=")
+    print(switch_list)
+
 #######################################
 ##  swap_switch_to_nested_method()  #this is making the nested_switch_ number  
 #######################################
 def swap_switch_to_nested_method(stringname,linenumber,series_num):
 	print(" THIS IS BEING CALLED TO DO THE MAGICswap switch to nested method called....")
-	#print(coolstring)
 	str_list = stringname.split('\n')
 	print('changing line',linenumber)
 	#series_num = number_series[0] 
 	str_list[linenumber] = "\t\t\tnested_switch_" + str(series_num) + "(n)"
 	stringname = "\n".join(str_list)
 	genius[0]=stringname   #strings are immutable but lists are mutable(changeable)
-	
-	
-	
+
+######################################	
+
+#this is the control center main that runs this operation
+#this numbers the nested switch methods top down
+genius[0]=coolstring  #assignment here 
+def loop_thru_switch_locations():  #looping thru  switch_list[10,18]
+    put_switch_locations_into_switch_list()
+    print(genius[0])
+    print("switch_list=",switch_list)
+    le_number=1
+    for item in switch_list:
+        print("item in switch_list",item)
+        #string,switch,line number
+        swap_switch_to_nested_method(genius[0],item,le_number)
+        coolstring =genius[0]
+        le_number += 1
+#######################################
+
+
+
 	#string_change =coolstring
 #stringname=coolstring
 print("now change the inner switches to the nested method numbered")
@@ -206,7 +233,7 @@ print("done with this test of the new method")
 #now I need to find the code that makes the correct nested switch list locations
 
 #they are being harded coded in here I should be getting them from above
-switch_list=[]
+
 #switch_list.append(11) #was 10,18,31
 #switch_list.append(19)
 #switch_list.append(32)## added a third switch to test it more thoroughly 
@@ -215,44 +242,22 @@ switch_list=[]
 print("here put switch_locations into switch_list")
 ## this is new added Thursday july 15th 2021 prevents off by one error
 ## it takes input of nested switch line number locations from switch_location
-## and puts them into switch_list (but again not the first main switch)
-for item in switch_location:
-    switch_list.append(int(item) -1) #off by one in the string for some reason
-print(" ")
-print("switch_list=")
-print(switch_list)
-   
-#Testing this out now
-#this is the source of the input string to modify inside of genius[0]
+## and puts them into switch_list (but again not the first main switch)   
 
+#this one just commented out
+#put_switch_locations_into_switch_list()
+print("about to test it with the loop thru switch method ====")
+print("today is july 22nd, 2021 thursday refining the algorithms and methods")
+## calling LOOP THRU SWITCH LOCATIONS (INNER)
+loop_thru_switch_locations() #where to find the inner switches to replace with a nest method
 
-#this numbers the nested switch methods top down
-genius[0]=coolstring  #assignment here 
-def loop_thru_switch_locations():  #looping thru  switch_list[10,18]
-    print("==loop thru switch locations()==")
-    print("coolstring  starting")
-    print(genius[0])
-    print("========loop_thru_switch_locations called====000000000")
-    print("switch_list=",switch_list)
-    le_number=1
-    for item in switch_list:
-        print("item in switch_list",item)
-        #here string,switch,line number
-        #this calls ==>>> swap_switch_to_nested_method()
-        swap_switch_to_nested_method(genius[0],item,le_number)
-        coolstring =genius[0]
-        le_number += 1
-    #it can't be this simple can it?
-    
-    
-loop_thru_switch_locations()
 print("did it work=============MMMMMMMMMM----======MMMMMMMMM==========")
 print("we called loop_thru_switch_locations() which calls swap_switch_to_nested_method()")
 print("we should have successfully swapped out the inner switches with nested_method numbered")
 print("today is july 15th, 2021 at Starbucks connecting the functions")
 print(genius[0])    	
 print("olympic gold medal to make it this far.")
-
+print("==IT SHOULD BE ABOVE THIS LINE WITH THE NESTED NUMBERS METHODS INNER SWITCHES==")
 print("now I need to work on copying the nested strings to a list")
 print("and then taking out the nested strings from the main switch string except for switch")
     
@@ -275,6 +280,9 @@ print("and then taking out the nested strings from the main switch string except
 #what if I go thru a list to make teh changes
 #=====================================================
 #z = 'test4'
+
+#choose to 'Update Now'
+# when the newest “MacOS Mojave 10.14. 6 Supplemental Update”
 
 #say we add it to first case 2nd line after case just bump down whatever
 #is on that line. copy that line just for saftey and add it to the tail
@@ -1035,6 +1043,17 @@ print("========= Fudge Happy Potter Hogwarts ========")
 #convertList = ' '.join(map(str,list1)) 
 
 
+
+
+
+
+
+
+
+
+
+
+
 ###################################
 ## copy one line inside of case (x)
 ####################################
@@ -1060,6 +1079,9 @@ copy_one_line_inside_case(2)
 copy_one_line_inside_case(3)
 copy_one_line_inside_case(4)
 copy_one_line_inside_case(5)
+
+
+
 
 
 ################################################
@@ -1483,6 +1505,9 @@ print("===== end of good working code ==============")
  #              
        #this is the range I want to print
 
+
+
+
 print("july 3rd test 2021 6:53 pm")
 print("testing nested switch string BETA TESTING ====0")
 #find_nested_switch_game ='''
@@ -1522,6 +1547,53 @@ swo ='''
 }
 '''	
 
+
+#this one has two nested switches that I will try next. 
+swo_next ='''
+	switch(exp) {  
+		case 1 thru 3:
+			print("where\'s the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			switch(exp){          
+				case 'blable':
+					print("do something")
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== autumn nest===')
+			switch(exp){   #this is new 28       
+				case 'autumn':
+					print("falling leaves")
+					print("sunlight from the sky")
+					fallthru
+				case 'winter':
+					print("snow time")
+					break
+				default:
+					print("so much creativity")
+			endswitch   #38
+			fallthru
+		
+		default:
+			print('the end')
+}
+'''	
 # I seem to recall a bug usin
 
 #this is testing sensing a multiline switch with more than one switch
@@ -1531,6 +1603,9 @@ swo ='''
 nested_switch=[]
 nested_switch.append(0)
 nested_switch[0]= False # by default
+################################################################################
+#determines if a string input is a nested switch with at least one inner switch
+################################################################################
 
 
 def jumanji(y):
@@ -1579,6 +1654,7 @@ def jumanji(y):
 	
 	#this sets the flag in nested_switch[0] if at least one nested switch
 	#===============================================
+	#if one or more switch and one or more endswitches
 	if switchcounter > 1 and endswitchcounter >=1:
 		nested_switch[0] = True
 	else:
@@ -1637,7 +1713,7 @@ samplestring ='''
 					break
 				default:
 					print("we are done here")
-			endswitch 
+			endswitch  #notice this for it is key 
 			print('taught me how to write code')
 			fallthru
 			
@@ -1663,6 +1739,61 @@ samplestring ='''
 }
 '''	
 
+#######################
+#### testing ######
+### samplestring with switches taken out ####
+#### and nested methods replacing it ########
+######## july 22 ###testing #####
+##### this represents the accurate main switch with proper indentation
+samplestring_main ='''
+	switch(exp) {  
+		case 1 thru 3:
+			print("where\'s the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			nested_switch_1(n)
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== autumn nest===')
+			nested_switch_2(n)   #this is new 28       
+			fallthru
+		
+		default:
+			print('the end')
+}
+'''	
+
+
+#nested_switch_2(n)
+#july 21st 2021 get teh number of lines in the string
+# count endsswitches to get number of nested switches
+# do the main switch last which erases(skips) the nested switches
+#here I count the number of lines in the string to get last line 
+# the tricky part was figuring out when to grab the main switch but I couuld actually
+#do it first it doesn't matterand make a copy of it and modify the copy
+
+
+#so I would add a third record to the pears dictionary 1, 44
+######=== total lines in the string for the main switch =========
+#using the whole string I know that the nested switches will be on the first line
+thecounter=0
+for line in samplestring.splitlines():
+    print(line)
+    thecounter += 1
+    
+print("the total lines =",thecounter)
+print("================ wile e coyote =======")
+
+
+
 
 
 tuna ='''
@@ -1677,7 +1808,7 @@ tuna ='''
 		case 4 to 7:
 			print('kangaroo hop hop!')
 			exp = 'blable'
-			switch(exp){          
+			switch(exp){  #this one has input here         
 				case 'blable':
 					print("do something")
 					print("yep")
@@ -1695,7 +1826,7 @@ tuna ='''
 		case 8 to 10:
 			print('mocha blast')
 			print('== 31 flavors===')
-			exp = 'fish'
+			exp = 'fish' #and we have input here too. 
 			switch(exp){          
 				case 'fish':
 					print("do something")
@@ -1786,6 +1917,8 @@ theforce=[]
 
 print("====== JEDI TEST ========")
 jedi = "[" + str(sosmart[0]) + "," + str(sosmart[1]) + "]" 
+#this is building a pair [4, 8]   #an example 
+
 #print("celebration time it almost works completely fireworks")
 print('jedi=',jedi)
 theforce.append(jedi)
@@ -1800,7 +1933,7 @@ jedi = "[" + str(sosmart[0]) + "," + str(sosmart[1]) + "]"
 #print("celebration time it almost works completely fireworks")
 print('jedi=',jedi)
 theforce.append(jedi)
-print("the force shows",theforce)
+print("the =========== force here ========force shows",theforce)
 print("theforce[0]=",theforce[0])
 print("theforce[1]=",theforce[1])
 # so this is building the pears lists of switch endswitch so then I would add the pearslist
@@ -1891,7 +2024,7 @@ print("wild wild west test...")
 
 '''
 #28,38 for second string
-# I am skipping using this now 
+# I am skipping using this now NOT using this method 
 def get_one_nested_switch_start_and_finish():  # this gets the input from switch_location[0]
     print("get_one_nested_switch_start_and_finish()")
 # and from  endswitch_location[0]
@@ -1916,7 +2049,7 @@ def get_one_nested_switch_start_and_finish():  # this gets the input from switch
 ##########################################
 the_nest_string= fridge[0] 
 #this is what has the string_with_nested_switches in it
-
+# THIS TAKES TABS OUT OF THE ENTIRE NESTED SWITCH 
 def take_out_x_tabs_from_front_of_line(n,the_nest_string):
 	print("take out ",n," tabs from front of line - of string")
 	print("take_out_x_tabs_from_front_of_line(n)") #make this is into a method 
@@ -2113,6 +2246,8 @@ def do_this_baby():
     peartree['1'] = [10,20]
     peartree['2'] = [28,38]
 
+
+
 def get_size_of_dictionary(zoo):  #this is so I know what next record should be
     print("get size of dictionary zoo")
 #but I just thought I can have a running total in a list too
@@ -2131,7 +2266,18 @@ def get_size_of_dictionary(zoo):  #this is so I know what next record should be
         print(len(peartree))
     print(result)
     return result
+######################################
+
     
+
+#given name peartree of dictionary
+def get_value_of_key(x):
+    car=eval("peartree.get('" + str(x) +"')")
+    print(car)
+    return car
+
+
+
     
 get_size_of_dictionary(peartree)
     
@@ -2165,7 +2311,7 @@ def dynamically_add_one_record_to_dictionary():
     num = 5
     numb1 = 200
     numb2 = 280
-    firsthalf ="peartree['" + str(num) + "'] ="
+    firsthalf  = "peartree['" + str(num) + "'] ="
     secondhalf = "[" + str(numb1) + "," + str(numb2) + "]"
     print('look here very carefully....')
     print('secondhalf=',secondhalf)
@@ -2173,6 +2319,9 @@ def dynamically_add_one_record_to_dictionary():
     print("look at below this line does it look right GROUCH")
     print(together)
     exec(together)
+    
+    
+    
     get_size_of_dictionary(peartree)
     #print(peartree['5'])
     print("get value of 5",peartree.get('5'))
@@ -2186,7 +2335,18 @@ def dynamically_add_one_record_to_dictionary():
         
     for x in peartree.values():
         print(x)
-#given name peartree
+        
+    print("chocolate somores. ")
+    sweet =get_value_of_key(1)
+    print("sweet key 1 =",sweet)
+    
+    get_value_of_key(2)
+    get_value_of_key(3)
+    get_value_of_key(4)   
+    get_value_of_key(5)
+   
+
+
 
 #making peartree['1'] is not tough
 
@@ -2379,7 +2539,22 @@ print("down at pears tree here hard coded ")
 pears =	{  #for pear tree in backyard (2 of them)
   "1": [10,20], # I can make these now 
   "2": [28,38],
+  "3": [1,44]
 }
+
+#see if this works
+#=================================================
+
+#####
+# I need to make a method to add main switch to string list
+def add_main_switch_params_to_dictionary():
+    print("how it will work")
+    #methods count end switches
+    #Take answer add 1
+    #loop thru input switch string get total number of lines
+    #"3" : [1,44],  #is the result
+    #call method to add it to dictionary
+
 
 #pears['3'] = [4,7] #example
 # 
@@ -2450,6 +2625,8 @@ print(pears)
 ###################################################
 ## #this means I need to feed in the one switch location and one endswitch location
 ## that need to have been already figured out
+nest_string=[]
+
 
 ##  copy_one_nested_switch_string(m82)   <<=======     this is the main trigger for the test july 18th 
 ##  I will need to add another paramter to determine which nestd switch is grabbed 
@@ -2502,7 +2679,7 @@ def copy_one_nested_switch_string(m82,zebra,cow): #so I would add a param to det
 	print("endswitch_location[0]",endswitch_location[0]) #20
 	print("what it sees in switchlocation0 and endloaction0")
 	print("===========================================")
-	
+	# LOOP thru string
 	#print("list_of_switch_range[1]",list_of_switch_range[1]) #10
 	#print("list_of_switch_range[2]",list_of_switch_range[2]) #20
 	for line in m82.splitlines(): #determine if "endswitch" is in line
@@ -2536,9 +2713,13 @@ def copy_one_nested_switch_string(m82,zebra,cow): #so I would add a param to det
 	fridge[0] = newstring
 	print("final outcome Tron")
 	print(fridge[0])
+	################################################
+	# July 21st, 2021 4:16 pm Gilroy Starbucks
+	#this copies the string just copied and put it into nest_string
+	nest_string.append(fridge[0])
 	#need to delete teh first three tabs
-	
-	
+	fridge[0] ='' #this empties fridge[0]
+	#################################################
 	
 	
 	
@@ -2555,7 +2736,7 @@ print("this is where I call the function to copy JUST ONE nested switch")
 #and call copy_one_nested_switch_string(samplestring)
 #and have it added to a list
 
-output_nested_string=[]
+
 # I will need to append it 
 
 
@@ -2576,6 +2757,8 @@ print("loopstring[0]=",loopstring)
     
     
 
+doves=[]
+
 #########################################
 ## loop thru pears dictionary
 ## and calls copy_one_nested_switch_string(loopstring[0],cool[0],cool[1])
@@ -2592,6 +2775,8 @@ def make_the_impossible_into_reality():
     ## this loops thru the dictionary pears
     ##########################################
     print("about to lop thru pear values")
+    #looping through dictionary pears 
+    ## LOOP ########
     for x in pears.values(): #looping thru pears dictionary holding  switch pairs locations in an anonymous list
         print('this is number',counter)
         print("and so it begins...... in the beginning we had nothing")
@@ -2613,13 +2798,60 @@ def make_the_impossible_into_reality():
         print("========================")
         #still need to add it to a list
 
-make_the_impossible_into_reality()
+###=== this goes thru pears dictionary  and copies the nested switch strings
+make_the_impossible_into_reality() 
 print("pears dictionary",pears)
 print("now empty pears dictionary")
 #empty pears dictionary here works 
-pears.clear()
+pears.clear() #this clear the pears dictionary 
 print("pears now",pears)
 #this is the resulting output of copying the string embedded in the main switch
+
+###===================================================
+###===================================================
+## july 21st 2021 349pm gilroy starbucks
+###=== this shows the nest_string list of nested switches
+def show_list_of_nested_strings_separated():
+    print("==show list of nested strings separated==")
+    print(" StayPuff Marshmellow Man")
+    for item in nest_string:
+        print(item)
+        print("==========")
+
+print("============================")
+print("middle ground filler here to separate teh change just made.")
+print("============================")
+
+show_list_of_nested_strings_separated()
+#now replace teh third string(the main string)
+# this is to simulate cutting out the inner switches
+## july 22nd, 2021 
+
+####===========================================================###
+####===========================================================###
+####===========================================================###
+print("july 22nd 2021 additions...")
+###============== this is working correctly now ==========
+def more_testing():
+    print("=== more_testing() == charisma ===method testing ")
+    nest_string[2] = samplestring_main #putting in a different string premade
+    #this is what is different right here in the line above
+    
+    #testing what the stages need to look like
+    #to test what it should look like but doesn't yet
+    print(" now we will try it again and see how it looks ")
+    print(" after changing main string")
+    #loop thru nest_string
+    for item in nest_string:
+        print(item)
+        print("==========")
+
+more_testing()
+
+####===========================================================###
+####===========================================================###
+####===========================================================###
+
 
 ### this works this takes the copied nested switch
 ### and sets the proper indentation for it
@@ -2659,16 +2891,16 @@ print("pears now",pears)
 #unless I make a new string _so I want to remove teh first 2 tabs only
 alpha_string=''
 str1=''
-for line in nest_string.splitlines(): 
-    #put line into list, del first three tabs then conver to string
-    aline = line.split() 
-    print(aline) 
-    str1 += str1.join(aline) + "\n"
-    #print(str1)
-    
-print("string now is...")
-for item in str1:
-    print(item)
+#for line in nest_string.splitlines(): 
+#    #put line into list, del first three tabs then conver to string
+#   aline = line.split() 
+#    print(aline) 
+#    str1 += str1.join(aline) + "\n"
+#    #print(str1)
+#    
+#print("string now is...")
+#for item in str1:
+#    print(item)
 
 
  
@@ -2700,58 +2932,112 @@ for item in str1:
 # but skips over a range example lines 10 thru 20
 
 ###  SKIPPING SOME LINES (INPUT STRING, START LINE NUMBER, FINISH LINE NUMBER)
-
+#####  S K I P P I N G      S O M E      L I N E S  ############
+##========================================================================
 def skipping_some_lines(x,start,finish):#start line of switch and finish is endswitch
-	print("skipping some lines() called.....")
-	print('===SPECTACULAR TEST OF SKIPPING LINES WHEN CONCATTING NEW STRING==')
-	print(" build_new_string_skipping_some_lines")
-	print("staring with this string")
-	print(x)
-	#return
-	smart = x
-	#get line numbers of nested switches  10  start = 10
-	#get line number of endswitches       20 finish = 20 + 1
-	#get range of lines start to end of nested switch
-	counter=0      
-	concatthis =''
-	finish = finish + 1 #this is so it's after the 20 needs to be 21 if less than 21 it's 20
-	for line in smart.splitlines(): #determine if "endswitch" is in line
-		#this should skip lines between 10 thru 20
-		#we know that the lines that the inner switch resides in is between 10 and 20 
-		#skip over 10 thru 20
-		if counter > start and counter < finish:  #10-21
+	smart = x; counter=0; concatthis =''; finish = finish + 1 
+	for line in smart.splitlines():
+		if counter > start and counter < finish: #if between start and finish skip these lines
 			#skip
-			print("inside range to skip over ",counter)
 			counter += 1
 			continue	
-		else: #these are lines not within the range to skip
-			print(counter) # and are therefore copied essentially
-			#this builds the string
-			concatthis += line + "\n"
+		else: #this builds the string by concatting it
+			concatthis += line + "\n" #notice we add a new line at the end
 			counter += 1
 			continue	
-	print("this is the output")
-	print(concatthis)		
-	#line 10
-	#song.replace('cold', 'hurt'))
-	print("================= after changing the inner switch word ======")
-	
-	#after this we can change the nested switch to a method
-	print("==============================+++++++++++===========================")
-	print("==========now swapping out nested switch for a method name =========")
-	print("==============================+++++++++++===========================")
-	print("here I put the method where the inner switch is in line 10")
+
 	ibm[0] = concatthis	  #this has the switch string with the nested switch cut out
 
+	
+	
+##########################################################################################
+print("TESTING skipping_some_lines(ibm[0],skip_range[0],skip_range[1]")
+print("10 thru 20 but keeping the first line on 10 which is switch")
+print("then 28 thru 38 keeping first line on 28 which is switch")
+print("well, how did it go ")
+print(" skip skip skip skip skip skip skip skip skip skip skip skip skip skip skip skip ")
+print("=====")
+print("==========")
+print("================")
+print("======================")
 
-
-
+skip_range=[]
 #july 5th, 2021
 #so I still need to get the start and finish lines  switch and endswitch for input 
-skipping_some_lines(samplestring,10,20)
+del ibm[:] #empties it
+#print(ibm[0])
+ibm.append(samplestring) #so in  ibm[0]
+print(ibm[0])
+#===================print testing on july 24th saturday  2021 at 9:36am =================
+print("at this point we have this in ibm[0] after taking out the first nested switch")
+#del skip_range[:]
+print("LOOP TEST THRU RANGE LIST Goofy dog")
+range_list=[]
+#this would be done separately and is filling the range_list with the switch to endswitch params
+#this will be a separate method for range input for the switch endswitches
+#here the sublists of the param of each nested switch are added to range_list
+range_list.append([10,20]) #these are added in order and then reversed
+range_list.append([28,38]) # so that the nested switches are erased bottom up
+print('range_list=',range_list)
+range_list.reverse()#reverse it 
+
+'''
+this goes thru the main switch string and makes a copy
+of the main string in stages copying the whole thing
+except for the range for each nested switch.
+
+'''
+# REDUCE MAIN NESTED SWITCHES TO JUST SWITCH WORD
+def reduce_main_nested_switches_to_just_switch_word():
+    print('range_list=',range_list)
+    #loop thru range_list
+    print("we loop thru the range_list here")
+    for item in range_list: #so these have already been reversed.
+        print(item, item[0],item[1])
+        skip_range.append(0);   skip_range.append(0) 
+        skip_range[0]= item[0]; skip_range[1]= item[1]
+        #this builds a new string by skipping the nested switch sections
+        skipping_some_lines(ibm[0],skip_range[0],skip_range[1]) 
+        del skip_range[:] #this clear it out afterwords to wipe the slate clean
+    print(ibm[0])
+    print("=====================")
+
+
+#here we go  
+print("the goofy dog test")  
+print('we start with this string')
+print(ibm[0])
+reduce_main_nested_switches_to_just_switch_word()
+
+     
+#print(ibm[0])
+print(" starting anew here doing it the old way")
+ibm.append(samplestring) #in ibm[0]
+#print(ibm[0])
+
+
+skip_range.append(28)
+skip_range.append(38)
+skipping_some_lines(ibm[0],skip_range[0],skip_range[1])  # 28,38 #so I could put those in a list
 # this says go thru string and skip lines 10 thru 20-
+print("now we have this after taking out both the first and second nested switch")
+#print(ibm[0])
+del skip_range[:]
+skip_range.append(10)
+skip_range.append(20)
 
+#I guess I can put the ranges into a list and then reverse it and 
+#loop thru it.
 
+print("starting out we have this before stripping out the nested switches")
+
+skipping_some_lines(ibm[0],skip_range[0],skip_range[1])  # 10,20 #so I could put those in a list
+# this says go thru string and skip lines 10 thru 20-
+print(ibm[0])
+del skip_range[:] #this has to be cleared out. 
+#skip range needs to be cleared out for the next nest parameters here
+##===============================
+print("==== the end===both nested switches should only have the switch word reminaing ===")
 
 
 
@@ -2892,45 +3178,117 @@ print("===make your dreams reality===")
 
 
 
-
+# july 24th, 2021 
+#the input for this MUST be the already reduced main switch which
+# has just the switch word in place where each nested switch thru endswitch was.
 
 ##===========================================	
 ## number_nested_switches_in_sequence()
 ##===========================================
+#put the input I just created into ibm[0]
+
+forcedinputstring='''
+	switch(exp) {  
+		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			switch(exp){          
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== autumn nest===')
+			switch(exp){   #this is new 28       
+			fallthru
+		
+		default:
+			print('the end')
+}
+'''
+trouble=[]
+trouble.append(forcedinputstring)
 #this is using preset nested switch starting locations 11 and 29 for this test
 # this is for making the nested switch numbered method 
 def number_nested_switches_in_sequence(): # list_of_nested_switches[11,29]
-	print('number_nested_switches_in_sequence()')
+	print("number_nested_switches_in_sequence()")
 	newcount=1  #number of nested switches starts from 1
+	## wait do I loopthru it get the position of the inner switches now why not
+	## modification on july 24th 
+	print("to see what it sees first")
+	print(trouble[0])  #it was ibm[0] which I will change it back to later
+	mystring=''
+	mystring = trouble[0]
+	newcounter=0
+	foundone=[]
+	
+	# this gets the inner switch locations after the inner switch bodies have been stripped out (deleted)
+	##===============================
+	for line in mystring.splitlines():
+		if "switch(exp)" in line:
+			print("true we found switch")
+			foundone.append(newcounter)
+			newcounter += 1
+			continue
+		else:
+			newcounter += 1
+			continue
+	print("we are done looking for the inner switch locations")
+	print("====================")
+	print("thefoundone llist has",foundone)
+	print("the length is", len(foundone))
+	print("========........======")
+	print(" ")
+	del foundone[0] #this should delete the first switch we don't need 
+	print("now we have for foundone list",foundone)
+	## end getting inner switch lcoations
+	##======================================
+	
 	#shiney= ibm[0] #so it will skip the first few lines skipping the first switch 
 	thecounter = 0 #tracking lines in the string   oh it's using preset numbers
-	print('the list of nested switches starting line',list_of_nested_switches)
+	print('the list of nested switches starting line',foundone)
 	switchcount=0
+	magic_string=''
 	seagull='' #WAS shiney.splitlines()
-	for line in ibm[0].splitlines(): #determine if "endswitch" is in line
+	for line in trouble[0].splitlines(): #determine if "endswitch" is in line
 		#this should skip lines between 10 thru 20
 		#we know that the lines that the inner switch resides in is between 10 and 20 
 		#skip over 10 thru 20 #IT HAS TO BE AFTER THE FIRST 2 LINES TO SKIP THE FIRST SWITCH
-		if  switchcount > 0  and thecounter in list_of_nested_switches: 
+		#if  switchcount > 0  and thecounter in foundone:
+		if  thecounter in foundone:  
 		#this line of code is absolutely beautiful and elegant 
 			print("thecounter=",thecounter)
 			print("switchcount=",switchcount)
 			########We know the line numbers do it on one pass perhaps
 			# it should only go to the lines in the list of nested switches
-			print(line)
-			print("............. ")
-			#str(use_number[0]) # I just took this off the end
 			line = line.replace("switch(exp){","nested_switch_"  + str(newcount) +"(n)")
-			print(line)
+			magic_string += line + "\n"
+			#NEW line above
 			newcount += 1  #break #because we are only doing it once to replace only ONE switch #start  = thecounter #this resets the range n to skip what it just did.
 			thecounter += 1 #this adds to the neste switch counter
 			continue    
 		else:
+			magic_string += line + "\n"
+			# new ling e
 			thecounter += 1
 			continue
 	print("=====-----======-----======------=====----====----====---")
+	print("magic_string=")
+	print(magic_string)
+	print("========")
+	for line in magic_string.splitlines():
+		print(line)
+		
+	print("were the changes made - this is kind of important at this stage RED ALERT")
+	trouble[0] = magic_string
 	print("did I rip out the nested switches or are they still intact???")
-	print("ibm[0]=",ibm[0])	
+	print("trouble[0]=",trouble[0])	
 	#ibm[0] = shiney
 			
 ####================================			
