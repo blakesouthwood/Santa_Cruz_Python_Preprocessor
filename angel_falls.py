@@ -6,6 +6,366 @@ I have a method to loop thru list of the nested strings and build nested_methods
 Nearly finished.
 
 
+###====================================================================
+##  create main switch for cake base for the multi-combo nested switch
+###====================================================================
+# fixed on july 26th 
+
+## testing making the main switch and putting it into a function
+themainswitchstring = ''' 
+    exp = varholder[0]
+	
+	caselist1 = ['fishy', 'two da', 'three da']
+	caselist2 = ['big bird']
+	caselist3 = ['israel canal']
+	caselist4 = ['ufos are real']
+	caselist5 = ['default']
+	
+	
+	switch(exp)
+	while True:
+	
+		if case in caselist1: # ['fishy', 'two da', 'three da']
+			print("squirt gun!")
+			print("water everywhere")
+			break
+	
+		elif case in caselist2: # ['big bird']
+			print("now is the time for ")
+			n=2
+			nested_switch_1(n)  
+			print("all great women, yeah, right")
+			print("to come to the aid of their country..nver")
+			break
+	
+		elif case in caselist3: # ['israel canal']
+			print("massive ship blocking canal in Egypt")
+			print("it was stuck for six days")
+			fallthru('ufos are real')
+	
+		elif case in caselist4: # ['ufos are real']
+			print('manure')
+			n = 3
+			nested_switch_2(n)  
+			print("no more horses")
+			break
+	
+		elif case in caselist5: # ['default']
+			print('one walking quack d')
+			print("walking geese")
+			n=5
+			nested_switch_3(n) 
+			break
+	
+		else:
+			print('one walking quack d')
+			print("walking geese")
+			break
+	
+	
+	
+'''
+
+
+
+solution=[]
+solution.append(0) 
+#this adds the def main_switch(x): to the top and indents the body of the switch case
+def create_main_switch_for_cake_base():
+    print('create main switch for cake base\n\n\n')
+    global themainswitchstring 
+    x = themainswitchstring.replace("exp = varholder[0]", "def main_switch(x):\n\texp = varholder[0]")
+    themainswitchstring = x
+    mycounter=0
+    for line in themainswitchstring.splitlines():
+        if "\t" in line and mycounter ==0: #takes out tab from first line only 
+            themainswitchstring = themainswitchstring.strip('\t')
+            themainswitchstring = themainswitchstring.lstrip() #should take out spaces
+            break
+            
+    mycounter=0
+    for line in themainswitchstring.splitlines():
+        if "\t" in line and "def" in line: #takes out tab from first line only 
+            line = line.lstrip('\t')
+            line = line.lstrip()
+            break
+    print(themainswitchstring) 
+
+
+print("start test for mainswitch\n\n\n")    
+create_main_switch_for_cake_base()
+
+#OUTPUT
+
+create main switch for cake base
+
+
+
+def main_switch(x):
+	exp = varholder[0]
+	
+	caselist1 = ['fishy', 'two da', 'three da']
+	caselist2 = ['big bird']
+	caselist3 = ['israel canal']
+	caselist4 = ['ufos are real']
+	caselist5 = ['default']
+	
+	
+	switch(exp)
+	while True:
+	
+		if case in caselist1: # ['fishy', 'two da', 'three da']
+			print("squirt gun!")
+			print("water everywhere")
+			break
+	
+		elif case in caselist2: # ['big bird']
+			print("now is the time for ")
+			n=2
+			nested_switch_1(n)  
+			print("all great women, yeah, right")
+			print("to come to the aid of their country..nver")
+			break
+	
+		elif case in caselist3: # ['israel canal']
+			print("massive ship blocking canal in Egypt")
+			print("it was stuck for six days")
+			fallthru('ufos are real')
+	
+		elif case in caselist4: # ['ufos are real']
+			print('manure')
+			n = 3
+			nested_switch_2(n)  
+			print("no more horses")
+			break
+	
+		elif case in caselist5: # ['default']
+			print('one walking quack d')
+			print("walking geese")
+			break
+	
+		else:
+			print('one walking quack d')
+			print("walking geese")
+			break
+	
+	
+	
+
+#about to put this into a method
+
+
+
+output1='''#output1
+exp = varholder[0]
+
+caselist1 = ['one', 'two da', 'three da']
+caselist2 = ['big bird']
+caselist3 = ['israel canal']
+caselist4 = ['ufos are real']
+caselist5 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['fishy', 'two da', 'three da']
+		print("squirt gun!")
+		print("water everywhere")
+		break
+
+	elif case in caselist2: # ['big bird']
+		print("now is the time for ")
+		print("all great women, yeah, right")
+		print("to come to the aid of their country..nver")
+		break
+
+	elif case in caselist3: # ['israel canal']
+		print("massive ship blocking canal in Egypt")
+		print("it was stuck for six days")
+		fallthru('ufos are real')
+
+	elif case in caselist4: # ['ufos are real']
+		print('manure')
+		print("no more horses")
+		break
+
+	elif case in caselist5: # ['default']
+		print('one walking quack d')
+		print("walking geese")
+		break
+
+	else:
+		print('one walking quack d')
+		print("walking geese")
+		break
+
+
+
+'''
+
+
+output2='''#output2
+exp = varholder[0]
+
+caselist1 = ['two', 'two da', 'three da']
+caselist2 = ['big bird']
+caselist3 = ['israel canal']
+caselist4 = ['ufos are real']
+caselist5 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['fishy', 'two da', 'three da']
+		print("squirt gun!")
+		print("water everywhere")
+		break
+
+	elif case in caselist2: # ['big bird']
+		print("now is the time for ")
+		print("all great women, yeah, right")
+		print("to come to the aid of their country..nver")
+		break
+
+	elif case in caselist3: # ['israel canal']
+		print("massive ship blocking canal in Egypt")
+		print("it was stuck for six days")
+		fallthru('ufos are real')
+
+	elif case in caselist4: # ['ufos are real']
+		print('manure')
+		print("no more horses")
+		break
+
+	elif case in caselist5: # ['default']
+		print('one walking quack d')
+		print("walking geese")
+		break
+
+	else:
+		print('one walking quack d')
+		print("walking geese")
+		break
+
+
+
+'''
+
+
+output3=''' #output3
+exp = varholder[0]
+
+caselist1 = ['three', 'two da', 'three da']
+caselist2 = ['big bird']
+caselist3 = ['israel canal']
+caselist4 = ['ufos are real']
+caselist5 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['fishy', 'two da', 'three da']
+		print("squirt gun!")
+		print("water everywhere")
+		break
+
+	elif case in caselist2: # ['big bird']
+		print("now is the time for ")
+		print("all great women, yeah, right")
+		print("to come to the aid of their country..nver")
+		break
+
+	elif case in caselist3: # ['israel canal']
+		print("massive ship blocking canal in Egypt")
+		print("it was stuck for six days")
+		fallthru('ufos are real')
+
+	elif case in caselist4: # ['ufos are real']
+		print('manure')
+		print("no more horses")
+		break
+
+	elif case in caselist5: # ['default']
+		print('one walking quack d')
+		print("walking geese")
+		break
+
+	else:
+		print('one walking quack d')
+		print("walking geese")
+		break
+
+
+
+'''
+
+
+## coded this on July 25th, 2021 in gilroy.================
+###=========================================================
+##  put_switch_case_into_nested_method_and_add_tabs(number)
+###=========================================================
+nestring=nest1
+def put_switch_case_into_nested_method_and_add_tabs(yeah,number):
+    global output,output1,output2,output3 #each individual string will be put into the output string for uniformity
+    #and then at the bottom of this function reset output to '' to empty it
+    output =yeah #so clever
+    print(output) #the truth is in the pudding
+    solution[0] = "_" + str(number) 
+    x = output.replace("exp = varholder[0]", "def nested_switch" + solution[0] + \
+     "(x):\nexp = varholder[0]")
+    output = x
+    x = output.replace("switch(exp)", "inswitch(exp)");output = x; x=''
+    x = output.replace("fallthru", "infallthru");output = x
+    #where I add one tab to front of each line ############")
+    noway=''; counter=0; toosmart='' # I copy each line to a new strings since strings are immutable
+    for line in output.splitlines(): 
+        counter += 1
+        if line.startswith("def"): #this looks if first line then doesn't add tab
+            noway = line #it does nothing to the line
+            toosmart += noway + '\n'
+        else:
+            noway = "\t" + line  #adds a tab to front of each line
+            toosmart += noway + '\n'
+        #print(noway)
+    #to see what's in it after it's modified and tabbed
+    for line in toosmart.splitlines():
+        print(line) 
+        
+print("first test")
+stringname[0] = output2   
+put_switch_case_into_nested_method_and_add_tabs(stringname[0],2)
+print("end of first test")
+
+# the number is fed into the top of the nested method
+# note the main switch is NOT numbered
+
+####################################################################
+# loop thru nested_python_string
+# I might need to reverse the nested list first so they are called in the right order.
+# and I might fill a new list that holds the results of the golden nested switches
+#I could have a different list with the number list for the nested switches perhaps
+sample_list=[]
+sample_list.append(0)
+sample_list.append(0)
+sample_list.append(0)
+sample_list[0] =output1
+sample_list[1] =output2
+sample_list[2] =output3
+#testing loop thru method for different input nested strings and numbering numerically
+cool_counter=1
+x = 0
+for item in sample_list:
+    put_switch_case_into_nested_method_and_add_tabs(sample_list[x],cool_counter)
+    cool_counter += 1
+    x += 1
+    
+
+	
+##===============================================================
+
 
 11:06 pm Sunday, July 25th 2021
 #in a method now
