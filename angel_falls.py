@@ -1,3 +1,40 @@
+Sunday July 25th, 2021 8:30 pm
+Phase 3 begins the last phase of the Nested Switch Case
+I have the output python strings after going thru the parser and code gen
+I just have to test adding the method framing of the strings (which already works)
+and use the cake layer building to concat the list and execute it.
+I have to make sure that the test beta nested switches have an input var in the main switch (that works)
+and so I have been doing back and forth from my prototoype working version based on output and working
+backwards from what it needs to look like to work.
+I have tomorrow off so I should make good progress on phase 3 and whatever I get working and ironed out tonight.
+The code is in three differnet files so that I have been able to manage the complexity.
+I still need to convert some more code into methods to reduce the code base for the nested switches.
+The fact that I made it this far proves to me that it's all going to work. 
+
+
+Phase 1 was scanning the input nested switch string.
+Counting switch cases, getting the switch and end switch line numbers
+and adding them to a dictionary.
+looping thru the main string and copying the nested switches and putting each into a list
+then deleting the nested strings (really skipping them) when creating copy of main swith minus the nested switches
+but left the nested switch word instact and then swapped it for a number nested_switch method to call it later.
+
+
+Phase 2 was a pain; very time consuming fraught with tiny details
+Ended up making a copy one nested switch method that I now reuse in a loop.
+Preparing the input strings that had been separated from the main switch
+and taking out the endswitch and swapping it with a }.
+And applying the correct indentation (tabs) for each of the switch case strings.
+I also built an address manager using a dictionary to keep track of the precise location
+of the nested switches in case there are lots of them. Haven't turned that feature on yet.
+Number from top down starting at top of main original switch string, level (number of tabs),
+case number in sequence, line number within case that nested switch is on, number in series 
+of nested switches at same level in that same level. For now it's just using a one digit number.
+I also need to test three levels deep to see what happens. Thus far I have done two levels deep 
+of nesting and it worked.
+
+
+
 Sunday, July 25th, 2021 6:16pm 
 Doing testing right now. Finishing up the first half to get the input strings ready for the translation thru
 bypass205 and working on that. It runs just found one undersight and it was annoying thinking of how much
