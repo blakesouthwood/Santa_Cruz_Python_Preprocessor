@@ -1,5 +1,6 @@
 9:43 pm Sunday, July 25th.
-It's difficult to describe the euphoria of this project coming together. I just think of the millions of programmers that will use this.
+It's difficult to describe the euphoria of this project coming together. 
+I just think of the millions of programmers that will use this.
 
 This is putting the switch case in python into a method as a numbered nest.
 
@@ -56,7 +57,7 @@ now I will add one tab to the front of each line
 big test here =====------0000000000000========00000000=====00000000000
 STAGE ONE add tab to front of each line
  Adding 1 tab to front of each line in switch case output 
-simpe and effective does this swap work or not
+simple and effective does this swap work or not
 replacing switch with inswitch
 replacing fallthru with infallthru
 
