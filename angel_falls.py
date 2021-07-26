@@ -1,4 +1,268 @@
-9:24 pm Sunday July 25th.
+9:43 pm Sunday, July 25th.
+It's difficult to describe the euphoria of this project coming together. I just think of the millions of programmers that will use this.
+
+This is putting the switch case in python into a method as a numbered nest.
+
+  == friday july 2nd testing this already coded previously ===
+this is the generated output of python for the test switch case
+
+exp = varholder[0]
+
+caselist1 = ['fishy', 'two da', 'three da']
+caselist2 = ['big bird']
+caselist3 = ['israel canal']
+caselist4 = ['ufos are real']
+caselist5 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['fishy', 'two da', 'three da']
+		print("squirt gun!")
+		print("water everywhere")
+		break
+
+	elif case in caselist2: # ['big bird']
+		print("now is the time for ")
+		print("all great women, yeah, right")
+		print("to come to the aid of their country..nver")
+		break
+
+	elif case in caselist3: # ['israel canal']
+		print("massive ship blocking canal in Egypt")
+		print("it was stuck for six days")
+		fallthru('ufos are real')
+
+	elif case in caselist4: # ['ufos are real']
+		print('manure')
+		print("no more horses")
+		break
+
+	elif case in caselist5: # ['default']
+		print('one walking quack d')
+		print("walking geese")
+		break
+
+	else:
+		print('one walking quack d')
+		print("walking geese")
+		break
+
+
+
+
+now I will add one tab to the front of each line
+big test here =====------0000000000000========00000000=====00000000000
+STAGE ONE add tab to front of each line
+ Adding 1 tab to front of each line in switch case output 
+simpe and effective does this swap work or not
+replacing switch with inswitch
+replacing fallthru with infallthru
+
+def nested_switch_1(x):
+exp = varholder[0]
+
+caselist1 = ['fishy', 'two da', 'three da']
+caselist2 = ['big bird']
+caselist3 = ['israel canal']
+caselist4 = ['ufos are real']
+caselist5 = ['default']
+
+
+inswitch(exp)
+while True:
+
+	if case in caselist1: # ['fishy', 'two da', 'three da']
+		print("squirt gun!")
+		print("water everywhere")
+		break
+
+	elif case in caselist2: # ['big bird']
+		print("now is the time for ")
+		print("all great women, yeah, right")
+		print("to come to the aid of their country..nver")
+		break
+
+	elif case in caselist3: # ['israel canal']
+		print("massive ship blocking canal in Egypt")
+		print("it was stuck for six days")
+		infallthru('ufos are real')
+
+	elif case in caselist4: # ['ufos are real']
+		print('manure')
+		print("no more horses")
+		break
+
+	elif case in caselist5: # ['default']
+		print('one walking quack d')
+		print("walking geese")
+		break
+
+	else:
+		print('one walking quack d')
+		print("walking geese")
+		break
+
+
+
+
+CRITICAL OUTPUT HERE...stage two.....
+	
+def nested_switch_1(x):
+	exp = varholder[0]
+	
+	caselist1 = ['fishy', 'two da', 'three da']
+	caselist2 = ['big bird']
+	caselist3 = ['israel canal']
+	caselist4 = ['ufos are real']
+	caselist5 = ['default']
+	
+	
+	inswitch(exp)
+	while True:
+	
+		if case in caselist1: # ['fishy', 'two da', 'three da']
+			print("squirt gun!")
+			print("water everywhere")
+			break
+	
+		elif case in caselist2: # ['big bird']
+			print("now is the time for ")
+			print("all great women, yeah, right")
+			print("to come to the aid of their country..nver")
+			break
+	
+		elif case in caselist3: # ['israel canal']
+			print("massive ship blocking canal in Egypt")
+			print("it was stuck for six days")
+			infallthru('ufos are real')
+	
+		elif case in caselist4: # ['ufos are real']
+			print('manure')
+			print("no more horses")
+			break
+	
+		elif case in caselist5: # ['default']
+			print('one walking quack d')
+			print("walking geese")
+			break
+	
+		else:
+			print('one walking quack d')
+			print("walking geese")
+			break
+	
+###===============================================================
+This is the code in raw form before I put it into a method tonight.
+
+#again this is corona output of the generated python code as regular switch
+output='''
+exp = varholder[0]
+
+caselist1 = ['fishy', 'two da', 'three da']
+caselist2 = ['big bird']
+caselist3 = ['israel canal']
+caselist4 = ['ufos are real']
+caselist5 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['fishy', 'two da', 'three da']
+		print("squirt gun!")
+		print("water everywhere")
+		break
+
+	elif case in caselist2: # ['big bird']
+		print("now is the time for ")
+		print("all great women, yeah, right")
+		print("to come to the aid of their country..nver")
+		break
+
+	elif case in caselist3: # ['israel canal']
+		print("massive ship blocking canal in Egypt")
+		print("it was stuck for six days")
+		fallthru('ufos are real')
+
+	elif case in caselist4: # ['ufos are real']
+		print('manure')
+		print("no more horses")
+		break
+
+	elif case in caselist5: # ['default']
+		print('one walking quack d')
+		print("walking geese")
+		break
+
+	else:
+		print('one walking quack d')
+		print("walking geese")
+		break
+
+
+
+'''
+
+print("this is what we are testing today Friday to see if it works right adding a tab")
+print("===========")
+print("  == friday july 2nd testing this already coded previously ===")
+print("this is the generated output of python for the test switch case")
+print(output)
+print("now I will add one tab to the front of each line")
+#June 22, 2021 adding tabs to put this into a method 
+#let's see if this moves the whole string over by one tab
+#print("number of tabs =",sowhat)
+    #print(ufo) #just to test this 
+print("big test here =====------0000000000000========00000000=====00000000000")
+print("STAGE ONE add tab to front of each line")
+#this indents the whole string by one tab on each line 
+print(" Adding 1 tab to front of each line in switch case output ")
+print("simpe and effective does this swap work or not")
+print('replacing switch with inswitch')
+print('replacing fallthru with infallthru')
+#pure genius
+
+address = "_1" #this is for test purposes since this will be dynamic
+solution=[]
+solution.append(address)
+
+
+x = output.replace("exp = varholder[0]", "def nested_switch" + solution[0] +  "(x):\nexp = varholder[0]")
+output = x
+
+x = output.replace("switch(exp)", "inswitch(exp)")
+output = x
+x=''
+x = output.replace("fallthru", "infallthru")
+output = x
+print(output)
+################# this iwhere I add one tab to front of each line ############
+# this adds one tab to the front of each line in the string 
+# so it's adding \t (one tab)
+print("CRITICAL OUTPUT HERE...stage two.....")
+noway=''
+counter=0
+for line in output.splitlines(): 
+    counter += 1
+    if line.startswith("def"): #this looks if first line doesn't add tab
+        #print("YES starting with def",counter)
+        noway = line #it does nothing to the line
+    else:
+        noway = "\t" + line  #adds a tab 
+    print(noway)
+print("next stage here ======--R2D2--=======")
+print(noway)
+ 
+
+	
+	
+	
+	
+	
+	
+	9:24 pm Sunday July 25th.
 Progress of phase 3 showing output of cake layer builder showing what the output looks like
 before converting each switch by putting them into a template method. methods at top are fillers.
 Not the real methods just fillers for now.  Phase 3 will entail putting each switch into a method
