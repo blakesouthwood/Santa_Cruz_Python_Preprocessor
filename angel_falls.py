@@ -35,6 +35,54 @@ def put_switch_case_into_nested_method_and_add_tabs(number):
     
 put_switch_case_into_nested_method_and_add_tabs(3)  #this calls it and takes a number to the nest number
 #this calls the method above
+
+OUTPUT of this method which will be added to the cake concat layered list
+def nested_switch_3(x):
+	exp = varholder[0]
+	
+	caselist1 = ['fishy', 'two da', 'three da']
+	caselist2 = ['big bird']
+	caselist3 = ['israel canal']
+	caselist4 = ['ufos are real']
+	caselist5 = ['default']
+	
+	
+	inswitch(exp)
+	while True:
+	
+		if case in caselist1: # ['fishy', 'two da', 'three da']
+			print("squirt gun!")
+			print("water everywhere")
+			break
+	
+		elif case in caselist2: # ['big bird']
+			print("now is the time for ")
+			print("all great women, yeah, right")
+			print("to come to the aid of their country..nver")
+			break
+	
+		elif case in caselist3: # ['israel canal']
+			print("massive ship blocking canal in Egypt")
+			print("it was stuck for six days")
+			infallthru('ufos are real')
+	
+		elif case in caselist4: # ['ufos are real']
+			print('manure')
+			print("no more horses")
+			break
+	
+		elif case in caselist5: # ['default']
+			print('one walking quack d')
+			print("walking geese")
+			break
+	
+		else:
+			print('one walking quack d')
+			print("walking geese")
+			break
+	
+	
+	
 ##=============================================================================	
 	9:43 pm Sunday, July 25th.
 It's difficult to describe the euphoria of this project coming together. 
