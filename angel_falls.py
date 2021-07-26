@@ -1,3 +1,12 @@
+Monday, July 26th, 2021 11:36 am Morgan Hill Starbucks
+I have putting main switch string into a main switch method and properly indented.
+The main switch string is from the starting point of the generated python.
+The output nested switch strings from the python code gen are put into a list and then read individually.
+I have a method to loop thru list of the nested strings and build nested_methods numbered in a sequence working.
+Nearly finished.
+
+
+
 11:06 pm Sunday, July 25th 2021
 #in a method now
 #input called output which was generated with the parser and codegen
