@@ -1,5 +1,54 @@
 11:06 pm Sunday, July 25th 2021
 #in a method now
+#input called output which was generated with the parser and codegen
+output='''
+exp = varholder[0]
+
+caselist1 = ['fishy', 'two da', 'three da']
+caselist2 = ['big bird']
+caselist3 = ['israel canal']
+caselist4 = ['ufos are real']
+caselist5 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['fishy', 'two da', 'three da']
+		print("squirt gun!")
+		print("water everywhere")
+		break
+
+	elif case in caselist2: # ['big bird']
+		print("now is the time for ")
+		print("all great women, yeah, right")
+		print("to come to the aid of their country..nver")
+		break
+
+	elif case in caselist3: # ['israel canal']
+		print("massive ship blocking canal in Egypt")
+		print("it was stuck for six days")
+		fallthru('ufos are real')
+
+	elif case in caselist4: # ['ufos are real']
+		print('manure')
+		print("no more horses")
+		break
+
+	elif case in caselist5: # ['default']
+		print('one walking quack d')
+		print("walking geese")
+		break
+
+	else:
+		print('one walking quack d')
+		print("walking geese")
+		break
+
+
+
+'''
+#then running thru the new method below it puts its contents into a method so I can call it
 
 #remind the reader that output is the same of the input string
 solution=[]
