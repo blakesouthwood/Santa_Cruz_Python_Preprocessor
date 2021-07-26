@@ -1,11 +1,13 @@
 Sunday July 25th, 2021 8:30 pm
 Phase 3 begins the last phase of the Nested Switch Case
-I have the output python strings after going thru the parser and code gen
-I just have to test adding the method framing of the strings (which already works)
-and use the cake layer building to concat the list and execute it.
+I have the output python strings after going thru the parser and code gen (translation the python code)
+I just have to test adding the method framing of the python output strings (which already works)
+and use the cake layer building (cool method) to concat the list and execute it.
+
 I have to make sure that the test beta nested switches have an input var in the main switch (that works)
 and so I have been doing back and forth from my prototoype working version based on output and working
 backwards from what it needs to look like to work.
+
 I have tomorrow off so I should make good progress on phase 3 and whatever I get working and ironed out tonight.
 The code is in three differnet files so that I have been able to manage the complexity.
 I still need to convert some more code into methods to reduce the code base for the nested switches.
