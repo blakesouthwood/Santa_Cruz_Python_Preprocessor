@@ -1,3 +1,17 @@
+Sunday, July 25th, 2021 6:16pm 
+Doing testing right now. Finishing up the first half to get the input strings ready for the translation thru
+bypass205 and working on that. It runs just found one undersight and it was annoying thinking of how much
+trivial and time consuming is necessary when I want to do something super simple so adding a swap macro.
+Macros really do come in handy and make code ten times easier to comprehend.
+Swap is in a the Burroughs dialect of Algol 60  and now its in Python. What did Tony Hoare say in his hints paper.
+"Here is a language so far ahead of its time, that it was not only an improvement on its 
+predecessors, but also on nearly all its successors." swap a with b
+
+
+
+	
+
+
 The rush is profound. It works!!!! Nested switches in python works. And everyone said it couldn't be done.
 The best part is that it looks like a C switch case in all respects (especially the expected behavior) but it's Python underneath. 
 Gigi D´Agostino i´ll fly whit you Defectnoise trance mix 2016
