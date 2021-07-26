@@ -1,4 +1,42 @@
-9:43 pm Sunday, July 25th.
+11:06 pm Sunday, July 25th 2021
+#in a method now
+
+#remind the reader that output is the same of the input string
+solution=[]
+solution.append(0) 
+saved_result=[]
+saved_result.append(0)
+##=========================================================
+## put_switch_case_into_nested_method_and_add_tabs(number)
+##=========================================================
+def put_switch_case_into_nested_method_and_add_tabs(number):
+    global output #input string to modify
+    solution[0] = "_" + str(number) 
+    x = output.replace("exp = varholder[0]", "def nested_switch" + solution[0] + \
+     "(x):\nexp = varholder[0]")
+    output = x
+    x = output.replace("switch(exp)", "inswitch(exp)");output = x; x=''
+    x = output.replace("fallthru", "infallthru");output = x
+    #where I add one tab to front of each line ############")
+    noway=''; counter=0; toosmart='' # I copy each line to a new strings since strings are immutable
+    for line in output.splitlines(): 
+        counter += 1
+        if line.startswith("def"): #this looks if first line then doesn't add tab
+            noway = line #it does nothing to the line
+            toosmart += noway + '\n'
+        else:
+            noway = "\t" + line  #adds a tab to front of each line
+            toosmart += noway + '\n'
+        #print(noway)
+    #to see what's in it after it's modified and tabbed
+    saved_result[0] = toosmart  #here I put it in a list to use more easily
+    for line in toosmart.splitlines():
+        print(line) 
+    
+put_switch_case_into_nested_method_and_add_tabs(3)  #this calls it and takes a number to the nest number
+#this calls the method above
+##=============================================================================	
+	9:43 pm Sunday, July 25th.
 It's difficult to describe the euphoria of this project coming together. 
 I just think of the millions of programmers that will use this.
 
