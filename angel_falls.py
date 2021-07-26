@@ -1,3 +1,174 @@
+9:24 pm Sunday July 25th.
+Progress of phase 3 showing output of cake layer builder showing what the output looks like
+before converting each switch by putting them into a template method. methods at top are fillers.
+Not the real methods just fillers for now.  Phase 3 will entail putting each switch into a method
+
+run_combo='''
+
+def inswitch():
+	print(test this)
+
+def infallthru():
+	print('do something')
+
+
+
+
+exp = varholder[0]
+
+caselist1 = ['blable']
+caselist2 = ['more']
+caselist3 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['blable']
+		print("do something")
+		print("yep")
+		fallthru('more')
+
+	elif case in caselist2: # ['more']
+		print("nice")
+		break
+
+	elif case in caselist3: # ['default']
+		print("we are done here")
+		break
+
+	else:
+		print("we are done here")
+		break
+
+
+
+#============ divider =========== 
+
+
+
+exp = varholder[0]
+
+caselist1 = ['autumn']
+caselist2 = ['winter']
+caselist3 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['autumn']
+		print("falling leaves")
+		print("sunlight from the sky")
+		fallthru('winter')
+
+	elif case in caselist2: # ['winter']
+		print("snow time")
+		break
+
+	elif case in caselist3: # ['default']
+		print("so much creativity")
+		break
+
+	else:
+		print("so much creativity")
+		break
+
+
+
+#============ divider =========== 
+
+
+
+exp = varholder[0]
+
+caselist1 = ['1', '2', '3']
+caselist2 = ['4', '5', '6', '7']
+caselist3 = ['8', '9', '10']
+caselist4 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['1', '2', '3']
+		print("where's the dog house!")
+		print('first prize')
+		print('you block head Charlie Brown')
+		fallthru('4')
+
+	elif case in caselist2: # ['4', '5', '6', '7']
+		print('kangaroo hop hop!')
+		nested_switch_1(n)
+		print('taught me how thru write code')
+		fallthru('8')
+
+	elif case in caselist3: # ['8', '9', '10']
+		print('mocha blast')
+		print('== autumn nest===')
+		nested_switch_2(n)   #this is new 28
+		fallthru('default')
+
+	elif case in caselist4: # ['default']
+		print('the end')
+		break
+
+	else:
+		print('the end')
+		break
+
+
+
+#============ divider =========== 
+call_main_switch()
+'''
+Build Cake code before refactored.
+
+##====================================================
+##   BUILD STACKED CAKE STRING COMBINING STANFORD LIST
+##====================================================
+def build_stacked_cake_string_combining_stanford_list(): 
+    print("building stacked cake concat stanford list")
+    print("======Lake Lagunita=====")
+    print("remember after the stanford list has been reversed the LAST list will be the main")
+    volleyball ='' #initialized
+    print("about to concat a string called volleyball")
+    count =0
+    #this goes thru the stanford list so the main switch is last.
+    # and puts the contents into the string volleyball.
+    function_defintions='' #initialized
+    #I will put these in volleyball to initialize
+    #dummy code place holder for testing
+    function_definitions ="\n\ndef inswitch():\n\tprint(test this)\n\ndef infallthru():\n\tprint('do something')\n\n"
+    volleyball += function_definitions #must be first
+    #stanford list should alread by reversed so that main switch is last and at bottom
+    for item in stanford:
+        volleyball += "\n\n"
+        volleyball += item
+        volleyball += "\n\n" #spacer 2 lines
+        volleyball += "#============ divider =========== \n"
+        count += 1
+        #print(count)
+    
+
+    #adding triple string
+    print(" the multiline string output")
+    print("is called run_combo which will")
+    print("be executed like this exec(run_combo)")
+    print("")
+    
+    
+    front="run_combo='''"
+    #no tabs in front of the main method call
+    middle= "call_main_switch()\n" #triggers main switch
+    tail ="'''"
+    
+    volleyball = front + volleyball + middle + tail
+    print(volleyball)
+    #exec(run_combo)
+    
+
+
 Sunday July 25th, 2021 8:30 pm
 Phase 3 begins the last phase of the Nested Switch Case
 I have the output python strings after going thru the parser and code gen (translation the python code)
