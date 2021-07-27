@@ -1,3 +1,9 @@
+
+10:45 am Tuesday, July 27th, 2021
+It works. Wow.
+
+
+
 Found some code I wrote on July 12th for this moment. Pure Nirvana.
 code I wrote to combine the strings and run it. 
 
