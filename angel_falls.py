@@ -1,3 +1,6 @@
+Found some code I wrote on July 12th for this moment. Pure Nirvana.
+code I wrote to combine the strings and run it. 
+
 Tuesday, July 27th, 2021  8;33 am Morgan Hill Starbucks
 Finishing up build cake concattting the nested strings and main switch string and methods and call to main switch.
 Everything added (the strings) to a list. Just need to add the triple string component. Running past third headed
