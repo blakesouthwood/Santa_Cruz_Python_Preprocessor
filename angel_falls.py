@@ -1,6 +1,9 @@
 
 10:45 am Tuesday, July 27th, 2021
 It works. Wow.
+Nested switches works. Unreal.
+I will connect the program pieces together and upload soon.
+Need to add some documentation.
 
 
 
