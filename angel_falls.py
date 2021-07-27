@@ -1,3 +1,9 @@
+Tuesday, July 27th, 2021  8;33 am Morgan Hill Starbucks
+Finishing up build cake concattting the nested strings and main switch string and methods and call to main switch.
+Everything added (the strings) to a list. Just need to add the triple string component. Running past third headed
+into home plate. What a journey.
+
+
 Monday, July 26th, 2021 11:36 am Morgan Hill Starbucks
 I have putting main switch string into a main switch method and properly indented.
 The main switch string is from the starting point of the generated python.
