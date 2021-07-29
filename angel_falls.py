@@ -9,7 +9,7 @@ Thursday, July 29th, 2021  8:53am
 	This is the current focus to complete the nested feature and activate the bypass205 feature to 
 	handle multiple switch inputs. By keeping it modular it makes understanding the plumbing much easier.
 	And the system is easier to comprehend and visualize.
-	Also I made a debugging gold version of the regular one switch module I'll upload this weekend.
+	Also I made a debugged gold working version of the regular one switch module I'll upload this weekend.
 	It's really interesting that the way that the whole program came together it utterly facilitated
 	the ability for the whole thing to actually work. I remember the struggle getting the module to initially
 	work without reloading. That was fraught with massive frustration. It's been a rocky road with small victories
