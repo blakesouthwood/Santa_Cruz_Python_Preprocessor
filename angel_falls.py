@@ -1,4 +1,18 @@
-
+Thursday, July 29th, 2021  8:53am
+	
+	Putting together the submodules for the nested switch codebase. I was going to put it into one program
+	but the complexity is deep so I decided to keep it as a dozen submodules that are controlled by a 
+	manager submodule so that it's easier to comprehend and fathom it all. There is a lot going on.
+	It makes it easier to debug and understand too. So I view it as a dozen eggs small modules - makes it easier
+	to manage. Until I came to that realization I was overwhelmed with it all in one place.
+	#will take a day or two maybe Saturday it will be complete and I'll upload it.
+	This is the current focus to complete the nested feature and activate the bypass205 feature to 
+	handle multiple switch inputs. By keeping it modular it makes understanding the plumbing much easier.
+	And the system is easier to comprehend and visualize.
+	
+	Next:
+	Working on testing a triple nested switch with three levels deep of switches within a main switch.
+	
 10:45 am Tuesday, July 27th, 2021
 It works. Wow.
 Nested switches works. Unreal.
