@@ -1,3 +1,19 @@
+Saturday, July 31st, 2021  12:15 pm
+Decided to reduce the complexity of the nested feature and will manage it as separate stages
+that are completely independent but are called in order so that I can manage it more cleanly.
+I will connect the pieces to make sure they each talk to each other.
+
+Added put, get to macros today. I was working on a swap to work with lists which didn't go well and then it occurred to me
+that since lists are mutable I can just change on-the-fly one list slot with another list's slot simply. Spared me much grief.
+Excited that I am wiring together the different sections of the nested feature that I built independently.
+
+Based on time available the whole nested feature will be on the github by Tuesday at the latest. I have Tuz Wed off 
+for my buffer if things get mired in the swamp. It is thrilling to have made it this far.
+
+I will also have to do more testing once it's all wired together and then for testing I will add it as a separate
+module since it's so complex and so there is no interference with the main module.
+
+
 Thursday, July 29th, 2021  8:53am
 	
 	Putting together the submodules for the nested switch codebase. I was going to put it into one program
