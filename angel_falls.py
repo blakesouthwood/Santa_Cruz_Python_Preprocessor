@@ -1,3 +1,84 @@
+Sunday, August 1st, 2021 11am California time
+Approaching the finish line for nested switches. Likely adding Tuesday at this point.
+
+Testing and still wiring together the pieces.
+Flow of Control procress of construction of Nested Switches feature.
+I just have to wire them together.
+Currently retesting each separate puzzle piece 
+
+1 we start with a string that has a switch in it.
+But we are dealing with nested switches and not regular switches
+
+#######=====================
+[done] (1)FIRST count how many switches and endswicthes are in a string to 
+determine the number of nested switches
+jumanji() in fourth_of_july checks for the number of switches in the input string
+
+so if one nested switch then we need to detect the inner switch
+if more than one nested switch then we need to detect them and
+get their exact location which case and how much indentation etc.
+and we need to make a copy of the inner switch string
+take out nested switch from main switch and put nested_method in that line
+#this is in fourth_of_july.py
+
+#====================
+[done] (2)
+Separate the nested switches from th main switch
+this is done in fourth_of_july.py
+building string skipping inner nested switches 
+put comment in front of #inner_nestswith so it's not called for now
+I also am working on taking out the nested switches after they ahve been 
+copied and leave teh switch for the nested switch and then replace
+the switch for each nested switch with a method that is numbered
+(this is what I have been working on recently)
+
+I think I will have  list to hold the nested switch methods.
+They will each be unique depth case (name/number probably number)
+I might need to map the number of each to the case name.
+
+create a list in quail list of each switch starting 
+with main switch in position quail[0]
+
+#=====================
+#not added to endswitch as yet, still beta testing
+#this phase is tested successfully at the bottom of official_switch_case_silever.py
+[done] (3) inside of function endswitch(sw) #testing in official_switch_case_silver.py
+if switchcount > 1:  #then nested switch #this triggers bypass205()
+   bypass205()  #this method loops thru the qail list with the switch strings
+   and calls the paser and code gen for each input switch string
+ else:
+    pass 
+
+#=====================      
+(4) inside of codegen() the concatted output string sweet
+is appended to the list stanford (if nested_switch[0]== True)
+# this is working filling the stanford list 
+this results in the stanford list having the switch strings
+we then reverse the list so that main is last in the list
+so that when we conccat them together top down it will work correctly
+since the nested switches will be embedded within methods above it
+
+#=================
+[done] (5)  working on a management method that is called after the last quail string
+is sent thru the parser and codegen
+so what I can do is when the count on the last stanford list is reached
+then I know it's done creating the python strings output
+
+
+[done] (5) I need to put the nested_method_number() name where each inner switch was
+within the main switch in the correct case and line number
+
+[done] (x) change switch to inswitch and fallthru to infallthru in nested switch strings
+
+[done] (x) put nested switch strings into a method for the nested_switch_number
+
+[done] (x) concat together in a triple string ''' switch main and nested switches in python
+    and execute(string)
+    
+[done] (x) execute string
+
+###3=================================================================
+
 Saturday, July 31st, 2021  12:15 pm
 Decided to reduce the complexity of the nested feature and will manage it as separate stages
 that are completely independent but are called in order so that I can manage it more cleanly.
