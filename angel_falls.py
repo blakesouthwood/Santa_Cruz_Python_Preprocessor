@@ -111,6 +111,49 @@ car = {
 
 
 
+#==========OUTPUT===========
+here dynamic attempt ------->>
+testing... dynmically add data to dictionary a, x, y
+Tesitng using lists now which are changeable on the fly
+{'1': [10, 20], '2': [28, 38], '3': [42, 46], '4': [50, 52]}
+after updating fun dictionary dynamically  strawberry fields===
+{'1': [10, 20], '2': [28, 38], '3': [42, 46], '4': [50, 52]}
+[10, 20]
+below should be 10 and 20 for the result
+10
+20
+now to empty dictionary called fun
+{}
+playing with dictionary access...
+testing getting car model
+Mustang
+Muppets Animal
+do this baby caled
+===do this baby() adding data to peartree dictionary called ......====
+practicing ADDING data to see if it works (this will be done dynamically later
+{'1': [10, 20], '2': [28, 38]}
+x= [10, 20]
+{'1': [10, 20], '2': [28, 38]}
+get size of dictionary ... a test
+length of peartree = 2
+2
+doing simple test here to get value of key number in peartree dictionary
+====Domino's Pizza==
+[10, 20]
+the value of key 1 in peartree = [10, 20]
+does this work or not???
+10
+20
+=========
+[28, 38]
+the value of key 1 in peartree = [28, 38]
+28
+38
+get size of dictionary zoo 2
+1
+2
+					   
+
 Sunday, August 1st, 2021 11am California time
 Approaching the finish line for nested switches. Likely adding Tuesday at this point.
 
