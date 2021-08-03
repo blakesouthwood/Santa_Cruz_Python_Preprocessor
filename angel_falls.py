@@ -1,3 +1,116 @@
+Tuesday, August 3rd, 2021 11: 47 am Morgan Hill Starbucks
+	https://www.youtube.com/watch?v=HEe3xfWfkG8
+
+Just got method working to dynamically add records to dictionary using lists for input.
+This way I can change it on the fly and add to it quickly and easily.
+working on the nested features and double checking to make sure everything is working before
+uploading it.
+Creating more methods too for readability aid.
+
+####################################################################||
+### PRACTICING ADDING DATA TO A DICTIONARY CALLED PEARTREE  
+#####################
+## do this baby 
+
+#what I need to do is add to a dictionary dynamically 
+#####################
+def do_this_baby():
+    print("do this baby caled")
+    print("===do this baby() adding data to peartree dictionary called ......====")
+    print("practicing ADDING data to see if it works (this will be done dynamically later")
+    peartree['1'] = [10,20]
+    peartree['2'] = [28,38]  #uses small anonymous list for data
+    print(peartree)
+    x = peartree.get("1")
+    print("x=",x)
+    
+    
+    
+#testing adding data record to dctionary dynamically.
+#Declare a dictionary (empty) 
+print("testing dynanmically adding data to a dictionary Drive Thru")
+data = {'a': 1, 'b': 2, 'c': 3}
+print(data)
+data.update({'d':3,'e':4})  # Updates 'c' and adds 'd'
+print(data)
+
+fun={}
+print("first the fun dictionary is empty")
+print(fun)
+#input values to dynamically add data for teh switch endswitch to dictionary
+
+cherish=[10,20]
+skyblue =[28,38]
+
+
+print("This is doing an update here --->")
+fun.update({'1':cherish,'2':skyblue})
+print("hard coded here printing out the dictionary fun")
+print(fun)
+print("========")
+num1='3'
+num2='4'
+silver =[42,46]
+gold =[50,52]
+
+#put these into a list also
+crystal=[]
+crystal.append(0)
+crystal.append(num1)
+crystal.append(num2)
+
+dust=[]
+dust.append(0)
+dust.append(silver)
+dust.append(gold)
+
+def dynamically_add_data_to_dictionary(a,x,y):
+    print("testing... dynmically add data to dictionary a, x, y")
+    print("Tesitng using lists now which are changeable on the fly")
+    a.update({crystal[1]:dust[1],crystal[2]:dust[2]}) #totally dynamic attempt here
+    print(a)
+
+print("here dynamic attempt ------->>")
+dynamically_add_data_to_dictionary(fun,gold,silver)
+
+
+print('after updating fun dictionary dynamically  strawberry fields===')
+print(fun)
+print(fun.get("1"))
+rat=fun.get("1")
+print("below should be 10 and 20 for the result")
+print(rat[0])
+print(rat[1])
+print("now to empty dictionary called fun")
+fun.clear() #empties dictionary
+print(fun)
+    
+##===============================
+## get_size_of_dictionary  (name of dictionary)
+##===============================
+def get_size_of_dictionary(zoo):  #this is so I know what next record should be
+    answer = len(zoo)
+    print("get size of dictionary zoo",answer)
+    #how do I loop thru a dictionary
+    for x in peartree:
+        print(x)
+    print("====")
+    print("")
+    for x in thisdict.values():
+        print(x)
+    print("")   
+    print("=====")
+    for x, y in thisdict.items():
+        print(x, y)
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+
+
 Sunday, August 1st, 2021 11am California time
 Approaching the finish line for nested switches. Likely adding Tuesday at this point.
 
