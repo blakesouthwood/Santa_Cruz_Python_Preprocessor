@@ -11,6 +11,87 @@ Might have it stiched together tomorrow and put it up on github.
 The nested switch code is completely separate from the rest of the switch to manage
 the complexity.
 
+#I will change var and list names and function names. I make them memorable to keep it fun.
+###############################################################
+################ testing call of these methods at once
+###========== august 3rd test Tuesday nice air conditioning ====
+def nested_switch_trapeze_tricks():
+    print("==== nested_switch_trapeze_tricks() called=====")
+    loop_thru_switch_locations()
+    get_case_line_numbers(find_nested_switch_game)
+    get_larger_number_less_than_case()
+    get_end_of_switch_line_number() #puts it into endnestedswitchline[0]
+    copy_a_nested_switch(find_nested_switch_game)
+    copy_coattails_bottom_of_big_switch_after_nested_switch_end() 
+    fishfood()
+    get_inner_switch_line() #not sure if I need this one
+    switcharoo=[];switcharoo.append(0);linecounter=0
+    print("the nubmer of nested switches=")
+    get_number_of_nested_switches()  # here it is 
+
+#this calls it right here 
+nested_switch_trapeze_tricks()
+
+
+##===================
+#loop
+pairlist=[]
+theforce=[]
+#this would just add the switch location
+alpha=''
+beta =''
+counter =0
+jedi=''
+#this reads in data from switch_location
+#               and from endswitch_location
+def fill_pairlist_with_switch_and_endswitch_pairs(yy):
+    print("====fill pairlist with switch and endswitch pairs()=====")
+    get_switch_and_endswitch_locations(yy) #===== using sample stringh 
+    print("this is grabbing the switch locations which are dynamically added to a dictionary for pairlist")
+    print("the length of switch location =",len(switch_location))
+    print("the length of end switch locatoin =",len(endswitch_location))
+    print("==============...............============")
+    # loop ==============================
+    counter =0;allpha='';beta='';   #so this is one small set switch and endswitch line numbers
+    for item in switch_location: #loops thru list switch_location
+        alpha = switch_location[counter]
+        beta  = endswitch_location[counter] #they should be the same length 
+        pairlist.append([alpha,beta]) #always in sets of 2 #adds alpha and beta as list into pairlist  list
+        print("pairlist=",pairlist)
+        counter += 1
+    print("======================")
+    print("what is in the pairlist")
+    newcounter=0
+    print("the length of the pairs =",len(pairlist))
+    # loop =======================
+    for item in pairlist:
+        print(item)
+        sosmart = pairlist[newcounter]
+        print(sosmart[0]) 
+        print(sosmart[1]) 
+        print("====== JEDI TEST ========")
+        #this is constructing filling the data in the dictionary pair values
+        jedi = "[" + str(sosmart[0]) + "," + str(sosmart[1]) + "]" 
+        print('jedi=',jedi)
+        theforce.append(jedi) #the pair is added as list to theforce
+        turbo  =theforce[newcounter]
+        newcounter += 1
+    print("theforce=",theforce)
+    print("the length of theforce list =",len(theforce))
+    print("did we make it this far... in a galaxy")
+###=====
+
+def testing_pair_list():
+    print("======testing pair list() ======")
+    print("theforce[0]=",theforce[0]) 
+    print("theforce[1]=",theforce[1])
+    
+    
+fill_pairlist_with_switch_and_endswitch_pairs(samplestring)
+testing_pair_list()
+
+
+
 Tuesday, August 3rd, 2021 11: 47 am Morgan Hill Starbucks
 	https://www.youtube.com/watch?v=HEe3xfWfkG8
 
