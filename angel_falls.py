@@ -1,4 +1,10 @@
 Wednesday, August 4th, 2021 1:13pm Starbucks
+testing the management of converting a switch with nested switches into separate strings
+and then running them through endswitch() method which detects if more than one switch in the string.
+If there is more than one switch it triggers bypass205() which separates the switches (not shown in this code below)
+and then flips a fuzzy logic flag in the codegen so that each generated switch is saved in a list.
+and then combined to make the output for running the multiple switch case.
+
 Just tested bypass205() inside of endswitch() and it worked!!
 That was cool. I was slightly nervous and had some speed bumps but overcame my fear and
 conquered it with persaverance. #that was the most critical stage converting the javascript/C switch into python
