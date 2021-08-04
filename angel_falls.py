@@ -1,3 +1,16 @@
+Tuesday, August 3rd time 6:12pm on home stretching approaching home plate.
+Worked on building methods to gather together collections of methods together
+cleaning up the code.  Working on getting the switch and endswitch lines into pairs which 
+are then put into a list. Unreal progress this morning and this evening. 
+So working on the first half management of transforming the input switch string into separate files
+before it is sent thru the parser and codegen for each individual switch string. All of the code
+is completed already. I am just packaging it and organizing it and making it easier to deal with.
+Startling how much code is necessary to do this all. Hopefully making the goto label will be less
+than two pages of code which will work ontop of the switch case framework.
+Might have it stiched together tomorrow and put it up on github.
+The nested switch code is completely separate from the rest of the switch to manage
+the complexity.
+
 Tuesday, August 3rd, 2021 11: 47 am Morgan Hill Starbucks
 	https://www.youtube.com/watch?v=HEe3xfWfkG8
 
