@@ -47,9 +47,29 @@ def bypass205(y): 							# runs input strings thru parser and
 		parser_guts(y)  					# does parser and codegen of each switch string        
 											# and is placed into stanford list
 ###  end bypass205()  ##################  		
-		
 
 
+##=========================================
+def swap_endswitch_with_curlybrace():
+    print("=== swap_endswitch_with_curlybrace() ====")
+    counter=0
+    for item in quail:#looping thru quail list
+        if "endswitch" in item:
+            print("yes endswitch is in this string")
+            holdon[0] =take_out_endswitch(item)
+            quail[counter] = holdon[0]
+            holdon[0]=''
+            counter += 1
+            continue
+        else:
+            print("nope no endswitches")
+            counter += 1
+            continue
+#end function
+
+
+def todo_after_putting_strings_into_quail_before_starting_bypass205():
+    swap_endswitch_with_curlybrace() 
 
 
 
