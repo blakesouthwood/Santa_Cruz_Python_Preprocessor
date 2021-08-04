@@ -1,6 +1,8 @@
 Wednesday, August 4th, 2021 1:13pm Starbucks
 What happend today is I activated by bypass feature within the endswitch() method so that I can now
-handle singlular switches in a string and multiple strings.
+handle singlular switches in a multiple switches so a switch with nested switches. This was a nontrivial problem.
+I think I am up to 12,000 to 13,000 lines on the project now. Grateful it works. My biggest program yet. All python.
+
 Up until today this was not implimented into the design. 
 A lot of features had to work in tandem and in concert with a multitude of methods 
 to make this super complex feature work. Today is a happy day.
