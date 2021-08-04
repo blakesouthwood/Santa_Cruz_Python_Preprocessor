@@ -1,4 +1,10 @@
 Wednesday, August 4th, 2021 1:13pm Starbucks
+What happend today is I activated by bypass feature within the endswitch() method so that I can now
+handle singlular switches in a string and multiple strings.
+Up until today this was not implimented into the design. 
+A lot of features had to work in tandem and in concert with a multitude of methods 
+to make this super complex feature work. Today is a happy day.
+
 testing the management of converting a switch with nested switches into separate strings
 and then running them through endswitch() method which detects if more than one switch in the string.
 If there is more than one switch it triggers bypass205() which separates the switches (not shown in this code below)
