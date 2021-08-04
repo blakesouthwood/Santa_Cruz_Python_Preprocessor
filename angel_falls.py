@@ -1,3 +1,12 @@
+Wednesday, August 4th, 2021 1:13pm Starbucks
+Just tested bypass205() inside of endswitch() and it worked!!
+That was cool. I was slightly nervous and had some speed bumps but overcame my fear and
+conquered it with persaverance. #that was the most critical stage converting the javascript/C switch into python
+on-the-fly sensing more than one switch. Now for the test I had 3 already separated strings but it did indeed work.
+Thrilled. The rest is gravy from here. 
+
+
+
 Wednesday,August 4th,2021  10:06 am Menlo Park Starbucks
 Working on ensuring each separate small program module works before connecting them in sequence together.
 
