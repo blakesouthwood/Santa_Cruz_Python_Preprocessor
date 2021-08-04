@@ -5,6 +5,206 @@ conquered it with persaverance. #that was the most critical stage converting the
 on-the-fly sensing more than one switch. Now for the test I had 3 already separated strings but it did indeed work.
 Thrilled. The rest is gravy from here. 
 
+Just test one string which works correctly.
+So now the two scenarios work. one switch in an input string and more than one switch in an input string.
+Over the moon right now. What a great fight that was.
+
+
+####====== BYPASS205() ======== ###
+# stanford list is filled in the code generator at the bottom
+#######################################################################
+########### bypass 205 ########### july 1st 2021 testing starbucks in gilroy
+#premise is that quail list has more than one switch string in it
+#for bypass205 to work so a minimum of 2 switch strings
+def bypass205(y): 							# runs input strings thru parser and  
+	print("=========bypass205() called===========")
+	print("quail input list of switch strings has a length of ")
+	print(len(quail))
+	print("if len(quail)>= 2: you are good")
+	if len(quail) >= 2:
+	   print("GREEN LIGHT SUFFICIENT quail requirement met")
+	else:
+	    print("RED LIGHT insufficient quial list is only 1 in length")
+	print("====")
+	###==== error message if insufficient list length for quail ===
+	if len(quail) < 2:# quail list requires 2 or more in length of switch strings
+		print("error message in bypass205")
+		print("quail list needs minimum of 2 strings to work in quail list")
+		return # don't go forward if the quail list is too small
+	else:
+		pass
+	###=============================================================    
+	mytrace("bypass205()") 					# code gen puts in stanford list
+	del stanford[:] 						# empties  stanford list 
+	todo_after_putting_strings_into_quail_before_starting_bypass205()
+	#this swaps the endswitch out and puts in } at end of switch
+	#loop thru quail list and apply parser guts for each string
+	for item in quail: 						# loop thru quail list 
+		y = item 							# this puts the contents of each string in quail into y 
+		switchcasetester='';switchcasetester=None;
+		del switchcasetester;switchcasetester='';
+		show_input_switch_string() 			# flag for testing this shows the input string
+		parser_guts(y)  					# does parser and codegen of each switch string        
+											# and is placed into stanford list
+###  end bypass205()  ##################  		
+		
+
+
+
+
+
+# I need to call endswitch() to call bypass for this test
+#august 4th test at starbucks on santa cruz avenue 
+
+# so it would be True if nested is true
+	#for this test we pretend that we have already seperated the big switch string
+	# into sepeate strings and they ahve been placed into the quail list
+	# #but I can do it here later, with y as input
+	# for right now in this phase the quail list has already been filled
+	# and we have determined that nestwich is True
+########################
+##     endswitch(y)      this calls flow_valve_input which checks if cases are numbers or words
+########################  and if numbers = True then call parser_mode_2(y); If numbers = False parser_mode_1(y)
+def endswitch(y): #pulls in sw 
+	print("ENDSWITCH CALLED DOES IT EVEN WORK () called...")
+	switchcasetester='';switchcasetester=None;
+	del switchcasetester;switchcasetester='';
+	mytrace("endswitch() in switch_cat called")
+	show_input_switch_string() #flag for testing this shows the input string
+	#check  if nested switches
+	print("count how many endswitches in string")
+	answer = y.count("endswitch")
+	print("if answer = 0 continue moss beach one string test ")
+	print(answer)
+	print('=====')
+	###========= testing this august 4th 2021 ==================================
+	print("here we go, leaping into the == Grand Canyon == will it fly?")
+	if nested_switches_count[0] > 1: #based on number of endswitch count
+		nested[0] = True; 
+		print("bypass 205 CALLED IN ENDSWITCH biggest test yet to make sure that his works----")
+		bypass205(y)  #<<== this manages nested switches
+		#or I can do ((so y is meaningless for this test)
+		#return       # it is called once and then endswitch ends
+	else:
+		nested[0] = False; 
+		pass
+	###===========================================
+	#this section is only run if a string switch string NOT NESTED ONES
+	print("so this would be skipped if nested switch string combo bypass")
+	if nested[0] == False or answer == 0:#all of this below is skipped if nested = True
+		check_if_uppercase_constant_cases(y)  #if UPPCASE this senses it and converts to string
+		if baseline[0] != "nada": #means it converted to uppercase
+			y = baseline[0]
+		#end if
+		flow_valve_input1(y)   #puts True or False into valve[0] added April 2nd, 2021
+		print("if number in first case",valve[0])
+		if valve[0] == True:    #meaning numbers like case 12:
+			macro_expansion(y); #checks if macros used and expands them and converts numbs to strings
+			y=None; del y; y = cray[0]; 
+		#end if
+		flush_lists() 
+		parser_mode_1(y) 
+	else:
+		pass
+	################## normal endswitch 
+
+
+#three scenario tests
+bypass205() by itself
+endswitch with byhpass205() implimented (added)
+endswitch doing regular singular switch not doing bypass205()
+
+
+#this test below is outside of any function above and any method
+def raw_testing_of_bypass205():
+    print("==########################===")
+    print("RAW TESTING OF BYPASS205()....")
+    print("TO THE MOON...")
+    ##################### this is a test of bypass205 with three strings already separated
+    y=''
+    del stanford[:] #just to be sure empty stanford list first
+    print("the length of stanford=",len(stanford))
+    print('about to call bypass205() ======')
+    #WARNING: this requires strings in quail list for bypass205 to run
+    # this is testing using bypass205 to create multiple python strings for each switch input string
+    print("what is in y",y)
+    print("maybe just the quail list is necessary")
+    print("length of quail list =",len(quail))
+    
+    bypass205(y) #run the test data to see what it does and calls the parser and codegen 3 times
+    print("the length of stanford=",len(stanford))
+    what_is_in_stanford()# list   
+    # I just want to see the strings and proof that it worked 
+
+    next_steps()
+    managing_nested_switch_scenario() #this just checks if the stnaford len > 0
+    # here we see the output python in the stanford list BEFORE it's combined in cake to
+    # form a big string that will eventually be executed
+    build_stacked_cake_string_combining_stanford_list()
+    res=get_number_of_nested_switches()
+    print("====== LOOK FOR IT ========")
+    print("this is the number of nested switches =",res)
+
+#raw_testing_of_bypass205()  #turned off for testing officially above
+
+
+
+
+#simulating an input string here we go
+
+def santa_cruz_test():
+    print("SANTA CRUZ TEST to infinity and beyond")
+    print("here we go")
+    print("length of quail list prefilled")
+    print("length of quail")
+    print("length =",len(quail))
+    y=''
+    del stanford[:]
+    endswitch(y) ##<<======== august 4th test 12:45pm 
+    what_is_in_stanford() #output of runnin ghte code. 
+    next_steps()
+    managing_nested_switch_scenario() #this just checks if the stnaford len > 0
+    # here we see the output python in the stanford list BEFORE it's combined in cake to
+    # form a big string that will eventually be executed
+    build_stacked_cake_string_combining_stanford_list()
+    res=get_number_of_nested_switches()
+    print("====== LOOK FOR IT ========")
+    print("this is the number of nested switches =",res)
+
+#santa_cruz_test()    
+
+
+#to test a single string whereby bypass is not triggered 
+def moss_beach_test(v): # 1 string test
+    print("====MOSS BEACH TEST to infinity and beyond===")
+    print("here we go")
+    print("length of quail list prefilled")
+    print("length of quail")
+    del quail[:]
+    print("length =",len(quail))
+    #y=''
+    del stanford[:]
+    print("y=")
+    print(y)
+    endswitch(y) ##<<======== august 4th test 12:45pm 
+    what_is_in_stanford() #output of runnin ghte code. 
+    next_steps()
+    managing_nested_switch_scenario() #this just checks if the stnaford len > 0
+    # here we see the output python in the stanford list BEFORE it's combined in cake to
+    # form a big string that will eventually be executed
+    build_stacked_cake_string_combining_stanford_list()
+    res=get_number_of_nested_switches()
+    print("====== LOOK FOR IT ========")
+    print("this is the number of nested switches =",res)
+
+y =oldstring_test2
+moss_beach_test(y)
+
+
+
+	
+	
+
 
 
 Wednesday,August 4th,2021  10:06 am Menlo Park Starbucks
