@@ -1,5 +1,5 @@
 Wednesday,August 4th,2021  10:06 am Menlo Park Starbucks
-Working on insuring each separate small program module works before connecting them in sequence together.
+Working on ensuring each separate small program module works before connecting them in sequence together.
 
 Macro with Hypertalk structure works.swap with is from Algol 60. Verb first with sentence structure. Structured Pseudocode.
 "swap 'switch(exp)' with 'inswitch(exp)' in list[0]"
