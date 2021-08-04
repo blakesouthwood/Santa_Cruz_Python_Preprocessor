@@ -4,6 +4,7 @@ handle singlular switches in a string and multiple strings.
 Up until today this was not implimented into the design. 
 A lot of features had to work in tandem and in concert with a multitude of methods 
 to make this super complex feature work. Today is a happy day.
+I included some of the key code that makes it work.
 
 testing the management of converting a switch with nested switches into separate strings
 and then running them through endswitch() method which detects if more than one switch in the string.
