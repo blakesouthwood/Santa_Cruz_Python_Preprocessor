@@ -201,7 +201,24 @@ y =oldstring_test2
 moss_beach_test(y)
 
 
+####============================
+####      parser_guts()           #dreamed up on July 10th, 2021 to see if it would work
+####============================
+def parser_guts(y):
+	print("parser_guts called =======")
+	check_if_uppercase_constant_cases(y)	#if UPPCASE this senses it and converts to string
+	if baseline[0] != "nada":				#means it converted to uppercase
+		y = baseline[0]
+	flow_valve_input1(y)					#puts True or False into valve[0] added April 2nd, 2021
+	print("if number in first case",valve[0])
+											# macro expansion is only called if numbers are True
+	if valve[0] == True:					#meaning numbers like case 12:
+		macro_expansion(y); 				#checks if macros and expands them and converts numbs to strings
+		y=None; del y; y = cray[0];
+	flush_lists() 
+	parser_mode_1(y) 	
 
+###==================================
 	
 	
 
