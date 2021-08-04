@@ -1,3 +1,9 @@
+Wednesday,August 4th,2021  10:06 am Menlo Park Starbucks
+Working on insuring each separate small program module works before connecting them in sequence together.
+
+Macro with Hypertalk structure works.swap with is from Algol 60. Verb first with sentence structure. Structured Pseudocode.
+"swap 'switch(exp)' with 'inswitch(exp)' in list[0]"
+
 Tuesday, August 3rd time 6:12pm on home stretching approaching home plate.
 Worked on building methods to gather together collections of methods together
 cleaning up the code.  Working on getting the switch and endswitch lines into pairs which 
