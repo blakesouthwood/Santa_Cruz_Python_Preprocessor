@@ -1,3 +1,28 @@
+Saturday, August 7th, 2021 11:57am Morgan Hill Starbucks
+Perfecting input so the input string is checked for switch count and endswitch count
+to determine if nested_switches = True and if so bypass205 is called.
+Testing bypass205() thoroughly now.
+
+Reviewing functions and methods to do Cookie Cutter which separates the input
+string into the main switch and the nested switches (if they exist) and then change
+the inner switches in the main switch into numbered nested methods. That all works.
+These are all put into the qail input list and endswitches changed to } also.
+Then as a list they are fed into bypass205 inside of the method endswitch().
+Afterwards the output of teh parser and code gen for each switch is put into the stanford list.
+
+Then the next stage is train yard whereby each switch string is encased into a template numbered method
+and indented properly. The numbering is crucial so an id as a comment is put into each nested string
+to double check accuracy of identification. This code works. And then the cake layer combo concatter works which connects
+the stings are combined and then finally executed.
+
+So the front end activities have been streamlined and automated chopping up the input string if there
+is more than one switch. bypass205 has been added to endswitch and testing continues. I sent thru
+a few individaul strings to make sure that bypass isn't executed when it shouldn't be.
+So I'm focused on the backend now taking the python output of each switch case and then adding
+them to the combo cake layers in order - also known as train switch yard since they must be backwards
+order with main at the bottom or in other words last.
+
+
 Wednesday, August 4th, 2021 1:13pm Starbucks
 What happend today is I activated by bypass feature within the endswitch() method so that I can now
 handle singlular switches in a multiple switches so a switch with nested switches. This was a nontrivial problem.
