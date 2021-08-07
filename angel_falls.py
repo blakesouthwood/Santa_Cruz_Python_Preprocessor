@@ -1,4 +1,11 @@
 Saturday, August 7th, 2021 11:57am Morgan Hill Starbucks
+Recently had a problem with my window not going up on my car and that ate up precious time
+and then I had problems with my iphone not charging and I fixed that problem. Combined that
+ate up 3 days and set me back a few days from completing this project.
+I can see the light at the end of the train tunnel (like the Summit Tahoe on Donnor Pass)
+and the hardest methods work beautifully and are debugged.
+
+
 Perfecting input so the input string is checked for switch count and endswitch count
 to determine if nested_switches = True and if so bypass205 is called.
 Testing bypass205() thoroughly now.
