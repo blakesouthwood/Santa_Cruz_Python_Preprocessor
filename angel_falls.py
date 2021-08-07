@@ -15,9 +15,9 @@ string into the main switch and the nested switches (if they exist) and then cha
 the inner switches in the main switch into numbered nested methods. That all works.
 These are all put into the qail input list and endswitches changed to } also.
 Then as a list they are fed into bypass205 inside of the method endswitch().
-Afterwards the output of teh parser and code gen for each switch is put into the stanford list.
+Afterwards the output of the parser and code gen for each switch is put into the stanford list.
 
-Then the next stage is train yard whereby each switch string is encased into a template numbered method
+Then the next stage is train yard whereby each generated python switch string is encased into a template numbered method
 and indented properly. The numbering is crucial so an id as a comment is put into each nested string
 to double check accuracy of identification. This code works. And then the cake layer combo concatter works which connects
 the stings are combined and then finally executed.
@@ -29,6 +29,15 @@ So I'm focused on the backend now taking the python output of each switch case a
 them to the combo cake layers in order - also known as train switch yard since they must be backwards
 order with main at the bottom or in other words last.
 
+At this point I have used dummy test data between stages and now I am setting up everything to work
+the way that it is designed. So previously I already had 3 strings in the quail list to test bypass205()
+which for simplicity just checks the length of quail to determine if there are any nested switches.
+Now the next test is starting with a multi switch string, split it up, and fill quail and send it thru
+endswitch and bypass205. Then after that I will work on adding the nested number methods.
+So I am proceeding methodically to ensure each stage works and carefully weld them together. 
+												 
+working in files. fourt_of_july2.py and official_switch_case_silver.py
+testing in concert with utilizing the parser and codegen for real world testing
 
 Wednesday, August 4th, 2021 1:13pm Starbucks
 What happend today is I activated by bypass feature within the endswitch() method so that I can now
