@@ -1,3 +1,9 @@
+Wednesday,August 11th, 2021  1:13pm Menlo Park, California
+working on sepearting stings methods connecting methods together adding arguments params.
+
+
+
+
 Saturday, August 7th, 2021 11:57am Morgan Hill Starbucks
 Recently had a problem with my window not going up on my car and that ate up precious time
 and then I had problems with my iphone not charging and I fixed that problem. Combined that
