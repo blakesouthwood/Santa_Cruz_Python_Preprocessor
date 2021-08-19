@@ -1,3 +1,11 @@
+August 18th,2021 9pm
+Engineered working architecture to automatically detect all nested switches
+and copy them to the input list. This was more daunting then I first thought.
+Happy the worst vexing piece works.  Last piece which happens with generated python
+just needs to be streamlined and already works. Tomorrow should be productive.
+Greatly relieved this part finally works as designed.
+
+
 Wednesday,August 11th, 2021  1:13pm Menlo Park, California
 working on sepearting stings methods connecting methods together adding arguments params.
 
