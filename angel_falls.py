@@ -1,23 +1,26 @@
 August 22, 2021  11:07am Hollister, California
+Will next work on design and management structure and plumbing tool.
+
+Currently finishing each stage and testing independently before connecting them together.
 Due to the overwhelming growing complexity after this is finished
 I'm making a simple program in javascript to represent simple pictures of the chunks
-and locaiton and name of each function and method and what they do with search
+and location and name of each function and method and what they do with search
 to see the design implimentaiton at the function level. And I will be able to click on
-a function to see more detials. And I will have simple pipe diagrams overlay to see the 
-flow through the system. This is a necessity (to be done later) so I can see the structgure
-archiecture and flow of control and keep the functions behavior perupose clear and 
+a function to see more details. And I will have simple pipe diagrams overlay to see the 
+flow through the system. This is a necessity (to be done later) so I can see the structure
+archiecture and flow of control and keep the functions behavior purpose clear and 
 TRANSPARENT SINCE IT'S ALL INVSIBLE AND I NEED TO SEE IT. This idea occured to me this morning
 because I was lost at sea what was doing what and when and I was so many fathoms deep in the code
-I couldn't visualize the sturure I designed. And what was crucial was seeing the strucgture and keeping
-track of what functionsa and methods were contributing to behaviors.
+I couldn't visualize the structure levels I designed. And what was crucial was seeing the structure and keeping
+track of what functions and methods were contributing to behaviors.
 
 I originally designed just the main switch to have nested switches and the second design
 will allow nested switches to have nested switches to handle  nesting 3 deep. Right now it
-limitd to 2 deep and I'm modifyhing it by tab depth for now for 3 tabs depth main switch
+limitd to 2 deep and I'm modifying it by tab depth for now for 3 tabs depth main switch
 5 depth 2nd level, 7th tab depth 3rd level and 9th tab tabs 4th level depth, more to be added later.
 
-This all ahppens before the parser and codegen. Organizingb the code now.
-The second half after teh code gen puts the generated swith code strings into methods
+This all happens before the parser and codegen. Organizing the code now.
+The second half after the code gen puts the generated swith code strings into methods
 and combines in one string wheich is then executed works already.
 
 
