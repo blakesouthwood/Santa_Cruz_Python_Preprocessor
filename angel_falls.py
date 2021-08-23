@@ -1,3 +1,8 @@
+August 23rd 2021
+Designing modificationto handle multiple nesting beyond one level deep up to five levels deep.
+This is a coprocessor seperate module engine to modify nested switches with inner switches.
+
+
 August 22, 2021  11:07am Hollister, California
 Will next work on design and management structure and plumbing tool.
 
