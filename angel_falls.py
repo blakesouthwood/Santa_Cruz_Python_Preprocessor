@@ -3,6 +3,8 @@ More testing and refining bypass205() inside of endswitch().
 bypass205() is a method triggered if there are nested switches  embedded in the main switch.
 Now I can handle nested switches with aplomb. I just need to integrate 
 the sting slitter called cookie_cutter which needs to be called before endswitch().
+Cookie_cutter is the string splitter that puts the individual nested switches and main switch into 
+the quail list. After being parsed and codegened the strings are added to the stanford list.
 Then I will work on integrating the end game of already working code that puts the outoput
 python strings into methods. 
 I spent the past few days perfecting the pair list called range_list for a newst holding lists
