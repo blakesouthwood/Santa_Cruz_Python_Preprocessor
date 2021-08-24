@@ -1,3 +1,12 @@
+August 24th, 2021 MenloPark, Ca
+More testing and refining bypass205() inside of endswitch().
+bypass205() is a method triggered if there are nested switches  embedded in the main switch.
+Now I can handle nested switches with aplomb. I just need to integrate 
+the sting slitter called cookie_cutter which needs to be called before endswitch().
+Then I will work on integrating the end game of already working code that puts the outoput
+python strings into methods. 
+
+
 August 23rd 2021
 Designing modificationto handle multiple nesting beyond one level deep up to five levels deep.
 This is a coprocessor seperate module engine to modify nested switches with inner switches.
