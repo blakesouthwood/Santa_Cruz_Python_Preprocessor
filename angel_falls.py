@@ -5,6 +5,9 @@ Now I can handle nested switches with aplomb. I just need to integrate
 the sting slitter called cookie_cutter which needs to be called before endswitch().
 Then I will work on integrating the end game of already working code that puts the outoput
 python strings into methods. 
+I spent the past few days perfecting the pair list called range_list for a newst holding lists
+of the switch , endswitch line locations. Initially I was going to use a dictionary and I 
+gradually gravtated towards a list of lists.
 
 
 August 23rd 2021
