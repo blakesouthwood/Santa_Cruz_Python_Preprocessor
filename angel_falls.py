@@ -1,3 +1,16 @@
+August 26th 12:43 pm
+Just got this working
+# Thursday, August 26th, 2021 12:27pm 
+	# inside of original_stage1.py inside of left folder
+	# still need to add the methods to make this section work
+	# which fills up the quail list that will be fed into bypass205
+	# #this is the section that I'm working on right now ===
+	# WORKS not added yet : make pair_list here of pairs of switch endswitch 
+	# WORKS not added yet : then  loop through pair_list to fill quail list
+	# quail list of strings  using copy_string if at least one endswitch in input string
+	# Need to fill quail list with these switch bodies strings
+this happens above and before bypass205() is called in endswitch if multiple switches detected 
+
 August 24th, 2021 MenloPark, Ca
 More testing and refining bypass205() inside of endswitch().
 bypass205() is a method triggered if there are nested switches  embedded in the main switch.
