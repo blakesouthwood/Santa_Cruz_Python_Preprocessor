@@ -1,3 +1,15 @@
+August 27th, Friday, 11:06am Morgan Hill Starbucks
+Working code filling the quail list with input strings after separating them.
+Found working code main switch string conversion code
+which takes out the nested switches and puts in 
+a nested method numbered
+which I will make a second version to handle
+dealing with nested switches with nested switches.
+Came up with ingenius naming scheme that gets the
+correct address line number and switch it's embedded in
+and will impliment tomorrow.
+
+
 August 26th 12:43 pm
 Just got this working
 # Thursday, August 26th, 2021 12:27pm 
