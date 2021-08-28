@@ -1,3 +1,27 @@
+August 28th Saturday 11:11 am Gilroy Starbucks
+All systems are green.
+August 28th,2021 nearly ready for launch of switch case with infinite nesting
+First launching switch with single level nesting in a few days.
+Stage 2 will be launching in two weeks with up to 5 levels deep nesting for now.
+Refining the code that combines the switches and puts them into methods after
+taking the output in the stanford list and triggering the main switch.
+Just retested the auto tabbing and putting each nested switch in python into methods.
+All works perfectly.
+Just polishing up the code after some welding.
+Putting the methods together so it's all automatic.
+
+Thrilling seeing it working.
+
+Next step is connecting the first half which takes the input switch case with nested switches
+and separates the strings and puts it into the quail list and then 
+it will go thru the endswitch() function where the multiple switches are detected
+and will thereby trigger the bypass205() method and convert each string into python
+and then what I refined today will be called welding_together_all_python_nested_switches().
+So a little bit more testing but the modules work separately currently, just need to
+connect them. 
+
+#========================
+
 August 27th, Friday, 11:06am Morgan Hill Starbucks
 Working code filling the quail list with input strings after separating them.
 Found working code main switch string conversion code
