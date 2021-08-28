@@ -1,12 +1,14 @@
 August 28th Saturday 11:11 am Gilroy Starbucks
-All systems are green.
+All systems are green. The code runs ... bug free.
 
 I designed the module to do nested switches at any level and will impliment it this week.
-Using fuzzy logic it should be just one page of code.
+Using fuzzy logic it should be just one page of code. The tricky part was the managing and
+numbering the nested switches and keeping track of them.
 
 August 28th,2021 nearly ready for launch of switch case with infinite nesting
 First launching switch with single level nesting in a few days. Meaning one level deep nesting initially.
 Stage 2 will be launching in two weeks with up to 5 levels deep nesting for now.
+
 Refining the code that combines the switches and puts them into methods after
 taking the output in the stanford list and triggering the main switch.
 Just retested the auto tabbing and putting each nested switch in python into methods.
@@ -24,7 +26,7 @@ and then what I refined today will be called welding_together_all_python_nested_
 So a little bit more testing but the modules work separately currently, just need to
 connect them. 
 
-#========================
+#====================================================
 
 August 27th, Friday, 11:06am Morgan Hill Starbucks
 Working code filling the quail list with input strings after separating them.
