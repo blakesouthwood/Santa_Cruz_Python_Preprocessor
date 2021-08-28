@@ -1,7 +1,11 @@
 August 28th Saturday 11:11 am Gilroy Starbucks
 All systems are green.
+
+I designed the module to do nested switches at any level and will impliment it this week.
+Using fuzzy logic it should be just one page of code.
+
 August 28th,2021 nearly ready for launch of switch case with infinite nesting
-First launching switch with single level nesting in a few days.
+First launching switch with single level nesting in a few days. Meaning one level deep nesting initially.
 Stage 2 will be launching in two weeks with up to 5 levels deep nesting for now.
 Refining the code that combines the switches and puts them into methods after
 taking the output in the stanford list and triggering the main switch.
