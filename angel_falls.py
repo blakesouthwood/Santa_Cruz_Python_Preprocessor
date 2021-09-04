@@ -1,3 +1,9 @@
+sept 4 2021
+final testing of switch case nested 5 levels deep.
+implimenting goto label also. prototype works uses braces for scope based on C.
+breaking deeply out of loops possible.
+
+
 August 28th Saturday 11:11 am Gilroy Starbucks
 All systems are green. The code runs ... bug free.
 
