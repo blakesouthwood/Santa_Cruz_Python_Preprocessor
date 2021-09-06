@@ -1,3 +1,8 @@
+Sept 6, 2021
+Yesterday engineered managing and orchestrating nested switches.
+
+
+
 sept 4 2021
 final testing of switch case nested 5 levels deep.
 implimenting goto label also. prototype works uses braces for scope based on C.
