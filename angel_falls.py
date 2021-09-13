@@ -3,6 +3,13 @@ Reengineering. Refactoring. Testing.
 Nested switches solved and module nearly pristine. Decided to 
 make a module with several modoes so just one module takes care of generating each nested string
 in parser and a separate module for after python generated.
+Got the idea from the module that manages the first main swith with nesting and using that framework
+for each next tab level of nesting so it's more eleganta and simpler so only dealing with one level
+of switches with numbered nests which have their location address hard coded into the nested_method name.
+Just retested to make sure that I can (put) a number as a comment to a switch string after switch
+and then (get) it later to be used in the frame nested method in python. So I'm dealing with the 
+nested switches like individual frames in a movie so it's managed maticuously with complete control.
+
 
 
 
