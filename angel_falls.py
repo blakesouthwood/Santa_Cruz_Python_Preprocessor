@@ -1,3 +1,11 @@
+Monday, September 13, 2021
+Reengineering. Refactoring. Testing.
+Nested switches solved and module nearly pristine. Decided to 
+make a module with several modoes so just one module takes care of generating each nested string
+in parser and a separate module for after python generated.
+
+
+
 Sept 6, 2021
 Yesterday engineered managing and orchestrating nested switches.
 
