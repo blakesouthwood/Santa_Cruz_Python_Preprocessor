@@ -1,3 +1,157 @@
+Thursday, Sep 16, 2021
+For the nested switching to work the user must use tabs for spacing.
+#example though in github it butchers the spacing but each tab is 4 spaces. I just copied and pasted it in here.
+#the first switch(below) is just one tab indentation. Bear in mind later I will add my macro to uses braces instead of tabs.
+
+snowman='''
+	switch(exp) {  
+		case 1 thru 3:
+			print("where\'s the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			#############
+			switch(exp){  #first level deep                   Level 1
+				case 'blable':
+					print("do something")
+					####################
+					switch(exp){  #second level deep          Level 2    
+						case 'tahoe':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							####################
+							switch(exp){  #third level deep   Level 3    
+								case 'tahoe':
+									print("do something")
+									print("yep")
+									#################### this one is new 
+									switch(exp){  #fourth level deep   Level 4    
+										case 'obama':
+											print("do something")
+											print("good")
+											fallthru
+										case 'ufos are real':
+											print("better")
+											break
+										default:
+											print("nice job")
+									endswitch 
+							#############
+									fallthru
+								case 'fallen leaf lake':
+									print("nice")
+									break
+								default:
+									print("we are done here")
+							endswitch 
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			##############
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			switch(exp) {  
+		case 1 thru 3:
+			print("where\'s the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			#############
+			switch(exp){  #first level deep                   Level 1
+				case 'music':
+					print("do something")
+					####################
+					switch(exp){  #second level deep          Level 2    
+						case 'sierra':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow lake':
+							print("nice")
+							####################
+							switch(exp){  #third level deep   Level 3    
+								case 'coolish':
+									print("do something")
+									print("yep")
+									fallthru
+								case 'auburn':
+									print("nice")
+									####################
+									switch(exp){  #fourth level deep   Level 4    
+										case 'coolish':
+											print("do something")
+											print("yep")
+											fallthru
+										case 'auburn':
+											print("nice")
+											#######################
+											switch(exp){  #fifth level deep   Level 5    
+												case 'coolish':
+													print("do something")
+													print("yep")
+													fallthru
+												case 'auburn':
+													print("nice")
+													break
+												default:
+													print("we are done here")
+											endswitch 
+											break
+										default:
+											print("we are done here")
+									endswitch 
+									break
+								default:
+									print("we are done here")
+							endswitch 
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			fallthru
+		
+		default:
+			print('the end')
+}
+'''	
+
+
+
 Monday, September 13, 2021
 Reengineering. Refactoring. Testing. Wiring the modules together.
 Nested switches solved and module nearly pristine. Decided to 
