@@ -1,3 +1,46 @@
+Sunday, Sept 19th, 2021  12:19pm
+Engineered solution to determine pattern of indentation pairing.
+so if I have a switch with a nested switch with a pattern of 3 tabs and 5 tabs
+I can detect the location by line number which I use for the ID of each switch.
+I have a separate function that numbers the switches sequentially so I know their promixity.
+Just successfully was able to analzye a string of nested switches to determine the 3:5 pattern 
+which I will also add detecting 5:7  and 7:9 and 9:11 for now and more later.
+
+The point is since I need to have the nested switches separated and isolated but I need to know where they reside.
+So this was a vexing engineering problem that had little to do with coding but had more to do with figuring out
+how to analyze and find the pattern of the association of the switches and determine where they live.
+Fun * 100 now that it works. Previously it was frustration * 1 million. I wrote the key algorithms yesterday in two hours.
+Today I put the methods in loops and am using methods.
+
+So what all of this means is that I can finish the last part of the construction of the nested switches
+now that I can accurately detect them after devising a management system and ids line numbers of switches in input string
+and since they are numbered top down starting from one I know if they follow each other in a sequence. 
+
+output of testing
+sw_order_num= 1 switch_line=1  tabs =1
+sw_order_num= 2 switch_line=11 tabs =3
+sw_order_num= 3 switch_line=15 tabs =5
+sw_order_num= 4 switch_line=23 tabs =7
+sw_order_num= 5 switch_line=49 tabs =3
+sw_order_num= 6 switch_line=53 tabs =5
+
+
+[0, 0, 0]
+['1', '1', '1']
+['2', '11', '3']
+['3', '15', '5']
+['4', '23', '7']
+['5', '49', '3']
+['6', '53', '5']
+
+yes a 3:5 pattern found
+11 15
+
+yes a 3:5 pattern found
+49 53
+
+
+
 Thursday, Sep 16, 2021
 For the nested switching to work the user must use tabs for spacing.
 #example though in github it butchers the spacing but each tab is 4 spaces. I just copied and pasted it in here.
