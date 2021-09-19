@@ -16,6 +16,96 @@ So what all of this means is that I can finish the last part of the construction
 now that I can accurately detect them after devising a management system and ids line numbers of switches in input string
 and since they are numbered top down starting from one I know if they follow each other in a sequence. 
 
+red_robin ='''
+	switch(exp) {  
+		case 1 thru 3:
+			print("where\'s the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			#############
+			switch(exp){  #first level deep                   Level 1
+				case 'blable':
+					print("do something")
+					####################
+					switch(exp){  #second level deep          Level 2    
+						case 'tahoe':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							####################
+							switch(exp){  #third level deep   Level 3    
+								case 'tahoe':
+									print("do something")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice")
+									break
+								default:
+									print("we are done here")
+							endswitch 
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			exp = 3
+			switch(exp){  #first level deep                   Level 1
+				case 'burger':
+					print("do something")
+					####################
+					switch(exp){  #second level deep          Level 2    
+						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch 
+
+			##############
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+		
+		default:
+			print('the end')
+}
+'''	
+
 output of testing
 sw_order_num= 1 switch_line=1  tabs =1
 sw_order_num= 2 switch_line=11 tabs =3
