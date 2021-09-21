@@ -1,3 +1,9 @@
+Tuez Sep 21 2021
+Nested switch location nesting analyzer works.
+I can see the light at the end of the Summit Tunnel now in the Sierras.
+Days till this is fully operational for nesting feature.
+
+
 Sunday, Sept 19th, 2021  12:19pm
 Engineered solution to determine pattern of indentation pairing.
 so if I have a switch with a nested switch with a pattern of 3 tabs and 5 tabs
