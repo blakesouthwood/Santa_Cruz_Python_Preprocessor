@@ -22,12 +22,14 @@ belief. I found a method to verify an uninterupted sequence of numbers in a list
 case I'm using the counter thru a list.
 
 Rounding third and coming home on finally getting the nesting behavior jiving with
-the design. The design uses a template basedon the main method since I'm using slices
-for each tab indentation level. I did hit some unforeseen minefields along the way
-and they slowed me down a bit and threw me off the tracks derailing my momentum but
-I'm chugging along again.
+the design. The design uses a template based on the main nest method module(reuse is good)
+since I'm using slices for each tab indentation level. I did hit some unforeseen minefields 
+along the way and they slowed me down a bit and threw me off the tracks derailing my 
+momentum but I'm chugging along again.
 
-
+Just last night I got the methods working to accurately detect where a switch has a nested
+switch by tab depth change. Again this is a prescan before the fun begins and it has to
+be done automatically which makes it more adventurous and hazardous. 
 
 Tuez Sep 21 2021
 Nested switch location nesting analyzer works.
