@@ -1,3 +1,34 @@
+Wednesday sep 22, 2021
+Hit a wall and broke through it.
+For pattern matching of nested switches I needed to be able to determine
+if the tab depth like 3:5 and a few 5s were in order like this 3,5,5,5,5
+and I needed to get the number of the repeating tab depth which I will use
+to know which switch numbers are used since they are numbered top down and I 
+actually manage them in parallel by their line number in the original combo switch string.
+
+I am happy to report that I can verify with certainty that I can count the number
+of the repeating number accurately and verify that the pattern of a repeating
+number is in a sequence. 
+I already previously wrote the code to determine the 3:5 pattern  and 5:7 pattern
+and 7:9 pattern and 9:11 pattern (tab depth) but I had difficulty determining if
+the repeating tab continued and for how many times. Knowing how many of the same
+tab number repeats was crucial and now it's solved. I just need to put them into 
+methods.
+
+I spent all of the past few days getting the tab diff detector working to detect
+tab patterns but only for two numbers like 3:5 and I then had to figure out a quick
+and dirty and simple solution after my complex solutions grew in if conditions beyond
+belief. I found a method to verify an uninterupted sequence of numbers in a list in this
+case I'm using the counter thru a list.
+
+Rounding third and coming home on finally getting the nesting behavior jiving with
+the design. The design uses a template basedon the main method since I'm using slices
+for each tab indentation level. I did hit some unforeseen minefields along the way
+and they slowed me down a bit and threw me off the tracks derailing my momentum but
+I'm chugging along again.
+
+
+
 Tuez Sep 21 2021
 Nested switch location nesting analyzer works.
 I can see the light at the end of the Summit Tunnel now in the Sierras.
