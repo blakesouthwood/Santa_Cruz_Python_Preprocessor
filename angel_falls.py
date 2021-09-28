@@ -1,3 +1,8 @@
+Tuesday, Sep 28th, 2021
+Automatically making pairs of switch - endswitch works governed by the tab count.
+so now I can proceed with separating the strings of nested switches and putting it all together.
+
+
 Wednesday sep 22, 2021
 Hit a wall and broke through it.
 For pattern matching of nested switches I needed to be able to determine
