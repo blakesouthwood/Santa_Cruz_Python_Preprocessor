@@ -1,4 +1,74 @@
 Saturday, Oct 2nd 2021
+The complexity is deep so I had to use some clever ticks to figure out what is what.
+So... I am using comments to store data on the fly and grab by other functions so that I can tranfer
+data and communicate at lightning speed. What I do is I transfer the line number of switches from their
+original location which I use as an ID for each switch - it's original line number.
+So with that in mind I made a method to add a comment after each switch with it's line number.
+And after I do the copy and paste jazz juggling nested switches elsewhere I need to know what switch is where.
+
+Here is that code to do GET SWITCH NUMBER (AND IT'S BODY) AND PUT SWITCH NUMBER AS COMMENT AFTER SWITCH
+##===================================================
+# example:  before  switch(exp){ 
+# example:  after   switch(exp){ #22
+# so the immutable string is changed 					   
+# this puts original line number in comment after ALL SWITCHES in the first string with nested switches
+def add_comment_and_line_number_to_all_switches(inputstring): #this modifies the original string
+	print(" .......add_comment_and_line_number_to_all_switch()....this was just called .. ")
+	awesome=''
+	counter =0
+	newstring=''
+	print('baseline is red_robin starting appearance')
+	print(inputstring)
+	for line in inputstring.splitlines():
+		if "switch" in line and "end" not in line:
+			newstring += line.replace("switch(exp){","switch(exp){ #" + str(counter) + "\n")
+			smart_switch_numbers.append(counter) #this is new september 30th, 2021
+			counter += 1
+		else:
+			newstring += line + "\n"
+			counter += 1
+	awesome = newstring
+	red_robin=''
+	red_robin = awesome
+	print(red_robin)   
+	print("smart_switch_numbers=",smart_switch_numbers)  #this is new here too 
+
+print('about to test new code.... oh goody')
+add_comment_and_line_number_to_all_switches(red_robin) 
+					   
+##===========================
+##====================================
+##  get_switch_number()
+##====================================
+def get_switch_number(stringname): #this might be for when
+# I create copies of the switch body strings
+	print(" ..get_switch_number.. ")
+	awesome=''
+	counter =0  #say it's 3
+	#we would be looking in the main string for this
+	#not changing line just getting line number from it since it's the ID for the switch
+	for line in stringname.splitlines(): #this requires the lines numbers already added 
+		if "switch" in line and "end" not in line: #just need to grab the first switch 
+			#switchcounter += 1
+			x = line.split("#")
+			y = x[1];
+			#str(y) #turns it into a string
+			print("switch number is",y) 
+			#how do i get what is after # split th eline I think
+			counter += 1
+			print(stringname)
+			break
+		else:
+			counter += 1
+	return y;
+
+#skip 16 thu 38
+
+weasel=get_switch_number(testcode) #so this figures out what switch is in a list slot
+print("number of this string is... drum roll..",weasel)
+					   
+###========================
+					   
 Putting it together and streamlining the steps.
 This is bad ass cool. Wow. Mind blowing nesting any depth works. Possibly uploading to github by Tuesday.
 Sticking to the tenets of Dijkstra elegance and extreme simplicity. Methods are the key. God I love dynamic programming
