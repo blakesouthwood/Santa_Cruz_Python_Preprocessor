@@ -5,7 +5,7 @@ Sticking to the tenets of Dijkstra elegance and extreme simplicity. Methods are 
 and fuzzy logic.
 
 Some code to show the management of complexity. 
-What this code does is make the first switch with nexted switches and represents
+What this code does is make the first switch with nested switches and represents
 cutting out the first level deep nested switches down to the switch word which will then (later) replaced with method
 names calling the next level switch.
 This will also be utilized for subsequent (next) levels of switches with nested switches as a template.
