@@ -4,6 +4,119 @@ This is bad ass cool. Wow. Mind blowing nesting any depth works. Possibly upload
 Sticking to the tenets of Dijkstra elegance and extreme simplicity. Methods are the key. God I love dynamic programming
 and fuzzy logic.
 
+Some code to show the management of complexity. 
+What this code does is make the first switch with nexted switches and represents
+cutting out the first level deep nested switches down to the switch word which will then (later) replaced with method
+names calling the next level switch.
+This will also be utilized for subsequent (next) levels of switches with nested switches as a template.
+
+##========================
+## add_to_range_list()
+##========================
+def add_to_range_list(): #uses addthis list 
+    print("add_to_range_list() this is necessary to work")
+    for item in addthis:
+        range_list.append(item) #adding to range list
+        
+    print("length of range list =",len(range_list))
+    
+##========================
+## feed_range_list()
+##========================
+def feed_range_list():
+    range_list.append([11,24]) 
+    range_list.append([26,38])
+    print('range_list=',range_list)
+    range_list.reverse()#reverses it NOTICE WE REVERSE THE LIST TO CHANGE IT BOTTOM UP
+    print("length of range list =",len(range_list))
+
+
+##========================================================================
+#####     S K I P P I N G   S O M E      L I N E S  ############
+##========================================================================
+def skipping_some_lines(x,start,finish):#start line nest switch and finish  endswitch
+	print("======== skipping_some_lines()==========")
+	print("skipping_some_lines() called",start,finish)
+	#if I have a flag that it's been triggered then afterewards 
+	#for the first pass flag_test[0]= False and then it's flipped to True
+	print("flag_test[0]=",flag_test[0])
+	if flag_test[0] == False: #meaning first pass  and what it's set to by DEFAULT
+	    smart=x;
+	    #change it to True now
+	    flag_test[0] = True #this should now be tru e
+	else: #meaning TRUE this is run after first run of skipping_some_lines()
+	      #what this does is use the new concatted changed string changed on the fly with each pass
+	      #for second and all subsequent passes it uses baton[0]
+	    x = baton[0]
+
+	##==========================================================
+	# the issue is that on the second pass it is using the original string
+	# and it needs to be using the modified string
+	counter=0; concatthis =''; #finish = finish + 1 
+	print("x=",x,"start=",start,"finish=",finish)
+	smart=x;
+	print("inside of skipping lines before going thru the loop this is the value of")
+	print("the input string it will mess around with")
+	print("==============================")
+	for line in smart.splitlines():
+	#this preserves the switch word and skips the rest of nested switch body including endswitch
+		if counter > start and counter <= finish: #if only between start and finish skip these lines
+			#skip  #so greater than start(switch) and less than finish 
+			counter += 1
+			continue	
+		else: #this builds the string by concatting it
+			concatthis += line + "\n" #notice we add a new line at the end
+			counter += 1
+			#ibm[0] = concatthis
+			continue	
+	print("===output from skipping some lines====")
+	del ibm[:] #this should empty it
+	print("this is the output result of skipping some lines")
+	#print(concatthis)
+	#what I am doing here is putting what has been concatted in the string into toosmart[0]
+	toosmart[0]= concatthis
+	baton[0]   = concatthis  #here the concatthis has been put into baton[0]
+	concatthis=''
+	print('in baton here we have')
+	#print(baton[0])
+	print('==============')
+	#ibm[0] = concatthis	  #this has the switch string with the nested switch cut out
+	#putting concatthis into ibm[0] here 
+	ibm.append(toosmart[0])
+	print("at the bottom of the skipping some lines to take out inner switch")
+	print(" it sees this in ibm[0]")
+	
+		
+
+#The change that I need to make here is to cut out switches greater than 3 tabs  tabdepth > 3
+##======================================================
+##   reduce_main_nested_switches_to_just_switch_word():  #I think that this does all switches no matter their depth
+##=======================================================
+def reduce_main_nested_switches_to_just_switch_word(astring): #11 - 23 and 25-37
+    print(astring)
+    #add_to_range_list() #this is new to put switch and endswitch lines into range_list
+    feed_range_list() #added on wednesday, September 15th, 2021
+    flag_test[0]== False #this flag is new this is the default setting for this flag
+    print("flag_test[0]=",flag_test[0])
+    print("length of range_list of pairs=",len(range_list))
+    print("range_list=",range_list)
+    counter=0
+    # loop thru range_list
+    print("before starting let's look into the range_list",range_list)
+    print("range_list=",range_list) #
+    for item in range_list: 
+        print("**",item, item[0],item[1])
+        print("inside of loop thru range_list :: COUNTER HERE=",counter)
+        skip_range[0]= item[0]; 
+        skip_range[1]= item[1]
+        print("skip_range=",skip_range)
+        toosmart[0]=astring #this might work
+        skipping_some_lines(astring,skip_range[0],skip_range[1]) #this makes a new string skipping guts of inner switch
+        counter += 1
+        
+       
+##=========================
+
 
 Tuesday, Sep 28th, 2021
 Automatically making pairs of switch - endswitch works governed by the tab count.
