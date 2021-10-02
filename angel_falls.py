@@ -1,3 +1,8 @@
+Saturday, Oct 2nd 2021
+Putting it together and streamlining the steps.
+This is bad ass cool. Wow. Mind blowing nesting any depth works. Possibly uploading to github by Tuesday.
+
+
 Tuesday, Sep 28th, 2021
 Automatically making pairs of switch - endswitch works governed by the tab count.
 so now I can proceed with separating the strings of nested switches and putting it all together.
