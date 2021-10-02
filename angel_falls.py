@@ -1,7 +1,7 @@
 Saturday, Oct 2nd 2021
 Putting it together and streamlining the steps.
 This is bad ass cool. Wow. Mind blowing nesting any depth works. Possibly uploading to github by Tuesday.
-Sticking to the tenets of Dikustra elegance and extreme simplicity. Methods are the key. God I love dynamic programming
+Sticking to the tenets of Dijkstra elegance and extreme simplicity. Methods are the key. God I love dynamic programming
 and fuzzy logic.
 
 
