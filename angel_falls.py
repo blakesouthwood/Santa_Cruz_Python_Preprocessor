@@ -121,8 +121,112 @@ def reduce_main_nested_switches_to_just_switch_word(astring): #11 - 23 and 25-37
 Tuesday, Sep 28th, 2021
 Automatically making pairs of switch - endswitch works governed by the tab count.
 so now I can proceed with separating the strings of nested switches and putting it all together.
+Update on Oct 2nd . I succeeded in splitting up the switch main string with the nested strings into
+individual nested switch strings and put them into a list.
+I wrote some code that finds all of the switches and endswitches and makes pairs lists. I then can use this
+to copy the switch bodies and I know the line of inner switches also.
+threetabs= [11, 47, 49, 73]
+fivetabs= [15, 38, 53, 64]
+seventabs= [23, 33]
+
+The code that finds the switch end switch pairs such as above 11,47
+
+tabsubs=[]
+threetabs=[]
+fivetabs=[]
+seventabs=[]
+ninetabs=[]
+eleventabs=[]
+##====================================================
+## internal_machinery()   designed wed sep 29th, 2021
+##====================================================
+def internal_machinery(x,inputstring):
+    print("=======internal_machinery called ====.......========")
+    print("tabsubs should start empty",tabsubs)
+    print("internal_machinery called======>>>>>>",x)
+    counter=0
+    print(inputstring)
+    for line in inputstring.splitlines():
+        print(line)
+        #this skips line if not 7 tabs and switch not in line
+        tab_length = line.count("\t")
+        if tab_length != x or "switch" not in line:
+            counter += 1; continue
+       
+        if tab_length == x: 
+            print("tabsubs should start empty",tabsubs)
+            if "switch" in line and "end" not in line:
+                print(line)
+                tabsubs.append(counter) 
+                counter += 1; continue
+            if "endswitch" in line:
+                print(line)
+                tabsubs.append(counter)
+                counter += 1; continue 
+      
+                
+    print('right here now')
+    print(tabsubs)
+    print("where is the cursor?")
+    if x == 3:
+        for item in tabsubs:
+            threetabs.append(item)
+            print("threetabs=",threetabs)
+        del tabsubs[:]
+    elif x == 5:
+        for item in tabsubs:
+            fivetabs.append(item)
+            print("fivetabs=",fivetabs) 
+        del tabsubs[:] 
+    elif x == 7:
+        for item in tabsubs:
+            seventabs.append(item)
+            print("seventabs=",seventabs)
+        del tabsubs[:]
+    elif x == 9:
+        for item in tabsubs:
+            ninetabs.append(item)
+            print("ninetabs=",ninetabs)
+        del tabsubs[:]
+    elif x == 11:
+        for item in tabsubs:
+            eleventabs.append(item)
+            print("eleventabs=",eleventabs)
+        del tabsubs[:]
+        
+    else:
+        print("nada")
+
+       
+
+##==============================
+##  experimental_machinery
+##===============================
+def experimental_machinery(x,inputstring):
+    print("experimental_machinery called==========")  
+    counter =0
+    newstring='data on analyzing a multinested string to number the endswitches and tabs' + "\n"
+    collosal='';tab_length=''
+    print(newstring)
+    internal_machinery(x,inputstring)
+ 
+#this one will be renamed and I will add depth of tabs to 20 something for now
+##============================
+##  try all three()  Did this one on Wednesday
+##============================
+def try_all_three(inputstring):
+    print("=====trying all three 3 5 7 tabs now====")
+    print(" === to the moon when will starship land ===")
+    x=3;internal_machinery(x,inputstring)
+    x=5;internal_machinery(x,inputstring)
+    x=7;internal_machinery(x,inputstring)
+    print("==done==")
 
 
+	
+	
+	
+#============================
 Wednesday sep 22, 2021
 Hit a wall and broke through it.
 For pattern matching of nested switches I needed to be able to determine
