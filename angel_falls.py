@@ -1,3 +1,15 @@
+Thursday, Oct 7, 2021  10:28am
+Broke through the wall to the other side. Lot of progress.
+My code to make the switch pairs (switch endswitch ) based on tab depth is solid.
+I am dynamically making and filling a dictionary of the pairs of the sets of switch endswitch
+so that I can split up the mega combo switch string into the separate switches.
+I can copy the inner switches and place them into a list. I can cut out the inner switch bodies accurately 
+which is necessary to make the whole thing work. I have the working code to make the nested methods.
+The end of this show is nearing completion. So many obstacles and unforeseen snags.
+
+Relieved the worst is over. Staging the phases of the last steps now.
+
+
 Saturday, Oct 2nd 2021
 The complexity is deep so I had to use some clever ticks to figure out what is what.
 So... I am using comments to store data on the fly and grab by other functions so that I can tranfer
