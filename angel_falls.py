@@ -1,3 +1,12 @@
+Wednesday, oct 13th, 2021 11:53 am
+Made progress.
+I can split up the nested strings -all levels.
+I can cut out the bodies of nested switches preparting to add method names swapping out inner switch word.
+The light at the end of the tunnel has brightened.
+Slow and gradual progress and refactoring and majorly simplifying the code with little prototypes to get it working
+using tight efficient methods that are thoroughly tested.
+
+
 Thursday, Oct 7, 2021  10:28am
 Broke through the wall to the other side. Lot of progress.
 My code to make the switch pairs (switch endswitch ) based on tab depth is solid.
