@@ -1,3 +1,14 @@
+Friday, Oct 15th, 11:33am
+progress straightening out (formatting) switch strings in nest_list.
+I can control the indentation on the fly which I need to turn each into a method. 3 lines of code.
+That's what I like about Python. Zen is waiting to be discovered when coding in Python.
+Feeling energized now. Daily chipping away at the boulder. 
+My approach is breaking everything down into small modules that I focus on to reduce the complexity
+and to maintain momentum. 
+
+
+
+
 Thursday, Oct 14th, 2021 8:14pm
 After burners are on. I am flying faster now. 
 I have the generated list of separated strings of switches.
