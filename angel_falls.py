@@ -1,5 +1,6 @@
 Friday, Oct 15th, 11:33am
-progress straightening out (formatting) switch strings in nest_list.
+Good progress last night till 11ish too.
+Progress straightening out (formatting) switch strings in nest_list.
 I can control the indentation on the fly which I need to turn each into a method. 3 lines of code.
 That's what I like about Python. Zen is waiting to be discovered when coding in Python.
 Feeling energized now. Daily chipping away at the boulder. 
