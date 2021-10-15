@@ -1,3 +1,14 @@
+Thursday, Oct 14th, 2021 8:14pm
+After burners are on. I am flying faster now. 
+I have the generated list of separated strings of switches.
+I can now go thru them and cut out the inner switch (if one) and leave the switch word accurately; will be replaced with a method.
+And, I just got handling multiple inner switches at the three tab depth detected and captured line numbers.
+I have the code to accurately get the inner switch id number (its original line number)
+I have the code working to cut out the proper range of the inner switch body.
+The rest is easy because the code after it gets converted to python already works - I did that first months ago.
+I have had tremendous progress over the past few days after hitting a wall. 
+
+
 Wednesday, oct 13th, 2021 11:53 am
 Made progress.
 I can split up the nested strings -all levels.
