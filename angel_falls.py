@@ -2,7 +2,7 @@ This is what the JavaScript switch case code looks like before it's converted in
 If you notice I transform the inner switches into methods that keep the inner switches separated.
 Again this is what the string of the switch looks like before it goes thru the parser that translates
 it into python strings. However, the initial switch code allows many levels of nested switches just
-like in JavaScript. If you notice there is "thru" and "to" macros that work with numbers. And the fallthru
+like in JavaScript. If you notice there are "thru" and "to" macros that work with numbers. And the fallthru
 feature works too. A user can use break or fallthru. Further for the management of the complexity each switch
 is actually unique has has an id number based on it's initial line number which is how it's referenced.
 
