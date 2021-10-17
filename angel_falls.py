@@ -1,3 +1,92 @@
+October 17th, 2021 8:44 am Morgan Hill, California
+On verge of finishing. Reviewing the method bypass205() which takes in the switch input strings and converts them
+from JavaScript style switches into Python code one by one in a list. 
+Yesterday when I got the code working to convert each input string to left justify with just one tab in front of the
+switch at the top for all configurations it occurred to me I had succeeded - since it was the last hurdle.
+Pure nirvana. 
+This code is the second working design to shift a nested string to the left margin
+##=================================
+##  manipulate_string(addstring)
+##=================================
+
+def manipulate_string(addstring):
+    #the objective is to reduce tabs so only 1 tab in front of first switch in string
+    cutout=''
+    #why can't I just go thru the string and replace the first three tabs with ""
+    print("======manipulate_string=======")
+    print("getting tab count in front of first switch here")
+    for line in addstring.splitlines():
+        if "switch" in line and "end" not in line:
+            tabsinthisline = line.count("\t")
+            print("the tabs in front of first switch are",tabsinthisline)
+            #the objective is to have only 1 tab in front of first switch
+            # which then propogates down the length of the entire string
+            if int(tabsinthisline) > 1:    #example
+                
+                cutout = tabsinthisline -1
+                print("tabsinthisline =",tabsinthisline)
+                print("cutout =",cutout)
+                break
+                
+            if tabsinthisline == 1: #which means do nothing we want just 1 tab first
+                cutout = -1;
+                break
+            
+            if tabsinthisline == 0:
+                break
+                
+             # do nothing   193241613
+     #take out just 2 tabs
+    print("now doing SECOND phase of manipulate_string")
+    super=''
+    for line in addstring.splitlines():
+        #if "switch" in line and "end" not in line:
+        tabsinthisline = line.count("\t")
+       # print(line,tabsinthisline)#first is 3 so subtract 2
+        #it does all lines of the string taking out the first 2 tabs which are chars
+        
+        
+        if cutout != 0  or cutout > 0:#this handles if cutout = 0 meaning None
+            sliced = line[cutout:] #this can be a variable
+        else: #this means its == to 0
+            #this is for the scenario of zero tabs in front of first switch starting
+            if tabsinthisline == 0:#this handles if there are zero tabs in front of switch line
+                #here we need to add a tab if there are zero tabs.
+                sliced = "\t" + line;#meaning don't cut any tabs out
+            else:
+                sliced =  line; 
+        super += sliced + "\n" # this does all lines in the string
+        
+        #this is for the scenario of it's already perfect at 1 tab length in front of switch
+        if cutout == -1:
+            super += line 
+        #end if
+    print("================ taking out 2 tabs quickly and dirtily")    
+    for line in super.splitlines():
+        print(line)
+
+print('testing cutting out first two tabs from front of string')
+print("moving everythign to left side for formatting this sucker see if gold nears")
+
+
+testlist_of_strings=[]
+testlist_of_strings.append(teststring1)
+testlist_of_strings.append(teststring2)
+testlist_of_strings.append(teststring3)
+testlist_of_strings.append(teststring4)
+testlist_of_strings.append(teststring5)
+testlist_of_strings.append(teststring6)
+testlist_of_strings.append(teststring7)
+
+print("===== testing this using a loop =====")
+counter=0
+for item in testlist_of_strings:
+    print("counter =",counter)
+    manipulate_string(item)
+    counter += 1
+
+
+
 Friday, Oct 15th, 11:33am
 Good progress last night till 11ish too.
 Progress straightening out (formatting) switch strings in nest_list.
