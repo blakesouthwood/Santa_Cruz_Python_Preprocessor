@@ -1,3 +1,36 @@
+This is what the JavaScript switch case code looks like before it's converted into python.
+If you notice I transform the inner switches into methods that keep the inner switches separated.
+Again this is what the string of the switch looks like before it goes thru the parser that translates
+it into python strings. However, the initial switch code allows many levels of nested switches just
+like in JavaScript. If you notice there is "thru" and "to" macros that work with numbers. And the fallthru
+feature works too. A user can use break or fallthru. Further for the management of the complexity each switch
+is actually unique has has an id number based on it's initial line number which is how it's referenced.
+
+switch(exp) {  
+	case 1 thru 3:
+		print("where's the dog house!")
+		print('first prize')
+		print('you block head Charlie Brown')
+		fallthru
+			
+	case 4 to 7:
+		print('kangaroo hop hop!')
+		nested_switch_1(n)  #sample of nested switch 
+		print('taught me how to write code')
+		fallthru
+			
+		 
+	case 8 to 10:
+		print('mocha blast')
+		print('== autumn nest===')
+		nested_switch_2(n)         
+		fallthru
+		
+	default:
+		print('the end')
+	}
+
+
 October 17th, 2021 8:44 am   Morgan Hill, California
 On verge of finishing. Reviewing the method bypass205() which takes in the switch input strings and converts them
 from JavaScript style switches into Python code one by one in a list. 
