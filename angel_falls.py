@@ -1,4 +1,4 @@
-October 17th, 2021 8:44 am Morgan Hill, California
+October 17th, 2021 8:44 am   Morgan Hill, California
 On verge of finishing. Reviewing the method bypass205() which takes in the switch input strings and converts them
 from JavaScript style switches into Python code one by one in a list. 
 Yesterday when I got the code working to convert each input string to left justify with just one tab in front of the
