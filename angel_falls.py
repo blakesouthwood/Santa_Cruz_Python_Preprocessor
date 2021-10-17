@@ -4,7 +4,7 @@ Again this is what the string of the switch looks like before it goes thru the p
 it into python strings. However, the initial switch code allows many levels of nested switches just
 like in JavaScript. If you notice there are "thru" and "to" macros that work with numbers. And the fallthru
 feature works too. A user can use break or fallthru. Further for the management of the complexity each switch
-is actually unique has has an id number based on it's initial line number which is how it's referenced.
+is actually unique and has an id number based on it's initial line number which is how it's referenced.
 
 switch(exp) {  
 	case 1 thru 3:
