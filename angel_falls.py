@@ -6,7 +6,9 @@ I then replace that inner switch word with a nested_switch method which is numbe
 
 I can now replace the inner switch with a method automatically.
 Getting closer to finishing ...
-So much testing.
+So much testing. 
+The disbelief is awe inspiring. I didn't expect it to actaully work as designed and it's totally beautiful.
+It's a dream seeing it all come together and actually work as designed. 
 
 
 
