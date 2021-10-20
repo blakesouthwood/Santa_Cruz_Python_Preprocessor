@@ -1,3 +1,4 @@
+Tue Oct 19th, 2021  5:25 pm Gilroy, California
 I can now cut out the nested switch bodies of the switch strings in the list of separated switches.
 What I am doing is I put the the main switch and cut it up by tab depth of inner switches.
 Then I go thru each of the switch bodies that have inner switches at level three tabs and take that switch body out
