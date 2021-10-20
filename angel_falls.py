@@ -1,3 +1,15 @@
+I can now cut out the nested switch bodies of the switch strings in the list of separated switches.
+What I am doing is I put the the main switch and cut it up by tab depth of inner switches.
+Then I go thru each of the switch bodies that have inner switches at level three tabs and take that switch body out
+leaving just the switch word.
+I then replace that inner switch word with a nested_switch method which is numbered by the original switch line number.
+
+I can now replace the inner switch with a method automatically.
+Getting closer to finishing ...
+So much testing.
+
+
+
 This is what the JavaScript switch case code looks like before it's converted into python.
 If you notice I transform the inner switches into methods that keep the inner switches separated.
 Again this is what the string of the switch looks like before it goes thru the parser that translates
