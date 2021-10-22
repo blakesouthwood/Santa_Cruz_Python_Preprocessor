@@ -1,3 +1,126 @@
+Fri Oct 22nd, 2021  7:54 am.
+	
+In cruise control now. Moving forward effortlessly.
+Added functionality to convert inner switches at 3 tab depth into nested methods based on their embedded comment number
+Reduced the function to not even require a method so it's done on the fly freeing from a method call.
+Improved simpler design to do the change on-the-fly.
+
+# what this represents is one of the final phases before running the INPUT JAVASCRIPT switch case string 
+# thru the bypass205() in the parser that converts a list of nested switch stings into Python 3
+
+# this replaces the inners switch at 3 tabs with a nested method name with the id comment number -added previously
+# it will access a list using a loop and they will be put in in sequential order top down
+# this can handle any number of nested switches at 3 tabs
+##======================================================================
+##  convert_inner_switches_into_nested_methods_numbered(stringname): 
+##=======================================================================
+def convert_inner_switches_into_nested_methods_numbered(stringname): #this is feeding in the number looking for
+	x='';concatthis='';counter =0
+	# using method get_inner_switch_number(string)#which is grabbed from 3 tab depth only
+	for line in stringname.splitlines(): #this shows the starting condition of the string to be changed
+		print(line)
+	#modified this and got it working correctly on friday, oct 22nd morgan hill 2021
+	for line in stringname.splitlines():
+		tabdepth = line.count("\t")
+		if  tabdepth == 3  and "switch" in line:
+		# I just moved what was in a method into the loop where the action happens
+			x = line.split("#")  
+			y = x[1];       #it was str(ournumber)
+			y = y.replace(" ",'')
+			filler ="nested_switch_" + str(y) +"(exp)" #has to be a string
+			line = line.replace("switch(exp){",filler) #notice replace method using var filler
+			concatthis += line + "\n"
+			counter += 1
+			continue
+		else:
+			concatthis += line  + "\n"
+			counter += 1
+			continue
+	################	
+	for line in concatthis.splitlines():
+		print(line)	
+		
+#Note: yes there will be an exp = number before each switch; I was just focusing on functionality of the conversion
+
+convert_inner_switches_into_nested_methods_numbered(string_egg) 
+#### input string ############
+	switch(exp){ #11
+		case 'blable':
+			print("do something")
+			####################
+			switch(exp){ #15
+			#############
+			print("yep")
+			fallthru
+		case 'more':
+			print("nice")
+			####################
+			switch(exp){ #33 
+			#############
+			break
+		default:
+			print("we are done here")
+	endswitch #60   4..........endwitch 4  line 60 3 tabs
+##### output string #############
+	switch(exp){ #11
+		case 'blable':
+			print("do something")
+			####################
+			nested_switch_15(exp) #15
+			#############
+			print("yep")
+			fallthru
+		case 'more':
+			print("nice")
+			####################
+			nested_switch_33(exp) #33 
+			#############
+			break
+		default:
+			print("we are done here")
+	endswitch #60   4..........endwitch 4  line 60 3 tabs
+pumpkin express
+####### input string ############
+	switch(exp){ #22
+		case 'blable':
+			print("do something")
+			####################
+			switch(exp){ #25
+			#############
+			print("yep")
+			fallthru
+		case 'more':
+			switch(exp){ #34
+			print("nice")
+			switch(exp){ #45
+			break
+		default:
+			switch(exp){ #66
+			print("we are done here")
+	endswitch #60   4..........endwitch 4  line 60 3 tabs
+
+				
+				###### output string after conversion #######
+	switch(exp){ #22
+		case 'blable':
+			print("do something")
+			####################
+			nested_switch_25(exp) #25
+			#############
+			print("yep")
+			fallthru
+		case 'more':
+			nested_switch_34(exp) #34
+			print("nice")
+			nested_switch_45(exp) #45
+			break
+		default:
+			nested_switch_66(exp) #66
+			print("we are done here")
+	endswitch #60   4..........endwitch 4
+		
+
+
 Tue Oct 19th, 2021  5:25 pm Gilroy, California
 I can now cut out the nested switch bodies of the switch strings in the list of separated switches.
 What I am doing is I put the the main switch and cut it up by tab depth of inner switches.
