@@ -16,7 +16,6 @@ Improved simpler design to do the change on-the-fly.
 ##=======================================================================
 def convert_inner_switches_into_nested_methods_numbered(stringname): #this is feeding in the number looking for
 	x='';concatthis='';counter =0
-	# using method get_inner_switch_number(string)#which is grabbed from 3 tab depth only
 	for line in stringname.splitlines(): #this shows the starting condition of the string to be changed
 		print(line)
 	#modified this and got it working correctly on friday, oct 22nd morgan hill 2021
