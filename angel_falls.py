@@ -6,6 +6,12 @@ has switch cases that can be nested and look exactly like C and JavaScript switc
 with the same running behavior.  So in essence this program is translating JavaScript/C/Lisp syntax
 into Python indirectly.
 
+Each nested switch lives in a method with a unique id name which will be its initial line number in the input string
+before it's parsed. The main switch is in a method for main_switch(exp) which will be at the bottom and the nested
+switches will be above it and the way that it works in reality is all of the switches are put into a docstring multiline
+and executed so they are all essentially within a bubble separate from the rest of the code that it resides within.
+
+
 This is a test file that runs that is what is actually produced after translating the input JavaScript
 switch cases into python and put into methods. This is an example of a triple nested switch case and 
 how it's impimented as python in Python which doesn't have a switch or case in it.
