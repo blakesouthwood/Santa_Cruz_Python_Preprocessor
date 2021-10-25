@@ -1,3 +1,224 @@
+#important code that is involved endswitch(), bypass205(), parserguts()
+
+#code to test bypass205 taking in 3 strings in quail list as input in JavaScript mode
+#testing here running 3 strings in quail thru bypass205
+print("============== red white and blue time ===========")
+del quail[:]
+print("length of quail list=",len(quail))
+quail.append(str1)
+quail.append(str2)
+quail.append(str3)
+print(" JAZZ MUSIC TIME code test of bypass205() it's been a long wait indeed")
+print("printing what is in quail list right here for this test")
+for item in quail:
+    print(item)
+    print("===++====++===")
+y='' #normally this takes in the input string for testing I make it empty since the strings are fed into quail list
+bypass205(y)    
+print("then we look in the stanford list")
+print("======output from Stanford List======")
+for item in stanford:
+    print(item)
+
+print("======= end of stnaford going down Palm drive now=====") 
+print("======== Code Blue Exit =====") 
+print("  === end of red white and blue ========================")
+exit()
+
+
+nested_switches_count=[]
+nested_switches_count.append(0) #so by default it's [0] in position 0
+nested=[]
+nested.append(False) #loaded with False in nested[0] by default starting
+
+# so it would be True if nested is true
+	#for this test we pretend that we have already seperated the big switch string
+	# into sepeate strings and they ahve been placed into the quail list
+	# #but I can do it here later, with y as input
+	# for right now in this phase the quail list has already been filled
+	# and we have determined that nestwich is True
+########################
+##     endswitch(y)      this calls flow_valve_input which checks if cases are numbers or words
+########################  and if numbers = True then call parser_mode_2(y); If numbers = False parser_mode_1(y)
+def endswitch(y): #pulls in sw 
+	print("==== endswitch () called...======")
+	print("let us see what is in y passed into endswitch")
+	print("============")
+	print(y)
+	print("============")
+	switchcasetester='';switchcasetester=None;
+	del switchcasetester;switchcasetester='';
+	mytrace("endswitch() in switch_cat called")
+	show_input_switch_string() #flag for testing this shows the input string
+	#check  if nested switches
+	print("count how many endswitches in string")
+	answer = y.count("endswitch") #it counts endswitches here 
+	do_nested_switch_count()
+	print("if answer = 0 continue moss beach one string test ")
+	print("the number of endswitches in the input y string is",answer)
+	nested_switches_count[0] = answer #maybe int(answer) counts endswitches in string y input to endswitch(y) 
+	############### new nearly 9pm ###########################
+	# Thursday, August 26th, 2021 12:27pm 
+	# inside of original_stage1.py inside of left folder
+	# still need to add the methods to make this section work
+	# which fills up the quail list that will be fed into bypass205
+	# #this is the section that I'm working on right now ===
+	# WORKS not added yet : make pair_list here of pairs of switch endswitch 
+	# WORKS not added yet : then  loop through pair_list to fill quail list
+	# quail list of strings  using copy_string if at least one endswitch in input string
+	# Need to fill quail list with these switch bodies strings
+	#################
+	#========================================================
+	print('=====')
+	###========= testing this august 4th 2021 ==================================
+	print("here we go, leaping into the == Grand Canyon == will it fly?")
+	## test to do bypass205 if nested switches > 1
+	#bypass205 is only called if there  is at least one endswitch inside of the input string
+	# for endswitch(x) above
+	# requires nested[0] to be True or False (True to call bypass205(y)
+	###########################################
+	if nested_switches_count[0] > 1: #based on number of endswitch count
+		nested[0] = True; 
+		print("what is in nested[0]",nested[0])
+		print("bypass 205 CALLED IN ENDSWITCH biggest test yet to make sure that his works----")
+		#this goes thru the quail list that is filled beforehand above
+		#this method is only called if there are nested switches
+		print("quail list must have at least a length of 2")
+		###############
+		bypass205(y)  #<<== this manages nested switches  
+		###############
+
+	else:
+		nested[0] = False; 
+		print("===bypass205 NOT CaLLEd  only one string, no endswitches===")
+		pass
+	###===========================================
+	#this section is only run if a string switch string NOT NESTED ONES
+	print("so this would be skipped if nested switch string combo bypass")
+	if nested[0] == False or answer == 0:#all of this below is skipped if nested = True
+		print("the string will be parsed and codegened - it doesn't have any nested switches")
+		check_if_uppercase_constant_cases(y)  #if UPPCASE this senses it and converts to string
+		if baseline[0] != "nada": #means it converted to uppercase
+			y = baseline[0]
+		#end if
+		flow_valve_input1(y)   #puts True or False into valve[0] added April 2nd, 2021
+		print("if number in first case",valve[0])
+		if valve[0] == True:    #meaning numbers like case 12:
+			macro_expansion(y); #checks if macros used and expands them and converts numbs to strings
+			y=None; del y; y = cray[0]; 
+		#end if
+		flush_lists() 
+		parser_mode_1(y) ### <<===== parser_mode_1() called here 
+	else:
+		pass
+	################## normal endswitch 
+
+####====== BYPASS205() ======== ###
+# stanford list is filled in the code generator at the bottom
+#######################################################################
+########### bypass 205 ########### july 1st 2021 testing starbucks in gilroy
+#premise is that quail list has more than one switch string in it
+#for bypass205 to work so a minimum of 2 switch strings
+
+    #######     #######    #######
+          #     #     #    #
+        #       #     #    #
+       #        #     #    #######
+     #          #     #          #
+    ########    #######    #######     
+#=========================================
+##  bypass205(y)   #this requires that the quail list is already filled with switch strings
+######################=========
+def bypass205(y): 							# runs input strings thru parser and  
+	print("=========bypass205() called===========")
+	print("quail input list of switch strings has a length of ",len(quail))
+	print("if len(quail)>= 2: you are good")
+	if len(quail) >= 2:
+		print("GREEN LIGHT SUFFICIENT quail requirement met")
+	else:
+		print("RED LIGHT insufficient quail list is only 1 in length")
+	print("====")
+	###==== error message if insufficient list length for quail ===
+	if len(quail) < 2:# quail list requires 2 or more in length of switch strings
+		print("error message in bypass205")
+		print("quail list needs minimum of 2 strings to work in quail list")
+		return  # don't go forward if the quail list is too small
+	else:
+		pass   
+	mytrace("bypass205()") 					# code gen puts in stanford list
+	del stanford[:] 						# empties  stanford list 
+	# this swaps the endswitch out and puts in } at end of switch
+	# this is dependent on quail list already being filled with strings
+	# loop thru quail list and apply parser guts for each string
+	todo_after_putting_strings_into_quail_before_starting_bypass205()#replaces endswitch with }
+	print("right here we are going thru the quail list and manipulating the strings as y individually")
+	
+	for item in quail: 						# loop thru quail list 
+		y = item 							# this puts the contents of each string in quail into y 
+		###==========================sept 2nd test 2021
+		switchcasetester='';switchcasetester=None;
+		del switchcasetester;switchcasetester='';
+		show_input_switch_string() 			# flag for testing this shows the input string
+		parser_guts(y)  					# does parser and codegen of each switch string        
+		#stanford list is filled here 
+###  end bypass205()  ################## 
+
+
+#parser guts is the same sequence of code in the endswitch above
+# I am just trying to reduce code  that's all.
+####============================
+####      parser_guts()           #dreamed up on July 10th, 2021 to see if it would work
+####============================
+def parser_guts(y):
+	print("====== parser_guts called =======")
+	check_if_uppercase_constant_cases(y)	#if UPPCASE this senses it and converts to string
+	if baseline[0] != "nada":				#means it converted to uppercase
+		y = baseline[0]
+	flow_valve_input1(y)					#puts True or False into valve[0] added April 2nd, 2021
+	print("if number in first case",valve[0])
+											# macro expansion is only called if numbers are True
+	if valve[0] == True:					#meaning numbers like case 12:
+		macro_expansion(y); 				#checks if macros and expands them and converts numbs to strings
+		y=None; del y; y = cray[0];
+	flush_lists() 
+	parser_mode_1(y) 	
+
+###==================================	
+	
+
+#################################
+##     flow_valve_input(y)
+##################################
+def flow_valve_input1(y):  #this determines if switch case string is numbers or words
+    print("======Flow Valve input1(y) ======")
+    mytrace("flow_valve_input()")                            # get first case in switch case string
+    getline  = grab_first_case_of_switch_string(y)           # get first case line
+    toocool  = grab_first_case_line_in_switch_case_string(y) # remove tabs from the case line
+    toocool  = remove_tabs_from_string(toocool)              # test if number in first case line yes = True no = False
+    valve[0] = check_if_number_in_string(toocool)            # looks in case line
+    valve[1] = toocool                                       # put case name/number into valve[1]
+    print("output from FLOW VALVE=",valve[0],"and",valve[1])
+################################################
+
+
+###########################
+##     parser_mode_1()
+###########################
+def parser_mode_1(a):  ## testing April 3rd 2021 seeing if this works or not. 
+	print("====== parser_mode1(a) =====",a)
+	mytrace('parser_mode_1 in switch_cat()') #was greatpumpkin
+	#print('=======INSIDE OF PARSER in switch_cat for strings  =========')
+	mountain2(a)    # this changes sw to switchcasetester #I can't beleive that this reverse number was being called 
+	starter_sequence_mode_1()
+# flow_fork_input()  #this fills valve[0] with True or False
+# if valve[0] is True  it means numbers = True  (thus numbers      )
+# if valve[0] is False it means numbers = False (thus words strings)
+## the new code will go in here Friday morning.. April 2, 2021
+#this fills valve[0] with True or False for numbers in cases
+
+
+
+
 Monday, oct 25th, 2021 1:49pm.
 Just did a successful test of bypass205() which resides inside of the endswitch() method that
 is called if there is more than one switch case. I fed it three strings that were in the quail list
