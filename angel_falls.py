@@ -7,7 +7,8 @@ for the flow of control and then see how close it is. The next phase after that 
 to each of the nested strings based on the nested switch which has the id comment number at the top
 and then concatting each of these methods into a big string in the building cake upside down so the main switch
 is at the bottom. Nearly finished. What an ordeal. Mind warping complexity and problem solving to "discover" a workable
-solution.
+solution. The conversion functions to add the method name and ensure the indentation is correct and the cake layer
+builder code all already work. 
 
 Learning the fine art of reducing complexity by breaking up complicated functions into smaller functions
 and making tricky parts into separate methods. Momentumn regained - relieved.
