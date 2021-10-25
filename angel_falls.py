@@ -7,7 +7,11 @@ Input strings followed by translation into python version of the switch case in 
 So moving forward now. Next I need to connect the individual components that I have been working on for
 months that gets the switch and endswitch and tab depths for the entire input string and puts the combinations
 into a list as pairs of line numbers based on one tab, three tabs, five tabs, seven tabs, etc and then 
-puts the pairs in order into a dictionary (got that code working recently) 
+puts the pairs in order into a dictionary (got that code working recently).
+
+I was working on creating methods that now work to copy the inners switches and put them into a list.
+Then taking out the inner switch bodies leaving just the switch word and then replacing that with a method name
+after retrieving the comment id number after the switch. Sounded like cake walk but wasn't quite that simple.
 
 # input strings in the quail list that is the result of these switches having been separated from
 # their original combo string.
