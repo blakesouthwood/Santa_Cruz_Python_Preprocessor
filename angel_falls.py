@@ -1,4 +1,21 @@
 #important code that is involved endswitch(), bypass205(), parserguts()
+#Monday, Oct 25th, 2021 2:25pm
+What I have been working on diligently  is making the code that will automatically split up a combo string
+of multiple switches into separate switches and for this to work I had to figure out how to organize and manage
+the location of each switch endswitch pair and add that to a dictionary which is used elsewhere.
+To prepare the individual switches and the each switch so that it only has one level deep of nesting so
+if a switch starts at 3 tabs it can only have five tab indentation switches so one level of depth within it
+and then the nested switches within it at 5 tabs (for this example) need to have their switch bodies removed
+(after copying them) and then just leave the switch word. All of the switches are numbered by their intitial line
+number automatically with a comment which is used to track and manage them. So once the inner switch bodies is
+taken out by copying the string and skipping after the position of the switch word down to and including its endswitch
+then the remaining switch words needs to be replaced with a nested_method utilizing the unique initial line number comment
+that was previously inserted. I am at this point where I replace the inner switch with a nested method that is numbered.
+Though I have been a bit anxious to test that the bypass was still working flawlessly that I got working back in June of this
+year since I had recently gained some momentum with progress.  And in the past few days I finished several monumentally
+complex functions of code to make the transformation seamless preparing the nested switches to be cleaned up and formatted
+before running through bypass205 which converts them into python code that next need to have the swich strings put into
+the unique method names. 
 
 #code to test bypass205 taking in 3 strings in quail list as input in JavaScript mode
 #testing here running 3 strings in quail thru bypass205
