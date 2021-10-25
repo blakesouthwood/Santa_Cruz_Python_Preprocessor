@@ -1,3 +1,12 @@
+Monday, Oct 25th 2021  11:02 am
+Learning the fine art of reducing complexity by breaking up complicated functions into smaller functions
+and making tricky parts into separate methods. Momentumn regained - relieved.
+	
+	
+	
+	
+	
+	
 Fri Oct 22nd, 2021  7:54 am.
 	
 In cruise control now. Moving forward effortlessly.
