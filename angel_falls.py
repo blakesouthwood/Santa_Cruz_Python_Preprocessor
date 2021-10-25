@@ -1,3 +1,179 @@
+Monday, oct 25th, 2021 1:49pm.
+Just did a successful test of bypass205() which resides inside of the endswitch() method that
+is called if there is more than one switch case. I fed it three strings that were in the quail list
+and it dutifully ran them thru the parser and put them into the stanford list.
+So successful test.
+Input strings followed by translation into python version of the switch case in the new implimentation.
+So moving forward now. Next I need to connect the individual components that I have been working on for
+months that gets the switch and endswitch and tab depths for the entire input string and puts the combinations
+into a list as pairs of line numbers based on one tab, three tabs, five tabs, seven tabs, etc and then 
+puts the pairs in order into a dictionary (got that code working recently) 
+
+# input strings in the quail list that is the result of these switches having been separated from
+# their original combo string.
+
+str1 = '''
+	switch(exp) {  #1
+		case 1:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4: 
+			print('kangaroo hop hop!')
+			n = 'more' #testing
+			nested_switch_2(n)  #maybe keep it a comment until it's in python        
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+		
+		default:
+			print('the end')
+			break
+}
+'''
+#notice I am using the } with no tab but no endswitch here either
+
+str2 = ''' 
+	switch(exp){   #2       
+		case 'blable':
+			print("do something")
+			print("yep")
+			fallthru
+		case 'more':
+			print("nice")
+			break
+		default:
+			print("we are done here")
+			break
+} 
+'''
+
+str3 = ''' 
+	switch(exp){  #3        
+		case 'zoo time':
+			print("san francisco zoo")
+			print("feed the flamingos")
+			fallthru
+		case 'the beach in santa cruz':
+			print("volleyball and boardwalk")
+			break
+		default:
+			print("we are done here")
+			break
+} 
+'''
+
+
+python output after going thru first phase of parser
+#======output from Stanford List======
+#this is output of looping thru the stanford list with 3 strings in it
+exp = varholder[0]
+
+caselist1 = ['1']
+caselist2 = ['4']
+caselist3 = ['8']
+caselist4 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['1']
+		print("where's the dog house!")
+		print('first prize')
+		print('you block head Charlie Brown')
+		fallthru('4')
+
+	elif case in caselist2: # ['4']
+		print('kangaroo hop hop!')
+		n = 'more' #testing
+		nested_switch_2(n)  #maybe keep it a comment until it's in python        
+		print('taught me how thru write code')
+		fallthru('8')
+
+	elif case in caselist3: # ['8']
+		print('mocha blast')
+		print('== 31 flavors===')
+		fallthru('default')
+
+	elif case in caselist4: # ['default']
+		print('the end')
+		break
+
+	else:
+		print('the end')
+		break
+
+
+
+exp = varholder[0]
+
+caselist1 = ['blable']
+caselist2 = ['more']
+caselist3 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['blable']
+		print("do something")
+		print("yep")
+		fallthru('more')
+
+	elif case in caselist2: # ['more']
+		print("nice")
+		break
+
+	elif case in caselist3: # ['default']
+		print("we are done here")
+		break
+
+	else:
+		print("we are done here")
+		break
+
+
+
+exp = varholder[0]
+
+caselist1 = ['zoo time']
+caselist2 = ['the beach in santa cruz']
+caselist3 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['zoo time']
+		print("san francisco zoo")
+		print("feed the flamingos")
+		fallthru('the beach in santa cruz')
+
+	elif case in caselist2: # ['the beach in santa cruz']
+		print("volleyball and boardwalk")
+		break
+
+	elif case in caselist3: # ['default']
+		print("we are done here")
+		break
+
+	else:
+		print("we are done here")
+		break
+
+
+
+
+
+
 Monday, Oct 25th, 2021 12:24pm
 I was going through my files and reviewing it and I chanced on my test code I wrote back in June.
 It shows what is ultimately being generated in terms of the inner switches and main switch.
