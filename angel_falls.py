@@ -1,6 +1,14 @@
 Monday, Oct 25th 2021  11:02 am
 Learning the fine art of reducing complexity by breaking up complicated functions into smaller functions
 and making tricky parts into separate methods. Momentumn regained - relieved.
+I prefer starting method names with a verb which is much more descriptive.
+
+I refer to a dictionary as a struct which is essentially a record in C.
+
+add_data_to_struct("2","fast")
+print(dictionaryname)
+
+get_this_x_in_struct('year')
 	
 	
 	
