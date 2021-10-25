@@ -1,4 +1,14 @@
 Monday, Oct 25th 2021  11:02 am
+	
+Working on creating separate component puzzle pieces (small programs) that I will test independently
+before wiring them together in a small subsystem. I will soon test running the output nested strings that
+have been filtered into the bypass205() method to convert into python. I will write down the steps
+for the flow of control and then see how close it is. The next phase after that is adding a method name
+to each of the nested strings based on the nested switch which has the id comment number at the top
+and then concatting each of these methods into a big string in the building cake upside down so the main switch
+is at the bottom. Nearly finished. What an ordeal. Mind warping complexity and problem solving to "discover" a workable
+solution.
+
 Learning the fine art of reducing complexity by breaking up complicated functions into smaller functions
 and making tricky parts into separate methods. Momentumn regained - relieved.
 I prefer starting method names with a verb which is much more descriptive.
