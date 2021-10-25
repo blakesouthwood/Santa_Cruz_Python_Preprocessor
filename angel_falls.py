@@ -1,7 +1,7 @@
 Monday, Oct 25th, 2021 12:24pm
 I was going through my files and reviewing it and I chanced on my test code I wrote back in June.
 It shows what is ultimately being generated in terms of the inner switches and main switch.
-Also I wanted to state that in essence what this program does is creates the illusion that Python
+Also I wanted to state that in essence what this program does is create the illusion that Python
 has switch cases that can be nested and look exactly like C and JavaScript switch cases in all repects
 with the same running behavior.  So in essence this program is translating JavaScript/C/Lisp syntax
 into Python indirectly.
