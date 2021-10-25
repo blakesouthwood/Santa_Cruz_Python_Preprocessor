@@ -10,7 +10,26 @@ This is a test file that runs that is what is actually produced after translatin
 switch cases into python and put into methods. This is an example of a triple nested switch case and 
 how it's impimented as python in Python which doesn't have a switch or case in it.
 
+#this is the output running the code below. input is x="one" in testfunction(x) triggered by real_main() at bottom
 
+=== testfunction called with x====TESTING THIS JUNE 9th=======  one
+test function testing switch case behavior
+this is the first case in the main switch
+=......======inner_switch called==1= .....= test7
+go for tahoe
+out of from innerswitch1 below
+tahoe[0]= tobagan
+this is back in main switch now !
+go reindeer
+=== this is 2nd nested swith differnet case switches have ended
+=======inner_switch called==2== snowman
+this is inside of inners witch test2
+switch case behavior works in Python now!
+None
+out of from innerswitch2 below
+tahoe[0]= tobagan
+
+######### end of output of running the Python code below ############
 
 #################################
 # value you want to run thru switch case
