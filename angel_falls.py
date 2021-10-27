@@ -1,4 +1,4 @@
-Wednesday, October 27th, 2021
+Wednesday, October 27th, 2021   11:47am Morgan Hill, California Starbucks
 In C for a switch case ... the default statement doesn't have to come at the end. It may appear anywhere in the body of the switch statement. 
 I figured out how to make this behavior work so default can be anywhere in the switch case. Simple solution.
 In summary, for the switch case implimentation in Python staying true to form of C the default can be anywhere within
