@@ -1,3 +1,18 @@
+Wednesday, October 27th, 2021
+In C for a switch case ... the default statement doesn't have to come at the end. It may appear anywhere in the body of the switch statement. 
+I figured out how to make this behavior work so default can be anywhere in the switch case. Simple solution.
+In summary, for the switch case implimentation in Python staying true to form of C the default can be anywhere within
+a switch case and doesn't have to be at the bottom of the cases. It can be anywhere. I have previously thought it wasn't possible
+and then today the simple solution popped into my head. Just move the default to the bottom of the switch case before putting it
+thru the parser. It doesn't matter (really) where the default resides if there are no case matches it's irrelevant where the default is
+but being able to represent the switch case wholly how it's represented in C is still a great honor. 
+
+I have been walking through the transformation of the nested switches and feeding the split up combo swith string in seperate
+file into the bypass205() parser and now working on putting those python output switch strings into the final stage.
+
+Victory is within my grasp now.
+
+
 #important code that is involved endswitch(), bypass205(), parserguts()
 #Monday, Oct 25th, 2021 2:25pm
 What I have been working on diligently  is making the code that will automatically split up a combo string
