@@ -1,3 +1,17 @@
+Thursday, October 28th, 2021 11:56am
+Working on testing and ensuring that I can fill the dictionary(struct) record with data
+and then access it on-the-fly accurately. The dictionary is loaded from a list of the switch pairs.
+Recently worked on proof of concept walking thru steps and connecting parts to make sure that the chain of events
+is accurate and in the right order. Testing with actual data to ensure that bypass205() is correct.
+Working on the final stages now. at the point of the lunar module about to land on the moon. will continue testing
+each separate stage to ensure it works independently (to avoid conflict) and then connect the constellation together.
+Super close. I also need to work on next the cleaning up of the python string generated of switch code that
+needs to be put into methods named by the switch id number. Just need to test it.
+Unreal feeling making it this far. Unimaginable complexity so I had to continue breaking down sections into smaller parts
+to manage the intense complexity.
+
+
+
 Wednesday, October 27th, 2021   11:47am Morgan Hill, California Starbucks
 In C for a switch case ... the default statement doesn't have to come at the end. It may appear anywhere in the body of the switch statement. 
 I figured out how to make this behavior work so default can be anywhere in the switch case. Simple solution.
