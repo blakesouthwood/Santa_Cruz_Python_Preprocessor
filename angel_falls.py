@@ -7,7 +7,7 @@ All that is remaining is connecting the last few puzzle pieces(already working) 
 switch strings into their respective methods and adds indentation and concats in cake layers and executed.
 
 
-Worked on and refined replacing inner switch word with dynmically built nested_switch which uses the comment id line number
+Worked on and refined replacing inner switch word with dynamically built nested_switch which uses the comment id line number
 which is added on the fly. I also replace the endswitch with the } brace conforming to C and JavaScript.
 
 this:
