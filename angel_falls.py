@@ -9,6 +9,7 @@ switch strings into their respective methods and adds indentation and concats in
 
 Worked on and refined replacing inner switch word with dynamically built nested_switch which uses the comment id line number
 which is added on the fly. I also replace the endswitch with the } brace conforming to C and JavaScript.
+Conversion of inner switches works for n number whether none, 1, or many - any amount flawlessly.
 
 this:
 	switch(exp){ #62
