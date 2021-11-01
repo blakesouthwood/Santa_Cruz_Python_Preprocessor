@@ -1,3 +1,53 @@
+Monday, November 1st, 2021 8:42 am
+All Systems Green. 
+When the code works it feels like this: 
+https://www.youtube.com/watch?v=sX1Y2JMK6g8
+	
+All that is remaining is connecting the last few puzzle pieces(already working) that put the output python
+switch strings into their respective methods and adds indentation and concats in cake layers and executed.
+
+
+Worked on and refined replacing inner switch word with dynmically built nested_switch which uses the comment id line number
+which is added on the fly. I also replace the endswitch with the } brace conforming to C and JavaScript.
+
+this:
+	switch(exp){ #62
+		case 'burger':
+			print("do something")
+			####################
+			switch(exp){ #66  
+			#############
+			print("yep")
+			fallthru
+		case 'more':
+			print("nice")
+			break
+		default:
+			print("we are done here")
+	endswitch #86   
+				
+#######################################################	
+is transformed into this: this is then as a string added to a list that is then
+fed thru the parser which triggers bypass205(x) which translates each string seperately into python code
+				
+	switch(exp) #62
+		case 'burger':
+			print("do something")
+			####################
+			nested_switch_66(exp) #66
+			#############
+			print("yep")
+			fallthru
+		case 'more':
+			print("nice")
+			break
+		default:
+			print("we are done here")
+	} #86   
+			
+
+
+
 Thursday, October 28th, 2021 11:56am
 Working on testing and ensuring that I can fill the dictionary(struct) record with data
 and then access it on-the-fly accurately. The dictionary is loaded from a list of the switch pairs.
