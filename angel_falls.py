@@ -1,3 +1,19 @@
+Wednesday, November 3rd, 2021 11:42 am
+Home Strech. I nixed using a dictionary and am using a list with sublists for the switch endswitch pairs.
+Making custom methods so it does the same thing as the dictionary methods. I find it simpler and cleaner than using the dictionary.
+
+Testing each stage of the process of getting the switch and endswitch pairs. 
+After the indendent stages work by themselves connecting them
+will take just a few minutes.
+
+Essentially doing massive testing and simplying and
+slight refactoring right now. 
+
+In summary working on testing and streamlining taking in the input code
+and preparing it for the parser string before it's sent into bypass205() 
+and the rest is gravy. I am thrilled it's going to work. 
+
+
 Monday, November 1st, 2021 8:42 am
 All Systems Green. 
 When the code works it feels like this: 
