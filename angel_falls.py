@@ -1,4 +1,21 @@
-11:51am Nov 4th
+12:20 PM  Nov 4th 2021
+	
+SUMMARY OF PLAN OF ATTACK #all of the functions and methods work for this to happen. 
+
+determine if switch string has more than 1 switch in it
+
+loop thru switch string and add comment with line number after each switch
+
+create range list of pairs of switch endswitch line numbers from initial string of nested switches
+
+using range list(pairs)  COPY each switch at it's tab depth to endswitch and put into quail list
+
+loop thru quail list and CUT out inner nested switches bodies leaving just switch word (referred to as SKIPPING) thru concatting
+
+loop thru quail list and replace inner switch with nested_method + line number in the comment that it grabs on the fly
+
+##=====================================
+
 These are the steps that will be welded together likely tonight.
 
 going thru the entire mega switch string a comment is added after each switch like so:  switch(exp){ # 33  
