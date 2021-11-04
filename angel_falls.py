@@ -18,6 +18,12 @@ loop thru quail list and replace inner switch with nested_method + line number i
 
 ##=====================================
 
+#what I worked on this morning was creating a method to grab the commented line number from the first switch in a string
+in quail list which will then be accessed in the same order in the stanford list where the python output string will be
+I will then add indentation and use the number in the list to put into the def nested_switch_ (number) that completes
+the construction of each nested string. I have the cake layer code that concats all of the methods together bottom up and
+then it's executed and *should* fully work as it (has been) in testing preparing for this moment.
+
 These are the steps that will be welded together likely tonight.
 
 going thru the entire mega switch string a comment is added after each switch like so:  switch(exp){ # 33  
