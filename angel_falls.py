@@ -1,7 +1,7 @@
 12:20 PM  Nov 4th 2021
 	
 I will add all of the code in one file in a few days to github for the nested module.
-This was a bit more complex then I ever imagined to get it to perfectly mimic C switch cases.
+This was a bit more complex than I ever imagined to get it to perfectly mimic C switch cases.
 I will add the feature of the floating default anywhere within a switch case later.
 
 https://www.youtube.com/watch?v=ZRSNy8DcIDk
