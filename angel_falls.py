@@ -1,7 +1,12 @@
 Thursday, Nov 4th, 2021  10:40am Morgan Hill, California
 	
 https://www.youtube.com/watch?v=sRvEwXDxz_I
+	
+https://www.youtube.com/watch?v=jofkDRNetdw	
+	
 good coding music
+
+I wrote some brilliant code yesterday that is beautiful and works. 7 hours straight.
 
 #twin list 
 wrote code to get first switch id in the comment before it's sent thru the bypass205() and turned into python
