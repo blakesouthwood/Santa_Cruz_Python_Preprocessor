@@ -10,9 +10,13 @@ I wrote some brilliant code yesterday that is beautiful and works. 7 hours strai
 
 #twin list 
 wrote code to get first switch id in the comment before it's sent thru the bypass205() and turned into python
-the list of switch ide numbers in order will be utilized for creating the nested_switch numbers
+the list of switch id numbers in order will be utilized for creating the nested_switch numbers
 
-worked on dynamically building the combininglist of tabs
+Oh. Yesterday I nixed the idea of using a dictionary which has weird rules and bugs so changed
+back to using a list with sublists for managing the pairs of switch endswitch pairs.
+I then made a get() method for grabbing pairs from the list.
+
+worked on dynamically building the combininglist of tabs which is used throughout the code to manipulate switch strings.
 example
 it will take in the max tab length for a switch in a given string as input
 and based on that number determines how many of the tablists to add
@@ -20,21 +24,21 @@ if just 3 then just threetabs
 if it is 5 then it adds together threetabs and fivetabs
 first time I've ever used the extend method and happy it worked, was vexing before discovering extend
 
-combinedlist = threetabs + fivetabs + seventabs
-this can handle up to fifteentabs
+combinedlist = threetabs + fivetabs + seventabs #this looks dirt simple but doesn't work like this in a function (oh darn)
+this can handle up to fifteentabs but it can be as much as desired, artificial stop at fifteen tabs for switches initially.
 		
 The purpose of the combinedlist is is is utilized throughout the preparser to grab with the pairs
 the switch strings which are seperated using the combinedlist itself.
 
 example of the function in test mode
-
+#dummy code for testing ....
 threetabs=[[22,33],[44,66]]
 fivetabs =[[55,58],[77,86]]
 seventabs=[[88,99],[102,110]]
 
 combined_tabs=[]
 
- #testing purposes
+#testing purposes
 # this adds the tabs lists like threetabs + fivetabs + seventabs into combined_tabs list
 print("== snowmen having snowball fight==testing build_tab_list_added_together(x):======")
 ##========================================================
