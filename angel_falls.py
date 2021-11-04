@@ -1,3 +1,56 @@
+11:51am Nov 4th
+These are the steps that will be welded together likely tonight.
+
+going thru the entire mega switch string a comment is added after each switch like so:  switch(exp){ # 33  
+and the number added using replace is the respective line number within the mega initial strating switch string
+	
+the triggering of the nested switch functionality (gear box) is triggered by bypass205() omage to bypass of Portland in Oregon
+if switch count in string is > 1 and endswitch count > 1; if True then proceed with bypass205()
+and all bypass205 does really is call the same methods to convert a string into python but appends it to a list
+instead of executing it.
+
+	
+first part = create list of pairs of switch, endswitch numbers called rangelist and referred to as pairs also
+this involves taking the big combo switch string with nested strings and locating the location of each switch and endswitch pairs
+based on their respective tab depth before the word switch and endswitch
+the pairs list looks like pairslist=[[1,100], [22,33],[44,56]]
+the key is that the pairslist is organized in a specific prescribed fashion of one tab, three tabs, five tabs etc
+the reason for this is in case there are several (branches) starting at 3 tabs within the body of the main switch at tab 1.
+
+using the rangelist several different methods will manipulate the switch strings in a sequence in stages.
+
+#COPY switch strings and append to quail list
+looping thru the rangelist copy each switch to endswitch at the same tab depth
+and append each switch string to a list
+	
+#SKIP switch string body of inner switch strings (cut them out essentially) this is done by concatting the string to manipulate it
+
+Next looping thru the list 
+each switch string is reduced to only one level deep nesting by cutting out the inner switch body but leaving the inner switch word
+#example
+switch(exp){ #22
+   case "will work":
+	print("nice")
+	exp = 2
+	switch(exp){ # 33  <<=== notice only the switch word remains the body has been cut out
+	print("every nice")  #also notice that the depth within a string is only at 1 tab and 3 tabs
+	
+Then the inner switch word is converted into a nestedswitch method with it's id number and braces are removed
+switch(exp) #22
+   case "will work":
+	print("nice")
+	exp = 2
+	nested_switch_33(exp) # 33  <<=== notice only the switch word remains the body has been cut out
+	print("every nice")
+
+What is going on is that each set LEVEL is managed by representing a template copy in a sense of
+one level switch with a 2nd level nested switch as a method
+and this is repeated for each set and in python each switch is it's own separate nested method numbered to prevent name clashes.
+however the method methods for the first switch at the top in a string have a nested method added after going thru the parser
+		
+	
+	
+
 Thursday, Nov 4th, 2021  10:40am Morgan Hill, California
 	
 https://www.youtube.com/watch?v=sRvEwXDxz_I
