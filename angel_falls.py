@@ -2,6 +2,8 @@
 	
 SUMMARY OF PLAN OF ATTACK #all of the functions and methods work for this to happen. 
 
+Each puzzle piece component currently works right now
+
 determine if switch string has more than 1 switch in it
 
 loop thru switch string and add comment with line number after each switch
