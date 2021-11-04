@@ -1,3 +1,100 @@
+Thursday, Nov 4th, 2021  10:40am Morgan Hill, California
+	
+https://www.youtube.com/watch?v=sRvEwXDxz_I
+good coding music
+
+#twin list 
+wrote code to get first switch id in the comment before it's sent thru the bypass205() and turned into python
+the list of switch ide numbers in order will be utilized for creating the nested_switch numbers
+
+worked on dynamically building the combininglist of tabs
+example
+it will take in the max tab length for a switch in a given string as input
+and based on that number determines how many of the tablists to add
+if just 3 then just threetabs
+if it is 5 then it adds together threetabs and fivetabs
+first time I've ever used the extend method and happy it worked, was vexing before discovering extend
+
+combinedlist = threetabs + fivetabs + seventabs
+this can handle up to fifteentabs
+		
+The purpose of the combinedlist is is is utilized throughout the preparser to grab with the pairs
+the switch strings which are seperated using the combinedlist itself.
+
+example of the function in test mode
+
+threetabs=[[22,33],[44,66]]
+fivetabs =[[55,58],[77,86]]
+seventabs=[[88,99],[102,110]]
+
+combined_tabs=[]
+
+ #testing purposes
+# this adds the tabs lists like threetabs + fivetabs + seventabs into combined_tabs list
+print("== snowmen having snowball fight==testing build_tab_list_added_together(x):======")
+##========================================================
+##  build_tab_list_added_together(largest_tab_number):   Thursday, Nov 4th, 2021 
+##========================================================
+def build_tab_list_added_together(largest_tab_number):
+    print("called build tab list added together")
+    print("larget_tab_number =",largest_tab_number)
+    del combined_tabs[:] #clears out the combined_tabs list to erase it
+    if largest_tab_number == 3:
+       combined_tabs.extend(threetabs)
+           
+    if largest_tab_number == 5:
+        combined_tabs.extend(threetabs)
+        combined_tabs.extend(fivetabs)
+            
+    if largest_tab_number == 7:
+        combined_tabs.extend(threetabs)
+        combined_tabs.extend(fivetabs)  
+        combined_tabs.extend(seventabs)        
+    
+    if largest_tab_number == 9:
+        combined_tabs.extend(threetabs)
+        combined_tabs.extend(fivetabs)  
+        combined_tabs.extend(seventabs) 
+        combined_tabs.extend(ninetabs)        
+    
+    if largest_tab_number == 11:
+        combined_tabs.extend(threetabs)
+        combined_tabs.extend(fivetabs)  
+        combined_tabs.extend(seventabs)
+        combined_tabs.extend(ninetabs) 
+        combined_tabs.extend(eleventabs) 
+    
+    if largest_tab_number == 13:
+        combined_tabs.extend(threetabs)
+        combined_tabs.extend(fivetabs)  
+        combined_tabs.extend(seventabs)
+        combined_tabs.extend(ninetabs) 
+        combined_tabs.extend(eleventabs)
+        combined_tabs.extend(thirteentabs)         
+    
+#this calls it  
+     
+build_tab_list_added_together(3) #produces togetherlist=threetabs   
+print("combined_tabs=",combined_tabs)
+for item in combined_tabs:
+    print(item)
+print("======= ")
+ #clear it out 
+build_tab_list_added_together(5) #produces togetherlist=threetabs + fivetabs   
+print("combined_tabs=",combined_tabs)
+for item in combined_tabs:
+    print(item)
+
+build_tab_list_added_together(7) #produces togetherlist=threetabs + fivetabs + seventabs   
+print("combined_tabs=",combined_tabs)
+for item in combined_tabs:
+    print(item)
+
+
+
+
+
+
 Wednesday, November 3rd, 2021 11:42 am
 Home Strech. I nixed using a dictionary and am using a list with sublists for the switch endswitch pairs.
 Making custom methods so it does the same thing as the dictionary methods. I find it simpler and cleaner than using the dictionary.
