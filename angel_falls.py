@@ -8,6 +8,214 @@ good coding music
 
 I wrote some brilliant code yesterday that is beautiful and works. 7 hours straight.
 
+ 
+listinput=[]
+first=[]
+add_tab_depth=[]
+holding_themax=[]
+holding_themax.append(0) #to create slot
+
+second=[]   #this takes an inputstring which is the combined switchcase big string
+##========================================================
+## this_makes_switch_and_endswitch_pairs_by_tab_levels
+#  this uses internal_machinery() method in loop below
+##========================================================
+def this_makes_switch_and_endswitch_pairs_by_tab_levels(inputstring):
+    print("this_makes_switch_and_endswitch_pairs_by_tab_levels(inputstring) ")
+    for line in inputstring.splitlines():
+        if "switch" in line and "end" not in line: #this is looking for a switch in a line
+            get_tab_depth=line.count("\t")      #this is a var that gets the count of tabs
+            add_tab_depth.append(get_tab_depth) #this is for filling the list of each tab depth
+        else:
+            continue
+    print("add_tab_depth=",add_tab_depth)
+    themax = max(add_tab_depth) #gets the biggest number in the list  calculated
+    holding_themax[0] = themax #stored to use elsewhere
+    print("themax=",themax, "which is the highest tab number before a switch in string")
+    #this dynamically creates listinput of tabs
+    print("======")
+    if themax == 3: listinput = [3]
+    if themax == 5: listinput = [3,5]
+    if themax == 7: listinput = [3,5,7]
+    if themax == 9: listinput = [3,5,7,9]
+    if themax == 11:listinput = [3,5,7,9,11]
+    if themax == 13:listinput = [3,5,7,9,11,13]
+    if themax == 15:listinput = [3,5,7,9,11,13,15]
+    print("listinput=",listinput) # dynamically filled based on the max tab count #3,5,7
+    for item in listinput: # listinput is dynamically made above
+        x = item;
+        internal_machinery(x,inputstring)  #calls internal_machinery()(
+    print("==done==")
+    print("threetabs="   ,threetabs); print("fivetabs="    ,fivetabs);
+    print("seventabs="   ,seventabs); print("ninetabs="    ,ninetabs);
+    print("eleventabs="  ,eleventabs);print("thirteentabs=",thirteentabs)
+##==============================================================    
+#we know that there will be sets of 2 numbers closest to each other
+#go thru list and grab two at a time seems simple enough
+#based on highest tab number which we would know like 7
+#threetabs= [11, 47, 49, 73]
+#fivetabs= [15, 38, 53, 64]
+#seventabs= [23, 33]
+
+inputstring = red_robin
+print("what red_robin looks like before calling try_all_three=====")
+print(red_robin)
+print("see how it looks above if there are double switches and endswitches yet")
+this_makes_switch_and_endswitch_pairs_by_tab_levels(inputstring)
+
+
+print("testing looping thru list")
+#this represents a list of sublists of the switch,endswitch pairs
+testlist=[[1,100],[11,60],[15,51],[23,46],[31,41],[62,86],[66,77]]
+
+returnlist=[]
+returnlist.append(0)
+#I can make my own custom methods to get from list
+#the list is actually referenced starting from 1 where I start the counter
+##==============================================
+##  get_pair_from_testlist(x):
+##==============================================
+def get_pair_from_testlist(x):
+    print("=========get_pair_from_testlist=========")
+    print("testing get_pair_from_testlist",x)
+    counter = 1
+    print("inside the loop we see for x this ",x)
+    for item in testlist: #it doesn't really loop, it's a one pass loop
+        #if number entered bigger then length of list warn then break    
+        if x > len(testlist): #error detection bypass worked 
+            print("ERROR went beyond number length in list")
+            print("please enter a number less than ",len(testlist))
+            break
+        #if number entered less than 1 warn then break
+        if x < 1: 
+            print("ERROR number must be 1 or higher")
+            break
+        if counter == x: #it matched with a doable number
+            print(item)
+            alpha = item[0]
+            beta  = item[1]
+            print(alpha,beta)
+            returnlist[0] = [alpha,beta]
+            print("returnlist[0] =",returnlist[0])
+            break
+        else:
+            break
+##==============================================================
+
+            
+get_pair_from_testlist(1)
+get_pair_from_testlist(1)
+print("the pair is ",returnlist[0][0],"really cool",returnlist[0][1])
+get_pair_from_testlist(-1)
+get_pair_from_testlist(0)
+get_pair_from_testlist(2)
+get_pair_from_testlist(3)
+get_pair_from_testlist(4)
+get_pair_from_testlist(5)
+get_pair_from_testlist(6)
+get_pair_from_testlist(7)
+get_pair_from_testlist(22)
+
+#=========================
+def little_method(tabcount): #threetabs example is the param here in tabcount
+    for item in tabsubs:
+        tabcount.append(item)
+    del tabsubs[:]
+        
+        
+        
+tabsubs=[]
+threetabs=[]
+fivetabs=[]
+seventabs=[]
+ninetabs=[]
+eleventabs=[]
+thirteentabs=[]
+fifteentabs=[]
+#this takes in the tab depth with x and goes thru the string
+#and fills the appropiate tab list if 3 then threetabs, if 5 then fivetabs
+##====================================================
+## internal_machinery()   designed wed sep 29th, 2021
+##====================================================
+## key engine inside of function this_makes_switch_and_endswitch_pairs_by_tab_levels()
+def internal_machinery(x,inputstring): #this doesn't change anything in the string whatsoever
+    print("==========internal_machinery() called======")
+    print("inputstring",inputstring);print("tabsubs ",tabsubs, " ",x)
+    counter=0
+    for line in inputstring.splitlines():
+        tab_length = line.count("\t")
+        if tab_length != x or "switch" not in line:
+            counter += 1; continue
+        if tab_length == x: 
+            if "switch" in line and "end" not in line:
+                tabsubs.append(counter);counter += 1;continue
+            if "endswitch" in line:
+                tabsubs.append(counter);counter += 1;continue 
+    print("tabsubs = ",tabsubs) #this can be increased to manage n number of tabs depth
+    if   x == 3: little_method(threetabs)
+    elif x == 5: little_method(fivetabs)
+    elif x == 7: little_method(seventabs)
+    elif x == 9: little_method(ninetabs)
+    elif x == 11:little_method(eleventabs)
+    elif x == 13:little_method(thirteentabs)
+    else:print("nada")
+    print("3 and 5 tabs    =",threetabs ," ",fivetabs)    
+    print("7 and 9 tabs    =",seventabs ," ",ninetabs)   
+    print("11 and 13 tabs  =",eleventabs," ",thirteentabs)   
+ 
+       
+
+listinput=[]
+first=[]
+add_tab_depth=[]
+holding_themax=[]
+holding_themax.append(0) #to create slot
+
+second=[]   #this takes an inputstring which is the combined switchcase big string
+##========================================================
+## this_makes_switch_and_endswitch_pairs_by_tab_levels
+#  this uses internal_machinery() method in loop below
+##========================================================
+def this_makes_switch_and_endswitch_pairs_by_tab_levels(inputstring):
+    print("this_makes_switch_and_endswitch_pairs_by_tab_levels(inputstring) ")
+    for line in inputstring.splitlines():
+        if "switch" in line and "end" not in line: #this is looking for a switch in a line
+            get_tab_depth=line.count("\t")      #this is a var that gets the count of tabs
+            add_tab_depth.append(get_tab_depth) #this is for filling the list of each tab depth
+        else:
+            continue
+    print("add_tab_depth=",add_tab_depth)
+    themax = max(add_tab_depth) #gets the biggest number in the list  calculated
+    holding_themax[0] = themax #stored to use elsewhere
+    print("themax=",themax, "which is the highest tab number before a switch in string")
+    #this dynamically creates listinput of tabs
+    print("======")
+    if themax == 3: listinput = [3]
+    if themax == 5: listinput = [3,5]
+    if themax == 7: listinput = [3,5,7]
+    if themax == 9: listinput = [3,5,7,9]
+    if themax == 11:listinput = [3,5,7,9,11]
+    if themax == 13:listinput = [3,5,7,9,11,13]
+    if themax == 15:listinput = [3,5,7,9,11,13,15]
+    print("listinput=",listinput) # dynamically filled based on the max tab count #3,5,7
+    for item in listinput: # listinput is dynamically made above
+        x = item;
+        internal_machinery(x,inputstring)  #calls internal_machinery()(
+    print("==done==")
+    print("threetabs="   ,threetabs); print("fivetabs="    ,fivetabs);
+    print("seventabs="   ,seventabs); print("ninetabs="    ,ninetabs);
+    print("eleventabs="  ,eleventabs);print("thirteentabs=",thirteentabs)
+##==============================================================    
+#we know that there will be sets of 2 numbers closest to each other
+#go thru list and grab two at a time seems simple enough
+#based on highest tab number which we would know like 7
+#threetabs= [11, 47, 49, 73]
+#fivetabs= [15, 38, 53, 64]
+#seventabs= [23, 33]
+
+
+
+
 #twin list 
 wrote code to get first switch id in the comment before it's sent thru the bypass205() and turned into python
 the list of switch id numbers in order will be utilized for creating the nested_switch numbers
