@@ -8,6 +8,50 @@ good coding music
 
 I wrote some brilliant code yesterday that is beautiful and works. 7 hours straight.
 
+
+peartree=[]
+startime=[]
+#loop thru threetabs
+print("TEStING PeAR TREE backyward with plum tree to see if it works")
+print("add result to final_pears_list")
+print("does this one work and print x,y")
+#my_list = [1,2,3,4,5,6,7,8,9,10]
+print("about to see if christmas will come early this year or not")
+
+##======================================
+## fill_main_pear_list(listname):
+##=====================================
+def fill_main_pear_list(listname):
+    print("=====fill_main_pear_list called with listname======")
+    counter=0 #this must be at 0
+    for x in listname:
+        print(listname[counter],listname[counter +1])
+        jazz = [listname[counter],listname[counter+1]]
+        startime.append(jazz) #using startime as practice main pairs list for now nov 3
+        counter += 2 #notice counting by 2
+        if counter >= len(listname): #prevent from going out of bounds
+            break
+    print("startime list=",startime)
+    print("what did this work.......or not ....did it")
+    #put in list highest tab number say 7
+    if holding_themax[0]== 7:
+        fill_main_pear_list(threetabs)
+        fill_main_pear_list(fivetabs)
+        fill_main_pear_list(seventabs)
+    
+    if holding_themax[0]== 5:
+        fill_main_pear_list(threetabs)
+        fill_main_pear_list(fivetabs)
+    
+    if holding_themax[0]== 3:
+        fill_main_pear_list(threetabs)
+       
+       
+       
+print("final startime filled with three tabs, five tabs, seven tabs in pairs")
+print("battle star galactica")
+print("startime=",startime)
+
  
 listinput=[]
 first=[]
