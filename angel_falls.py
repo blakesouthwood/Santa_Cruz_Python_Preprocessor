@@ -1,3 +1,28 @@
+Friday, November 5th, 2021 11:34 am Morgan Hill, California Starbucks
+	
+Methodically going thru code pieces to verify everything is working.
+The first objective is taking the big string of switches and cutting it up and putting
+each switch case body into a list as a string.
+I also have to get the switch, endswitch pairs for the whole string and put those line numbers into a list.
+Initially it was in a dictionary.
+
+Copying a switch body works given params starting line and ending line within a string
+(this is key since I need to cut out each switch body and put it into a list for further transformation)
+Cutting out switch body using skipping and keeping switch word works.
+Create pair set of switch ,endswitch works.
+I have a working dictionary but decided to use a list of sublists instead for absolute simplicty.
+Adding comment and line number after each switch works.
+Creating threetabs, fivetabs,seventabs,ninetabs switches works.
+Combing all of the tab lists works using extend()
+
+I decided I will construct it in sections in a separate file to reduce the code complexity.
+I will do this rather than trying to have the whole thing work together which would not go well.
+I am doing the gradual construction this way to isolate bugs that are localized by design.
+
+I am working on the construction of the working code in stages to reduce the complexity and reduce the juggling.
+
+
+
 12:20 PM  Nov 4th 2021
 	
 I will add all of the code in one file in a few days to github for the nested module.
