@@ -7,6 +7,7 @@ add sublists together for one list of switch, endswitch pairs
 separate switch strings using pairlist and put nested string into a list
 
 if a switch string has a nested switches at three tab depth then reduce switch bodies to just switch word.
+Next I will add the methods to replace inner switch with nested_switch_numbered making it into a method.
 This now works using fuzzy logic and can deal will multiple inner switches. I used my macro trick
 and change the string from bottom up so that the pair numbers are still valid that I used to access the string.
 
