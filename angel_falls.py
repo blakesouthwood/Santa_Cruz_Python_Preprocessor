@@ -2,9 +2,14 @@ Wednesday, November 10th, 2021
 Gaining Steam and accelerating.
 I have the following working and connected.
 Go thru input multi switch string
-make pairs list of switch and endswitches
-separate switch strings and put them into a list
-if a switch string has nested switches reduce switch bodies to just switch word.
+make pairs list of switch and endswitches by tab depth
+add sublists together for one list of switch, endswitch pairs
+separate switch strings using pairlist and put nested string into a list
+
+if a switch string has a nested switches reduce switch bodies to just switch word.
+This now works using fuzzy logic and can deal will multiple inner switches. I used my macro trick
+and change the string from bottom up so that the pair numbers are still valid that I used to access the string.
+
 #hardest parts over, the rest I have working methods and functions so I'm just methodically putting it together.
 #greatly relieved it's going well and coming together and crystalizing nicely. 
 Past few days have been tremendously productive in THE ZONE. Likely it will be all working by this weekend at this point
