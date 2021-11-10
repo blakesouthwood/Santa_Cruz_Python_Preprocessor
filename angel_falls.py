@@ -1,4 +1,7 @@
 Wednesday, November 10th, 2021
+PUtting code up on github in case my laptop dies. As an emergency backup.
+Lots of files. Code nearly done, days away, but I don't want to risk losing it if my laptop crashes.
+
 Gaining Steam and accelerating. I now have momentum and it feels great seeing it reach completion.
 I have the following working and connected.
 Go thru input multi switch string
