@@ -1,3 +1,20 @@
+Wednesday, November 10th, 2021
+Gaining Steam and accelerating.
+I have the following working and connected.
+Go thru input multi switch string
+make pairs list of switch and endswitches
+separate switch strings and put them into a list
+if a switch string has nested switches reduce switch bodies to just switch word.
+#hardest parts over, the rest I have working methods and functions so I'm just methodically putting it together.
+#greatly relieved it's going well and coming together and crystalizing nicely. 
+Past few days have been tremendously productive in THE ZONE. Likely it will be all working by this weekend at this point
+and uploaded to the web on github. Grateful I have not given up. The key for me was reading from the Practical Programmer
+and testing with "made it here, etc" that helped localize bugs faster. And I read that Elon Musk used to write big functions
+and so I started breaking down massive 5 page functions down to half a page and creating methods.
+This has helped me tremendously to manage the complexity and reuse more code more easily.
+
+
+
 Friday, November 5th, 2021 11:34 am Morgan Hill, California Starbucks
 	
 Methodically going thru code pieces to verify everything is working.
