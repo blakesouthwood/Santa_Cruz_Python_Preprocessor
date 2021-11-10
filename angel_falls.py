@@ -15,8 +15,11 @@ and change the string from bottom up so that the pair numbers are still valid th
 Past few days have been tremendously productive in THE ZONE. Likely it will be all working by this weekend at this point
 and uploaded to the web on github. Grateful I have not given up. The key for me was reading from the Practical Programmer
 and testing with "made it here, etc" that helped localize bugs faster. And I read that Elon Musk used to write big functions
-and so I started breaking down massive 5 page functions down to half a page and creating methods.
+and his new programmers' task was managing the code better putting parts into methods. So I started breaking down massive 5 
+page functions down to half a page and creating methods. I really like methods they are easier to grasp their mechanics.
 This has helped me tremendously to manage the complexity and reuse more code more easily.
+I am 100% confident that the nested switch feature will work now. Again all of the working code exists. I'm just
+connecting the modules and testing it to death and adding error detection.
 
 
 
