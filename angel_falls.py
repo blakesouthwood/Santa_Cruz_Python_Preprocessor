@@ -1,5 +1,5 @@
 Wednesday, November 10th, 2021
-Gaining Steam and accelerating.
+Gaining Steam and accelerating. I now have momentum and it feels great seeing it reach completion.
 I have the following working and connected.
 Go thru input multi switch string
 make pairs list of switch and endswitches by tab depth
