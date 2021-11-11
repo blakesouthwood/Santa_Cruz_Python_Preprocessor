@@ -1,6 +1,8 @@
 Massive momentum today after solving bugs late last night till midnight to outthink Python's peculiarities.
 Super progress this morning got me over the hump and now I am going full speed ahead.
 https://www.youtube.com/watch?v=sRvEwXDxz_I
+	
+https://www.youtube.com/watch?v=ZwY4YPxTufs
 
 I will start sending the seperated strings to the parser in bypass205 likely tomorrow. What a rush. I am so thrilled
 by my recent progress. 
