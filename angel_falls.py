@@ -1,4 +1,5 @@
-Nested switches (that look just like C switch cases ... will be working by this weekend and the whole modules for switch and nested switch
+Nested switches (that look just like C switch cases ... will be working by 
+this weekend and the whole modules for switch and nested switch
 will be on github. It's been a wild ride. What a roller coaster. So much logic. 
 
 Massive momentum today after solving bugs late last night till midnight to outthink Python's peculiarities.
