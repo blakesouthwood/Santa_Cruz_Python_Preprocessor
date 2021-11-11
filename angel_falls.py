@@ -3,6 +3,8 @@ Super progress this morning got me over the hump and now I am going full speed a
 https://www.youtube.com/watch?v=sRvEwXDxz_I
 	
 https://www.youtube.com/watch?v=ZwY4YPxTufs
+	
+https://www.youtube.com/watch?v=FbbCHWQZ70o
 
 I will start sending the seperated strings to the parser in bypass205 likely tomorrow. What a rush. I am so thrilled
 by my recent progress. 
