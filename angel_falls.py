@@ -22,7 +22,7 @@ def try_the_mocha():
     for item in fullhouse:
         print(item)
 	
-
+try_the_mocha() ##<<===== method called
 ##============================================================================
 ##  take_out_nested_switch_bodies_at_three_tabs_depth_leaving_switch_word
 ##----------------------------------------------------------------------------
