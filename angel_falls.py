@@ -1,3 +1,10 @@
+Massive momentum today after solving bugs late last night till midnight to outthink Python's perculararities.
+Super progress this morning got me over the hump and now I am going full speed ahead.
+https://www.youtube.com/watch?v=sRvEwXDxz_I
+
+I will start sending the seperated strings to the parser in bypass205 likely tomorrow. What a rush. I am so thrilled
+by my recent progress. 
+
 Thursday, Nov 11th, 2021  10:36am PST
 What a rush. By the way it also takes out braces if they exist. Next I will loop thru the list of seperated strings and apply this to each switch string
 that has more than one switch within it meaning at least 1 switch. So it will test for if string.count("switch") >= 2 and string.count("endswitch") > 1
