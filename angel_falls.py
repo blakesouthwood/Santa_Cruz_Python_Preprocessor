@@ -1,6 +1,7 @@
 Thursday, Nov 11th, 2021  10:36am PST
-What a rush.
-swap inner switches to methods works automatically for all switches at 3 tabs lenght in a string.
+What a rush. Next I will loop thru the list of seperated strings and apply this to each switch string
+that has more than one switch within it meaning at least 1 switch. So it will test for if string.count("switch") >= 2 and string.count("endswitch") > 1
+swap inner switches to methods works automatically for all switches at 3 tabs length in a string.
 I wrote it on halloween and just retested it.
 INPUT example 
 
