@@ -1,3 +1,399 @@
+thursday, nov 11th, 2021 9:09 am Pacific Time
+Cutting out inner switch bodies at 3 tabs works on-the-fly automatically. sweet. 
+This is yet another victory in the tranformation of the input switch code to prepare it for the parser.
+Next I will swap out the inner remaining inner switch words with a nested_switch numbered.
+This morning had some weird bugs and they were only rectified by using listname.clear() 
+The method loops thru a list of the strings which are in a list of the separated switch strings.
+#I will beautify the code later. Just getting it all working right now.
+
+funtestlist=[samplestring,samplestringzoo1] #samplestringzoo1
+#ratmaze_list=[]
+#=====================
+#  try_the_mocha()
+#=====================
+def try_the_mocha():
+    print("try the mocha() testing.......... running the rat maze and learning it...")
+    fullhouse.clear()
+    counter=0
+    for item in funtestlist:
+        take_out_nested_switch_bodies_at_three_tabs_depth_leaving_switch_word(item)
+        counter += 1
+    print("len(fullhouse)=",len(fullhouse))
+    for item in fullhouse:
+        print(item)
+	
+
+##============================================================================
+##  take_out_nested_switch_bodies_at_three_tabs_depth_leaving_switch_word
+##----------------------------------------------------------------------------
+##  Methods: make_pair_set_of_inner_switches_at_three_tabs_depth(thestring)
+##  Methods: loop_thru_pair_set_to_cut_out_inner_switch_bodies(thestring)
+##  Methods: skipping_some_lines(x,start,finish)
+##============================================================================
+def take_out_nested_switch_bodies_at_three_tabs_depth_leaving_switch_word(thestring):
+	print(" take_out_nested_switch_bodies_at_three_tabs_depth_leaving_switch_word(thestring)")
+	baton[0]=thestring
+	print("did this baby finally get called  1")
+	print("called ....take_out_nested_switch_bodies_at_three_tabs_depth_leaving_switch_word(samplestring)") 
+	make_pair_set_of_inner_switches_at_three_tabs_depth(thestring)
+	loop_thru_pair_set_to_cut_out_inner_switch_bodies(thestring)
+	print("list_of_inner_switches_at_three_tabs=", list_of_inner_switches_at_three_tabs)
+	print("list_of_inner_endswitches_at_three_tabs=", list_of_inner_endswitches_at_three_tabs)
+	print("pairset=",pairset)
+	fullhouse.append(never_defeated[0])
+	#if it is here then it's called ONLY after the first one has completed and thereafter
+	#==================================================
+	## this resets super important lists utilized 
+	never_defeated[0]=''
+	list_of_inner_switches_at_three_tabs.clear()
+	list_of_inner_endswitches_at_three_tabs.clear()
+	pairset.clear()
+	baton[0]= ""
+
+##====================================================================
+##  make_pair_set_of_inner_switches_at_three_tabs_depth(inputstring)
+##====================================================================
+def make_pair_set_of_inner_switches_at_three_tabs_depth(inputstring):
+	print("did this baby finally get called  2")
+	print("METHOD make_Pair_set_of #### called  ... make_pair_set_of_inner_switches_at_three_tabs_depth(inputstring):")
+	counter =0
+	for line in inputstring.splitlines(): #smart = x
+		#print(line) the line still exists even if I don't print it out
+		#this preserves the switch word and skips the rest of nested switch body including endswitch
+		#for this line get tab_depth
+		#print("this is where I add the switch line number to list of inner switches at three tabs")
+		tab_depth= line.count("\t") #but this presumes just one inner switch there could be more
+		#if 3 tabs True AND switch in line and end not in line and counter > 1 
+		if tab_depth == 3 and "switch" in line and "end" not in line and counter > 1: #proceed
+			#this puts the current line number into the list below
+			list_of_inner_switches_at_three_tabs.append(counter)
+			counter += 1
+		else:
+			counter += 1
+	print("list_of_inner_switches_at_three_tabs=",list_of_inner_switches_at_three_tabs)		
+	#second new loop but looks for endswitch locations at 3 tabs 
+	counter =0
+	for line in inputstring.splitlines(): #smart = x
+		print(line)		
+		tab_depth= line.count("\t")
+		#print("this is where I add the endswitch line number to list of inner switches at three tabs")
+		if tab_depth == 3 and "endswitch" in line  and counter > 1: #proceed
+			#this puts the current line number into the list below
+			list_of_inner_endswitches_at_three_tabs.append(counter)
+			counter += 1
+		else:
+			counter += 1
+	print("==================")
+	print("list_of_inner_switches_at_three_tabs=",list_of_inner_switches_at_three_tabs)	
+	print("list_of_inner_endswitches_at_three_tabs=",list_of_inner_endswitches_at_three_tabs)		
+	print("===================")
+	print("===== end of phase 1 =====")
+	print("now I need to make pairs")
+	get_number = len(list_of_inner_endswitches_at_three_tabs)
+	if get_number > 1:
+		#create pairs   THIS IS CONSTRUCTING THE PAIRSET LIST OF SWITCH ENDSWITCH LINE NUMBERS
+		counter=0
+		for item in list_of_inner_switches_at_three_tabs:
+			pairs = [ (list_of_inner_switches_at_three_tabs[counter]) , list_of_inner_endswitches_at_three_tabs[counter] ]
+			print(pairs)
+			pairset.append(pairs)
+			counter += 1
+	else:
+		pass #print("there is only one switch endswitch so do regular mode just one inner switch at 3 tabs ")
+	pairset.reverse()
+	print(pairset)
+	print("loop thru pairset") #to go thru input string and reduce inner switches to just switch word bottom up
+	for item in pairset:
+		alpha = item[0];
+		beta  = item[1];
+		print("alpha=",alpha, "beta=",beta)
+		
+		
+##========================================================
+## loop_thru_pair_set_and_call_skiplines(samplestring)
+##=========================================================
+def loop_thru_pair_set_to_cut_out_inner_switch_bodies(thestring):
+	print("did this baby finally get called  3")
+	print(" =============== the waving American Flag ===========")
+	print('right here never_defeated length = 0 meaning it is empty')
+	print("len(never_defeated) =",len(never_defeated))
+	#never_defeated[0] = thestring #this takes the initial string put into never_defeated[0]
+	never_defeated.append(thestring) #maybe this is what I need to do to fix this bug
+	print(never_defeated[0]) 
+	counter =0
+	#loop thru pairset of sets of switch,endswitch (already reversed to go bottom up)
+	for item in pairset: #the pairset list was filled in smart_cut_out_inner_switch_bodies_at_three_tabs
+		alpha = item[0];beta  = item[1];print("alpha=",alpha, "beta=",beta)
+		start = alpha; finish = beta
+		#METHOD skipping_some_lines()============= uses never_defeated[0] stirng in list
+		skipping_some_lines(thestring,start,finish)
+		#doing this to see if it cut out the inner switch body 
+		print("this is showing the changes reducing switches in never_defeated[0]")
+		mouse = never_defeated[0] #the result of skipping some lines goes into never_defeated[0]
+		print("this is what the switch string looks like after taking out a switch body")
+		counter += 1
+	
+
+	
+pairset=[]
+genius=[]
+genius.append(0)
+
+never_defeated=[]
+never_defeated.append(0)
+list_of_inner_switches_at_three_tabs=[]
+list_of_inner_endswitches_at_three_tabs=[]
+
+
+flag_test=[]  
+toosmart=[]
+toosmart.append(0)
+baton=[]
+baton.append(0)
+ 
+flag_test.append(False) #set flag_test by default to False
+#flag_test[0]
+# x is the name of the string to be modified
+##===========================================
+##            skipping_some_lines()
+##===========================================
+def skipping_some_lines(x,start,finish):#input string, switch number then endswitch line number  ....start line nest switch and finish  endswitch
+	print("METHOD  skipping_some_lines() called==========")
+	print("skipping_some_lines() called",start,finish)
+	#if I have a flag that it's been triggered then afterewards 
+	#print("this is the input string used stating skipping_some_lines")
+	#for the first pass flag_test[0]= False and then it's flipped to True
+	print("flag_test[0]=",flag_test[0])
+	if flag_test[0] == False: #meaning first pass  and what it's set to by DEFAULT
+		smart=x;
+		#change it to True now
+		flag_test[0] = True #this should now be tru e
+	else: #meaning TRUE this is run after first run of skipping_some_lines()
+		#what this does is use the new concatted changed string changed on the fly with each pass
+		#for second and all subsequent passes it uses baton[0]
+		x = baton[0]
+	#print('what is in baton[0]',baton[0])
+	##==========================================================
+	# the issue is that on the second pass it is using the original string
+	# and it needs to be using the modified string
+	# changed it to start counter from 1 instead of 0 on Oct 5th, 2021
+	# because the numbering system of the string starts from 1 too.
+	### look that we have the counter here set to 1 by default 
+	counter=1; concatthis =''; #finish = finish + 1 
+	print("start=",start,"finish=",finish) #I took out x = 
+	#smart=x;
+	print("inside of skipping lines before going thru the loop this is the value of")
+	print("the input string it will mess around with")
+	#print(smart)
+	print("=== ah now I get it these are the lines that it MUST SKIP and we want what is before and after this range to create the modified string =")
+	print("it sees in start",start)   #this is a number
+	print("it sees in finish",finish) #this is a number too
+	for line in x.splitlines(): #smart = x
+	#this preserves the switch word and skips the rest of nested switch body including endswitch
+		# if counter is between start and finish #just after start and less than = to finish
+		#just added start +1 and finish + 1
+		if counter > start+1 and counter <= finish +1: #if only between start and finish skip these lines
+			#skip  #so greater than start(switch) and less than finish  we are cutting out these lines of code
+			counter += 1
+			continue	
+		else: #this builds the string by concatting it
+			concatthis += line + "\n" #notice we add a new line at the end
+			counter += 1
+			#ibm[0] = concatthis
+			continue	
+	print("===output from skipping some lines====")
+	#print('it created this string')
+	#print(concatthis)
+	print("how does it look===>>> by lettuce field")
+	del ibm[:] #this should empty it
+	print("this is the output result of skipping some lines")
+	#print(concatthis)
+	#what I am doing here is putting what has been concatted in the string into toosmart[0]
+	#this has red_robin hardwired into the code 
+	#just commented out line below november 10th, 2021 to see wehat happens 
+	#toosmart[0]= red_robin #it did say toosmart[0] = red_robin
+	baton[0] = concatthis  #here the concatthis has been put into baton[0]
+	##==========================================================
+	### mocha test ### this is new November 10th, 2021  ########
+	never_defeated[0]= concatthis  #just added this line 
+	###########################################################
+	##==========================================================
+	concatthis='' #this resets concatthis to empty-
+	print('in baton here we have')
+	#print(baton[0])
+	print('==============')
+	#ibm[0] = concatthis	  #this has the switch string with the nested switch cut out
+	#putting concatthis into ibm[0] here 
+	ibm.append(toosmart[0])
+	print("at the bottom of the skipping some lines to take out inner switch")
+	print(" it sees this in ibm[0]")
+		
+	#print(ibm[0])
+		#just moved this over one tab	
+#end skipping_some_lines  ========================================================
+
+
+#INPUT
+
+samplestring ='''
+	switch(exp) {  
+		case 1 thru 3:
+			print("where\'s the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			switch(exp){  # ===== 10 ===== 3 tabs, 2nd case , line 2 in this case, 1 in series
+				case 'blable':
+					print("do something")
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch  #========== 20  ==========notice this for it is key 
+			print('taught me how to write code')
+			fallthru
+			
+	
+		case 8 to 10:
+			print('mocha blast')
+			print('== autumn nest===')
+			switch(exp){   #this is new ======28       
+				case 'autumn':
+					print("falling leaves")
+					print("sunlight from the sky")
+					fallthru
+				case 'winter':
+					print("snow time")
+					break
+				default:
+					print("so much creativity")
+			endswitch  #======== ============38
+			fallthru
+		
+		default:
+			print('the end')
+}
+'''	
+
+
+samplestringzoo1 ='''
+	switch(exp) {  
+		case 1 thru 3:
+			print("where\'s the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			switch(exp){  # ===== 10 ===== 3 tabs, 2nd case , line 2 in this case, 1 in series
+				case 'blable':
+					print("do something")
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch  #========== 20  ==========notice this for it is key 
+			print('taught me how to write code')
+			fallthru
+			print('hello world')
+			switch(exp){  # ===== 24===== 3 tabs, 2nd case , line 2 in this case, 1 in series
+				case 'rats':
+					print("do autumns")
+					print("yep")
+					fallthru
+				case 'more':
+					print("badness")
+					break
+				default:
+					print("we tesla done here")
+			endswitch  #========== 34  ==========notice this for it is key 
+	
+		case 8 to 10:
+			print('mocha blast')
+			print('== autumn nest===')
+			switch(exp){   #this is new ======39       
+				case 'autumn':
+					print("falling leaves")
+					print("a night on the town ")
+					fallthru
+				case 'winter':
+					print("snow time")
+					break
+				default:
+					print("so much cranberries")
+			endswitch  #======== ============49
+			fallthru
+		
+		default:
+			print('the end')
+}
+'''	
+
+#OUTPUT
+
+
+	switch(exp) {  
+		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			switch(exp){  # ===== 10 ===== 3 tabs, 2nd case , line 2 in this case, 1 in series
+			print('taught me how to write code')
+			fallthru
+			
+	
+		case 8 to 10:
+			print('mocha blast')
+			print('== autumn nest===')
+			switch(exp){   #this is new ======28       
+			fallthru
+		
+		default:
+			print('the end')
+}
+
+
+	switch(exp) {  
+		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			switch(exp){  # ===== 10 ===== 3 tabs, 2nd case , line 2 in this case, 1 in series
+			print('taught me how to write code')
+			fallthru
+			print('hello world')
+			switch(exp){  # ===== 24===== 3 tabs, 2nd case , line 2 in this case, 1 in series
+	
+		case 8 to 10:
+			print('mocha blast')
+			print('== autumn nest===')
+			switch(exp){   #this is new ======39       
+			fallthru
+		
+		default:
+			print('the end')
+}
+
+#did it work razzle dazzle pumpkins
+
 Wednesday, November 10th, 2021
 PUtting code up on github in case my laptop dies. As an emergency backup.
 Lots of files. Code nearly done, days away, but I don't want to risk losing it if my laptop crashes.
