@@ -1,4 +1,4 @@
-Massive momentum today after solving bugs late last night till midnight to outthink Python's perculararities.
+Massive momentum today after solving bugs late last night till midnight to outthink Python's peculiarities.
 Super progress this morning got me over the hump and now I am going full speed ahead.
 https://www.youtube.com/watch?v=sRvEwXDxz_I
 
