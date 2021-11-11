@@ -1,3 +1,246 @@
+Thursday, Nov 11th, 2021  10:36am PST
+What a rush.
+swap inner switches to methods works automatically for all switches at 3 tabs lenght in a string.
+I wrote it on halloween and just retested it.
+INPUT example 
+
+jazz6='''
+	switch(exp){ #62
+		case 'burger':
+			print("do something")
+			####################
+			switch(exp){ #66  
+			#############
+			print("yep")
+			fallthru
+		case 'more':
+			print("nice")
+			####################
+			switch(exp){ #77  
+			#############
+			break
+		case 'what':
+			print("nice")
+			####################
+			switch(exp){ #88  
+			#############
+			break
+			
+		default:
+			print("we are done here")
+	endswitch #86   look this is endswitch chnaged to brace later
+'''
+OUTPUT
+	switch(exp) #62
+		case 'burger':
+			print("do something")
+			####################
+			nested_switch_66(exp) #66
+			#############
+			print("yep")
+			fallthru
+		case 'more':
+			print("nice")
+			####################
+			nested_switch_77(exp) #77
+			#############
+			break
+		case 'what':
+			print("nice")
+			####################
+			nested_switch_88(exp) #88
+			#############
+			break
+			
+		default:
+			print("we are done here")
+	endswitch #86
+Yes, I know wait what about the input for (exp) for each switch. I will add that line above later. it's trivial.
+
+Code to do the magic.
+print("about to do thorough testing of chnage_switch_to_method_solved()")
+#solved october 29th, 2021  NEXT get the number after comment just in time
+'''
+this builds a string called newstring replacing switches
+at 3 tabs depth with nested_switch
+with the comment id after # tacked onto
+ the end of the nested_switch_22(exp) like so.
+'''
+#solved and working on October 30th 2021 ====================================
+def change_switch_to_method_solved(inputstring):
+    print("====== change_switch_to_method_solved(inputstring)=== ====")
+    innerswitch=''
+    for line in inputstring.splitlines():
+        print(line)
+    print("========testing if this input string has a nested switch ==")
+    innerswitch= False #default se tting
+    counter=0;newstring='';y='';x='';tabdepth=''; switches_total=''
+    #verify that there is at LEAST ONE nested switch in here
+    for line in inputstring.splitlines(): # we only need to detect one inner switch
+       tabdepth = line.count("\t") #gets tab count for this line
+       if "switch" in line and "end" not in line and tabdepth == 3:  #it just needs to be true once
+       #this means yes there is a nested switch in this string
+            innerswitch = True
+            break
+       else:
+            innerswitch = False
+            continue
+    ##########################################
+    print("innerswitch =",innerswitch)
+    ##### modified on halloween  2021 to bypass if no inner switch ##########################################               
+    templine=''
+    templine2=''
+    if innerswitch == True:
+    #check if { in this string if so take it out
+        print('checking if left brace in string')
+        if "{" in inputstring: #have to cut "{" out of string
+            print("CONFIRMED there is a left brace in string")
+            for line in inputstring.splitlines():
+                if "{" in line:
+                    templine  +=   line.replace("{","") 
+                    templine  +="\n"
+                else:
+                    templine += line +"\n"
+            inputstring = templine
+        #end if
+        print("=======testing if { taken out of string=======")
+        for line in inputstring.splitlines():
+            print(line)
+        print("=======testing if { taken out of string=======")
+       #check if } in this string an if so take it out
+         ##################################################            
+       # if "}" in inputstring:  #have to cut "}" out of string      
+       #     print("CONFIRMED there is a right brace in string")
+       #     for line in templine.splitlines():
+       #         if "}" in line:
+       #             
+       #              templine2 += line.replace("}","")
+       #              templine2  +="\n" 
+       #        else:
+       #             templine2 += line +"\n"
+       #    inputstring = templine2
+       #     print("======testing if } taken out of string======")
+       #    for line in inputstring.splitlines():
+       #        print(line)
+       #     print("======testing if } taken out of string======")
+         #end if   
+       # do nothing
+       ######================================
+        counter=0 #new counter for this loop different from upper for loop above
+        for line in inputstring.splitlines():
+            tabdepth = line.count("\t") #gets tab count for this line
+            #skips first switch by counter MUST BE AFTER 2nd line
+            #this is where we swap switch(exp) with nested_switch_(number)(exp)
+            if "switch" in line and tabdepth == 3 and "end" not in line and counter > 2: 
+                print("confirmed switchh in line and tabdepth3")
+                #this is new getting the switch id number after # on-the-fly
+                #get string to right of #, get right side,remove spaces
+                x = line.split("#"); y = x[1];y = y.strip();
+                # replace switch with nested_switch + id number harvested from comment above
+                thisline = line.replace("switch(exp)", "nested_switch_" + str(y) + "(exp)")
+                #this removes the extra spaces after #
+                location = thisline.index("#")    #gets location from left where position of #
+                thisline = thisline[:location]    #this slices off the right side from # position
+                thisline= thisline + "#" + str(y) #this concats on the # and comment id number
+                counter += 1; newstring += thisline + "\n"; continue
+            else:
+                newstring += line + "\n"; counter += 1; continue
+        return newstring  
+        ##################################################################
+    else:
+        print("no inner switches in this string")
+        if "{" in inputstring: #have to cut "{" out of string
+            print("CONFIRMED there is a left brace in string")
+            for line in inputstring.splitlines():
+                if "{" in line:
+                    templine += line.replace("{","") #taking out left brace here
+                    templine  +="\n"
+                else:
+                    templine += line +"\n"           #otherwise it doesn't replace anything 
+            inputstring = templine
+        else:
+            print("=====no { in string  ======")
+            #end if
+        print("=======testing if { taken out of string=======")
+        for line in inputstring.splitlines():
+            print(line)
+        print("=======testing if { taken out of string=======")
+        #check if } in this string an if so take it out #I have deactivated this since it's not needed
+        ''' ##################################################            
+        if "}" in inputstring:  #have to cut "}" out of string      
+            print("CONFIRMED there is a right brace in string")
+            for line in templine.splitlines():
+                if "}" in line:
+                     templine2 += line.replace("}","") #this is where I was taking } out
+                     templine2  +="\n"
+                else:
+                     templine2 += line +"\n"
+            inputstring = templine2
+            print("======testing if } taken out of string======")
+            for line in inputstring.splitlines():
+               print(line)
+            print("======testing if } taken out of string======")
+         #end if 
+        '''
+        ########################################
+        #this is what we return the inputstring
+        return inputstring; #no changes made 
+    ### end of function ===============================
+    
+print("where is my mocha brainfreeze test october 30th...")
+
+print("==========testing string da===================")
+print("=============================")
+
+
+And testing code here:
+	
+inputstring=''
+inputstring = da         
+fizz=change_switch_to_method_solved(inputstring)
+print("===== oh yeah =====")
+for line in fizz.splitlines():
+    print(line)
+    
+print("=============================")
+print("======= testing string data1======================")
+    
+    
+inputstring=''
+print("====== second test but no inner switch here ===")
+inputstring = data1         
+fizz=change_switch_to_method_solved(inputstring)
+print("===== oh yeah =====")
+for line in fizz.splitlines():
+    print(line)
+    
+print("=============================")
+print("========testing string data2=====================")
+
+
+inputstring=''
+print("====== second test but no inner switch here ===")
+inputstring = data2     
+#what I am doing here is returning the concatted string to the string fizz variable.    
+fizz=change_switch_to_method_solved(inputstring)
+print("===== oh yeah =====")
+for line in fizz.splitlines():
+   print(line)
+
+##==================
+print("about to test data3 and I can't have anything after the #22 after switch")
+inputstring=''
+print("====== second test but no inner switch here ===")
+inputstring = data3         
+fizz=change_switch_to_method_solved(inputstring)
+print("===== oh yeah =====")
+for line in fizz.splitlines():
+   print(line)
+
+
+
+
+
 thursday, nov 11th, 2021 9:09 am Pacific Time
 Cutting out inner switch bodies at 3 tabs works on-the-fly automatically. sweet. 
 This is yet another victory in the tranformation of the input switch code to prepare it for the parser.
