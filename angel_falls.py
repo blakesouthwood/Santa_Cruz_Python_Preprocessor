@@ -1,6 +1,6 @@
 fri, nov 12th, 2021 11:30am
 	
-There are two phases involved here. The preperation of a switch string before it goes into bypass205
+There are two phases involved here. The preparation of a switch string before it goes into bypass205
 and secondly taking the output python generated code (for each switch string) from the parser and
 combining them together for a switch with nested switches which is then finally executed.
 First half is modifying the input JavaScript style switch string and preparing it for the parser.
