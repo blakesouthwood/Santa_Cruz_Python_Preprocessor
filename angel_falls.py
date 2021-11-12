@@ -1,5 +1,16 @@
 fri, nov 12th, 2021 11:30am
 	
+There are two phases involved here. The preperation of a switch string before it goes into bypass205
+and secondly taking the output python generated code (for each switch string) from the parser and
+combining them together for a switch with nested switches which is then finally executed.
+First half is modifying the input JavaScript style switch string and preparing it for the parser.
+Second half is adding elements to the output python switches strings and combining them.
+I had to break the problem in half to manage the complexity. The first half I thought would take a week.
+It has taken three months but I solved it so I am nonetheless still ecstatically happy.
+The second half is super easy and works. I have done extensive testing of how and what the code will do
+so I am 100 percent confident it will all work. The speed bumps have been the limitations of Python so I 
+have been making methods to simplify the obfuscated nature and bizzare way that python does things.
+	
 Full steam ahead dash to the finish line in 5th gear.
 Working on the transformation of the output python switch code which is a while True loop with ifs.
 Reviewed my code and found and then rewrote code to add  "def nested_switch + number + (exp)" on top of
@@ -12,6 +23,10 @@ get number from  comment after switch of line number (that works)
 Need to replace inner switch word with nested_switch method + number
 take out excess tabs in front of switch cases so it's uniform
 Have to make the main switch string with nested switches at 3 tabs replaced by methods
+
+In review the parser is designed to do only one switch string and convert it into python representation.
+Therefore I use a special extension called bypass205 that does any number of inputs switch strings
+in a list and fills the stanford list but does not execute the code. They are each managed separately.
 
 ##======================================================================================================
 
