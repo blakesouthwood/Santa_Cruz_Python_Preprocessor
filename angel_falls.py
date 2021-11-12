@@ -1,5 +1,7 @@
 fri, nov 12th, 2021 11:30am
 	
+coding music today: https://www.youtube.com/watch?v=ckmh6FvHidQ
+	
 There are two phases involved here. The preparation of a switch string before it goes into bypass205
 and secondly taking the output python generated code (for each switch string) from the parser and
 combining them together for a switch with nested switches which is then finally executed.
