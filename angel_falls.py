@@ -4,6 +4,10 @@ coding music today: https://www.youtube.com/watch?v=ckmh6FvHidQ
 		
 I need to loop thru the quail string list of nested switches and take out the inner switch bodies
 and then replace the switch word that is an inner switch with a nested_method numbered.
+
+Almost forgot. Found my code to indent initial switch strings that are deeply indented and reduces the
+tab count so it is aligned correctly to the left margine with the proper indentation.
+
 	
 There are two phases involved here. The preparation of a switch string before it goes into bypass205
 and secondly taking the output python generated code (for each switch string) from the parser and
