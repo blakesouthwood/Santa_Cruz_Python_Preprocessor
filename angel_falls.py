@@ -1,3 +1,20 @@
+fri, nov 12th, 2021 11:30am
+	
+Full steam ahead dash to the finish line in 5th gear.
+Working on the transformation of the output python switch code which is a while True loop with ifs.
+Reviewed my code and found and then rewrote code to add  "def nested_switch + number + (exp)" on top of
+output python switch code. I then modified get number after inswitch() after # . That works smoothly now.
+
+I still have a few more items to modify the switchcode to prepare it before it goes into the parser.
+in quail list of separated string things to do (steps)
+have to replace inner switches (cut out inner switch bodies leaving just switch word)
+get number from  comment after switch of line number (that works)
+Need to replace inner switch word with nested_switch method + number
+take out excess tabs in front of switch cases so it's uniform
+Have to make the main switch string with nested switches at 3 tabs replaced by methods
+
+##======================================================================================================
+
 Nested switches (that look just like C switch cases ... will be working by 
 this weekend and the whole modules for switch and nested switch
 will be on github. It's been a wild ride. What a roller coaster. So much logic. 
