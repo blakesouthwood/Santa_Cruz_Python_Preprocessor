@@ -4,7 +4,7 @@ saturday morning, nov 13th, 2021
 # of course it uses a some fancy code but it will work. It's a matter of how its implimented.
 indent_to_left.add_comment_to_switch.cut_out_switch_bodies.swap_switch_with_nest_method.add_brace()
 # it will be implimented like this:
-method_chaining("method1.method2.method3.method4.method5()")
+method_chaining("method1.method2.method3.method4.method5()") #only way I can get away with using dots(.)
 # put into a list in the same order as in the argument param
 # it is fed the starting var data in list input[0]
 # and the resulting result string is in  output[0]
