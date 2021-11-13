@@ -9,7 +9,7 @@ method_chaining("method1.method2.method3.method4.method5()")
 # it is fed the starting var data in list input[0]
 # and the resulting result string is in  output[0]
 
-I was thinking about applying each method individuall to the list and looping thru 
+I was thinking about applying each method individually to the list and looping thru 
 it and thought that was inefficient and wondered if there was a way to simulate chaining to 
 get the same effect and gain of the efficiency and elegance of doing a chain of methods and 
 just how it would be work and be possible to impliment. 
