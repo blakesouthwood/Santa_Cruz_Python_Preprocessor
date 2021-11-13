@@ -1,4 +1,8 @@
-saturday monrning, nov 13th, 2021
+saturday morning, nov 13th, 2021
+== Method Chaining ==
+indent_to_left.add_comment_to_switch.cut_out_switch_bodies.swap_switch_with_nested_method.add_brace()
+
+
 Late last night an idea popped into my head and I quickly figured out how to make it work.
 Chaining methods. For the pre-parser I need to call up to ten methods that are applied individually
 to each string and that would have meant looping through all of the strings in a  list each time.
