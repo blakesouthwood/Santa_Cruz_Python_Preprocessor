@@ -26,7 +26,7 @@ Wrote code at midnight last night and will test it today.
 ##======================================
 def change_slot_string(counter):
   counter = int( counter)
-  nest_list[counter] = output[0]
+  nest_list[counter] = output[0] #nest_list is name of list that can become an input param
 
 	
 #A method that calls a series of methods really utilizing output from previous method
@@ -34,7 +34,7 @@ def change_slot_string(counter):
 ## transform_string()
 ##======================================
 def transform_string():
-  counter =0
+    counter =0
     for item in nest_list:
       chain_method(item)
       change_slot_string(counter)
