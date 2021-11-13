@@ -1,3 +1,11 @@
+saturday monrning, nov 13th, 2021
+Late last night an idea popped into my head and I quickly figured out how to make it work.
+Chaining methods. For the pre-parser I need to call up to ten methods that are applied individually
+to each string and that would have meant looping through all of the strings in a  list each time.
+With this solution I just do one loop and apply the method chain to each string just once.
+Wrote code at midnight last night and will test it today.
+
+
 fri, nov 12th, 2021 11:30am
 	
 coding music today: https://www.youtube.com/watch?v=ckmh6FvHidQ
