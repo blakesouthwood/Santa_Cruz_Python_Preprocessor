@@ -20,6 +20,66 @@ to each string and that would have meant looping through all of the strings in a
 With this solution I just do one loop and apply the method chain to each string just once.
 Wrote code at midnight last night and will test it today.
 
+#Raw design code last night at midnight.
+##======================================
+## change_slot_string(counter)
+##======================================
+def change_slot_string(counter):
+  counter = int( counter)
+  nest_list[counter] = output[0]
+
+	
+#A method that calls a series of methods really utilizing output from previous method
+##======================================
+## transform_string()
+##======================================
+def transform_string():
+  counter =0
+    for item in nest_list:
+      chain_method(item)
+      change_slot_string(counter)
+      counter +=1
+
+##======================================
+## feed_data()
+##======================================
+def feed_data():
+  input[0] =“”
+  input[0] = output[0]
+
+
+	
+# waterfall #this will be generated
+##======================================
+## chain_method(item) 
+##======================================
+def chain_method(item):
+  input[0] = item
+  output[0] = method1(input[0]);feed_data()
+  output[0] = method2(input[0]);feed_data()
+  output[0] = method3(input[0]);feed_data()
+  output[0] = method4(input[0]);feed_data()
+  output[0] = method5(input[0]) 
+
+	
+#Result in output[0]
+Indent to left margine
+Add comment to switch
+Cut out switch body at 3 tabs deoth
+Swap switch with nested switch
+Replace bottom endswitch with brace
+
+Each method stage all five in sequence to a string
+
+Chain the methods output to list[0]
+Then that list is input to next method
+Input[0] string method name
+Put change into output[0]
+Transfer then input[0] = output[0]
+
+
+
+
 
 fri, nov 12th, 2021 11:30am
 	
