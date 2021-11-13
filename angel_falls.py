@@ -1,7 +1,7 @@
 saturday morning, nov 13th, 2021
 == Method Chaining ==
 # I knew that Ruby had method chaining and thought it would be cool if Python could do chaining.
-# of course it uses a some fancy code but it wil work. It's a matter of how its implimented.
+# of course it uses a some fancy code but it will work. It's a matter of how its implimented.
 indent_to_left.add_comment_to_switch.cut_out_switch_bodies.swap_switch_with_nest_method.add_brace()
 # it will be implimented like this:
 method_chaining("method1.method2.method3.method4.method5()")
