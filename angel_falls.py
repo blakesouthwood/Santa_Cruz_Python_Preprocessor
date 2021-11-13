@@ -1,7 +1,18 @@
 saturday morning, nov 13th, 2021
 == Method Chaining ==
-indent_to_left.add_comment_to_switch.cut_out_switch_bodies.swap_switch_with_nested_method.add_brace()
+# I knew that Ruby had method chaining and thought it would be cool if Python could do chaining.
+# of course it uses a some fancy code but it wil work. It's a matter of how its implimented.
+indent_to_left.add_comment_to_switch.cut_out_switch_bodies.swap_switch_with_nest_method.add_brace()
+# it will be implimented like this:
+method_chaining("method1.method2.method3.method4.method5()")
+# put into a list in the same order as in the argument param
+# it is fed the starting var data in list input[0]
+# and the resulting result string is in  output[0]
 
+I was thinking about applying each method individuall to the list and looping thru 
+it and thought that was inefficient and wondered if there was a way to simulate chaining to 
+get the same effect and gain of the efficiency and elegance of doing a chain of methods and 
+just how it would be work and be possible to impliment. 
 
 Late last night an idea popped into my head and I quickly figured out how to make it work.
 Chaining methods. For the pre-parser I need to call up to ten methods that are applied individually
