@@ -1,3 +1,93 @@
+Sunday morning nov 14th, 2021 working on method chaining still.
+
+input=[]
+input.append(0)
+
+output=[]
+output.append(0)
+
+
+##=====================
+##   get_final_finished_string()
+##=====================
+def get_final_finished_string():
+    print("output[0]=",output[0])
+    print("=== result is in output[0] ===")
+    
+    
+##=====================
+##   feed_data()
+##=====================
+def feed_data():
+    input[0] =''
+    input[0] = output[0]
+
+
+##=====================
+##   initialize_lists()
+##=====================
+def initialize_lists():
+    input[0] =''
+    output[0]=''
+   
+    
+##=================================
+## change_slot_string(counter)
+##=================================
+def change_slot_string(counter):
+    counter = int( counter)
+    nest_list[counter] = output[0]
+   
+    
+##============================
+## transform_string()    uses nest_list with strings in it of switch case bodies
+##============================
+def transform_string():
+    counter =0
+    for item in nest_list:
+        chain_method(item)           #this does the sequence of methods to one string 
+        change_slot_string(counter) #this replaces the string in the slot with the modified string
+        counter +=1
+
+##==================================================
+## loop_thru_finished_list_of_prepped_strings():
+##==================================================
+def loop_thru_finished_list_of_prepped_strings():
+    counter =0
+    for item in nest_list:
+        print(item)
+        print("counter=",counter)
+        print("===========")
+        
+
+# code name waterfall
+##=======================
+##  chain_method()
+##========================
+#using descriptive names not true method names yet
+def chain_method(item):
+    print("==== chain_methods called ====")
+    initialize_lists() #clears out input[0] and output[0]
+    input[0] = item #this captures the string 
+    add_comment_with_number_to_top_switch(input[0]);feed_data()
+    shift_string_to_left_by_reducing_tabs(input[0]);feed_data()
+    cut_out_switch_bodies_at_3_tabs_depth(input[0]);feed_data()
+    swap_switch_with_nested_switch_number(input[0]);feed_data()
+    replace_the_last_endswitch_with_brace(input[0]) 
+    loop_thru_finished_list_of_prepped_strings() #to see the modifcations completed
+    get_final_finished_string() #in output[0] prints it out to see it
+
+
+
+
+
+
+
+
+
+
+##=================================================================================
+
 saturday morning, nov 13th, 2021
 == Method Chaining ==
 # I knew that Ruby had method chaining and thought it would be cool if Python could do chaining.
