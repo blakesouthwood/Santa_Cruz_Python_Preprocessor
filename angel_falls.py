@@ -1,5 +1,5 @@
 Monday, Nov 15th, 2021
-What this does is prep the string before it is fed into bypass205() which calles the parser individually
+What this does is prep the string before it is fed into bypass205() which calls the parser individually
 for each input switch string.
 I already tested and verified that my pair list of switch endswitches works and that 
 a list made up of the pairs is correct.
