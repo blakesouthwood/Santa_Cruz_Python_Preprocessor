@@ -1,5 +1,15 @@
 Monday, Nov 15th, 2021
+What this does is prep the string before it is fed into bypass205() which calles the parser individually
+for each input switch string.
+I already tested and verified that my pair list of switch endswitches works and that 
+a list made up of the pairs is correct.
+
 Testing chain methods individually then will test as a chain using piping now called do_pipe()
+All of the methods in chain methods now verified to work.
+do_pipe() works. Note. Python has a pipe() method for the os therefore I changed my pipe name to do_pipe().
+Will next test chain_methods() together with all cylinders running. time 9:40 am. Nov 15th
+	
+	
 Afterwards I will then work on post parser on python switch stings output combining.
 
 
