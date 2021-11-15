@@ -1,3 +1,9 @@
+Monday, Nov 15th, 2021
+Testing chain methods individually then will test as a chain using piping now called do_pipe()
+Afterwards I will then work on post parser on python switch stings output combining.
+
+
+
 Sunday morning nov 14th, 2021 working on method chaining still.
 
 input=[]
