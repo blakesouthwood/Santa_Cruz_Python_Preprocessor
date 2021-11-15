@@ -29,7 +29,8 @@ output.append(0)
 def get_final_finished_string():
     print("output[0]=",output[0])
     print("=== result is in output[0] ===")
-    
+    for line in output[0].splitlines():
+	print(line)
     
 ##=====================
 ##   do_pipe()
@@ -48,9 +49,9 @@ def initialize_lists():
    
     
 ##=================================
-## change_slot_string(counter)
+## change_this_slot_string(counter)
 ##=================================
-def change_slot_string(counter):
+def change_this_slot_string(counter):
     counter = int( counter)
     nest_list[counter] = output[0]
    
@@ -61,8 +62,8 @@ def change_slot_string(counter):
 def transform_string():
     counter =0
     for item in nest_list:
-        chain_method(item)           #this does the sequence of methods to one string 
-        change_slot_string(counter) #this replaces the string in the slot with the modified string
+        chain_methods(item)           #this does the sequence of methods to one string 
+        change_this_slot_string(counter) #this replaces the string in the slot with the modified string
         counter +=1
 
 ##==================================================
