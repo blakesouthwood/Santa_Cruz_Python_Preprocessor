@@ -16,12 +16,626 @@ the code down to smaller methods to manage the complexity.
 
 three more methods to go for chain methods. They work. Just making them work on their own now with no help.
 
+#output looping thru list
+
+now big test of second chain method #taking out switch bodies
+this should print out 6 stritngs
+counter= 1
+
+	switch(exp){ #1
+		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			#############
+			switch(exp){ #11
+			exp = 3
+			switch(exp){ #49
+
+			##############
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+		
+		default:
+			print('the end')
+}
+
+=========
+counter= 2
+
+	switch(exp){ #11
+		case 'blable':
+			print("do something")
+			####################
+			switch(exp){ #15
+			#############
+			print("yep")
+			fallthru
+		case 'more':
+			print("nice")
+			break
+		default:
+			print("we are done here")
+	endswitch #47
+
+=========
+counter= 3
+
+	switch(exp){ #49
+		case 'burger':
+			print("do something")
+			####################
+			switch(exp){ #53
+			#############
+			print("yep")
+			fallthru
+		case 'more':
+			print("nice")
+			break
+		default:
+			print("we are done here")
+	endswitch #73
+
+=========
+counter= 4
+
+	switch(exp){ #15
+		case 'tahoe':
+			print("do something")
+			print("yep")
+			fallthru
+		case 'fallen leaf lake':
+			print("nice")
+			####################
+			switch(exp){ #23
+			#############
+			break
+		default:
+			print("we are done here")
+	endswitch #38
+
+=========
+counter= 5
+
+	switch(exp){ #53
+		case 'fishy':
+			print("do something")
+			print("yep")
+			fallthru
+		case 'snow fire':
+			print("nice")
+			#############
+			break
+		default:
+			print("we are done here")
+	endswitch #64
+
+=========
+counter= 6
+
+	switch(exp){ #23
+		case 'tahoe':
+			print("do something")
+			print("yep")
+			fallthru
+		case 'fallen leaf lake':
+			print("nice")
+			break
+		default:
+			print("we are done here")
+	endswitch #33
+
+=========
+code working for taking out inners witch bodies before sending it to parser.
+Will test convert inner switch to nested method next.
+		
+Raw code that works before cleaning it up. Fully worked just now.
+		
+		
+
+flag_test=[]  
+toosmart=[]
+toosmart.append(0)
+baton=[]
+baton.append(0)
+ 
+flag_test.append(False) #set flag_test by default to False
+#flag_test[0]
+# x is the name of the string to be modified
+##===========================================
+##            skipping_some_lines() #this works
+##===========================================
+def skipping_some_lines(x,start,finish):#input string, switch number then endswitch line number  ....start line nest switch and finish  endswitch
+	print("METHOD  skipping_some_lines() called==========")
+	print("skipping_some_lines() called",start,finish)
+	#if I have a flag that it's been triggered then afterewards 
+	#print("this is the input string used stating skipping_some_lines")
+	#for the first pass flag_test[0]= False and then it's flipped to True
+	print("flag_test[0]=",flag_test[0])
+	if flag_test[0] == False: #meaning first pass  and what it's set to by DEFAULT
+		smart=x;
+		#change it to True now
+		flag_test[0] = True #this should now be tru e
+	else: #meaning TRUE this is run after first run of skipping_some_lines()
+		#what this does is use the new concatted changed string changed on the fly with each pass
+		#for second and all subsequent passes it uses baton[0]
+		x = baton[0]
+	#print('what is in baton[0]',baton[0])
+	##==========================================================
+	# the issue is that on the second pass it is using the original string
+	# and it needs to be using the modified string
+	# changed it to start counter from 1 instead of 0 on Oct 5th, 2021
+	# because the numbering system of the string starts from 1 too.
+	### look that we have the counter here set to 1 by default 
+	counter=1; concatthis =''; #finish = finish + 1 
+	print("start=",start,"finish=",finish) #I took out x = 
+	#smart=x;
+	print("inside of skipping lines before going thru the loop this is the value of")
+	print("the input string it will mess around with")
+	#print(smart)
+	print("=== ah now I get it these are the lines that it MUST SKIP and we want what is before and after this range to create the modified string =")
+	print("it sees in start",start)   #this is a number
+	print("it sees in finish",finish) #this is a number too
+	for line in x.splitlines(): #smart = x
+	#this preserves the switch word and skips the rest of nested switch body including endswitch
+		# if counter is between start and finish #just after start and less than = to finish
+		#just added start +1 and finish + 1
+		if counter > start+1 and counter <= finish +1: #if only between start and finish skip these lines
+			#skip  #so greater than start(switch) and less than finish  we are cutting out these lines of code
+			counter += 1
+			continue	
+		else: #this builds the string by concatting it
+			concatthis += line + "\n" #notice we add a new line at the end
+			counter += 1
+			#ibm[0] = concatthis
+			continue	
+	print("===output from skipping some lines====")
+	#print('it created this string')
+	#print(concatthis)
+	print("how does it look===>>> by lettuce field")
+	del ibm[:] #this should empty it
+	print("this is the output result of skipping some lines")
+	#print(concatthis)
+	#what I am doing here is putting what has been concatted in the string into toosmart[0]
+	#this has red_robin hardwired into the code 
+	#just commented out line below november 10th, 2021 to see wehat happens 
+	#toosmart[0]= red_robin #it did say toosmart[0] = red_robin
+	baton[0] = concatthis  #here the concatthis has been put into baton[0]
+	##==========================================================
+	### mocha test ### this is new November 10th, 2021  ########
+	never_defeated[0]= concatthis  #just added this line 
+	###########################################################
+	##==========================================================
+	concatthis='' #this resets concatthis to empty-
+	print('in baton here we have')
+	#print(baton[0])
+	print('==============')
+	#ibm[0] = concatthis	  #this has the switch string with the nested switch cut out
+	#putting concatthis into ibm[0] here 
+	ibm.append(toosmart[0])
+	print("at the bottom of the skipping some lines to take out inner switch")
+	print(" it sees this in ibm[0]")
+		
+	#print(ibm[0])
+		#just moved this over one tab	
+#end skipping_some_lines  ========================================================
+print("Levels TEST on wonderful Monday winter wonderland ")
+print("this will take out the inner switch between") 
+never_defeated=[]
+never_defeated.append(0)
+
+for line in skitahoe.splitlines():
+    print(line)
+
+##===========================================================================
+##  cut_out_inner_switch_body_leaving_switch_word(stringname,start,finish):
+##===========================================================================
+def cut_out_inner_switch_body_leaving_switch_word(stringname,start,finish):
+    print('this one is sooo critical')
+    print("cut_out_inner_switch_body_leaving_switch_word(stringname,start,finish):")
+    skipping_some_lines(stringname,start,finish)
+    #this means that the output string should be placed into never_defeated[0]
+    for line in never_defeated[0].splitlines():
+        print(line)
+        
+stringname=skitahoe; start=7; finish = 14; #this sucker was moving....    
+cut_out_inner_switch_body_leaving_switch_word(stringname,start,finish)
+
+print(" RED RED RED cut out switch body leave only switch word baby red alert testing cut out switch body leaving switch word tesitng 4 ..")    
+#exit()
+
+#this is testing with dummy data above in test_code_now
+#taking out the inner switch body
+print("halloween is coming snoopy and woodstock test")
+
+#print(test_code_now)
+#the inner switch is at 9 (which we keep) so we start from +1 meaning 10
+#and the endswitch is at 19 but we need to nuke that too so it's endswitch + 1
+print("take out 10 thru 20") #but actually keep 10 and takeout including20
+#x = test_code_now
+#the number system starts from 1 for the switch numbering
+#because it starts counting from 0 and not 1 we need to subtract 1 from it
+#so it was originally 10, 19
+
+#if switch is #9 and endswitch is 19
+#Add 1 to each number start and finish
+print("rose test")
+
+
+
+
+
+
+
+
+#modified so it doesn't matter where the inner switch is 
+# they will all be at 3 tabs
+#the first switch must be at 1 tab and inner switches need to be at 3 tabs one depth in
+#THIS IS NEW CODE WEDNESDAY CODING...november 10th ........
+##########################################################################################
+#####################################################################################
+ #creates first slot in list for string
+	#print("actually this builds lists of switch and endswitch locations and makes pairs")
+	#print("===========smart_cut_out_inner_switch_bodies_at_three_tabs=========")
+	#print("===========smart_cut_out_inner_switch_bodies_at_three_tabs=========")
+	#print(" checking to see if more than ONE inner switch at three tabs and ")
+	#print("if so then put them into a list")
+	#print("the first loop determines how many inner switches at 3 tabs")
+	#print("the second loop will go thru a list of the pairs - ah yes but ")
+	#print("not implimented yet ")
+	
+	#print("it sees in finish",finish) #this is a number too
+	
+
+# "actually this builds lists of switch and endswitch locations and makes pairs")
+# what it does: creates pairs set of start, finish after getting list of switch and endswitch lines
+# then it will loop thru pairs set in reverse order and cut out switch bodies bottom up 
+
+
+## new november 10th 2021 !!:37am
+#JUST TRY IT
+
+
+#this requires this function below to be called first though
+#  smart_cut_out_inner_switch_bodies_at_three_tabs(samplestring)
+pairset=[]
+genius=[]
+genius.append(0)
+
+never_defeated=[]
+never_defeated.append(0)
+list_of_inner_switches_at_three_tabs=[]
+list_of_inner_endswitches_at_three_tabs=[]
+
+
+
+
+##========================================================
+## loop_thru_pair_set_and_call_skiplines(samplestring)
+##=========================================================
+def loop_thru_pair_set_to_cut_out_inner_switch_bodies(thestring):
+	print("len(never_defeated) =",len(never_defeated))
+	#never_defeated[0] = thestring #this takes the initial string put into never_defeated[0]
+	never_defeated.append(thestring) #maybe this is what I need to do to fix this bug
+	print(never_defeated[0]) 
+	counter =0
+	#loop thru pairset of sets of switch,endswitch (already reversed to go bottom up)
+	for item in pairset: #the pairset list was filled in smart_cut_out_inner_switch_bodies_at_three_tabs
+		alpha = item[0];beta  = item[1];print("alpha=",alpha, "beta=",beta)
+		start = alpha; finish = beta
+		#METHOD skipping_some_lines()============= uses never_defeated[0] stirng in list
+		skipping_some_lines(thestring,start,finish)
+		#doing this to see if it cut out the inner switch body 
+		print("this is showing the changes reducing switches in never_defeated[0]")
+		mouse = never_defeated[0] #the result of skipping some lines goes into never_defeated[0]
+		print("this is what the switch string looks like after taking out a switch body")
+		counter += 1
+	
+
+
+
+
+
+
+
+
+##====================================================================
+##  make_pair_set_of_inner_switches_at_three_tabs_depth(inputstring)
+##====================================================================
+def make_pair_set_of_inner_switches_at_three_tabs_depth(inputstring):
+	print("METHOD make_Pair_set_of #### called  ... make_pair_set_of_inner_switches_at_three_tabs_depth(inputstring):")
+	counter =0
+	print('let us look at this string to see what it sees')
+	print("========//////////==========///////==============")
+	for line in inputstring.splitlines():
+		print(line)
+	print("========//////////==========///////==============")
+	for line in inputstring.splitlines(): #smart = x
+		#this preserves the switch word and skips the rest of nested switch body including endswitch
+		#for this line get tab_depth
+		#print("this is where I add the switch line number to list of inner switches at three tabs")
+		tab_depth= line.count("\t") #but this presumes just one inner switch there could be more
+		#if 3 tabs True AND switch in line and end not in line and counter > 1 
+		if tab_depth == 3 and "switch" in line and "end" not in line and counter > 1: #proceed
+			#this puts the current line number into the list below
+			list_of_inner_switches_at_three_tabs.append(counter)
+			counter += 1
+		else:
+			counter += 1
+	print("list_of_inner_switches_at_three_tabs=",list_of_inner_switches_at_three_tabs)		
+	#second new loop but looks for endswitch locations at 3 tabs 
+	counter =0
+	for line in inputstring.splitlines(): #smart = x
+		print(line)		
+		tab_depth= line.count("\t")
+		#print("this is where I add the endswitch line number to list of inner switches at three tabs")
+		if tab_depth == 3 and "endswitch" in line  and counter > 1: #proceed
+			#this puts the current line number into the list below
+			list_of_inner_endswitches_at_three_tabs.append(counter)
+			counter += 1
+		else:
+			counter += 1
+	print("==================")
+	print("list_of_inner_switches_at_three_tabs=",list_of_inner_switches_at_three_tabs)	
+	print("list_of_inner_endswitches_at_three_tabs=",list_of_inner_endswitches_at_three_tabs)		
+	print("===================")
+	print("===== end of phase 1 =====")
+	##======================================================================================
+	print('doing Friday debugging oh what fun it is to ride in a one horse open sleigh')
+	if len(list_of_inner_switches_at_three_tabs) == 1:
+		print("this means only ONE dam pair")
+	else:
+		print("the length is =",len(list_of_inner_switches_at_three_tabs))
+		cat = len(list_of_inner_switches_at_three_tabs)
+		print("the length of inner switches at three tabs is ",cat)
+	###=================================================================	
+	print("now I need to make pairs")
+	get_number = len(list_of_inner_endswitches_at_three_tabs)
+	
+	if get_number == 1: #it's only doing it if the gen_number > 1 daaaaaa
+		#create pairs   THIS IS CONSTRUCTING THE PAIRSET LIST OF SWITCH ENDSWITCH LINE NUMBERS
+		counter=0
+		for item in list_of_inner_switches_at_three_tabs:
+			pairs = [ (list_of_inner_switches_at_three_tabs[counter]) , list_of_inner_endswitches_at_three_tabs[counter] ]
+			print(pairs)
+			pairset.append(pairs)
+			counter += 1
+	##3=======================================================================		
+	if get_number > 1: #it's only doing it if the gen_number > 1 daaaaaa
+		#create pairs   THIS IS CONSTRUCTING THE PAIRSET LIST OF SWITCH ENDSWITCH LINE NUMBERS
+		counter=0
+		for item in list_of_inner_switches_at_three_tabs:
+			pairs = [ (list_of_inner_switches_at_three_tabs[counter]) , list_of_inner_endswitches_at_three_tabs[counter] ]
+			print(pairs)
+			pairset.append(pairs)
+			counter += 1
+	else:
+		pass #print("there is only one switch endswitch so do regular mode just one inner switch at 3 tabs ")
+	if get_number > 1:
+		pairset.reverse()  # REVERSE PAIRSET SO THAT I CAN CHANGE THE INNER SWITCHES BOTTOM UP
+	
+	print(pairset)
+	print("loop thru pairset") #to go thru input string and reduce inner switches to just switch word bottom up
+	for item in pairset:
+		alpha = item[0];
+		beta  = item[1];
+		print("alpha=",alpha, "beta=",beta)
+	##======================================
+	print("method to go thru pairset and call skipping_some_lines(start,finish)")
+	#do_fancy_walk_thru_pairset_list_cutting_out_switch_bodes_bottom_up(inputstring):
+	#########====================================
+		#skipping_some_lines(genius[0],start,finish)
+	#it goes thru the string and makes list of switch,endswitches
+	
+	#skipper needs to cut out from bottom up 
+	#skipping_some_lines(x,start,finish):
+	#it will call a method
+
+#this must be called after one switch string has had it's inner switches reduced to switch word
+#def reset_to_initial_conditions(): #brainchild on NOv 11th, Thursday morning#
+#	print(" ====reset_to_initial_conditions()======"#)
+#	never_defeated[0] =""
+#	list_of_inner_switches_at_three_tabs=[]
+#	list_of_inner_endswitches_at_three_tabs=[]
+#	pairset=[]
+#	baton[0]= "" #should clear it out
+    
+
+#def show_output_string_after_changes():
+#    mouse = never_defeated[0] #the result of skipping some lines goes into never_defeated[0]
+#		print("this is what the switch string looks like after taking out a switch body")
+#		print('resulting string change is for counter',counter)
+#		for line in mouse.splitlines():
+#			print(line)    
+#this makes pairset list of switch and endswitch 
+#this is only run ONCE
+fullhouse=[]
+##============================================================================
+##  take_out_nested_switch_bodies_at_three_tabs_depth_leaving_switch_word
+##----------------------------------------------------------------------------
+##  Methods: make_pair_set_of_inner_switches_at_three_tabs_depth(thestring) oh wow genius here
+##  Methods: loop_thru_pair_set_to_cut_out_inner_switch_bodies(thestring)
+##  Methods: skipping_some_lines(x,start,finish)
+##============================================================================
+def take_out_nested_switch_bodies_at_three_tabs_depth_leaving_switch_word(thestring):
+	print("THIS NEEDS TO WORK NOW==")
+	print(" take_out_nested_switch_bodies_at_three_tabs_depth_leaving_switch_word(thestring)")
+	baton[0]=thestring
+	print("did this baby finally get called  1")
+	print("called ....take_out_nested_switch_bodies_at_three_tabs_depth_leaving_switch_word(samplestring)") 
+	make_pair_set_of_inner_switches_at_three_tabs_depth(thestring)
+	print("this is scenario where if one inner switch it's not filling the pairset")
+	print("pairset=",pairset)
+	
+	loop_thru_pair_set_to_cut_out_inner_switch_bodies(thestring)
+	print("list_of_inner_switches_at_three_tabs=", list_of_inner_switches_at_three_tabs)
+	print("list_of_inner_endswitches_at_three_tabs=", list_of_inner_endswitches_at_three_tabs)
+	print("pairset=",pairset)
+	print("this should be the result of the switch with inner switches cut to just switch word, bodies gone")
+	for line in never_defeated[0].splitlines():
+	    print(line)
+	## adding resultof output of methods of taking out inner switches into never_defeated[0]
+	## which is put into list fullhouse using append
+	fullhouse.append(never_defeated[0])
+	#if it is here then it's called ONLY after the first one has completed and thereafter
+	#==================================================
+	## this resets super important lists utilized 
+	never_defeated[0]=''
+	list_of_inner_switches_at_three_tabs.clear()
+	list_of_inner_endswitches_at_three_tabs.clear()
+	pairset.clear()
+	baton[0]= ""
+	
+
+
+
+#print("====STARTING ATTEMPT 1====== charlie brown music is the best jazz ====")
+
+
+#take_out_nested_switch_bodies_at_three_tabs_depth_leaving_switch_word(samplestring)
+
+
+#exit() 
+print("this is after the first string and taking out inner switch bodies...")
+#print("====STARTING ATTEMPT 2====== charlie brown music is the best jazz ====")
+#reset_to_initial_conditions()
+	##==========================
+
+##=======================
+#take_out_nested_switch_bodies_at_three_tabs_depth_leaving_switch_word(samplestringzoo1)
+
+
+#reset_to_initial_conditions() #this must be done after each transformation
+print("the final OUTPUT is here ...")
+print("length of fullhouse should be 2 is now",len(fullhouse))
+
+
+#for item in fullhouse:
+#    print(item)
+
+####################################################
+#print("size of FULLHOUSE is..",len(fullhouse))
+#for item in fullhouse:
+#    print(item)
+
+print("time to go sledding")
+#exit()
+
+
+print("now I will try to do a few stings with it.") 
+print("end of this initial test of ")
+result_of_check_if_inner_switch=[]
+result_of_check_if_inner_switch.append(0)
+
+#coded on november 19th friday at 10:48 am morgan hill starbucks
+##====================================================================
+## determine_if_inner_switch_inside_of_this_switch_string(weasel):
+##====================================================================
+def determine_if_inner_switch_inside_of_this_switch_string(weasel):
+    print("determine_if_inner_switch_inside_of_this_switch_string(weasel):")
+    ## START INNER LOOP ======= devised on nov 19th friday 10L30 am ===========
+    innerswitch= False #this must be set to False before each call below 
+    result_of_check_if_inner_switch[0] = False
+    for line in weasel.splitlines(): #this looks for an inner switch at 3 tabs depth
+        tabdepth = line.count("\t")
+        if tabdepth == 3 and "switch" in line:
+            print("where's the party THIS string has an inner switch ")
+            innerswitch = True
+            result_of_check_if_inner_switch[0] = True
+            break
+        else:
+            continue
+        print("....")
+    print('this has to be called after the loop is done')
+    print("result_of_check_if_inner_switch[0]=",result_of_check_if_inner_switch[0])
+    #end loop ===================
+
+
+funtestlist=[]
+
+print("big bird for prez")
+print("testing in my mind wed november 10th test ..going thru list and calling take out switch bodies.")
+funtestlist=[samplestring,samplestringzoo1] #samplestringzoo1
+#use the list I made earlier catching_first_change
+
+#ratmaze_list=[]
+#=====================
+#  try_the_mocha()
+#=====================
+def try_the_mocha():
+    print("try the mocha() testing.......... running the rat maze and learning it...")
+    fullhouse.clear()
+    print("let us see the strings in this list")
+    for item in catching_first_change:
+        print(item)
+    print("===== okay is this it ===")
+    
+    print("length of catching first change should be 6",len(catching_first_change))
+    counter=0  #this is running the method for second stage of chain_methods
+    for item in catching_first_change: #funtestlist: #strings in funtest list
+        weasel = item
+        ## determines if there is an inner switch in THIS string ==========
+        determine_if_inner_switch_inside_of_this_switch_string(weasel)
+        #print("determine if inner switch at 3 tabs depth in this switch string ")
+        innerswitch= result_of_check_if_inner_switch[0]
+        print('innerswitch if true or false it is .. =',innerswitch)
+        if innerswitch == True:  #if there is an inner switch then apply the method below  
+            take_out_nested_switch_bodies_at_three_tabs_depth_leaving_switch_word(item)
+        else:
+            #this is new as of fri nov 19th 
+            #if no inner switch then just add the switch string to fullhouse list
+            #print("just added this in situation where no inner switches in string in list")
+            print("========= nov 19th friday debugging ==")
+            print("this is new ")
+            print("if inner switch == False then add weasel to fullhouse")
+            fullhouse.append(weasel)
+            #this means no innerswitch in this switch string 
+            pass  #it's False no inner switch
+        counter += 1
+        
+        ###=========================================================
+    print(" end of double loop ")
+    print("after going thru catching first change list it should be 6 for counter")
+    print("counter =",counter)
+    print("len(fullhouse)=",len(fullhouse))
+    print("let us look in here if switch stirngs with no inner switches okay and exist at least")
+    for item in fullhouse:
+        print(item)
+    del catching_first_change[:]
+    #this fills the output list into catching_first_change list 
+    for item in fullhouse:
+        catching_first_change.append(item)
+        
+    print("now big test of second chain method #taking out switch bodies")
+    print("this should print out 6 stritngs")
+    counter=1
+    for item in catching_first_change:
+        print("counter=",counter)
+        print(item)
+        print('=========')
+        counter += 1
+        
+    
+
+print("this is for all of the marbles out of style")
+try_the_mocha()    
+print('did it work razzle dazzle pumpkins')
 
 
 
 
 	
-	 ton
+	
 
 
 Monday, Nov 15th, 2021
