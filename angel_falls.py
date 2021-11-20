@@ -9,9 +9,9 @@ https://www.youtube.com/watch?v=I22AqV9zV50   Tron music - pretty dam good.
 getting cutting out the inner switch bodies had some simple but slightly perplexing logic bugs but
 I ironed them out.
 
-The rush is phenomenal seeing the stream starting to come to life. It's alive!
+The rush is phenomenal seeing the nested switch starting to come to life. It's alive!
 
-the first two methods were challening. The second one was a real mother of a bitch. I just kept breaking
+the first two methods were challenging. The second one was a real mother of a bitch. I just kept breaking
 the code down to smaller methods to manage the complexity.
 
 three more methods to go for chain methods. They work. Just making them work on their own now with no help.
