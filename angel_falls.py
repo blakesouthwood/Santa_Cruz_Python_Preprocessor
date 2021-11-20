@@ -1,4 +1,7 @@
 9:26 am PST testing piping between chain methods now.
+	
+Piping works. Nov 20th, 2021  11:00am PST So chaining methods works. This means feeding the output from a method
+as input for the next method in a chain (a line of methods).
 
 Saturday, Nov 20th, 2021  9:06 am
 Last major chain method confirmed working!
