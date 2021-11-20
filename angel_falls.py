@@ -1,3 +1,5 @@
+9:26 am PST testing piping between chain methods now.
+
 Saturday, Nov 20th, 2021  9:06 am
 Last major chain method confirmed working!
 
