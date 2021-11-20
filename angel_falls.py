@@ -4,7 +4,41 @@ Last major chain method confirmed working!
 I will now pipe the methods together and apply them to each input string in list.
 The rest is gravy and simple to impliment. Likely tomorrow morning the pre-parser code will be golden.
 The half after the parser dealing with the python code is simple to put together with the methods already working.
+INPUT sample strings looked like this:
+		switch(exp) #11
+		case 'blable':
+			print("do something")
+			####################
+			switch(exp) #15
+			#############
+			print("yep")
+			fallthru
+		case 'more':
+			print("nice")
+			break
+		default:
+			print("we are done here")
+	endswitch #47
+=======testing if { taken out of string=======
+confirmed switchh in line and tabdepth3
+===== oh yeah =====
 
+	switch(exp){ #49
+		case 'burger':
+			print("do something")
+			####################
+			switch(exp){ #53
+			#############
+			print("yep")
+			fallthru
+		case 'more':
+			print("nice")
+			break
+		default:
+			print("we are done here")
+	endswitch #73
+
+				
 OUTPUT:
 	===== oh yeah =====
 we made it to the top of the Donnor Summit 
