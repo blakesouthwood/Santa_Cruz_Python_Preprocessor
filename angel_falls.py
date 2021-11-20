@@ -1,3 +1,255 @@
+Saturday, Nov 20th, 2021  9:06 am
+Last major chain method confirmed working!
+
+I will now pipe the methods together and apply them to each input string in list.
+The rest is gravy and simple to impliment. Likley tomorrow morning the pre-parser code will be golden.
+The half after the parser dealing with the python code is simple to put together with the methods already working.
+
+OUTPUT:
+	===== oh yeah =====
+we made it to the top of the Donnor Summit 
+counter= 1
+
+	switch(exp) #1
+		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			#############
+			nested_switch_11(exp) #11
+			exp = 3
+			nested_switch_49(exp) #49
+
+			##############
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+		
+		default:
+			print('the end')
+}
+counter= 2
+
+	switch(exp) #11
+		case 'blable':
+			print("do something")
+			####################
+			nested_switch_15(exp) #15
+			#############
+			print("yep")
+			fallthru
+		case 'more':
+			print("nice")
+			break
+		default:
+			print("we are done here")
+	endswitch #47
+counter= 3
+
+	switch(exp) #49
+		case 'burger':
+			print("do something")
+			####################
+			nested_switch_53(exp) #53
+			#############
+			print("yep")
+			fallthru
+		case 'more':
+			print("nice")
+			break
+		default:
+			print("we are done here")
+	endswitch #73
+counter= 4
+
+	switch(exp) #15
+		case 'tahoe':
+			print("do something")
+			print("yep")
+			fallthru
+		case 'fallen leaf lake':
+			print("nice")
+			####################
+			nested_switch_23(exp) #23
+			#############
+			break
+		default:
+			print("we are done here")
+	endswitch #38
+counter= 5
+
+	switch(exp) #53
+		case 'fishy':
+			print("do something")
+			print("yep")
+			fallthru
+		case 'snow fire':
+			print("nice")
+			#############
+			break
+		default:
+			print("we are done here")
+	endswitch #64
+counter= 6
+
+	switch(exp) #23
+		case 'tahoe':
+			print("do something")
+			print("yep")
+			fallthru
+		case 'fallen leaf lake':
+			print("nice")
+			break
+		default:
+			print("we are done here")
+	endswitch #33
+end of the show time movie trailer
+
+### code below
+
+##===================================================
+## change_switch_to_method_solved(inputstring):
+##====================================================
+
+#solved and working on October 30th 2021 ====================================
+def change_switch_to_method_solved(inputstring):
+    print("====== change_switch_to_method_solved(inputstring)=== get the money now====")
+    innerswitch=''
+    for line in inputstring.splitlines():
+        print(line)
+    print("========testing if this input string has a nested switch ==")
+    innerswitch= False #default se tting
+    counter=0;newstring='';y='';x='';tabdepth=''; switches_total=''
+    #verify that there is at LEAST ONE nested switch in here
+    for line in inputstring.splitlines(): # we only need to detect one inner switch
+       tabdepth = line.count("\t") #gets tab count for this line
+       if "switch" in line and "end" not in line and tabdepth == 3:  #it just needs to be true once
+       #this means yes there is a nested switch in this string
+            innerswitch = True
+            break
+       else:
+            innerswitch = False
+            continue
+    ##########################################
+    print("innerswitch =",innerswitch)
+    ##### modified on halloween  2021 to bypass if no inner switch ##########################################               
+    templine=''
+    templine2=''
+    if innerswitch == True: #if a switch at 3 tabs depth  is True
+    #check if { in this string if so take it out
+        print('checking if left brace in string')
+        if "{" in inputstring: #have to cut "{" out of string
+            print("CONFIRMED there is a left brace in string")
+            for line in inputstring.splitlines():
+                if "{" in line:
+                    templine  +=   line.replace("{","") 
+                    templine  +="\n"
+                else:
+                    templine += line +"\n"
+            inputstring = templine
+        #end if
+        print("=======testing if { taken out of string=======")
+        for line in inputstring.splitlines():
+            print(line)
+        print("=======testing if { taken out of string=======")
+       #check if } in this string an if so take it out
+      
+        counter=0 #new counter for this loop different from upper for loop above
+        for line in inputstring.splitlines():
+            tabdepth = line.count("\t") #gets tab count for this line
+            #skips first switch by counter MUST BE AFTER 2nd line
+            #this is where we swap switch(exp) with nested_switch_(number)(exp)
+            if "switch" in line and tabdepth == 3 and "end" not in line and counter > 2: 
+                print("confirmed switchh in line and tabdepth3")
+                #this is new getting the switch id number after # on-the-fly
+                #get string to right of #, get right side,remove spaces
+                x = line.split("#"); y = x[1];y = y.strip();
+                # replace switch with nested_switch + id number harvested from comment above
+                thisline = line.replace("switch(exp)", "nested_switch_" + str(y) + "(exp)")
+                #this removes the extra spaces after #
+                location = thisline.index("#")    #gets location from left where position of #
+                thisline = thisline[:location]    #this slices off the right side from # position
+                thisline= thisline + "#" + str(y) #this concats on the # and comment id number
+                counter += 1; newstring += thisline + "\n"; continue
+            else:
+                newstring += line + "\n"; counter += 1; continue
+        return newstring  
+        ##################################################################
+    else:
+        print("no inner switches in this string")
+        if "{" in inputstring: #have to cut "{" out of string
+            print("CONFIRMED there is a left brace in string")
+            for line in inputstring.splitlines():
+                if "{" in line:
+                    templine += line.replace("{","") #taking out left brace here
+                    templine  +="\n"
+                else:
+                    templine += line +"\n"           #otherwise it doesn't replace anything 
+            inputstring = templine
+        else:
+            print("=====no { in string  ======")
+            #end if
+        print("=======testing if { taken out of string=======")
+        for line in inputstring.splitlines():
+            print(line)
+        print("=======testing if { taken out of string=======")
+        #check if } in this string an if so take it out #I have deactivated this since it's not needed
+        
+        #this is what we return the inputstring
+        return inputstring; #no changes made 
+    ### end of function =======================================================
+    
+
+    
+
+
+
+###================== cold brew linus and snoopy ================== saturday morning software  november 20th, 2021 ====
+#this is testing adding the nested switch 
+linus_and_snoopy=[]
+##==================================
+##   add_nested_switch_methods():
+##==================================
+def add_nested_switch_methods():
+    print("add nested_switch_methods() in catching_first_change list")
+    for item in catching_first_change:
+        print(item)
+        #here calling method chaning_switch_to_method_solved swaps switch for nested_method_numbered
+        fizz =change_switch_to_method_solved(item)
+        print("===== oh yeah =====")
+        linus_and_snoopy.append(fizz)
+       
+
+
+
+##================================================
+##print_out_result_of_adding_nested_switch():
+##================================================
+def print_out_result_of_adding_nested_switch():
+    counter =1
+    print('we made it to the top of the Donnor Summit ')
+    for item in linus_and_snoopy:
+        print("counter=",counter)
+        for line in item.splitlines():
+            print(line)
+        counter +=1
+
+print("here we go... let her rip")       
+add_nested_switch_methods()
+print_out_result_of_adding_nested_switch()
+
+
+
+
 Fri Nov 19th, 2021
 Utter disbelief. Just fixed some code and got more working.
 Adding working functionality on the fly to chain methods
