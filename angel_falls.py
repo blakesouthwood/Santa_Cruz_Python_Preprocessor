@@ -1,6 +1,10 @@
 Saturday, Nov 20th, 2021  9:06 am
 Last major chain method confirmed working!
 
+Flow Zone Trance concentration music:
+https://www.youtube.com/watch?v=veHqJSC-9Lo
+		
+
 I will now pipe the methods together and apply them to each input string in list.
 The rest is gravy and simple to impliment. Likely tomorrow morning the pre-parser code will be golden.
 The half after the parser dealing with the python code is simple to put together with the methods already working.
