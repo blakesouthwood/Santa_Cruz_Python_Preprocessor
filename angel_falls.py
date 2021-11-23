@@ -1,3 +1,289 @@
+9:22am Nov 23rd, 2021 PST
+Tron Music
+https://www.youtube.com/watch?v=I22AqV9zV50
+	
+Testing the chains methods thoroughly and chaining them together today.
+They are each verified to be correct for all scenarios.
+Total rush seeing it all come together.
+This section deals with setting up the input switch strings for the parser bypass205() to handle a switch
+with unknown numbers of nested switches initially at unknown depths until they are analyzed.
+
+
+#testing
+#INPUT STRING
+spilled_coffee ='''
+	switch(exp){   #1 === line 10 beginning of single nested switch ======      
+		case 'blable':
+			print("do something")
+			print("yep")
+			fallthru
+		case 'more':
+			switch(exp) #7 ==========
+				case 'funny':
+					print('fun')
+				case "da":
+					print('yeah')
+				default:
+					print('bye')
+			endswitch #14
+			print("nicely")
+			break
+		case "trouble":
+			print("in trouble now")
+			switch(exp) #19 ===============
+				case 'funny':
+					print('fun')
+				case "da":
+					print('yeah')
+				default:
+					print('bye')
+			endswitch #26 ==============
+		default:
+			print("we are done here")
+	endswitch #this is key here =============line 20 end of nested switch ====
+'''	
+#OUTPUT String
+	switch(exp){   #1 === line 10 beginning of single nested switch ======      
+		case 'blable':
+			print("do something")
+			print("yep")
+			fallthru
+		case 'more':
+			switch(exp) #7 ==========
+			print("nicely")
+			break
+		case "trouble":
+			print("in trouble now")
+			switch(exp) #19 ===============
+		default:
+			print("we are done here")
+	endswitch #this is key here =============line 20 end of nested switch ====
+
+stringname=spilled_coffee;  #this sucker was moving...pilots in ireland describing ufo zooming by.    
+#start =1; finish=1; #this means start and finish unknown
+modified2_cut_out_inner_switch_body_leaving_switch_word(stringname,start=1,finish=1)
+print("did this sucker work tuesday november 23?")
+
+#this was redesigned and modified on sunday november 21st at 8:30am to 
+# work with skipping some lines with no known locations of inner switches at 3 tabs
+# and it calls method build_pair_list to find them and reverse them for input for skipping_some_lines
+# and I have to subtract 1 from start and finsh
+#this one is used to get the main switch and take out switches at 3 tab depth
+##===========================================================================
+##  modified2_cut_out_inner_switch_body_leaving_switch_word(stringname,start,finish):
+##===========================================================================
+def modified2_cut_out_inner_switch_body_leaving_switch_word(stringname,start,finish):
+    print('this one is sooo critical')
+    print("cut_out_inner_switch_body_leaving_switch_word(stringname,start,finish):")
+    ###======= this is ingenius=========
+    #METHOD BUILD_PAIR_LIST(STRINGNAME) 
+    # and loops thru list feeding start and finish  params and calling skipping_some_lines()
+    #the input for start and finish will be 1 by default but they will be overwritten
+    #by the build pair list on-the-fly.
+    build_pair_list(stringname)           # goes thru thenewpairs list and
+    for item in thenewpairs:              # fills start and finish into skipping_some_lines params
+        start = item[0];finish = item[1]; # print("start,finish=",start," ",finish)
+        skipping_some_lines(stringname,start-1,finish-1)#so close now 
+    #this means that the output string should be placed into never_defeated[0]
+    print("let us see what we have jazz blues.")
+    for line in never_defeated[0].splitlines(): #prints it after takening out. 
+        print(line)
+	
+
+flag_test=[]  
+toosmart=[]
+toosmart.append(0)
+baton=[]
+baton.append(0)
+ 
+flag_test.append(False) #set flag_test by default to False
+#flag_test[0]
+# x is the name of the string to be modified
+switch_list=[]
+endswitch_list=[]
+thenewpairs=[]
+
+##============================
+##  buildpairlist()  created nov 21st, sunday to manage doing the main switch 
+##============================  and cutting out switches at three tabs for main switch 
+def build_pair_list(stringname):
+	print("====== build_pair_list called ======")
+	counter =0
+	#this fills up the switch_list line
+	#===================================
+	# LOOP FILLS UP SWITCH_LIST 
+	#===================================
+	#loop thru stringname and fill up switch list
+	for line in stringname.splitlines():
+		tabdepth = line.count("\t")
+		if "switch" in line and "end" not in line:
+			switch_list.append(counter)
+			counter += 1
+		else:
+			counter += 1
+			continue
+	counter =0
+	#loop thru stringname and fill up endswitch list
+	#this fills up the switch_list line
+	# =======================================
+	# LOOP FILLS ENDSWITCH LIST 
+	#========================================
+	for line in stringname.splitlines():
+		tabdepth = line.count("\t")
+		if "endswitch" in line :
+			endswitch_list.append(counter)
+			counter += 1
+		else:
+			counter += 1
+			continue
+	print("switch_list=",switch_list)
+	print("endswitch_list=",endswitch_list)
+	del switch_list[0]     #delete first switch number which is on line 1
+	del endswitch_list[-1] #delete last number endswitch which is end of entire string
+	print("after deleting first and last switch we have..")
+	print("switch_list=",switch_list);print("endswitch_list=",endswitch_list)
+	counter=0 #build the pairs and put them into sweet; then append sweet to thenewpairs list
+	#===================================================================================
+	# LOOP FILLS THENEWPAIRS LIST WITH SWEET WHICH HAS SWITCH,ENDSWITCH LINE NUMBERS
+	#===================================================================================
+	for item in switch_list:
+		sweet=[switch_list[counter],endswitch_list[counter]]
+		thenewpairs.append(sweet)
+		counter += 1
+	print("this is what we want to see at starbucks")
+	print("thenewpairs=",thenewpairs)
+	#==================================
+	# LOOP PRINTS OUT THE NEWPAIRS LIST
+	#==================================
+	for item in thenewpairs:
+		print(item)
+		print('stop here for now')
+		#exit()
+	############################
+	#REVERSE THE NEWPAIRS LIST BECAUSE IT HAS TO BE DONE BOTTOM UP TO THE STRING 
+	############################
+	thenewpairs.reverse() #they have to be skipped bottom up to work properly
+	print("thenewpairs=",thenewpairs)	
+
+
+
+##===========================================
+##  skipping_some_lines() #this works
+##===========================================
+def skipping_some_lines(x,start,finish):#input string, switch number then endswitch line number  ....start line nest switch and finish  endswitch
+	print("METHOD  skipping_some_lines() called==========")
+	print("======= skipping_some_lines() ================called",start,finish)
+	# if I have a flag that it's been triggered then afterewards 
+	# print("this is the input string used stating skipping_some_lines")
+	# for the first pass flag_test[0]= False and then it's flipped to True
+	print("flag_test[0]=",flag_test[0])
+	if flag_test[0] == False: #meaning first pass  and what it's set to by DEFAULT
+		smart=x;
+		#change it to True now
+		flag_test[0] = True #this should now be tru e
+	else: #meaning TRUE this is run after first run of skipping_some_lines()
+		#what this does is use the new concatted changed string changed on the fly with each pass
+		#for second and all subsequent passes it uses baton[0]
+		x = baton[0]
+	#print('what is in baton[0]',baton[0])
+	##==========================================================
+	# the issue is that on the second pass it is using the original string
+	# and it needs to be using the modified string
+	# changed it to start counter from 1 instead of 0 on Oct 5th, 2021
+	# because the numbering system of the string starts from 1 too.
+	### look that we have the counter here set to 1 by default 
+	counter=1; concatthis =''; #finish = finish + 1 
+	print("start=",start,"finish=",finish) #I took out x = 
+	#smart=x;
+	print("inside of skipping lines before going thru the loop this is the value of")
+	print("the input string it will mess around with")
+	#print(smart)
+	print("=== ah now I get it these are the lines that it MUST SKIP and we want what is before and after this range to create the modified string =")
+	print("it sees in start",start)   #this is a number
+	print("it sees in finish",finish) #this is a number too
+	##=================
+	#so I would build pair list of inner switches at 3 tabs and then loop thru them to skip them
+	#this is new on sunday november 21st 2021
+	#what I want to skip on the fly without range data
+	
+	#------------------------------------------------
+	#from switch at 3 tabs until endswitch at 3 tabs
+	#skip the lines inbetween leaving switch word
+	##----------------------------------------------
+	
+	
+	##=============== this is a new addition to automate the grabbing of inner switches ====
+	# this creates pairs of the switch, endswitch pairs 
+	#if start == 1 and finish == 1: #meaning figure out pairs on the fly
+	
+		
+	#exit()
+	counter=0
+	#for item in thenewpairs:
+	#	start  = item[0]; print("start=",start)
+	#	finish = item[1]; print("finish=",finish)
+		
+	for line in x.splitlines(): #smart = x
+			#this preserves the switch word and skips the rest of nested switch body including endswitch
+			# if counter is between start and finish #just after start and less than = to finish
+			#just added start +1 and finish + 1
+			#tabdepth= line.count("\t")
+			#if tabdepth == 3 and "switch" in line and "end" not in line:
+			#		start = counter
+			# use while loop of course
+			#so it's upside down and backwards to create the same meaning.
+			# probably need to do a prescan but maybe i can do it without doing prescan
+			#get location of switch and endswitch at 3 tabs
+			#while "endswitch" not in line:
+			#####################==================
+		if counter > start+1 and counter <= finish +1: #if only between start and finish skip these lines
+			#skip  #so greater than start(switch) and less than finish  we are cutting out these lines of code
+			counter += 1
+			continue	
+		else: #this builds the string by concatting it
+			concatthis += line + "\n" #notice we add a new line at the end
+			counter += 1
+			#ibm[0] = concatthis
+			continue	
+		##=======================================
+	print("===output from skipping some lines====")
+	#print('it created this string')
+	#print(concatthis)
+	print("how does it look===>>> by lettuce field")
+	del ibm[:] #this should empty it
+	print("this is the output result of skipping some lines")
+	#print(concatthis)
+	#what I am doing here is putting what has been concatted in the string into toosmart[0]
+	#this has red_robin hardwired into the code 
+	#just commented out line below november 10th, 2021 to see wehat happens 
+	#toosmart[0]= red_robin #it did say toosmart[0] = red_robin
+	baton[0] = concatthis  #here the concatthis has been put into baton[0]
+	##==========================================================
+	### mocha test ### this is new November 10th, 2021  ########
+	never_defeated[0]= concatthis  #just added this line 
+	###########################################################
+	##==========================================================
+	concatthis='' #this resets concatthis to empty-
+	print('in baton here we have')
+	#print(baton[0])
+	print('==============')
+	print("now the result is here....!!!!@@@@@$$$$$")
+	print(never_defeated[0])
+	#ibm[0] = concatthis	  #this has the switch string with the nested switch cut out
+	#putting concatthis into ibm[0] here 
+	ibm.append(toosmart[0])
+	print("at the bottom of the skipping some lines to take out inner switch")
+	print(" it sees this in ibm[0]")
+	#exit()	
+	#print(ibm[0])
+
+	
+	
+	
+	
+	
+
+
 9:26 am PST testing piping between chain methods now.
 	
 Piping works. Nov 20th, 2021  11:00am PST So chaining methods works. This means feeding the output from a method
