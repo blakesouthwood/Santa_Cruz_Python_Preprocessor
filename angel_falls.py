@@ -1,3 +1,8 @@
+Tron Rises. Sat Nov 27th, 2021 5:19pm
+Finally got taking out inner switch bodies at 3 tabs working. 
+Now I will test changing to nested_switch method numbered . What an ordeal to get it stable. Works now.
+
+
 9:22am Nov 23rd, 2021 PST
 Tron Music
 https://www.youtube.com/watch?v=I22AqV9zV50
