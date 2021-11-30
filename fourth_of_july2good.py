@@ -4484,57 +4484,55 @@ funky='''
 ###=================================================================
 passthis=[]
 passthis.append(0)
+##
 #this gets the tabdepth in front of top switch word
+##==================================================
+##  starter_engine(the_nest_string):   nov 30th tested working accurately
+##==================================================
 def starter_engine(the_nest_string):
 	print("======starter engine called======")
 	tabdepth='';n=''
 	for line in the_nest_string.splitlines(): #nest_string
-		if "switch" in line and "not" not in line:
+		if "switch" in line and "end" not in line: #had "not"
 			tabdepth = line.count("\t")
-			n= tabdepth
-			#print("true tabdepth for first switch before it is",tabdepth)
-			n = n-1  #need to have one tab in front
+			n= tabdepth;n = n-1  #need to have one tab in front
 			break
 	passthis[0]= n
 	print("n =",n)
 
 goldtime=[]
 goldtime.append(0)
-
+##===================================================================
+##  modern_tab_shifter_to_left(the_nest_string):  nov 30th tested working
 ###==================================================================
 def modern_tab_shifter_to_left(the_nest_string):
     print("====modern tab shifter to left=======")
-    print('the starting state of the string is.')
-    #for line in the_nest_string.splitlines():
-    #METHOD starter_engine()
     starter_engine(the_nest_string)  #method call to get tabdepth on first switch line
-    buildstring=''
-    n = passthis[0] #filled from starter_engine method number of tabs in front of switch
-    if n == 0: #only one tab in front of switch do nothing
-        #print("n = 0 meaning that the tabdepth was 1")
-        #print("this switch case requires no modifications .. it's perfect")
-        buildstring =the_nest_string
-    #endif
+    buildstring='';n = passthis[0] #filled from starter_engine method number of tabs in front of switch
+    ### n is number of tabs in front of switch BEFORE CHANGING IT
+    if n == 0: #means one(1) tab in front of switch do nothing
+        buildstring =the_nest_string #no changes to indentation
     if n > 1: #more than one tab in front of switch so cut some tabs out
-        #print("n input=",n)
-        #concat new string  using  buildstring += line[n:] + '\n'
         for line in the_nest_string.splitlines():
-            ######################################
-            buildstring += line[n:] +'\n' #this cuts out n tabs from this line
-            ######################################
-        for line in buildstring.splitlines():
-            print(line)
-    #endif
+            buildstring += line[n:] +'\n' #this cuts out n tabs from the front of this line
     goldtime[0] = buildstring
+    for line in buildstring.splitlines():
+        print(line)
     print('testing it now after changing the string')
-    #for line in goldtime[0].splitlines():
-    #    print(line)
-print('about to start the show time ... here we go')
-#modern_tab_shifter_to_left(get_first_switch_da)
-#print("===== intermission 1=====")
-#modern_tab_shifter_to_left(teststringgonow)
-#print("===== intermission 2=====")
 
+
+#modern_tab_shifter_to_left(get_first_switch_da)
+print("===== intermission 1=====")
+#modern_tab_shifter_to_left(teststringgonow)
+print("===== intermission 2=====")
+
+
+print("testing indenting all 7 strings using modern tab shifter to left()")
+for item in testing_string_list:
+    modern_tab_shifter_to_left(item)
+    print("==== line =====")
+print("let them play in the snow")    
+#exit()
 print("================================")
 print("================================")
 print("============go baby work ====================")
@@ -4580,7 +4578,9 @@ for item in testing_string_list:
     print(item)
  
   
-#exit()
+exit()
+
+
 
 
 
@@ -6961,6 +6961,8 @@ string_after_cutting_out_inner_switch_body.append(0)
 
 hp=[]
 hp.append(0)
+lightning=[]
+lightning.append(0)
 #global concatthis;
 	#this just might work 
 	#this is a flag to pass the existing concatted string to be used fresh for next switch
@@ -7004,8 +7006,10 @@ def skip_rope_skipping_some_lines(string_name,start,finish):#start line nest swi
 	weasel=string_after_cutting_out_inner_switch_body[0]
 	for line in weasel.splitlines():
 		print(line)
-	return weasel  #I need to return from each for the piping to work correctly
-	
+	#return weasel  #I need to return from each for the piping to work correctly
+	lightning[0] = concatthis
+	for line in lightning[0].splitlines():
+	    print(line)
 
 
 
@@ -7059,7 +7063,7 @@ test_string1='''
 									break
 								default
 									print("we are done here")
-							endswitch #46  2......
+							endswitch #46  
 							#############k
 							break
 						default
@@ -7207,29 +7211,29 @@ test_string3='''
 '''
 
 test_string4='''
-	switch(exp){ #23:
-		case 'tahoe':)
-			print("do something"))
-			print("yep"):
-		case 'fallen leaf lake':)
-			print("nice")#
+	switch(exp){ #23
+		case 'tahoe':
+			print("do something")
+			print("yep")
+		case 'fallen leaf lake':
+			print("nice")
 		####################1
-			switch(exp){ #31:
-				case 'fishy':)
-					print("do something"))
-					print("yep")u
+			switch(exp){ #31
+				case 'fishy':
+					print("do something")
+					print("yep")
 					fallthru:
-				case 'where now':)
-					print("nice")k
-					break:
-				default:)
+				case 'where now':
+					print("nice")
+					break
+				default:
 					print("we very done") 
-			endswitch #
+			endswitch 
 			#############k
-			break:
-		default:)
-			print("we are done here").
-	endswitch #46  2.......
+			break
+		default
+			print("we are done here")
+	endswitch #46  .
 '''
 
 test_string5='''
@@ -7474,6 +7478,8 @@ print("TESTING WITH 62 AND 86 SKIPPING ROPE")
 #string_after_cutting_out_inner_switch_body[0]= False 
 #if len(inputlist) == 1:  good if only one list and reverse calls it does nothin
 #what this does is loop thru a list of switch endswitch at 3 tabs and does more than one
+
+
 ###========================================================================
 ## convert_switch_with_more_than_one_inner_switch_at_3_tabs(stringname):
 ###=========================================================================
@@ -7488,7 +7494,12 @@ def convert_switch_with_more_than_one_inner_switch_at_3_tabs(stringname):
         counter +=1
         print("counter=>>",counter)
         print("=====================")
-      
+    print("at bottom of converts  with more than one inner switch at 3 tabs")
+    print("testing if weasel is returnable at the end of the function")
+     #this is after it's done
+    #for line in weasel.splitlines():
+    #    print(line)
+    #return weasel 
 
 	
 print("I am fillilng the inputlist right here manually force feeding it.")
@@ -7554,15 +7565,25 @@ print("now trying test_string2")
 #del endswitch_list[:]
 print("do you see what I see??")
 #inputstring=test_string1
+outputstring=[]
+outputstring.append(0)
+
 ##=================================
 ## take_out_switch_body(astring):  #def foxnews(astring):
 ##================================
 def take_out_switch_body(astring): #this was foxnews
-    print("take_out_switch_body today is november 28th sunday  4:29 pm ")
+    print("take_out_switch_body      today is november 28th sunday  4:29 pm ")
     get_switch_and_endswitch_locations_in_string(astring) #for this switch string
     build_trial_inputlist()	 #this is new 
     convert_switch_with_more_than_one_inner_switch_at_3_tabs(astring)
     print("frosty snowboarding")
+    print("this is new code now today is Monday november 29th.")
+    print("what is in lightning[0] now")
+    print(lightning[0])
+    for line in lightning[0].splitlines():
+        print(line)
+        
+        
 print("testing take_out_switch_body now") 
 take_out_switch_body(test_string1) #the first one has more than one inner switch it takes out
 print("more please..")
@@ -7570,6 +7591,9 @@ take_out_switch_body(test_string2)
 take_out_switch_body(test_string3)
 take_out_switch_body(test_string4)
 take_out_switch_body(test_string6)
+
+#gotta take out } in switches 
+
 
 #exit()
    
@@ -7606,6 +7630,20 @@ convert_switch_with_more_than_one_inner_switch_at_3_tabs(test_string6)
 
 #exit()
 
+# method chaining
+# getone.getteo.getthree()
+
+#=======
+#Bottom of chain methods result if methods goes into
+#output[0]
+
+#Where is transform_string() called
+
+#https://www.google.com/amp/s/nypost.com/2021/11/11/ufos-buzzing-us-warships-may-be-aliens-top-spy-chief/amp/
+
+#Good stuff
+
+#https://m.youtube.com/watch?v=azZ4XAZuVk4
 
 
 
@@ -7732,6 +7770,8 @@ print("testing cutting out the inner switch bodies to see if it works")
 #There is nothing more deceptive than an obvious fact
 
 
+##================================= testing at starbucks gilroy christmas tree
+#####transform_string() #12379
 
 
 
@@ -8024,12 +8064,12 @@ teststring1='''
 									break
 								default:
 									print("we are done here")
-							endswitch #46  2.......
+							endswitch #46  
 							#############
 							break
 						default:
 							print("we are done here")
-					endswitch #51   3 ...
+					endswitch #51   
 					#############
 					print("yep")
 					fallthru
@@ -8038,7 +8078,7 @@ teststring1='''
 					break
 				default:
 					print("we are done here")
-			endswitch #60   4..........endwitch 4  line 60 3 tabs 
+			endswitch #60   
 			exp = 3
 			switch(exp){ #62
 				case 'burger':
@@ -8055,7 +8095,7 @@ teststring1='''
 							break
 						default:
 							print("we are done here")
-					endswitch #77 5 .....
+					endswitch #77 
 					#############
 					print("yep")
 					fallthru
@@ -8078,7 +8118,7 @@ teststring1='''
 		
 		default:
 			print('the end')
-	endswitch #100  7 ........
+	endswitch #100  
 '''
 
 #==========-----------seperated nest strings -----------------
@@ -8245,7 +8285,7 @@ teststring6='''
 							break
 						default:
 							print("we are done here")
-					endswitch #77 5 .....
+					endswitch #77 
 					#############
 					print("yep")
 					fallthru
@@ -8481,9 +8521,14 @@ newstring.append(0)
 ##=================================
 print('testing taking out 2 ')
 def manipulate_string(addstring):
-    print("======manipulate_string() called line 5983=======")
+    print("======manipulate_string() called line 8524=======")
      #the objective is to reduce tabs so only 1 tab in front of first switch in string
     cutout=''
+    print("let us ORIGINLAL INPUT STRING HERE look at the starting input string before modifying it")
+    for line in addstring.splitlines():
+        print(line)
+    print("== red white and blue ==============")
+    print("=======pinpointing bug on november 30th =============================")
     print("getting tab count in front of first switch here")
     for line in addstring.splitlines():
         if "switch" in line and "end" not in line:
@@ -8494,7 +8539,8 @@ def manipulate_string(addstring):
             # which then propogates down the length of the entire string
             if int(tabsinthisline) > 1:    #example
                 cutout = tabsinthisline -1
-                print("tabsinthisline =",tabsinthisline);print("cutout =",cutout)
+                print("tabsinthisline =",tabsinthisline);
+                print("cutout =",cutout)
                 break
             if tabsinthisline == 1: #which means do nothing we want just 1 tab first
                 cutout = -1; #this is using -1 as a flag
@@ -8504,25 +8550,86 @@ def manipulate_string(addstring):
             # do nothing   193241613
      #take out just 2 tabs
     print("now doing ===== SECOND PHASE ======of manipulate_string")
+    print("now doing ===== SECOND PHASE ======of manipulate_string")
+    print("now doing ===== SECOND PHASE ======of manipulate_string")
     super=''
+    lastchar=''
     for line in addstring.splitlines():
         #if "switch" in line and "end" not in line:
         tabsinthisline = line.count("\t")
         #it does all lines of the string taking out the first 2 tabs which are chars
         if cutout != 0  or cutout > 0:#this handles if cutout = 0 meaning None
             sliced = line[cutout:] #this can be a variable
+                #phase A ============================
+            
+            print("================================")
+            print("======phase A sliced=",sliced)
+            #if len(sliced) >0:
+            #    lastchar=sliced[-1]
+            #    #print("lastchar =",lastchar)
+            #   # print("TRUE weird last character",lastchar)
+            #    if lastchar == ":" or  ")" or  "u" or   "#":
+            #        sliced=sliced[:-1]  
+            #========================== bug fix on nov 30th Tuesday hollister starbucks===============================    
+            #    sliced=sliced[:-1]
+            #else:
+            #    print("last char must be 0")
+               # print("length of sliced =",len(sliced))
+            #print("after teh change the line looks like ",sliced)
+            #print("====did it work or not=============")
+            
+            
+            ################################################################
+            ## this takes out the last char at end of the line
+            #get last character
+            #=============================
+            #sliced=sliced[:-1]
+           # if any of these are True  :),u,#
+            #print("====  testing if last character : ) u # ==== ")
+            #if lastchar == ":" or  ")" or  "u" or   "#":
+             #   print("TRUE weird last character",lastchar)
+            #    sliced=sliced[:-1]
+            #else:
+            #    print('current last char is',lastchar)
+                
+               
+                
+            #if sliced[-1] == ":" or  sliced[-1] == ")": or sliced[1] == "u": #
+            #    sliced=sliced[:-1]
+            #end if
+            #===============
+            
+            #sliced=sliced[:-1] #this is new but when does this occur and why?
+            #this is new nov 30th, tuesday hollister starbucks
+            
         else: #this means its equal to 0
             #scenario zero tabs in front of first switch starting
             if tabsinthisline == 0:#this handles if there are zero tabs in front of switch line
                 sliced = "\t" + line; # add one tab if zero tabs.
+                #phase B ============================
+                
+                print("================================")
+                #print("=====phase B sliced=",sliced)
             else:
+                #phase C ===================
                 sliced =  line; #maning this has at least 1 tab already
+                
+                print("================================")
+                #print("=====phase C sliced=",sliced)
         super += sliced + "\n" # this does all lines in the string
+        #=== super 1 ==================
+        #print("SUPER 1 =",super)
         #scenario if it's already perfect at 1 tab length in front of switch
         if cutout == -1:  #this means tabs in this line determined to be 1
             super += line 
+            #super 2  =====================
+            
+            print("================================")
+            #print("SUPER 2 sliced=",super)
         #end if
     print("================ taking out 2 tabs quickly and dirtily")    
+    print("this is the output SUPER lines to see the result")
+    print("THIS IS THE RESULTING STRING below this line in manipulate_string function...")
     for line in super.splitlines():
         print(line)
     return super #this should do it now this is what is returned a string called super
@@ -8659,6 +8766,8 @@ def method3(output2):
      return concat
 
 print("above the rocket launch")
+
+
 ####===========================================================
 def try_these_chain_methods(inputstring):
     print("looping through inputstring to see the starting state")
@@ -8860,7 +8969,7 @@ for item in devious_list:
 
 print("TESTING string 1 now=======>>")
 manipulate_string(teststring1)   
-
+#exit()
 '''
 print("TESTING string 2 now========")
 manipulate_string(teststring2)   
@@ -11239,8 +11348,8 @@ for line in fizz.splitlines():
     print(line)
 outputlist[0] = fizz #j
 print("end of the show, turn out the exit lights")
-exit()
-
+#exit()
+print("line 11259")
 
 do_the_pipe()
 #list strings are mutable changeable. 
@@ -11537,7 +11646,7 @@ def convert_inner_switches_into_nested_methods_numbered(stringname): #this is fe
 print("testing this")
 print("convert inner switches without bodies inot nested methods numbered")
 convert_inner_switches_into_nested_methods_numbered(brew) #line number of inner switch is in thisline[0]
-exit()
+#exit()
 #so we wouldn't need to enter the 5 we an glean that
 #and we don't need to know the 15 number either it will grab it
 print('======= end of funtime code ==============')
@@ -12340,38 +12449,96 @@ print(holdthis[0])
 #each of these methods takes in input[0] as input with the result going into output[0]
 #after each method we call do_pipe() which puts output[0] into input[0]
 # string --> m1(input) => m2(input) => m3(input) => m4(input) => m5(input) 
+
+##====================================================
+##  first_method : manipulate_string  (left indent)
+##====================================================
+#manipulate_string left shift indentation
+def first_method(astring): #this does the left shift 
+    print("manipulate_string left margin indent ===first message called..")
+    #shifts string left to indent it properly
+    astring=manipulate_string(astring) #I think that this does left shift indentation
+    return astring
+
+##==========================================
+##  second method : take_out_switch_body  from inner switches
+##=========================================    
+#take_out_switch_body
+def second_method(astring): #cuts out switch body leaving switch word in all occurances
+    print("take_out_switch_body ...seconed method called...")
+    take_out_switch_body(astring) #this takes out the switch body 
+    #the output goes into lightning[0]
+    astring=lightning[0] #<== key this is new to see if it works=========
+    #astring += " water"
+    return astring
+
+
+##=================================================
+##  third method : change_switch_to_method_solved
+##=================================================
+#change_switch_to_method_solved
+def third_method(astring):  #this changes the inner switch to nested_switch numbered 
+    print("change_switch_to_method_solved  swapto neested_switch method third method called...")
+    #change_switch_to_method_solved() takes out switch puts in nested_switch
+    finalresult=change_switch_to_method_solved(astring)
+    #astring += " bright"
+    return finalresult
+
+##======================================
+##  fourth method  : take_out_endswitch
+##======================================
+#take_out_endswitch(stringname)
+def fourth_method(astring):  #this changes the inner switch to nested_switch numbered 
+    print("take_out_endswitch  put in brace instead third method called...")
+    #change_switch_to_method_solved() takes out switch puts in nested_switch
+    finalresult=take_out_endswitch(astring)
+    #astring += " bright"
+    return finalresult
+    
+    
 ##=======================================================================================
 #using descriptive names not true method names yet
 # what this is doing is modifying a string in stages in a sequence 
 # code name waterfall
+output=[]
+output.append(0) #so we can use output[0] below
 ##========================================
 ##  chain_methods()   this just does a sequence of methods piped  
 ##                    together so each method passes its output as input for next method
 ##=====================================
 def chain_methods(item):
-    print("==== chain_methods called ====")
-    initialize_lists() #clears out input[0] and output[0]
-    input[0] = item #this captures the string 
+    print("==OFFICIAL== chain_methods called ====")
+    firstresult  = first_method(item)         # manipulate_string(string)
+    secondresult = second_method(firstresult) # take_out_switch_body(string)
+    thirdresult  = third_method(secondresult) # change_switch_to_method_solved(string)
+    fourthresult = fourth_method(thirdresult) # take_out_endswitch(string)
+    output[0]    = fourthresult #this puts the result into output[0]
+    print("now we are looking in the frac output of fourth method")
+    for line in output[0].splitlines():
+        print(line)
+    #the resulting string is put into output[0]
+    
+    
     # I still need to rename the actual methods and put them above this section 
     #add comment number to all switches at the very beginning of initial switch string(not here)
     #add_comment_with_number_to_top_switch(input[0]);do_pipe();  #switch # 22 <-- line number added
-    shift_string_to_left_by_reducing_tabs(input[0]);do_pipe();  #subtract tabs # works nov 19th
-    cut_out_switch_bodies_at_3_tabs_depth(input[0]);do_pipe();  #reduce switch body to just switch word
-    swap_switch_with_nested_switch_number(input[0]);do_pipe();  #change switch to nested_switch_22(exp)
-    replace_the_last_endswitch_with_brace(input[0])             # endswitch becomes  }
-    get_final_finished_string() #in output[0] prints it out nest_list to see it
+    #shift_string_to_left_by_reducing_tabs(input[0]);do_pipe();  #subtract tabs # works nov 19th
+    #cut_out_switch_bodies_at_3_tabs_depth(input[0]);do_pipe();  #reduce switch body to just switch word
+    #swap_switch_with_nested_switch_number(input[0]);do_pipe();  #change switch to nested_switch_22(exp)
+    #replace_the_last_endswitch_with_brace(input[0])             # endswitch becomes  }
+    #get_final_finished_string() #in output[0] prints it out nest_list to see it
 
 
 
 
 ##=================================
-## change_slot_string(counter)
+## change_slot_string(counter)    this changes content of each slot in nest_list
 ##=================================
-def change_this_slot_string(counter):
+def change_this_slot_string(counter): #requires output[0] finished string
     print("==== change_this_slot_string(counter) ====")
     counter = int( counter)
     nest_list[counter] = output[0] #I really need to test this one and see if it works 
-   
+    #this means that needs to have finished chained_methods put into output[0]
     
 ##============================
 ## transform_string()    uses nest_list with strings in it of switch case bodies
@@ -12379,9 +12546,9 @@ def change_this_slot_string(counter):
 def transform_string():  #this calls chain_method(item) # separate switch string input
     print("==== transform_string() ====")
     counter =0  #loop
-    for item in nest_list:          #loop thru nest_list and each loop does the chain_methods
-        chain_methods(item)          #this does the sequence of methods to one string 
-        change_this_slot_string(counter) #this replaces list slot on-the-fly with the modified string
+    for item in nest_list:  #loop thru nest_list and each loop does the chain_methods
+        chain_methods(item) # takes in string and does sequence methods puts into output[0]
+        change_this_slot_string(counter) #changes slot string from output[0]
         counter +=1
 
 
@@ -12413,12 +12580,140 @@ def prep_nest_list_of_switch_strings_for_bypass205():
     print("====prep_nest_list_of_switch_strings_for_bypass205() ====")
     go_thru_input_major_switch_string_and_make_list_of_pairs_switch_and_endswitches() # made above
     using_pair_list_make_seperate_switch_strings_and_put_into_nest_list()             # made above
-    transform_string() #this loops thru the nest_list modifies each separated string
+    transform_string() #DOES CHAIN METHODS  loops thru  nest_list modifies each separated string
+    loop_thru_finished_list_of_prepped_strings() #thru FINISHED nest_list
     #the end result will be in nest_list with the strings ready to feed into bypass205
     
 
 
 
+
+
+
+
+
+
+
+input=[]
+output=[]
+output.append(0)
+
+mystring = "smile "
+
+def get_one(astring):
+    astring += " a"
+    return astring
+    
+def get_two(astring):
+    astring += " water"
+    return astring
+
+def get_three(astring):
+    astring += " bright"
+    return astring
+
+fizz  = get_one(mystring)
+fizzy = get_two(fizz)
+fuzzy = get_three(fizzy)
+
+print("fuzzy after my simulated piping =",fuzzy)
+print("")
+print("")
+print("final test before sending it to bypass205()")
+print("this should take in a string")
+print("indent it to the left margine")
+print("take out switch bodies")
+print("swap switch with nested_switch numbered")
+print("============== here we go rudolph ======")
+print(" . ")
+print('...................,.,.,.,.,.,.,.,.,.,.,.')
+
+
+
+#for testing purposes of transforming an input string this one is teststring3
+mystring = teststring3  #right here change it 
+for line in mystring.splitlines():
+    print(line)
+    
+#manipulate_string left shift indentation
+def first_method(astring): #this does the left shift 
+    print("first message called..")
+    #shifts string left to indent it properly
+    astring=manipulate_string(astring) #I think that this does left shift indentation
+    return astring
+    
+#take_out_switch_body
+def second_method(astring): #cuts out switch body leaving switch word in all occurances
+    print("seconed method called...")
+    take_out_switch_body(astring) #this takes out the switch body 
+    #the output goes into lightning[0]
+    astring=lightning[0] #this is new to see if it works=========
+    #astring += " water"
+    return astring
+
+
+#change_switch_to_method_solved
+def third_method(astring):  #this changes the inner switch to nested_switch numbered 
+    print("third method called...")
+    #change_switch_to_method_solved() takes out switch puts in nested_switch
+    finalresult=change_switch_to_method_solved(astring)
+    #astring += " bright"
+    return finalresult
+
+
+#take_out_endswitch(stringname)
+def fourth_method(astring):  #this changes the inner switch to nested_switch numbered 
+    print("third method called...")
+    #change_switch_to_method_solved() takes out switch puts in nested_switch
+    finalresult=take_out_endswitch(astring)
+    #astring += " bright"
+    return finalresult
+    
+hollister_list=[]
+#take_out_endswitch(stringname)
+##=========================================
+##  simulated_chain_methods():
+##===================================
+def simulated_chain_methods(mystring): #starting point 
+    print("simulated_chain_methods() Rudolph the red nosed reindeer")
+    fizz  = first_method(mystring)
+    fizzy = second_method(fizz)
+    fuzzy = third_method(fizzy)
+    frac  = fourth_method(fuzzy)
+    print("now we are looking in the frac output of fourth method")
+    for line in frac.splitlines():
+        print(line)
+    print('above this line is the Rudolph the red nosed reindeer final first test')    
+    print("line number 12502")
+    #frac is the result
+    hollister_list.append(frac) #new on november 30th Tuesday 
+    
+###==============
+##   plan B 
+##================  testing converting nest string testlist_of_strings
+def planB():  #november 30th, tuesday 9:45 am morgan hill starbucks 
+    print("never give up")
+    print('===== welcome to planB ==== november 30th tuesday===')
+    print("doing planB testing each nest_list doing chain_methods")
+    counter=1
+    for item in testlist_of_strings: #test string names numbered
+        print("========================")
+        simulated_chain_methods(item) #testing chain methods
+        print("====== counter= ",counter)
+        counter += 1
+        
+
+print("the big test begins")
+planB()
+print("now simply loop thru the finished changes in the list")
+#the new finished strings should be in hollister list all cleaned up and reduced
+for item in hollister_list:
+    print(item)
+    
+     #loop thru nest_list
+print("after doing planB")
+
+exit()
 
 
 #### testing manipulating a list down below with strings in it that I am changing on the fly
