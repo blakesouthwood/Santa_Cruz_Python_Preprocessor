@@ -1,3 +1,12 @@
+Tuesday, November 30th, 2021  2:10 PM PST Hollister,California Starbucks.
+Previous version of indenting to left works without errors after extensive testing.
+
+Fixed bug in cutting out body of inner switches. 
+I can now run chain_methods on each string to prepare each of the input switch strings for bypass205().
+This section started back in August. It's the last day of November and with persaverance I got it working.
+Relieved. 
+
+
 Tron Rises. Sat Nov 27th, 2021 5:19pm
 Finally got taking out inner switch bodies at 3 tabs working. 
 Now I will test changing to nested_switch method numbered . What an ordeal to get it stable. Works now.
