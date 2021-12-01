@@ -82,6 +82,8 @@ string_name=
 			print('the end')
 	endswitch #100
 The chain methods transforms the switch string into this output in a list.
+Not all nested strings will have nested strings with them which I dealt with today.
+				
 Not shown here but the indentation level on the left before the switch is just 1 tab. so this makes it look off.
 Notice the inner switches are now numbered nested_switch methods
 				
@@ -211,12 +213,296 @@ Notice the inner switches are now numbered nested_switch methods
 
 ........ 7
 
-				
-				
-				
+###==============
+##   plan B 
+##================  testing converting nest string testlist_of_strings
+def planB():  #november 30th, tuesday 9:45 am morgan hill starbucks 
+    print("never give up")
+    print('===== welcome to planB ==== november 30th tuesday===')
+    print("doing planB testing each nest_list doing chain_methods")
+    print("length of testlist_of_strings =",len(testlist_of_strings))
+    for item in testlist_of_strings:
+        print(item)
+    print("====now we do the chain methods on the switch strings====")
+    counter=1
+    print('======== calling simulated chain methods =========')
+    for item in testlist_of_strings: #test string names numbered
+        print("========================")
+        simulated_chain_methods(item) #testing chain methods
+        print("====== counter= ",counter)
+        counter += 1
+        
+
+print("the big test begins")
+planB()
+print("now simply loop thru the finished changes in the list")
+#the new finished strings should be in hollister list all cleaned up and reduced
+print("was Snoopy right and Woodstock too?")
+counter =1
+for item in hollister_list:
+    print(item)
+    print("........",counter)
+    counter += 1
+    
+		
+##=========================================
+##  simulated_chain_methods():
+##===================================
+def simulated_chain_methods(mystring): #starting point  
+    count_endswitches=mystring.count("endswitch")
+    print("number of endswitches in THIS  string",count_endswitches)
+    
+    if count_endswitches > 1:
+        print("TRUE countswitches =",count_endswitches)
+        
+        print("simulated_chain_methods() Rudolph the red nosed reindeer")
+        print("simulated_chain_methods() Rudolph the red nosed reindeer")
+        fizz  = dafirst_method(mystring) #modern_tab_shifter_to_left()
+        fizzy = dasecond_method(fizz)    #take_out_switch_body()
+        fuzzy = dathird_method(fizzy)    #change_switch_to_method_solved()
+        frac  = dafourth_method(fuzzy)   #take_out_endswitch()
+        hollister_list.append(frac)      #added to list here
+    else: 
+        print("count_endswitches=",count_endswitches)
+        #no nested switch in this switch string
+        modern_tab_shifter_to_left(mystring)#modern_tab_shifter_to_left() shift indentation
+        astring = goldtime[0] #its output
+        finalresult=take_out_endswitch(astring)#take_out_endswitch()
+        mystring=finalresult
+        hollister_list.append(mystring) #added to list here		
+
+#chain methods below 
+#manipulate_string left shift indentation
+def dafirst_method(astring): #this does the left shift 
+    print("first message called..modern_tab_shifter_to_left")
+    #shifts string left to indent it properly
+    modern_tab_shifter_to_left(astring) #I think that this does left shift indentation
+    astring = goldtime[0]
+    return astring
+    
+#take_out_switch_body
+def dasecond_method(astring): #cuts out switch body leaving switch word in all occurances
+    print("seconed method called...take_out_switch_body")
+    take_out_switch_body(astring) #this takes out the switch body 
+    #the output goes into lightning[0]
+    astring=lightning[0] #this is new to see if it works=========
+    return astring
 
 
+#change_switch_to_method_solved
+def dathird_method(astring):  #this changes the inner switch to nested_switch numbered 
+    print("third method called...change_switch_to_method_solved")
+    #change_switch_to_method_solved() takes out switch puts in nested_switch
+    finalresult=change_switch_to_method_solved(astring)
+    #astring += " bright"
+    return finalresult
 
+
+#take_out_endswitch(stringname)
+def dafourth_method(astring):  #this changes the inner switch to nested_switch numbered 
+    print("third method called..take_out_endswitch().")
+    #change_switch_to_method_solved() takes out switch puts in nested_switch
+    finalresult=take_out_endswitch(astring)
+    return finalresult
+    
+hollister_list=[]				
+
+
+		
+		
+###=================================================================
+passthis=[]
+passthis.append(0)
+##
+#this gets the tabdepth in front of top switch word
+##==================================================
+##  starter_engine(the_nest_string):   nov 30th tested working accurately
+##==================================================
+def starter_engine(the_nest_string):
+	print("======starter engine called======")
+	tabdepth='';n=''
+	for line in the_nest_string.splitlines(): #nest_string
+		if "switch" in line and "end" not in line: #had "not"
+			tabdepth = line.count("\t")
+			n= tabdepth;n = n-1  #need to have one tab in front
+			break
+	passthis[0]= n
+	print("n =",n)
+
+goldtime=[]
+goldtime.append(0)
+##===================================================================
+##  modern_tab_shifter_to_left(the_nest_string):  nov 30th tested working
+###==================================================================
+def modern_tab_shifter_to_left(the_nest_string):
+    print("====modern tab shifter to left=======")
+    starter_engine(the_nest_string)  #method call to get tabdepth on first switch line
+    buildstring='';n = passthis[0] #filled from starter_engine method number of tabs in front of switch
+    ### n is number of tabs in front of switch BEFORE CHANGING IT
+    if n == 0: #means one(1) tab in front of switch do nothing
+        buildstring =the_nest_string #no changes to indentation
+    if n > 1: #more than one tab in front of switch so cut some tabs out
+    # concatting the buildstring here 
+        for line in the_nest_string.splitlines():
+            buildstring += line[n:] +'\n' #this cuts out n tabs from the front of this line
+    goldtime[0] = buildstring #output is in goldtime[0]
+    #this prints out the result of the concatted uildstring
+    for line in buildstring.splitlines():
+        print(line)
+    print('testing it now after changing the string')
+
+
+##=================================
+## take_out_switch_body(astring):  #def foxnews(astring):
+##================================
+def take_out_switch_body(astring): #this was foxnews
+    print("take_out_switch_body      today is november 28th sunday  4:29 pm ")
+    get_switch_and_endswitch_locations_in_string(astring) #for this switch string
+    build_trial_inputlist()	 #this is new 
+    convert_switch_with_more_than_one_inner_switch_at_3_tabs(astring)		
+
+		#made nov 27th, satgurday 4:15pm morgan hill starbucks 
+##===========================
+## build_trail_inputlist()
+##===========================
+def build_trial_inputlist(): #this combines switch and endswitch into pair into trialinputlist
+	del inputlist[:] #this empties the input list discarding previous data in it
+	del trialinputlist[:]
+	print("build_trail_inputlist()..")
+	counter=0;
+	for item in switch_list:
+		pair=[switch_list[counter],endswitch_list[counter]]
+		trialinputlist.append(pair)
+		counter += 1
+		
+	print("look for the ball on the green")
+	print("trialinputlist=",trialinputlist)
+	for item in trialinputlist:
+		inputlist.append(item)
+	print("inputlist=",inputlist)
+	for item in inputlist:
+		print(item)
+	inputlist.reverse() #is this needed here or not 
+
+		
+###========================================================================
+## convert_switch_with_more_than_one_inner_switch_at_3_tabs(stringname):
+###=========================================================================
+def convert_switch_with_more_than_one_inner_switch_at_3_tabs(stringname):
+    string_after_cutting_out_inner_switch_body[0]= False        #necessary default flag 
+    counter=0 #where am I filling inputlist?
+    for item in inputlist: #this grabs the params from item     #list of switches pairs start stop at 3 tabs depth
+        start = item[0];
+        finish = item[1];
+        print('start=',start,'','finish=',finish)                       #62; finish=86 
+        skip_rope_skipping_some_lines(stringname,start,finish)  #this copies the string skipping the range designated
+        counter +=1
+        print("counter=>>",counter)
+        print("=====================")
+    print("at bottom of converts  with more than one inner switch at 3 tabs")
+    print("testing if weasel is returnable at the end of the function")	
+		
+		
+switch_list=[]
+endswitch_list=[]
+total_switches_at_3tabs_depth=[]
+
+#delete helper lists first
+def delete_helper_lists_first():
+	del total_switches_at_3tabs_depth[:]
+	del switch_list[:]
+	del endswitch_list[:]
+	
+#this gets the important switch and endswitch at 3 tabs length which is critical.
+def get_switch_and_endswitch_locations_in_string(string_name):
+	print("====||||  get switch and endswitch locations in string  ||||======")
+	delete_helper_lists_first()
+	#count how many switches at tab depth 3
+	####=================
+	switchcount=0
+	counter = 0
+	for line in string_name.splitlines():
+	    tabdepth = line.count("\t")
+	    if "switch" in line and "end" not in line and tabdepth == 3:
+	        switchcount += 1 #doesn't have ++
+	        total_switches_at_3tabs_depth.append(counter)
+	        counter += 1
+	        continue
+	    else:
+	        counter += 1
+	        continue
+	####===================
+	print("total switch at 3 tabs in this string",len(total_switches_at_3tabs_depth))
+	print("they start on these lines",total_switches_at_3tabs_depth)
+	#count_switches_at_threetabs= string_name.count("
+	counter=0; concatthis =''; #finish = finish + 1 
+	print("string_name=",string_name)
+	#this looks for switch at 3 tabs depth and adds line number of switch
+	for line in string_name.splitlines():
+		tabdepth = line.count("\t")
+		if 'switch' in line and "end" not in line and tabdepth == 3: 
+			switch_list.append(counter)
+			counter += 1
+			continue
+		else:
+			counter += 1
+			continue
+	print("phase 2 here ====")
+	counter=0; concatthis =''; #finish = finish + 1 
+	print("string_name=",string_name)
+	#this looks for switch at 3 tabs depth and adds line number of switch
+	for line in string_name.splitlines():
+		tabdepth = line.count("\t")
+		if 'endswitch' in line and tabdepth == 3: 
+			endswitch_list.append(counter)
+			counter += 1
+			continue
+		else:
+			counter += 1
+			continue
+	print("switch_list=",switch_list)
+	print("endswitch_list=",endswitch_list)
+	print("end of line...")
+	########################======
+		
+##===========================================================
+## skip_rope_skipping_some_lines()  this cuts out ONE inner switch body
+##===========================================================
+def skip_rope_skipping_some_lines(string_name,start,finish):#start line nest switch and finish  endswitch
+	print("start= ",start,"finish= ",finish)
+	if string_after_cutting_out_inner_switch_body[0] == False: #starting
+		print("it is False it is  empty ")
+	else: 
+		string_name = string_after_cutting_out_inner_switch_body[0]
+		print('it is NOT False and therefore we fill the string from the list[0]')
+	concatthis=''
+	print("===skip_rope_skipping_some_lines(string_name,start,finish)====")
+	#string_after_cutting_out_inner_switch_body[0]
+	print(string_name)
+	counter=0; #concatthis =''; #finish = finish + 1 
+	#switch is the start line though we are skipping after it and keeping it
+	#the start line is the switch which will be preserved but skipping when cutting out
+	print("string_name=",string_name,"start=",start,"finish=",finish)
+	for line in string_name.splitlines(): 
+		if counter > start  and counter <= finish: 
+			print(line) #it won't print the switch word since it's skipping it
+			counter += 1; continue
+		else: 
+			concatthis += line + "\n"; counter += 1; continue
+	print('it created this SILLY STRING === multi colored silly string=')
+	print(concatthis)
+	print("I would put this into a list to store for later")
+	string_after_cutting_out_inner_switch_body[0] = concatthis
+	weasel=string_after_cutting_out_inner_switch_body[0]
+	for line in weasel.splitlines():
+		print(line)
+	#return weasel  #I need to return from each for the piping to work correctly
+	lightning[0] = concatthis
+	for line in lightning[0].splitlines():
+	    print(line)
+
+		
+##=========
 Tuesday, November 30th, 2021  2:10 PM PST Hollister,California Starbucks.
 Previous version of indenting to left works without errors after extensive testing.
 
