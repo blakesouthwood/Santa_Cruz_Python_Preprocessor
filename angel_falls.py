@@ -1,6 +1,12 @@
 December 1st, 2021 10:39am Morgan Hill, California  Starbucks
 Today is a happy day!
 
+What I worked on yesterday and today was the chain methods to prepare a switch string with nested switches
+into separate switch strings. This is managed by dealing with each switch at 1 tab indentation and
+the inner switches at 3 tabs indentation. There is a lot going on but the design engineering happened back in July
+and the implimentation was quite tricky. But I tested what the output would be before proceeding with the code.
+I am happy to report that the transformation stage is working and I can now send it to the parser.
+
 # output is to inputstring[0]
 ##===================================================
 ##  add comment and lin number to all switches ()   ## put switch line number in
