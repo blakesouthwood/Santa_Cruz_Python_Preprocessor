@@ -3,6 +3,7 @@ Today is a happy day!
 
 Input string successfully translated into strings to send thru bypass205() parser.
 Note: this is after line numbers have previously already added after each switch which becomes their id.
+The switches are governed by 3 tabs.
 	
 string_name= 
 	switch(exp){ #1
