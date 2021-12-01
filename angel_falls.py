@@ -245,6 +245,132 @@ for item in hollister_list:
     print("........",counter)
     counter += 1
     
+
+		
+##=================================
+## change_slot_string(counter)    this changes content of each slot in nest_list
+##=================================
+def change_this_slot_string(counter): #requires output[0] finished string
+    print("==== change_this_slot_string(counter) ====")
+    counter = int(counter)
+    nest_list[counter] = output[0] #I really need to test this one and see if it works 
+    #this means that needs to have finished chained_methods put into output[0]
+    
+##============================
+## transform_string()    uses nest_list with strings in it of switch case bodies
+## methods: chain_methods()
+## change_this_slot_string(counter)
+##============================
+def transform_string():  #this calls chain_method(item) # separate switch string input
+    print("==== transform_string() =12561 line number = this loops thru nest_list==")
+    counter =0  #loop #this modifies the nest_list
+    for item in nest_list:  #loop thru nest_list and each loop does the chain_methods
+        chain_methods(item) # takes in string and does sequence methods puts into output[0]
+        change_this_slot_string(counter) #changes slot string from output[0]
+        counter +=1
+
+		
+		
+		##======================================================================================
+#the result of each of these methods will put their result in output[0]
+#swap_feed_data then puts what is currently in output[0] into input[0] so it's a handoff of the baton
+#each of these methods takes in input[0] as input with the result going into output[0]
+#after each method we call do_pipe() which puts output[0] into input[0]
+# string --> m1(input) => m2(input) => m3(input) => m4(input) => m5(input) 
+
+##====================================================
+##  first_method : modern_tab_shifter_to_left  (left indent)
+##====================================================
+#manipulate_string left shift indentation
+def first_method(astring): #this does the left shift 
+    print("manipulate_string left margin indent ===first message called..")
+    #shifts string left to indent it properly CHANGED on December 1st 2021 Morgan Hill
+    modern_tab_shifter_to_left(astring) #I think that this does left shift indentation
+    #return astring was: astring=manipulate_string
+    theresult =goldtime[0]; #outpout is put into goldtime[0]
+    return theresult
+
+##==========================================
+##  second method : take_out_switch_body  from inner switches
+##  uses these methods:
+##  get_switch_and_endswitch_locations_in_string(astring) 
+##  build_trial_inputlist()
+##  convert_switch_with_more_than_one_inner_switch_at_3_tabs(astring)
+##=========================================    
+#take_out_switch_body
+def second_method(astring): #cuts out switch body leaving switch word in all occurances
+    print("take_out_switch_body ...seconed method called...")
+    take_out_switch_body(astring) #this takes out the switch body 
+    #the output goes into lightning[0]
+    astring=lightning[0] #<== key this is new to see if it works=========
+    #astring += " water"
+    return astring
+
+
+##=================================================
+##  third method : change_switch_to_method_solved
+##=================================================
+#change_switch_to_method_solved
+def third_method(astring):  #this changes the inner switch to nested_switch numbered 
+    print("change_switch_to_method_solved  swapto neested_switch method third method called...")
+    #change_switch_to_method_solved() takes out switch puts in nested_switch
+    finalresult=change_switch_to_method_solved(astring)
+    #astring += " bright"
+    return finalresult
+
+##======================================
+##  fourth method  : take_out_endswitch
+##======================================
+#take_out_endswitch(stringname)
+def fourth_method(astring):  #this changes the inner switch to nested_switch numbered 
+    print("take_out_endswitch  put in brace instead third method called...")
+    #change_switch_to_method_solved() takes out switch puts in nested_switch
+    finalresult=take_out_endswitch(astring)
+    #astring += " bright"
+    return finalresult
+    
+ 
+ 
+		
+		
+##=======================================================================================
+#using descriptive names not true method names yet
+# what this is doing is modifying a string in stages in a sequence 
+# code name waterfall
+output=[]
+output.append(0) #so we can use output[0] below
+##========================================
+##  chain_methods()   this just does a sequence of methods piped  
+##                    together so each method passes its output as input for next method
+##=====================================
+def chain_methods(item): #this modifies just one switch string at a time
+    print("==OFFICIAL== chain_methods called ====")
+    print("==OFFICIAL== chain_methods called ====")
+    print("==OFFICIAL== chain_methods called ====")
+    print("==OFFICIAL== chain_methods called ====")
+    firstresult  = first_method(item)         # modern_tab_shifter_to_left(string)
+    firstresult  = goldtime[0]                # output of first_method goes into goldtime[0]
+    secondresult = second_method(firstresult) # take_out_switch_body(string)
+    thirdresult  = third_method(secondresult) # change_switch_to_method_solved(string)
+    fourthresult = fourth_method(thirdresult) # take_out_endswitch(string)
+    output[0]    = fourthresult #this puts the result into output[0]
+    print("now we are looking in the frac output of fourth method")
+    for line in output[0].splitlines():
+        print(line)
+    #the resulting string is put into output[0]
+    
+    
+    # I still need to rename the actual methods and put them above this section 
+    #add comment number to all switches at the very beginning of initial switch string(not here)
+    #add_comment_with_number_to_top_switch(input[0]);do_pipe();  #switch # 22 <-- line number added
+    #shift_string_to_left_by_reducing_tabs(input[0]);do_pipe();  #subtract tabs # works nov 19th
+    #cut_out_switch_bodies_at_3_tabs_depth(input[0]);do_pipe();  #reduce switch body to just switch word
+    #swap_switch_with_nested_switch_number(input[0]);do_pipe();  #change switch to nested_switch_22(exp)
+    #replace_the_last_endswitch_with_brace(input[0])             # endswitch becomes  }
+    #get_final_finished_string() #in output[0] prints it out nest_list to see it
+
+
+		
 		
 ##=========================================
 ##  simulated_chain_methods():
