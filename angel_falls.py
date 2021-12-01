@@ -1,6 +1,229 @@
 December 1st, 2021 10:39am Morgan Hill, California  Starbucks
 Today is a happy day!
 
+First I need to get the pair ranges for where each switch  to endswitch lives called a pair.
+Then I copy the string from within those two inputs and put that concatted string into a list.
+This is seen below. The next phase is what I have been working on diligently for months to 
+transform the separated switches into individual switchs and the inner switches within each (if they have any)
+into methods that are numbered by their original line number which is tagged to each switch with a following comment.
+
+length of columbia river = 6
+now loop thru columbia river to see the switch bodies seperated
+counter= 1
+
+	switch(exp){ #1
+  		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			#############
+			switch(exp){ #11
+  				case 'blable':
+					print("do something")
+					####################
+					switch(exp){ #15
+ 						case 'tahoe':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							####################
+							switch(exp){ #23
+    								case 'tahoe':
+									print("do something")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice")
+									break
+								default:
+									print("we are done here")
+							endswitch #33
+ 							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #38
+ 					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch #47
+ 			exp = 3
+			switch(exp){ #49
+				case 'burger':
+					print("do something")
+					####################
+					switch(exp){ #53
+   						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #64
+ 					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch #73
+
+			##############
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+		
+		default:
+			print('the end')
+}
+
+===========
+counter= 2
+			switch(exp){ #11
+  				case 'blable':
+					print("do something")
+					####################
+					switch(exp){ #15
+ 						case 'tahoe':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							####################
+							switch(exp){ #23
+    								case 'tahoe':
+									print("do something")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice")
+									break
+								default:
+									print("we are done here")
+							endswitch #33
+ 							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #38
+ 					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch #47
+
+===========
+counter= 3
+			switch(exp){ #49
+				case 'burger':
+					print("do something")
+					####################
+					switch(exp){ #53
+   						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #64
+ 					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch #73
+
+===========
+counter= 4
+					switch(exp){ #15
+ 						case 'tahoe':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							####################
+							switch(exp){ #23
+    								case 'tahoe':
+									print("do something")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice")
+									break
+								default:
+									print("we are done here")
+							endswitch #33
+ 							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #38
+
+===========
+counter= 5
+					switch(exp){ #53
+   						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #64
+
+===========
+counter= 6
+							switch(exp){ #23
+    								case 'tahoe':
+									print("do something")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice")
+									break
+								default:
+									print("we are done here")
+							endswitch #33
+								
+
 What I worked on yesterday and today was the chain methods to prepare a switch string with nested switches
 into separate switch strings. This is managed by dealing with each switch at 1 tab indentation and
 the inner switches at 3 tabs indentation. There is a lot going on but the design engineering happened back in July
