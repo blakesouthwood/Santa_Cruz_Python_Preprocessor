@@ -1,6 +1,9 @@
 December 1st, 2021 10:39am Morgan Hill, California  Starbucks
 Today is a happy day!
 
+I think that the nested switch case feature will be working in a few days, a week at the most.
+Everything part is working right now.
+
 The crux of the problem is managing the switches at different tab locations.
 
 
