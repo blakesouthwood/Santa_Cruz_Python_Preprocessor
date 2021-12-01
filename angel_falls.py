@@ -2,7 +2,7 @@ December 1st, 2021 10:39am Morgan Hill, California  Starbucks
 Today is a happy day!
 
 Input string successfully translated into strings to send thru bypass205() parser.
-Note: this is after line numbers already added after each switch which becomes their id.
+Note: this is after line numbers have previously already added after each switch which becomes their id.
 	
 string_name= 
 	switch(exp){ #1
