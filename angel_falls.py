@@ -1,3 +1,222 @@
+December 1st, 2021 10:39am Morgan Hill, California  Starbucks
+Today is a happy day!
+
+Input string successfully translated into strings to send thru bypass205() parser.
+Note: this is after line numbers already added after each switch which becomes their id.
+	
+string_name= 
+	switch(exp){ #1
+		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			#############
+			switch(exp){ #11
+				case 'blable':
+					print("do something")
+					####################
+					switch(exp){ #15
+						case 'tahoe':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							####################
+							switch(exp){ #23
+								case 'tahoe':
+									print("do something")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice")
+									####################
+									switch(exp){ #31
+										case 'fishy':
+											print("do something")
+											print("yep")
+											fallthru
+										case 'where now':
+											print("nice")
+											break
+										default:
+											print("we very done")
+									endswitch 
+							#############
+									break
+								default:
+									print("we are done here")
+							endswitch #46  
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #51   
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch #60   
+			exp = 3
+			switch(exp){ #62
+
+			##############
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+		
+		default:
+			print('the end')
+	endswitch #100
+The chain methods transforms the switch string into this output in a list.
+Not shown here but the indentation level on the left before the switch is just 1 tab. so this makes it look off.
+Notice the inner switches are now numbered nested_switch methods
+				
+	switch(exp) #1
+		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			#############
+			nested_switch_11(exp) #11
+			exp = 3
+			nested_switch_62(exp) #62
+
+			##############
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+		
+		default:
+			print('the end')
+	} #100  
+
+........ 1
+
+	switch(exp) #11
+		case 'blable':
+			print("do something")
+			####################
+			nested_switch_15(exp) #15
+			#############
+			print("yep")
+			fallthru
+		case 'more':
+			print("nice")
+			break
+		default:
+			print("we are done here")
+	} #60   4..........endwitch 4  line 60 3 tabs 
+
+........ 2
+
+	switch(exp) #15
+		case 'tahoe':
+			print("do something")
+			print("yep")
+			fallthru
+		case 'fallen leaf lake':
+			print("nice")
+			####################
+			nested_switch_23(exp) #23
+			#############
+			break
+		default:
+			print("we are done here")
+	} #51   3 ...
+
+........ 3
+
+	switch(exp) #23
+		case 'tahoe':
+			print("do something")
+			print("yep")
+		case 'fallen leaf lake':
+			print("nice")
+		####################
+			nested_switch_31(exp) #31
+			#############
+			break
+		default:
+			print("we are done here")
+	} #46  2.......
+
+........ 4
+
+	switch(exp){ #31
+		case 'fishy':
+			print("do something")
+			print("yep")
+			fallthru
+		case 'where now':
+			print("nice")
+			break
+		default:
+			print("we very done")
+	} 
+
+........ 5
+
+	switch(exp) #62
+		case 'burger':
+			print("do something")
+			####################
+			nested_switch_66(exp) #66
+			#############
+			print("yep")
+			fallthru
+		case 'more':
+			print("nice")
+			break
+		default:
+			print("we are done here")
+	} #86
+
+........ 6
+
+	switch(exp){ #66
+		case 'fishy':
+			print("do something")
+			print("yep")
+			fallthru
+		case 'snow fire':
+			print("nice")
+			#############
+			break
+		default:
+			print("we are done here")
+	} #77 5 .....
+
+........ 7
+
+				
+				
+				
+
+
+
 Tuesday, November 30th, 2021  2:10 PM PST Hollister,California Starbucks.
 Previous version of indenting to left works without errors after extensive testing.
 
