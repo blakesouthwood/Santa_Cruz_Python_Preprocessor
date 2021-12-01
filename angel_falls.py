@@ -1,6 +1,9 @@
 December 1st, 2021 10:39am Morgan Hill, California  Starbucks
 Today is a happy day!
 
+The crux of the problem is managing the switches at different tab locations.
+
+
 First I need to get the pair ranges for where each switch  to endswitch lives called a pair.
 Then I copy the string from within those two inputs and put that concatted string into a list.
 This is seen below. The next phase is what I have been working on diligently for months to 
