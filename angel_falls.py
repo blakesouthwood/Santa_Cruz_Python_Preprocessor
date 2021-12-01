@@ -2,6 +2,306 @@ December 1st, 2021 10:39am Morgan Hill, California  Starbucks
 Today is a happy day!
 
 
+#this fills the together_pair list
+
+def empty_switch_and_endswitch_list_locations():
+    print("=== empty_switch_and_endswitch_list_locations()")
+    del endswitch_location[:]
+    del switch_location[:]
+    
+#get linenumbers of switches and endswitches ignore the first switch though actually doesn't matter
+##########################################
+#### get switch and endswitch locations    #this fills the together_pair list
+##########################################
+switch_location=[]
+endswitch_location=[]
+together_pair=[]
+def get_switch_and_endswitch_locations(z): #from string z input parameter
+	return
+	#return we START BUILDING
+	print("thbis is what I am testing now now now")
+	print("  get switch and endswitch locations###  called line 322 #####")
+	print("######get switch and endswitch locations########")
+	#this empties switch and endswitch lists
+	empty_switch_and_endswitch_list_locations()
+	#print("=====get_switch_and_endswitch_locations(z) called ....")
+	#print("====== THIS IS THE ONE THAT I NEED ======")	#this catalogues the switch and endswitch locations for an entire input string
+	#print(" GET SWITCH AND ENDSWITCH LOCATIONS ADDED TO LIST")
+	#print(" ========  MICKEY MOUSE HOUSE  =========")
+	counter=0 #it was 0 starting counting from 1
+	for line in z.splitlines(): #determine if "endswitch" is in line
+		#this should skip lines between 10 thru 20
+		#we know that the lines that the inner switch resides in is between 10 and 20 
+		#skip over 10 thru 20
+		#print(line) #this should be revealing
+		#if line.isspace():
+		#wrong='''	
+		#rechecking to see if this works 
+		if "switch" in line and "end" not in line:
+			print("switch found",counter)
+			switch_location.append(counter)
+			counter += 1			
+		#if "endswitch" in line:
+		#	print("look right here endswitch found",counter)
+		#	endswitch_location.append(counter)
+		#	counter += 1
+		else:
+			counter += 1 
+	
+	counter=0
+	for line in z.splitlines(): #determine if "endswitch" is in line
+		if "endswitch" in line:
+			print(line)
+			print("look right here endswitch found",counter)
+			endswitch_location.append(counter)
+			counter += 1
+		else:
+			counter += 1 
+		#'''
+	print("at this point this is what we have...after testing BIG YELLOW BIRD go bird")
+	del switch_location[0] #takes out first number not needed
+	print("switch_location=",switch_location)
+	print("endswitch_location=",endswitch_location)
+	#test_string1exit()
+	print("this over writes the contents of these two lists ")		
+	#hard coding it in here why 
+	#switch_location    =[1,11,15,23,31,62,66]
+	#endswitch_location =[100,60,51,46,41,86,77]	#might hav eto resverse these 	
+	
+			#THIS DELETES THE FIRST SWITCH WHICH WE DON'T USE
+	#del switch_location[0]	#empties it what am I doing here??? july 7th deleting first switch
+	print(z)                #now I remember that is the first switch which doesn't matter
+	print("I deleted the first switch since I'm not bothering with it")
+	print("switchlocations=",switch_location)
+	print("on line 180 endswitchlocation=",endswitch_location)
+	
+	print("the length of switch list =",len(switch_location))
+	answer = len(switch_location)
+	answer = answer -1
+	print("this is how many nested switches are here")
+	print("now we should have this many nested switches to contend with",answer)
+	print("and the answer is above this line .....")
+	#this prevents a bug if I don't have endswitch in the string
+	#if len(endswitch_location) > 0: #this only proceeds if there is at least one endswitch
+	#	print("endswitch locations =",endswitch_location)
+	#	print("out of curiosity print the number of endswitches", len(endswitch_location))
+	#else:
+	#	pass
+	print("I need to test that this part still works here in fourth of july 2 .py")	
+	print("this might be simpler to test and use actually======/////???????//////===")
+	print("======================================")
+	print(" ===  THESE ARE THE SWITCH AND ENDSWITCH LOCATIONS === ")
+	print("I need to delete teh first swithc location")
+	
+	#working on this on Saturday, October23, 2021 to get this stage done 
+	#del switch_location[0] #ALREADY DELETING FIRST SWITCH ABOVE BECAUSE IT'S NOT NEEDED NOT NESTED
+	print("does this look right testing on Sunday gloomy rainy day")
+	print('switch_location=',switch_location)
+	print('endswitch_location=',endswitch_location)
+	#the input is above
+	
+	
+	print("....")
+	print("the input for filling the blueberries dictionary are the lists switch_location and endswitch_location")
+	print("==================")
+	print("the enchanting world of making blueberry pie")
+	
+	
+	
+	
+	##################################################################################
+	############## working on this on saturday, october 23rd, 2021 ###################
+	##################################################################################
+	print(" rain fall status ")
+	counter=0
+	#working on creating input list for blueberries dictionary: can't believe I didnt do this yet
+	print("what the hell is going on here")
+	#print("switch_location=",switch_location)
+	#for item in switch_location:
+	#	print(item)
+	#print("so how did that go...")
+	
+	print("endswitch_location=",endswitch_location)
+	#for item in endswitch_location:
+	#	print(item)
+	print("so how did that go...")
+	
+	
+	counter=0
+	print("starting at counter =0")
+	
+	print("=============== starbucks morgan hill =====")
+	print(switch_location)
+	print(endswitch_location)
+	print("emptying together pair here")
+	del together_pair[:] #delete it just in case to start with clear chalkboard
+	print("=======") #THIS FILLS THE TOGETHER_PAIR LIST OF SWITCH,ENDSWITCH 
+	print("this loop fills the together_pair list of switch,endswitch numbers")
+	print("this is so much dam fun oh yeah")
+	total1 = len(switch_location)
+	total2 = len(endswitch_location)
+	print("total1 =",total1)
+	print("todal2=",total2)
+	print("this is where we START BUILDING the ===TOGETHER PAIR =====")
+	for item in switch_location:
+		solution = "[" + str(switch_location[counter]) + "," + str(endswitch_location[counter]) + "]" 
+		print("solution=",solution) #to see what it looks like 
+		together_pair.append(solution)
+		print("counter=",counter)
+		counter += 1
+		
+		#this should prevent stack overflow of the list range added november 9th 
+		if counter >= len(switch_location):
+			print("stack overflow called since counter > = len(switch_location)")
+			break
+		else:
+			continue
+			
+	print("now we will loop thru the together_pair to see that the pairs are in there")
+	del endswitch_location[-1] #should delete 100
+	print("this is what is in together_pair at line 254")
+	for item in together_pair:
+		print(item)
+		apple = item.split(",")
+		print("======")
+		print(apple[0])
+		sweet1 = apple[0].replace("[",'')
+		#print(sweet1)
+		print(apple[1])
+		sweet2 = apple[1].replace("]",'')
+		print(sweet1,sweet2)
+		print("where's the party")
+	# I need to feed these into the pear dictionary now down below
+	#I will feed the pears list with a loop thru the switch_location list
+	########## WORKING ON THIS TODAY MONDAY TO MAKE SOME SERIOUS PROGRESS 
+	##########  MONDAY JULY 19TH APPROACHING 12 NOON 
+	
+	#make pairs here
+	#might have to delete teh first switch which throws everything off
+	##################### end of method #################################3
+#gold_list= [[11, 47], [49, 73], [15, 38], [53, 64], [23, 33]]  	
+	
+
+
+def testing_pair_list(): # uses together_pair list 
+    return #not testing this right now
+    print("length of theforce=",len(theforce))
+    print("together_pair=",together_pair)
+    print("======testing pair list() == fireworks time in tahoe ====")
+    print("theforce[0]=",together_pair[0]) #first pair coordinates start stop
+    print("theforce[1]=",together_pair[1]) # second pair coordinates start stop
+    print("===starting loop thru list theforce =======")
+    newcounter=0
+    print("dog breath test")
+    for item in together_pair:
+        print(item)
+        #this only works for two numbers 2 number long currently
+        dog = together_pair[newcounter] #here I access first and second numbers in pairlist
+        x = dog.split(",")  # see if this trick works
+        print(x[0])
+        print("doing surgery cutting off first character")
+        charlie=''
+        charlie = x[0]
+        super=x[1]
+        print("super=",super)
+        print("=====")
+        charlie = charlie[1:]
+        print("charlie =",charlie)
+       
+        super =super[:-1]
+        print("super=",super)
+        print("===...=.=.=.=.=.=.=.=.=.=.")
+        print("===...=.=.=.=.=.=.=.=.=.=.")
+        charlie=''
+        charlie = x[0]
+        charlie = charlie[4:]
+        print("charlie =",charlie)
+        #print(x[1])
+        print("==========")
+        newcounter += 1 #python doesn't have ++
+        
+    print("=== end of looping thru list =======")
+
+	
+##===================================================
+##  add comment and lin number to all switches ()   ## put switch line number in
+##===================================================
+passinputstring=[]
+smart_switch_numbers=[]
+loopstring=[]
+loopstring.append(0)
+#twinlist=[]
+passinputstring.append(0)  #get line number of switch and add number with comment to after all switches
+snowman=[]
+snowman.append(0)
+#############################################################
+def add_comment_and_line_number_to_all_switches(inputstring): #this modifies the original string
+	print(" add_comment_and_line_number_to_all_switch()....this was just called .. ")
+	print(" == directive 1 ==    ADD the stupid comment and line number after each switch relaly simple")
+	awesome='';counter =0;newstring='';
+	print('baseline is red_robin starting appearance testing purposes')
+	print(inputstring)
+	for line in inputstring.splitlines():
+		if "switch" in line and "end" not in line:
+			# NEED TO HANDLE BOTH SCENARIOS switch with brace and switch without a brace 
+			#############################################
+			#switch is in this line definitely
+			if "{" in line and "switch" in line and "end" not in line:
+				newstring += line.replace("switch(exp){","switch(exp){ #" + str(counter) + "\n")
+			#end if
+			#this is necessary since the replace is quite specific and so no brace here
+			# NOTE: I am adding gthe brace if it's missing to switch 
+			if "{" not in line and "switch" in line and "end" not in line:
+				newstring += line.replace("switch(exp)","switch(exp){ #" + str(counter) + "\n")  
+			#end if  
+			smart_switch_numbers.append(counter) #this is new september 30th, 2021
+			counter += 1
+		####################################################
+		elif "endswitch" in line: #just added comment number after endswitch 
+			newstring += line.replace("endswitch","endswitch #" + str(counter) + "\n")
+			#smart_switch_numbers.append(counter) #this is new september 30th, 2021
+			counter += 1
+		###################
+		else:
+			newstring += line + "\n"
+			counter += 1
+	awesome = newstring #it was concatted to newstring which we now reassign to awesome then red_robin
+	print("=== jump off the cliff and fly in hang glider ==")
+	for line in newstring.splitlines(): #was redrobin.splitlines()
+		print(line)
+	print("AFTER ADDING the line number as comments to the switches in red robin baby ")	
+	print(newstring)   #it prints red_robin switch combo string with the line numbers added in comments
+	print("smart_switch_numbers=",smart_switch_numbers)  #this is new here too 
+	return newstring #this way I can capture the changed string
+
+
+columbia_river=[]
+gold_list=[]
+###############################
+## copy_a_nested_switch(r):   # what this does is copy one nested switch 
+###############################
+def copy_a_nested_switch(r):  #copy just one nested string 
+    print("= copy_a_nested_switch() called== just now 10;43 am ====")
+    innerswitch=''
+    #need to skip the first switch though so take out the first number from list
+    #global linecounter #this is new july 15th, 2021
+    linecounter=0 #where do start and finish come from ...oh  above, put into a list
+    print("it sees for start",start_and_finish[1],"and finish",start_and_finish[2])
+    for line in r.splitlines(): #if linecounter is between start and finish
+    #this should copy a full (every line) of a nested switch from switch to and including endswitch
+        # if lincounter >= 10 and linecounter <= 20; #this is what it means
+        if linecounter >= int(start_and_finish[1]) and linecounter <= int(start_and_finish[2]):
+            innerswitch += line + "\n"  #it's concatted to innerswitch string right here
+            linecounter += 1
+            continue
+        else:
+            linecounter += 1
+            continue
+    print(":the result COPY OF NESTED SWITCH  ")        
+    #print(innerswitch)  #this is the copied string between lines 10 and 20 
+    roadrunner = innerswitch
+    makeitwork[0] = roadrunner #result of copied string goes in makeitwork[0]
+	
 # uses methods:
 # add_comment_and_line_number_to_all_switches
 # inputs_pair_to_copy_a_string(num1,num2) #get input string from goldlist
