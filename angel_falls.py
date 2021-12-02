@@ -1,3 +1,16 @@
+thursday, December 2nd, 2021  10:35am
+Reviewing test output code that I wrote back in June and July this year.
+I once worked with a guy at Fry's from Pakistan and he told me some powerful words once.
+Proper planning prevents poor performance. 
+I am really glad that I thought out and made the prototpye of finished output code that I could work towards.
+This code has working example of the generated python code and how it will work. I am playing with this code
+right now and it's like reaching the top of El Capitan. It's the end goal and it's so simple yet compicated and
+yet it works. It's all about the design and engineering simplicity to do complex behaviors.
+The rush I feel right now seeing the end goal and how close I am is hard to fathom. It is like seeing a dream
+materialize before my eyes that seemed utterly unattainable. I also saved in these test files the modifications to the
+generated code that I need to finish the project. 
+
+
 December 1st, 2021 10:39am Morgan Hill, California  Starbucks
 Today is a happy day!
 
