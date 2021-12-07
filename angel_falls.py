@@ -1,3 +1,7 @@
+Tuesday, Dec 7th, 2021 10:14 am PST
+Nested Switch cases works.
+
+
 Monday, dec 6th, 2021 6:36 pm
 Chain methods finally work correctly. The chaining was no big deal it was getting the methods to behave correctly.
 I can now feed the list of prepped strings to bypass205() to run thru the parser.
