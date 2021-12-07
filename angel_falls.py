@@ -1,3 +1,23 @@
+Monday, dec 6th, 2021 6:36 pm
+Chain methods finally work correctly. The chaining was no big deal it was getting the methods to behave correctly.
+I can now feed the list of prepped strings to bypass205() to run thru the parser.
+I already made the framing for the python output so the completion could possibly happen tomorrow.
+The example uses a triple nested switch and it looks identical to if it were written in C or JavaScript
+with C's behavior and look and feel using braces. I use an endswitch at the bottom of each switch though.
+Though going thru the parser it is converted into a closing brace. I had some issues with the chaining but that
+was only due to bugs in the methods. This was quite frustrating but I overcame it.
+
+For testing I did all seven input strings as  list thru the first method and then waterfalled it feeding
+it into the second method creating a list then the third method. After more testing I will most likely
+modify it to do each method in a sequence on one string which was the original idea (for coolness). However,
+I did it this way in phases to test it to make sure that it was working correctly.
+I am so happy. My goal is to finish and document the program before christmas. I hope to do some test runs thru
+bypass205 tomorrow. I already ran three strings the other day. The bypass parser is identical to the regular one switch 
+parser but it puts the output into a list instead of executing it.
+
+
+
+
 thursday, December 2nd, 2021  10:35am
 Reviewing test output code that I wrote back in June and July this year.
 I once worked with a guy at Fry's from Pakistan and he told me some powerful words once.
