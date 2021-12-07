@@ -15,6 +15,12 @@ I am so happy. My goal is to finish and document the program before christmas. I
 bypass205 tomorrow. I already ran three strings the other day. The bypass parser is identical to the regular one switch 
 parser but it puts the output into a list instead of executing it.
 
+Truth be told I will have a goto label working likely by Christmas. The way it works is 
+underneath it works on top of the switch case I just built.
+
+I have been messing around with when, until, unless, and loop too. The whole project has been a test of my fortitude
+and endurance. This is by far the most complex program I've ever written.
+
 
 
 
