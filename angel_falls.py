@@ -236,7 +236,8 @@ counter= 6
 
 going through the special parser for nested switches
 this is how it looks at the next stage after I add the switch line numbers as comments after top switch
-
+This is the result of codegen() which is (at this stage) the same codegen uses for single switches.
+So this is the resulting python generation to create the same identical behavior in a C/JavaScript switch case.
 
 exp = varholder[0]
 
