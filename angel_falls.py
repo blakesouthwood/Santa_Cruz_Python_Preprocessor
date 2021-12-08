@@ -1,3 +1,12 @@
+Wednesday Dec 8th 2021 11:09 am Gilroy
+testing concatting the strings together.
+When the code runs it does it's calculations but it's in a balloon in a combined string.
+I added a feature to get the output result from anywhere in the switch case which would
+be outside of the dynamically created switch case. Right now it's in result[0].
+I will have a list with many slots to grab whatever data. I will dynamically have it fill
+lists to make the results of a switch case malable outside the word of the dyanmic switch case.
+
+
 Tuesday Dec 7, 2021 6:14pm PST updatd 7:02pm
 The famous chain methods that didn't want to work going in a sequence so yesterday I tried
 doing each chain method on all of the strings to debug it more easily .. and it worked.. got snagged on fourth method
