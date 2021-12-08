@@ -466,6 +466,239 @@ while True:
 		break
 
 
+##=================================
+#then each switch is framed in a method
+
+
+
+def main_switch(exp):	
+	exp = varholder[0]
+	
+	caselist1 = ['1', '2', '3']
+	caselist2 = ['4', '5', '6', '7']
+	caselist3 = ['8', '9', '10']
+	caselist4 = ['default']
+	
+	
+	switch(exp)#1
+	while True:
+	
+		if case in caselist1: # ['1', '2', '3']
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			infallthru('4')
+	
+		elif case in caselist2: # ['4', '5', '6', '7']
+			print('kangaroo hop hop!')
+			#############
+			nested_switch_11(exp) #11
+			exp = 3
+			nested_switch_62(exp) #62
+			##############
+			print('taught me how thru write code')
+			infallthru('8')
+	
+		elif case in caselist3: # ['8', '9', '10']
+			print('mocha blast')
+			print('== 31 flavors===')
+			infallthru('default')
+	
+		elif case in caselist4: # ['default']
+			print('the end')
+			break
+	
+		else:
+			print('the end')
+			break
+	
+
+def nested_switch_11(exp):	
+	exp = varholder[0]
+	
+	caselist1 = ['blable']
+	caselist2 = ['more']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#11
+	while True:
+	
+		if case in caselist1: # ['blable']
+			print("do something")
+			####################
+			nested_switch_15(exp) #15
+			#############
+			print("yep")
+			infallthru('more')
+	
+		elif case in caselist2: # ['more']
+			print("nice")
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+	
+		else:
+			print("we are done here")
+			break
+	
+
+def nested_switch_15(exp):	
+	exp = varholder[0]
+	
+	caselist1 = ['tahoe']
+	caselist2 = ['fallen leaf lake']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#15
+	while True:
+	
+		if case in caselist1: # ['tahoe']
+			print("do something")
+			print("yep")
+			infallthru('fallen leaf lake')
+	
+		elif case in caselist2: # ['fallen leaf lake']
+			print("nice")
+			####################
+			nested_switch_23(exp) #23
+			#############
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+	
+		else:
+			print("we are done here")
+			break
+	
+
+def nested_switch_23(exp):	
+	exp = varholder[0]
+	
+	caselist1 = ['tahoe']
+	caselist2 = ['fallen leaf lake']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#23
+	while True:
+	
+		if case in caselist1: # ['tahoe']
+			print("do something")
+			print("yep")
+			infallthru('fallen leaf lake')
+	
+		elif case in caselist2: # ['fallen leaf lake']
+			print("nice")
+		####################
+			nested_switch_31(exp) #31
+			#############
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+	
+		else:
+			print("we are done here")
+			break
+	
+
+def nested_switch_31(exp):	
+	exp = varholder[0]
+	
+	caselist1 = ['fishy']
+	caselist2 = ['where now']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#31
+	while True:
+	
+		if case in caselist1: # ['fishy']
+			print("do something")
+			print("yep")
+			infallthru('where now')
+	
+		elif case in caselist2: # ['where now']
+			print("nice")
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we very done")
+			break
+	
+		else:
+			print("we very done")
+			break
+	
+
+def nested_switch_62(exp):	
+	exp = varholder[0]
+	
+	caselist1 = ['burger']
+	caselist2 = ['more']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#62
+	while True:
+	
+		if case in caselist1: # ['burger']
+			print("do something")
+			####################
+			nested_switch_66(exp) #66
+			#############
+			print("yep")
+			infallthru('more')
+	
+		elif case in caselist2: # ['more']
+			print("nice")
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+	
+		else:
+			print("we are done here")
+			break
+	
+
+def nested_switch_66(exp):	
+	exp = varholder[0]
+	
+	caselist1 = ['fishy']
+	caselist2 = ['snow fire']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#66
+	while True:
+	
+		if case in caselist1: # ['fishy']
+			print("do something")
+			print("yep")
+			infallthru('snow fire')
+	
+		elif case in caselist2: # ['snow fire']
+			print("nice")
+			#############
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+	
+		else:
+			print("we are done here")
+			break
+	
 
 
 Tuesday, Dec 7th, 2021 10:14 am PST
