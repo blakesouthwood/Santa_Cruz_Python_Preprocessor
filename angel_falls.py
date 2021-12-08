@@ -1,3 +1,241 @@
+Tuesday Dec 7, 2021 6:14pm PST
+Putting the puzzle pieces together and testing now 
+Input switch string Showing the stages here.
+	switch(exp){ #1
+		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			#############
+			switch(exp){ #11
+				case 'blable':
+					print("do something")
+					####################
+					switch(exp){ #15
+						case 'tahoe':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							####################
+							switch(exp){ #23
+								case 'tahoe':
+									print("do something")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice")
+									####################
+									switch(exp){ #31
+										case 'fishy':
+											print("do something")
+											print("yep")
+											fallthru
+										case 'where now':
+											print("nice")
+											break
+										default:
+											print("we very done")
+									endswitch 
+							#############
+									break
+								default:
+									print("we are done here")
+							endswitch #46  
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #51   
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch #60   
+			exp = 3
+			switch(exp){ #62
+				case 'burger':
+					print("do something")
+					####################
+					switch(exp){ #66
+						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #77 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch #86   
+			##############
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+		
+		default:
+			print('the end')
+	endswitch #100 
+						
+The chain methods convert this into the format for the parser.
+						result of 4th method on string
+
+	switch(exp) #1
+		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			#############
+			nested_switch_11(exp) #11
+			exp = 3
+			nested_switch_62(exp) #62
+			##############
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+		
+		default:
+			print('the end')
+}
+
+=========
+counter= 1
+
+	switch(exp) #11
+		case 'blable':
+			print("do something")
+			####################
+			nested_switch_15(exp) #15
+			#############
+			print("yep")
+			fallthru
+		case 'more':
+			print("nice")
+			break
+		default:
+			print("we are done here")
+}
+
+=========
+counter= 2
+
+	switch(exp) #15
+		case 'tahoe':
+			print("do something")
+			print("yep")
+			fallthru
+		case 'fallen leaf lake':
+			print("nice")
+			####################
+			nested_switch_23(exp) #23
+			#############
+			break
+		default:
+			print("we are done here")
+}
+
+=========
+counter= 3
+
+	switch(exp) #23
+		case 'tahoe':
+			print("do something")
+			print("yep")
+		case 'fallen leaf lake':
+			print("nice")
+		####################
+			nested_switch_31(exp) #31
+			#############
+			break
+		default:
+			print("we are done here")
+}
+
+=========
+counter= 4
+
+	switch(exp) #31
+		case 'fishy':
+			print("do something")
+			print("yep")
+			fallthru
+		case 'where now':
+			print("nice")
+			break
+		default:
+			print("we very done")
+}
+
+=========
+counter= 5
+
+	switch(exp) #62
+		case 'burger':
+			print("do something")
+			####################
+			nested_switch_66(exp) #66
+			#############
+			print("yep")
+			fallthru
+		case 'more':
+			print("nice")
+			break
+		default:
+			print("we are done here")
+}
+
+=========
+counter= 6
+
+	switch(exp) #66
+		case 'fishy':
+			print("do something")
+			print("yep")
+			fallthru
+		case 'snow fire':
+			print("nice")
+			#############
+			break
+		default:
+			print("we are done here")
+}
+
+
+
+
 Tuesday, Dec 7th, 2021 10:14 am PST
 Nested Switch cases works.
 
