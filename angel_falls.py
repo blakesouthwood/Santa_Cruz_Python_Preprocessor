@@ -469,9 +469,41 @@ while True:
 
 ##=================================
 #then each switch is framed in a method
+This is the method that frames each string
+####=======================================================================
+##   prepare_python_switch_string_for_baking(stringname):
+##   #method used: result= get_switch_number_at_top_of_string(stringname)
+##========================================================================= 
+def prepare_python_switch_string_for_baking(stringname):
+    print('===== prepare_python_switch_string_for_baking =====')
+    buildstring='';
+    the_answer_is= get_switch_number_at_top_of_string(stringname)
+    mynumb = the_answer_is;
+    #========================== added on Fri Dec 3rd ====================
+    ## this  ADDS the function name to the top  of a switch string; not tabs in front here
+    if mynumb == '1': 
+        buildstring += "\n\n";
+        buildstring += "def main_switch(exp):"; # only triggered for main switch scenario
+    else:             
+        buildstring += "def nested_switch_" + str(mynumb) +"(exp):" # meaning not  1 
+    #====================================================================
+    ## changes switch to inswitch and fallthru to infallthru
+    for line in stringname.splitlines(): #if mynumber = 1 don't change switch in main scenario
+        if "switch" in line and "nested" not in line and mynumb != '1': #if switch 1 skip this
+            line = line.replace("switch","inswitch")
+        if "fallthru" in line:
+            line = line.replace("fallthru","infallthru")
+        buildstring += '\t' + line +'\n' #this adds 1 tab  to front of each line after def definition
+    xmastime[0] = buildstring; 
+    print(" ")
+    print(xmastime[0]); 
+    print(" ")
+    
+ #I just generated this with the code    
 
 
 
+#this is the first switch in the switch string and by default it's labelled main_switch
 def main_switch(exp):	
 	exp = varholder[0]
 	
