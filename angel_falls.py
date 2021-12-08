@@ -1,4 +1,478 @@
-Tuesday Dec 7, 2021 6:14pm PST
+Tuesday Dec 7, 2021 6:14pm PST updatd 7:02pm
+The famous chain methods that didn't want to work going in a sequence so yesterday I tried
+doing each chain method on all of the strings to debug it more easily .. and it worked.. got snagged on fourth method
+and then I debugged it.
+
+result_of_first_method=[]
+result_of_second_method=[]
+result_of_third_method=[]
+result_of_fourth_method=[]
+
+print("this is after the input stings have already been seperated")
+##======================
+##  move_string_to_left_side()        first method modern tab shifter to left 
+##======================
+def move_string_to_left_side():
+    print("=====APPLE== modern_tab_shifter_to_left()=====")
+    counter = 1
+    for item in testlist_of_strings:
+        print("=======")
+        modern_tab_shifter_to_left(item)
+        fizz=goldtime[0] #output from first_method()
+        #print("apple stage1 fizz =",fizz)
+        #append outpoutto result_of_first_method
+        result_of_first_method.append(fizz)
+        print("===== counter =",counter)
+        counter += 1
+    ################################################    
+    counter =1
+    print("result of shifting input strings to left")
+    print("=====APPLE==APPLE   APPLE   APPLE   APPLE   APPLE=====")
+    for item in result_of_first_method:
+        print(item)
+        print("=========")
+        print("counter=",counter)
+        counter += 1
+    
+
+
+
+
+##======================================================
+## take_out_the_inner_switch_bodies_leaving_switch()
+##======================================================
+def take_out_the_inner_switch_bodies_leaving_switch():
+    print("=====PLUM == take_out_switch_body(item)====")
+    counter = 1
+    for item in result_of_first_method:
+        take_out_switch_body(item)
+        print("===== counter =",counter)
+        counter += 1
+        fizz =lightning[0]
+        print("plum stage2 fizz =",fizz)
+        #append outpoutto result_of_first_method
+        result_of_second_method.append(fizz)
+    ###################################################
+    counter =1
+    print("result of taking out inner switch bodies")
+    for item in result_of_second_method:
+        print(item)
+        print("=========")
+        print("counter=",counter)
+        counter += 1
+    
+
+
+
+##===================================================================
+## change_switch_to_method_solved : switch to nested_switchX(exp) # 
+##=================================================================
+
+def change_switch_to_nested_switch_method(): #swaps switch with nested_switch method
+    print("=====PEACH===change_switch_to_method_solved===")
+    counter = 1
+    for item in result_of_second_method:
+        fizz=change_switch_to_method_solved(item)
+        print("peach fizz=",fizz)
+        #append outputto result_of_first_method
+        result_of_third_method.append(fizz)
+        print("===== counter =",counter)
+        counter += 1
+    #########################################
+    counter =1
+    print('result of 3rd method on string')
+    for item in result_of_third_method:
+        print(item)
+        print("=========")
+        print("counter=",counter)
+        counter += 1
+    
+    
+    
+##===================================================================
+## replace_endswitch_with_close_brace     take_out_endswitch() 
+##=================================================================
+
+def replace_endswitch_with_close_brace():
+    print("=======ORANGE=take_out_myendswitch===")
+    counter = 1
+    for item in result_of_third_method:
+        take_out_myendswitch(item)  #other one is take_out_endswitch
+        print("=======")
+        fizz =  holdthis[0]
+        print('orange fizz =',fizz)
+        result_of_fourth_method.append(fizz) #this fills up result_of_fourth
+        print("===== counter =",counter)
+        counter += 1
+   #########################################
+    print('result of 4th method on string')
+    counter=1
+    for item in result_of_fourth_method:
+        print(item)
+        print("=========")
+        print("counter=",counter)
+        counter += 1
+    
+    
+    
+##====================================================
+##  waterfall_chain_methods()  formally called do_it()
+##==================================================
+#the way this works is each method does all of the switch strings as a set
+def waterfall_chain_methods():
+    print("===watefall_chain_methods()===== ")
+    for item in testlist_of_strings:
+        print(item)
+        print("========")#formally apple, plum, peach, orange 
+    move_string_to_left_side()
+    take_out_the_inner_switch_bodies_leaving_switch()
+    change_switch_to_nested_switch_method()
+    replace_endswitch_with_close_brace()
+    #exit():
+
+holdthis=[]
+holdthis.append(0)
+
+#this swaps endswitch with }
+######################################
+## take_out_endswitch(stringname)  #from bottom of nested switch 
+######################################
+def take_out_myendswitch(stringname):
+	print("take_out_endswitch called=============")
+	galaxy = stringname
+	#print(galaxy)
+	holdthis[0] = galaxy.replace("endswitch","}")
+	##================================
+	#what this does is take off the comment after }
+	#and then it shifts } to the far left against the margin with no spaces
+	
+	buildnewstring=''
+	for line in holdthis[0].splitlines():
+		if "}" in line:
+			print("detected } in line")
+			#location = line.index("#")    #gets location from left where position of #
+			#line = line[:location] 
+			print("resulting line looks like this",line)
+			line = line.lstrip() #this should move it to the far left to align with margin
+			print("after left shift it is ",line)
+			#line[0] = first #this is new to slice off right of brace
+			line = line[0]#first char
+			buildnewstring += line + "\n";
+		else:
+			buildnewstring += line + "\n";
+	#end loop
+	holdthis[0] = buildnewstring
+	print("this is the final outpout of take out endswitch")
+	#for line in holdthis[0].splitlines():
+	#    print(line)
+	    
+	##===========today sunday coding
+	
+	
+###=================================================================
+passthis=[]
+passthis.append(0)
+##
+#this gets the tabdepth in front of top switch word
+##==================================================
+##  starter_engine(the_nest_string):   nov 30th tested working accurately
+##==================================================
+def starter_engine(the_nest_string):
+	print("======starter engine called======")
+	tabdepth='';n=''
+	for line in the_nest_string.splitlines(): #nest_string
+		if "switch" in line and "end" not in line: #had "not"
+			tabdepth = line.count("\t")
+			n= tabdepth;n = n-1  #need to have one tab in front
+			break
+	passthis[0]= n;print("n =",n)
+goldtime=[]
+goldtime.append(0)
+##===================================================================
+##  modern_tab_shifter_to_left(the_nest_string):  nov 30th tested working
+###==================================================================
+def modern_tab_shifter_to_left(the_nest_string):
+    print("====modern tab shifter to left=======")
+    starter_engine(the_nest_string)  #method call to get tabdepth on first switch line
+    buildstring='';n = passthis[0] #filled from starter_engine method number of tabs in front of switch
+    ### n is number of tabs in front of switch BEFORE CHANGING IT
+    if n == 0: #means one(1) tab in front of switch do nothing
+        buildstring =the_nest_string #no changes to indentation
+    if n > 1: #more than one tab in front of switch so cut some tabs out
+        for line in the_nest_string.splitlines():
+            buildstring += line[n:] +'\n' #this cuts out n tabs from the front of this line
+    goldtime[0] = buildstring
+    print("output of concatted string in goldtime[0]")
+    for line in buildstring.splitlines():
+        print(line)
+  
+##==============	
+	
+
+innerswitchstatus=[]
+innerswitchstatus.append(0)
+
+castle1=[]
+castle1.append(0)
+##===================================================
+## change_switch_to_method_solved(inputstring):
+##====================================================
+print("make the coffee magic coding happen working on this today charlie brown") 
+#solved and working on October 30th 2021 ====================================
+def change_switch_to_method_solved(inputstring):
+    innerswitchstatus[0]= False #by default
+    print("====== change_switch_to_method_solved(inputstring)=== get the money now====")
+    print('this now takes out the { brace after switch if it is there')
+    innerswitch=''
+    print("this is what it sees when it starts change_switch_to_method_solved()")
+    for line in inputstring.splitlines():
+        print(line)
+    print("========testing if this input string has a nested switch ==")
+    innerswitch= False #default setting
+    counter=0;newstring='';y='';x='';tabdepth=''; switches_total=''
+    #verify that there is at LEAST ONE nested switch in here
+    for line in inputstring.splitlines(): # we only need to detect one inner switch
+       tabdepth = line.count("\t") #gets tab count for this line
+       if "switch" in line and "end" not in line and tabdepth == 3:  #it just needs to be true once
+       #this means yes there is a nested switch in this string
+            innerswitchstatus[0]= True #this is new 
+            innerswitch = True
+            break
+       else:
+            innerswitch = False
+            continue
+    if innerswitch == False:
+        print("this switch string DOESN'T HAVE an inner switch")
+    ##########################################
+    print("innerswitch =",innerswitch)
+    ##### modified on halloween  2021 to bypass if no inner switch ##########################################               
+    templine=''
+    templine2=''
+    
+    #### IF INNERSWITCH == TRUE:
+    if innerswitch == True: #if a switch at 3 tabs depth  is True
+    #check if { in this string if so take it out
+        print('checking if left brace in string')
+        if "{" in inputstring: #have to cut "{" out of string
+            print("CONFIRMED there is a left brace in string")
+            for line in inputstring.splitlines():
+                if "{" in line:
+                    templine  +=   line.replace("{","") 
+                    templine  +="\n"
+                else:
+                    templine += line +"\n"
+            inputstring = templine
+        #end if
+        print("=======testing if { taken out of string=======")
+        for line in inputstring.splitlines():
+            print(line)
+        print("=======testing if { taken out of string=======")
+       #check if } in this string an if so take it out
+      
+        counter=0 #new counter for this loop different from upper for loop above
+        for line in inputstring.splitlines():#      getting tab depth
+            tabdepth = line.count("\t") #gets tab count for this line
+            #skips first switch by counter MUST BE AFTER 2nd line
+            #this is where we swap switch(exp) with nested_switch_(number)(exp)
+            if "switch" in line and tabdepth == 3 and "end" not in line and counter > 2: 
+                print("confirmed switchh in line and tabdepth3")
+                #this is new getting the switch id number after # on-the-fly
+                #get string to right of #, get right side,remove spaces
+                x = line.split("#"); y = x[1];y = y.strip();
+                # replace switch with nested_switch + id number harvested from comment above
+                thisline = line.replace("switch(exp)", "nested_switch_" + str(y) + "(exp)")
+                #this removes the extra spaces after #
+                location = thisline.index("#")    #gets location from left where position of #
+                thisline = thisline[:location]    #this slices off the right side from # position
+                thisline = thisline + "#" + str(y) #this concats on the # and comment id number
+                counter += 1; newstring += thisline + "\n"; continue
+            else:
+                newstring += line + "\n"; counter += 1; continue
+        return newstring  
+        ##################################################################
+    else: #this MEANS NO INNER SWITCH IN THE INPUT STRING
+        print("no inner switches in this string")
+        if "{" in inputstring: #have to cut "{" out of string
+            print("CONFIRMED there is a left brace in string")
+            for line in inputstring.splitlines():
+                if "{" in line:
+                    templine += line.replace("{","") #taking out left brace here
+                    templine  +="\n"
+                else:
+                    templine += line +"\n"           #otherwise it doesn't replace anything 
+            inputstring = templine
+        else:
+            print("=====no { in string  ======")
+            #end if
+        print("=======testing if { taken out of string=======")
+        for line in inputstring.splitlines():
+            print(line)
+        print("=======testing if { taken out of string=======")
+        #check if } in this string an if so take it out #I have deactivated this since it's not needed
+        
+        #this is what we return the inputstring
+        return inputstring; #no changes made 
+        castle1[0] =inputstring 
+        innerswitchstatus[0] = False
+    ### end of function =======================================================
+    
+print("where is my mocha brainfreeze test october 30th...")
+
+
+
+##==========
+outputstring=[]
+outputstring.append(0)
+snowboarding=[]
+##=================================
+## take_out_switch_body(astring):  #def foxnews(astring):
+##================================
+def take_out_switch_body(astring): #this was foxnews
+	nestedswitch= False
+	print("take_out_switch_body      today is november 28th sunday  4:29 pm ")
+	#right here look if a switch at 3 tabs if not skip below
+	####=== new as of monday december 6th, 2021 =========================
+	#determine if 
+	for line in astring.splitlines():
+		tabcount =line.count("\t")
+		if "switch" in line and tabcount == 3:
+			print("yes switch at 3 tabs in line")
+			print("frosty says switch at 3 tabs confirmed")
+			nestedswitch= True
+			break
+	print("frosty the snow man light test for nested switch")
+	print("nestedswitch=",nestedswitch)
+	print("==================================")
+	if nestedswitch == False: #what this does is put the input string into output
+		#add input into output  this means no changes were done to the switch string
+		print("this switch string DOES NOT have an inner switch")
+		lightning[0]=astring 
+	else:
+	##======= this is down here now ========december 6th 2022 =========
+		get_switch_and_endswitch_locations_in_string(astring) #for this switch string
+		build_trial_inputlist()	 #this is new 
+		convert_switch_with_more_than_one_inner_switch_at_3_tabs(astring)
+	#end if
+	##########================================================================
+	print("frosty snowboarding")
+	#december 6th looking where I am not adding31 and 66 
+	
+	print("this is new code now today is Monday november 29th now Dec 6th.")
+	print("what is in lightning[0] now")
+	#print(lightning[0])
+	
+	print("resulting final output of take_out_switch_body:") 
+	snowboarding.append(lightning[0])  #this is new dec 6th monday
+	for line in lightning[0].splitlines():
+		print(line)
+		
+##======
+print('important testing on Saturday morning')
+trialinputlist=[]
+inputlist =[]
+
+#made nov 27th, satgurday 4:15pm morgan hill starbucks 
+##===========================
+## build_trail_inputlist()
+##===========================
+def build_trial_inputlist(): #this combines switch and endswitch into pair into trialinputlist
+	del inputlist[:] #this empties the input list discarding previous data in it
+	del trialinputlist[:]
+	print("build_trail_inputlist()..")
+	counter=0;
+	for item in switch_list:
+		pair=[switch_list[counter],endswitch_list[counter]]
+		trialinputlist.append(pair)
+		counter += 1
+		
+	print("look for the ball on the green")
+	print("trialinputlist=",trialinputlist)
+	for item in trialinputlist:
+		inputlist.append(item)
+	print("inputlist=",inputlist)
+	for item in inputlist:
+		print(item)
+	inputlist.reverse() #is this needed here or not 
+
+	
+###=======
+###========================================================================
+## convert_switch_with_more_than_one_inner_switch_at_3_tabs(stringname):
+###=========================================================================
+def convert_switch_with_more_than_one_inner_switch_at_3_tabs(stringname):
+    string_after_cutting_out_inner_switch_body[0]= False        #necessary default flag 
+    counter=0 #where am I filling inputlist?
+    for item in inputlist: #this grabs the params from item     #list of switches pairs start stop at 3 tabs depth
+        start = item[0];
+        finish = item[1];
+        print('start=',start,'','finish=',finish)                       #62; finish=86 
+        skip_rope_skipping_some_lines(stringname,start,finish)  #this copies the string skipping the range designated
+        counter +=1
+        print("counter=>>",counter)
+        print("=====================")
+    print("at bottom of converts  with more than one inner switch at 3 tabs")
+    print("testing if weasel is returnable at the end of the function")
+     #this is after it's done
+    #for line in weasel.splitlines():
+    #    print(line)
+
+##========
+hp=[]
+hp.append(0)
+lightning=[]
+lightning.append(0)
+#global concatthis;
+	#this just might work 
+	#this is a flag to pass the existing concatted string to be used fresh for next switch
+	#this list is preset at False 
+	#so this starts out false and passes thru it and then the list which used to have
+	#FAlse in it has a string in it thereafter and the modified string from first pass
+	#and subsequent passes is the new string to modify on the fly
+	
+#this requires the string name and start and finish to work
+#this takes one nested switch with start and finish locations
+#this method must be given start and finish in the params
+#this prints out the new string after cutting out the nested switch except for the switch word
+##===========================================================
+## skip_rope_skipping_some_lines()  this cuts out ONE inner switch body
+##===========================================================
+def skip_rope_skipping_some_lines(string_name,start,finish):#start line nest switch and finish  endswitch
+	print("start= ",start,"finish= ",finish)
+	if string_after_cutting_out_inner_switch_body[0] == False: #starting
+		print("it is False it is  empty ")
+	else: 
+		string_name = string_after_cutting_out_inner_switch_body[0]
+		print('it is NOT False and therefore we fill the string from the list[0]')
+	concatthis=''
+	print("===skip_rope_skipping_some_lines(string_name,start,finish)====")
+	#string_after_cutting_out_inner_switch_body[0]
+	print(string_name)
+	counter=0; #concatthis =''; #finish = finish + 1 
+	#switch is the start line though we are skipping after it and keeping it
+	#the start line is the switch which will be preserved but skipping when cutting out
+	print("string_name=",string_name,"start=",start,"finish=",finish)
+	for line in string_name.splitlines(): 
+		if counter > start  and counter <= finish: 
+			#print(line) #it won't print the switch word since it's skipping it
+			counter += 1; continue
+		else: 
+			concatthis += line + "\n"; counter += 1; continue
+	#print('it created this SILLY STRING === multi colored silly string=')
+	#print(concatthis)
+	#print("I would put this into a list to store for later")
+	string_after_cutting_out_inner_switch_body[0] = concatthis
+	weasel=string_after_cutting_out_inner_switch_body[0]
+	#for line in weasel.splitlines():
+	#	print(line)
+	#return weasel  #I need to return from each for the piping to work correctly
+	lightning[0] = concatthis
+	#for line in lightning[0].splitlines():
+	#    print(line)
+
+
+	##=========
+	
+
 Putting the puzzle pieces together and testing now 
 Input switch string Showing the stages here.
 	switch(exp){ #1
