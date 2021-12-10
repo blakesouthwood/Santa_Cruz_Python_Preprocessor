@@ -32,6 +32,250 @@ def infallthru(n):
 result=[]
 result.append(0)
 
+
+
+varholder=[]
+varholder.append(0)
+
+#it's one big string
+nestswitches='''
+
+def nested_switch_66(exp):	
+	#exp = varholder[0]
+	print(" ==NESTED SWITCH 66==",exp)
+	caselist1 = ['fishy']
+	caselist2 = ['snow fire']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#66
+	while True:
+	
+		if case in caselist1: # ['fishy']
+			print("do something")
+			print("yep")
+			infallthru('snow fire')
+	
+		elif case in caselist2: # ['snow fire']
+			print("nice")
+			#############
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+	
+		else:
+			print("we are done here")
+			break
+	
+def nested_switch_62(exp):	
+	#exp = varholder[0]
+	print("==NESTED SWITCH 62==",exp)
+	caselist1 = ['burger']
+	caselist2 = ['more']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#62
+	while True:
+	
+		if case in caselist1: # ['burger']
+			print("do something")
+			####################
+			exp = 'fishy'
+			nested_switch_66(exp) #66
+			#############
+			print("yep")
+			infallthru('more')
+	
+		elif case in caselist2: # ['more']
+			print("nice")
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+	
+		else:
+			print("we are done here")
+			break
+	
+def nested_switch_31(exp):	
+	#exp = varholder[0]
+	print("==NESTED SWITCH 31==",exp)
+	caselist1 = ['fishy']
+	caselist2 = ['where now']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#31
+	while True:
+	
+		if case in caselist1: # ['fishy']
+			print("INSIDE CASE 1 OF NESTED SWITCH 31")
+			print("yep")
+			infallthru('where now')
+	
+		elif case in caselist2: # ['where now']
+			print("nice")
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we very done")
+			break
+	
+		else:
+			print("we very done")
+			break
+	
+	
+def nested_switch_23(exp):	
+	#exp = varholder[0]
+	print(" ==NESTED SWITCH 23rd== ",exp)
+	caselist1 = ['tahoe']
+	caselist2 = ['cold water']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#23
+	while True:
+	
+		if case in caselist1: # ['tahoe']
+			print("do something")
+			print("yep")
+			infallthru('fallen leaf lake')
+	
+		elif case in caselist2: # ['cold water']
+			print("nice")
+		####################
+			exp='fishy'
+			nested_switch_31(exp) #31
+			#############
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+	
+		else:
+			print("we are done here")
+			break
+	
+def nested_switch_15(exp):	
+	#exp = varholder[0]
+	print("==NEST SWITCH 15==",exp)
+	caselist1 = ['tahoe']
+	caselist2 = ['fallen leaf lake']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#15
+	while True:
+	
+		if case in caselist1: # ['tahoe']
+			print("do something")
+			print("yep")
+			infallthru('fallen leaf lake')
+	
+		elif case in caselist2: # ['fallen leaf lake']
+			print("nice")
+			exp = 'cold water'
+			####################
+			nested_switch_23(exp) #23
+			#############
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+	
+		else:
+			print("we are done here")
+			break
+	
+def nested_switch_11(exp):	
+	#exp = varholder[0]
+	print("=== NEST SWITCH 11==",exp)
+	caselist1 = ['blable']
+	caselist2 = ['more']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#11
+	while True:
+	
+		if case in caselist1: # ['blable']
+			print("do something")
+			####################
+			exp = 'fallen leaf lake'
+			nested_switch_15(exp) #15
+			#############
+			print("yep")
+			infallthru('more')
+	
+		elif case in caselist2: # ['more']
+			print("nice")
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+	
+		else:
+			print("we are done here")
+			break
+	
+
+
+def main_switch(exp):	
+	print("===MAIN SWITCH==",exp)
+	#exp = varholder[0]
+	
+	caselist1 = ['1', '2', '3']
+	caselist2 = ['4', '5', '6', '7']
+	caselist3 = ['8', '9', '10']
+	caselist4 = ['default']
+	
+	
+	switch(exp)#1
+	while True:
+	
+		if case in caselist1: # ['1', '2', '3']
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			infallthru('4')
+	
+		elif case in caselist2: # ['4', '5', '6', '7']
+			print('kangaroo hop hop!')
+			#############
+			exp = "blable"
+			nested_switch_11(exp) #11
+			print("just added this inbetween two nested switches")
+			print('it will come thru here anyways and flow down')
+			exp = 'burger'
+			nested_switch_62(exp) #62
+			##############
+			print('taught me how thru write code')
+			infallthru('8')
+	
+		elif case in caselist3: # ['8', '9', '10']
+			print('mocha blast')
+			print('== 31 flavors===')
+			break
+			#infallthru('default')
+	
+		elif case in caselist4: # ['default']
+			print('the end')
+			break
+	
+		else:
+			print('the end')
+			break
+	
+'''
+
 output string concatted together main and nested switches generated
 Note: I have modified it after it was generated to get it to work for testing.
 I am force feeding it currently to trigger inner switches.
