@@ -1,3 +1,40 @@
+Thursday, DEc 9th, 2021 10:03 pm PST California.
+Just successfully tested 4 level deep nested switch in Python.
+------------========================
+===MAIN SWITCH== 1
+where's the dog house!
+first prize
+you block head Charlie Brown
+kangaroo hop hop!
+=== NEST SWITCH 11== blable         #one level nested
+do something
+==NEST SWITCH 15== fallen leaf lake #two level nested
+nice
+ ==NESTED SWITCH 23rd==  cold water #three level nested
+nice
+==NESTED SWITCH 31== fishy          #four level nested
+INSIDE CASE 1 OF NESTED SWITCH 31
+yep
+nice
+yep
+nice
+just added this inbetween two nested switches
+it will come thru here anyways and flow down
+==NESTED SWITCH 62== burger
+do something
+ ==NESTED SWITCH 66== fishy
+do something
+yep
+nice
+yep
+nice
+taught me how thru write code
+mocha blast
+== 31 flavors===
+result[0] = 0
+
+
+
 Thurday, dec 9th, 2021 9:45 pm PST California
 	
 what a journey. Just ran a multi-nested switch case in python. Unreal. I don't believe it.
