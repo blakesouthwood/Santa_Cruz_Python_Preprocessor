@@ -1,3 +1,39 @@
+Thurday, dec 9th, 2021 9:45 pm PST California
+	
+what a journey. Just ran a multi-nested switch case in python. Unreal. I don't believe it.
+It's a dream come true. Testing right now and this is the first run testing jumping around.
+ACTUAL TEST OUTPUT
+===MAIN SWITCH== 1
+where's the dog house!
+first prize
+you block head Charlie Brown
+kangaroo hop hop!
+=== NEST SWITCH 11== blable  #one level deep witch
+do something
+==NEST SWITCH 15== tahoe      #two levels deep switch
+do something
+yep
+nice
+we are done here
+yep
+nice
+just added this inbetween two nested switches
+it will come thru here anyways and flow down
+==NESTED SWITCH 62== burger  #one level deep switch
+do something
+ ==NESTED SWITCH 66== fishy  #two levels deep switch 
+do something
+yep
+nice
+yep
+nice
+taught me how thru write code
+mocha blast
+== 31 flavors===
+result[0] = 0
+
+
+
 Wednesday Dec 8th 2021 11:09 am Gilroy
 testing concatting the strings together.
 When the code runs it does it's calculations but it's in a balloon in a combined string.
