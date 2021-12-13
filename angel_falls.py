@@ -1,3 +1,353 @@
+Dec 13th, 10:25 AM  Massive nested switch generation worked.
+Nested Switch stages working together. Final test in a few minutes.
+When it ran my jaw dropped because the files are huge.
+from woodstock import *
+from Linus import * 
+from snoopy_doghouse import * 
+
+print("== running from frosty.py ====")
+
+red_robin ='''
+	switch(exp) {  
+		case 1 thru 3:
+			print("where\'s the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			#############
+			switch(exp){  
+				case 'blable':
+					print("do something")
+					####################
+					switch(exp){ # 15  #second level deep          Level 2    
+						case 'tahoe':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							####################
+							switch(exp){ #23  #third level deep   Level 3    
+								case 'tahoe':
+									print("do something")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice")
+									break
+								default:
+									print("we are done here")
+							endswitch #33
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #38
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch #47
+			exp = 3
+			switch(exp){ #49 #first level deep                   Level 1
+				case 'burger':
+					print("do something")
+					####################
+					switch(exp){  #53  second level deep          Level 2    
+						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch #73
+
+			##############
+			print('taught me how to write code')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+		
+		default:
+			print('the end')
+}
+'''	
+
+inputstring =''
+
+print("======== STAGE 1 ====woodstock.py=================")
+inputstring = red_robin
+create_list_of_pairs_now(inputstring);
+#calling functions in linus uses gold_list
+#this separates the switches built using copy body using pairs x,y  
+#this needs to be called before filling the list obviously 
+
+print("======== STAGE 2 ====Linus.py =================")
+split_up_big_string_into_nested_switches(red_robin)  
+waterfall_chain_methods_gold_master() 
+#should output the quail list of strings ready for bypass205()
+
+print("======== STAGE 3 ====snoopy_doghouse.py=================")
+create_def_switch_methods_concatted_together_in_one_string()
+print("after finishing snoopy_doghouse.py")
+#output combined python switch methods ready to be executed.
+
+print('how did it do..finished in frosty.py.')
+Generates this before I add the switch and fallthru methods and input var and exec() it.
+
+def nested_switch_66(exp):	
+	exp = varholder[0]
+	
+	caselist1 = ['fishy']
+	caselist2 = ['snow fire']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#66
+	while True:
+	
+		if case in caselist1: # ['fishy']
+			print("do something")
+			print("yep")
+			infallthru('snow fire')
+	
+		elif case in caselist2: # ['snow fire']
+			print("nice")
+			#############
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+	
+		else:
+			print("we are done here")
+			break
+	
+def nested_switch_62(exp):	
+	exp = varholder[0]
+	
+	caselist1 = ['burger']
+	caselist2 = ['more']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#62
+	while True:
+	
+		if case in caselist1: # ['burger']
+			print("do something")
+			####################
+			nested_switch_66(exp) #66
+			#############
+			print("yep")
+			infallthru('more')
+	
+		elif case in caselist2: # ['more']
+			print("nice")
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+	
+		else:
+			print("we are done here")
+			break
+	
+def nested_switch_31(exp):	
+	exp = varholder[0]
+	
+	caselist1 = ['fishy']
+	caselist2 = ['where now']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#31
+	while True:
+	
+		if case in caselist1: # ['fishy']
+			print("do something")
+			print("yep")
+			infallthru('where now')
+	
+		elif case in caselist2: # ['where now']
+			print("nice")
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we very done")
+			break
+	
+		else:
+			print("we very done")
+			break
+	
+def nested_switch_23(exp):	
+	exp = varholder[0]
+	
+	caselist1 = ['tahoe']
+	caselist2 = ['fallen leaf lake']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#23
+	while True:
+	
+		if case in caselist1: # ['tahoe']
+			print("do something")
+			print("yep")
+			infallthru('fallen leaf lake')
+	
+		elif case in caselist2: # ['fallen leaf lake']
+			print("nice")
+		####################
+			nested_switch_31(exp) #31
+			#############
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+	
+		else:
+			print("we are done here")
+			break
+	
+def nested_switch_15(exp):	
+	exp = varholder[0]
+	
+	caselist1 = ['tahoe']
+	caselist2 = ['fallen leaf lake']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#15
+	while True:
+	
+		if case in caselist1: # ['tahoe']
+			print("do something")
+			print("yep")
+			infallthru('fallen leaf lake')
+	
+		elif case in caselist2: # ['fallen leaf lake']
+			print("nice")
+			####################
+			nested_switch_23(exp) #23
+			#############
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+	
+		else:
+			print("we are done here")
+			break
+	
+def nested_switch_11(exp):	
+	exp = varholder[0]
+	
+	caselist1 = ['blable']
+	caselist2 = ['more']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#11
+	while True:
+	
+		if case in caselist1: # ['blable']
+			print("do something")
+			####################
+			nested_switch_15(exp) #15
+			#############
+			print("yep")
+			infallthru('more')
+	
+		elif case in caselist2: # ['more']
+			print("nice")
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+	
+		else:
+			print("we are done here")
+			break
+	
+
+
+def main_switch(exp):	
+	exp = varholder[0]
+	
+	caselist1 = ['1', '2', '3']
+	caselist2 = ['4', '5', '6', '7']
+	caselist3 = ['8', '9', '10']
+	caselist4 = ['default']
+	
+	
+	switch(exp)#1
+	while True:
+	
+		if case in caselist1: # ['1', '2', '3']
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			infallthru('4')
+	
+		elif case in caselist2: # ['4', '5', '6', '7']
+			print('kangaroo hop hop!')
+			#############
+			nested_switch_11(exp) #11
+			exp = 3
+			nested_switch_62(exp) #62
+			##############
+			print('taught me how thru write code')
+			infallthru('8')
+	
+		elif case in caselist3: # ['8', '9', '10']
+			print('mocha blast')
+			print('== 31 flavors===')
+			infallthru('default')
+	
+		elif case in caselist4: # ['default']
+			print('the end')
+			break
+	
+		else:
+			print('the end')
+			break
+	
+
+
+	
+
+
 Thursday, DEc 9th, 2021 10:03 pm PST California.
 Just successfully tested 4 level deep nested switch in Python.
 This was code parsed, generarated and concatted together and executed.
