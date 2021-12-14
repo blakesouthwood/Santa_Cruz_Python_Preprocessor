@@ -1,3 +1,15 @@
+Tuz Dec 14th, 2021 11:29am PST Morgan Hill, California Starbucks free WiFi.
+I just uploaded the critical files for the automated nested switching to work.
+
+frosty.py
+woodstock.py
+Linus.py
+snoopy_doghouse.py
+tron3.py
+
+
+
+
 I am now working on trapeze which takes in a raw string of switch case for input which is governed by tabs
 for the switch to work. Currently I am using a canned switch case string to test. So it will fully work
 connected together likely tomorrow. Right now it works just fine with the test code switch case for input.
