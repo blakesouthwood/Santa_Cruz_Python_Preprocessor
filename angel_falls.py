@@ -5,7 +5,9 @@ Music playing when it first worked altogether.
 Blade Runner 2049 - Tears In Rain Slowed Extended
 #https://www.youtube.com/watch?v=X0Hyxq7iOwI
 
-
+Tue Dec 14, 2021 11;21
+Just tested the python code for frosty.py on Sublime Text 3 Build 4121  and it runs flawlessly.
+I have also run it (and developed it) in BBEdit 13.5.7 runs flawlessly.
 file name: frosty.py
 ###=== importing files ===================
 from woodstock import *
