@@ -1,10 +1,92 @@
 Tuz Dec 14th, 2021 11:29am PST Morgan Hill, California Starbucks free WiFi.
 I just uploaded the critical files for the automated nested switching to work.
-Nested switches took 6 months. First I modified the parser to handle (it's a trick)
+
+Nested switches took 6 months. First I modified the parser to handle (it's a tricky detour)
 more than one input switch case string. I collect them in a list called quail (whom never travel alone)
 then loop thru the quail list and use bypass205() to convert each string into python which is placed into the stanford list
 The actual bypass205() design is utter genius that evolved over time to become extremely svelt. 
+
+#inside of endswitch()  #an inner chunk of the critical code 
+	print("length of quail =",len(quail))             #3
+	print("number endswitches =",endswitch_number)    #2
+	print("NUMBER OF SWITCHES  =",number_of_switches) #3
+	##################
+	## august 7th testing morgan hill starbvucks with dummy data to get this working
+	print("about to try to TRIGGER  bypass205()")
+	print("I will loop thru quail here for now to show that the strings exist ")
+	print("already seperated split up")
+	print("this is quail list")
+	print("======================")
+	for item in quail:
+		print(item)
+		print("=========")
+	###============================
+	print("I am right here where in test stage bypass205 is called using quail list")
+	if len(quail) > 1:
+		print("bypass205() called")
+		bypass205(y) #add later (y) to it
+	else:
+		pass
+		
+######################
+##  bypass205(y)	
+######################
+def bypass205(y): 							# runs input strings thru parser and  
+	print("bypass205() called====is this working yet or not???=======");
+	mytrace("bypass205()") 					# code gen puts in stanford list
+	del stanford[:] 						# empties  stanford list 
+	#takes out endswitch and replaces it with }
+	swap_endswitch_with_curlybrace() #this loop thru quail list doing this
+	print("quail list length=",len(quail))
+	print("it goes thru the quail list which it applies the parser guts to each individual string")
+	##  loops thru quail list ############
+	for item in quail: #to see what's in quail list
+		print(item)
+	for item in quail: 						# loop thru quail list 
+		y = item 							# this puts the contents of each string in quail into y 
+		switchcasetester='';switchcasetester=None;
+		del switchcasetester;switchcasetester='';
+		show_input_switch_string() 			# flag for testing this shows the input string
+		parser_guts(y)  					# does parser and codegen of each switch string        
+		# automatically adding python translation to stanford list at bottom of codegen
+###  end bypass205()  ##################  		
+		
+#parser guts is the same sequence of code in the endswitch above
+# I am just trying to reduce code  that's all.
+#################################
+##     flow_valve_input(y)
+##################################
+def flow_valve_input1(y):  #this determines if switch case string is numbers or words
+    print("Flow Valve input")
+    mytrace("flow_valve_input()")                            # get first case in switch case string
+    getline  = grab_first_case_of_switch_string(y)           # get first case line
+    toocool  = grab_first_case_line_in_switch_case_string(y) # remove tabs from the case line
+    toocool  = remove_tabs_from_string(toocool)              # test if number in first case line yes = True no = False
+    valve[0] = check_if_number_in_string(toocool)            # looks in case line
+    valve[1] = toocool                                       # put case name/number into valve[1]
+    print("output from FLOW VALVE=",valve[0],"and",valve[1])
+################################################
 								      
+								      
+####============================
+####      parser_guts()           #dreamed up on July 10th, 2021 to see if it would work
+####============================
+def parser_guts(y):
+	print("parser_guts() called =======")
+	check_if_uppercase_constant_cases(y)	#if UPPCASE this senses it and converts to string
+	if baseline[0] != "nada":				#means it converted to uppercase
+		y = baseline[0]
+	flow_valve_input1(y)					#puts True or False into valve[0] added April 2nd, 2021
+	print("if number in first case",valve[0])
+	if valve[0] == True:					#marco expansion numbers like case 12:
+		macro_expansion(y); 				#checks if macros and expands them and converts numbs to strings
+		y=None; del y; y = cray[0];
+	flush_lists() 
+	parser_mode_1(y) 	
+
+###==================================
+
+
 
 frosty.py
 woodstock.py
