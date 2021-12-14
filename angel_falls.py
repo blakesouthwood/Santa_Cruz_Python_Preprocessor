@@ -1,3 +1,17 @@
+I am now working on trapeze which takes in a raw string of switch case for input which is governed by tabs
+for the switch to work. Currently I am using a canned switch case string to test. So it will fully work
+connected together likely tomorrow. Right now it works just fine with the test code switch case for input.
+Also, take note that the input string is run thru bypass205() and I still need to activate it by going thru
+the regular parser which then in turn triggers bypass205() officially so I need to test that phase too.
+The reality is that the impossible parts are working now and the cakewalk part that remains is trivial.
+Just getting exec(code) to work within a function was a total nightmare journey through hell.
+Never used extensive imported files and lists before this project and that thankfully went smoothly.
+
+In the past python code I wrote in BBedit had difficulty running in Sublime but for this project
+the code runs perfectly in Sublime Text 3 build 4121.
+
+
+
 December 14th 2021  9:56am 
 nested switches works. total disbelief.
 Will upload code and begin cleaning it up. I stopped breathing when it ran. I thought there was some mistake.
