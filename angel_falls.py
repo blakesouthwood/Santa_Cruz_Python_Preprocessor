@@ -85,9 +85,98 @@ def parser_guts(y):
 	parser_mode_1(y) 	
 
 ###==================================
+###########################
+##     parser_mode_1()
+###########################
+## testing April 3rd 2021 seeing if this works or not. 
+def parser_mode_1(a):
+	#print("a= ",a)
+	mytrace('parser_mode_1 in switch_cat()') #was greatpumpkin
+	#print('=======INSIDE OF PARSER in switch_cat for strings  =========')
+	mountain2(a)    # this changes sw to switchcasetester #I can't beleive that this reverse number was being called 
+	starter_sequence_mode_1()
 
-
-
+##################################
+## starter sequence mode 1
+##################################
+#this is for parsing and codegen of cases with words only
+def starter_sequence_mode_1():
+	print("it SEES in valve[0]",valve[0])
+	#print("the if vavle[0] = False is the setting in here ")
+	# valve[0] is False if words, it is True if numbers
+	#this if means this can only run if valve[0] is False not numbers
+	# I just made this change since both are now strings
+	#########################################
+	if valve[0] == True or valve[0] == False: #case numbers if True WAS False #means cases are words like "apple pie"
+		mytrace('starter_sequence_mode_1()')
+		
+		convert_case_line_to_lowercase()  #right here for conformity all words lowercase
+		badass()
+		stage_one() 				## and if numbergs
+		add_to_test_list()  #testing here
+		#case_main_body_list.append("starter")
+		stage_two()
+		stage_three()
+		stage_four()
+		stage_five()
+		stage_six()
+		stage_seven()
+		stage_eight()
+		stage_nine()
+		stage_ten()
+		stage_eleven()
+		#print('stopping just before switch_code_gen()')
+		#quit() #see if this works
+		switch_code_gen() #  <<<==============it's called right here the code generator
+		######### testing this to do next stages 
+		######### if nested switch with several strings
+		######### so that I don't just tack it onto switch code gen
+		######### and this way it's done after stanford is filled with output 
+		######### python stings
+		managing_nested_switch_scenario()
+		
+		stage_twelve()  # <== this resets the lists for next use of switch
+		########=== added june 16th, 2021 #####
+		#uppercase reset to default 
+		#set these after exec
+		#this resets defaults to turn off uppercase yes 
+		
+		#uppercase_test[0] = False:
+		#baseline[0]="nada"
+		#############################
+		clearit()
+		global woodstock
+		#print("what we have in woodstock=",woodstock)
+		#print("now we clear out woodstock list")
+		woodstock=[]
+		#print("woodstock=",woodstock)
+		global candy
+		#print('what we have in candy=',candy)
+		#print("now we delete its contents")
+		candy=[]
+		#print("candy=",candy)
+		#flush_lists()
+		global sw 
+		sw = ''
+		global switchcasetester
+		switchcasetester =''
+		smartcasemanager=[]
+		print("smartcasemanager=",smartcasemanager)
+		british=[]
+		#print("british=",british)
+		penguin=[]
+		#print("penguin=",penguin)
+		clear_out_all_case_lists() #doing 16 for now
+		#show_tron_trace_path()
+	else:
+		pass
+		
+	
+	showit()
+	empty_test() #test of global list
+	
+								      
+								      
 frosty.py
 woodstock.py
 Linus.py
