@@ -1,5 +1,10 @@
 Tuz Dec 14th, 2021 11:29am PST Morgan Hill, California Starbucks free WiFi.
 I just uploaded the critical files for the automated nested switching to work.
+Nested switches took 6 months. First I modified the parser to handle (it's a trick)
+more than one input switch case string. I collect them in a list called quail (whom never travel alone)
+then loop thru the quail list and use bypass205() to convert each string into python which is placed into the stanford list
+The actual bypass205() design is utter genius that evolved over time to become extremely svelt. 
+								      
 
 frosty.py
 woodstock.py
