@@ -1,7 +1,8 @@
 Saturday Software: Sat Dec 18th, 2021 8:05 am PST
 Nested Switch works and runs thru bypass205().
 Pure nirvana. All of the hardship to get it working is over with.
-Disbelief. Fixed bug last night that help me up. Total dream seeing it working.
+Disbelief. Fixed bug last night that held me up. As Alan Turning described bugs as snags - it's true.
+Total dream seeing it working.
 Will upload later tomorrow evening.
 
 
