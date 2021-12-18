@@ -1,3 +1,11 @@
+Saturday Software: Sat Dec 18th, 2021 8:05 am PST
+Nested Switch works and runs thru bypass205().
+Pure nirvana. All of the hardship to get it working is over with.
+Disbelief. Fixed bug last night that help me up. Total dream seeing it working.
+Will upload later tomorrow evening.
+
+
+
 Tuz Dec 14th, 2021 11:29am PST Morgan Hill, California Starbucks free WiFi.
 I just uploaded the critical files for the automated nested switching to work.
 
