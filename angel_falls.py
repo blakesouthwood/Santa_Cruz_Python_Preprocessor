@@ -1,3 +1,11 @@
+#this will be renamed but is for testing.
+the actual code is triggered by endswitch(string) at bottom of switch case.
+
+but for testing it looks like this:
+topvalue[0]='1' #input value for top of switch(x)
+clever_cat() #this triggers the switch case parser and code gen concat generated strings and exec(code)
+
+
 Real test output of jumping around nested switches in a main switch:
 BBEdit
 ##========
