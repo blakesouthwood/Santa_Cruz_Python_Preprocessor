@@ -1,3 +1,28 @@
+Saturday, Dec 18th. 2021 11:28 am Gilroy, California 
+
+Inspired by: https://www.youtube.com/watch?v=_Yhyp-_hX2s&list=RDGMEMHDXYb1_DDSgDsobPsOFxpAVM_Yhyp-_hX2s&start_radio=1
+Eminem Lose Yourself To Cease Everything You Wanted
+
+As I just discussed with my brother, what just saved this project from familure was building it in sections and then
+at the very end (the past month) I broke the project into two pieces that I worked on seperately. The end game plan
+was to verify that the main bypass engine was working and that the code ran. The other part was concatting the strings together
+accurately and then making sure that the generated code executed. I was watching Heavy Booster and Starship before they
+were stacked and it gave me the idea to split the project at the end to make sure the two critical pieces work independently.
+I failed when i made the frosty.py file that imported the files and I had to import lists and it was a mess. My mind set was
+similar to a web app and it was not working properly so I restarted and then cut out the tron3 file to focus on concatting and
+execu(code) seperately since the bugs were coming fast and furious which was raising my frustartion level and as I continued
+to flail I decided to utilize divide and conquoer and finally I broke through and got it working. I then compared what was working
+and gradually figured out the bugs with test code what was running and where it wasn't propertly calling nested switches.
+
+It was just last night that it started beginning working properly in the three piece set of mini modules all together in one file.
+
+
+#==============================================
+Next I will test some javascript and C switch cases and make sure that this new python switch case
+exhibits the identical running behavior of C and Javascript switch cases.
+I will also add the free floating default from C where default can be located anywhere within a switch case and not
+necessarily at the bottom. Though for implimentation that is where the default ends up after parsing.
+
 Saturday Software: Sat Dec 18th, 2021 8:05 am PST
 Nested Switch works and runs thru bypass205().
 Pure nirvana. All of the hardship to get it working is over with.
