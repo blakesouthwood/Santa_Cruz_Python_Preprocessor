@@ -3,6 +3,9 @@ Saturday, Dec 18th. 2021 11:28 am Gilroy, California
 Inspired by: https://www.youtube.com/watch?v=_Yhyp-_hX2s&list=RDGMEMHDXYb1_DDSgDsobPsOFxpAVM_Yhyp-_hX2s&start_radio=1
 Eminem Lose Yourself To Seize Everything You Wanted
 
+Trance coding music:Dream State Logic:  https://www.youtube.com/watch?v=oJXksJxXjk4
+coding music: Children  https://www.youtube.com/watch?v=CC5ca6Hsb2Q
+		
 As I just discussed with my brother, what just saved this project from failure was building it in sections and then
 at the very end (the past month) I broke the project into two pieces that I worked on seperately. The end game plan
 was to verify that the main bypass engine was working and that the code ran. The other part was concatting the strings together
