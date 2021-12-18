@@ -1,3 +1,57 @@
+Real test output of jumping around nested switches in a main switch:
+BBEdit
+##========
+input is  1
+where's the dog house!
+first prize
+you block head Charlie Brown 9
+kangaroo hop hop!
+this is nested swith 11
+this is nested switch 15
+nested switch 23 tahoe
+yep
+nice
+we very done
+yep
+nice
+nested switch62
+this is nested switch 66 cool
+yep
+nice
+taught me how thru write code file called gold1
+mocha blast
+== 31 flavors===
+the end
+result[0] = 0
+#=====================================
+Sublime Text output
+
+
+input is  1
+where's the dog house!
+first prize
+you block head Charlie Brown 9
+kangaroo hop hop!
+this is nested swith 11
+this is nested switch 15
+nested switch 23 tahoe
+yep
+nice
+we very done
+yep
+nice
+nested switch62
+this is nested switch 66 cool
+yep
+nice
+taught me how thru write code file called gold1
+mocha blast
+== 31 flavors===
+the end
+result[0] = 0
+[Finished in 265ms]
+
+
 Saturday, Dec 18th. 2021 11:28 am Gilroy, California 
 
 Inspired by: https://www.youtube.com/watch?v=_Yhyp-_hX2s&list=RDGMEMHDXYb1_DDSgDsobPsOFxpAVM_Yhyp-_hX2s&start_radio=1
