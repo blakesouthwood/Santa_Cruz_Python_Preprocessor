@@ -1,3 +1,22 @@
+
+Dec 19th 2021 10:06 am Sunday morning coding. 
+KKUP Neptune Currents sunday mornings only = great trance music great music 91.5 FM Santa Clara
+KZSU Stanford 90.1 FM both accessable using MyTuner Radio app on mac
+	
+#refactoring and testing the whole project regular switches and nested switches
+# music:  https://www.youtube.com/watch?v=-CmadmM5cOk  Taylor Swift Style
+
+What I worked on yesterday was generating the nested switch and running it from input strings of Javascript/C switch cases already split up
+Today I found the code that creates the split separated input switch strings that are fed into quail.
+I also just refactored a remove junk spaces from input strings to prevent disaster.
+I still need to wire it all together (it has been joined in the past) and all should go well.
+
+Need to work on some modifications in the generated code so that the nested switches get the proper input which was 
+an earlier (past) but preventing the triggering of the nested switches.
+
+
+
+
 #this will be renamed but is for testing.
 the actual code is triggered by endswitch(string) at bottom of switch case.
 
