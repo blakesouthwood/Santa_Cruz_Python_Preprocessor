@@ -6,6 +6,135 @@ KZSU Stanford 90.1 FM both accessable using MyTuner Radio app on mac
 #refactoring and testing the whole project regular switches and nested switches
 # music:  https://www.youtube.com/watch?v=-CmadmM5cOk  Taylor Swift Style
 
+
+This morning I refactored cleaning up errant spaces in front of the first word of each line in the input
+switch case strings for each switch case body.
+
+
+newlist=[]
+newtime=''
+thelist=[]
+finaloutput=[]
+finaloutput.append(0) #creates slot
+'''
+this cleans up input javascript code that is supposed to be 
+governed by tabs in front ala Python and if a space is discovered
+it is neutralized and deleted. 
+This first counts the tabs in each line in the string.
+second it cuts out all spaces and tabs from left of each line
+then it concats a new string with the correct tab count in
+front of each line so it's CLEANED UP essentially. 
+
+'''
+#bad input
+examplestring='''
+	      switch(exp){
+	    	case 1 thru 3:
+		  	print("where\'s the dog house!")
+	  		    print('first prize')
+	  		    print('you block head Charlie Brown')
+			fallthru
+	  	case 4 to 7:
+	     		      print('first prize')
+	     		print('you block head Charlie Brown')
+		         case 9 thru 11:
+'''
+#cleaned up output becomes
+'''
+	switch(exp){
+		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+		case 4 to 7:
+			print('first prize')
+			print('you block head Charlie Brown')
+		case 9 thru 11:
+'''
+finalstage=[]
+finalstage.append(0)
+##========================================
+##  cut_out_left_side(inputstring):
+##========================================
+def cut_out_left_side(inputstring):
+    print("cout out left side")
+    fancy=''
+    for line in inputstring.splitlines():
+        #print(line)
+        newline = line.lstrip() #I am using lstrip() look at that!!
+        fancy += newline + "\n"
+    finalstage[0] = fancy
+    ## concatting tabs in front + line to redone
+
+
+##========================================
+##  concat_tabs_in_front(fancy):
+##========================================
+def concat_tabs_in_front(fancy):
+    print("conctat_tabs_in_front()")
+    redone='';counter=0
+    for line in fancy.splitlines():
+        #print(newlist[counter])
+        print("bad assed")
+        redone += newlist[counter] + line + "\n"
+        counter += 1
+        if counter >= len(newlist):#prevents out of range error
+           break
+    finaloutput[0]= redone
+    print("right here the OUTPUT =",finaloutput[0])
+
+
+#==================================
+#   append_result()  pure genius   
+#=================================  
+def append_result(x):
+    tab = "\t"
+    result = tab * x;
+    newlist.append(result)  
+    #this replaces: #if item == 1:result = tab * 1;newlist.append(result)
+
+#puts tab count in each line into thelist
+##===============================================================
+## count_tabs_in_each_line_and_put_into_thelist(inputstring):
+##===============================================================
+def count_tabs_in_each_line_and_put_into_thelist(inputstring): 
+    del thelist[:];del finaloutput[:];finaloutput.append(0) #creats one slot space
+    for line in inputstring.splitlines():
+        answer =line.count("\t") 
+        thelist.append(answer)
+             
+#made into a function on saturday, dec 4th morgan hill starbucks 
+# refactored on dec 19th for efficiency and management
+##=======================================================
+##  take_out_junk_spaces_from_left_side(inputstring):
+##=======================================================
+def take_out_junk_spaces_from_left_side(inputstring):
+    print("take out junk spaces from left side")
+    print(inputstring)
+    count_tabs_in_each_line_and_put_into_thelist(inputstring) # METHOD
+    for item in thelist:  #fill a list with tabs corresponding to numberof tabs numbers
+        x = item;
+        append_result(x)                                      # METHOD
+        
+    cut_out_left_side(inputstring)#puts fancy in finalstage[0]# METHOD
+    fancy =finalstage[0]
+    concat_tabs_in_front(fancy)                               # METHOD 
+ 
+#####################################################################
+print("here we go big time test..........fireworks...")
+##take_out_junk_spaces_from_left_side(coolinthegang)
+#for line in finaloutput[0].splitlines():
+#    print(line)
+    
+#### takes out bad data messing up tabs    
+take_out_junk_spaces_from_left_side(examplestring) #<<===== function call 
+for line in finaloutput[0].splitlines():           ## output is in finaloutput[0]
+    print(line)
+    
+exit()    
+
+
 What I worked on yesterday was generating the nested switch and running it from input strings of Javascript/C switch cases already split up
 Today I found the code that creates the split separated input switch strings that are fed into quail.
 I also just refactored a remove junk spaces from input strings to prevent disaster.
@@ -13,7 +142,6 @@ I still need to wire it all together (it has been joined in the past) and all sh
 
 Need to work on some modifications in the generated code so that the nested switches get the proper input which was 
 an earlier (past) but preventing the triggering of the nested switches.
-
 
 
 
