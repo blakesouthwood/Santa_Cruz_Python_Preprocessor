@@ -29,6 +29,316 @@ and put each of these switch bodies into a list
 ##===============================================
 These two behaviors 1 and 2 now work together.
 
+#input and output of what these two puzzle pieces do:
+github messes it up so it's close to the left margin than how it's displayed here which is misleading..
+INPUT:
+'''
+		switch(exp){ #1
+  		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			#############
+			switch(exp){ #11
+  				case 'blable':
+					print("do something")
+					####################
+					switch(exp){ #15
+ 						case 'tahoe':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							####################
+							switch(exp){ #23
+    								case 'tahoe':
+									print("do something")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice")
+									break
+								default:
+									print("we are done here")
+							endswitch #33
+ 							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #38
+ 					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch #47
+ 			exp = 3
+			switch(exp){ #49
+				case 'burger':
+					print("do something")
+					####################
+					switch(exp){ #53
+   						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #64
+ 					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch #73
+			##############
+			print('taught me how to write code')
+			fallthru
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+		default:
+			print('the end')
+}
+'''
+####==========================================================
+#pairs list output shown here 
+#numbers are pairs of switch, endswitch line numbers
+snowtime= [[11, 47], [49, 73], [15, 38], [53, 64], [23, 33]]
+counter= 1
+
+	switch(exp){ #1
+  		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			#############
+			switch(exp){ #11
+  				case 'blable':
+					print("do something")
+					####################
+					switch(exp){ #15
+ 						case 'tahoe':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							####################
+							switch(exp){ #23
+    								case 'tahoe':
+									print("do something")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice")
+									break
+								default:
+									print("we are done here")
+							endswitch #33
+ 							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #38
+ 					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch #47
+ 			exp = 3
+			switch(exp){ #49
+				case 'burger':
+					print("do something")
+					####################
+					switch(exp){ #53
+   						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #64
+ 					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch #73
+			##############
+			print('taught me how to write code')
+			fallthru
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+		default:
+			print('the end')
+}
+
+===========
+counter= 2
+			#############
+			switch(exp){ #11
+  				case 'blable':
+					print("do something")
+					####################
+					switch(exp){ #15
+ 						case 'tahoe':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							####################
+							switch(exp){ #23
+    								case 'tahoe':
+									print("do something")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice")
+									break
+								default:
+									print("we are done here")
+							endswitch #33
+ 							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #38
+ 					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch #47
+
+===========
+counter= 3
+ 			exp = 3
+			switch(exp){ #49
+				case 'burger':
+					print("do something")
+					####################
+					switch(exp){ #53
+   						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #64
+ 					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch #73
+
+===========
+counter= 4
+					####################
+					switch(exp){ #15
+ 						case 'tahoe':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							####################
+							switch(exp){ #23
+    								case 'tahoe':
+									print("do something")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice")
+									break
+								default:
+									print("we are done here")
+							endswitch #33
+ 							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #38
+
+===========
+counter= 5
+					####################
+					switch(exp){ #53
+   						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #64
+
+===========
+counter= 6
+							####################
+							switch(exp){ #23
+    								case 'tahoe':
+									print("do something")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice")
+									break
+								default:
+									print("we are done here")
+							endswitch #33
+
+===========
+the switch strings cut up are now printed out top down
+								
 The top half will fill the columbia_river list which is then fed into the quail list which runs thru bypass205()
 
 The other half of the nested switch module is connecting this top half (above) to the rest of the nested project which takes these input strings
