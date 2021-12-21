@@ -30,7 +30,7 @@ and put each of these switch bodies into a list
 These two behaviors 1 and 2 now work together.
 
 #input and output of what these two puzzle pieces do:
-github messes it up so it's close to the left margin than how it's displayed here which is misleading..
+github messes it up so it's closer to the left margin than how it's portrayed and displayed here which is misleading..
 INPUT:
 '''
 		switch(exp){ #1
