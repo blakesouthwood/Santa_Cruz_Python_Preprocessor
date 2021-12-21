@@ -1,4 +1,680 @@
+Dec 21st, 2021 8:17 am PST Morgan Hill, California
 
+About to connect the two last pieces together.
+
+I have been diligently testing the generated python (which works) and concatting it and executing it with exec(string)
+and it works. I am speechless to have made it to this juncture. The rush is overwhelming.
+
+I was setting the exp='word'  or exp='3' for the nested switches and have been researching how C style guide at Yale
+and elsewhere describe the convention for setting vars for inputs of nested switches which is new to me so I will
+incorporate that feature in a few days utilizing a list.
+
+a = '100', b = '200'
+switch(a)
+     switch(b)
+	
+Refactoring. Connecting it all together.
+Trapeze act next connecting the two pieces now.
+
+#these two sections do these behaviors representing the FIRST HALF of the mission
+1 Scan thru the input nested switch string and get the switch and endswitch locations and build pairs 
+predicated on the tab count and proximity of the switch and endswitch neighboring proximity.
+
+2 Copy the switch body strings based on the switch/endswitch pairs
+and put each of these switch bodies into a list
+
+##===============================================
+These two behaviors 1 and 2 now work together.
+
+The top half will fill the columbia_river list which is then fed into the quail list which runs thru bypass205()
+
+The other half of the nested switch module is connecting this top half (above) to the rest of the nested project which takes these input strings
+and runs each switch string thru the chain methods and then they are put into the quail list
+and fed into bypass205() which then converts them from JavaScript into Python and finally executes the 
+resulting concatted string after having converted each switch body into a unique method numbered.
+        
+## loops thru tabsubs and appends item to tabcount
+#=========================
+#  little_method(tabcount)            
+#=========================
+def little_method(tabcount): #threetabs example is the param here in tabcount
+    #print(" little_method() called")
+    for item in tabsubs:
+        tabcount.append(item)
+    del tabsubs[:]
+        
+        
+        
+tabsubs=[]
+threetabs=[]
+fivetabs=[]
+seventabs=[]
+ninetabs=[]
+eleventabs=[]
+thirteentabs=[]
+fifteentabs=[]
+
+#used by the super duper function with 6 methods in it
+#===============================
+
+first=[]
+add_tab_depth=[]
+holding_themax=[]
+holding_themax.append(0) #to create slot
+christmastree=[]
+second=[]   #this takes an inputstring which is the combined switchcase big string
+slydog=[]
+snowtime=[]
+mylistinput=[]
+#===========================
+super_listinput=[]
+
+def put(x):
+    listinput.append(x)
+
+
+
+#==============================
+#  build_listinput_list  for threetabs,fivetabs, seventabs,ninetabs, eleventtabs,thirteentabs
+#==============================
+def build_list_input_list():  #line 976
+    #print('====================METHOD 3 ==== line 976===>>>')
+    #print("this is .. build_list_input_list() ...")
+    #print("it gopher sees right here ",holding_themax[0])
+    #holding_themax[0]
+    mx = holding_themax[0] #it's using this number 
+    #print(type(holding_themax[0]))
+    #print("is it REALLY say 7  above this line???")
+    
+    input= holding_themax[0]
+    #cascading down is how it works
+    if holding_themax[0] >= 3: put(3);
+    if holding_themax[0] >= 5: put(5);
+    if holding_themax[0] >= 7: put(7); 
+    if holding_themax[0] >= 9: put(9); 
+    if holding_themax[0] >= 11:put(11);
+    if holding_themax[0] >= 13:put(13);
+    if holding_themax[0] >= 15:put(15);
+       
+    #print("at bottom of ifs what is in listinput")
+    #print(listinput)
+    for item in listinput:
+        super_listinput.append(item)
+    #print("super_listinput =",super_listinput)
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+##=================================
+##  list_tabs_lists_by_depth():
+##================================== 
+def list_tabs_lists_by_depth():
+    pass
+    #print("==list tabs lists by depth=====METHOD 5======>>")
+    #print("threetabs=" ,threetabs); print("fivetabs="  ,fivetabs);
+    #print("seventabs=" ,seventabs); print("ninetabs="  ,ninetabs);
+    #print("eleventabs=",eleventabs);print("thirteentabs=",thirteentabs) 
+    
+
+
+
+
+
+
+
+
+
+
+#this takes in the tab depth with x and goes thru the string
+#and fills the appropiate tab list if 3 then threetabs, if 5 then fivetabs
+##====================================================
+## internal_machinery()   designed wed sep 29th, 2021
+##====================================================
+## key engine inside of function this_makes_switch_and_endswitch_pairs_by_tab_levels()
+def internal_machinery(x,inputstring): #this doesn't change anything in the string whatsoever
+    #print("")
+    #print("===internal_machinery() called=== METHOD 4.5  inside of METHOD 4  ===")
+    #print("=== this is just sick bad ass ========")
+    #print("inputstring",inputstring);print("tabsubs ",tabsubs, " ",x)
+    counter=0
+    for line in inputstring.splitlines():
+        tab_length = line.count("\t")
+        if tab_length != x or "switch" not in line:
+            counter += 1; continue
+        if tab_length == x: 
+            if "switch" in line and "end" not in line:
+                tabsubs.append(counter);counter += 1;continue
+            if "endswitch" in line:
+                tabsubs.append(counter);counter += 1;continue 
+    #print("tabsubs = ",tabsubs) #this can be increased to manage n number of tabs depth
+    if   x == 3: little_method(threetabs)
+    elif x == 5: little_method(fivetabs)
+    elif x == 7: little_method(seventabs)
+    elif x == 9: little_method(ninetabs)
+    elif x == 11:little_method(eleventabs)
+    elif x == 13:little_method(thirteentabs)
+    else:
+        pass
+        #print("nada")
+        #print("these are the tab lists from three to thirteen rudolph fly")
+        #print("3 and 5 tabs =",threetabs ," ",fivetabs)    
+        #print("7 and 9 tabs =",seventabs ," ",ninetabs)   
+        #print("11 and 13 tabs  =",eleventabs," ",thirteentabs)   
+
+
+
+
+
+
+
+##==================================================
+## make_switch_and_endswitch_pairs_by_tab_levels() 
+##=================================================== 
+def make_switch_and_endswitch_pairs_by_tab_levels(): 
+    #print("make_switch_and_endswitch_pairs_by_tab_levels()")
+    #print(":=============== METHOD 4 ======") 
+    for item in super_listinput:     # listinput is dynamically made above
+        x = item;
+        internal_machinery(x,inputstring)
+     
+    #print("  make_switch_and_endswitch_pairs_by_tab_levels(): ")
+    #print("listinput list =",listinput)
+    #print("THIS IS CALLING INTERNAL_MACHINERY METHOD ")   
+    #for item in listinput:     # listinput is dynamically made above
+    #    x = item;
+    #    internal_machinery(x,inputstring)   #METHOD internal_machinery()
+
+
+
+
+###=============================== 
+ 
+        #del tabsubs[:] #should clear it
+###=================
+rattabs=[]
+##==== goldmedal test()  this just does threetabs 
+def goldmedaltest(): #this makes stacks column switch endswith for 3 tabs
+	#print("=======goldmedal test=== this one is correct== its gotta work now please ---")
+	inputstring = red_robin
+	#print("original working code for 3 tabs that worked previously")
+	counter =0
+	for line in inputstring.splitlines():
+		print(line)
+		#######################
+		tab_length = line.count("\t")
+		if tab_length != 3 or "switch" not in line:
+			counter += 1;continue
+		#######################
+		if tab_length == 3:
+			if "switch" in line and "end" not in line:
+				#print("if switch called")
+				#print("======switch in line===")
+				rattabs.append(counter)
+				print(rattabs)
+				counter += 1;continue
+			if "endswitch" in line:
+				print("if endswitch called")
+				print("======endswitch in line======")
+				rattabs.append(counter)
+				print(rattabs)
+				counter += 1; continue
+
+#print("result of goldmedal test =")
+#goldmedaltest()
+
+
+
+#was in experiemntal machinery below
+'''
+    for line in inputstring.splitlines():
+        print(line)
+        tab_length = line.count("\t")
+        if tab_length != 3 or "switch" not in line:
+            counter += 1;continue
+        ##################
+        if tab_length == 3:
+            if "switch" in line and "end" not in line:
+                print("if switch called")
+                print("======switch in line===")
+                dumbtabs.append(counter)
+                print(threetabs)
+                counter += 1;continue
+            if "endswitch" in line:
+                print("if endswitch called")
+                print("======endswitch in line======")
+                threetabs.append(counter)
+                print(threetabs)
+                counter += 1; continue
+    print("this one blast time for 31 flavors THIS IS THREE TABS === ---")
+    print("threetabs=",threetabs)
+'''
+    
+    
+    
+    
+    
+#print('testing the internal machinery method engine now')
+#threetabs=[]
+#endtabslist=[]
+#endswitchlinenumbers=[]
+#dumbtabs=[]
+##==============================
+##  experimental_machinery
+##===============================
+def experimental_machinery(x,inputstring):
+    #print("======experimental_machinery called==========")  
+    counter =0
+    #newstring='data on analyzing a multinested string to number the endswitches and tabs' + "\n"
+    collosal='';tab_length=''
+    #print(newstring)
+    internal_machinery(x,inputstring)
+ 
+    ###============
+    #switches and endswitches at 3 tabs should be even number
+#print("dumbtabs =",dumbtabs)
+
+#print("== bees ==== this_makes_switch_and_endswitch_pairs_by_tab_levels(inputstring) ====")
+#print("try_all_three(inputstring)")
+#print("=====halloween ghosts trying all three 3 5 7 tabs now====")
+#print(" === to the moon when will starship land ===")
+#print("======= TESTING NEW CODE HERE WEDNESDAY to get the larget tab depth in string")
+# this determines the highest tab count for a line with a switch
+# which is used to create the listinput list
+
+#try all three()  Did this one on Wednesday late sep
+
+#threetabs=[[22,33],[44,66]]
+#fivetabs =[[55,58],[77,86]]
+#seventabs=[[88,99],[102,110]]
+
+combined_tabs=[]
+christmastree=[]
+
+##============================================
+## combine the lists together  #waterfall ifs
+##=============================================
+def combine_the_lists_together(x): 
+    get_length_of_threetabs    = len(threetabs)
+    get_length_of_fivetabs     = len(fivetabs)
+    get_length_of_seventabs    = len(seventabs)
+    get_length_of_ninetabs     = len(ninetabs)
+    get_length_of_eleventabs   = len(eleventabs)
+    get_length_of_thirteentabs = len(thirteentabs)
+    #test if threetabs list is empty
+    #print("testing if length of threetabs list GREATER THAN 0")
+    if get_length_of_threetabs > 0: #then proceed there is at least one
+        #print("YES length of threetabs IS GREATER THAN 0",get_length_of_threetabs)
+        #this is a waterfall extending numbers to add to christmastree list
+        if x >=  3:christmastree.extend(threetabs);
+        if x >=  5:christmastree.extend(fivetabs);  
+        if x >=  7:christmastree.extend(seventabs);
+        if x >=  9:christmastree.extend(ninetabs); 
+        if x >= 11:christmastree.extend(eleventabs);
+        if x >= 13:christmastree.extend(thirteentabs);
+    
+    else:
+        pass
+        #print('all of the tab lists are empty')
+        #print("don't bother trying to extend empty tab lists")
+       
+         
+    #print('at le bottom of function combine_the_lists_together christmastree list now has')
+    #print(christmastree)
+    #print(":what is in the christmas list above here starbucks")
+    #print("the chrsitmastree list is what should be whole at this point HER!!!")
+    
+
+
+##========================================================
+##  build_tab_list_added_together(largest_tab_number):   Thursday, Nov 4th, 2021 
+#   this does this combined_tabs = threetabs + fivetabs + seventabs etc
+##========================================================
+def build_tab_list_added_together(largest_tab_number):
+    #print("=== build_tab_list_added_together(x)======>>>>")
+    #print("this combines separate lists together into one list all be it clumsily")
+    #print("larget_tab_number =",largest_tab_number)
+    del christmastree[:] #clears out the combined_tabs list to erase it
+    #print("about to call combine_the_lists_together wed nov 17th ")
+    ## calling combine the lists together here 
+    combine_the_lists_together(largest_tab_number) #<<==input is the largest tab number
+    
+    
+    
+
+
+ 
+ 
+fox=[]  #this is just a simple test 
+def wildtest(themax):
+    print("themax =",themax)
+    print("called wildtest to add to list")
+    if themax == 3: 
+      fox.append(3) #.append(3)
+      
+    if themax == 5: 
+      fox.append(5)
+      
+    if themax == 7: 
+      fox.append(7)
+      
+      
+    #if themax == 9: fox = [3,5,7,9]
+    #if themax == 11:fox = [3,5,7,9,11]
+    #if themax == 13:fox = [3,5,7,9,11,13]
+    #if themax == 15:fox = [3,5,7,9,11,13,15]
+
+#print("starting fox list =",fox)
+#wildtest(3)   
+#wildtest(5)   
+#wildtest(7)  
+#print("fox list =",fox)
+#print("above it should say 3,5,7")
+#print("road to tahoe is up hill")
+
+
+
+#==========================================================
+# combine_tabs_by_length_into_christmastree_list(input)
+#==========================================================
+def combine_tabs_by_length_into_christmastree_list():
+    #print("== combine tabs by length into christmastree_list======")
+    #print("======METHOD 6 ===  combine tabs by length into christmastree_list====>>>>")
+    themax = holding_themax[0] #this gets the highest tab level (deeply nested)
+    #print("where is my coffee now")
+    #print('let us look in the three tabs list threetabs, fivetabs, seventabs')
+    #print(threetabs,fivetabs,seventabs)
+    build_tab_list_added_together(holding_themax[0])   #METHOD  7
+    #print("christmastree=",christmastree)
+    #print("")
+    
+
+         
+
+
+
+#================================= 
+#  build_pairs_with_jazz()
+#=================================  
+#this goes thru christmas list of pairs and and makes snowtime list of pairs jazz added to snowtime 
+def build_pairs_with_jazz(): 
+    #print("")
+    #print("=== METHOD 7== build pairs with jazz =======>>>>")
+    #print("")
+    counter =0
+    #print("inside of build pairs with jazz the christmastree list show")
+    #print("christmastree=",christmastree)
+    for x in christmastree: #loops thru at 2 at a time
+       # print(christmastree[counter],christmastree[counter +1])
+        jazz = [christmastree[counter],christmastree[counter+1]]
+        #print("appending jazz to snowtime list now")
+        #list snowtime starts virgin and then we append jazz pairs to it
+        snowtime.append(jazz) #using startime as practice main pairs list for now nov 3
+        counter += 2 
+        ##=========================================================
+        #prevents overflow error for out of range error
+        #print("this is the resulting pair list that is so coveted")
+        #print("this used the jazz pair pair system that works")
+        #print("snowtime list=",snowtime)
+        if counter >= len(christmastree):
+            break
+            
+            
+            
+            
+            
+            
+            
+#=======================================
+#  build_tab_depth(inputstring)
+#========================================            
+def build_tab_depth(inputstring):
+    #print("")
+    #print("build tab depth ==== METHOD 1 ==  build_tab_depth(=======>>")
+    #print("")
+    for line in inputstring.splitlines():
+        if "switch" in line and "end" not in line: #this is looking for a switch in a line
+            get_tab_depth=line.count("\t")         #this is a var that gets the count of tabs
+            add_tab_depth.append(get_tab_depth)    #this is for filling the list of each tab depth
+        else:
+            continue
+    #print("add_tab_depth=",add_tab_depth)
+    #print("max tab depth=",add_tab_depth[0])
+            
+      
+      
+      
+      
+      
+            
+            
+def loop_thru_pairs_in_snowtime():
+    #print(" ==== #method 8 ===  loop_thru_pairs_in_snowtime()=============")
+    #print("snowtime list=",snowtime)
+    for item in snowtime:  
+        #print(item);
+        rad1=item[0];rad2=item[1];
+        #print(rad1,"and ",rad2)
+    #print("this is the output list that was generated.") 
+    print("snowtime list=",snowtime)
+
+
+
+
+##=======================================
+## get_max_tab_number_in_list()
+##=======================================       
+def get_max_tab_number_in_list():  #this fills the max holding_themax[0]
+     #print("====================  #METHOD 2 ========")
+     #add_tab_depth = input
+     themax = max(add_tab_depth);  #a list of the tabs before switches
+     holding_themax[0]=themax;
+     #print("themax=",themax)
+
+
+#def goldtime():
+#    print("goldtime callled goldtime goldtime")
+#    for item in super_listinput:     # listinput is dynamically made above
+#        x = item;
+#        internal_machinery(x,inputstring)
+# REFACTORED on nov 8th , 2021 to reduce the complexity modified nov 9th
+
+
+##========================================================
+## this_makes_switch_and_endswitch_pairs_by_tab_levels
+##========================================================  
+def this_makes_switch_and_endswitch_pairs_by_tab_levels(inputstring):
+    #print("=======THIS MAKES SWITCH AND ENDSWITCH PAIRS BY TAB LEVELS========")
+    #welcome to - time 10;43 am nov 9th-")
+    #print("this is unreal; this_makes_switch_and_endswitch_pairs_by_tab_levels()")
+    build_tab_depth(inputstring)                           #METHOD 1
+    get_max_tab_number_in_list() #fills holding_themax[0]  #METHOD 2
+    build_list_input_list()                                #METHOD 3
+    make_switch_and_endswitch_pairs_by_tab_levels()        #METHOD 4
+    list_tabs_lists_by_depth()                             #METHOD 5
+    combine_tabs_by_length_into_christmastree_list()       #METHOD 6 
+    build_pairs_with_jazz()  #combines into sublist        #METHOD 7 
+    loop_thru_pairs_in_snowtime()                          #METHOD 8
+    #this will go into gold_list
+        
+        
+print("======================================")
+print("make it so star trek")
+print("using red_robin for our input string")
+inputstring = red_robin
+#print("what red_robin looks like before calling try_all_three=====")
+print(red_robin)
+#print("see how it looks above if there are double switches and endswitches yet")
+this_makes_switch_and_endswitch_pairs_by_tab_levels(inputstring)
+
+#exit()
+print("the output is snowtime list")
+print(snowtime)
+
+##==================================================================================================
+
+	
+	
+##============================================
+##  inputs_pair_to_copy_a_string()
+##============================================
+def inputs_pair_to_copy_a_string(start,finish):
+    #print("inputs pair to copy a string")
+    del start_and_finish[:] #this clears it out initializing it
+    start_and_finish.append(0) 
+    start_and_finish.append(start) #position [1]
+    start_and_finish.append(finish) #position [2]
+    #start_and_finish[1] = x
+    #start_and_finish[2] = y
+    #print("x=",start_and_finish[1])
+    #print("y=",start_and_finish[2])
+    
+########################################################################
+ #hard coded end of single nested switch 
+## COPY A NESTED SWITCH
+############################
+
+#so we have
+
+#############################
+r=find_nested_switch_game #thats the name of a string fin_nested_switch_came
+#linecounter=0
+makeitwork=[]
+makeitwork.append(0)
+## function copy a nested switch()   ==== I just put this into a function
+
+
+
+columbia_river=[]
+gold_list=[]
+###############################
+## copy_a_nested_switch(r):   # what this does is copy one nested switch 
+###############################
+def copy_a_nested_switch(r):  #copy just one nested string 
+    #print("= copy_a_nested_switch() called== just now 10;43 am ====")
+    innerswitch=''
+    #need to skip the first switch though so take out the first number from list
+    #global linecounter #this is new july 15th, 2021
+    linecounter=0 #where do start and finish come from ...oh  above, put into a list
+    answer=start_and_finish[1]
+    start_and_finish[1] = start_and_finish[1] - 1 #added this on dec 20th to show switch word
+    #print("it sees for start",start_and_finish[1],"and finish",start_and_finish[2])
+    for line in r.splitlines(): #if linecounter is between start and finish
+    #this should copy a full (every line) of a nested switch from switch to and including endswitch
+        # if lincounter >= 10 and linecounter <= 20; #this is what it means
+        if linecounter >= int(start_and_finish[1]) and linecounter <= int(start_and_finish[2]):
+            innerswitch += line + "\n"  #it's concatted to innerswitch string right here
+            linecounter += 1
+            continue
+        else:
+            linecounter += 1
+            continue
+    #print(":the result COPY OF NESTED SWITCH  ")        
+    #print(innerswitch)  #this is the copied string between lines 10 and 20 
+    roadrunner = innerswitch
+    makeitwork[0] = roadrunner #result of copied string goes in makeitwork[0]
+
+################################################################################
+
+#I need to fill this list (populate it from get switch engineswitch pairs
+#print("testing looping thru gold_list")
+#gold_list=[[1,100],[11,60],[15,51],[23,46],[31,41],[62,86],[66,77]]
+print("=======begin Sunday Morning Brew Testing=======")
+
+
+def show_switch_string_with_numbers_added_after_each_switch_with_a_comment(water):
+    for line in water.splitlines():
+        print(line)
+
+
+def show_the_snowtime_list_of_pairs():
+    print("snowtime=",snowtime)   
+    
+def empty_columbia_river_list():
+    del columbia_river[:] 
+    
+def add_main_switch_to_columbia_river(water):
+    columbia_river.append(water)  
+
+    
+holding_string=[]
+holding_string.append(0) 
+
+##============================================================================
+##  loop_thru_snowtime_list_copy_switch_bodies_and_add_to_columbia_river():
+##============================================================================   
+def loop_thru_snowtime_list_and_copy_switch_bodies_and_add_to_columbia_river():
+    for item in snowtime:#was gold_list #loop that gets switch,endswitch pair from goldlist
+        num1 = item[0];
+        num2 = item[1];
+        inputs_pair_to_copy_a_string(num1,num2) # get input string from goldlist
+        copy_a_nested_switch(holding_string[0]) # copy string based on switch,endswitch pair 
+                                                # puts resulting string into makeitwork[0] and output
+        output = makeitwork[0]                  # put nested string into columbia_river list
+        columbia_river.append(output)
+    #print("length of columbia river =",len(columbia_river))
+    #counter =1  #adding here the initial string which will be used to make the main switch
+
+
+    
+##=================================  
+## loop_thru_columbia_river() 
+##================================= 
+def loop_thru_columbia_river():
+    #print("now loop thru ====== COLUMBIA RIVER === to see the switch bodies seperated")
+    counter =1
+    for item in columbia_river:   #it is added just before looping thru i
+        print("counter=",counter)
+        print(item);
+        print("===========");
+        counter += 1    
+    
+          
+
+#gold_list= [[11, 47], [49, 73], [15, 38], [53, 64], [23, 33]]    
+
+##==============================================
+
+   #This takes in what has already split the mega nested switch into 
+   #switch bodies
+##=============================================================
+##  split_up_big_string_into_nested_switches(myinputstring)
+##=============================================================
+def split_up_big_string_into_nested_switches(myinputstring):#this would only be called once
+    print(" ==  split_up_big_string_into_nested_switches(inputstring)  ==")
+    water =add_comment_and_line_number_to_all_switches(myinputstring)               #METHOD 1
+    show_switch_string_with_numbers_added_after_each_switch_with_a_comment(water)   #METHOD 2
+    empty_columbia_river_list()                                                     #METHOD 3
+    show_the_snowtime_list_of_pairs()                                               #METHOD 4
+    add_main_switch_to_columbia_river(water)                                        #METHOD 5
+    holding_string[0] = water
+    loop_thru_snowtime_list_and_copy_switch_bodies_and_add_to_columbia_river()      #METHOD 6
+    loop_thru_columbia_river() #prints out seperated switch bodies top down         #METHOD 7               
+    ##==============
+    print("the switch strings cut up are now printed out top down")
+  
+##================================================================        
+##================================================================
+print("end of crucial test copying the strings and putting them into a list")
+split_up_big_string_into_nested_switches(red_robin)
+#this is new december 20th already my gosh.
+
+
+
+
+
+
+	
+	
+	
 Dec 19th 2021 10:06 am Sunday morning coding. 
 KKUP Neptune Currents sunday mornings only = great trance music great music 91.5 FM Santa Clara
 KZSU Stanford 90.1 FM both accessable using MyTuner Radio app on mac
