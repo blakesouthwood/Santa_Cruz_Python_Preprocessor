@@ -523,6 +523,70 @@ print("the output is snowtime list")
 print(snowtime)
 
 ##==================================================================================================
+# output is to inputstring[0]
+#############################################################
+passinputstring=[]
+smart_switch_numbers=[]
+loopstring=[]
+loopstring.append(0)
+#twinlist=[]
+passinputstring.append(0)  #get line number of switch and add number with comment to after all switches
+snowman=[]
+snowman.append(0)
+
+##===================================================
+##  add comment and lin number to all switches ()   ## put switch line number in
+##  this does this:   switch(exp)    becomes switch(exp) #22    for example based on the line number of each switch
+##  returns newstring which is concatted together changed switch string with numbered switches in the comment after each
+##===================================================
+def add_comment_and_line_number_to_all_switches(inputstring): #this modifies the original string
+	#print(" add_comment_and_line_number_to_all_switch()....this was just called .. ")
+	#print(" == directive 1 ==    ADD  comment and line number after each switch ")
+	awesome='';counter =0;newstring='';
+	#print('baseline is red_robin starting appearance testing purposes')
+	#print(inputstring)
+	
+	for line in inputstring.splitlines():
+		if "switch" in line and "end" not in line:
+			# NEED TO HANDLE BOTH SCENARIOS switch with brace and switch without a brace 
+			#############################################
+			#switch is in this line definitely
+			if "{" in line and "switch" in line and "end" not in line:
+			### new surgery ===dec 20th monday bug fix out of the blue =======
+				#if counter == 1: #modified for bu on dec 20th monday each number was off by 1 except first
+				newstring += line.replace("switch(exp){","switch(exp){ #" + str(counter) + "\n")
+				#else: #if counter > 1
+					#counter = counter + 1 #adding 1 to counter
+					#newstring += line.replace("switch(exp){","switch(exp){ #" + str(counter) + "\n")
+			
+			#end if
+			#this is necessary since the replace is quite specific and so no brace here
+			# NOTE: I am adding gthe brace if it's missing to switch 
+			if "{" not in line and "switch" in line and "end" not in line:
+				newstring += line.replace("switch(exp)","switch(exp){ #" + str(counter) + "\n")  
+			#end if  
+			smart_switch_numbers.append(counter) #this is new september 30th, 2021
+			counter += 1
+		####################################################
+		elif "endswitch" in line: #just added comment number after endswitch 
+			newstring += line.replace("endswitch","endswitch #" + str(counter) + "\n")
+			#smart_switch_numbers.append(counter) #this is new september 30th, 2021
+			counter += 1
+		###################
+		else:
+			newstring += line + "\n"
+			counter += 1
+	awesome = newstring #it was concatted to newstring which we now reassign to awesome then red_robin
+	#print("=== jump off the cliff and fly in hang glider ==")
+	#for line in newstring.splitlines(): #was redrobin.splitlines()
+	#	print(line)
+	#print("AFTER ADDING the line number as comments to the switches in red robin baby ")	
+	#print(newstring)   #it prints red_robin switch combo string with the line numbers added in comments
+	#print("smart_switch_numbers=",smart_switch_numbers)  #this is new here too 
+	return newstring #this way I can capture the changed string
+##===================================================================================
+#print("add comment and line number after each switch in autumnleaf")
+#print('one, two, three, here we go.')
 
 	
 	
