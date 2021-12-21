@@ -9,6 +9,9 @@ I was setting the exp='word'  or exp='3' for the nested switches and have been r
 and elsewhere describe the convention for setting vars for inputs of nested switches which is new to me so I will
 incorporate that feature in a few days utilizing a list.
 
+For nested switches the convention is apparently to set the vars for the nested switches above the entire nested switch case.
+The way I was implimenting it (which will still work) is setting the vars for switch input params just above
+each nested switch. 
 a = '100', b = '200'
 switch(a)
      switch(b)
