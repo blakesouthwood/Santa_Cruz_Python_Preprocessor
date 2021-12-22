@@ -4,8 +4,9 @@ I have the code for nested switches in one file module now
 I am slowly hooking the pieces together.
 I am testing each section independently from the running code as I gradually connect each piece together.
 I have canned hard coded data that works and now I am replacing each section with the running code
-by turning on each new module which are each running indepently for testing purposes for quality control.
-So I am slowly cascading down works tip toing down thru the flow of control. 
+by turning on each new module which are each running independently (outside realm of actual code) so in parallel,
+for testing purposes for quality control.
+So I am slowly cascading down works tip toeing down thru the flow of control. 
 
 Dec 21st, 2021 8:17 am PST Morgan Hill, California
 
