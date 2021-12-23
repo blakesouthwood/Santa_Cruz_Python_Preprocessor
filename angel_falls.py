@@ -286,8 +286,716 @@ def create_def_switch_methods_concatted_together_in_one_string():
     for line in fill_nested_switches_list[0].splitlines():
         print(line)
    			
+After going thru chain_methods the input strings are prepped for the parser and cleaned up and shifted left.
 								
-								
+								the length of stanford= 7
+=-- looping thru quail ==
+
+	switch(exp) #1
+		case 1 thru 3:
+			print("where's the dazzling dog house!")
+			print('first prize')
+			print('you block head Charlie Brown 9')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			#############
+			exp = 'blable'
+			nested_switch_11(exp) #11
+			exp = 'burger'
+			nested_switch_62(exp) #62
+			##############
+			print('taught me how to write code file called gold1')
+			fallthru
+			
+		 
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+		
+		default:
+			print('the end')
+}
+----------
+
+	switch(exp) #11
+		case 'blable':
+			print("this is nested swith 11")
+			####################
+			exp = 'fallen leaf lake'
+			nested_switch_15(exp) #15
+			#############
+			print("Blake testing again Southwood")
+			fallthru
+		case 'more':
+			print("nice")
+			break
+		default:
+			print("we are done here")
+}
+----------
+
+	switch(exp) #15
+		case 'tahoe':
+			print("do something")
+			print("yep")
+			fallthru
+		case 'fallen leaf lake':
+			print("Blake testing is nested switch 15")
+			####################
+			exp = 'tahoe'
+			nested_switch_23(exp) #23
+			#############
+			break
+		default:
+			print("we are done here")
+}
+----------
+
+	switch(exp) #23
+		case 'tahoe':
+			print("nested switch 23 tahoe")
+			print("yep")
+		case 'fallen leaf lake':
+			print("blake testing here")
+		####################
+			nested_switch_31(exp) #31
+			#############
+			break
+		default:
+			print("we are done here")
+}
+----------
+
+	switch(exp) #31
+		case 'fishy':
+			print("do something")
+			print("yep")
+			fallthru
+		case 'BLAKE TESTING now':
+			print("nice")
+			break
+		default:
+			print("we very done")
+}
+----------
+
+	switch(exp) #62
+		case 'burger':
+			print("nested sw62")
+			########testing ############
+			a = "three"  #added this just playing around here testing 
+			if a == "one":
+				exp = 'snow fire'
+			else:
+				exp = 'Monday'
+			nested_switch_66(exp) #66
+			#############
+			print("yep")
+			fallthru
+		case 'more':
+			print("nice")
+			break
+		default:
+			print("we are done here")
+}
+----------
+
+	switch(exp) #66
+		case 'fishy':
+			print("do this is sw 66")
+			print("yep")
+			fallthru
+		case 'snow fire':
+			print("this is nested switch 66 cool")
+			#############
+			break
+		default:
+			print("we are done here no matches")
+}
+----------
+after going thru bypass205 the input strings are now in python look like this in stanford list
+						
+						====looping thru Stanford as it is now===
+
+
+caselist1 = ['1', '2', '3']
+caselist2 = ['4', '5', '6', '7']
+caselist3 = ['8', '9', '10']
+caselist4 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['1', '2', '3']
+		print("where's the dazzling dog house!")
+		print('first prize')
+		print('you block head Charlie Brown 9')
+		fallthru('4')
+
+	elif case in caselist2: # ['4', '5', '6', '7']
+		print('kangaroo hop hop!')
+		#############
+		exp = 'blable'
+		nested_switch_11(exp) #11
+		exp = 'burger'
+		nested_switch_62(exp) #62
+		##############
+		print('taught me how thru write code file called gold1')
+		fallthru('8')
+
+	elif case in caselist3: # ['8', '9', '10']
+		print('mocha blast')
+		print('== 31 flavors===')
+		fallthru('default')
+
+	elif case in caselist4: # ['default']
+		print('the end')
+		break
+
+	else:
+		print('the end')
+		break
+
+
+
+
+caselist1 = ['blable']
+caselist2 = ['more']
+caselist3 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['blable']
+		print("this is nested swith 11")
+		####################
+		exp = 'fallen leaf lake'
+		nested_switch_15(exp) #15
+		#############
+		print("Blake testing again Southwood")
+		fallthru('more')
+
+	elif case in caselist2: # ['more']
+		print("nice")
+		break
+
+	elif case in caselist3: # ['default']
+		print("we are done here")
+		break
+
+	else:
+		print("we are done here")
+		break
+
+
+
+
+caselist1 = ['tahoe']
+caselist2 = ['fallen leaf lake']
+caselist3 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['tahoe']
+		print("do something")
+		print("yep")
+		fallthru('fallen leaf lake')
+
+	elif case in caselist2: # ['fallen leaf lake']
+		print("Blake testing is nested switch 15")
+		####################
+		exp = 'tahoe'
+		nested_switch_23(exp) #23
+		#############
+		break
+
+	elif case in caselist3: # ['default']
+		print("we are done here")
+		break
+
+	else:
+		print("we are done here")
+		break
+
+
+
+
+caselist1 = ['tahoe']
+caselist2 = ['fallen leaf lake']
+caselist3 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['tahoe']
+		print("nested switch 23 tahoe")
+		print("yep")
+		fallthru('fallen leaf lake')
+
+	elif case in caselist2: # ['fallen leaf lake']
+		print("blake testing here")
+	####################
+		nested_switch_31(exp) #31
+		#############
+		break
+
+	elif case in caselist3: # ['default']
+		print("we are done here")
+		break
+
+	else:
+		print("we are done here")
+		break
+
+
+
+
+caselist1 = ['fishy']
+caselist2 = ['blake testing now']
+caselist3 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['fishy']
+		print("do something")
+		print("yep")
+		fallthru('blake testing now')
+
+	elif case in caselist2: # ['blake testing now']
+		print("nice")
+		break
+
+	elif case in caselist3: # ['default']
+		print("we very done")
+		break
+
+	else:
+		print("we very done")
+		break
+
+
+
+
+caselist1 = ['burger']
+caselist2 = ['more']
+caselist3 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['burger']
+		print("nested sw62")
+		########testing ############
+		a = "three"
+		if a == "one":
+			exp = 'snow fire'
+		else:
+			exp = 'Monday'
+		nested_switch_66(exp) #66
+		#############
+		print("yep")
+		fallthru('more')
+
+	elif case in caselist2: # ['more']
+		print("nice")
+		break
+
+	elif case in caselist3: # ['default']
+		print("we are done here")
+		break
+
+	else:
+		print("we are done here")
+		break
+
+
+
+
+caselist1 = ['fishy']
+caselist2 = ['snow fire']
+caselist3 = ['default']
+
+
+switch(exp)
+while True:
+
+	if case in caselist1: # ['fishy']
+		print("do this is sw 66")
+		print("yep")
+		fallthru('snow fire')
+
+	elif case in caselist2: # ['snow fire']
+		print("this is nested switch 66 cool")
+		#############
+		break
+
+	elif case in caselist3: # ['default']
+		print("we are done here no matches")
+		break
+
+	else:
+		print("we are done here no matches")
+		break
+
+
+----------
+						
+then the output python strings are put into nested numbere methods in stanford list 
+with main at the bottom
+						def nested_switch_66(exp):	
+	
+	caselist1 = ['fishy']
+	caselist2 = ['snow fire']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#66
+	while True:
+	
+		if case in caselist1: # ['fishy']
+			print("do this is sw 66")
+			print("yep")
+			infallthru('snow fire')
+	
+		elif case in caselist2: # ['snow fire']
+			print("this is nested switch 66 cool")
+			#############
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we are done here no matches")
+			break
+	
+		else:
+			print("we are done here no matches")
+			break
+	
+
+-------------------
+counter= 1
+==========
+def nested_switch_62(exp):	
+	
+	caselist1 = ['burger']
+	caselist2 = ['more']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#62
+	while True:
+	
+		if case in caselist1: # ['burger']
+			print("nested sw62")
+			########testing ############
+			a = "three"
+			if a == "one":
+				exp = 'snow fire'
+			else:
+				exp = 'Monday'
+			nested_switch_66(exp) #66
+			#############
+			print("yep")
+			infallthru('more')
+	
+		elif case in caselist2: # ['more']
+			print("nice")
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+	
+		else:
+			print("we are done here")
+			break
+	
+
+-------------------
+counter= 2
+==========
+def nested_switch_31(exp):	
+	
+	caselist1 = ['fishy']
+	caselist2 = ['blake testing now']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#31
+	while True:
+	
+		if case in caselist1: # ['fishy']
+			print("do something")
+			print("yep")
+			infallthru('blake testing now')
+	
+		elif case in caselist2: # ['blake testing now']
+			print("nice")
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we very done")
+			break
+	
+		else:
+			print("we very done")
+			break
+	
+
+-------------------
+counter= 3
+==========
+def nested_switch_23(exp):	
+	
+	caselist1 = ['tahoe']
+	caselist2 = ['fallen leaf lake']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#23
+	while True:
+	
+		if case in caselist1: # ['tahoe']
+			print("nested switch 23 tahoe")
+			print("yep")
+			infallthru('fallen leaf lake')
+	
+		elif case in caselist2: # ['fallen leaf lake']
+			print("blake testing here")
+		####################
+			nested_switch_31(exp) #31
+			#############
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+	
+		else:
+			print("we are done here")
+			break
+	
+
+-------------------
+counter= 4
+==========
+def nested_switch_15(exp):	
+	
+	caselist1 = ['tahoe']
+	caselist2 = ['fallen leaf lake']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#15
+	while True:
+	
+		if case in caselist1: # ['tahoe']
+			print("do something")
+			print("yep")
+			infallthru('fallen leaf lake')
+	
+		elif case in caselist2: # ['fallen leaf lake']
+			print("Blake testing is nested switch 15")
+			####################
+			exp = 'tahoe'
+			nested_switch_23(exp) #23
+			#############
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+	
+		else:
+			print("we are done here")
+			break
+	
+
+-------------------
+counter= 5
+==========
+def nested_switch_11(exp):	
+	
+	caselist1 = ['blable']
+	caselist2 = ['more']
+	caselist3 = ['default']
+	
+	
+	inswitch(exp)#11
+	while True:
+	
+		if case in caselist1: # ['blable']
+			print("this is nested swith 11")
+			####################
+			exp = 'fallen leaf lake'
+			nested_switch_15(exp) #15
+			#############
+			print("Blake testing again Southwood")
+			infallthru('more')
+	
+		elif case in caselist2: # ['more']
+			print("nice")
+			break
+	
+		elif case in caselist3: # ['default']
+			print("we are done here")
+			break
+	
+		else:
+			print("we are done here")
+			break
+	
+
+-------------------
+counter= 6
+==========
+
+
+exp = varholder[0]
+def main_switch(exp):	
+	
+	caselist1 = ['1', '2', '3']
+	caselist2 = ['4', '5', '6', '7']
+	caselist3 = ['8', '9', '10']
+	caselist4 = ['default']
+	
+	
+	switch(exp)#1
+	while True:
+	
+		if case in caselist1: # ['1', '2', '3']
+			print("where's the dazzling dog house!")
+			print('first prize')
+			print('you block head Charlie Brown 9')
+			infallthru('4')
+	
+		elif case in caselist2: # ['4', '5', '6', '7']
+			print('kangaroo hop hop!')
+			#############
+			exp = 'blable'
+			nested_switch_11(exp) #11
+			exp = 'burger'
+			nested_switch_62(exp) #62
+			##############
+			print('taught me how thru write code file called gold1')
+			infallthru('8')
+	
+		elif case in caselist3: # ['8', '9', '10']
+			print('mocha blast')
+			print('== 31 flavors===')
+			infallthru('default')
+	
+		elif case in caselist4: # ['default']
+			print('the end')
+			break
+	
+		else:
+			print('the end')
+			break
+	
+
+-------------------
+counter= 7
+then they are concatted together into one string
+						
+this string is added on the top 
+						
+# =======  switch  =================================
+def switch(x):
+	#if type(x) != str:  #checks to make sure it's a string if for example a number is passed as x
+	#	x = str(x)
+	global case
+	case = x 
+# =======  fallthru       =========================
+def fallthru(y):
+	eval("switch('" + y + "')")
+#==================
+#for inswitch
+def inswitch(n):
+	#if type(x) != str:  #checks to make sure it's a string if for example a number is passed as x
+	#	n = str(n)
+	global case
+	case = n 
+#=====================
+# for infallthru    
+def infallthru(n):
+	eval("inswitch('" + n + "')")
+
+this is concatted at the bottom so it can call main
+						
+main_switch(varholder[0]) 
+						
+#then I concat it and exec(code)
+
+###==================================
+##  concat_items_in_list(x):
+##===================================
+def concat_items_in_list(x): #add_to_list added at top before this as input
+	print('--------concat items in list(x)---------------------------')
+	create_def_switch_methods_concatted_together_in_one_string() 
+	print("=======the contents of fill_nestd_switches_list[0]========")
+	for line in fill_nested_switches_list[0].splitlines():
+		print(line)
+	print("after printing out fill_nested_switches_list[0] ===>>>") 
+	print("concat_items_in_list() called with input x",x)
+	enter_value(x) #this is fed in from above 
+	print("=====concat items in list()====")
+	fireone[0]= True #when this is True it shows the code generated with print
+	global superball
+	print("after copying contents of fill_nested_switches_list[0] into")
+	print("future_nested_switches we have...")
+	future_nested_switches=fill_nested_switches_list[0]
+	#===========================================================================
+	superball =  method_defs + future_nested_switches + trigger + "\n"
+	##==========================================================================
+	superball=superball.replace("'''",'') #I think that this was the bug fix
+	#===========================================================================
+	print("we are printing out what superball looks like")
+	print(superball)
+	print("bottom underneath the pringting out of superball")
+	if show_code == True:
+		print(superball) #prints the generated switch code methods
+	else:
+		pass  #otherwise it prints nothing 
+	#so at this juncture the global var superball has the combined stacked string
+
+
+
+
+ 
+###=============================
+### clever_cat()  triggers the concatting and executing of the python
+### calls method: concat_items_in_list() filling superball and then executes it
+###=============================
+def clever_cat():
+    print("====CLEVER CAT called==chesire cat test=")
+    ### ==== executed here
+    concat_items_in_list(topvalue[0])#this builds the concatted string superball
+    print('input is ',varholder[0])
+    #exit()
+    #===========================
+    exec(superball, globals()) #runs the switchcase
+    #===========================
+##################################
+
+##=====================================
+topvalue[0]='1'
+clever_cat()						
+						
+						
+						
+						
+						
 Both big mini modules work indepently and now I am connecting them together in the same file 								
 								
 								
