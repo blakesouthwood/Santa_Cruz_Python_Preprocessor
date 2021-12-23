@@ -272,6 +272,48 @@ chain methods fun
 #############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###########
 #############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###########
 #############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###########
+passthis=[]
+passthis.append(0)
+##
+#this gets the tabdepth in front of top switch word
+##==================================================
+##  starter_engine(the_nest_string):   nov 30th tested working accurately
+##==================================================
+def starter_engine(the_nest_string):
+	print("======starter engine called======")
+	tabdepth='';n=''
+	for line in the_nest_string.splitlines(): #nest_string
+		if "switch" in line and "end" not in line: #had "not"
+			tabdepth = line.count("\t")
+			n= tabdepth;n = n-1  #need to have one tab in front
+			break
+	passthis[0]= n;
+	print("n =",n)
+
+
+
+goldtime=[]
+goldtime.append(0)
+##===================================================================
+##  modern_tab_shifter_to_left(the_nest_string):  nov 30th tested working
+##  methods: starter_engine()
+###==================================================================
+def modern_tab_shifter_to_left(the_nest_string):
+    print("====modern tab shifter to left=======")
+    starter_engine(the_nest_string)  #method call to get tabdepth on first switch line
+    buildstring='';n = passthis[0] #filled from starter_engine method number of tabs in front of switch
+    ### n is number of tabs in front of switch BEFORE CHANGING IT
+    if n == 0: #means one(1) tab in front of switch do nothing
+        buildstring =the_nest_string #no changes to indentation
+    if n > 1: #more than one tab in front of switch so cut some tabs out
+        for line in the_nest_string.splitlines():
+            buildstring += line[n:] +'\n' #this cuts out n tabs from the front of this line
+    goldtime[0] = buildstring
+    print("output of concatted string in goldtime[0]")
+    print("I wanna see it")
+    for line in buildstring.splitlines():
+        print(line)
+  
 
 
 #making this sucker work no matter what 
