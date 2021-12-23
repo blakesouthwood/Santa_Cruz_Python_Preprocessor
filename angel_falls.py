@@ -3,7 +3,7 @@ Dec 23rd 2021 thursday 10:06am  Morgan Hill Starbucks
 Currently playing with switch(true) but will figure it out later, no time right now
 	
 I have been reducing down the two last two minimodules that I am adding to the working code
-1) get switch pairs and seperate input strings into a list
+1) get switch pairs and separate input strings into a list
 2) chain methods converting each string for parser converting input prepped strings into python output numbered methods
 3) run thru bypass205 concat output strings and execute code
 ##============================================
