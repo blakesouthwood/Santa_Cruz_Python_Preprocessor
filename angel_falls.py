@@ -1,11 +1,295 @@
 Dec 23rd 2021 thursday 10:06am  Morgan Hill Starbucks 
-	
+NEO Class. BAMF
+
+I can do anything with code.
+
 Currently playing with switch(true) but will figure it out later, no time right now
 	
 I have been reducing down the two last two minimodules that I am adding to the working code
 1) get switch pairs and separate input strings into a list
 2) chain methods converting each string for parser converting input prepped strings into python output numbered methods
 3) run thru bypass205 concat output strings and execute code
+
+Adding these two chunk to seperate input strings from initial string.
+##===============================================================
+##   ==this_makes_switch_and_endswitch_pairs_by_tab_levels() ====
+##===============================================================  
+def this_makes_switch_and_endswitch_pairs_by_tab_levels(inputstring):
+    #print("===THIS MAKES SWITCH AND ENDSWITCH PAIRS BY TAB LEVELS========")
+    build_tab_depth(inputstring)                           #METHOD 1
+    get_max_tab_number_in_list() #fills holding_themax[0]  #METHOD 2
+    build_list_input_list()                                #METHOD 3
+    make_switch_and_endswitch_pairs_by_tab_levels()        #METHOD 4
+    list_tabs_lists_by_depth()                             #METHOD 5
+    combine_tabs_by_length_into_christmastree_list()       #METHOD 6 
+    build_pairs_with_jazz()  #combines into sublist        #METHOD 7 
+    loop_thru_pairs_in_snowtime()                          #METHOD 8
+    #print("==bottom of this makes switch and endswitch pairs by tab levels()")
+    #print("snowtime=",snowtime)
+    #this will go into gold_list
+
+##======================================================##=========================================
+##  ==split_up_big_string_into_nested_switches(myinputstring)==
+##======================================================##=========================================
+def split_up_big_string_into_nested_switches(myinputstring):#this would only be called once
+    #print(" ==  split_up_big_string_into_nested_switches(inputstring)  ==")
+    water =add_comment_and_line_number_to_all_switches(myinputstring)               #METHOD 1
+    show_switch_string_with_numbers_added_after_each_switch_with_a_comment(water)   #METHOD 2
+    empty_columbia_river_list()                                                     #METHOD 3
+    show_the_snowtime_list_of_pairs()                                               #METHOD 4
+    add_main_switch_to_columbia_river(water)                                        #METHOD 5
+    holding_string[0] = water
+    loop_thru_snowtime_list_and_copy_switch_bodies_and_add_to_columbia_river()      #METHOD 6
+    loop_thru_columbia_river() #prints out seperated switch bodies top down         #METHOD 7               
+    ##==============
+    print("the switch strings cut up are now printed out top down")
+CREATES THIS:
+	snowtime= [[11, 47], [49, 73], [15, 38], [53, 64], [23, 33]]
+counter= 1
+
+	switch(exp){ #1
+  		case 1 thru 3:
+			print("where's the dog house!")
+			print('first prize')
+			print('you block head Charlie Brown')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			#############
+			switch(exp){ #11
+  				case 'blable':
+					print("do something")
+					####################
+					switch(exp){ #15
+ 						case 'tahoe':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							####################
+							switch(exp){ #23
+    								case 'tahoe':
+									print("do something")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice")
+									break
+								default:
+									print("we are done here")
+							endswitch #33
+ 							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #38
+ 					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch #47
+ 			exp = 3
+			switch(exp){ #49
+				case 'burger':
+					print("do something")
+					####################
+					switch(exp){ #53
+   						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #64
+ 					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch #73
+			##############
+			print('taught me how to write code')
+			fallthru
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+		default:
+			print('the end')
+}
+
+===========
+counter= 2
+			#############
+			switch(exp){ #11
+  				case 'blable':
+					print("do something")
+					####################
+					switch(exp){ #15
+ 						case 'tahoe':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							####################
+							switch(exp){ #23
+    								case 'tahoe':
+									print("do something")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice")
+									break
+								default:
+									print("we are done here")
+							endswitch #33
+ 							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #38
+ 					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch #47
+
+===========
+counter= 3
+ 			exp = 3
+			switch(exp){ #49
+				case 'burger':
+					print("do something")
+					####################
+					switch(exp){ #53
+   						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #64
+ 					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch #73
+
+===========
+counter= 4
+					####################
+					switch(exp){ #15
+ 						case 'tahoe':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							####################
+							switch(exp){ #23
+    								case 'tahoe':
+									print("do something")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice")
+									break
+								default:
+									print("we are done here")
+							endswitch #33
+ 							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #38
+
+===========
+counter= 5
+					####################
+					switch(exp){ #53
+   						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch #64
+
+===========
+counter= 6
+							####################
+							switch(exp){ #23
+    								case 'tahoe':
+									print("do something")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice")
+									break
+								default:
+									print("we are done here")
+							endswitch #33
+
+===========
+								
+	
+SECOND BIG PIECE testing before adding creates chain methods output and then pastes new nested methods
+together and concats them
+
+##===============================================================
+## create_def_switch_methods_concatted_together_in_one_string()
+##=============================================================
+def create_def_switch_methods_concatted_together_in_one_string():
+    #possibly empty stanford list here 
+    print('=create_def_switch_methods_concatted_together_in_one_string()=')
+    add_number_after_top_switch_into_stanford_list()#this is used to label out switches
+    adding_def_methods_to_top_of_each_switch_string() #framing each python switch generated output
+    stack_the_cake_combining_python_switch_methods_together()
+    print("this is in snooopy_doghouse.py")
+    print('output in toocool[0] ===')
+    print(toocool[0])
+    print("#end of big testaroo dec 9th thursday morning before 10am")
+    #output is a string inside of list toocool[0]
+    #fill_nested_switches_list[0]=toocool[0] ##0000000000 Modifications 
+    print("dec SEVENTEENTH THIS MUST WORK ITS IMPERATIVE FOR SUCCESS THINK GTI VW this is now in fill_nested_switches_list[0] ")
+    for line in fill_nested_switches_list[0].splitlines():
+        print(line)
+   			
+								
+								
+Both big mini modules work indepently and now I am connecting them together in the same file 								
+								
+								
 ##============================================
 I can now have (after testing it) input vars at top of switch case that 
 are mapped to each nested switch input.
