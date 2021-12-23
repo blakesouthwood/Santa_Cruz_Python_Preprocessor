@@ -1,6 +1,7 @@
 Dec 23rd 2021 thursday 10:06am  Morgan Hill Starbucks 
 NEO Class. BAMF
-
+https://www.youtube.com/watch?v=TWJVgTeNljs&list=RDMM&index=9
+	
 I can do anything with code.
 
 Currently playing with switch(true) but will figure it out later, no time right now
