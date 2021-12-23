@@ -1,3 +1,140 @@
+Dec 23rd 2021 thursday 10:06am  Morgan Hill Starbucks 
+	
+Currently playing with switch(true) but will figure it out later, no time right now
+	
+I have been reducing down the two last two minimodules that I am adding to the working code
+1) get switch pairs and seperate input strings into a list
+2) chain methods converting each string for parser converting input prepped strings into python output numbered methods
+3) run thru bypass205 concat output strings and execute code
+##============================================
+I can now have (after testing it) input vars at top of switch case that 
+are mapped to each nested switch input.
+example:
+	
+	Nested-Switch Statement:
+
+Nested-Switch statements refers to Switch statements inside of another Switch Statements.
+
+Syntax:
+
+switch(n)
+{
+  // code to be executed if n = 1;
+  case 1: 
+    
+  // Nested switch
+  switch(num) 
+  {
+    // code to be executed if num = 10
+    case 10: 
+      statement 1;
+      break;
+      
+    // code to be executed if num = 20
+    case 20: 
+      statement 2;
+      break;
+      
+    // code to be executed if num = 30
+    case 30: 
+      statement 3;
+      break;
+      
+      // code to be executed if num 
+      // doesn't match any cases
+      default: 
+  }
+  
+  
+  break;
+    
+  // code to be executed if n = 2;
+  case 2:
+    statement 2;
+    break;
+  
+  // code to be executed if n = 3;
+  case 3: 
+    statement 3;
+    break;
+  
+   // code to be executed if n doesn't match any cases
+   default: 
+}
+Example:
+
+
+// Following is a simple program to demonstrate
+// syntax of Nested Switch Statements.
+https://www.geeksforgeeks.org/nested-switch-case/
+#include <stdio.h>
+  
+int main()
+{
+    int x = 1, y = 2;  #<<========== this is what I am talking about implimenting right now, vars above switch
+  
+    // Outer Switch
+    switch (x) {       #<<============== var x here inside of switch as param
+  
+    // If x == 1
+    case 1:
+  
+        // Nested Switch
+  
+        switch (y) {    #<<=========== var y here inside of switch as param
+  
+        // If y == 2
+        case 2:
+            printf( "Choice is 2");
+            break;
+  
+        // If y == 3
+        case 3:
+            printf( "Choice is 3");
+            break;
+        }
+        break;
+  
+    // If x == 4
+    case 4:
+        printf( "Choice is 4");
+        break;
+  
+    // If x == 5
+    case 5:
+        printf( "Choice is 5");
+        break;
+  
+    default:
+        printf( "Choice is other than 1, 2 3, 4, or 5");
+        break;
+    }
+    return 0;
+}
+
+
+
+var1 = 'fun", var2= 'jazz', var3 = 'dino', var4 = 'trouble'
+#these are put into a list in sequential order from left to right like the American number line
+varholder[0] = var1
+varholder[1] = var2
+varholder[2] = var3
+varholder[3] = var4
+ 
+#it would be implimented after the code is generated and replace the switch(exp) based on location with varname
+ 
+switch(exp) #1
+    switch(exp) #2
+    switch(exp) #3
+        switch(exp) #4
+#would result in generated code 
+ switch(var1) #1
+    switch(var2) #2
+    switch(var3) #3
+        switch(var4) #4
+	'
+#not showing code how it works not but it works but isn't implimented as yet; only testing if it would work and it does	
+##===========================================================================================	
 Dec 22nd, 2021 8:15 am 
 testing.
 I have the code for nested switches in one file module now
