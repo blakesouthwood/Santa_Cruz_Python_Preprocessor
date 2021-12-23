@@ -266,6 +266,293 @@ counter= 6
 	
 SECOND BIG PIECE testing before adding creates chain methods output and then pastes new nested methods
 together and concats them
+chain methods fun
+
+								#############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###########
+#############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###########
+#############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###########
+#############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###########
+
+
+#making this sucker work no matter what 
+
+#print("the big test begins")
+#planB()
+#print("now simply loop thru the finished changes in the list")
+
+#### stage 1 test ###############
+#each fruit method will do the list of 7 input strings stop
+#these are the REAL CHAIN METHODS AS OF DEC 11 SATURDAY 2021 8:10 AM ====
+result_of_first_method=[]
+result_of_second_method=[]
+result_of_third_method=[]
+result_of_fourth_method=[]
+
+print("this is after the input stings have already been seperated")
+##======================
+##  move_string_to_left_side()        first method modern tab shifter to left 
+##======================
+#output: result_of_first_method all switch strings modified
+def move_string_to_left_side():
+    print("=====APPLE== modern_tab_shifter_to_left()=====")
+    counter = 1
+    for item in testlist_of_strings:
+        print("=======")
+        modern_tab_shifter_to_left(item)
+        fizz=goldtime[0] #output from first_method()
+        #print("apple stage1 fizz =",fizz)
+        #append outpoutto result_of_first_method
+        result_of_first_method.append(fizz)
+        print("===== counter =",counter)
+        counter += 1
+    ################################################    
+    counter =1
+    print("result of shifting input strings to left")
+    print("=====APPLE==APPLE   APPLE   APPLE   APPLE   APPLE=====")
+    for item in result_of_first_method:
+        print(item)
+        print("=========")
+        print("counter=",counter)
+        counter += 1
+    
+
+
+
+
+##======================================================
+## take_out_the_inner_switch_bodies_leaving_switch()
+# output result_of_second_method
+# method used: take_out_switch_body(string)
+##======================================================
+def take_out_the_inner_switch_bodies_leaving_switch():
+    print("=====PLUM == take_out_switch_body(item)====")
+    counter = 1
+    for item in result_of_first_method:
+        take_out_switch_body(item)
+        print("===== counter =",counter)
+        counter += 1
+        fizz =lightning[0]
+        print("plum stage2 fizz =",fizz)
+        #append outpoutto result_of_first_method
+        result_of_second_method.append(fizz)
+    ###################################################
+    counter =1
+    print("result of taking out inner switch bodies")
+    for item in result_of_second_method:
+        print(item)
+        print("=========")
+        print("counter=",counter)
+        counter += 1
+    
+
+#good_plum()
+
+
+
+
+
+##===================================================================
+## good_peach()  change_switch_to_method_solved : switch to nested_switchX(exp) # 
+## output: result_of_third_method
+##=================================================================
+def change_switch_to_nested_switch_method(): #swaps switch with nested_switch method
+    print("=====PEACH===change_switch_to_method_solved===")
+    counter = 1
+    for item in result_of_second_method:
+        fizz=change_switch_to_method_solved(item)
+        print("peach fizz=",fizz)
+        #append outputto result_of_first_method
+        result_of_third_method.append(fizz)
+        print("===== counter =",counter)
+        counter += 1
+    #########################################
+    counter =1
+    print('result of 3rd method on string')
+    for item in result_of_third_method:
+        print(item)
+        print("=========")
+        print("counter=",counter)
+        counter += 1
+    
+    
+    
+##===================================================================
+## replace_endswitch_with_close_brace     take_out_endswitch() 
+## output: result_of_fourth_method
+##=================================================================
+def replace_endswitch_with_close_brace():
+    print("=======ORANGE=====take_out_myendswitch===")
+    counter = 1
+    for item in result_of_third_method:
+        take_out_myendswitch(item)  #other one is take_out_endswitch
+        print("=======")
+        fizz =  holdthis[0]
+        print('orange fizz =',fizz)
+        result_of_fourth_method.append(fizz) #this fills up result_of_fourth
+        print("===== counter =",counter)
+        counter += 1
+   #########################################
+    print('result of 4th method on string')
+    counter=1
+    for item in result_of_fourth_method:
+        print(item)
+        print("=========")
+        print("counter=",counter)
+        counter += 1
+
+
+#######################################################
+
+    
+    
+    
+    
+    
+    
+    
+    
+#this gets the numbers and fills up the list switch_numbers_to_transfer  
+switch_numbers_to_transfer=[]
+cell=[]
+cell.append(0)
+##==================================== created dec 6th monday 2021
+##  get_switch_number_now(lestring): from quail list before bypass205 is called
+##====================================
+def get_switch_number_now(lestring): #fills list switch_numbers_to_transfer
+    print("====get_switch_number_now()=====") #gets it from quail list
+    counter =0
+    for line in lestring.splitlines():
+        if  counter == 1 and "switch" in line and "#" in line and "end" not in line:
+             x =line.index("#");
+             x=x+1;answer=line[x:];cell[0]=answer;
+             switch_numbers_to_transfer.append(answer) #fills up this list
+             break;
+        else:
+             counter +=1
+    
+    
+            
+#this fills up the switch_numbers_to_tranfer list used in bypass205 to
+#use in the numbering of the switches with a # after each
+##====================================================
+##  fill_switch_numbers_list_to_transfer():
+##  method: get_switch_number_now()
+##==================================================  
+def fill_switch_numbers_list_to_transfer():
+    print("=======fill switch nubmers list to transfer()====")
+    #this is where each switch number in the comment #11 example is put
+    #into the list switch_numbers_to_transfer the baton to python output string put in number
+    for item in result_of_fourth_method:
+         get_switch_number_now(item) #fills list switch_numbers_to_transfer
+    #there will be no changes to this switch string   
+    print('result of 5th method on string is filling the switch_nubmers_to_transfer')
+    print('no changes to the result of the fourth method')
+    counter=1
+    for item in result_of_fourth_method:
+        print(item)
+        print("=========")
+        print("counter=",counter)
+        counter += 1
+    print("let's see the (switch_numbers_to_transfer) list now")
+    print(switch_numbers_to_transfer)
+    #this gets the switch number from each first switch in a string
+    # and put is tinot switch_numbers_to_transfer 
+
+
+#print("=========== get switch numbmer in quail list") 
+##=============================================
+## get the switch_numbers_to_transfer():
+#this is trapeze to get the switch number for first switch in each string
+#which will be used for make the def nested_switch and main_switch in python mode
+##=============================================
+def get_the_switch_numbers_to_transfer():
+    counter=1
+    for item in chain_output_list:
+        get_switch_number_now(item) 
+        print("number =",counter)
+        print(cell[0]) 
+        counter += 1          
+    print("switch_numbers_to_transfer",switch_numbers_to_transfer)
+  
+  
+  
+  
+  
+chain_output_list=[]
+##===================================================
+## fill_chain_output_list():
+##==-================================================
+def fill_chain_output_list():
+    del chain_output_list[:] #empty it to be sure
+    print("====fill chain output list()====")
+    for item in result_of_fourth_method:
+        print(item)
+        chain_output_list.append(item) #ah this is where that is. 
+
+##======================================================
+## loop_thru_chain_output_list_and_fill_quail_list()
+##======================================================          
+def loop_thru_chain_output_list_and_fill_quail_list():
+    print("here we are filling the QUAIL list officially -it's about time")
+    del quail[:] #empties quail list
+    for item in chain_output_list:
+        quail.append(item)
+    print("====Quail List Output========== ")
+    print("quail output now is this which will be fed into bypass205() parser")
+    for item in quail:
+        print(item)        
+    print(" ")
+   # print("==switch_numbers_to_transfer list==")
+    #print(switch_numbers_to_transfer)
+##=============================================
+## show_list_switch_numbers_to_transfer()
+##=============================================
+def show_list_switch_numbers_to_transfer():
+    print("===switch numbers to transfer== stage2 Linus==")
+    print(switch_numbers_to_transfer)
+    #print("")
+    #for item in switch_numbers_to_transfer:
+    #    print(item)   
+								
+##====================================
+##  do_the_blender_chain_methods()
+##====================================
+def do_the_blender_chain_methods():
+    print("==the blender chain methods()==")
+    move_string_to_left_side()                         #indents to left
+    take_out_the_inner_switch_bodies_leaving_switch()  #cut out switch bodies leaving switch
+    change_switch_to_nested_switch_method()            #switch becomes nested_switchX
+    replace_endswitch_with_close_brace()               #endswitch becomes }
+    fill_switch_numbers_list_to_transfer()             #list generated used for codegen
+    fill_chain_output_list()  
+    print("=== end of blender chain methods() ==")    
+
+								
+								
+##===================================================================================    
+## ====  WATERFALL CHAIN METHODS GOLD MASTER OFFICIAL OFFICIAL OFFICAL OFFICIAL  =====       
+##=====================================================================================
+def waterfall_chain_methods_gold_master():  #THIS WILL TAKE IN THE QUAIL LIST FOR INPUT
+    print("===WATERFALL CHAIN METHODS Gold Master 1.3()====THE REAL DEAL  REAL WORLD = ")
+    print(" == Sunday, dec 12th, morgan hill starbucks 10:01 am ==")
+    #loops thru testlist_of_strings
+    for item in testlist_of_strings: #this displays each switch string starting out
+        print(item)
+        print("========")#formally apple, plum, peach, orange 
+    #==chain methods called here=== 
+    do_the_blender_chain_methods()
+    #loop_thru_chain_output_list_and_fill_quail_list() #ultimately will need to feed quail list
+    #    method above turned off for now
+    show_list_switch_numbers_to_transfer()
+    print("LINUS list switch_numbers_to_transfer at bottom of chain methods")
+    print(switch_numbers_to_transfer)
+    print(" ==end of line ... Sunday, dec 12th, morgan hill starbucks 10:07 am ==")
+   
+								
+								
+								
+								
+								
 
 ##===============================================================
 ## create_def_switch_methods_concatted_together_in_one_string()
