@@ -268,10 +268,61 @@ SECOND BIG PIECE testing before adding creates chain methods output and then pas
 together and concats them
 chain methods fun
 
-								#############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###########
 #############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###########
 #############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###########
 #############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###########
+#############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###########
+								
+								
+								outputstring=[]
+outputstring.append(0)
+snowboarding=[]
+##=================================
+## take_out_switch_body(astring):  #def foxnews(astring):
+##================================
+def take_out_switch_body(astring): #this was foxnews
+	nestedswitch= False
+	print("take_out_switch_body      today is november 28th sunday  4:29 pm ")
+	#right here look if a switch at 3 tabs if not skip below
+	####=== new as of monday december 6th, 2021 =========================
+	#determine if 
+	for line in astring.splitlines():
+		tabcount =line.count("\t")
+		if "switch" in line and tabcount == 3:
+			print("yes switch at 3 tabs in line")
+			print("frosty says switch at 3 tabs confirmed")
+			nestedswitch= True
+			break
+	print("frosty the snow man light test for nested switch")
+	print("nestedswitch=",nestedswitch)
+	print("==================================")
+	if nestedswitch == False: #what this does is put the input string into output
+		#add input into output  this means no changes were done to the switch string
+		print("this switch string DOES NOT have an inner switch")
+		lightning[0]=astring 
+	else:
+	##======= this is down here now ========december 6th 2022 =========
+		get_switch_and_endswitch_locations_in_string(astring) #for this switch string
+		build_trial_inputlist()	 #this is new 
+		convert_switch_with_more_than_one_inner_switch_at_3_tabs(astring)
+	#end if
+	##########================================================================
+	print("frosty snowboarding")
+	#december 6th looking where I am not adding31 and 66 
+	
+	print("this is new code now today is Monday november 29th now Dec 6th.")
+	print("what is in lightning[0] now")
+	#print(lightning[0])
+	
+	print("resulting final output of take_out_switch_body:") 
+	snowboarding.append(lightning[0])  #this is new dec 6th monday
+	for line in lightning[0].splitlines():
+		print(line)
+
+
+print("testing this 2nd method")
+								
+								
 passthis=[]
 passthis.append(0)
 ##
