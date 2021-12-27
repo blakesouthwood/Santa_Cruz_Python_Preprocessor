@@ -4,6 +4,8 @@ I have starship which does the prepping of the input string for the parser is no
 And rudolph is the nested switch engine(code name of course obviously) and they are not connected yet.
 For maintenance I will likely just import Starship into Rudolph to reduce the complexity and make maintenance less
 of a heartache.
+Before uploading the two files to github I tested them and they both work. I was breathless when they ran perfectly.
+Persaverance wears the crown.
 
 Big rush of adrenaline when I reduced booster 1 and 2 into one file Starship. That was a pain due to dependencies.
 ####==================================================================
