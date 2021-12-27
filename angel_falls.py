@@ -1,4 +1,5 @@
 December 27th, Monday 11:57 am 2021 Menlo Park, California Santa Cruz Avenue
+https://www.youtube.com/watch?v=eBG7P-K-r1Y
 Down to just two files now to make nested switches work.
 I have starship which does the prepping of the input string for the parser is now in one file.
 And rudolph is the nested switch engine(code name of course obviously) and they are not connected yet.
