@@ -1,3 +1,16 @@
+December 27th, Monday 11:57 am 2021 Menlo Park, California Santa Cruz Avenue
+Down to just two files now to make nested switches work.
+I have starship which does the prepping of the input string for the parser is now in one file.
+And rudolph is the nested switch engine(code name of course obviously) and they are not connected yet.
+For maintenance I will likely just import Starship into Rudolph to reduce the complexity and make maintenance less
+of a heartache.
+
+Big rush of adrenaline when I reduced booster 1 and 2 into one file Starship. That was a pain due to dependencies.
+####==================================================================
+Uploaded rudolph.py and starship.py to github for safety in case my laptop dies after accidently spiling mocha all over it
+in late night coding session. Still plugging away though.
+
+
 Dec 23rd 2021 thursday 10:06am  Morgan Hill Starbucks 
 NEO Class. BAMF
 https://www.youtube.com/watch?v=TWJVgTeNljs&list=RDMM&index=9
