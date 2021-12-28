@@ -1,6 +1,9 @@
 Approaching the finish line.
 Had one slight problem. I couldn't locate my single switch working code. then... I got lucky and found it
 thanks to a github backup back in June I believe. This was a monumental relief because I couldn't find it amongst all of my backups.
+Single switch (the originals) with switch module and test file
+single_switch_core.py  and single_switch_beta_testing.py test single switch code
+just uploaded both of these to github
 
 time for music to celebrate: https://www.youtube.com/watch?v=fDWFVI8PQOI&list=RD63088Hhjexg&index=6  Rhythm is a dancer
 My test does 15 single switch case strings individually using macros, numbers and UPPERCASE words and words in strings.
