@@ -7,7 +7,7 @@ just uploaded both of these to github
 
 time for music to celebrate: https://www.youtube.com/watch?v=fDWFVI8PQOI&list=RD63088Hhjexg&index=6  Rhythm is a dancer
 My test does 15 single switch case strings individually using macros, numbers and UPPERCASE words and words in strings.
-I will reupload them as a backup again, because they were difficult to find by I will rename them.
+I will reupload them as a backup again, because they were difficult to find but I will rename them.
 
 I will do testing of single switches and nested switches back to back and verify all is well.
 
