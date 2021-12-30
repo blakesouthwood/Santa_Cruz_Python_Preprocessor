@@ -1,3 +1,14 @@
+wed dec 29th, 2021  11:36pm
+Figured out the trick to import a file, run code in it, and fill a list from the imported resulting list.
+So now I can finish rudolph file that will do everything for nested switches.
+more testing tomorrow. What I did is call the starship file which splits up the nested switch string
+and then runs each switch string thru the chain methods and fills the quail list. 
+So that just worked. Great relief. I will have rudolph file (soon be nested_module) should be fully (finally)
+working tomorrow. Greatly relieved I figured it out with trail and error.
+Moving forward now.
+
+
+
 Approaching the finish line.
 Had one slight problem. I couldn't locate my single switch working code. then... I got lucky and found it
 thanks to a github backup back in June I believe. This was a monumental relief because I couldn't find it amongst all of my backups.
