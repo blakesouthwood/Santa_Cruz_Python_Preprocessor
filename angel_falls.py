@@ -1,4 +1,4 @@
-11:09 am Fri Dec 31st, 2021 TOTALLY WORKS. PURE NIRVANA . crushed the bugs.
+11:09 am Fri Dec 31st, 2021 TOTALLY WORKS. PURE NIRVANA . crushed the bugs.This is the first time it ran all the way through.
 I decided to reduce the test code to one main switch and one nested inner switch to reduce the problem set. Solved it.
 # radical list is a copy of the quail output list in starship
 # switch_numbers_to_transfer are actually the switch numbers which are the line numbers of each switch
