@@ -1,6 +1,14 @@
 11:09 am Fri Dec 31st, 2021 TOTALLY WORKS. PURE NIRVANA . crushed the bugs.
 I decided to reduce the test code to one main switch and one nested inner switch to reduce the problem set. Solved it.
-	
+# radical list is a copy of the quail output list in starship
+# switch_numbers_to_transfer are actually the switch numbers which are the line numbers of each switch
+
+# this list is utilized to number the switches after going thru the parser and codegen to be added as a comment
+# which earlier were grabbed from the switch number comments after each switch in the quail list which is an entirely
+# different animal then the stanford list. The quail list is the input string and it's various tranformations prepping
+# before being fed to bypass205 where it is converted into python code. The generated python code representation of the
+# switch strings is deposited into the stanford list.
+
 from starship import *
 from starship import switch_numbers_to_transfer
 from starship import radical_list  
