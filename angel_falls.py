@@ -1,3 +1,76 @@
+11:09 am Fri Dec 31st, 2021 TOTALLY WORKS. PURE NIRVANA . crushed the bugs.
+I decided to reduce the test code to one main switch and one nested inner switch to reduce the problem set. Solved it.
+	
+from starship import *
+from starship import switch_numbers_to_transfer
+from starship import radical_list  
+
+waffles ='''
+	switch(exp){  
+		case 1 thru 3: 
+			print("to the moon Alice!")
+			print('first prize')
+			print('Charlie Brown and Snoopy flying against Red Baron')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			exp = 'blable'
+			switch(exp)  
+				case 'blable':
+					print("we are inside of sw 11 now wildness")
+					
+					print("I just typed this like Snoopy")
+					result[0]="snoopy"
+					fallthru
+				case 'more':
+					print("and this fell thru from snoopy above")
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			print('taught me how to write code')
+			fallthru
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+		default:
+			print('the end')	
+	endswitch
+'''
+inputstring=''
+inputstring = waffles 
+
+print('THIS IS INSIDE OF RUDOLPH - WE IMPORTED  starship.py ')
+
+convert_nested_switch_string_to_strings_in_quail_list(inputstring) #from starship
+
+topvalue[0]='1'
+clever_cat()
+
+#output generated==============
+input is  1
+to the moon Alice!
+first prize
+Charlie Brown and Snoopy flying against Red Baron
+kangaroo hop hop!
+we are inside of sw 11 now wildness
+I just typed this like Snoopy
+and this fell thru from snoopy above
+taught me how thru write code
+mocha blast
+== 31 flavors===
+the end
+result[0] = snoopy
+ 
+let us see what we have here
+ real_switch_numbers_to_transfer= ['1', '11']
+======stop the presses=dam it======
+
+I just need to put the methods in sequences to reduce the code more, but it .. works  ( 0  0 )
+            
+
 Starbucks WiFi is nice.
 Friday, Dec 31 new year's eve, 2021 9:40 am 
 
