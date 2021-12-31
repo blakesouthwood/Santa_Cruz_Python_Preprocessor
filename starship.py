@@ -1,7 +1,11 @@
+## this works dec 31st, 2021
+## Blake Southwood Software Engineer 
+
 #import official_switch_case_silver
 #from official_switch_case_silver  import *  
 #from booster2 import *
-
+print('top of starship.py file ')
+print('')
 #I have to import a list now to do it
 
 zoo=[]
@@ -118,256 +122,12 @@ string = "\n".join(str_list)
 
 #so after striping out nested switches at all levels or is it just one deep 
 #actually no the first time I need all of them 
-mocha_nested_switchtest ='''
-	switch(exp) {  
-		case 1 thru 3:
-			print("where\'s the dog house!")
-			print('first prize')
-			print('you block head Charlie Brown')
-			fallthru
-			
-		case 4 to 7:
-			print('kangaroo hop hop!')
-			#############
-			switch(exp){  #first level deep                   Level 1
-				case 'blable':
-					print("do something")
-					####################
-					switch(exp){  #second level deep          Level 2    
-						case 'tahoe':
-							print("do something")
-							print("yep")
-							fallthru
-						case 'fallen leaf lake':
-							print("nice")
-							####################
-							switch(exp){  #third level deep   Level 3    
-								case 'tahoe':
-									print("do something")
-									print("yep")
-									fallthru
-								case 'fallen leaf lake':
-									print("nice")
-									break
-								default:
-									print("we are done here")
-							endswitch 
-							#############
-							break
-						default:
-							print("we are done here")
-					endswitch 
-					#############
-					print("yep")
-					fallthru
-				case 'more':
-					print("nice")
-					break
-				default:
-					print("we are done here")
-			endswitch 
-			##############
-			print('taught me how to write code')
-			fallthru
-			
-		 
-		case 8 to 10:
-			print('mocha blast')
-			print('== 31 flavors===')
-			fallthru
-		
-		default:
-			print('the end')
-}
-'''	
-
 
 #so after striping out nested switches at all levels or is it just one deep 
 #actually no the first time I need all of them 
-red_robinother ='''
-	switch(exp) {  
-		case 1 thru 3:
-			print("where\'s the dog house!")
-			print('first prize')
-			print('you block head Charlie Brown')
-			fallthru
-			
-		case 4 to 7:
-			print('kangaroo hop hop!')
-			#############
-			switch(exp){  
-				case 'blable':
-					print("do something")
-					####################
-					switch(exp){ # 15  #second level deep          Level 2    
-						case 'tahoe':
-							print("do something")
-							print("yep")
-							fallthru
-						case 'fallen leaf lake':
-							print("nice")
-							####################
-							switch(exp){ #23  #third level deep   Level 3    
-								case 'tahoe':
-									print("do something")
-									print("yep")
-									fallthru
-								case 'fallen leaf lake':
-									print("nice")
-									break
-								default:
-									print("we are done here")
-							endswitch #33
-							#############
-							break
-						default:
-							print("we are done here")
-					endswitch #38
-					#############
-					print("yep")
-					fallthru
-				case 'more':
-					print("nice")
-					break
-				default:
-					print("we are done here")
-			endswitch #47
-			exp = 3
-			switch(exp){ #49 #first level deep                   Level 1
-				case 'burger':
-					print("do something")
-					####################
-					switch(exp){  #53  second level deep          Level 2    
-						case 'fishy':
-							print("do something")
-							print("yep")
-							fallthru
-						case 'snow fire':
-							print("nice")
-							#############
-							break
-						default:
-							print("we are done here")
-					endswitch 
-					#############
-					print("yep")
-					fallthru
-				case 'more':
-					print("nice")
-					break
-				default:
-					print("we are done here")
-			endswitch #73
-
-			##############
-			print('taught me how to write code')
-			fallthru
-			
-		 
-		case 8 to 10:
-			print('mocha blast')
-			print('== 31 flavors===')
-			fallthru
-		
-		default:
-			print('the end')
-}
-'''	
-
-
 
 # october 11th, 2021 
 #testing texas here to do what I want
-texas='''
-	switch(exp){ 
-		case 1 thru 3:
-			print("where\'s the dog house!")
-			print('first prize')
-			print('you block head Charlie Brown')
-			fallthru
-			
-		case 4 to 7:
-			print('kangaroo hop hop!')
-			#############
-			switch(exp){    first level deep                   Level 1
-				case 'blable':
-					print("do something")
-					####################
-					switch(exp){  #second level deep          Level 2    
-						case 'tahoe':
-							print("do something")
-							print("yep")
-							fallthru
-						case 'fallen leaf lake':
-							print("nice")
-							####################
-							switch(exp){   #third level deep   Level 3    
-								case 'tahoe':
-									print("do something")
-									print("yep")
-									fallthru
-								case 'fallen leaf lake':
-									print("nice")
-									break
-								default:
-									print("we are done here")
-							endswitch 
-							#############
-							break
-						default:
-							print("we are done here")
-					endswitch 
-					#############
-					print("yep")
-					fallthru
-				case 'more':
-					print("nice")
-					break
-				default:
-					print("we are done here")
-			endswitch 
-			exp = 3
-			switch(exp){ #first level deep                   Level 1
-				case 'burger':
-					print("do something")
-					####################
-					switch(exp){   second level deep          Level 2    
-						case 'fishy':
-							print("do something")
-							print("yep")
-							fallthru
-						case 'snow fire':
-							print("nice")
-							#############
-							break
-						default:
-							print("we are done here")
-					endswitch 
-					#############
-					print("yep")
-					fallthru
-				case 'more':
-					print("nice")
-					break
-				default:
-					print("we are done here")
-			endswitch
-
-			##############
-			print('taught me how to write code')
-			fallthru
-			
-		 
-		case 8 to 10:
-			print('mocha blast')
-			print('== 31 flavors===')
-			fallthru
-		
-		default:
-			print('the end')
-}
-'''	
-
 
 sweetlist=[]
 holdinglist=[]; holdinglist.append(0) #to create slot 0
@@ -381,10 +141,10 @@ boomerang=[];   boomerang.append(0)
 ##  modify_string_before_splitting_it_up():
 ##============================================
 def modify_string_before_splitting_it_up():
-    print("texas string first")
-    for line in texas.splitlines():
-        print(line)
-    print("=========================") 
+    #print("texas string first")
+    #for line in texas.splitlines():
+     #   print(line)
+    #print("=========================") 
     counter =0    
     #print("modify_string_before_splitting_it_up():")
     craftline =''
@@ -546,8 +306,8 @@ def put(x):
 #==============================
 #  build_listinput_list  for threetabs,fivetabs, seventabs,ninetabs, eleventtabs,thirteentabs
 #==============================
-def build_list_input_list():  #line 976
-    #print('====================METHOD 3 ==== line 976===>>>')
+def build_list_input_list():  
+    #print('=======METHOD 3 ====>>>')
     mx = holding_themax[0] #it's using this number 
     input= holding_themax[0]
     #cascading down is how it works
@@ -614,7 +374,7 @@ def internal_machinery(x,inputstring): #this doesn't change anything in the stri
 ##==================================================
 ## make_switch_and_endswitch_pairs_by_tab_levels() 
 ##=================================================== 
-def make_switch_and_endswitch_pairs_by_tab_levels(): 
+def make_switch_and_endswitch_pairs_by_tab_levels(inputstring): 
     #print(":=============== METHOD 4 ======") 
     for item in super_listinput: # listinput is dynamically made above
         x = item;
@@ -754,14 +514,14 @@ def get_max_tab_number_in_list():  #this fills the max holding_themax[0]
 ##===============================================================  
 def this_makes_switch_and_endswitch_pairs_by_tab_levels(inputstring):
     #print("===THIS MAKES SWITCH AND ENDSWITCH PAIRS BY TAB LEVELS========")
-    build_tab_depth(inputstring)                           #METHOD 1
-    get_max_tab_number_in_list() #fills holding_themax[0]  #METHOD 2
-    build_list_input_list()                                #METHOD 3
-    make_switch_and_endswitch_pairs_by_tab_levels()        #METHOD 4
-    list_tabs_lists_by_depth()                             #METHOD 5
-    combine_tabs_by_length_into_christmastree_list()       #METHOD 6 
-    build_pairs_with_jazz()  #combines into sublist        #METHOD 7 
-    loop_thru_pairs_in_snowtime()                          #METHOD 8
+    build_tab_depth(inputstring)                               #METHOD 1
+    get_max_tab_number_in_list() #fills holding_themax[0]      #METHOD 2
+    build_list_input_list()                                    #METHOD 3
+    make_switch_and_endswitch_pairs_by_tab_levels(inputstring) #METHOD 4
+    list_tabs_lists_by_depth()                                 #METHOD 5
+    combine_tabs_by_length_into_christmastree_list()           #METHOD 6 
+    build_pairs_with_jazz()  #combines into sublist            #METHOD 7 
+    loop_thru_pairs_in_snowtime()                              #METHOD 8
     #print("==bottom of this makes switch and endswitch pairs by tab levels()")
     #print("snowtime=",snowtime)
     #this will go into gold_list
@@ -844,204 +604,6 @@ cat_scales.append(0)
 #actually no the first time I need all of them 
 #make sure no space and it's switch(exp){
 #first red robin here testing 
-red_robin ='''
-	switch(exp){  
-		case 1 thru 3:
-			print("where\'s the best ever dog house!")
-			print('first prize')
-			print('you brilliant coder Charlie Brown')
-			fallthru
-			
-		case 4 to 7:
-			print('kangaroo hop hop!')
-			#############
-			switch(exp)  
-				case 'blable':
-					print("do inside of sw itch 11")
-					####################
-					switch(exp){ 
-						case 'tahoe':
-							print("do inside of sw 15")
-							print("yep")
-							fallthru
-						case 'fallen leaf lake':
-							print("nice")
-							####################
-							switch(exp){    
-								case 'tahoe':
-									print("do something")
-									print("yep")
-									fallthru
-								case 'fallen leaf lake':
-									print("nice")
-									break
-								default:
-									print("we are done here")
-							endswitch 
-							#############
-							break
-						default:
-							print("we are done here")
-					endswitch 
-					#############
-					print("yep")
-					fallthru
-				case 'more':
-					print("nice")
-					break
-				default:
-					print("we are done here")
-			endswitch 
-			exp = 3
-			switch(exp)
-				case 'burger':
-					print("do something")
-					####################
-					switch(exp){   
-						case 'fishy':
-							print("do something")
-							print("yep")
-							fallthru
-						case 'snow fire':
-							print("nice")
-							#############
-							break
-						default:
-							print("we are done here")
-					endswitch 
-					#############
-					print("yep")
-					fallthru
-				case 'more':
-					print("nice")
-					break
-				default:
-					print("we are done here")
-			endswitch
-			##############
-			print('taught me how to write code')
-			fallthru
-		case 8 to 10:
-			print('mocha blast')
-			print('== 31 flavors===')
-			fallthru
-		default:
-			print('the end')
-}
-'''	
-
-
-autumnleaf2='''
-	switch(exp){
-		case 1 thru 3:
-			print("where\'s the dog house!")
-			print('first prize')
-			print('you block head Charlie Brown')
-			fallthru
-		case 4 to 7:
-			print('kangaroo hop hop!')
-			#############
-			switch(exp){
-				case 'blable':
-					print("do something")
-					####################
-					switch(exp){
-						case 'tahoe':
-							print("do something")
-							print("yep")
-							fallthru
-						case 'fallen leaf lake':
-							print("nice")
-							####################
-							switch(exp){
-								case 'tahoe':
-									print("do something")
-									print("yep")
-									fallthru
-								case 'fallen leaf lake':
-									print("nice")
-									####################
-									switch(exp){
-										case 'fishy':
-											print("do something")
-											print("yep")
-											fallthru
-										case 'where now':
-										####################
-											switch(exp){    
-												case 'fishy':
-													print("do something")
-													print("yep")
-													fallthru
-												case 'where now':
-													print("nice")
-													break
-												default:
-													print("we very done")
-											endswitch 
-											print("nice")
-											break
-										default:
-											print("we very done")
-									endswitch 
-							#############
-									break
-								default:
-									print("we are done here")
-							endswitch
-							#############
-							break
-						default:
-							print("we are done here")
-					endswitch
-					#############
-					print("yep")
-					fallthru
-				case 'more':
-					print("nice")
-					break
-				default:
-					print("we are done here")
-			endswitch 
-			exp = 3
-			switch(exp){
-				case 'burger':
-					print("do something")
-					####################
-					switch(exp){
-						case 'fishy':
-							print("do something")
-							print("yep")
-							fallthru
-						case 'snow fire':
-							print("nice")
-							#############
-							break
-						default:
-							print("we are done here")
-					endswitch 
-					#############
-					print("yep")
-					fallthru
-				case 'more':
-					print("nice")
-					break
-				default:
-					print("we are done here")
-			endswitch    
-			##############
-			print('taught me how to write code')
-			fallthru
-		case 8 to 10:
-			print('mocha blast')
-			print('== 31 flavors===')
-			fallthru
-		default:
-			print('the end')
-} endswitch
-'''
-
-
 
 
 # output is to inputstring[0]
@@ -1487,8 +1049,8 @@ def remove_spaces_before_words(inputstring):
 # take_out_extraneous_white_spaces_on_the_left_of_each_line():
 #=========================================================================
 def take_out_extraneous_white_spaces_on_the_left_of_each_line():
-    print(" == take_out_extraneous_white_spaces_on_the_left_of_each_line(): ==")
-    print("length of thelist=",len(thelist))
+    #print(" == take_out_extraneous_white_spaces_on_the_left_of_each_line(): ==")
+    #print("length of thelist=",len(thelist))
     for item in quail: #what am I calling the list 
         remove_spaces_before_words(item)             #method
         smartlist.append(fixedstring[0]) #adds output to new list
@@ -1496,29 +1058,30 @@ def take_out_extraneous_white_spaces_on_the_left_of_each_line():
     del quail[:]
     for item in smartlist: #now fill quail list 
         quail.append(item)
-    print("this is what is in quail list now")
-    for item in quail:
-        print(item)
-        print("======")
+    #print("this is what is in quail list now")
+    #for item in quail:
+     #   print(item)
+        #print("======")
 #=========================================================================
 # loop_thru_smartlist_after_adding_fixed_strings():
 #=========================================================================
 def loop_thru_smartlist_after_adding_fixed_strings():
-    for item in smartlist:
-        print(item)
+    return 
+    #for item in smartlist:
+    #print(item)
         
 def loop_thru_list_before_changes():
     print('what thelist looks like in starting mode')
-    for item in thelist:
-        print(item)
-    print("=======end of strarting input strings ====")    
+    #for item in thelist:
+    #   print(item)
+    #print("=======end of strarting input strings ====")    
 ##===================================================================
-print("here we go with our christmas morning code to make this work") 
+#print("here we go with our christmas morning code to make this work") 
 #just commented these out since it was here for purely testing purposes
 #loop_thru_list_before_changes()      
 #take_out_extraneous_white_spaces_on_the_left_of_each_line()
 #loop_thru_smartlist_after_adding_fixed_strings()
-print("end of test to get rid of spaces on left side of precious code")  
+#print("end of test to get rid of spaces on left side of precious code")  
 ##==========================================================================
 ##===========================================================================    
 
@@ -1899,11 +1462,12 @@ def loop_thru_snowtime_list_and_copy_switch_bodies_and_add_to_columbia_river():
 def loop_thru_columbia_river():
     #print("now loop thru ====== COLUMBIA RIVER === to see the switch bodies seperated")
     counter =1
-    for item in columbia_river:   #it is added just before looping thru i
-        print("counter=",counter)
-        print(item);
-        print("===========");
-        counter += 1    
+    return
+    #for item in columbia_river:   #it is added just before looping thru i
+    #    print("counter=",counter)
+    #    print(item);
+    #   #print("===========");
+    #    counter += 1    
     
           
 
@@ -1920,7 +1484,7 @@ gold_list=[] #dec 26th sunday 7:56 am
 ##  ==split_up_big_string_into_nested_switches(myinputstring)==
 ##======================================================##=========================================
 def split_up_big_string_into_nested_switches(myinputstring):#this would only be called once
-    print(" ==  split_up_big_string_into_nested_switches(inputstring)  ==")
+    #print(" ==  split_up_big_string_into_nested_switches(inputstring)  ==")
     water =add_comment_and_line_number_to_all_switches(myinputstring)               #METHOD 1
     show_switch_string_with_numbers_added_after_each_switch_with_a_comment(water)   #METHOD 2
     empty_columbia_river_list()                                                     #METHOD 3
@@ -1929,24 +1493,24 @@ def split_up_big_string_into_nested_switches(myinputstring):#this would only be 
     holding_string[0] = water
     loop_thru_snowtime_list_and_copy_switch_bodies_and_add_to_columbia_river()      #METHOD 6
     loop_thru_columbia_river() #prints out seperated switch bodies top down         #METHOD 7               
-    print("snowtime pairs=",snowtime)
-    print("fill the list sfo_pairs with snowtime list in case I need it")
+    #print("snowtime pairs=",snowtime)
+   # print("fill the list sfo_pairs with snowtime list in case I need it")
     for item in snowtime:
         sfo_pairs.append(item)
         gold_list.append(item) #fills gold_list too
         
-    print("looping thru columbia river to fill quail list")
+    #print("looping thru columbia river to fill quail list")
     for item in columbia_river:
         quail.append(item)
         #fills up quail list 
     
     ##==============
-    print("the switch strings cut up are now printed out top down")
+   # print("the switch strings cut up are now printed out top down")
     take_out_extraneous_white_spaces_on_the_left_of_each_line()
-    print("looping thru quail list to see what it has")
-    for item in quail:
-        print(item)
-        print('=====')
+    #print("looping thru quail list to see what it has")
+    #for item in quail:
+    #    print(item)
+    #   print('=====')
     print(snowtime)
 ##================================================================        
 ##================================================================
@@ -1958,6 +1522,7 @@ def split_up_big_string_into_nested_switches(myinputstring):#this would only be 
 ## * split_up_big_string_into_nested_switches(inputstring)
 ##=================================================================
 def manage_creating_pairs_and_separating_input_switch_strings(inputstring):
+    #print(" manage_creating_pairs_and_separating_input_switch_strings(inputstring) ")
     #empty both critical lists here 
     del columbia_river[:]
     del snowtime[:]
@@ -1966,24 +1531,22 @@ def manage_creating_pairs_and_separating_input_switch_strings(inputstring):
     split_up_big_string_into_nested_switches(inputstring)
     #that's it
 
-print("this is where it all starts... make pairs and separate the switch strings")
-inputstring = red_robin
-manage_creating_pairs_and_separating_input_switch_strings(inputstring)
+#print("this is where it all starts... make pairs and separate the switch strings")
+#inputstring = red_robin
+#manage_creating_pairs_and_separating_input_switch_strings(inputstring)
 
 
-print('testing booster2 here')
+#print('testing booster2 here')
 #waterfall_chain_methods_gold_master()
 
-print("just finished creating pairs and separating input strings at this point")
+#print("just finished creating pairs and separating input strings at this point")
 ####======= great wall of china here ==========================
 ####======= great wall of china here ==========================
 ####======= great wall of china here ==========================
 ####======= great wall of china here ==========================
 ####======= great wall of china here ==========================
-print("=======GREAT WALL OF CHINA ======")
-print("=======GREAT WALL OF CHINA ======")
-print("=======GREAT WALL OF CHINA ======")
-print("=======GREAT WALL OF CHINA ======")
+#print("=======GREAT WALL OF CHINA ======")
+
 #############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###########
 #############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###########
 #############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###########
@@ -1997,7 +1560,7 @@ holdthis.append(0)
 ## take_out_endswitch(stringname)  #from bottom of nested switch 
 ######################################
 def take_out_myendswitch(stringname):
-	print("take_out_endswitch called=============")
+	#print("take_out_endswitch called=============")
 	galaxy = stringname
 	#print(galaxy)
 	holdthis[0] = galaxy.replace("endswitch","}")
@@ -2008,12 +1571,12 @@ def take_out_myendswitch(stringname):
 	buildnewstring=''
 	for line in holdthis[0].splitlines():
 		if "}" in line:
-			print("detected } in line")
+			#print("detected } in line")
 			#location = line.index("#")    #gets location from left where position of #
 			#line = line[:location] 
-			print("resulting line looks like this",line)
+			#print("resulting line looks like this",line)
 			line = line.lstrip() #this should move it to the far left to align with margin
-			print("after left shift it is ",line)
+			#print("after left shift it is ",line)
 			#line[0] = first #this is new to slice off right of brace
 			line = line[0]#first char
 			buildnewstring += line + "\n";
@@ -2021,7 +1584,7 @@ def take_out_myendswitch(stringname):
 			buildnewstring += line + "\n";
 	#end loop
 	holdthis[0] = buildnewstring
-	print("this is the final outpout of take out endswitch")
+	#print("this is the final outpout of take out endswitch")
 	#for line in holdthis[0].splitlines():
 	#    print(line)
 	    
@@ -2105,9 +1668,9 @@ def change_switch_to_method_solved(inputstring):
     #### IF INNERSWITCH == TRUE:
     if innerswitch == True: #if a switch at 3 tabs depth  is True
     #check if { in this string if so take it out
-        print('checking if left brace in string')
+        #print('checking if left brace in string')
         if "{" in inputstring: #have to cut "{" out of string
-            print("CONFIRMED there is a left brace in string")
+            #print("CONFIRMED there is a left brace in string")
             for line in inputstring.splitlines():
                 if "{" in line:
                     templine  +=   line.replace("{","") 
@@ -2116,10 +1679,10 @@ def change_switch_to_method_solved(inputstring):
                     templine += line +"\n"
             inputstring = templine
         #end if
-        print("=======testing if { taken out of string=======")
-        for line in inputstring.splitlines():
-            print(line)
-        print("=======testing if { taken out of string=======")
+       # print("=======testing if { taken out of string=======")
+        #for line in inputstring.splitlines():
+        #    print(line)
+        #print("=======testing if { taken out of string=======")
        #check if } in this string an if so take it out
       
         counter=0 #new counter for this loop different from upper for loop above
@@ -2128,7 +1691,7 @@ def change_switch_to_method_solved(inputstring):
             #skips first switch by counter MUST BE AFTER 2nd line
             #this is where we swap switch(exp) with nested_switch_(number)(exp)
             if "switch" in line and tabdepth == 3 and "end" not in line and counter > 2: 
-                print("confirmed switchh in line and tabdepth3")
+               # print("confirmed switchh in line and tabdepth3")
                 #this is new getting the switch id number after # on-the-fly
                 #get string to right of #, get right side,remove spaces
                 x = line.split("#"); y = x[1];y = y.strip();
@@ -2144,9 +1707,9 @@ def change_switch_to_method_solved(inputstring):
         return newstring  
         ##################################################################
     else: #this MEANS NO INNER SWITCH IN THE INPUT STRING
-        print("no inner switches in this string")
+        #print("no inner switches in this string")
         if "{" in inputstring: #have to cut "{" out of string
-            print("CONFIRMED there is a left brace in string")
+            #print("CONFIRMED there is a left brace in string")
             for line in inputstring.splitlines():
                 if "{" in line:
                     templine += line.replace("{","") #taking out left brace here
@@ -2155,12 +1718,12 @@ def change_switch_to_method_solved(inputstring):
                     templine += line +"\n"           #otherwise it doesn't replace anything 
             inputstring = templine
         else:
-            print("=====no { in string  ======")
+            pass# print("=====no { in string  ======")
             #end if
-        print("=======testing if { taken out of string=======")
-        for line in inputstring.splitlines():
-            print(line)
-        print("=======testing if { taken out of string=======")
+        #print("=======testing if { taken out of string=======")
+        #for line in inputstring.splitlines():
+        #    print(line)
+        #print("=======testing if { taken out of string=======")
         #check if } in this string an if so take it out #I have deactivated this since it's not needed
         
         #this is what we return the inputstring
@@ -2191,20 +1754,20 @@ def change_switch_to_method_solved(inputstring):
 ## skip_rope_skipping_some_lines()  this cuts out ONE inner switch body
 ##===========================================================
 def skip_rope_skipping_some_lines(string_name,start,finish):#start line nest switch and finish  endswitch
-	print("start= ",start,"finish= ",finish)
+	#print("start= ",start,"finish= ",finish)
 	if string_after_cutting_out_inner_switch_body[0] == False: #starting
-		print("it is False it is  empty ")
+		pass #print("it is False it is  empty ")
 	else: 
 		string_name = string_after_cutting_out_inner_switch_body[0]
-		print('it is NOT False and therefore we fill the string from the list[0]')
+		#print('it is NOT False and therefore we fill the string from the list[0]')
 	concatthis=''
-	print("===skip_rope_skipping_some_lines(string_name,start,finish)====")
+	#print("===skip_rope_skipping_some_lines(string_name,start,finish)====")
 	#string_after_cutting_out_inner_switch_body[0]
-	print(string_name)
+	#print(string_name)
 	counter=0; #concatthis =''; #finish = finish + 1 
 	#switch is the start line though we are skipping after it and keeping it
 	#the start line is the switch which will be preserved but skipping when cutting out
-	print("string_name=",string_name,"start=",start,"finish=",finish)
+	#print("string_name=",string_name,"start=",start,"finish=",finish)
 	for line in string_name.splitlines(): 
 		if counter > start  and counter <= finish: 
 			#print(line) #it won't print the switch word since it's skipping it
@@ -2275,21 +1838,22 @@ passthis.append(0)
 ##  starter_engine(the_nest_string):   nov 30th tested working accurately
 ##==================================================
 def starter_engine(the_nest_string):
-	print("======starter engine called======")
+	#print("======starter engine called======")
 	tabdepth='';n=''
 	for line in the_nest_string.splitlines(): #nest_string
 		if "switch" in line and "end" not in line: #had "not"
 			tabdepth = line.count("\t")
 			n= tabdepth;n = n-1  #need to have one tab in front
 			break
-	passthis[0]= n;print("n =",n)
+	passthis[0]= n;
+	#print("n =",n)
 goldtime=[]
 goldtime.append(0)
 ##===================================================================
 ##  modern_tab_shifter_to_left(the_nest_string):  nov 30th tested working
 ###==================================================================
 def modern_tab_shifter_to_left(the_nest_string):
-    print("====modern tab shifter to left=======")
+    #print("====modern tab shifter to left=======")
     starter_engine(the_nest_string)  #method call to get tabdepth on first switch line
     buildstring='';n = passthis[0] #filled from starter_engine method number of tabs in front of switch
     ### n is number of tabs in front of switch BEFORE CHANGING IT
@@ -2299,9 +1863,9 @@ def modern_tab_shifter_to_left(the_nest_string):
         for line in the_nest_string.splitlines():
             buildstring += line[n:] +'\n' #this cuts out n tabs from the front of this line
     goldtime[0] = buildstring
-    print("output of concatted string in goldtime[0]")
-    for line in buildstring.splitlines():
-        print(line)
+    #print("output of concatted string in goldtime[0]")
+    #for line in buildstring.splitlines():
+    #    print(line)
 ### deposit now code here for take out switch body to function properly   
  
 
@@ -2314,38 +1878,33 @@ def convert_switch_with_more_than_one_inner_switch_at_3_tabs(stringname):
     for item in inputlist: #this grabs the params from item     #list of switches pairs start stop at 3 tabs depth
         start = item[0];
         finish = item[1];
-        print('start=',start,'','finish=',finish)                       #62; finish=86 
+        #print('start=',start,'','finish=',finish)                       #62; finish=86 
         skip_rope_skipping_some_lines(stringname,start,finish)  #this copies the string skipping the range designated
         counter +=1
-        print("counter=>>",counter)
-        print("=====================")
-    print("at bottom of converts  with more than one inner switch at 3 tabs")
-    print("testing if weasel is returnable at the end of the function")
+       # print("counter=>>",counter)
+       # print("=====================")
+    #print("at bottom of converts  with more than one inner switch at 3 tabs")
+    #print("testing if weasel is returnable at the end of the function")
      #this is after it's done
     #for line in weasel.splitlines():
     #    print(line)
     #return weasel 
 
 	
-print("I am fillilng the inputlist right here manually force feeding it.")
+#print("I am fillilng the inputlist right here manually force feeding it.")
 #this calls it but right now I want to know where I fill th einputlist
 inputlist =[]
 inputlist.append([11,60])
 inputlist.append([62,86])
-print(inputlist)
+#print(inputlist)
 inputlist.reverse() #reversing the list since the cutting out must be done bottom up to work properly
 
-print("after reversing the list we now have===")
-print(inputlist)
-print("convert switch with more than one inner switch at 3 tabs(stringname)==== string1")
+#print("after reversing the list we now have===")
+#print(inputlist)
+#print("convert switch with more than one inner switch at 3 tabs(stringname)==== string1")
 #get_switch_and_endswitch_locations_in_string(test_string1) #presumes one inner switch 
-print("THIS IS THE BIG CHRISTMAS TEST =====*******=====")
-print("THIS IS THE BIG CHRISTMAS TEST =====*******=====")
-print("THIS IS THE BIG CHRISTMAS TEST =====*******=====")
-print("THIS IS THE BIG CHRISTMAS TEST =====*******=====")
-print("THIS IS THE BIG CHRISTMAS TEST =====*******=====")
-print("====real deal here ===GET SWITCH AND ENDSWITCH LOCATIONS========")
-print("this needs to be called first get_switch_and_endswitch_locations_in_string()")
+
+
 #get_switch_and_endswitch_locations_in_string(test_string1) #for this switch string
 #print('we have switch_list=',switch_list)
 #print("endswitch_list=",endswitch_list)
@@ -2354,7 +1913,6 @@ print("this needs to be called first get_switch_and_endswitch_locations_in_strin
 
 
 
-print("big test....starbucks morgan hill ========")
 
 switch_list=[]
 endswitch_list=[]
@@ -2368,7 +1926,7 @@ def delete_helper_lists_first():
 	
 #this gets the important switch and endswitch at 3 tabs length which is critical.
 def get_switch_and_endswitch_locations_in_string(string_name):
-	print("====||||  get switch and endswitch locations in string  ||||======")
+	#print("====||||  get switch and endswitch locations in string  ||||======")
 	delete_helper_lists_first()
 	#count how many switches at tab depth 3
 	####=================
@@ -2385,11 +1943,11 @@ def get_switch_and_endswitch_locations_in_string(string_name):
 	        counter += 1
 	        continue
 	####===================
-	print("total switch at 3 tabs in this string",len(total_switches_at_3tabs_depth))
-	print("they start on these lines",total_switches_at_3tabs_depth)
+	#print("total switch at 3 tabs in this string",len(total_switches_at_3tabs_depth))
+	#print("they start on these lines",total_switches_at_3tabs_depth)
 	#count_switches_at_threetabs= string_name.count("
 	counter=0; concatthis =''; #finish = finish + 1 
-	print("string_name=",string_name)
+	#print("string_name=",string_name)
 	#this looks for switch at 3 tabs depth and adds line number of switch
 	for line in string_name.splitlines():
 		tabdepth = line.count("\t")
@@ -2400,7 +1958,7 @@ def get_switch_and_endswitch_locations_in_string(string_name):
 		else:
 			counter += 1
 			continue
-	print("phase 2 here ====")
+	#print("phase 2 here ====")
 	counter=0; concatthis =''; #finish = finish + 1 
 	#print("string_name=",string_name)
 	#this looks for switch at 3 tabs depth and adds line number of switch
@@ -2413,24 +1971,24 @@ def get_switch_and_endswitch_locations_in_string(string_name):
 		else:
 			counter += 1
 			continue
-	print("switch_list=",switch_list)
-	print("endswitch_list=",endswitch_list)
-	print("end of line...")
+	#print("switch_list=",switch_list)
+	#print("endswitch_list=",endswitch_list)
+	#print("end of line...")
 	########################======
 	
 	########################==========
-print("calling get switch and endswitch locations (only one set) in string ")
+#print("calling get switch and endswitch locations (only one set) in string ")
 #this needs to be done first ===== before calling the function
 
-print("should be 1 for this test")
+#print("should be 1 for this test")
 #del switch_list[:]
 #del endswitch_list[:]
-print('real test now i really need this puppy to work')
+#print('real test now i really need this puppy to work')
 
 
 
 
-print('important testing on Saturday morning')
+#print('important testing on Saturday morning')
 trialinputlist=[]
 inputlist =[]
 
@@ -2441,20 +1999,20 @@ inputlist =[]
 def build_trial_inputlist(): #this combines switch and endswitch into pair into trialinputlist
 	del inputlist[:] #this empties the input list discarding previous data in it
 	del trialinputlist[:]
-	print("build_trail_inputlist()..")
+	#print("build_trail_inputlist()..")
 	counter=0;
 	for item in switch_list:
 		pair=[switch_list[counter],endswitch_list[counter]]
 		trialinputlist.append(pair)
 		counter += 1
 		
-	print("look for the ball on the green")
-	print("trialinputlist=",trialinputlist)
+	#print("look for the ball on the green")
+	#print("trialinputlist=",trialinputlist)
 	for item in trialinputlist:
 		inputlist.append(item)
-	print("inputlist=",inputlist)
-	for item in inputlist:
-		print(item)
+	#print("inputlist=",inputlist)
+	#for item in inputlist:
+	#	print(item)
 	inputlist.reverse() #is this needed here or not 
 
 	 
@@ -2470,23 +2028,23 @@ snowboarding=[]
 ##================================
 def take_out_switch_body(astring): #this was foxnews
 	nestedswitch= False
-	print("take_out_switch_body      today is november 28th sunday  4:29 pm ")
+	#print("take_out_switch_body      today is november 28th sunday  4:29 pm ")
 	#right here look if a switch at 3 tabs if not skip below
 	####=== new as of monday december 6th, 2021 =========================
 	#determine if 
 	for line in astring.splitlines():
 		tabcount =line.count("\t")
 		if "switch" in line and tabcount == 3:
-			print("yes switch at 3 tabs in line")
-			print("frosty says switch at 3 tabs confirmed")
+			#print("yes switch at 3 tabs in line")
+			#print("frosty says switch at 3 tabs confirmed")
 			nestedswitch= True
 			break
-	print("frosty the snow man light test for nested switch")
-	print("nestedswitch=",nestedswitch)
-	print("==================================")
+	#print("frosty the snow man light test for nested switch")
+	#print("nestedswitch=",nestedswitch)
+	#print("==================================")
 	if nestedswitch == False: #what this does is put the input string into output
 		#add input into output  this means no changes were done to the switch string
-		print("this switch string DOES NOT have an inner switch")
+		#print("this switch string DOES NOT have an inner switch")
 		lightning[0]=astring 
 	else:
 	##======= this is down here now ========december 6th 2022 =========
@@ -2495,17 +2053,10 @@ def take_out_switch_body(astring): #this was foxnews
 		convert_switch_with_more_than_one_inner_switch_at_3_tabs(astring)
 	#end if
 	##########================================================================
-	print("frosty snowboarding")
-	#december 6th looking where I am not adding31 and 66 
-	
-	print("this is new code now today is Monday november 29th now Dec 6th.")
-	print("what is in lightning[0] now")
-	#print(lightning[0])
-	
-	print("resulting final output of take_out_switch_body:") 
+	 
 	snowboarding.append(lightning[0])  #this is new dec 6th monday
-	for line in lightning[0].splitlines():
-		print(line)
+	#for line in lightning[0].splitlines():
+	#	print(line)
 
 
 
@@ -2546,7 +2097,7 @@ def move_string_to_left_side():
     ## using quail to hold the strings so I would use this here 
     for item in quail: #gets input strings from fillherup list
         testlist_of_strings.append(item)
-    print("==== passing the baton here =============/////=============")
+    #print("==== passing the baton here =============/////=============")
     print("verifying that testlist_of_strings has the switch strings from above at this juncture")    
     for item in testlist_of_strings:
         print(item)
@@ -2749,13 +2300,24 @@ def loop_thru_chain_output_list_and_fill_quail_list():
 ## loop_thru_quail_list():
 ##===================================    
 def loop_thru_quail_list():
-     for item in quail:
+    #return
+    for item in quail:
         print(item) 
         
 def loop_thru_chain_output_list():
+    print("== chain_output_list looping thru it to feed to parser in bypass==")
     for item in chain_output_list:
         print(item)
         print("=====================")
+        
+def fill_output_into_quail_list():
+    for item in chain_output_list:
+        quail.append(item)
+    #print("final output from chain methods for input switch strings")
+    #print("note: this is the quail list with these modified switch strings")
+    #for item in quail:
+    #    print(item)
+    #    print("=============")
 ##=============================================
 ## show_list_switch_numbers_to_transfer()
 ##=============================================
@@ -2766,14 +2328,11 @@ def show_list_switch_numbers_to_transfer():
 ##====================================
 ##  do_the_blender_chain_methods()
 ##====================================
+radical_list=[]
 def do_the_blender_chain_methods():
-    #print("==do the blender chain methods()==")
-    #this fills up fillerup from quail
-    #for item in quail:
-        #fillherup.append(item)
     print("inside of blender what do we have before calling chain methods")
     for item in testlist_of_strings:
-        print(line)
+       print(line)
         
     move_string_to_left_side()                         # method 1 indents to left
     take_out_the_inner_switch_bodies_leaving_switch()  # method 2 cut out switch bodies leaving switch
@@ -2781,9 +2340,13 @@ def do_the_blender_chain_methods():
     replace_endswitch_with_close_brace()               # method 4 endswitch becomes }
     fill_switch_numbers_list_to_transfer()             # method 5 list generated used for codegen
     fill_chain_output_list()  
-    loop_thru_quail_list()
-    loop_thru_chain_output_list() #final output to send to rudolph parser now      
-
+    #loop_thru_quail_list()
+    #loop_thru_chain_output_list() #final output to send to rudolph parser now      
+    #now I need to put what is in chain_output_list into quail list
+    del quail[:]
+    fill_output_into_quail_list() #final stage here 
+    for item in quail:
+        radical_list.append(item)
 ##  waterfall_chain_methods_gold_master()  formally called do_it()  #this is the one actually being used.
 ## uses testlist_of_strings for input
 ##==================================================
@@ -2794,25 +2357,60 @@ def do_the_blender_chain_methods():
 ##===================================================================================    
 ## ====  WATERFALL CHAIN METHODS GOLD MASTER OFFICIAL OFFICIAL OFFICAL OFFICIAL  =====       
 ##  fills quail list with converted and prepped input switch strings all clean up
+## this is called after the strings have been separated from the main nested switch
+
 ##=====================================================================================
 def waterfall_chain_methods_gold_master():  #THIS WILL TAKE IN THE QUAIL LIST FOR INPUT
-    print("===WATERFALL CHAIN METHODS Gold Master 1.3()===  REAL WORLD = ")
+    #print("===WATERFALL CHAIN METHODS Gold Master 1.3()===  REAL WORLD = ")
     do_the_blender_chain_methods()
     loop_thru_chain_output_list_and_fill_quail_list() #yeah makes sense filling quail list
     show_list_switch_numbers_to_transfer()
  
    
-
+###========================================================
 #print("===========") 
 #print("about to call waterfall_chain_methods_gold_master()")
+##================================================
+#print("this is where it all starts... make pairs and separate the switch strings")
 
+#this takes the nested switch input and chops it into separate switch strings
+#print(" PHASE 1 take input nested switch string and split it up")
+#manage_creating_pairs_and_separating_input_switch_strings(inputstring)
 
-waterfall_chain_methods_gold_master()  #<<=== this calls the chain_methods to run
+## this does the chain methods converting the separated strings to ready for parser
+#print("PHASE 2 do the chain methods on each string and put all into quai list")
+#waterfall_chain_methods_gold_master()  #<<=== this calls the chain_methods to run
 #commented out here 
+#print("====after finishing these two main methods to transform the input string====")
 
 
 
 
 
 
+##===========================================================================
+##  convert_nested_switch_string_to_strings_in_quail_list(inputstring):
+##============================================================================
+def convert_nested_switch_string_to_strings_in_quail_list(inputstring):
+    manage_creating_pairs_and_separating_input_switch_strings(inputstring)
+    waterfall_chain_methods_gold_master() 
+
+#inputstring = red_robin
+#convert_nested_switch_string_to_strings_in_quail_list(inputstring)
+
+print("=======end of test inside of startship=====")
 #exit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
