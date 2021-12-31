@@ -1,3 +1,18 @@
+Starbucks WiFi is nice.
+Friday, Dec 31 new year's eve, 2021 9:40 am 
+
+on home stretch to home plate. dec 31st Friday. Working on last critical bug.
+Good music capturing the moment of anticipation.
+https://www.youtube.com/watch?v=TsTFVdcpLrE&list=RDsRvEwXDxz_I&index=10
+	
+The bug is when I run the methods that split up the input nested switch and chops it up into individual switches
+and analyzes the data specifics and runs the chain methods on the individual switches to prepare them for the parser
+and puts them back into the quail list it doesn't run. But my test code runs.
+So paired down the 8 nested switches down to 2 switches to narrow down the scope of the bugs behavior to localize it.
+
+
+
+
 wed dec 29th, 2021  11:36pm
 Figured out the trick to import a file, run code in it, and fill a list from the imported resulting list.
 So now I can finish rudolph file that will do everything for nested switches.
