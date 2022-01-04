@@ -1,3 +1,15 @@
+jan 4th Tuesday. 2022  8:58 am 
+	
+Releasing Beta in a few days of switch and nested switch module with specs and tutorial how to use.
+
+Still trying to figure out how to get nested switch to work as a module.
+I did combine the imported file to the main module is now inside of the main module so it doesn't have to be imported.
+Nested switches works but hasn't been added to the regular switch as yet.
+I am currently using the Spyder debugger to step thru my code to figure out why it is getting hung up in the concat stage.
+
+
+
+
 Input string.
 red_robin ='''
 	switch(exp){  
