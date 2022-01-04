@@ -1,3 +1,144 @@
+Input string.
+red_robin ='''
+	switch(exp){  
+		case 1 thru 3: 
+			print("red white and blue is what we are talking about !")
+			print('first prize')
+			print('you bad ass coder Charlie Brown christmas')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			#############
+			exp ='blable'
+			switch(exp)  
+				case 'blable':
+					print("we are  inside of sw itch 11 good show ")
+					print("this is really working, fantastic...")
+					####################
+					exp = 'tahoe'
+					switch(exp){ 
+						case 'tahoe':
+							print("do inside of sw 15")
+							print("oh this is just wonderful ... really it is")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							result[0]='fallen leaf lake'
+							####################
+							exp = 'winter'
+							switch(exp){    
+								case 'winter':
+									print("this is possibly sw 25")
+									print("do chinquapin for tennis in summer")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice kayaking race")
+									break
+								default:
+									print("we are done here")
+							endswitch 
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			#exp = 3
+			switch(exp)
+				case 'burger':
+					print("do something")
+					####################
+					switch(exp){   
+						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch
+			##############
+			print('taught me how to write code')
+			fallthru
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+		default:
+			print('the end')
+}
+'''	
+print('go now')
+
+
+mission_control(1,red_robin)
+
+
+The bug error message when trying to run the nested switch code generator
+
+class 'int'>
+what is it??
+what is in the line above
+inside of modern tab shifter to left we have this for n
+n= 6
+<class 'int'>
+what is it??
+what is in the line above
+var pair= 
+var pair= 
+var pair= 
+var pair= 
+var pair= 
+var pair= 
+var pair= 
+var pair= 
+Traceback (most recent call last):
+  File "/Users/blakesouthwood/Desktop/dark_side_of_moon/little engine that could/tahoe is in reach/testing_nests.py", line 101, in <module>
+    mission_control(1,red_robin)
+  File "/Users/blakesouthwood/Desktop/dark_side_of_moon/little engine that could/tahoe is in reach/running_reindeer.py", line 491, in mission_control
+    holiday(someinput,thestring)
+  File "/Users/blakesouthwood/Desktop/dark_side_of_moon/little engine that could/tahoe is in reach/running_reindeer.py", line 478, in holiday
+    phase_one_of_nested_switches_procedures(thestring) #wafffles2
+  File "/Users/blakesouthwood/Desktop/dark_side_of_moon/little engine that could/tahoe is in reach/running_reindeer.py", line 353, in phase_one_of_nested_switches_procedures
+    convert_nested_switch_string_to_strings_in_quail_list(inputstring) #from starship
+  File "/Users/blakesouthwood/Desktop/dark_side_of_moon/little engine that could/tahoe is in reach/starship.py", line 2478, in convert_nested_switch_string_to_strings_in_quail_list
+    waterfall_chain_methods_gold_master() 
+  File "/Users/blakesouthwood/Desktop/dark_side_of_moon/little engine that could/tahoe is in reach/starship.py", line 2382, in waterfall_chain_methods_gold_master
+    do_the_blender_chain_methods()
+  File "/Users/blakesouthwood/Desktop/dark_side_of_moon/little engine that could/tahoe is in reach/starship.py", line 2355, in do_the_blender_chain_methods
+    take_out_the_inner_switch_bodies_leaving_switch()  # method 2 cut out switch bodies leaving switch
+  File "/Users/blakesouthwood/Desktop/dark_side_of_moon/little engine that could/tahoe is in reach/starship.py", line 2155, in take_out_the_inner_switch_bodies_leaving_switch
+    take_out_switch_body(item)
+  File "/Users/blakesouthwood/Desktop/dark_side_of_moon/little engine that could/tahoe is in reach/starship.py", line 2064, in take_out_switch_body
+    build_trial_inputlist()	 #this is new 
+  File "/Users/blakesouthwood/Desktop/dark_side_of_moon/little engine that could/tahoe is in reach/starship.py", line 2015, in build_trial_inputlist
+    pair=[switch_list[counter],endswitch_list[counter]]
+IndexError: list index out of range
+
+	
+
 more testing'
 taking out print statements from the 30,000 lines of code.
 jan 3 Monday, 2022 4:34 pm PST
