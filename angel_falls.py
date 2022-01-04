@@ -3,7 +3,10 @@ taking out print statements from the 30,000 lines of code.
 jan 3 Monday, 2022 4:34 pm PST
 I have one nested switch working and I am having trouble getting it to work when importing the file and  using a nesetd switch
 and running it from the imported file.
-It works fine in the same file. That'st he only issue I have right now. 
+It works fine in the same file. That's the only issue I have right now. 
+With solitary switches with no nested switches that engine works fine importing the file. 
+My nested switch works now but I import it and run it but it crashes at the concat stage trying to zero in on the bug.
+
 
 
 11:09 am Fri Dec 31st, 2021 TOTALLY WORKS. PURE NIRVANA . crushed the bugs.This is the first time it ran all the way through.
