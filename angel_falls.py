@@ -1,3 +1,11 @@
+more testing'
+taking out print statements from the 30,000 lines of code.
+jan 3 Monday, 2022 4:34 pm PST
+I have one nested switch working and I am having trouble getting it to work when importing the file and  using a nesetd switch
+and running it from the imported file.
+It works fine in the same file. That'st he only issue I have right now. 
+
+
 11:09 am Fri Dec 31st, 2021 TOTALLY WORKS. PURE NIRVANA . crushed the bugs.This is the first time it ran all the way through.
 I decided to reduce the test code to one main switch and one nested inner switch to reduce the problem set. Solved it.
 # radical list is a copy of the quail output list in starship
