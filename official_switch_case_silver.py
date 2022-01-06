@@ -1,15 +1,11 @@
-#######################################################
-# official_switch_case_silver.py  works in conjuction with test file test_inputs_beta.py
-# developed solely by Blake Southwood  this is version 1.0
-# June 10th, 2021  I live in Silicon Valley south of San Jose in California
-# southwood.blake@gmail.com
-# I live in Gilroy, CA and will relocate.
-# I am currently looking for a full time python developer job.
-# I am in the process of refactoring this code base but wanted
-# to get it working and stable first.
-####################################################### 
+#mrcoffee module 
+  
 # -*- coding: utf-8 -*-
+#from bugsbunny import * 
 
+#from goldfish import switchcasetester
+#import switch_config  #what do these two imports mean and do?????
+#import switch_subfile
 disney_tron_trace_list=['starter']
 
 ######## show tron trace path
@@ -4899,7 +4895,7 @@ def moreclever(i): #so it already exists we are changing its value
 #testing accessing switchcase from file goldfish
 def mountain2(c):
 	mytrace('mountain2()')
-	print("===mountain 2called===playing with switch case ")
+	#print("===mountain 2called===playing with switch case ")
 	var2[0]= c
 	global weasel
 	weasel = var2[0]
@@ -5021,7 +5017,7 @@ def first_test():
 
 
 print("======")
-print("practicing with list funnybusiness here for practice and fun")
+#print("practicing with list funnybusiness here for practice and fun")
 print("======")
 funnybusiness=['starter','wildone','wildtwo']
 reset_list_to_just_starter(funnybusiness)
@@ -7484,16 +7480,9 @@ def create_case_name_lists(x,y):
         if smartcounter >= x and smartcounter < y:  #so get what's inbeteen
         #this should just look
             if "case"  in line:
-                #print("did it take off front of line?")
-                #print(line.split(' ',1)[1])
-                #print(line,smartcounter)
-                #print("=================================")
+              
                 genius =line.split()
-                #print("genius =",genius)
-                #print("======= len(genius) ==============")
-               # print("WE ARE HERE==>>>>")
-               # print('number of words in the line case = len(genius) ',len(genius))
-                
+              
                 #print("number of words in this line =",len(genius))
                 #print("it's current state is only grab the second word which is position [1] by default")
                 ap=''
@@ -7969,6 +7958,9 @@ roadrunner=[]
 # to send the numbers thru the string parser
 # I don't think that this is called 
 
+##==========================
+##  def f22_fighter_jet()
+##==========================
 def f22_fighter_jet(): #makes critical cranberries list which is the taillist for switch cases
 	return #this kills it
 	#mytrace('f22_fighter_jet()')
@@ -8323,6 +8315,11 @@ def flyingcloud(x,y,z):
 einstein=[] #resets einstein to empty
 	#========================================
 #this fills up smartcasemanager list
+
+##==================
+##  def nightowl()
+##==================
+
 def nightowl():
 	#print("===== nightowl() called ======")
 	mytrace('nightowl()')
@@ -8881,6 +8878,8 @@ smartcasemanager=[]  #creating the initializing smartcasemanager
 
 
 
+
+
 #this just prints it out the sets of the cases for each case section
 def castle_time(): #fills up smartcasemanager
 	mytrace('castle_time')
@@ -8906,31 +8905,19 @@ def castle_time(): #fills up smartcasemanager
 	#this fills up list smartcasemanager from list_of_rows_of_case_names
 	#this is doing a brute force copy of a list
 
-	#print("list_of_rows_of_case_names",list_of_rows_of_case_names)
-	#print("this is what is in list_of_rows_of_case_names")
-	#for item in list_of_rows_of_case_names:
-	#	print(item)
+
 
 	del smartcasemanager[:] #this doesn't seem to work 
 	while len(smartcasemanager) > 0:
 		for item in smartcasemanager:
 			del item
-	#print("what is in smartcasemanager now???",smartcasemanager)
 
-	#print("smartcasemanager should be empty now",smartcasemanager)
 
-	#print(smartcasemanager)
-
-	#print('after deleting last item in list')
-	#print("this is what is in smartcasemanager",smartcasemanager)
-	#print("the length of smartcasemanager is", len(smartcasemanager))
 
 	finallist = ['default'] #see if this works
 	list_of_rows_of_case_names.append(finallist)
 	#print("this should be default below======+++")
-	#list_of_rows_of_case_names[-1]
-	#smartcasemanager.append("['default']") #using a default case so it can be fallthrud from above
-	#print(smartcasemanager) #now we add default to the end or do we need to or not
+
 #==========================================================
 #======================== partynation =====================
 
@@ -8993,22 +8980,7 @@ def testingthis():
 	for item in candy:
 		pass #print(item)
 		
-	#print("starbucks list ====of first case names in each section ====")
-	#print(starbuckslist)
-
-	#print("smartcasemanager list ========", len(smartcasemanager))
 	
-	#for item in smartcasemanager:#
-	#	print(item)
-	
-	#print("============")
-	#print("case_main_body_list list ========", len(case_main_body_list))
-	
-	#for item in case_main_body_list:
-	#	print(item)
-		#print(item)
-	#=== code gen here ====
-
 
 def stage_ten():
 	mytrace('stage_ten()')
@@ -9240,25 +9212,12 @@ exp =''
 #this does switch code gen for words/chars NOT numbers
 #this takes in lists calculated above and generates a string of python switch case code
 def switch_code_gen():
-	
-	
-	
 		
 	mytrace('  ')
 	#####
 	
 	##### march 7, 2021
-	#new change putting penguin into cranberries
-	#print("=== march 7th, 2021 testing===================///================================")
-	#print("what is in penguin???")
-
-	#breakpoint() # breakpoint() it's a method
 	
-	#print("flying PENGUIN=",penguin)
-	#print("=========================")
-	#print("cranberries=",cranberries)
-	#breakpoint()
-	#print("======")
 	#Here I am putting the contents of penguin into cranberries
 	#print("this is where I empty cranberries list and fill it with penguin")
 	del cranberries[:]  #emptying cranberries here 
@@ -9270,12 +9229,12 @@ def switch_code_gen():
 		
 	
 	
-	###########  march 7, 20201  #######################################
+	###########  march 7, 2021  #######################################
 	# I think that I just need to loop through casemainbodylist
 	# and append cranberries based on teh counter and then eliminate the third tier below
 	# what I am doing is adding teh cranberris(one liner break or fallthru to the case_main_body_list
 	####################################################################
-	### FALLING IN LOVE 
+
 	
 	
 	case_main_body_list_with_tail=['starter']
@@ -9310,42 +9269,13 @@ def switch_code_gen():
 	
 	
 	anewcounter=0
-	#print("the first slot has:...",case_main_body_list_with_tail[0])
-	#for item in case_main_body_list_with_tail:
-		#print("-------")
-		#print(case_main_body_list_with_tail[anewcounter])
-		#print("-------")
-	
-	#print("this should be the case_main_body_list with the break and fallthurs ... we hope")
-	# just commented this out on June 2, 2021 to get rid of the testing 
-	#for item in range(1,len(case_main_body_list_with_tail)):
-		#print("-------")
-		#print(case_main_body_list_with_tail[item])
-		#print("-------")
 	
 	
-	    #case_main_body_list_with_tail.append(item + cranberries)  #how to add an extra line    
-	    #create new list adding them together perhaps
-	    
+	
 	
 	############################
 	
-	#here will be the caselists for each case section that will be generated
-	#I have to make a doctring with a name for the output python that will be run.
-
-
-	 #name of  generated docstring switch_python_gen
-	#print("varholder.append(exp)")
-	#this is the final input code of switchcasetester
-	#print("================== finalized input of switch case code =======")
 	
-	# actual input to parser
-	#print(switchcasetester) #to see what it sees
-
-	#remembering one is printing
-	#the other is generating (and printing to see it)
-	#before it's executed the python switch case form
-
 #this is the input for exp for switch(exp)
 	##############
 	topvars2 = "\nexp = varholder[0]\n\n"
@@ -9369,51 +9299,20 @@ def switch_code_gen():
 	#------------------------------------
 	top_input_of_exp = "exp = varholder[0]" 
 	
-	# "varholder.append(exp)\n" +
+	
 	print("varholder[0] =",varholder[0])  
 	#new line to see the input expression exp from clever
 
-	#how do I determine if it's empty
-
-	#if not varholder:
-	#	print("List is empty")
-	#else:
-	#	print("varholder has something in it")
-	#	print(varholder)
+	
 	print(varholder) #added this to see what the input in clever is
 		#-------------------------
-	# this prints the case lists of the words in each case section
 	
-
-	#for item in smartcasemanager:
-	#	print(smartcasemanager[item])
-	##====================
-	#print("-----------------------------------------")
-	## ===========  LOOP =============
-	#add default to end of einstein; this is because there is no actual default case
-	#it's used as a lifesafter in case someone wantsto fallthru into default
-	#I decided to create a default case but in the input it's not there
 
 	einstein.append("default")  #adding default to the end of einstein copy list
 	
-	#print("einstein list",einstein)
 	
 	
-	#res = list(map(lambda x: x.lower(), einstein ))
-	#print(res)
-	#newton=[]
-	#for i in range(len(einstein)):
-	#for i in einstein:
-	#	answer = i.lower()
-		#newton.append(answer)
-	#print("newton list now is..")
-	#print(newton)
-	#
-	#	#Iterate through einstein
-	#	einstein[i] = einstein[i].lower()
-	#print("einstein list now",einstein)
-	#print("=====")
-	#print("it looks like len(einstein)", len(einstein), "differs from case_main_body_list_with_tail", len(case_main_body_list_with_tail))
+	
 	 
 	for item in range(1,len(einstein)):     #first loop was smartcasemanager
 		trains =  str(counter)
@@ -9452,15 +9351,7 @@ def switch_code_gen():
 	secondpart=[]
 	thirdpart =[]
 	extremelysmart=[]
-	#print("==========//// =======")
-	#print("let's look inside of case_main_body_list_with_tail")
-	#print(case_main_body_list_with_tail)
-	#print("length of case_main_body_list_with_tail =",len(case_main_body_list_with_tail))
 	
-
-	#print("let's look in case_main_body_list",case_main_body_list)
-	#for item in case_main_body_list:
-	#	print(item)
 	
 	#print("the length of case_main_body_list_with_tail =",len(case_main_body_list_with_tail))
 	#print("==========//// =======")
@@ -9518,9 +9409,6 @@ def switch_code_gen():
 	secondpart.append(lastishcase)  #this feeds the body into secondpar
 
 	##########################
-	##trying = tabs[2] + cranberries[-1] #=====
-	##thirdpart.append(trying) #this feeds the tail into thirdpart
-
 
 	#practice printint out the three tier cakes for each section
 	#print("below this line is the concatted output in strings")
@@ -9602,9 +9490,9 @@ def switch_code_gen():
 	rocks=None
 	rocks=''
 	
-	#print("")
+	
 	#print(" =====done executing output from switch ======")
-	#print("")
+
 	#print("testing this deletion of list with tail")
 	case_main_body_list_with_tail=['']
 	#print("we have",case_main_body_list_with_tail)	
@@ -9813,52 +9701,10 @@ def stage_twelve():
 	for item in smartcasemanager:
 		smartcasemanager.pop()
 		
-		
-	#print("candy=",candy)
-	#print("defaultlist=",defaultlist)	
-	#print("einstein=",einstein)
-	#print("wilecoyote=",wilecoyote)
-	#print('birdsong=',birdsong)
 
-	#print('british=',british)
-	#print('penguin=',penguin)
-	#print('royallist=',royallist)
-	#print('cranberries=',cranberries)
-	#print('roadrunner=',roadrunner)
-	#print('case_main_body_list=',case_main_body_list)
-	#print('case_main_body_list_with_tail=',case_main_body_list_with_tail)
 
-	#if len(caselist1) > 0:
-	#	caselist1.pop()
 
-	#print("caselist1=",caselist1)
-	#print("caselist2=",caselist2)
-	#print("caselist3=",caselist3)
-	#print("caselist4=",caselist4)
-	#print("caselist5=",caselist5)
-	#print("caselist6=",caselist6)
-	#print("caselist7=",caselist7)
-	#print("caselist8=",caselist8)
-	#print("caselist9=",caselist9)
-	#print("caselist10=",caselist10)
-	
-	#print("are these empty now for a clean slate after first switch?")
-	#print("gti",gti)
-	#print("mochalist",mochalist)
-	#print("drive_thru",drive_thru)
-	#funny
-	#print("case1findbreak",case1findbreak)
-	#print("case1findfallthru",case1findfallthru)
-	#print("seal",seal)
-	#print("this one is the Big Deal line_numbers_of_first_cases needs to be empty")
-	#print("It was previously not being emptied obviously ... now it is")
-	#print("apparently this one REALLY needs to be empty or I am screwed")
-	#print("line_numbers_of_first_cases",line_numbers_of_first_cases)
-	#print("===== bottom of stage twelve reloading module if possible")
-	#print("might have to call function from another function")
-	#importlib.reload(switchmodtrial7)
-	#print('stage twelve')
-	#print("trontime=",trontime)
+
 	del trontime[:]  #empties trontime list
 	#print("now trontime =",trontime)
 	
@@ -10218,7 +10064,7 @@ def endswitch(y): #pulls in sw
 	#these function calls below are called no matter what
 	#####################################
 	flush_lists() 
-	parser_mode_1(y) 
+	parser_mode_1(y) #y comes from cray[0] above flowing downwards
 		
 	 
 
@@ -10233,4 +10079,3 @@ def endswitch(y): #pulls in sw
 
 
 
-#
