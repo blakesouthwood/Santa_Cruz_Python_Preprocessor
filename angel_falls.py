@@ -1,3 +1,15 @@
+just reviewed how I cleared out the vars and lists for the single switch which I call 15 times
+in the beta demo I finished in June and now I will use the same technique for the nested switches
+so that a series of nesteed switches can be used.
+
+The nested switch is a beast for it's codegen tricks and I apprently wasn't clearling each list and var just in time
+so I will work on that engineering tomorrow.
+
+Next after that I will activate the bypass205() method so that if at least one nested switch is detected
+in a switch string it will do the nested_switch scenario otherwise it will do the one switch scenario.
+
+##====================================================
+
 jan 5th Wednesday, 2022 5:58 pm
 Uploaded starship10.py and red_flying_reindeer.py
 which is beta of working nested switches. Issue I am trying to solve is
