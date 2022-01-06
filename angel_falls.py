@@ -1,3 +1,131 @@
+jan 5th Wednesday, 2022 5:58 pm
+Uploaded starship10.py and red_flying_reindeer.py
+which is beta of working nested switches. Issue I am trying to solve is
+merely resetting the lists and vars so for the next nested switch stringe its
+empty for all values.
+
+mission_control(2,red_robin) #number for input of main switch and name of nested switch string
+
+
+red_robin ='''
+	switch(exp){  
+		case 1 thru 3: 
+			print("can we be more specific !")
+			print('first prize')
+			print('Lucy and Schroeder at the piano')
+			fallthru
+			
+		case 4 to 7:
+			print('kangaroo hop hop!')
+			#############
+			exp ='blable'
+			switch(exp)  
+				case 'blable':
+					print("we are  inside of sw itch 11 good show ")
+					print("this is really working, fantastic...")
+					####################
+					exp = 'tahoe'
+					switch(exp){ 
+						case 'tahoe':
+							print("do inside of sw 15")
+							print("oh this is just wonderful ... really it is")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							result[0]='fallen leaf lake'
+							####################
+							exp = 'winter'
+							switch(exp){    
+								case 'winter':
+									print("this is possibly sw 25")
+									print("do chinquapin for tennis in summer")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice kayaking race")
+									break
+								default:
+									print("we are done here")
+							endswitch 
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			#exp = 3
+			switch(exp)
+				case 'burger':
+					print("do something")
+					####################
+					switch(exp){   
+						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch
+			##############
+			print('taught me how to write code')
+			fallthru
+		case 8 to 10:
+			print('mocha blast')
+			print('== 31 flavors===')
+			fallthru
+		default:
+			print('the end')
+}
+'''	
+
+output of running the nested switch
+input to mainswitch= 2
+
+can we be more specific !
+first prize
+Lucy and Schroeder at the piano
+kangaroo hop hop!
+we are  inside of sw itch 11 good show 
+this is really working, fantastic...
+do inside of sw 15
+oh this is just wonderful ... really it is
+nice
+this is possibly sw 25
+do chinquapin for tennis in summer
+yep
+nice kayaking race
+yep
+nice
+we are done here
+taught me how thru write code
+mocha blast
+== 31 flavors===
+the end
+outputstring= 
+string_name= 
+result[0] = fallen leaf lake
+##========================================================
 jan 4th Tuesday. 2022  8:58 am 
 	
 Releasing Beta in a few days of switch and nested switch module with specs and tutorial how to use.
