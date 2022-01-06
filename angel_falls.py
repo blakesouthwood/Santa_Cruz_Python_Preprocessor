@@ -2,10 +2,14 @@ just checked and both scenarios switch and nested switches work in Sublime Text.
 wed jan 5, 2022 7;36 pm.
 currently I can run n number of single swtiches no probs
 when I run more than 1 nested switch it crashes so I am working on clearing out the vars and lists states to virgin state
-just like I did (apparently properly) in the single switch scenario andI will incorporate that into the much more complex
+just like I did (apparently properly) in the single switch scenario and I will incorporate that into the much more complex
 nested switch.
 The single switch is lightning fast. The nested switch has a ton of print statements which I'm quickly commenting out
 to make it faster.
+
+Also the code size will be drammatically reduced so as to reuse the same single switch parser and codegen that I am using for the single
+switch scenario. I currentlly have a modified and greatly added onto parser and code gen engine for the nested switch
+behavior generator. Thrilled to death that it works though. Mind blowing complexity. 
 
 I am still in total shock it works. It was mind bending to solve it and impliment my design.
 The design was the key to success.
