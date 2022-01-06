@@ -1,3 +1,15 @@
+just checked and both scenarios switch and nested switches work in Sublime Text.
+wed jan 5, 2022 7;36 pm.
+currently I can run n number of single swtiches no probs
+when I run more than 1 nested switch it crashes so I am working on clearing out the vars and lists states to virgin state
+just like I did (apparently properly) in the single switch scenario andI will incorporate that into the much more complex
+nested switch.
+The single switch is lightning fast. The nested switch has a ton of print statements which I'm quickly commenting out
+to make it faster.
+
+I am still in total shock it works. It was mind bending to solve it and impliment my design.
+The design was the key to success.
+
 just reviewed how I cleared out the vars and lists for the single switch which I call 15 times
 in the beta demo I finished in June and now I will use the same technique for the nested switches
 so that a series of nesteed switches can be used.
