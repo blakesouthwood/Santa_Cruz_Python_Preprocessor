@@ -364,9 +364,17 @@ reset_sutter_and_buildstring() #for adder() and buildstring()
 print("-------------------")
 print("== switch 6 ==")
 print("-------------------")
+print("this demonstrates using adder(x) method utilizing fallthrus from cases")
+print(" adder(2) within a case and after switch ")
+print(" we have result of ADDER adding,targetlist[0])")
+print("=================")
+print("and BUILDSTRING CONCATTING utilizing fallthru OR missing break")
+print("within a case look like this buildstring('merry')")
+print("result of buildstring concatting ,buildstringlist[0])")
 clever('panda express')
 #show_input_string()   #input so what the string right below here
 #show_generated_code() #output
+
 show_input_switch_string()   #input so what the string right below here
 hide_generated_code()
 
@@ -416,7 +424,7 @@ print("final result=")
 #################
 #these need to exist be initializedto be utilized
 
-print("result of adder adding",targetlist[0])
+print("result of ADDER adding",targetlist[0])
 print("result of buildstring concatting ",buildstringlist[0])
 #targetlist[0] = 0
 #buildstringlist[0] = 0
