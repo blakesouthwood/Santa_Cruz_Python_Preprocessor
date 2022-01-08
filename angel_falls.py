@@ -1,3 +1,7 @@
+10:29 am jan 8th
+testing and cutting out dead code (not called)
+
+
 Jan 8th, 2022 9;23 am
 organzing and modularing the nested switch engine so that I can do multiple nested switch strings
 in a sequence just as I can with single switches. Still speechless nested switch works.
