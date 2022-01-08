@@ -1,3 +1,12 @@
+Jan 8th, 2022 9;23 am
+organzing and modularing the nested switch engine so that I can do multiple nested switch strings
+in a sequence just as I can with single switches. Still speechless nested switch works.
+The ordering of the mini modules is crucial to avoid having to do a reload so clearing the lists
+and vars is imperative. So right now dealing with the organization of the flow of control
+and cutting up sections into separate modules so I can eventually but it all into one file for simplicity
+flowing top down .
+
+
 just checked and both scenarios switch and nested switches work in Sublime Text.
 wed jan 5, 2022 7;36 pm.
 currently I can run n number of single swtiches no probs
