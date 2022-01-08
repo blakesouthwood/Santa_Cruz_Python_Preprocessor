@@ -1,5 +1,6 @@
 10:29 am jan 8th
 testing and cutting out dead code (not called)
+https://www.youtube.com/watch?v=daa9pZDxfIY  #I'm going to DisneyLand
 
 
 Jan 8th, 2022 9;23 am
