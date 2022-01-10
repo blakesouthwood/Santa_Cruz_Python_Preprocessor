@@ -1,3 +1,13 @@
+Jan 10th, 2022 3:23 pm
+Designing a main for nested switches
+with methods in order within it to fix bug preventing from doing many nested switches
+since right now it's not currently in a true sequence. This should make it behave and work properly.
+I went on a drive today and the obvious solution occurred to me . 
+Just like in the single switch I use a main sequence for the complicated methodical steps.
+It's so obvious to me now. I got a posterboard this morning to flow chart the sequence and that
+got me thinking of a simpler and more elegant solution.
+
+
 10:29 am jan 8th
 testing and cutting out dead code (not called)
 https://www.youtube.com/watch?v=daa9pZDxfIY  #I'm going to DisneyLand
