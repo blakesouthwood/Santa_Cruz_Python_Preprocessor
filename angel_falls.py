@@ -10,6 +10,7 @@ file and unwieldy and I need to clear the lists and vars. So I have each module 
 as input into the next module below it with the main function in the top file.
 taking out all of the prints I used for debugging. I will first test and verify each separate
 module still works after cutting them apart.
+This will eventually be triggered by endswitch(stringname) at the bottom of a C style switch doc string.
 
 
 jan 13th, 2022
