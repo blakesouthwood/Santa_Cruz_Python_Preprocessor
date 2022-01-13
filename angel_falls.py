@@ -1,3 +1,6 @@
+jan 13th, 2022
+Visual Studio Code debugger stepping thru code to follow it's path.
+
 Jan 10th, 2022 3:23 pm
 Designing a main for nested switches
 with methods in order within it to fix bug preventing from doing many nested switches
