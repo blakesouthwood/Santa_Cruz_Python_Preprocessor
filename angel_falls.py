@@ -5,7 +5,7 @@ which is how the single switch works.
 I will make the first attempt today. I have the code in 4 parts now and I'm testing and
 verifying each seperated module works independently and then I will import the output lists
 from each from a main file. The point of this design change is to be able to call nested switches
-aplumb and do many like I do with single switches. The problem was resetting it since it's a massive
+any time and do many like I do with single switches. The problem was resetting it since it's a massive
 file and unwieldy and I need to clear the lists and vars. So I have each module feed it's output
 as input into the next module below it with the main function in the top file.
 taking out all of the prints I used for debugging. I will first test and verify each separate
