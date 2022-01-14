@@ -1,5 +1,7 @@
 Was flailing then then had a thought and it worked.
-jan 13th thursday 2022
+https://www.youtube.com/watch?v=fDWFVI8PQOI&list=RDMM&start_radio=1&rv=-yOZEiHLuVU
+jan 13th thursday 2022  4:39 pm PST Morgan Hill Starbucks, California
+	
 My code was one module and to work I need to call it from the bottom (or so I thought).
 I couldn't move the mission_control() method trigger because it wouldn't work right and I didn't want to spend
 two weeks refactoring all the code. Then I thought of JavaScript and thought, hey what if...
