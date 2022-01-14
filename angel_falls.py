@@ -1,4 +1,59 @@
 Was flailing then then had a thought and it worked.
+I had a function that had to be called where it was located otherwise it wouldn't work.
+I was at my wits end to solve the problem. Then I thought what if I dynamically called the function
+with differnet inputs, (number or word and string name) at first with eval and then without eval.
+The issue was I need to have a nested switch called with an endswitch(stringname) at the bottom
+of a nested switch to trigger the nested switch code.
+But whenever I moved the trigger method mission_control it wouldn't work and it got scary.
+the hard coded method would only work correctly where it was and also the bypass205() nethod
+is hard coded and the bottom_sequence() at the bottom.
+The only change occurring when I called the module are the input number or word and the stringname.
+So I realized what if I dyanmically call the mission_control method without moving it since its hardwired.
+and I need to call it automatically which means it's always on. It's the trigger for the first section of the 
+translation of the input switch into python code parsing and generating python and conccatting it.
+This whole module will be in the background imported and everything can happen in the background but I was in  tizzy
+over being able to call it multiple times. Running once it's fine. And now it should work multiple times.
+More testing tomorrow.
+
+I had hit a wall and my unconscious solved it. This is soooo awesome.
+
+for testing I am calling it mrendswitch(string) 
+
+##====== javascript hack trick ===
+variableinput=[]
+variableinput.append(0)
+stringlist=[]
+stringlist.append(0)
+##==========================================
+variableinput[0]= 1
+#stringlist[0] = red_robin
+
+#this grabs the switch string name as input  and puts it into list stringlist[0]
+##=========================
+def mrendswitch(string): #this would run above in the file  <<====endswitch(stringname) will be in other file
+    print("=== mrendswitch called ====")    #everything in *this* file is invisible will be imported
+    stringlist[0]=string
+    print(stringlist[0])
+    stringname =stringlist[0]
+
+mrendswitch(red_robin) #this is called and triggeres filling the two lists
+##missioncontrol is called 
+#stringlist[0] =stringname #from above   THIS IS NOW DYNAMIC JAN 13, 2022 but doesn't move
+anumber = variableinput[0]  #I can change the inputs with changing what is in the lists it reads
+stringname=red_robin        #I will fill the lists with the endwitch call
+
+mission_control(anumber,stringname)  #this function must stay RIGHT HERE 
+
+#exec(sweet)
+#it did say missioncontrol(1,redrobin) #this was hardcoded for testing
+#===============
+#what if I dynamically change it
+
+
+
+
+
+
 https://www.youtube.com/watch?v=fDWFVI8PQOI&list=RDMM&start_radio=1&rv=-yOZEiHLuVU
 jan 13th thursday 2022  4:39 pm PST Morgan Hill Starbucks, California
 	
