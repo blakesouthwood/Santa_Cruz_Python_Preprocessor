@@ -1,3 +1,16 @@
+Was flailing then then had a thought and it worked.
+jan 13th thursday 2022
+My code was one module and to work I need to call it from the bottom (or so I thought).
+I couldn't move the mission_control() method trigger because it wouldn't work right and I didn't want to spend
+two weeks refactoring all the code. Then I thought of JavaScript and thought, hey what if...
+I dynamically build the called trigger method and fill it and it ran. I am blown away that it worked.
+So I couldn't move the trigger method otherwise I got all kinds of list errors and nothing worked.
+So I was splitting up the huge module into 4 smaller modules and I couldn't call the trigger at the bottom.
+I then thought what if I dynamically fill the trigger method and. it worked. wow. Blew my mind.
+SO HAPPY.So, this means I can can call the working nested switch code with an endswitch() and it should work.
+
+
+
 jan 13th 2022  10:02 AM
 seperated monster file into 4 separate modules which will be accessed by one file
 and this way I can control the vars and lists and thus clear them after each run (hopefully)
