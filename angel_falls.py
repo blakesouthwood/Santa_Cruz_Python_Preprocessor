@@ -8,6 +8,10 @@ So I couldn't move the trigger method otherwise I got all kinds of list errors a
 So I was splitting up the huge module into 4 smaller modules and I couldn't call the trigger at the bottom.
 I then thought what if I dynamically fill the trigger method and. it worked. wow. Blew my mind.
 SO HAPPY.So, this means I can can call the working nested switch code with an endswitch() and it should work.
+endswitch is a method that holds a string which is the nested switch input
+endswitch will pass the string name into a field (a list) and the input value such as 1 is in another list
+above each switch. The issue is calling the switch once is fine. But it is not possible (right now) to call another one.
+Now it should call any number of nested switches. Like all of my brilliance it came to me in a flash of insight just now.
 
 
 
