@@ -1,3 +1,8 @@
+jan 16th saturday 2022 8;52 am
+pinpointed bug!!! so happy
+
+
+
 Was flailing then then had a thought and it worked.
 I had a function that had to be called where it was located otherwise it wouldn't work.
 I was at my wits end to solve the problem. Then I thought what if I dynamically called the function
