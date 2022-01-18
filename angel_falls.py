@@ -1,3 +1,12 @@
+jan 18th, tuesday 7:30am , 2022
+Taking out duplicate functions
+I managed to connect stage 2 and stage 3 together successfully and about to add stage 1 directly
+in front of stage 2 so that I can call the nested switch module thru a main at the bottom
+simulating the endswitch()
+It's been a good boxing fight. Isolated module 1 and taking out print statements right now and then will
+add it  and call it directly before bypass205() in the main at the bottom of the file so it will stop crashing.
+
+
 jan 16th saturday 2022 8;52 am
 pinpointed bug!!! so happy
 
