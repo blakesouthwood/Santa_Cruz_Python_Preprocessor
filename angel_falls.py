@@ -1,3 +1,15 @@
+https://www.youtube.com/watch?v=5OSMqSPmfVA
+	
+No WAY. TOTAL SHOCK. It works.  tahoe_dream1_working_bliss.py # does nested switching
+I need to add reset to it next which would empty the lists and vars.
+
+I can call it from the bottom so I can do endswitch now.
+I was thinking about it yesterday and put my first_module just above bypass205() and that did the trick.
+Tested it in BBEdit, Sublime Text 3, Visual Studio Code. Works in all of them.
+Uploading it. I am about to test different switch strings now. I am shaking with disbelief right now.
+
+
+
 jan 18th, tuesday 7:30am , 2022
 Taking out duplicate functions
 I managed to connect stage 2 and stage 3 together successfully and about to add stage 1 directly
