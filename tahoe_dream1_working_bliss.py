@@ -1,5 +1,7 @@
-## official_tahoe_dream_test.py 
+## tahoe_dream1_working_bliss.py 
 #========================
+#module for nested switches beta jan 19th, 2022
+
 #this actually works dec 31st, 2021 11:17am PST California, Menlo Park
 # Blake Southwood Software Engineer 
 
@@ -13,6 +15,27 @@ holdinput.append(0)
 #==============
 #so if we had endswitch(
 
+     #do_bypass205()
+     #bottom_stages()
+
+
+#mission_control(1,red_robin)
+#not calling this just yet 
+def nested_endswitch(y): #pulls in sw  this does nothing really 
+	print("=======NESTED_ENDSWITCH called ======")
+	print("inside of nested_endswitch(y) at bottom now")
+	print("did this finally actually work?")
+	for line in y.splitlines():
+		print(line)
+	print("=======================/////////====================")
+	#print("we have an input argument parameter y",y)
+	#this determines if switch ca
+	
+#mission_control(1,red_robin) #which only does the filling of the qual strings before bypass205
+#-----------------------------
+#nested_endswitch(red_robin)
+#-----------------------------
+
 ##====== javascript hack trick ===january 13th, 2022
 variableinput=[]
 variableinput.append(0)
@@ -25,103 +48,9 @@ run=[]
 run.append(0)
 run[0]= False #default
 
-red_robin ='''
-	switch(exp){  
-		case 1 thru 3: 
-			print("THIS IS WORKING are between 1 and 3 !")
-			print('first prize')
-			print('prepare Heavenly valley or NOrthStary, yes way ')
-			
-			
-		case 4 to 7:
-			print('OH mY GOD Is THIS WORKING Jason Borne  between 4 and 7 !')
-			#############
-			exp ='blable'
-			switch(exp)  
-				case 'blable':
-					print("we are blable here   inside of sw itch 11 this is really cool ")
-					print("this is really working, fantastic...")
-					result[0]="Blake did it"
-					break
-					####################
-					exp = 'tahoe'
-					switch(exp){ 
-						case 'tahoe':
-							print("do inside of sw 15")
-							print("oh is this going to really work now ... really it is")
-							fallthru
-						case 'fallen leaf lake':
-							print("nice")
-							result[0]='fallen leaf lake waterskiing fell'
-							####################
-							exp = 'winter'
-							switch(exp){    
-								case 'winter':
-									print("this is possibly sw 25")
-									print("listening to mit debugging session in summer")
-									print("yep")
-									fallthru
-								case 'fallen leaf lake':
-									print("nice kayaking race")
-									break
-								default:
-									print("we are done here")
-							endswitch 
-							#############
-							break
-						default:
-							print("we are done here")
-					endswitch 
-					#############
-					print("yep")
-					fallthru
-				case 'more':
-					print("nice")
-					break
-				default:
-					print("we are done here")
-			endswitch 
-			#exp = 3
-			switch(exp)
-				case 'burger':
-					print("do something")
-					####################
-					switch(exp){   
-						case 'fishy':
-							print("do something")
-							print("yep")
-							fallthru
-						case 'snow fire':
-							print("nice")
-							#############
-							break
-						default:
-							print("we are done here")
-					endswitch 
-					#############
-					print("yep")
-					fallthru
-				case 'more':
-					print("nice")
-					break
-				default:
-					print("we are done here")
-			endswitch
-			##############
-			print('taught me how to write code')
-			fallthru
-		case 8 to 10:
-			print('mocha blast')
-			print('== 31 flavors===')
-			print('-----------------')
-			break 
-		default:
-			print('no matches so sorry about that chap')
-			print(' ')
-}
-'''	
 
-
+########################################### this is where I added module 1 into this file ########
+#### this idea came to me on january 18th, 2022 actually the day before on Monday.....
 #I can fill this with a funciton now
 
 #I have to import a list now to do it
@@ -1110,40 +1039,7 @@ switch_list=[]
 
  ####### august 10th 2021 testing commences.
  
-find_nested_switch_game ='''
-	switch(exp) {  
-		case 1 thru 3:
-			print("where\'s the dog house!")
-			print('first prize')
-			print('you block head Charlie Brown')
-			fallthru
-			
-		case 4 to 7:
-			print('kangaroo hop hop!')
-			switch(exp){   # === line 10 beginning of single nested switch ======      
-				case 'blable':
-					print("do something")
-					print("yep")
-					fallthru
-				case 'more':
-					print("nice")
-					break
-				default:
-					print("we are done here")
-			endswitch #this is key here =============line 20 end of nested switch ====
-			print('taught me how to write code')
-			fallthru
-			
-		 
-		case 8 to 10:
-			print('mocha blast')
-			print('== 31 flavors===')
-			fallthru
-		
-		default:
-			print('the end')
-}
-'''	
+
 
 gameday ='''
 			switch(exp){   #1 === line 10 beginning of single nested switch ======      
@@ -1316,7 +1212,7 @@ def inputs_pair_to_copy_a_string(start,finish):
 #so we have
 
 #############################
-r=find_nested_switch_game #thats the name of a string fin_nested_switch_came
+#r=find_nested_switch_game #thats the name of a string fin_nested_switch_came
 #linecounter=0
 makeitwork=[]
 makeitwork.append(0)
@@ -3856,7 +3752,7 @@ def inputs_pair_to_copy_a_string(start,finish):
 #so we have
 
 #############################
-r=find_nested_switch_game #thats the name of a string fin_nested_switch_came
+#r=find_nested_switch_game #thats the name of a string fin_nested_switch_came
 #linecounter=0
 makeitwork=[]
 makeitwork.append(0)
@@ -19065,7 +18961,7 @@ danumber=''
 #// inner switch(just the words) is swapped for nested method number")
 #=============================================
 #for this to work correctly I need to ahve already taken out the inner switch bodies that I copied
-print("about to do OPTIMUS PRIME === GO BABY GO ===")
+#print("about to do OPTIMUS PRIME === GO BABY GO ===")
 def swap_switch_for_nest_method_new(stringname,danumber): # I will add more values later perhaps 3 or 4 for coordinates
 	#print("#### ========= swap switch for nest method new  ========####")
 	#print(" =======OPTIMUS Prime======")
@@ -32522,6 +32418,11 @@ bottom='''main_switch('1')''' #this calls it this triggers the generated code to
 
 
 
+
+
+
+
+
 #mrendswitch(red_robin)
 
 
@@ -35719,7 +35620,7 @@ def empty_the_contents_of_all_lists_inside_of_starship():
     #del stanford[:]
     #del galaxy[:]
     ##==========================================
-    '''
+    
     print("now show me the empty lists")
     print("quail=",quail)
     #print("stanford=",stanford)
@@ -35741,7 +35642,7 @@ def empty_the_contents_of_all_lists_inside_of_starship():
     print(" holdon=", holdon)
     print("holdthis=", holdthis)
     print("galaxy=", galaxy)
-    '''
+   
 ##===========================================================================
 ##  convert_nested_switch_string_to_strings_in_quail_list(inputstring):
 ##============================================================================
@@ -36712,15 +36613,6 @@ def get_switch_and_endswitch_locations(z): #from string z input parameter
 
 
 
-#this simulates after cutting out the inner switches but leaves the first line
-#which is used for replacement of the nested method()
-############################################################
-########## august 5th testing what to use now #################=========$$$$$$$$$$$
-############################################################
-# this represents and input string with inner switches cut out
-#what remains is just the switch word which will be replaced
-
-
 
 
 #print("done with test to get the nested switch locations within the big switch")
@@ -36947,69 +36839,66 @@ old_red_robin ='''
 #think of this one as endswitch(x)
 
 def new_mission_control(acase,thestring):
-    #breakpoint()
     print("----- first_module stage 1 ----new_mission_control---")
-    acase=1 #hard coded for testing 
-    #varholder[0]=1
     greenlist[0] = acase
     clear_switch_number_lists() #before just clear them
     new_phase_one_of_nested_switches_procedures(thestring) #calls make switch pairs and separate strings
     #print("ending this after calling mission_control")
     #print("this produces the contents of switch strings in the quail list")
-    for item in quail:
-        print(item)
-        print('============')  
-    #print("green exit sign here")
-    #exit() 
-#def new_main(): 
-#    print("------ new_main() called ----this should be first ---")     
-#======================================
-####new_mission_control(1,red_robin)
+    #for item in quail:
+    #    print(item)
+    #    print('============')  
+
 #===============
 #print("stopping it right here for good measure at starbucks in hollister")
 
 ##########========
 ##================
 
-
+'''
+ #print("these should be empty to start with")
+    #print("quail=")
+    #for item in quail:
+    #    print(item)
+    
+    #print("stanford=")
+    #for item in stanford:
+    #    print(item)
+'''
+    
 
 #bypass205 is way down here weird
 #====================
 #   bottom_stages
 ##====================
-def bottom_stages(): #calls concat_items_in_list() and exec(string)
+def bottom_stages(num,mystring): #calls concat_items_in_list() and exec(string)
     print("----new_mission_control()-----")
-    #################################
-    new_mission_control(1,red_robin)
+    ########== module 1 ==#########################
+    new_mission_control(num,mystring)  #hard coded with 1 for now
     ###################################
     y='' #y is empty here 
     print("-- bypass205()- called -inside of top of bottom_stages()---just added here and it works jan 17th 2022-------------------------")
-    ##################################
+    ########== module 2 ==##########################
     bypass205(y) ##<<<<-===========bypass205()
     #####################################======================
     print("--------- bottom_stages()- actually starts here  -----------")
-    ####################################
+    ########== module 3 ==############################
     create_def_switch_methods_concatted_together_in_one_string()
     ####################################
-    #=================
     topvalue[0]=greenlist[0]
-    sly = 1 #topvalue[0]
+    sly = greenlist[0]#1 #topvalue[0]  ===== just changed this on january 18th
     print('sly=',sly)
     ##==================
     concat_items_in_list(sly)#this builds the concatted string superball
     ##======================
-    lovely[0]=1
+    lovely[0]=greenlist[0]#1 was lovely[0] = 1
     ######################################
     exec(superball, globals())  #this executes the code 
     ##############################################
     after_running_code_list_status()
-    #print("snowtime=",snowtime)
-    #print("here at the end we empty stanford list")
     for item in stanford:
         stanford.pop()
     del stanford[:]
-    #print("stanford=",stanford)
-
 
 
 
@@ -37026,37 +36915,30 @@ wilson=[]
 #so if len(listname) == 0 then print nothing
 
 #I will ahve the endswitch down here which will be the main for calling the sequence list here.
-
-def main_control_sequencer():
+#############################
+##  main_congtrol_sequencer
+num =''
+def main_control_sequencer(num,mystring):
     print("----------===== main_control_sequencer()=====-----")
-    bottom_stages() #and calls bypass205 just before it too
+    bottom_stages(num,mystring) #and calls bypass205 just before it too
 
-    
-main_control_sequencer() #this will be the the modifed endswitch eventually 
+#end function
+   
+
+##############
+#print("doing testing now....")
+#num = 1#1    
+#main_control_sequencer(num,red_robin)#red_robin  #this will be the the modifed endswitch eventually 
+
+#####################
+# this simulates endswitch(string) that will be called above this in actual code
+##==============
+ #this will be the the modifed endswitch eventually 
 # this simulates endswitch(string) that will be called above this in actual code
 ##==============
 
-
-     #do_bypass205()
-     #bottom_stages()
-
-
-#mission_control(1,red_robin)
-#not calling this just yet 
-def nested_endswitch(y): #pulls in sw  this does nothing really 
-	print("=======NESTED_ENDSWITCH called ======")
-	print("inside of nested_endswitch(y) at bottom now")
-	print("did this finally actually work?")
-	for line in y.splitlines():
-		print(line)
-	print("=======================/////////====================")
-	#print("we have an input argument parameter y",y)
-	#this determines if switch ca
-	
-#mission_control(1,red_robin) #which only does the filling of the qual strings before bypass205
-#-----------------------------
-#nested_endswitch(red_robin)
-#-----------------------------
+#num = 8    
+#main_control_sequencer(num,red_robin)
 
 
 
