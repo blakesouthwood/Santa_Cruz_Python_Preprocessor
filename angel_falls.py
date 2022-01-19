@@ -1,3 +1,13 @@
+January 19th, 2022 8:33am PST nested module works. Cleaning it up so that I can do multipe nested switches
+by clearing out the lists and vars after completing a nested switch generation.
+First successful run with the module was at 3pm yesterday.
+
+Guaridans of the Galaxy soundtrack
+https://www.youtube.com/watch?v=Kt-tLuszKBA
+	
+	
+	
+Top gun opening music...
 https://www.youtube.com/watch?v=5OSMqSPmfVA
 	
 No WAY. TOTAL SHOCK. It works.  tahoe_dream1_working_bliss.py # does nested switching
