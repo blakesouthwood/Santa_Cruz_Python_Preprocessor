@@ -1,3 +1,12 @@
+Jan 24th Monday 9:25 am 2022
+Looking at source of bug that is doing an overflow residue from first nested switch into second nested switch.
+Using Visual Studio Code and Spyder in Anaconda.
+Stepping thru the code. Need bigger screen. Dam. But at least now I can see it misbehave and 
+zero on fixing it. Next two days off from work so I can solve it tuesday and wednesday. 
+Everything is the process of elimination.
+
+
+
 January 19th, 2022 8:33am PST nested module works. Cleaning it up so that I can do multipe nested switches
 by clearing out the lists and vars after completing a nested switch generation.
 First successful run with the module was at 3pm yesterday.
