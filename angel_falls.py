@@ -8,7 +8,11 @@ quail list bug had residue of previous nested switch pass
 stanford list had resideue of previous nested switch pass
 Put in temp fix for both bugs to ensure there were no more bugs.
 Temp fix works voodoo programming fix and will replace with granite fuzzy logic.
-
+https://www.youtube.com/watch?v=i9SznpVAack
+	trance music to code effectively and achieve FLOW STATE ====
+	That's the only time I am NEO and deep sea scuba diving thru the code and everything
+	is crystal clear and I'm 60 feet under water.
+	
 Next I will work on turning on the official bypass and cutting out dead code not called and duplicate methods.
 persaverance wears the crown.
 
