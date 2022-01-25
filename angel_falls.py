@@ -1,3 +1,16 @@
+January 25th 2022 Today is a happy day! 10:58am PST Morgan Hill, California Starbucks
+	
+Isolated 2 bugs and now infinite nested switches will work.
+quail list bug had residue of previous nested switch pass
+stanford list had resideue of previous nested switch pass
+Put in temp fix for both bugs to ensure there were no more bugs.
+Temp fix works voodoo programming fix and will replace with granite fuzzy logic.
+
+Next I will work on turning on the official bypass and cutting out dead code not called and duplicate methods.
+persaverance wears the crown.
+
+
+
 Jan 24th Monday 9:25 am 2022
 Looking at source of bug that is doing an overflow residue from first nested switch into second nested switch.
 Using Visual Studio Code and Spyder in Anaconda.
