@@ -1,5 +1,8 @@
 January 25th 2022 Today is a happy day! 10:58am PST Morgan Hill, California Starbucks
+https://www.youtube.com/watch?v=Kt-tLuszKBA
+	Guardians of the Galaxy music
 	
+By the way I zerod in and found thse bugs using print statements and NOT with VSC or Spyder or PyDev
 Isolated 2 bugs and now infinite nested switches will work.
 quail list bug had residue of previous nested switch pass
 stanford list had resideue of previous nested switch pass
