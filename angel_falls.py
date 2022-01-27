@@ -1,3 +1,45 @@
+january 27th, 2022 9:30am
+4 nested switches just ran now in a sequence
+taking out print statements and cleaning up the code.
+Will test this engine with single switch string next which should work
+Will reduce some functions down into smaller methods to streamline it.
+
+##===================================
+##   quail_overflow_manager():  #this reduces teh quail list taking out residue from past runs
+##===================================
+def quail_overflow_manager():
+    #print("=====quail_overflow_manager()======")
+    total = len(snowtime) + 2  #snowtime is the pairs list of switch - endswitch pairs
+    if len(quail) > total: 
+        thecount=1
+        for item in quail:   
+            if thecount < total: #so does because we know it's 6 and 18 - 12 = 6 
+                quail.pop(0) #delete first slot
+                thecount += 1
+            else:
+                break 
+		
+#######################################################
+## stanford_overflow_manager() ###### january 27th 2022  #this takes out residue from previous runs
+#######################################################
+def stanford_overflow_manager(): #this deletes previous data
+    print("===stanford_overflow_manager()====")
+    total = len(snowtime) + 2
+    if len(stanford) > total: #this is a new conditional test 
+        stanford.reverse() #reversing it
+        thecount=1
+        for item in stanford:  #this is 'loop number two' #get length based on pairs + 1 + 1
+            if thecount < total:  #snowtime length = 5 + 1 for main and +1 to be more so 7
+                stanford.pop(0) #delete first slot
+                thecount += 1
+            else:
+                break #breaks out of this 'loop number two'
+        stanford.reverse() #reversing it back
+               
+		
+
+##=============================================================================
+
 jan 26th 2022 7:01 pm  Will upload code within an hour
 tested 3 nested switch cases (separate nested switches)
 Has a bug (though works). Working on bug will but will upload it since it does technically work.
