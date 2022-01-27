@@ -1,3 +1,8 @@
+jan 26th 2022 7:01 pm  Will upload code within an hour
+tested 3 nested switch cases (separate nested switches)
+Has a bug (though works). Working on bug will but will upload it since it does technically work.
+I am working on a work around for the bug currently. 
+
 January 25th 2022 Today is a happy day! 10:58am PST Morgan Hill, California Starbucks
 https://www.youtube.com/watch?v=Kt-tLuszKBA
 	Guardians of the Galaxy music
