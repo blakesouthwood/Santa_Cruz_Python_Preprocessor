@@ -33265,49 +33265,8 @@ fill_nested_switches_list.append(0)
 #which is then passed to concat and execute.
  
  
- 
-####################################################################################
-#uses method build_stacked_cake sring combining stanford list()
-#output is in toocool[0] list
-##=============================================================
-## stack_the_cake_combining_python_switch_methods_together()
-## ** MAJOR METHOD ** 
-##=============================================================
-def stack_the_cake_combining_python_switch_methods_together():
-    print("----------stack_the_cake_combining_python_switch_methods_together()--------")
-    toocool[0]=''; #this calls build stacked cake string combinging stanford list
-    print("length of stanford before stacking the cake",len(stanford))
-    #this loops thru stanford list
-    print('loop thru stanford list in ')
-    #honda civic si ======
-    ##################### temporary testing for bug of previous nest in stanford for 12 total 
-    
-    
-    
-    
-    
-    ##############################################
-    #######################################################
-    ###=====this is used to cut out the first 6 items in list if total = 12 =======================================================
-    print("honda civic si==temporary testing fix that's all ")
-    print("changing testing here Tuesday Jan 25th debugging test=")
-    print("testing if stanford list length = 12")
-    print("line 33295 length of snowtime list which governs this if is",len(snowtime))
-    print("this is getting more deeply involved so much thinking")
-    print("=====it was testing if stnaford  length = 12========================================")
-    #######################################################
-    #######################################################
-    #########if stanford list overflow this fixes it ###### january 26th 2022
-    #######################################################
-    print("now we modify it for all scenarios if more than snowtime length + 2")
-    total = len(snowtime) + 2
-    if len(stanford) > total: #this is a new conditional test 
-        print("LENGTH of STANFORD LIST = ", len(stanford))
-        print("this tests if len(stanford) is greater than snowtime pairs list + 2")
-        print("and this is obviously true triggered by an if condition")
-
-        print("stanford list is 12 so doing this modificaiton fix")
-        stanford.reverse() #I think that this is right
+###====
+  #stanford_overflow_manager
         #loop thru quail and cut out first 6 slots 
         ###========making formula on jan 26th wednesday night gilroy starbucks=================================
         ## THIS IS DELETING SLOTS FROM RESIDUE OF PREVIOUS SWITCHES
@@ -33320,67 +33279,68 @@ def stack_the_cake_combining_python_switch_methods_together():
         #POP(0) STRING FROM FRONT OF STANFORD LIST
         # BREAK OUT OF LOOP WHEN THECOUNT NOT LESS THAN TOTAL(LEN(SNOWTIME) + 2
         ########################################################
+        # thecount=1
+#         print("looping thru stanford here to delete first six slots")
+#         for item in stanford:  #this is 'loop number two' #get length based on pairs + 1 + 1
+#             if thecount < total:  #snowtime length = 5 + 1 for main and +1 to be more so 7
+#                 stanford.pop(0) #delete first slot
+#                 thecount += 1
+#             else:
+#                 break #breaks out of this 'loop number two'
+
+    
+#######################################################
+## stanford_overflow_manager() ###### january 27th 2022
+#######################################################
+def stanford_overflow_manager(): #this deletes previous data
+    print("===stanford_overflow_manager()====")
+    total = len(snowtime) + 2
+    if len(stanford) > total: #this is a new conditional test 
+        stanford.reverse() #reversing it
         thecount=1
-        print("looping thru stanford here to delete first six slots")
         for item in stanford:  #this is 'loop number two' #get length based on pairs + 1 + 1
             if thecount < total:  #snowtime length = 5 + 1 for main and +1 to be more so 7
                 stanford.pop(0) #delete first slot
                 thecount += 1
             else:
                 break #breaks out of this 'loop number two'
-        ###===================
-        print("now quail list should be length 6 after deleting teh first 6 slots")
-        print("modified quail list after cutting out first 6 slots is now")
-        stanford.reverse() #put it back in the right order
-        print("looping thru stnaford now which should be 6 and in the right order")
-        print("length of stnaford list now after modifcation")
-        print("is =", len(stanford))
-        print("this should be the correct stanford list now") 
-        for item in stanford:
-            print(item)
-        print("===end of looping what do we have now? ==============")    
-        print("testing if stanford list length = 18 ")        
-        #####============
-        
-    # if len(stanford) == 18:
-#         print("if len(stanford) == 18: is TRUE")
-#         print("at this point STANFORD count in list is 12")
-#         print("stanford list is 12 so doing this modificaiton fix")
-#         stanford.reverse() #I think that this is right
-#         #loop thru quail and cut out first 6 slots 
-#         thecount=1
-#         print("looping thru stanford here to delete first 12  slots")
-#         for item in stanford:  #this is 'loop number two'
-#             if thecount < 7: #so the input number would be 6 then + 1
-#                 stanford.pop(0) #delete first slot
-#                 thecount += 1
-#             else:
-#                 break #breaks out of this 'loop number two'
-#         print("now quail list should be length 6 after deleting teh first 12 slots")
-#         print("modified quail list after cutting out first 12 slots is now")
-#         stanford.reverse() #put it back in the right order
-#         print("looping thru stnaford now which should be 6 and in the right order")
-#         for item in stanford:
-#             print(item)
-          
-        #right here emptying quail list
-        print("starbucks testinghere clearing out quail attempts")
-        print("line 33221 length of quail here is",len(quail))
-        ##================= january 25th 2022
+        stanford.reverse() #reversing it back
+               
+
+####===
+####################################################################################
+#uses method build_stacked_cake sring combining stanford list()
+#output is in toocool[0] list
+##=============================================================
+## stack_the_cake_combining_python_switch_methods_together()
+## ** MAJOR METHOD ** 
+##=============================================================
+def stack_the_cake_combining_python_switch_methods_together():
+    print("----------stack_the_cake_combining_python_switch_methods_together()--------")
+    toocool[0]=''; #this calls build stacked cake string combinging stanford list
+    print("length of stanford before stacking the cake",len(stanford))
+    ##==================================== this is new this cleans up the stanford list deling residue from previous nested switches' data
+    stanford_overflow_manager()  #### this is new as of january 27th, 2022      
+    ###===================================
+    print("length of stnaford list now after modifcation is =", len(stanford))
+    print("this should be the correct stanford list now") 
+    for item in stanford:
+        print(item)
+    print("starbucks testinghere clearing out quail attempts")
+    print("line 33221 length of quail here is",len(quail))
+    ##================= january 25th 2022
+    del quail[:]
+    quail.clear()
+    for x in quail:
+        quail.pop(0)
+    ################
+    if len(quail) > 0:
         del quail[:]
-        quail.clear()
-        for x in quail:
-            quail.pop(0)
-        ################
-        if len(quail) > 0:
-            del quail[:]
-        else:
-            pass
-        print("length of quail now is ",len(quail))
-        
     else:
-        print("qauil list was not 18 so didn't call the code above")
-        print("quail WAS NOT 18 so the stanford = 12 was not called")
+        pass
+    print("length of quail now is ",len(quail))
+    print("qauil list was not 18 so didn't call the code above")
+    print("quail WAS NOT 18 so the stanford = 12 was not called")
     ###############################################################        
             
             
@@ -35924,10 +35884,10 @@ cell.append(0)
 ##  get_switch_number_now(lestring): from quail list before bypass205 is called
 ##====================================
 def get_switch_number_now(lestring): #fills list switch_numbers_to_transfer
-    print("====get_switch_number_now()==line 35455===") #gets it from quail list
-    print("what is in lestring that it is getting the numbers from?")
-    print("the 2nd pass shoudl show red white and blue")
-    print("line number 35474")
+    #print("====get_switch_number_now()==line 35455===") #gets it from quail list
+    #print("what is in lestring that it is getting the numbers from?")
+    #print("the 2nd pass shoudl show red white and blue")
+    #print("line number 35474")
     check_if_words_red_white_blue_in_string(lestring)
     for line in lestring.splitlines():
         print(line)
@@ -35937,11 +35897,13 @@ def get_switch_number_now(lestring): #fills list switch_numbers_to_transfer
     print("==CODE RED COCKROACH TEST BUILDING A TRAP==")
     print("CRITICAL bug test january 21st in get_switch_number_now line 35442")
     if len(switch_numbers_to_transfer) > 0:
-        print("TRUE the list switch_numbers_to_transfer is NOT Empty")
-        print("switch_numbers_to_transfer checking is",switch_numbers_to_transfer)
-        print("I will empty it here")
+        pass
+        #print("TRUE the list switch_numbers_to_transfer is NOT Empty")
+        #print("switch_numbers_to_transfer checking is",switch_numbers_to_transfer)
+        #print("I will empty it here")
     else:
-        print("switch_numbers_to_transfer list length = 0")
+        pass
+        #print("switch_numbers_to_transfer list length = 0")
         #del switch_numbers_to_transfer[:]
         #neutralize_list(switch_numbers_to_transfer)
             
@@ -35950,11 +35912,11 @@ def get_switch_number_now(lestring): #fills list switch_numbers_to_transfer
         #print("length of switch_numbers_to_transfer=",len(switch_numbers_to_transfer))
     #here 
         
-    print("what is in lestring that it is getting the numbers from?")
-    print("the 2nd pass shoudl show red white and blue")
-    for line in lestring.splitlines():
-        print(line)
-    print("======critical test january 21st friday ========= to see what it sees========")    
+    #print("what is in lestring that it is getting the numbers from?")
+    #print("the 2nd pass shoudl show red white and blue")
+    #for line in lestring.splitlines():
+    #    print(line)
+    # print("======critical test january 21st friday ========= to see what it sees========")    
     for line in lestring.splitlines():
         if  counter == 1 and "switch" in line and "#" in line and "end" not in line:
              x =line.index("#");
@@ -35975,9 +35937,9 @@ def get_switch_number_now(lestring): #fills list switch_numbers_to_transfer
 ##  method: get_switch_number_now()
 ##==================================================  
 def fill_switch_numbers_list_to_transfer():
-    print("fill fill_switch_numbers_list_to_transfer() line number 35482 ==")
-    print("line 35497 result_of_fourth_method")
-    print("result_of_fourth_method=",result_of_fourth_method)
+   # print("fill fill_switch_numbers_list_to_transfer() line number 35482 ==")
+    #print("line 35497 result_of_fourth_method")
+    #print("result_of_fourth_method=",result_of_fourth_method)
     counter=1
     for item in result_of_fourth_method:
          get_switch_number_now(item) #fills list switch_numbers_to_transfer
@@ -36039,12 +36001,12 @@ def loop_thru_chain_output_list_and_fill_quail_list():
 ##===================================    
 def loop_thru_quail_list():
     return
-    for item in quail:
-        print(item) 
+    #for item in quail:
+    #    print(item) 
         
 def loop_thru_chain_output_list():
     return
-    print("== chain_output_list looping thru it to feed to parser in bypass==")
+    #print("== chain_output_list looping thru it to feed to parser in bypass==")
     #for item in chain_output_list:
     #    print(item)
     #   print("=====================")
@@ -36067,6 +36029,22 @@ def show_list_switch_numbers_to_transfer():
     #print("===switch numbers to transfer== stage2 Linus==")
     #print(switch_numbers_to_transfer)  
 #fillherup=[]
+##===================================
+##   quail_overflow_manager():
+##===================================
+def quail_overflow_manager():
+    #print("=====quail_overflow_manager()======")
+    total = len(snowtime) + 2
+    if len(quail) > total: 
+        thecount=1
+        for item in quail:   
+            if thecount < total: #so does because we know it's 6 and 18 - 12 = 6 
+                quail.pop(0) #delete first slot
+                thecount += 1
+            else:
+                break 
+                
+                
 ##====================================
 ##  do_the_blender_chain_methods()
 ##====================================
@@ -36074,90 +36052,22 @@ radical_list=[]
 #this section takes in input data from the quail list
 ### THIS IS THE WORKING BLENDER CHAIN METHODS JAN26TH 2022 
 def do_the_blender_chain_methods(): #this takes in the quail list as input!!! jan 25th 
-    print("== real deal jan 26th called  do_the_blender_chain_methods():  ==")
-    print("===testing what is in quail list at beginning===january 25th==========================")
-    print("=== of do the blender chain methods ===35781 ===")
-    print("right here quail length = ",len(quail))
-    print(" =====BLENDER CHAIN METHODS .. QUAIL BEFORE GOING THRU BLENDER ======...")
-    print("this is before quail list is reduce if total = 12 in length")
-    for item in quail:
-        print(item)
-        print("- - - - - - - - - -")
-##################==============================================
-    print("this next phase is an if test for count of 12 in quail list")
-    ### temporary bug fix that takes out the first 6 strings in quail
-    ###  tuesday january 25th, 2022 I need to figure this one out still. 
-    print("changing testing here Tuesday Jan 25th debugging test=")
-    #####if quail length =12 ########################
-    #so I wwould chck if length > then what it should be example 6
-    print("testing if quail list length = 12")
-    print("in the near future I would test if quail list more than what it should be")
-
-    # if len(quail)> len(snowtime) + 2:
-    #         print("if len(quail) > length of snowtime + 1") #12 is True THIS IS TRUE")
-    #         #=======loop thru quail and CUT OUT FIRST 6 SLOTS ==========
-    #         thecount=1
-    #         for item in quail:   #this is 'loop number two'
-    #             print("thecount =",thecount)
-    #             if thecount < len(snowtime) + 2: #so does  5 + 1 + 1
-    #                 quail.pop(0) #delete first slot #because the bad data is residue in front
-    #                 thecount += 1
-    #             else:
-    #                 break #breaks out of this 'loop number two'
-    #         print("now quail list should be length 6 after deleting teh first 6 slots")
-    #         print("modified quail list after cutting out first 6 slots is now")
-    #         for item in quail:
-    #             print(item)
-    #     else:
-    #        print("qauil list WAS NOT 12 so didn't call the code above")
-    ##
-    ## so the formula is get length based on number of switch pairs
-    ##  if quail length > what it should be
-    ##  remove difference one at a time from front of list
-    ##
-
-    #TESTING FOR !* now january 26th 2022 at 7:49 pm 
-    print("THIS DOES ALL SCENARIOS OF LENGTH OF QUAIL > LEN(SNOWTIME) + 2")
-    print("so for testing this was if the quial length = 12 or 18")
-    print("testing if quail list length greater than snowtime length + 2 ")
+    #print("right here quail length = ",len(quail))
+    #print(" =====BLENDER CHAIN METHODS .. QUAIL BEFORE GOING THRU BLENDER ======...")
+    #for item in quail:
+    #    print(item)
+    #    print("- - - - - - - - - -")
+    #####==============================================
     ### QUAIL LIST REDUCING AUTOMATIC CORRECTION
-    ############## january 26th 2022 wednesday night coding session ##########
-    ############## january 26th 2022 wednesday night coding session ##########
-    ############## january 26th 2022 wednesday night coding session ##########
-    total = len(snowtime) + 2
-    if len(quail) > total: #== 18:
-        print("if len(quail) == 18 is True THIS IS TRUE")
-        #=======loop thru quail and CUT OUT FIRST 12 SLOTS ========== residue from first two nested switches
-        thecount=1
-        for item in quail:   #this is 'loop number two'
-            print("thecount =",thecount)
-            if thecount < total: #so does because we know it's 6 and 18 - 12 = 6 
-                quail.pop(0) #delete first slot
-                thecount += 1
-            else:
-                break #breaks out of this 'loop number two'
-        print("now quail list should be length 6 after deleting teh first 6 slots")
-        print("modified quail list after cutting out first 6 slots is now")
-        for item in quail:
-            print(item)
-    else:
-        print("qauil list WAS NOT 12 so didn't call the code above")    
-    ################################
-    ################################################################### 
-    ###################################################################  
-    ###################################################################  
-    ###################################################################             
-    print(" === THIS IS AFTER DOING TEMPORARY MODFICIATION === after done changint testing here for tuesday jan 25th")
-    print('final test here to get quail length and loop thru it')
-    print("since seeing is believing")
-    print("quial length = ", len(quail))
-    print("looping thru quail now")
-    for item in quail:
-        print(item)
+    quail_overflow_manager()
+    #####=============================================       
+    #print("looping thru quail now")
+    #for item in quail:
+    #    print(item)
                
-    print("================================")
-    print("==do blender chain methods()==jan 24th is this thing turned on ")
-    print("this is the one doing blender chain methods verified on january 24th ")
+    #print("================================")
+    #print("==do blender chain methods()==jan 24th is this thing turned on ")
+    #print("this is the one doing blender chain methods verified on january 24th ")
     move_string_to_left_side()                         # method 1 indents to left
     take_out_the_inner_switch_bodies_leaving_switch()  # method 2 cut out switch bodies leaving switch
     change_switch_to_nested_switch_method()            # method 3 switch becomes nested_switchX
@@ -36170,19 +36080,19 @@ def do_the_blender_chain_methods(): #this takes in the quail list as input!!! ja
     del quail[:]
     fill_output_into_quail_list() #final stage here 
     ####=========================
-    print("======output of BLENDER CHAIN METHODS IN QUAIL LIST======")
-    for item in quail:
-        print(item)
+    #print("======output of BLENDER CHAIN METHODS IN QUAIL LIST======")
+    #for item in quail:
+    #    print(item)
     #################================================
     for item in quail:
         radical_list.append(item)
-    print("==radical_list==same content should be in quail list")
-    print("=== bottom of do_the_blender_chain_methods() ====")
-    print("radical_list length = ", len(radical_list))
-    print("===look in here baby ==========================")
-    print("this is looping thru radical_list ==jan 25th 2022 morgan hill starbucks =")
-    for item in radical_list:
-        print(item)
+    #print("==radical_list==same content should be in quail list")
+    #print("=== bottom of do_the_blender_chain_methods() ====")
+    #print("radical_list length = ", len(radical_list))
+    #print("===look in here baby ==========================")
+    #print("this is looping thru radical_list ==jan 25th 2022 morgan hill starbucks =")
+    #for item in radical_list:
+    #    print(item)
     #print("this is in quail list at this point=== quail list")
     #for item in quail:
     #    print(item)    
@@ -36200,15 +36110,15 @@ def do_the_blender_chain_methods(): #this takes in the quail list as input!!! ja
 
 ##=======yes working called== january 26th ============================================================================
 def waterfall_chain_methods_gold_master():  #THIS WILL TAKE IN THE QUAIL LIST FOR INPUT
-    print("really is this working or not janyary 26yth :::THIS ONE IS CALLED AT TOP for waterfall_chain_methods at waterfall chain methods this is the string being passed thru")
-    print("==.=.=.=top of waterfall chain methods gold master line 35937.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.==.=.=.=")
-    print("length of quail starting in waterfall=",len(quail))
-    print("=....==WATERFALL CHAIN METHODS Gold Master 1.3()==jan 24th =  imaginary WORLD = ")
+    #print("really is this working or not janyary 26yth :::THIS ONE IS CALLED AT TOP for waterfall_chain_methods at waterfall chain methods this is the string being passed thru")
+    #print("==.=.=.=top of waterfall chain methods gold master line 35937.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.==.=.=.=")
+    #print("length of quail starting in waterfall=",len(quail))
+    #print("=....==WATERFALL CHAIN METHODS Gold Master 1.3()==jan 24th =  imaginary WORLD = ")
     do_the_blender_chain_methods()
     loop_thru_chain_output_list_and_fill_quail_list() #yeah makes sense filling quail list
     show_list_switch_numbers_to_transfer()
-    print("length of quail at AT BOTTOM of waterfall chain methods gold master", len(quail))
-    print("=====.=.=.=.line 35945=.=.=.=.=.=.=.=.=.=.=.=.==.=.=.=.=.=.=.")
+    #print("length of quail at AT BOTTOM of waterfall chain methods gold master", len(quail))
+    #print("=====.=.=.=.line 35945=.=.=.=.=.=.=.=.=.=.=.=.==.=.=.=.=.=.=.")
    ##====================== jan 2nd new =====================
    # to see what are in the lists after ONE RUN of starship booster 1 and booster 2
    #=========================================================
@@ -36276,67 +36186,37 @@ def empty_the_contents_of_all_lists_inside_of_starship():
     #del stanford[:]
     #del galaxy[:]
     ##==========================================
-    
-    print("now show me the empty lists")
-    print("quail=",quail)
-    #print("stanford=",stanford)
-    print("radical_list=", radical_list)
-    print("testlist_of_strings=", testlist_of_strings)
-    print("switch_numbers_to_transfer=", switch_numbers_to_transfer)
-    print("chain_output_list=", chain_output_list)
-    print("result_of_fourth_method=", result_of_fourth_method)
-    print(" cell=", cell)
-    print(" result_of_third_method=", result_of_third_method)
-    print("result_of_second_method=", result_of_second_method)
-    print("result_of_first_method=", result_of_first_method)
-    print("snowboarding=", snowboarding)
-    print(" outputstring=", outputstring)
-    print(" switch_list=", switch_list)
-    print(" endswitch_list=", endswitch_list)
-    print("string_name=", string_name)
-    print("fillherup=", fillherup)
-    print(" holdon=", holdon)
-    print("holdthis=", holdthis)
-    print("galaxy=", galaxy)
- 
+    # 
+#     print("now show me the empty lists")
+#     print("quail=",quail)
+#     #print("stanford=",stanford)
+#     print("radical_list=", radical_list)
+#     print("testlist_of_strings=", testlist_of_strings)
+#     print("switch_numbers_to_transfer=", switch_numbers_to_transfer)
+#     print("chain_output_list=", chain_output_list)
+#     print("result_of_fourth_method=", result_of_fourth_method)
+#     print(" cell=", cell)
+#     print(" result_of_third_method=", result_of_third_method)
+#     print("result_of_second_method=", result_of_second_method)
+#     print("result_of_first_method=", result_of_first_method)
+#     print("snowboarding=", snowboarding)
+#     print(" outputstring=", outputstring)
+#     print(" switch_list=", switch_list)
+#     print(" endswitch_list=", endswitch_list)
+#     print("string_name=", string_name)
+#     print("fillherup=", fillherup)
+#     print(" holdon=", holdon)
+#     print("holdthis=", holdthis)
+#     print("galaxy=", galaxy)
+#  
         
 ##===========================================================================
 ##  convert_nested_switch_string_to_strings_in_quail_list(inputstring):
 ##============================================================================
 def convert_nested_switch_string_to_strings_in_quail_list(inputstring):
-    print("conver nested swithd string to strings in quail list proof of concept")
-    print('=====top 1 ================')
-    for line in inputstring.splitlines():
-        print(line)
-    print('=====================')
-    print("this is inside of convert_nested_switch_string_to_strings_in_quail_list()")
-    print('right here what is quail length and contents')
-    print("this is new on january 25th figuring out where quail is being filled ")
-    print("line 36027 quail length = ",len(quail))
-    print("at this point quail should be empty right?===....")
-    for item in quail:
-        print(quail)
-    
-    print("==convert_nested_switch_string_to_strings_in_quail_list(inputstring)==jan 20th=")
     manage_creating_pairs_and_separating_input_switch_strings(inputstring)
-    print("after managing creating pairs and separting input switch strings")
-    print("line 36224 quail before waterfall chain methods should be already filled")
-    #showed 6, 12, 18 for quail
-    
-    print("quail length = ", len(quail))
-    print("==loopy thruy quaily== before waterall chain methods gold master")
-    for item in quail:
-        print(item)
     waterfall_chain_methods_gold_master() 
-    #print("####### ** ==starship lists contents == ##################")
-    print("this should be the output result in quail list from waterfall chain methods gold master()")
-    print("===== quail list result from waterfall blender chain methods ===")
-    for item in quail:
-        print(item)
-    #print("out of pure curiosity showing the contents inside of Starship module")
-    show_contents_of_all_lists() #new january 2nd, 2022========>>>>>>>
-    #print("end of showing contents of starship lists and variables")
-    #print("####### ** ==starship lists contents == ##################")
+    
     
  
  
@@ -36424,7 +36304,7 @@ empty_this_list(trouble)
 ##  clear_all_vars_and_lists():
 ##=====================================
 def clear_all_vars_and_lists():
-    print("====clear_all_vars_and_lists()====")
+    #print("====clear_all_vars_and_lists()====")
     superball = ''
     varinmain=''
     #method_defs = ''
@@ -36489,30 +36369,30 @@ def clear_all_vars_and_lists():
     ##===========================
 
     ##########======================================
-    print("length of quail=",len(quail)) #6
+   # print("length of quail=",len(quail)) #6
     empty_this_list(quail) #pure genius  #0
     stanford=[]
-    print('stanford=',stanford)
+    #print('stanford=',stanford)
     #empty_this_list(stanford)
-    print("testing here .......")
+    #print("testing here .......")
     brown = "charlie"              
-    print("brown=",brown) #'charlie'
+   # print("brown=",brown) #'charlie'
     brown=''  #this is how I will just do it
-    print('brown=',brown)  # gone
+    #print('brown=',brown)  # gone
     
     
     
     
     
     
-    print('it should be empty now baby')
+    #print('it should be empty now baby')
     ##########
-    print("length of quail now should be 0, it is",len(quail))
+    #print("length of quail now should be 0, it is",len(quail))
     #=========================
     #for x in quail:
     #   quail.remove(x)
-    print("this is inside clear_all_vars_and_lists")
-    print("quail should be 0 here",len(quail))
+    #print("this is inside clear_all_vars_and_lists")
+    #print("quail should be 0 here",len(quail))
     #empty_this_list(bad_dog)
     bad_dog=[]
     #for x in bad_dog[:]:
@@ -36535,7 +36415,7 @@ def clear_all_vars_and_lists():
     #empty_this_list(holdinglist)
     #empty_this_list(boomerang)
     del sweetlist[:]
-    print("sweetlist=",sweetlist)
+    #print("sweetlist=",sweetlist)
     
     del holdinglist[:]; 
     del boomerang[:]
@@ -36544,8 +36424,9 @@ def clear_all_vars_and_lists():
     
 
 def testing_this_idea():
+    return
     #print("this is in starship10")
-    print("length of quail=",len(quail))
+    #print("length of quail=",len(quail))
     
 #==========here friday jan 7
 

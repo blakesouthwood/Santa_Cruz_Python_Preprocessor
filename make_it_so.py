@@ -137,7 +137,9 @@ red_robin2 ='''
 			
 			#it should stop here
 		case 7 to 10:
+			print("this is =======red white blue====== ")
 			print('pass Dutch Flat, Cisco, and Kings Beach to NorthStar !')
+			print(" this is 7 to 10 here we are")
 			break
 			#############
 			exp ='blable'
@@ -233,6 +235,7 @@ red_robin3 ='''
 			print("====   purple    =====")
 			print("====   purple   =====")
 			print("===    poka dots    ======")
+			print(" working on january 27th, 2022 8:56 am")
 			print('== hamburger sounds good right about now')
 			break
 			#it should stop here
@@ -327,42 +330,155 @@ red_robin3 ='''
 '''	
 
 
+
+red_robin4 ='''
+	switch(exp){  
+		case 1 thru 6: 
+			print("====zebra black and white =====")
+			print("====   zebra   =====")
+			print("===    tahoe summiting    ======")
+			
+			#it should stop here
+		case 7 to 10:
+			print("this is =====zebra black and white ====== ")
+			print('pass Dutch Flat, Cisco, and Kings Beach to NorthStar !')
+			print(" this is 7 to 10 here we are")
+			break
+			#############
+			exp ='blable'
+			switch(exp)  
+				case 'blable':
+					print("this is the second string to try of sw itch 11 this is really cool ")
+					print("this is really working, fantastic...")
+					result[0]="Blake did it"
+					break
+					####################
+					exp = 'tahoe'
+					switch(exp){ 
+						case 'tahoe':
+							print("do THIS IS SO COOLinside of sw 15")
+							print("oh is this going to really work now ... really it is")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							result[0]='fallen leaf lake waterskiing fell'
+							
+							####################
+							exp = 'winter'
+							switch(exp){    
+								case 'winter':
+									print("this is possibly sw 25")
+									print("listening to mit debugging session in summer")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("morgan hill starbucks nesting works")
+									break
+								default:
+									print("we are done here")
+							endswitch 
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			#exp = 3
+			switch(exp)
+				case 'burger':
+					print("do something")
+					####################
+					switch(exp){   
+						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch
+			##############
+			print('this should be the last line here for output')
+			break #was f a l l t h r u
+		case 11 to 15:
+			print("11 to 15 in ==zebra black and white==")
+			print('big numbers here this is 11 thru 15  ')
+			print('=this is the last c ase ==')
+			print('-----------------')
+			####################
+			exp ='snow fire'
+			switch(exp){   
+				case 'fishy':
+					print("do something")
+					print("yep")
+					fallthru
+				case 'snow fire':
+					print("inside of snow fire from zeba black white")
+					#############
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			break 
+		default:
+			print('no matches so sorry about that chap')
+			print(' ')
+}
+'''	
+#33289
+
+
+
 print("===doing testing now..redrobin2 first..====")
 num = 1   
 main_control_sequencer(num,red_robin)#red_robin  #this will be the the modifed endswitch eventually 
 print("==yanks==")
 #exit()
 #exit()
-print('=== finished first now doing second =====now for test 2======')
-print('========now for test 2======')
-print('========now for test 2======')
-print('========now for test 2======')
-print('========now for test 2======')
-print('========now for test 2======')
 
 
-print("===doing testing now....====")
-print("===doing testing now....====")
-print("===going thru the panama canal here ====")
-print("===going thru the panama canal here ====")
-print("===going thru the panama canal here ====")
-print("===going thru the panama canal here ====")
+
 #exit()
 #breakpoint()
-print("this is going to be the holy grail point")
+#print("this is going to be the holy grail point")
 #breakpoint()
-print("about to do second call of a second nested switch string")
-print("this is the SECOND PASS doing regular red_robon second now")
-num = 1   
+#print("about to do second call of a second nested switch string")
+#print("this is the SECOND PASS doing regular red_robon second now")
+num = 7   
 main_control_sequencer(num,red_robin2)#red_robin  #this will be the the modifed endswitch eventually 
 
 print("dam yankees")
 
 
-print("about to do second call of a second nested switch string")
-print("this is the third PASS doing regular red_robon second now")
+#print("about to do second call of a second nested switch string")
+#print("this is the third PASS doing regular red_robon second now")
 num = 1   
 main_control_sequencer(num,red_robin3)#red_robin  #this will be the the modifed endswitch eventually 
+
+#print("go I want to fly like superman")
+
+num = 11   
+main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
 
 
 #cloudy_day =
