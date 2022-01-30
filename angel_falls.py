@@ -1,9 +1,11 @@
-Finally sucker works for nested any number
-January 30th. I had a bad function messing everything up. 
+Finally sucker works for nested any number.
+January 30th, 2022 . I had a bad function messing everything up. 
 #take_out_extraneous_white_spaces_on_the_left_of_each_line()
 it's commented out for now. I just need to take out the print statements now.
 I just tested 11 nested switches in a sequence worked.
 
+files are make_it_so.py and site_b.py
+Next I will test single switches with it intermixed with nested to see how it goes.
 
 january 27th, 2022 9:30am
 4 nested switches just ran now in a sequence
