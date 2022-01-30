@@ -1,4 +1,11 @@
 Finally sucker works for nested any number. I just ran it in sublime text 3 it worked.
+I am pretty dam stubborn which helps. I feel weightless and like I'm flying through the clouds now.
+I'm extremely persistent. Again I will take out the thousands of print statements and clean up the code in the next
+two weeks. Happy happy, joy joy.
+Why did I tackle making a JavaScript/C switch case that has macros work in Python?
+Because I read that biologists were using Python and I figured they would like to have a JavaScript/C switch case to use
+in Python, now they can.
+
 January 30th, 2022 . I had a bad function messing everything up. 
 #take_out_extraneous_white_spaces_on_the_left_of_each_line()
 it's commented out for now. I just need to take out the print statements now.
