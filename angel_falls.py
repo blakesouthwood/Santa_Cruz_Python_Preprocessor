@@ -1,4 +1,9 @@
 Finally sucker works for nested any number. I just ran it in sublime text 3 it worked.
+I will quickly modify it to work like the single switch case so that the programmer/developer
+has endswitch(stringname) at the bottom so it's called automatically.
+I was using mission_control_sequence(num,inputstring) for testing purposes only.
+So just relax and chill. And I will condense the code and document it more.
+
 I am pretty dam stubborn which helps. I feel weightless and like I'm flying through the clouds now.
 I'm extremely persistent. Again I will take out the thousands of print statements and clean up the code in the next
 two weeks. Happy happy, joy joy.
