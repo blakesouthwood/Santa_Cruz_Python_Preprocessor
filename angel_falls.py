@@ -1,4 +1,4 @@
-Finally sucker works for nested any number.
+Finally sucker works for nested any number. I just ran it in sublime text 3 it worked.
 January 30th, 2022 . I had a bad function messing everything up. 
 #take_out_extraneous_white_spaces_on_the_left_of_each_line()
 it's commented out for now. I just need to take out the print statements now.
