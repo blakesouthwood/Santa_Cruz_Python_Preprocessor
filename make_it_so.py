@@ -1,5 +1,9 @@
-import tahoe_dream1_working_bliss
-from tahoe_dream1_working_bliss  import * 
+import site_b   #toying around with site_b and site_c
+from site_b  import * 
+
+#if switch numbers to transfer > length of snowtime
+#smartlistlocations[13, 9, 6, 6, 7, 13, 9, 6, 6, 7]
+#smartlistlocations= [13, 9, 6, 6, 7, 13, 9, 6, 6, 7, 13, 9, 6, 6, 6, 7]
 
 def do_something():
     a = 2
@@ -23,8 +27,24 @@ def testing_this_out():
     
 #testing_this_out()
 
+mylist=[1,2,3,4,5,6,7,8,9,10]
+good=[]
+def trythis():
+    print(":try this test=-=-=-=-= trythis()  -=-=-=-= gizmo -=-=-=-=-=-=-==--== ")
+    #good = mylist[-5:]
+   # print("good=",good)
+    print(":==========")
+    print("should be original mylist=",mylist)
+    courage = mylist[-5] #seeing if this works or not 
+    print('courage=',courage)
+        
+  
+    print('trouble list=',trouble)
+   
 
 
+
+trythis()
 ##===================================================================
 
 red_robin ='''
@@ -449,36 +469,145 @@ red_robin4 ='''
 
 
 
-print("===doing testing now..redrobin2 first..====")
+red_robin5 ='''
+	switch(exp){  
+		case 1 thru 6: 
+			print("grey aliens!")
+			print('greys aliens')
+			print('green aliens ')
+			
+			
+		case 7 to 10:
+			print('green lantern green lantern green  between 7 and 10 !')
+			
+			#############
+			exp ='blable'
+			
+			switch(exp)  
+				case 'blable':
+					print("inside of an inner sw itch here we are blable here   inside of sw itch 11 this is really cool ")
+					print("this is really working, fantastic...")
+					result[0]="Blake did it"
+					break
+					####################
+					exp = 'tahoe'
+					switch(exp){ 
+						case 'tahoe':
+							print("do THIS IS SO COOLinside of sw 15")
+							print("oh is this going to really work now ... really it is")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							result[0]='fallen leaf lake waterskiing fell'
+							
+							####################
+							exp = 'winter'
+							switch(exp){    
+								case 'winter':
+									print("this is possibly sw 25")
+									print("listening to mit debugging session in summer")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice kayaking race")
+									break
+								default:
+									print("we are done here")
+							endswitch 
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			#exp = 3
+			print('this should write this line still within bounds of outer sw')
+			switch(exp)
+				case 'burger':
+					print("do something")
+					####################
+					switch(exp){   
+						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch
+			##############
+			print('taught me how to write code')
+			fallthru
+		case 11 to 15:
+			print('big numbers here this is 11 thru 15  ')
+			print('=this is the last c ase ==')
+			print('-----------------')
+			break 
+		default:
+			print('no matches so sorry about that chap')
+			print(' ')
+}
+'''	
+
+
+print("on to the next one==5 test now ======")
+
+
+print(" === 1st test === nested==")
+
 num = 1   
 main_control_sequencer(num,red_robin)#red_robin  #this will be the the modifed endswitch eventually 
-print("==yanks==")
-#exit()
-#exit()
+print("==yanks==testing 2 now ")
+print('=======after first pass===before second pass ===')
+#show_it_to_me()  
 
-
-
-#exit()
-#breakpoint()
-#print("this is going to be the holy grail point")
-#breakpoint()
-#print("about to do second call of a second nested switch string")
-#print("this is the SECOND PASS doing regular red_robon second now")
+print(" === 2nd test === nested==")
 num = 7   
 main_control_sequencer(num,red_robin2)#red_robin  #this will be the the modifed endswitch eventually 
+print("====after second pass== before 3rd pass=== ")
+#show_it_to_me()
 
-print("dam yankees")
-
-
+print(" === 3rd test === nested==")
 #print("about to do second call of a second nested switch string")
 #print("this is the third PASS doing regular red_robon second now")
 num = 1   
 main_control_sequencer(num,red_robin3)#red_robin  #this will be the the modifed endswitch eventually 
-
+print("=====after 3rd pass ======")
+#show_it_to_me()
 #print("go I want to fly like superman")
+print("================number 4 test ======")
 
-num = 11   
+
+num = 1   
 main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
+
+print("last one now the 5th test ====")
+num = 1   
+main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
+
+
+
+print("the end is near")
 
 
 #cloudy_day =
