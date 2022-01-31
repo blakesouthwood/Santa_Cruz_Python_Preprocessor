@@ -1,7 +1,8 @@
-January 31st, 2022 Gilroy, California time 2:42
+January 31st, 2022 Gilroy, California time 2:42 pm PST
 Trance music today: https://www.youtube.com/watch?v=TsTFVdcpLrE&list=RDzc8hbSM1zVo&index=2
 		
 The big news is that the module for nested switches works and doesn't need to ever reload.
+Still working on refining it but it works so I essentially climbed El Capitan in a blizzard to get it working.
 That was a massive accomplishment. And any number of nested switches can be used.
 If the reader is curious how this *magic* works it's just a PARSER and CODEGENERATOR (I designed and wrote both)
 I did look in the blue dragon book but did it all from my design - that parses JavaScript switch cases
