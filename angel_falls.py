@@ -1,6 +1,23 @@
 January 31st, 2022 Gilroy, California time 2:42
 Trance music today: https://www.youtube.com/watch?v=TsTFVdcpLrE&list=RDzc8hbSM1zVo&index=2
 		
+The big news is that the module for nested switches works and doesn't need to ever reload.
+That was a massive accomplishment. And any number of nested switches can be used.
+If the reader is curious how this *magic* works it's just a PARSER and CODEGENERATOR (I designed and wrote both)
+I did look in the blue dragon book but did it all from my design - that parses JavaScript switch cases
+and converts it into python code. Each nested switch is put into a function that is the trick. The other issue is that
+Python is quite militant about indentation and tabs so I hemmed and hawwed and chose to use tabs for determining
+the location and count of nested switches. Each NESTED switch is indented 3 tabs. So the JavaScript/C switch case
+behavior is mimicked but sadly Python actually doesn't have these REALLY COOL switch case RUNNING BEHAVIORS so
+I figured out how they would work. So using sly and clever Python code the EXPECTED JAVASCRIPT/C SWITCH CASE BEHAVIORS
+ARE REALIZED - though it's all an illusion. But I started thinking what else is done in C with switch case.
+Macros. So I figured out how to do macros (hella tricky) but they work. I created to and thru macros to do a series
+of numbers in cases. I was reading through the Yale University C style guide and the prof did tumbling math so 
+I added an add() method and it can be duplciated to do multiplication and whatever else the developer wants
+but I did add() for now that works like a fallthru.
+The initial idea was to copy and paste JavaScript switch case code and it would work in Python. That is still the goal.
+The issue is that for it to work the switch case needs to be built using tabs.
+
 commented out overflow_manager_quail() 
 and 
 overflow_manager_stanford() 
