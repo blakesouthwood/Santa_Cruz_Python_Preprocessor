@@ -1,3 +1,17 @@
+January 31st, 2022 Gilroy, California time 2:42
+Trance music today: https://www.youtube.com/watch?v=TsTFVdcpLrE&list=RDzc8hbSM1zVo&index=2
+		
+commented out overflow_manager_quail() 
+and 
+overflow_manager_stanford() 
+not needed now.
+
+Taking out print statements from program.
+Still need to add the var exp inputs at top of switch at top (working) not implimented in this yet.
+##=======================================================================================
+
+
+
 Finally sucker works for nested any number. I just ran it in sublime text 3 it worked.
 I will quickly modify it to work like the single switch case so that the programmer/developer
 has endswitch(stringname) at the bottom so it's called automatically.
