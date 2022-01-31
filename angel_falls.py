@@ -14,7 +14,7 @@ I figured out how they would work. So using sly and clever Python code the EXPEC
 ARE REALIZED - though it's all an illusion. But I started thinking what else is done in C with switch case.
 Macros. So I figured out how to do macros (hella tricky) but they work. I created to and thru macros to do a series
 of numbers in cases. I was reading through the Yale University C style guide and the prof did tumbling math so 
-I added an add() method and it can be duplciated to do multiplication and whatever else the developer wants
+I added an add() method and it can be duplicated to do multiplication and whatever else the developer wants
 but I did add() for now that works like a fallthru.
 The initial idea was to copy and paste JavaScript switch case code and it would work in Python. That is still the goal.
 The issue is that for it to work the switch case needs to be built using tabs.
