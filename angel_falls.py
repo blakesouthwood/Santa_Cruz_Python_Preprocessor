@@ -1,6 +1,9 @@
 January 31st, 2022 time 5:17pm 
 Took out a great deal of the print statements.
 uploaded lastest files:  make_it_so.py and site_b.py (the nested switch module)
+	
+doing many nested switches test. 20 just worked.
+
 
 
 January 31st, 2022 Gilroy, California time 2:42 pm PST
