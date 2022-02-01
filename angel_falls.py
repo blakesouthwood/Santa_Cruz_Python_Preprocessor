@@ -1,3 +1,6 @@
+bug when I do a single switch after a nested switch crashes so working on solving that.
+time 10:29am feb 1st, 2022
+
 https://www.youtube.com/watch?v=wAObbLeRIEQ
 	
 Feb 1st, 2022 Neo class
