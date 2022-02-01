@@ -13,24 +13,24 @@ def do_something():
     return c
 
 def testing_this_out():
-    print('testing_this_out')
-    print('breaking out of while true')
+    #print('testing_this_out')
+    #print('breaking out of while true')
     while True:
         cool = 0
         do_something()
         cool = 1
         if cool == 1: #true
-            print('breaking out')
+            #print('breaking out')
             break; #breaks out of while True
-    print("now for something relaly different")
-    print("this is nice")
+    #print("now for something relaly different")
+    #print("this is nice")
     
 #testing_this_out()
 
 mylist=[1,2,3,4,5,6,7,8,9,10]
 good=[]
 def trythis():
-    print(":try this test=-=-=-=-= trythis()  -=-=-=-= gizmo -=-=-=-=-=-=-==--== ")
+    #print(":try this test=-=-=-=-= trythis()  -=-=-=-= gizmo -=-=-=-=-=-=-==--== ")
     #good = mylist[-5:]
    # print("good=",good)
     print(":==========")
@@ -572,6 +572,9 @@ red_robin5 ='''
 
 print("on to the next one==5 test now ======")
 
+import time
+start_time = time.time()
+
 
 print(" === 1st test === nested==")
 
@@ -584,7 +587,7 @@ print('=======after first pass===before second pass ===')
 print(" === 2nd test === nested==")
 num = 7   
 main_control_sequencer(num,red_robin2)#red_robin  #this will be the the modifed endswitch eventually 
-print("====after second pass== before 3rd pass=== ")
+#print("====after second pass== before 3rd pass=== ")
 #show_it_to_me()
 
 print(" === 3rd test === nested==")
@@ -592,7 +595,7 @@ print(" === 3rd test === nested==")
 #print("this is the third PASS doing regular red_robon second now")
 num = 1   
 main_control_sequencer(num,red_robin3)#red_robin  #this will be the the modifed endswitch eventually 
-print("=====after 3rd pass ======")
+#print("=====after 3rd pass ======")
 #show_it_to_me()
 #print("go I want to fly like superman")
 print("================number 4 test ======")
@@ -653,5 +656,10 @@ print("the end is near")
 #red_robin  #this will be the the modifed endswitch eventually 
 
 #print("after doing SECOND nested switch")
+
+
+
+print("result of the seconds it took to run is..")
+print("--- %s seconds ---" % (time.time() - start_time))
 
 
