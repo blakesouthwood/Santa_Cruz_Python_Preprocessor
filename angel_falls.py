@@ -2,7 +2,11 @@ January 31st, 2022 time 5:17pm
 Took out a great deal of the print statements.
 uploaded lastest files:  make_it_so.py and site_b.py (the nested switch module)
 	
-doing many nested switches test. 20 just worked.
+doing many nested switches test. 20 just worked. 
+
+25 nested switches in a row worked.
+result of the seconds it took to run is..
+--- 3.1333439350128174 seconds ---
 
 
 
