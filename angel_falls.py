@@ -1,3 +1,8 @@
+Feb 1st, 2022 8:06am
+Working on getting single switch and nested switch to work together independently in same file today.
+
+
+
 January 31st, 2022 time 5:17pm 
 Took out a great deal of the print statements.
 uploaded lastest files:  make_it_so.py and site_b.py (the nested switch module)
