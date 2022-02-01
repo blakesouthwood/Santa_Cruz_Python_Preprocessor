@@ -1,3 +1,14 @@
+https://www.youtube.com/watch?v=wAObbLeRIEQ
+	
+Feb 1st, 2022 Neo class
+I can at will run a single switch caseand a nested switch case togethe in a sequence  in the same file.
+My sensor fuzzy logic works. So I am now running single switches and nested switches in the same file.
+Pure nirvana. This morning I hoped but i wondered if it would work. I made a flag and next I will add
+my code to determine if it's a nested or single switch. Quite thrilling actually.
+
+
+
+
 Feb 1st, 2022 8:06am
 Working on getting single switch and nested switch to work together independently in same file today.
 
