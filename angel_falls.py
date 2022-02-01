@@ -4,9 +4,14 @@ uploaded lastest files:  make_it_so.py and site_b.py (the nested switch module)
 	
 doing many nested switches test. 20 just worked. 
 
-25 nested switches in a row worked.
+25 nested switches in a row worked. in BBEDit
 result of the seconds it took to run is..
 --- 3.1333439350128174 seconds ---
+
+In sublime TExt 3  doing 25 nested switches in a row (sequence)
+result of the seconds it took to run is..
+--- 2.941403865814209 seconds ---
+[Finished in 3.0s]
 
 
 
