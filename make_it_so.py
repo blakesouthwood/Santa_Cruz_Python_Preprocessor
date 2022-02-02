@@ -1,50 +1,141 @@
 import site_b   #toying around with site_b and site_c
 from site_b  import * 
 
+
+
+#### this one below is good onemay 27th
+# official_switch_case_silver
+#from official_switch_case_silver  import *  
+
+
+
+
+################################################
+#      soon drum roll macros module 
+#import blender_macros
+#from blender_macros  import *  #may 25th, 2021 
+########################################################
+
+
+#import switchmodtrial7  #the one I ahve been using
+#import switch_module3
+#from switchmodtrial7  import *  #april 29th, 2021 flailing
+
+#import switch_mod2backup
+#from switch_mod2backup  import *  #april 29th, 2021 flailing
+
+#from pre_versionworkingfallsjan26th import *
+
+######################
+##   clear()
+#######################
+#reset switchmodtrial7 module
+#def clear():#reset sw
+#	importlib.reload(switchmodtrial7)
+	
+
+#print('drinkcoffee file being used here"')
+#print("==================")
+
+#this is  input variable exp for switch(exp)
+#print("===== FIRST 1st switch =====")
+#print("===== FIRST 1st switch =====")
+#print("===== FIRST 1st switch =====")
+
+
+#print("now to string switch see what happens")
+
+#show_generated_code()
+# I don't know if this works yet
+
+#this is the code being run
+#this needs to be sensed to turn it 
+# into strings, just stringifying it
+#triggered after determing it's NOT A NUMBER case
+#it can be alphanumeric words3 example
+#txt = "Company12"
+#print(x)
+#x = txt.isupper()
+#x = txt.isalnum() #alphanumeric
+# returns True
+#txt = "compnay12"
+#x = txt.islower() #lowercase
+
+
+
+print("-------------------")
+print("== switch 1 ==")
+print("-------------------")
+
+#clever('PALOMAR')
+
+
+
+
+#right now it NEEDS to take strings to digest and parse it"
+#I need to add my new code for this to work properly"
+##=====================
+#show_input_switch_string()   #input so what the string right below here
+#hide_generated_code()
+
+print("--------")
+
+swan =''' 
+	switch(exp) {
+		case CASPER:  
+			print(\"squirt gun!\")
+			print("water everywhere")
+			break
+			
+		case COYOTE:
+			print("Sesame Street")
+			print(" groucho and animal")
+			print("this is so fun")
+			break
+			
+		case PALOMAR:
+			print("it actually works")
+			print(" third sitting in car at starbucks testing this sucker")
+			print("testing this on january 5th, 2022 at Starbucks")
+			print("deer and quail about")
+			print("oh my god this fucking worked a single switch victory!!")
+			
+			
+		case LAKE_TAHOE:
+			print("now we are inside of Lake Tahoe good skiing")
+			print(" alpine meadows")
+			print("all of the stars")
+			print("==========")
+			break
+			
+		case FRANCE:
+			print("massive ship blocking canal in Egypt")
+			print("it was stuck for six days")
+			print("=========")
+			
+		case AMERICA:
+			print('manure')
+			print("no more horses")
+			print("==========")
+		
+				
+		default:
+			print('sorry no matches')
+			print("out of mocha")
+			break #mandatory break
+}
+'''
+#endswitch(swan)
+
+#exit()
 #if switch numbers to transfer > length of snowtime
 #smartlistlocations[13, 9, 6, 6, 7, 13, 9, 6, 6, 7]
 #smartlistlocations= [13, 9, 6, 6, 7, 13, 9, 6, 6, 7, 13, 9, 6, 6, 6, 7]
 
-def do_something():
-    a = 2
-    b = 2
-    c = a + b
-    print("c=",c)
-    return c
-
-def testing_this_out():
-    #print('testing_this_out')
-    #print('breaking out of while true')
-    while True:
-        cool = 0
-        do_something()
-        cool = 1
-        if cool == 1: #true
-            #print('breaking out')
-            break; #breaks out of while True
-    #print("now for something relaly different")
-    #print("this is nice")
-    
-#testing_this_out()
-
-mylist=[1,2,3,4,5,6,7,8,9,10]
-good=[]
-def trythis():
-    #print(":try this test=-=-=-=-= trythis()  -=-=-=-= gizmo -=-=-=-=-=-=-==--== ")
-    #good = mylist[-5:]
-   # print("good=",good)
-    print(":==========")
-    print("should be original mylist=",mylist)
-    courage = mylist[-5] #seeing if this works or not 
-    print('courage=',courage)
-        
-  
-    print('trouble list=',trouble)
-   
 
 
 
-trythis()
+#trythis()
 ##===================================================================
 
 red_robin ='''
@@ -570,18 +661,20 @@ red_robin5 ='''
 '''	
 
 
-print("on to the next one==5 test now ======")
+#print("on to the next one==5 test now ======")
 
-import time
-start_time = time.time()
+#import time
+#start_time = time.time()
 
 
-print(" === 1st test === nested==")
-
+#print(" === 1st test === nested==")
+print("=====now trying a NESTEd SWITCH attempt====")
 num = 1   
 main_control_sequencer(num,red_robin)#red_robin  #this will be the the modifed endswitch eventually 
 print("==yanks==testing 2 now ")
 print('=======after first pass===before second pass ===')
+
+
 #show_it_to_me()  
 
 print(" === 2nd test === nested==")
@@ -608,10 +701,7 @@ print("last one now the 5th test ====")
 num = 1   
 main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
 
-
-
-print("the end is near")
-
+##============...............
 
 #cloudy_day =
 
@@ -659,7 +749,7 @@ print("the end is near")
 
 
 
-print("result of the seconds it took to run is..")
-print("--- %s seconds ---" % (time.time() - start_time))
+#print("result of the seconds it took to run is..")
+#print("--- %s seconds ---" % (time.time() - start_time))
 
 

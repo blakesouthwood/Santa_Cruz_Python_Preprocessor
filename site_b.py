@@ -20940,7 +20940,7 @@ varholder.append('0')
 #perhaps this is the clever() being called afterall june 9th 2021
 #apparently this needs to exist in this file
 def clever(i): #so it already exists we are changing its value
-	print("clever() on line 276")
+	print("clever() on line 276==================")
 	varholder[0]='' #this should reset it to nothing
 	mytrace('clever()')
 	varholder[0]= i
@@ -30801,6 +30801,7 @@ def flush_lists_previous():
 ##################################
 #this is for parsing and codegen of cases with words only
 def starter_sequence_mode_1():
+	#print("this is ..... starter sequence mode 1()..")
 	add_to_the_main_sequence("starter_sequence_mode_1()")
 	#print("it SEES in valve[0]",valve[0])
 	#print("the if vavle[0] = False is the setting in here ")
@@ -31015,7 +31016,7 @@ def check_if_number_in_string(x):
 def parser_mode_1(a):
 	#print("a= ",a)
 	mytrace('parser_mode_1 in switch_cat()') #was greatpumpkin
-	#print('=======INSIDE OF PARSER in switch_cat for strings  =========')
+	#print('==this is parser_mode_1=====INSIDE OF PARSER in switch_cat for strings  =========')
 	mountain2(a)    # this changes sw to switchcasetester #I can't beleive that this reverse number was being called 
 	starter_sequence_mode_1()
 # flow_fork_input()  #this fills valve[0] with True or False
@@ -31027,6 +31028,7 @@ def parser_mode_1(a):
 ##     flow_valve_input(y)
 ##################################
 def flow_valve_input1(y):  #this determines if switch case string is numbers or words
+    #print("==== this is flow_valve_input()====")
     add_to_the_main_sequence("flow_valve_input1(y)")
     mytrace("flow_valve_input()")                            #get first case in switch case string
     ######## this gets the necessary data to test if case is a number
@@ -31061,6 +31063,73 @@ def pink1():
 #this controls calling words   parser if False
 #this is in great_pumpkincat2.py
 
+#= = = = = feb 1 2022 codetest = = =
+#= = = = = feb 1 2022 codetest = = =
+#= = = = = feb 1 2022 codetest = = =
+#= = = = = feb 1 2022 codetest = = =
+#from silver file
+line =""
+varholder=[]
+varholder.append('0')
+###############################============
+
+#perhaps this is the clever() being called afterall june 9th 2021
+#apparently this needs to exist in this file
+def clever(i): #so it already exists we are changing its value
+	print("=======clever()======= on line 3077 feb 1st testing 2022")
+	varholder[0]='' #this should reset it to nothing
+	#mytrace('clever()')
+	varholder[0]= i
+	#===this works and it fills a list with input from an argument
+	#print('varholder[0]=',varholder[0])
+	#print(varholder[0]) #to actually see proof
+	
+	angel = varholder[0]
+	print("varholder[0]=",varholder[0])
+	return varholder[0]
+
+
+#from silver file feb 1, 2022 tuesday cold 
+########################
+##     endswitch(y)      this calls flow_valve_input which checks if cases are numbers or words
+########################  and if numbers = True then call parser_mode_2(y); If numbers = False parser_mode_1(y)
+#this final version only does the string mode and numbers are done by making them strings
+def endswitch(y): #pulls in sw 
+	#endswitch code test
+	print("new endswit h single switch test feb 1st")
+	switchcasetester='';switchcasetester=None;
+	del switchcasetester;switchcasetester='';
+	mytrace("endswitch() in switch_cat called")
+	#print("we have an input argument parameter y",y)
+	#this determines if switch case string uses numbers or words/chars
+	show_input_switch_string() #for testing this shows the input string
+	#hide_input_switch_string()  #the other option
+	#meaning not numbers  but only if not numbers and not stringified yet to meet C style
+	#will try it here before doing anything else
+	check_if_uppercase_constant_cases(y)
+	if baseline[0] != "nada": #means it converted to uppercase
+		y = baseline[0]
+	#####################
+	#this checks if first case is a number like case 2: returning True if numbers is positive
+	flow_valve_input1(y)   #puts True or False into valve[0] added April 2nd, 2021
+	#####################
+	# if numbers are true in case line
+	#modified recently to reduce the lines here with a one line if
+	# either way flush list sand parsermode1 is called whether valve[0] is true 
+	# the key is macro expansion is only called if numbers are True
+	print("made it to here... valve[0]=",valve[0])
+	if valve[0] == True:  #meaning numbers like case 12:
+		macro_expansion(y); #checks if macros and expands them and converts numbers to strings
+		y=None; del y; y = cray[0];
+	#end if
+	#####################################
+	print("made it to top of flush_lists()")
+	flush_lists() 
+	parser_mode_1(y) #y comes from cray[0] above flowing downwards
+		
+	 
+
+
 
 #this part hasn't been tested yet.
 # I have to make sure that the normal endswitch() continues to work 
@@ -31071,8 +31140,8 @@ number_of_switches_in_string='' #initializing it July 1st 2021
 ########################
 ##     endswitch(y)      this calls flow_valve_input which checks if cases are numbers or words
 ########################  and if numbers = True then call parser_mode_2(y); If numbers = False parser_mode_1(y)
-def endswitch(y): #pulls in sw 
-	print("------ endswitch(y)----------")
+def previous_endswitch(y): #pulls in sw 
+	print("------ endswitch(y)-----shit-----")
 	add_to_the_main_sequence('endswitch(y)')
 	#print("====TESTing in beginning of endswitch() =====>>>")
 	#print("====TESTing in beginning of endswitch() =====>>>")
@@ -31107,7 +31176,7 @@ def endswitch(y): #pulls in sw
 	############
 	############ testing experimental (right now it doesn't matter
 	############ july 1st, 2021  commented this out today don't want to think about this part 
-	
+	'''
 	realnumber = y.count("endswitch") #it's possible there are no nested switches
 	realnumber = realnumber + 1 #this account for the first switch which isn't counted
 	if realnumber == None or realnumber == 0:
@@ -31117,10 +31186,11 @@ def endswitch(y): #pulls in sw
 	print("counting the endswitch + 1 we get ",realnumber)
 	if realnumber >= 2:
 	    print("voila we have nested switches ")
+	    #putcall to mission control sequence bypass c=========
 	else:
 	    print("nope, just one single switch ")
-	    
-	    
+	#==================================================    
+	'''   
 	#put jumanji here but it does two different things
 	
 	#this just counts the number of "switch" in the string but not their locations
