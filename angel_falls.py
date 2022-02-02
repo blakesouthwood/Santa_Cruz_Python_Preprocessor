@@ -1,3 +1,9 @@
+Feb 2nd, 2022, 10:35 am PST Morgan Hill Starbucks on Cochrane California
+Massive progress, massive momentum,tenacity, perseverance, fortitude, unstoppable.
+
+This is a pretty song.
+https://www.youtube.com/watch?v=WM7-PYtXtJM&list=RDMM&index=27
+	
 Merged single and nested nesteed switches together. Integrating the endswitch method to determine if nested or not
 and call single switch or the bypass205. Have to go to work now so have to stop right now but added all of the code
 but haven't tested it. Will figure out any issues(bugs) in this configuration since it will finally
