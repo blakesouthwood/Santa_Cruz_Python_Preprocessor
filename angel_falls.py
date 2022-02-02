@@ -1,3 +1,22 @@
+Merged single and nested nesteed switches together. Integrating the endswitch method to determine if nested or not
+and call single switch or the bypass205. Have to go to work now so have to stop right now but added all of the code
+but haven't tested it. Will figure out any issues(bugs) in this configuration since it will finally
+be based on the original design of an endswitch(name) at bottom of a string and determine if it's nesteed or not
+and parse it correctly. Still cleaning up the code and will likely do some refactoring. Exciting that the nested
+switch functions actually work (mind boggling complexity) and single switch works. they will run independently.
+What is cool is that I have proved that I can add the behavior and syntax from another programming language JavaScript, C
+to Python (which is an illusion really) but it actually works. I can now impliment goto label and add macros from Lisp
+when, unless, until, etc (they already work by the way)
+
+Feeling good.
+https://www.youtube.com/watch?v=xat1GVnl8-k&list=RDMM&index=21
+
+https://www.youtube.com/watch?v=CC5ca6Hsb2Q&list=RDMM&index=22
+
+https://www.youtube.com/watch?v=_ovdm2yX4MA&list=RDMM&index=34
+	
+
+
 bug when I do a single switch after a nested switch crashes so working on solving that.
 time 10:29am feb 1st, 2022
 
