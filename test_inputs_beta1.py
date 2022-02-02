@@ -95,10 +95,10 @@ sw ='''
 			
 		case PALOMAR:
 			print("it actually works")
-			print(" third attempt")
+			print(" third  in backyard")
 			print("testing this on january 5th, 2022 at Starbucks")
-			print("deer and quail about")
-			
+			print("deer and quail about go blue origine")
+			break
 			
 		case LAKE_TAHOE:
 			print("good skiing")
@@ -125,6 +125,8 @@ sw ='''
 }
 '''
 endswitch(sw)
+
+#exit()
 
 #clever('LAKE_TAHOE') #might have to be lowercase lake_tahoeshow_generated_code()
 
@@ -423,7 +425,7 @@ print("after the switch case we have... drum roll please")
 print("final result=")
 #################
 #these need to exist be initializedto be utilized
-
+print('demonstration of adder fall thru accumulator')
 print("result of ADDER adding",targetlist[0])
 print("result of buildstring concatting ",buildstringlist[0])
 #targetlist[0] = 0

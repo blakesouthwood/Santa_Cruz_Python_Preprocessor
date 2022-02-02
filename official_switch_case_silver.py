@@ -518,7 +518,7 @@ buildstringlist.append(0)
 # from my experience 
 ################################################
 ##### concatting a string in fallthrus in switch case
-############ buildstring() ############## added may 27th
+############ buildstring() ############## added may 27th 2021
 
 ###=========================
 ##      buildstring(x)
@@ -529,7 +529,7 @@ def buildstring(x): #this should be 3
 		#x =x + 1
 		x = str(x)
 		buildstringlist[0] = x # example 'Cola'
-	else:   #already something in here
+	else:   #already something in here 
 		#targetlist[0] = targetlist[0] + x
 		#x =x + 1
 		x = str(x)
@@ -7432,6 +7432,9 @@ def does_this_run():
 
 
 buildlist=[]
+##==============================================
+##  grab_body_of_code_inside_case_sections():
+##==============================================
 def grab_body_of_code_inside_case_sections():
     mytrace("grab_body_of_code_inside_case_sections")
     #print("grab body of code called== @@@@")
@@ -7457,6 +7460,9 @@ def grab_body_of_code_inside_case_sections():
 
 #august 27 thurday coding test       this will be the sets of cases for each case section
 caseset=[]
+##==================================
+## create_case_name_lists(x,y):
+##==================================
 def create_case_name_lists(x,y):
     #print("==$$$$$$$$$$$$$$$$$$$$$$$$$$$$$==")
     #print("================this is line 1615===CREATE CASE NAME LISTS=====================")
@@ -7553,6 +7559,9 @@ reset_list_to_just_starter(wilecoyote)
 #wilecoyote.pop()
 
 mrcase=''
+##===========================
+##  case_tail_list_maker
+##==========================
 def case_tail_list_maker(x,y):  #two vars x and y are case locations from digitalcandy
     mytrace('case_trail_list_maker')
     #print("=######	C A S E    T A I L   M A K E R  searches for breaks and fallthrus  ")
@@ -7759,20 +7768,20 @@ def case_tail_list_maker(x,y):  #two vars x and y are case locations from digita
 
 
 
-
+penguin=[]  #defining a new list here
 #####################################
 ### crashing waves at beach ()   ####
 #####################################
-penguin=[]  #defining a new list here 
 def crashing_waves_at_beach():
+	print("============crashing_waves_at_beac() ==============")
 	mytrace('crashing_waves_at_beach()')
 	#print("Crashing Waves At Beach function called")
 	######## there is a lot going on here
 	'''
 	loop thru wilecoyote of cases with breaks and
-	   get index location of those cases in palmtrees list
-	   put the index number into roadrunner list
-	   
+		get index location of those cases in palmtrees list
+		put the index number into roadrunner list
+		
 	 
 	loop thru digitalcandy to make list of same size and fill british list with all 'fallthru'
 	
@@ -7786,15 +7795,17 @@ def crashing_waves_at_beach():
 	#print('in crashing waves at beach we have wilecoyote line 7975',wilecoyote)
 	#print("palmtrees at line 7977 we have ",palmtrees)
 	###=================
-
+	print('wilecoyote list')
+	print(wilecoyote)
 	## this gets the location of the case in wilecoyote inside of palmtrees list
 	for item in wilecoyote: #goes through list of case sections with breaks
 		toad = get_location_of_case("palmtrees",str(item))
+		print("toad=",toad)
 		
 		#print("we have this in toad=",toad)
 
 		roadrunner.append(toad) #this returns a number the index position
-	#print("ROADRUNNER list contains numbers of index locations of cases in palmtrees",roadrunner)
+	print("===ROADRUNNER list contains numbers of index locations of cases in palmtrees",roadrunner)
 #################################################
 	# make a new list based on digitalcandy
 	#print("in digitalcandy at line 7988 we have",digitalcandy)
@@ -7879,7 +7890,7 @@ def crashing_waves_at_beach():
 	for item in british:
 		penguin.append(item)
 	
-	#print('penguin at line 8066',penguin)
+	print('penguin at line 8066',penguin)
 
 	#penguin.append('break')
 	#print("penguin= ", penguin)
@@ -7931,7 +7942,8 @@ def crashing_waves_at_beach():
 	#print("00000000000000000000000000000000")
 	#print("british=",british)
 	penguin[-1] = "break"
-	
+	print("out of curiosity printing penguin listline 7944")
+	print('penguin=',penguin)
 	#### I can change the contents of british or makea  new list so as to not mess it up.
 	oceanwaves =[]
 
@@ -7964,46 +7976,7 @@ roadrunner=[]
 def f22_fighter_jet(): #makes critical cranberries list which is the taillist for switch cases
 	return #this kills it
 	#mytrace('f22_fighter_jet()')
-	#counter = 0
-	#c = 1		#current case numbr section
-	#d = c + 1
 
-	#for item in digitalcandy:	#this is going through the diamonds list
-	#	neato = digitalcandy[counter]
-	#	x = neato[0]
-	#	y = neato[1]
-		##print("x",x,"y",y);
-	#	case_tail_list_maker(x,y)
-	#	counter += 1
-
-	#royallist.append('break');  #in default
-	#counter = 0
-
-	#this goes thru the royallist with breaks and fallthrus(numbers)
-	# starter 0  fallthru2 fallthru3 fallthru4  fallthru5 default
-	#loops thru to royalist[item] then accesses the starbucklist[item to append
-	# I can make fallthru('fish') and fallthru('default')  and have the formula working
-	#I use numbering in royalist starter1(0) (position1 fallthru2)   (position2 fallthru3) etc
-	#if they use big numbers I will put them inside of (number) and grab teh number startswith("(")
-	#and endswith(")")
-	#print('royallist =',royallist)
-	
-	#for item in royallist: #use range here 
-	#for item in range(1,len(royallist)): #added march 16,20211:19pm
-	#	if "break" in item:
-	#		cranberries.append("break")
-##
-	#	if "fallthru" in item:
-	#		item=item.strip()
-	#		item =item[-1]
-	#		#print("item=",item)
-	#		item = int(item)
-	#		#print(item)
-	#		doggy =starbuckslist[item] #this is like fallthru('cherry')
-	#		ohbaby = "fallthru(" +  "'" + doggy  +  "'" + ")"  #this is the number
-##
-	#		#print("ohbaby=",ohbaby)
-	#		cranberries.append(ohbaby) # just added this Thrusday, sept 10th Target
 
 ###################################################
  
@@ -8881,6 +8854,9 @@ smartcasemanager=[]  #creating the initializing smartcasemanager
 
 
 #this just prints it out the sets of the cases for each case section
+#========================
+#  castle_time()
+#=========================
 def castle_time(): #fills up smartcasemanager
 	mytrace('castle_time')
 
@@ -8918,11 +8894,12 @@ def castle_time(): #fills up smartcasemanager
 	list_of_rows_of_case_names.append(finallist)
 	#print("this should be default below======+++")
 
-#==========================================================
-#======================== partynation =====================
 
 list_of_rows_of_case_names=['starter']
 firstcasesectionlist=['starter']
+#==========================================================
+#=                   partynation 
+#=========================================================
 def partynation(x,y):  #this grabs the body
 	mytrace('partynation')
 	#print("====partynation======")
@@ -9135,23 +9112,7 @@ def make_default_case():
 #this was tyhe failed attempt at managing the indentation over to the left
 #for the switch case output in python and I have a simpler solution I will end up using.
 
-
-
-
-		#counter += 1
-
-
-
-
-
-
-
-
-
-
-
-
-
+#counter += 1
 
 
 
@@ -9193,6 +9154,16 @@ switch_gen=''
 testlist=[]
 exp =''
 
+# I am thinking of seperating it totally  to make sure it works
+# with the lists generated from the parser as inputs for switch_code_gen
+# and that way I can determine where the bug is.
+
+##########################################################
+##################
+#this does switch code gen for words/chars NOT numbers
+#this takes in lists calculated above and generates a string of python switch case code
+
+
 #########################################################
 #########################################################
 #########################################################
@@ -9203,14 +9174,6 @@ exp =''
 #########################################################
 #########################################################
 
-# I am thinking of seperating it totally  to make sure it works
-# with the lists generated from the parser as inputs for switch_code_gen
-# and that way I can determine where the bug is.
-
-##########################################################
-##################
-#this does switch code gen for words/chars NOT numbers
-#this takes in lists calculated above and generates a string of python switch case code
 def switch_code_gen():
 		
 	mytrace('  ')
@@ -9276,7 +9239,7 @@ def switch_code_gen():
 	############################
 	
 	
-#this is the input for exp for switch(exp)
+    #this is the input for exp for switch(exp)
 	##############
 	topvars2 = "\nexp = varholder[0]\n\n"
 
@@ -9531,6 +9494,7 @@ def stage_twelve():
 	#print("it current has this in it ", smartcasemanager)
 	#print("it's current length =",len(smartcasemanager))
 	
+	#=== deleting all of the lists here ==========================
 	
 	#print("list_of_rows_of_case_names ", list_of_rows_of_case_names )
 	del list_of_rows_of_case_names[:] #empties this list
@@ -9827,6 +9791,11 @@ def flush_lists_previous():
 	cranberries=[]
 	
 
+
+
+
+
+
 #case_main_body_list=[]
 #this is new but I haven't tried 
 # this has a sequence that must be followed for it to work 
@@ -9908,7 +9877,7 @@ def hasNumbers(inputString):
 
 
 
-	############################
+############################
 	
 			
 
@@ -9919,6 +9888,9 @@ coffee=[]  #holds line number of first case in switch case
 valve=[]
 valve.append("nada")# 0
 valve.append("sway")# 1
+
+
+
 
 # this gets the line number of the first case in the switch case string
 #####################################################
@@ -9965,6 +9937,8 @@ def check_if_number_in_string(x):
 	theresult = any(char.isdigit() for char in x)  #this line from stackoverflow
 	return theresult
 
+
+
 ###########################
 ##     parser_mode_1()
 ###########################
@@ -9980,6 +9954,9 @@ def parser_mode_1(a):
 # if valve[0] is False it means numbers = False (thus words strings)
 ## the new code will go in here Friday morning.. April 2, 2021
 #this fills valve[0] with True or False for numbers in cases
+
+
+
 #################################
 ##     flow_valve_input(y)
 ##################################
@@ -10020,6 +9997,9 @@ def pink1():
 
 
 
+
+
+#only doing one switch
 	
 ########################
 ##     endswitch(y)      this calls flow_valve_input which checks if cases are numbers or words
@@ -10031,21 +10011,17 @@ def endswitch(y): #pulls in sw
 	mytrace("endswitch() in switch_cat called")
 	#print("we have an input argument parameter y",y)
 	#this determines if switch case string uses numbers or words/chars
-	##### to show the input string
 	show_input_switch_string() #for testing this shows the input string
 	#hide_input_switch_string()  #the other option
 	#meaning not numbers  but only if not numbers and not stringified yet to meet C style
-	
 	#will try it here before doing anything else
 	check_if_uppercase_constant_cases(y)
-	
 	if baseline[0] != "nada": #means it converted to uppercase
 		y = baseline[0]
 	#####################
 	#this checks if first case is a number like case 2: returning True if numbers is positive
 	flow_valve_input1(y)   #puts True or False into valve[0] added April 2nd, 2021
 	#####################
-	#print('the result of flow_valve_input=',valve[0])
 	# if numbers are true in case line
 	#modified recently to reduce the lines here with a one line if
 	# either way flush list sand parsermode1 is called whether valve[0] is true 
@@ -10054,14 +10030,6 @@ def endswitch(y): #pulls in sw
 		macro_expansion(y); #checks if macros and expands them and converts numbers to strings
 		y=None; del y; y = cray[0];
 	#end if
-	########################################### June 7th, 2021
-	# what this does is take a switch case with UPPERCASE: and converts to strings case 'UPPERCASE':
-	#if valve[0] == False: #meaning not numbers  but only if not numbers and not stringified yet to meet C style
-	#	check_if_uppercase_constant_cases(y)
-	#end if	
-	#####################################
-    #if valve[0] == False: #not a number
-	#these function calls below are called no matter what
 	#####################################
 	flush_lists() 
 	parser_mode_1(y) #y comes from cray[0] above flowing downwards
