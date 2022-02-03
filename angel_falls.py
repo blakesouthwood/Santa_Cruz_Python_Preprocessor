@@ -1,3 +1,11 @@
+Feb  3rd 2022
+Since single switch works in it's module and nested switch works in it's module I will do a diff
+to determine what subtle differences exist so that I can integrate them together so that they work flawlessly.
+Currently each time I combine them they fail so this way I will know how to make them coexist together
+to reduce the codebase.
+Uploading the working single switch engine and the nested switch engine. 
+
+
 Feb 2nd, 2022, 10:35 am PST Morgan Hill Starbucks on Cochrane California
 Massive progress, massive momentum,tenacity, perseverance, fortitude, unstoppable.
 
