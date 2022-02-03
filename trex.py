@@ -3417,7 +3417,7 @@ quail=[]
 
 
 def empty_switch_and_endswitch_list_locations():
-    print("=== empty_switch_and_endswitch_list_locations()")
+    #print("=== empty_switch_and_endswitch_list_locations()")
     del endswitch_location[:]
     del switch_location[:]
     
@@ -5808,7 +5808,8 @@ def starter_engine(the_nest_string):
 			tabdepth = line.count("\t")
 			n= tabdepth;n = n-1  #need to have one tab in front
 			break
-	passthis[0]= n;print("n =",n)
+	passthis[0]= n;
+	#print("n =",n)
 goldtime=[]
 goldtime.append(0)
 ##===================================================================
@@ -5861,11 +5862,11 @@ def take_out_x_tabs_from_front_of_line(the_nest_string):
 	
 				
 	wildness=''
-	print('half way down n =',n)
+	#print('half way down n =',n)
 	for line in the_nest_string.splitlines(): #nest_string
 		
 		newline = line[1:]
-		print(newline)
+		#print(newline)
 		
 		if n == 4:
 			wildness += line.replace("\t\t\t\t","\t") 
@@ -6056,15 +6057,15 @@ def do_this_baby():
 def add_data_to_peartree(x,z):
     answer =''
     answer = "peartree['" + str(x) +"'] = z " #[10,20]
-    print("just before exec add data to peartree")
-    print(answer)
-    exec(answer)
+    #print("just before exec add data to peartree")
+    #print(answer)
+    #exec(answer)
     
 fool_on_hill= '[10,20]'
-print("TESTING adding data to a dictionary")
+#print("TESTING adding data to a dictionary")
 add_data_to_peartree(1,fool_on_hill)
-print("peartree has in its contents=")
-print(peartree) 
+#print("peartree has in its contents=")
+#print(peartree) 
 
 
 
@@ -6074,21 +6075,21 @@ print(peartree)
 
 #testing adding data record to dictionary dynamically.
 #Declare a dictionary (empty) 
-print("dynamiclaly add data to dictionary = DRIVE THRU ")
-print("testing dynanmically adding data to a dictionary Drive Thru")
+#print("dynamiclaly add data to dictionary = DRIVE THRU ")
+#print("testing dynanmically adding data to a dictionary Drive Thru")
 data = {'a': 1, 'b': 2, 'c': 3}
-print(data)
+#print(data)
 data.update({'d':3,'e':4})  # Updates 'c' and adds 'd'
-print("====after adding d and e dictioanry data======")
-print(data)
+#print("====after adding d and e dictioanry data======")
+#print(data)
 
 fun={} #dictionary called fun
-print("first the fun dictionary is empty")
-print(fun)
+#print("first the fun dictionary is empty")
+#print(fun)
 #input values to dynamically add data for teh switch endswitch to dictionary
 
-print("adding data to drivethru dictionary ")
-print(" RED WHITE AND BLUE ")
+#print("adding data to drivethru dictionary ")
+#print(" RED WHITE AND BLUE ")
 drivethru={}
 #drivethru.update('1': '[10,20]')
 #drivethru.update('2': '[30,40]')
@@ -6103,18 +6104,18 @@ cherish=[10,20]
 skyblue =[28,38]
 
 def get_dictionary_size(x): #length
-    shit= len(x)
-    print("size of this dictionary",x," is",shit)
-    print("so the result is ",shit)
-    return shit;
+    crud= len(x)
+    #print("size of this dictionary",x," is",crud)
+    #print("so the result is ",crud)
+    return crud;
     
 
 
-print("This is doing an update here --->")
+#print("This is doing an update here --->")
 fun.update({'1':cherish,'2':skyblue})
-print("hard coded here printing out the dictionary fun")
-print(fun)
-print("========")
+#print("hard coded here printing out the dictionary fun")
+#print(fun)
+#print("========")
 num1='3'
 num2='4'
 silver =[42,46]
@@ -6136,34 +6137,34 @@ dust.append(gold)
 #=
 ##==============================
 def dynamically_add_data_to_dictionary(a,x,y):
-    print("testing... dynmically add data to dictionary a, x, y")
-    print("Tesitng using lists now which are changeable on the fly")
+    #print("testing... dynmically add data to dictionary a, x, y")
+    #print("Tesitng using lists now which are changeable on the fly")
     a.update({crystal[1]:dust[1],crystal[2]:dust[2]}) #totally dynamic attempt here
-    print(a)
+    #print(a)
 
 #modidfy this get value to use dictoinary name as parameter  
-print("here we are testing get_value_of_key(dictname,keynumber)  (fun,3)")  
+#print("here we are testing get_value_of_key(dictname,keynumber)  (fun,3)")  
 
 ##===============================
 ## get_size_of_dictionary  (name of dictionary)
 ##===============================
 def get_size_of_dictionary(zoo):  #this is so I know what next record should be
-    print("get_size_of_dictionary")
+    #print("get_size_of_dictionary")
     answer = len(zoo)
-    print("get size of dictionary zoo",answer)
+    #print("get size of dictionary zoo",answer)
     #how do I loop thru a dictionary
-    print(":this is printing out peartree ")
+    #print(":this is printing out peartree ")
     for x in peartree:
         print(x)
-    print("====")
-    print("")
-    print("this loops thru dictionary thisdict")
-    for x in thisdict.values():
-        print(x)
-    print("")   
-    print("===loop thru dictionary== this.dict ==")
-    for x, y in thisdict.items():
-        print(x, y)
+    #print("====")
+    #print("")
+    #print("this loops thru dictionary thisdict")
+    #for x in thisdict.values():
+    #    print(x)
+    #print("")   
+    #print("===loop thru dictionary== this.dict ==")
+    #for x, y in thisdict.items():
+    #    print(x, y)
 
 
 
@@ -6175,16 +6176,17 @@ car = {
 }
 
 def playing_with_dictionary_structs():
-    print("playing with dictionary access...")
+    #print("playing with dictionary access...")
     x = car.get("model")
-    print("testing getting car model")
-    print(x)
+    #print("testing getting car model")
+    #print(x)
 
 #playing_with_dictionary_structs()
 
    
 #but I just thought I can have a running total in a list too
 def do_something():
+    return
     print("Muppets Animal")
     result=''
     do_this_baby() # I think that the list peartree was empty when I was testing it
@@ -6213,6 +6215,7 @@ def do_something():
 ## dnanmically add one record to dictionary
 ###############################################
 def dynamically_add_one_record_to_dictionary():#will need some params
+    return
     print("starbucks morgan hill checking this out")
     print("dynamically add one record to dictionary ()") #what about input param
     #first pass go thru dictionary to determine it's current length put that into a list
@@ -6397,8 +6400,8 @@ first 28 second 38
 
 ### this would be after filling this with switch_location and endswitch_location method
 
-print("practicing with this hardcoded input data for switch and endswitch to prove it works")
-print("down at pears tree here hard coded ")
+#print("practicing with this hardcoded input data for switch and endswitch to prove it works")
+#print("down at pears tree here hard coded ")
 # this represents a dictionary called pears already loadded with data
 #=================================================
 ########################
@@ -6454,6 +6457,7 @@ blueberries =	{  #for pear tree in backyard (2 of them)
 
 
 def lametest():
+    return
     print("doing lametest()")
     if 11 in range(1,86):
         print("true")
@@ -6472,7 +6476,7 @@ def lametest():
 
 # what this does is add ..  # 66  the line number after each switch(exp){
 
-print("TWIN LIST let's take a look and see what's in it")
+#print("TWIN LIST let's take a look and see what's in it")
 #print("let's look inside of twinlist",twinlist)
 #they have to be in the same order as the actual switch cases
 
@@ -6529,8 +6533,8 @@ combined_tabs = threetabs + fivetabs + seventabs
 #fivetabs= [15, 38, 53, 64]
 #seventabs= [23, 33]
 '''
-print("testing merry christmas code")
-print("obviously this is a thinking and engineering problem")
+#print("testing merry christmas code")
+#print("obviously this is a thinking and engineering problem")
 threetabs = [[1, 2],[3, 4]] 
 fivetabs  = [[5, 6],[7, 8]]
 seventabs = [[9, 10]]
@@ -6546,9 +6550,9 @@ fulllist=["threetabs","fivetabs","seventabs","ninetabs","eleventabs","thirteenta
 
 upto7 = "threetabs + fivetabs + seventabs"
 combined_tabs_jazz = eval(upto7)
-print("combined_tabs_jazz=",combined_tabs_jazz)
-for item in combined_tabs_jazz:
-    print(item)
+#print("combined_tabs_jazz=",combined_tabs_jazz)
+#for item in combined_tabs_jazz:
+#    print(item)
     
 
 #laketahoe
@@ -6563,13 +6567,13 @@ combined_tabs = threetabs + fivetabs + seventabs
 counter=1 #looping thru combined_tabs list
 for item in combined_tabs:
     alpha = item[0];beta  = item[1]
-    print("pair=",item," "," counter=",counter,", first=",alpha,", second= ",beta)
-    print("=========================")
+    #print("pair=",item," "," counter=",counter,", first=",alpha,", second= ",beta)
+    #print("=========================")
     counter += 1
-print("did she work")
+#print("did she work")
 
-for item in combined_tabs:
-    print(item)
+#for item in combined_tabs:
+#    print(item)
     
 #output
 '''
@@ -6587,10 +6591,10 @@ did she work
 '''
     
 #this is what is in combined_tabs now
-print("showing off combined tabs list")
-for item in combined_tabs:
-    print(item)
-print("===================")    
+#print("showing off combined tabs list")
+#for item in combined_tabs:
+#    print(item)
+#print("===================")    
 #see if this works
 #=================================================
 
@@ -6604,7 +6608,7 @@ table.append(0)
 
 #==========================================================
 def check_if_nested_switch_inside_this_switch(astring):
-    print("check if nested switch inside this switch")
+    #print("check if nested switch inside this switch")
     counter=0
     table[0] = False
     for line in astring.splitlines():
@@ -6621,7 +6625,8 @@ def check_if_nested_switch_inside_this_switch(astring):
 ##### this does absolutely nothing 
 # I need to make a method to add main switch to string list
 def add_main_switch_params_to_dictionary():
-    print("how it will work")
+    return
+    #print("how it will work")
     #methods count end switches
     #Take answer add 1
     #loop thru input switch string get total number of lines
@@ -7014,23 +7019,23 @@ def skipping_some_lines(thestring,start,finish):#input string, switch number the
 	###########################################################
 	##==========================================================
 	concatthis='' #this resets concatthis to empty-
-	print('in baton here we have')
+	#print('in baton here we have')
 	#print(baton[0])
-	print('==============')
-	print("now the result is here....!!!!@@@@@$$$$$")
-	print(never_defeated[0])
+	#print('==============')
+	#print("now the result is here....!!!!@@@@@$$$$$")
+	#print(never_defeated[0])
 	#ibm[0] = concatthis	  #this has the switch string with the nested switch cut out
 	#putting concatthis into ibm[0] here 
 	ibm.append(toosmart[0])
-	print("at the bottom of the skipping some lines to take out inner switch")
-	print(" it sees this in ibm[0]")
+	#print("at the bottom of the skipping some lines to take out inner switch")
+	#print(" it sees this in ibm[0]")
 	#exit()	
 	#print(ibm[0])
 		#just moved this over one tab	
 #exit()
 #end skipping_some_lines  ========================================================
-print("Levels TEST on wonderful Monday winter wonderland ")
-print("this will take out the inner switch between") 
+#print("Levels TEST on wonderful Monday winter wonderland ")
+#print("this will take out the inner switch between") 
 never_defeated=[]
 never_defeated.append(0)
 
@@ -7070,7 +7075,7 @@ def modified2_cut_out_inner_switch_body_leaving_switch_word(stringname):
     ###======= this is ingenius=========
     #METHOD BUILD_PAIR_LIST(STRINGNAME) 
     if len(thenewpairs) > 0:
-        print("==TRUE thenewpairs >0 it is ===== ",len(thenewpairs))
+        #print("==TRUE thenewpairs >0 it is ===== ",len(thenewpairs))
         del thenewpairs[:] #delete contents of thenewpairs list if it's not empty yet
     #end if
     #if len(never_defeated[0]) > 0:
@@ -7082,15 +7087,15 @@ def modified2_cut_out_inner_switch_body_leaving_switch_word(stringname):
         skipping_some_lines(stringname,start-1,finish-1)#so close now 
         #the result of the concatting goes into never_defeated[0]
     #this means that the output string should be placed into never_defeated[0]
-    print("let us see what we have jazz blues line 6166 ....")
+    #print("let us see what we have jazz blues line 6166 ....")
     #so it's output is in  never_defeated[0]
     thisstring = never_defeated[0]
     return thisstring; #see if this works  it is important that we return the string
-    print("let's see what it has in it and if it converts the inner switch bodies to switch word...")
-    for line in thisstring.splitlines(): #prints it after takening out. 
-        print(line)
+    #print("let's see what it has in it and if it converts the inner switch bodies to switch word...")
+    #for line in thisstring.splitlines(): #prints it after takening out. 
+    #    print(line)
     cat_scales[0]= never_defeated[0]
-    print("now loop thru pinkpanther")
+    #print("now loop thru pinkpanther")
   
         
 #manipulate_string(item) #shifts it to the left
@@ -8151,7 +8156,7 @@ test_string7='''
 # and make pairs and then use the skip robe which already works and that way 
 # I will reuse working code and based on the length of the switch list I just
 # look in both lists at the same location position 0 and then 1 etc.
-print("big test....starbucks morgan hill ========")
+#print("big test....starbucks morgan hill ========")
 
 switch_list=[]
 endswitch_list=[]
@@ -8165,7 +8170,7 @@ def delete_helper_lists_first():
 	
 #this gets the important switch and endswitch at 3 tabs length which is critical.
 def get_switch_and_endswitch_locations_in_string(string_name):
-	print("====||||  get switch and endswitch locations in string  ||||======")
+	#print("====||||  get switch and endswitch locations in string  ||||======")
 	delete_helper_lists_first()
 	#count how many switches at tab depth 3
 	####=================
@@ -8182,11 +8187,11 @@ def get_switch_and_endswitch_locations_in_string(string_name):
 	        counter += 1
 	        continue
 	####===================
-	print("total switch at 3 tabs in this string",len(total_switches_at_3tabs_depth))
-	print("they start on these lines",total_switches_at_3tabs_depth)
+	#print("total switch at 3 tabs in this string",len(total_switches_at_3tabs_depth))
+	#print("they start on these lines",total_switches_at_3tabs_depth)
 	#count_switches_at_threetabs= string_name.count("
 	counter=0; concatthis =''; #finish = finish + 1 
-	print("string_name=",string_name)
+	#print("string_name=",string_name)
 	#this looks for switch at 3 tabs depth and adds line number of switch
 	for line in string_name.splitlines():
 		tabdepth = line.count("\t")
@@ -8197,7 +8202,7 @@ def get_switch_and_endswitch_locations_in_string(string_name):
 		else:
 			counter += 1
 			continue
-	print("phase 2 here ====")
+	#print("phase 2 here ====")
 	counter=0; concatthis =''; #finish = finish + 1 
 	#print("string_name=",string_name)
 	#this looks for switch at 3 tabs depth and adds line number of switch
@@ -8210,9 +8215,9 @@ def get_switch_and_endswitch_locations_in_string(string_name):
 		else:
 			counter += 1
 			continue
-	print("switch_list=",switch_list)
-	print("endswitch_list=",endswitch_list)
-	print("end of line...")
+	#print("switch_list=",switch_list)
+	#print("endswitch_list=",endswitch_list)
+	#print("end of line...")
 	########################======
 	
 	########################==========
@@ -8717,10 +8722,10 @@ def next_metamorphosis_take_out_inner_switch(string_name,switch_number):
 			counter += 1
 			continue
 			
-	print("end_switch_tab_depth=",end_switch_tab_depth)
-	print("the end switch line=",endswitchline)
-	print("=============================")
-	print("END of PHASE 2...")
+	#print("end_switch_tab_depth=",end_switch_tab_depth)
+	#print("the end switch line=",endswitchline)
+	#print("=============================")
+	#print("END of PHASE 2...")
 	counter =1
 	for line in string_name.splitlines():
 		if "endswitch" in line and counter == endswitchline:
@@ -8730,13 +8735,13 @@ def next_metamorphosis_take_out_inner_switch(string_name,switch_number):
 			counter += 1
 	
 	startcount = startcount-1 #because we skip switch and keep it. 	
-	print("output of next_metamorphosis()")
-	print("startcount=",startcount) #oh this is brilliant
+	#print("output of next_metamorphosis()")
+	#print("startcount=",startcount) #oh this is brilliant
 	start = startcount
-	print("the endswitch line =",endswitchline)
+	#print("the endswitch line =",endswitchline)
 	finish = endswitchline
-	print('start=',start)
-	print('finish=',finish)
+	#print('start=',start)
+	#print('finish=',finish)
 	input_to_get_inner_switch.append(start)  #[0]
 	input_to_get_inner_switch.append(finish) #[1]
 	print("start=",input_to_get_inner_switch[0])
@@ -9260,7 +9265,7 @@ def take_out_endswitch(stringname):
 ## shift_nest_string_to_left(stringname)   made on oct 15th, 2021 8:57 am
 ##==========================================
 def shift_nest_string_to_left(stringname):   #cuts out tabs and adds new tabs automatically
-    print("========= shift_nest_string_to_left(stringname ===... =====")
+    #print("========= shift_nest_string_to_left(stringname ===... =====")
     #for line in stringname.splitlines():
     #    print(line)
     #print("this is th einput string====")
@@ -9279,7 +9284,7 @@ def shift_nest_string_to_left(stringname):   #cuts out tabs and adds new tabs au
             #print("switch_actual_tabs[0]===",switch_actual_tabs[0])
         else:
             print("he well")
-        print("=================>>>=======")
+        #print("=================>>>=======")
         #For teststring3  if 5 tabs in first line then tabslength-4  because it has 5
         ##==================================================================
         clever=0 #starting give it default value of 0 
@@ -9924,7 +9929,7 @@ def method3(output2):
      concat += " \nrain fall heavy"
      return concat
 
-print("above the rocket launch")
+#print("above the rocket launch")
 
 
 ####===========================================================
@@ -10035,10 +10040,10 @@ testlist_of_strings.append(teststring7)
 
 
 ##======================================================
-print("===== testing this using a loop =====")
-print("this left shifts and indents each switch string to prepare for going thru bypass205()")
+#print("===== testing this using a loop =====")
+#print("this left shifts and indents each switch string to prepare for going thru bypass205()")
 counter=0  #this shifts (indents) the whole switch string to the left with 1 tab in front of switch
-print("this prints out the switch strings after left Red Shift== to one tab")
+#print("this prints out the switch strings after left Red Shift== to one tab")
 cow_hide=[]
 fuel=''
 ##==============================================
@@ -10053,10 +10058,10 @@ def starting_what_switch_strings_look_like():
 ##  left_shift_all_switch_strings():
 ##==============================================    
 def left_shift_all_switch_strings(): #this goes thru testlist_of_strings
-    print("now we will shift the switch to the left margine")
+    #print("now we will shift the switch to the left margine")
     counter=0
     for item in testlist_of_strings:
-        print("counter =",counter)
+        #print("counter =",counter)
         manipulate_string(item) #this calls manipulate_string(item) to shift the switch string to the left
         #adds change to axis put into newloop appended 
         counter += 1
@@ -10070,9 +10075,9 @@ left_shift_all_switch_strings()
 
 
 
-print("DID IT WORK OR NOT the changes stick is it still === LEFT SHIFTED=====")
+#print("DID IT WORK OR NOT the changes stick is it still === LEFT SHIFTED=====")
 
-print('we are here now nov 23rd tuesday morning morgan hill.')
+#print('we are here now nov 23rd tuesday morning morgan hill.')
 
 
 
@@ -10080,8 +10085,9 @@ print('we are here now nov 23rd tuesday morning morgan hill.')
 #for item in devious_list:
  #   print(item)
 critical_list=[]
-print('plum tree test') #hours spent getting this tow ork oct 17th, 2021 9;52pm
+#print('plum tree test') #hours spent getting this tow ork oct 17th, 2021 9;52pm
 def goodtimes():
+    return
     #requires gold_list
     print("good times()")
     print("looping thru gold list results list")
@@ -10103,14 +10109,15 @@ def goodtimes():
         print('critical_list=',critical_list)
         #print(peachtree)
 goodtimes()    
-print("end of show")    
-print("resulting three tab inner switches in each of the switch strings")
+#print("end of show")    
+#print("resulting three tab inner switches in each of the switch strings")
 
 
 def cool():
-    print('==========cool function==== is this working yet====')
-    for item in critical_list:
-        print(item)
+    return
+    #print('==========cool function==== is this working yet====')
+    #for item in critical_list:
+    #    print(item)
 
 cool()
 
@@ -10193,14 +10200,14 @@ def copy_one_nested_switch_string(m82,zebra,cow): #so I would add a param to det
 	#print("===========.................==============")
 	#print("let's look at the input")
 	#print(m82)   #main string name
-	print(zebra) #switch    location
-	print(cow)   #endswitch location
+	#print(zebra) #switch    location
+	#print(cow)   #endswitch location
 	
 	#print("========COPY ONE NESTED SWITCH STRING()== called=====")
 	#input_string[0]=samplestring
 	counter=0		
 	buildstring=''
-	print("printing samplestring first")
+	#print("printing samplestring first")
 	#print(m82)This ONLY GRABS the first position which is 0 for switch and endswitch
 	#when I loop thru this in the peartree dictionary I will put the current pair into 
 	#switch_location[0] and endswitch_location[0]
@@ -10379,16 +10386,16 @@ teststring60='''
 ##  get_switch_number()  it gets the switch number from FIRST LINE OF STRING then bails
 ##====================================
 def get_switch_number(stringname): #this might be for when
-	print("indian braves dancing for rain")
+	#print("indian braves dancing for rain")
 	# I create copies of the switch body strings
-	print("get_switch_number() called it's getting the first inner swithc at 3 tabs length ")
+	#print("get_switch_number() called it's getting the first inner swithc at 3 tabs length ")
 	awesome=''
 	y = ''
 	counter =0  #say it's 3
-	print("this is what the string we are manipulating looks like")
+	#print("this is what the string we are manipulating looks like")
 	#for line in stringname.splitlines():
 	#	print(line)
-	print("================-------===")
+	#print("================-------===")
 	#we would be looking in the main string for this
 	#not changing line just getting line number from it since it's the ID for the switch
 	#do I need to give it the line number as an input
@@ -10399,44 +10406,44 @@ def get_switch_number(stringname): #this might be for when
 			#switchcounter += 1        #O just added" "#" in line and counter > 1
 			x = line.split("#")  
 			y = x[1];
-			print("switch number is==>>>>>",y) 
+			#print("switch number is==>>>>>",y) 
 			counter += 1
-			print(stringname)
+			#print(stringname)
 			break
 		else:
 			counter += 1
 	return y;
 
 #skip 16 thu 38
-print('this is testing october 12th to get the inner switch line number as a comment ')
-weasel=get_switch_number(teststring60) #so this figures out what switch is in a list slot
-print("number of this switch string(should be 66 ..",weasel) 
-print("ending program here....")
+#print('this is testing october 12th to get the inner switch line number as a comment ')
+#weasel=get_switch_number(teststring60) #so this figures out what switch is in a list slot
+#print("number of this switch string(should be 66 ..",weasel) 
+#print("ending program here....")
 
 
 
 	#testing here 
-axis=get_second_switch_number(teststring4)
-print("you can always try..")
-print("should be 31 ... ",axis)
+#axis=get_second_switch_number(teststring4)
+#print("you can always try..")
+#print("should be 31 ... ",axis)
 # get second switch numbers check if many
 #experimental new october 14th, thursday, 8:06pm 
 
 
-print("get second MASH switch number (the comment number after teh inner switch")
-print("testing to see if it correctly retrieves the number 66 in the nested switch")
-weasel=get_second_switch_number(teststring60)
-print("should return 66")
-print("weaseL=",weasel)		
+#print("get second MASH switch number (the comment number after teh inner switch")
+#print("testing to see if it correctly retrieves the number 66 in the nested switch")
+#weasel=get_second_switch_number(teststring60)
+#print("should return 66")
+#print("weaseL=",weasel)		
 
 
-weasel=get_second_switch_number(teststring3)
-print("should return 23")
-print("weaseL=",weasel)		
+#weasel=get_second_switch_number(teststring3)
+#print("should return 23")
+#print("weaseL=",weasel)		
 
-weasel=get_second_switch_number(teststring2)
-print("should return 15")
-print("weaseL=",weasel)		
+#weasel=get_second_switch_number(teststring2)
+#print("should return 15")
+#print("weaseL=",weasel)		
 
 
 
@@ -10447,8 +10454,8 @@ print("weaseL=",weasel)
 loopstring=[]
 loopstring.append(0) #so we have loopstring[0] to fill now
 #loopstring[0]=waffles #was red_robin #   what it was previously ==samplestring #see if this works  #this is the mai nested string
-print('big test here ')
-print("loopstring[0]=",loopstring)
+#print('big test here ')
+#print("loopstring[0]=",loopstring)
 doves=[]
 '''
 #########################################
@@ -10480,10 +10487,10 @@ doves=[]
 ##   copy_one_nested_switch_case_body()
 #########################################
 def copy_one_nested_switch_case_body(): #uses pears.values()
-    print("======copy one nested switch case body () ....=====.")
-    print("make the impossible into reality VIKING SHIP  fish 1 ")
-    print("show what is in ")
-    print(blueberries) #what is pears have in in it
+    #print("======copy one nested switch case body () ....=====.")
+    #print("make the impossible into reality VIKING SHIP  fish 1 ")
+    #print("show what is in ")
+    #print(blueberries) #what is pears have in in it
     counter = 1
     #using blueberries dictionary and not pears 
     #just changed this oct 6th wednesday 10am 2021 morgan hill starbucks
@@ -10491,12 +10498,12 @@ def copy_one_nested_switch_case_body(): #uses pears.values()
     # pears is a dictionary with values of start switch and end switch
     ## LOOP ######## this loops thru pears dictionary
     for x in blueberries.values(): #looping thru pears dictionary holding  switch pairs locations in an anonymous list
-        print('this is number',counter)
+        #print('this is number',counter)
         #print(x)
         cool = x #(which is a pair thus only two values)
-        print("cool=",cool)
-        print(cool[0],cool[1]) #this is switch and endswitch line numbers 
-        print("copy one nested switch string")
+        #print("cool=",cool)
+        #print(cool[0],cool[1]) #this is switch and endswitch line numbers 
+        #print("copy one nested switch string")
         #this uses the pair location start switch and end switch numbers
         #the string is in loopstring[0] <<----------------
         copy_one_nested_switch_string(loopstring[0],cool[0],cool[1])  #first is 1 second is 2 
@@ -10504,13 +10511,13 @@ def copy_one_nested_switch_case_body(): #uses pears.values()
         #switch_location[0]=''
         cool='' #this resets it
         counter += 1
-        print("========================")
+        #print("========================")
     #end loop
    
         
 
 ###=== this goes thru pears dictionary  and copies the nested switch strings
-print("=== GODZILLA Time  ===")
+#print("=== GODZILLA Time  ===")
 #uses pears dictionary
 '''
 pears =	{  #for pear tree in backyard (2 of them)
@@ -10522,7 +10529,7 @@ pears =	{  #for pear tree in backyard (2 of them)
 }
 '''
 
-print("here we go ... copy_one_nested_switch_case_body_blueberries():")
+#print("here we go ... copy_one_nested_switch_case_body_blueberries():")
 ##====================================================
 ## copy_one_nested_switch_case_body_blueberries()
 ##================================================
@@ -10542,24 +10549,24 @@ print("here we go ... copy_one_nested_switch_case_body_blueberries():")
     
 loopstring[0]=waffles #red_robin #testing on oct 5th Tuesday
 def copy_one_nested_switch_case_body_blueberries(): #uses pears.values()
-    print("======copy_one_nested_switch_case_body_blueberries() ....=====.")
-    print("make the impossible into reality VIKING SHIP  fish 1 ")
-    print("show what is in ")
-    print(blueberries) #what is pears have in in it
-    print("I think that at this point nest_string whould be empty")
-    print("len(nest_string=",len(nest_string))
+    #print("======copy_one_nested_switch_case_body_blueberries() ....=====.")
+    #print("make the impossible into reality VIKING SHIP  fish 1 ")
+    #print("show what is in ")
+    #print(blueberries) #what is pears have in in it
+    #print("I think that at this point nest_string whould be empty")
+   # print("len(nest_string=",len(nest_string))
     #nest_string=[] #this reinitializes it 
     counter = 1
   
     #right here nov 6 2021 saturday change this to the list of sublists (time to ditch the dictionary
-    print("showing contents of blueberries dictionary values the strings here.")
+    #print("showing contents of blueberries dictionary values the strings here.")
     for x in blueberries.values(): #looping thru pears dictionary holding  switch pairs locations in an anonymous list
         print('this is number',counter)
         print(x)
         cool = x #(which is a pair thus only two values)
-        print("cool=",cool)
-        print(cool[0],cool[1]) #this is switch and endswitch line numbers 
-        print("copy one nested switch string")
+        #print("cool=",cool)
+        #print(cool[0],cool[1]) #this is switch and endswitch line numbers 
+        #print("copy one nested switch string")
         #this uses the pair location start switch and end switch numbers
         #the string is in loopstring[0] <<----------------
         copy_one_nested_switch_string(loopstring[0],cool[0],cool[1])  #first is 1 second is 2 
@@ -10567,23 +10574,23 @@ def copy_one_nested_switch_case_body_blueberries(): #uses pears.values()
         #switch_location[0]=''
         cool='' #this resets it
         counter += 1
-        print("========================")
+        #print("========================")
     #end loop
 ##=============oct 5th musing how to maket his puppy work 
 #I need to have switch numbers by line number
 # associated with it's pair start stop
 #===================   
-print("testing blueberries dictionary list to get the string bodies printed out")
+#print("testing blueberries dictionary list to get the string bodies printed out")
 ####################
 #print("NEST_STRING line TAHOE CABIN Bears ione 4651 what is in nest_string at this point")
 #print(nest_string)
 counter =1  #so the nest_string would have the switch body strings in it
 for item in nest_string:  #going thru nest_string of inputs I think
-    print("counter=",counter)
-    print(item)
-    print("end of this switch string body")
+    #print("counter=",counter)
+    #print(item)
+    #print("end of this switch string body")
     counter += 1
-    print("======....=====")
+   # print("======....=====")
     
     
 del nest_string[:] #new just now putting this hear
@@ -10667,8 +10674,8 @@ def take_out_endswitch(stringname):
 ###=== this shows the nest_string list of nested switches
 #this just loops thru nest_string which has the seperated nested strings
 def show_list_of_nested_strings_separated():
-    print("======show list of nested strings separated=====")
-    print(" == StayPuff Marshmellow Man ==")
+    #print("======show list of nested strings separated=====")
+    #print(" == StayPuff Marshmellow Man ==")
     counter=1
     for item in nest_string: #this has the nest strings in it ALREADY nov 6, 2021
         print("counter=",counter)
@@ -10677,43 +10684,43 @@ def show_list_of_nested_strings_separated():
     print('end of first simple test ')   
     #===========================    
     counter =0
-    print("loops thru nest_string that we filled up in copy_one_nested_switch_string(m82,zebra,cow)")
+    #print("loops thru nest_string that we filled up in copy_one_nested_switch_string(m82,zebra,cow)")
     #this requires nest_string which is looped thru
-    print("length of nest_string=",len(nest_string))
+    #print("length of nest_string=",len(nest_string))
  
                 
   
     #print(da)
     mycounter =1
     nest_string_size= len(nest_string)
-    print("length of blueberries =",len(blueberries))
+    #print("length of blueberries =",len(blueberries))
     ###############
     #this makes sure that the nest_string is equal in size to blueberries
     # to counter a bug of overflow junk that I will figure out later
     # oct 5, 2021
-    print("blueberries",blueberries)
-    print("")
+    #print("blueberries",blueberries)
+    #print("")
     #this deletes excess data that is appended to nest_string inexplicably
     #this simple fix was solved on oct 5th tuesday at 11:30pm 2021=======
     #temporary getting excess from nest_string
     #so 
     while len(nest_string) > len(blueberries):
         del nest_string[-1] #last element in list is deleted
-    print("all done")
-    print("length of nest_string=", len(nest_string))
-    print("yes finally works NASA is born")
+    #print("all done")
+    #print("length of nest_string=", len(nest_string))
+    #print("yes finally works NASA is born")
     #get length of blueberries
     #then reduce size of nest_string to that number (figure it out later) weird bug
-    print("nest_string size = ",len(nest_string))
+    #print("nest_string size = ",len(nest_string))
     for item in nest_string:  #nest_string
             da = blueberries.get(str(mycounter))#gets string at this position
-            print("getting data in blueberries",da)
-            print("counter=",mycounter)
-            print(item)
+            #print("getting data in blueberries",da)
+            #print("counter=",mycounter)
+            #print(item)
             mycounter += 1
             
-            print("==========-----------seperated nest strings -----------------")
-    print("==========")
+            #print("==========-----------seperated nest strings -----------------")
+    #print("==========")
     #now delete extra slots in nest_string
     
 
@@ -10723,7 +10730,7 @@ def show_list_of_nested_strings_separated():
 ####===========================================================###
 ####===========================================================###
 ####===========================================================###
-print("july 22nd 2021 additions...====")
+#print("july 22nd 2021 additions...====")
 ###============== this is working correctly now ==========
 ## more_testing()
 ##========================================================================
@@ -10788,16 +10795,16 @@ def more_testing():
 loopstring=[]
 loopstring.append(0) #so we have loopstring[0] to fill now
 loopstring[0]=samplestring #see if this works  #this is the mai nested string
-print('big test here ')
-print("loopstring[0]=",loopstring)
+#print('big test here ')
+#print("loopstring[0]=",loopstring)
 doves=[]
 copy_one_nested_switch_case_body() # this calls the loop
 
-print("pears dictionary",pears)
-print("now empty pears dictionary")
+#print("pears dictionary",pears)
+#print("now empty pears dictionary")
 #empty pears dictionary here works 
 pears.clear() #this clear the pears dictionary 
-print("pears now",pears)
+#print("pears now",pears)
 
 #show_list_of_nested_strings_separated()
 #show_list_of_nested_strings_separate()
@@ -11102,21 +11109,21 @@ def add_to_range_list(): #uses addthis list
 ##  feed_range_list()
 ##======================
 def feed_range_list():
-    print("=========feed_range_list() called=====>>>")
-    print("=========feed_range_list() called=====>>>")
+    #print("=========feed_range_list() called=====>>>")
+    #print("=========feed_range_list() called=====>>>")
     range_list.append([11,24]) 
     range_list.append([26,38])
-    print('range_list=',range_list)
+    #print('range_list=',range_list)
     #the list has to be REVERSED to do the changes bottom up so the line numbers work correctly
     range_list.reverse()#reverses it NOTICE WE REVERS THE LIST TO CHANGE IT BOTTOM UP
     #this is so the bottom is done first 
-    print("length of range list =",len(range_list))
+    #print("length of range list =",len(range_list))
 
 
     
 #Yes I am reversing the range_list to do the changes bottom up so they don't lose their place
-print('printing the range_list')
-print(range_list) #should be [28,38],[10,20] to do from the bottom up
+#print('printing the range_list')
+#print(range_list) #should be [28,38],[10,20] to do from the bottom up
 
 #this takes out the inner switches except for the switch word
 #so what this means is it removes the body of the nested switch but leaves just switch word.
@@ -11401,18 +11408,18 @@ starbucks_code_main_test ='''
 ##   reduce_main_nested_switches_to_just_switch_word():  #I think that this does all switches no matter their depth
 ##=======================================================
 def reduce_main_nested_switches_to_just_switch_word(astring): #11 - 23 and 25-37
-    print("starting this method to see what is in the string")
+    #print("starting this method to see what is in the string")
     #for line in astring.splitlines():
     #    print(line)
-    print("===reduce_main_nested_switches_to_just_switch_word()== Tron approaches")
-    print("C3Po")
-    print("=====reduce_main_nested_switches_to_just_switch_word()====0000000000000==>>")
-    print("=====reduce_main_nested_switches_to_just_switch_word()======>>")
-    print("=====reduce_main_nested_switches_to_just_switch_word()======>>")
-    print("what is in astring the input param")
-    print(astring)
-    print("end of the input string to see what is going into the function")
-    print("reduce main nested switches to just switch word()")
+    #print("===reduce_main_nested_switches_to_just_switch_word()== Tron approaches")
+    #print("C3Po")
+    #print("=====reduce_main_nested_switches_to_just_switch_word()====0000000000000==>>")
+    #print("=====reduce_main_nested_switches_to_just_switch_word()======>>")
+    #print("=====reduce_main_nested_switches_to_just_switch_word()======>>")
+    #print("what is in astring the input param")
+    #print(astring)
+   #print("end of the input string to see what is going into the function")
+    #print("reduce main nested switches to just switch word()")
     
     #feeding range list()
     #add_to_range_list() #this is new to put switch and endswitch lines into range_list
@@ -11588,13 +11595,13 @@ skipping_some_lines(ibm[0],skip_range[0],skip_range[1])
 
 #I guess I can put the ranges into a list and then reverse it and 
 #loop thru it.
-print('at this juncture what is in ibm[0]')
-print(ibm[0])
-print("starting out we have this before stripping out the nested switches")
+#print('at this juncture what is in ibm[0]')
+#print(ibm[0])
+#print("starting out we have this before stripping out the nested switches")
 #ibm[0] = fuse[0] #to preserve changes made 
-print("input values on 2nd pass =")
-skip_range[0] =10
-skip_range[1] =20
+#print("input values on 2nd pass =")
+#skip_range[0] =10
+#skip_range[1] =20
 #print(ibm[0])
 #print(skip_range[0])
 #print(skip_range[1])
@@ -11679,7 +11686,7 @@ danumber=''
 
 #testing this here to make sure that it's right 
 ibm[0] = '' #this should delete it
-print("ibm length=",len(ibm))
+#print("ibm length=",len(ibm))
 stringname =teststring60
 #print('starting stage of string to manipulate')
 #for line in teststring60.splitlines():
@@ -11700,7 +11707,7 @@ def swap_switch_for_nest_method_new(stringname,danumber): # I will add more valu
 	#stringname=ibm[0]
 	#stringname=ibm[0] #loading from ibm[0] good
 	#print("called swap_switch_for_nest_method(n)")
-	print("it is using this number in use_number[0]",use_number[0])
+	#print("it is using this number in use_number[0]",use_number[0])
 	acounter=0
 	for line in stringname.splitlines(): #determine if "endswitch" is in line
 		tabdepth = line.count("\t")
@@ -11723,13 +11730,13 @@ def swap_switch_for_nest_method_new(stringname,danumber): # I will add more valu
 			acounter += 1
 			continue
 			
-	print("the final outcome of the chagne is here:")
+	#print("the final outcome of the chagne is here:")
 	#for line in stringname.splitlines():
 	#	print(line)
 	
 
 # this takes in what is in ibm[0] and the outputs it to ibm[0] also, quite clever.   
-print("let the judge state this is truth") 
+#print("let the judge state this is truth") 
 #number_to_add=66 
 #swap_switch_for_nest_method_new(teststring60,number_to_add) 
 #ibm[0] = stringname
@@ -11897,7 +11904,7 @@ castle1.append(0)
 ##===================================================
 ## change_switch_to_method_solved(inputstring):
 ##====================================================
-print("make the coffee magic coding happen working on this today charlie brown") 
+#print("make the coffee magic coding happen working on this today charlie brown") 
 #solved and working on October 30th 2021 ====================================
 def change_switch_to_method_solved(inputstring):
     innerswitchstatus[0]= False #by default
@@ -11933,9 +11940,9 @@ def change_switch_to_method_solved(inputstring):
     #### IF INNERSWITCH == TRUE:
     if innerswitch == True: #if a switch at 3 tabs depth  is True
     #check if { in this string if so take it out
-        print('checking if left brace in string')
+       # print('checking if left brace in string')
         if "{" in inputstring: #have to cut "{" out of string
-            print("CONFIRMED there is a left brace in string")
+            #print("CONFIRMED there is a left brace in string")
             for line in inputstring.splitlines():
                 if "{" in line:
                     templine  +=   line.replace("{","") 
@@ -11972,9 +11979,9 @@ def change_switch_to_method_solved(inputstring):
         return newstring  
         ##################################################################
     else: #this MEANS NO INNER SWITCH IN THE INPUT STRING
-        print("no inner switches in this string")
+        #print("no inner switches in this string")
         if "{" in inputstring: #have to cut "{" out of string
-            print("CONFIRMED there is a left brace in string")
+            #print("CONFIRMED there is a left brace in string")
             for line in inputstring.splitlines():
                 if "{" in line:
                     templine += line.replace("{","") #taking out left brace here
@@ -11998,7 +12005,7 @@ def change_switch_to_method_solved(inputstring):
         innerswitchstatus[0] = False
     ### end of function =======================================================
     
-print("where is my mocha brainfreeze test october 30th...")
+#print("where is my mocha brainfreeze test october 30th...")
 
 
 
@@ -12015,7 +12022,7 @@ print("end of red alert change switch to method solved end of test 5..")
 print("=============================")
 print("======= testing string data1======================")
 ''' 
-print("testing goldfish which is NOT indented yet")
+#print("testing goldfish which is NOT indented yet")
 #testing a second method in chain right now for expiermentinting==
 #the input string MUST BE indented and look like this LOOK LIKE THIS 
 somedata2='''
@@ -12073,12 +12080,12 @@ linus_and_snoopy=[]
 ##   add_nested_switch_methods():
 ##==================================
 def add_nested_switch_methods():
-    print("add nested_switch_methods() in catching_first_change list")
+    #print("add nested_switch_methods() in catching_first_change list")
     for item in catching_first_change: #<== list with strings after taking out inner switch bodies
         #print(item)
         #here calling method chaning_switch_to_method_solved swaps switch for nested_method_numbered
         fizz =change_switch_to_method_solved(item)#this is applying the method to add nested_switch method
-        print("===== oh yeah =====")
+        #print("===== oh yeah =====")
         linus_and_snoopy.append(fizz) #this is adding the changed string to linus_and_snoopy list
         
         #for line in fizz.splitlines():
@@ -12145,7 +12152,7 @@ xskitahoe ='''
 
 
 #testing 
-print("testing printing out joy string")
+#print("testing printing out joy string")
 joy='''
 	switch(exp) #15
 		case 'tahoe':
@@ -12193,11 +12200,11 @@ for line in joy.splitlines():
 ##  do_the_pipe()
 ###==================    
 def do_the_pipe():
-    print("do the pipe() called pipe pipe PIPE PIPE PIPE")
-    print("outputlist[0]=",outputlist[0])
+    #print("do the pipe() called pipe pipe PIPE PIPE PIPE")
+    #print("outputlist[0]=",outputlist[0])
     inputlist[0] = outputlist[0]
-    print("now put it into inputlist[0]")
-    print("inputlist[0]=",inputlist[0])
+    #print("now put it into inputlist[0]")
+    #print("inputlist[0]=",inputlist[0])
     
     
 
@@ -12280,7 +12287,7 @@ def get_top_switch_number_from_this_string(inputstring):
     x= y =''
     for line in inputstring.splitlines(): #it will be the first switch 06
         if "switch" in line and "#" in line and "nested" not in line  and counter < 2: 
-            print("confirmed switchh in line ")
+            #print("confirmed switchh in line ")
             #this is new getting the switch id number after # on-the-fly
             #get string to right of #, get right side,remove spaces
             x = line.split("#"); y = x[1];y = y.strip();
@@ -12315,7 +12322,7 @@ print('in twinlist we have',twinlist)
 
 
 
-print("== end of show ==== ")
+#print("== end of show ==== ")
 #exit()
 string_egg='''
 	switch(exp){ #11
@@ -13814,14 +13821,14 @@ def too_swift():
 quail=[]
 # I am adding the quail list to practice filling it
 
-print("testing add comment and line number after all switches")
+#print("testing add comment and line number after all switches")
 #add_comment_and_line_number_to_all_switches(waffles)#was red_robin
 #print("REd ALERT critical test first method  test first method ...")
 #exit()
 
 
 def empty_switch_and_endswitch_list_locations():
-    print("=== empty_switch_and_endswitch_list_locations()")
+    #print("=== empty_switch_and_endswitch_list_locations()")
     del endswitch_location[:]
     del switch_location[:]
     
@@ -13962,9 +13969,9 @@ def get_switch_and_endswitch_locations(z): #from string z input parameter
 	#print("this is where we START BUILDING the ===TOGETHER PAIR =====")
 	for item in switch_location:
 		solution = "[" + str(switch_location[counter]) + "," + str(endswitch_location[counter]) + "]" 
-		print("solution=",solution) #to see what it looks like 
+		#print("solution=",solution) #to see what it looks like 
 		together_pair.append(solution)
-		print("counter=",counter)
+		#print("counter=",counter)
 		counter += 1
 		
 		#this should prevent stack overflow of the list range added november 9th 
@@ -14119,7 +14126,7 @@ switch(exp) {
 #switch_location #skips the first main switch not included
 #endswitch_location (if any)
 #get_switch_and_endswitch_locations(coolstring)
-print("done with test to get the nested switch locations within the big switch")
+#print("done with test to get the nested switch locations within the big switch")
 
 ### this started working on july 9th, 2021 Friday. I forgot that it was friday.
 genius=[]
@@ -14223,7 +14230,7 @@ genius[0]=coffee_now  #assignment here <<<==================
 #print("about to call swap_nested_switches_with_methods_in_main_switch_string(coolstring)")
 #swap_nested_switches_with_methods_in_main_switch_string(coffee_now)
 #print("fter testing tron getting closer=== 1 ...2.....3  out the EXIT")
-print(genius[0])
+#print(genius[0])
 
 #this calls above
 #print("=== begin tron test ==line 323 =TESTING september 1st here we go=-=== to see if this sucker works === august 27th ==== please work ==")
@@ -14801,9 +14808,9 @@ gameday ='''
 			endswitch #this is key here =============line 20 end of nested switch ====
 '''	
 
-print("what we are starting with the switch with a nested switch")
+#print("what we are starting with the switch with a nested switch")
 #print(find_nested_switch_game)
-print("=====================")
+#print("=====================")
 #oh wait this needs to be the input C style switch that I search in
 #maybe I need to go through the case list palmtrees
 # so get line number of switches
@@ -14813,8 +14820,8 @@ pacman.append(0)
 
 
 coollist=[]
-print("this gets the line number of the line that the case starts")
-print("that has the nested switch inside THIS Case")
+#print("this gets the line number of the line that the case starts")
+#print("that has the nested switch inside THIS Case")
 
 endnestedswitchline=[]
 endnestedswitchline.append(0)
@@ -14824,7 +14831,7 @@ endnestedswitchline.append(0)
 def get_case_line_numbers(string_name):
     linecounter =0
     casecounter = 0
-    print('get line number of each case section')
+    #print('get line number of each case section')
     #just get first case line numbers print it
     for line in find_nested_switch_game.splitlines(): #be sure to put stringname.splitliens()
         #this looks for cases
@@ -14839,9 +14846,9 @@ def get_case_line_numbers(string_name):
             linecounter += 1   
             continue
         #if "switch" in line:
-    print("case line numbers",pacman)    
+    #print("case line numbers",pacman)    
     #print(pacman[2])  
-    print("number less than 10 that ")
+    #print("number less than 10 that ")
     #I reverse the list order to find the first case less than 10 the line with switch in it
     pacman.reverse()
 
@@ -14859,13 +14866,13 @@ def get_larger_number_less_than_case():
     for item in pacman:
         if item < 10: #I will need to put  (this cuts the possibilities to those less than 10)
             coollist.append(item)
-            print(item)
-            print("this must be the answer of the case that is on line 8")
+            #print(item)
+            #print("this must be the answer of the case that is on line 8")
             break #so after just the first one
     #get largest number in list
-    print("this is new trying to get largest number only from list")
+    #print("this is new trying to get largest number only from list")
     superman = max(coollist) #worked June 28th MOnday 2021
-    print("largest number =",superman)
+    #print("largest number =",superman)
 
 #calls method above
 #######========
@@ -14955,13 +14962,7 @@ makeitwork=[]
 makeitwork.append(0)
 ## function copy a nested switch()   ==== I just put this into a function
 
-print("will do red robin string with the sets of pairs individually to verify it's right")
-print("testing Sunday, NOvember 7th, just got 3rd booster shot ----")
-print('=======copy_a_nested_switch() called=====)=====')
-print('=======copy_a_nested_switch() called=====)=====')
-print('=======copy_a_nested_switch() called=====)=====')
-print('=======copy_a_nested_switch() called=====)=====')
-print('=======copy_a_nested_switch() called=====)=====')
+
 
 columbia_river=[]
 gold_list=[]
@@ -15103,8 +15104,8 @@ copy_a_nested_switch(r) #this gets put into r as a parameter
 
 #lines 1 thru 9 
  #this looks for the line number of endswitch for the nested switch
-print("testing getting a COPY TOP HAT OF MAIN SWITCH")
-print('this also grabs and displays the inner switch first line')
+#print("testing getting a COPY TOP HAT OF MAIN SWITCH")
+#print('this also grabs and displays the inner switch first line')
 #the inner switch needs to be the last line of this string
 ##================================================
 start = 1 #starting from 11 not 10
@@ -15866,7 +15867,7 @@ use_number.append(0) #[0]
 
 
 
-print("the one below this line should produce 2 switches and one with 10,20")
+#print("the one below this line should produce 2 switches and one with 10,20")
 #this find the location one one pair of a nested switch and end switch
 
 #this gets the start and end from samplestring
@@ -16273,7 +16274,7 @@ anest_string='''
 					print("we are done here")
 			endswitch 
 '''
-print("wild wild west test...")
+#print("wild wild west test...")
 
 ###########################################============
 #experimenting on nov 4th thursday 
@@ -16573,14 +16574,14 @@ thisdict =	{
   "3": [21,30]
 }
 for x in thisdict.values():
-  print(x)
+  #print(x)
   cool = x
-  print(cool[0])
-  print(cool[1])
+  #print(cool[0])
+  #print(cool[1])
   friend1.append(cool[0])
   friend1.append(cool[1])
-  print("good times")
-  print(friend1)
+  #print("good times")
+  #print(friend1)
   
 
 mylist=[]
@@ -16605,7 +16606,7 @@ peartree = {}
 #given name peartree of dictionary
 def get_value_of_key_original(x): #peartree hardcoded in
     car=eval("peartree.get('" + str(x) +"')")
-    print(car)
+    #print(car)
     return car #so if it is a list it should return a list right?z
 
 
@@ -16804,7 +16805,7 @@ def check_if_nested_switch_inside_this_switch(astring):
 # I need to make a method to add main switch to string list
 def add_main_switch_params_to_dictionary():
     return
-    print("how it will work")
+    #print("how it will work")
     #methods count end switches
     #Take answer add 1
     #loop thru input switch string get total number of lines
@@ -16827,7 +16828,7 @@ def do_fancy_walk_thru_pairset_list_cutting_out_switch_bodes_bottom_up(inputstri
 	for item in pairset:
 		alpha = item[0];
 		beta  = item[1];
-		print("alpha=",alpha, "beta=",beta)
+		#print("alpha=",alpha, "beta=",beta)
 		start = alpha; finish = beta
 		skipping_some_lines(genius[0],start,finish)
 	#it goes thru the string and makes list of switch,endswitches
@@ -16855,7 +16856,7 @@ thenewpairs=[]
 ##  buildpairlist()  created nov 21st, sunday to manage doing the main switch 
 ##============================  and cutting out switches at three tabs for main switch 
 def build_pair_list(stringname):
-	print("====== build_pair_list called ======")
+	#print("====== build_pair_list called ======")
 	counter =0
 	#flush lists
 	switch_list=[]
@@ -16889,12 +16890,12 @@ def build_pair_list(stringname):
 		else:
 			counter += 1
 			continue
-	print("switch_list=",switch_list)
-	print("endswitch_list=",endswitch_list)
+	#print("switch_list=",switch_list)
+	#print("endswitch_list=",endswitch_list)
 	del switch_list[0]     #delete first switch number which is on line 1
 	del endswitch_list[-1] #delete last number endswitch which is end of entire string
-	print("after deleting first and last switch we have..")
-	print("switch_list=",switch_list);print("endswitch_list=",endswitch_list)
+	#print("after deleting first and last switch we have..")
+	#print("switch_list=",switch_list);print("endswitch_list=",endswitch_list)
 	counter=0 #build the pairs and put them into sweet; then append sweet to thenewpairs list
 	#===================================================================================
 	# LOOP FILLS THENEWPAIRS LIST WITH SWEET WHICH HAS SWITCH,ENDSWITCH LINE NUMBERS
@@ -16903,19 +16904,19 @@ def build_pair_list(stringname):
 		sweet=[switch_list[counter],endswitch_list[counter]]
 		thenewpairs.append(sweet)
 		counter += 1
-	print("this is what we want to see at starbucks")
-	print("thenewpairs=",thenewpairs)
+	#print("this is what we want to see at starbucks")
+	#print("thenewpairs=",thenewpairs)
 	#==================================
 	# LOOP PRINTS OUT THE NEWPAIRS LIST
 	#==================================
-	for item in thenewpairs:
-		print(item)
-		print('stop here for now')
+	#for item in thenewpairs:
+		#print(item)
+		#print('stop here for now')
 		#exit()
 	#REVERSE THE NEWPAIRS LIST BECAUSE IT HAS TO BE DONE BOTTOM UP TO THE STRING 
 	thenewpairs.reverse() #they have to be skipped bottom up to work properly
-	print("thenewpairs=",thenewpairs)	
-	print("resulting list of thenewpairs =",thenewpairs)
+	#print("thenewpairs=",thenewpairs)	
+	#print("resulting list of thenewpairs =",thenewpairs)
 
 
 
@@ -16925,8 +16926,8 @@ pinkpanther=''
 ##===========================================
 def skipping_some_lines(thestring,start,finish):#input string, switch number then endswitch line number  ....start line nest switch and finish  endswitch
 	return
-	print("METHOD  skipping_some_lines() called==========")
-	print("======= skipping_some_lines() ================called",start,finish)
+	#print("METHOD  skipping_some_lines() called==========")
+	#print("======= skipping_some_lines() ================called",start,finish)
 	# if I have a flag that it's been triggered then afterewards 
 	# print("this is the input string used stating skipping_some_lines")
 	# for the first pass flag_test[0]= False and then it's flipped to True
@@ -16948,14 +16949,14 @@ def skipping_some_lines(thestring,start,finish):#input string, switch number the
 	# because the numbering system of the string starts from 1 too.
 	### look that we have the counter here set to 1 by default 
 	counter=1; concatthis =''; #finish = finish + 1 
-	print("start=",start,"finish=",finish) #I took out x = 
+	#print("start=",start,"finish=",finish) #I took out x = 
 	#smart=x;
-	print("inside of skipping lines before going thru the loop this is the value of")
-	print("the input string it will mess around with")
+	#print("inside of skipping lines before going thru the loop this is the value of")
+	#print("the input string it will mess around with")
 	#print(smart)
-	print("=== ah now I get it these are the lines that it MUST SKIP and we want what is before and after this range to create the modified string =")
-	print("it sees in start",start)   #this is a number
-	print("it sees in finish",finish) #this is a number too
+	#print("=== ah now I get it these are the lines that it MUST SKIP and we want what is before and after this range to create the modified string =")
+	#print("it sees in start",start)   #this is a number
+	#print("it sees in finish",finish) #this is a number too
 	##=================
 	#so I would build pair list of inner switches at 3 tabs and then loop thru them to skip them
 	#this is new on sunday november 21st 2021
@@ -16978,11 +16979,11 @@ def skipping_some_lines(thestring,start,finish):#input string, switch number the
 	#	start  = item[0]; print("start=",start)
 	#	finish = item[1]; print("finish=",finish)
 	#check thype
-	print("checking tyhpe of thestring")
-	print(type(thestring))
-	print(thestring)  #it shows 0
-	print("what is it?")
-	print("starting baton[0] has teh initital input string in it")
+	#print("checking tyhpe of thestring")
+	#print(type(thestring))
+	#print(thestring)  #it shows 0
+	#print("what is it?")
+	#print("starting baton[0] has teh initital input string in it")
 	for line in thestring.splitlines(): #smart = x
 			#this preserves the switch word and skips the rest of nested switch body including endswitch
 			# if counter is between start and finish #just after start and less than = to finish
@@ -17007,12 +17008,12 @@ def skipping_some_lines(thestring,start,finish):#input string, switch number the
 			continue	
 		##=======================================
 	baton[0]=concatthis;
-	print("===output from skipping some lines====")
+	#print("===output from skipping some lines====")
 	#print('it created this string')
 	#print(concatthis)
-	print("how does it look===>>> by lettuce field")
+	#print("how does it look===>>> by lettuce field")
 	del ibm[:] #this should empty it
-	print("this is the output result of skipping some lines")
+	#print("this is the output result of skipping some lines")
 	#print(concatthis)
 	#what I am doing here is putting what has been concatted in the string into toosmart[0]
 	#this has red_robin hardwired into the code 
@@ -17027,23 +17028,23 @@ def skipping_some_lines(thestring,start,finish):#input string, switch number the
 	###########################################################
 	##==========================================================
 	concatthis='' #this resets concatthis to empty-
-	print('in baton here we have')
+	#print('in baton here we have')
 	#print(baton[0])
-	print('==============')
-	print("now the result is here....!!!!@@@@@$$$$$")
+	#print('==============')
+	#print("now the result is here....!!!!@@@@@$$$$$")
 	print(never_defeated[0])
 	#ibm[0] = concatthis	  #this has the switch string with the nested switch cut out
 	#putting concatthis into ibm[0] here 
 	ibm.append(toosmart[0])
-	print("at the bottom of the skipping some lines to take out inner switch")
-	print(" it sees this in ibm[0]")
+	#print("at the bottom of the skipping some lines to take out inner switch")
+	#print(" it sees this in ibm[0]")
 	#exit()	
 	#print(ibm[0])
 		#just moved this over one tab	
 #exit()
 #end skipping_some_lines  ========================================================
-print("Levels TEST on wonderful Monday winter wonderland ")
-print("this will take out the inner switch between") 
+#print("Levels TEST on wonderful Monday winter wonderland ")
+#print("this will take out the inner switch between") 
 never_defeated=[]
 never_defeated.append(0)
 
@@ -17056,8 +17057,8 @@ never_defeated.append(0)
 #it was previously this
 def cut_out_inner_switch_body_leaving_switch_word(stringname,start,finish):
     return
-    print('this one is sooo critical')
-    print("cut_out_inner_switch_body_leaving_switch_word(stringname,start,finish):")
+    #print('this one is sooo critical')
+    #print("cut_out_inner_switch_body_leaving_switch_word(stringname,start,finish):")
     skipping_some_lines(stringname,start,finish)
     #this means that the output string should be placed into never_defeated[0]
     #for line in never_defeated[0].splitlines(): #prints it after takening out. 
@@ -17076,7 +17077,7 @@ def cut_out_inner_switch_body_leaving_switch_word(stringname,start,finish):
 # and loops thru list feeding start and finish  params and calling skipping_some_lines()
 # #  the input for start and finish will be 1 by default but they will be overwritten
 # #  by the build pair list on-the-fly.
-print('this one is sooo critical')
+#print('this one is sooo critical')
 def modified2_cut_out_inner_switch_body_leaving_switch_word(stringname):
     #it is modified so it can change more than one inner switch into a switch, infinite
     #print("cut_out_inner_switch_body_leaving_switch_word(stringname,start,finish):")
@@ -17147,12 +17148,12 @@ mybaby =''
 #    print(line)
 #exit()
 #==================================
-print("end of deifnitely working modifies2 cut out inner switch body.()")
+#print("end of deifnitely working modifies2 cut out inner switch body.()")
 
 
 #stringname=skitahoe; start=7; finish = 14; #this sucker was moving....    
 #cut_out_inner_switch_body_leaving_switch_word(stringname,start,finish)
-print("let us see what we have.")
+#print("let us see what we have.")
 
 
 
@@ -17179,10 +17180,10 @@ list_of_inner_endswitches_at_three_tabs=[]
 ## loop_thru_pair_set_and_call_skiplines(samplestring)
 ##=========================================================
 def loop_thru_pair_set_to_cut_out_inner_switch_bodies(thestring):
-	print("len(never_defeated) =",len(never_defeated))
+	#print("len(never_defeated) =",len(never_defeated))
 	#never_defeated[0] = thestring #this takes the initial string put into never_defeated[0]
 	never_defeated.append(thestring) #maybe this is what I need to do to fix this bug
-	print(never_defeated[0]) 
+	#print(never_defeated[0]) 
 	counter =0
 	#loop thru pairset of sets of switch,endswitch (already reversed to go bottom up)
 	for item in pairset: #the pairset list was filled in smart_cut_out_inner_switch_bodies_at_three_tabs
@@ -17191,9 +17192,9 @@ def loop_thru_pair_set_to_cut_out_inner_switch_bodies(thestring):
 		#METHOD skipping_some_lines()============= uses never_defeated[0] stirng in list
 		skipping_some_lines(thestring,start-1,finish-1) #added -1 on Mon Nov 22nd 2021 9:00 AM
 		#doing this to see if it cut out the inner switch body 
-		print("this is showing the changes reducing switches in never_defeated[0]")
+		#print("this is showing the changes reducing switches in never_defeated[0]")
 		mouse = never_defeated[0] #the result of skipping some lines goes into never_defeated[0]
-		print("this is what the switch string looks like after taking out a switch body")
+		#print("this is what the switch string looks like after taking out a switch body")
 		counter += 1
 	
 
@@ -17691,7 +17692,7 @@ def take_out_switch_body(astring): #this was foxnews
 			nestedswitch= True
 			break
 	
-	print("==================================")
+	#print("==================================")
 	if nestedswitch == False: #what this does is put the input string into output
 	
 		lightning[0]=astring 
@@ -17873,11 +17874,11 @@ def shift_nest_string_to_left(stringname):   #cuts out tabs and adds new tabs au
 #print("testing indenting correclty teststring3")
 #shift nest string to left
 #shift_nest_string_to_left(teststring3) #good 5 TABS DOWN TO 1
-print("red alert test 3 shift nest stirng to left side ... test 3 ")
-print("look carefully at this and make sure that it's right with just one tab at top")
-print("testing with string skitahoe")
+#print("red alert test 3 shift nest stirng to left side ... test 3 ")
+#print("look carefully at this and make sure that it's right with just one tab at top")
+#print("testing with string skitahoe")
 #shift_nest_string_to_left(skitahoe) 
-print('first we will do this simple test with no tabs see if it returns 0')
+#print('first we will do this simple test with no tabs see if it returns 0')
 practicestring='''
 switch(exp){
     case 1:
@@ -17887,7 +17888,7 @@ tabsinthisline =''
 for line in practicestring.splitlines():
     if "switch" in line:
         tabsinthisline = line.count("\t")
-        print("tabsinthisline=",tabsinthisline)
+        #print("tabsinthisline=",tabsinthisline)
         break
         
 #print("TESTING string 7 now indenting it to the left")
@@ -17904,14 +17905,14 @@ newstring.append(0)
 ##=================================
 ##  manipulate_string(addstring) #this appends the changed switch strings to gold_list_results
 ##=================================
-print('testing taking out 2 ')
+#print('testing taking out 2 ')
 def manipulate_string(addstring):
     #print("======manipulate_string() called line 8524=======")
      #the objective is to reduce tabs so only 1 tab in front of first switch in string
     cutout=''
    
     #print("=======pinpointing bug on november 30th =============================")
-    print("getting tab count in front of first switch here")
+    #print("getting tab count in front of first switch here")
     for line in addstring.splitlines():
         if "switch" in line and "end" not in line:
         #this determines the number of TABS in this line
@@ -17949,7 +17950,7 @@ def manipulate_string(addstring):
                 sliced = "\t" + line; # add one tab if zero tabs.
                 #phase B ============================
                 
-                print("================================")
+                #print("================================")
                 #print("=====phase B sliced=",sliced)
             else:
                 #phase C ===================
@@ -17982,7 +17983,7 @@ def remove_garbage_on_right_margine(inputstring): #this fixes garbage characters
 	#	print(line)
 	return  ##  this stops the method cold 
 	counter=0
-	print('starting to enter cherry on top really serious need to get it working')
+	#print('starting to enter cherry on top really serious need to get it working')
 	adder='';last_char=''; result = False
 	for line in inputstring.splitlines():
 		#print(line) #if "switch" in line and "end" not in line:
@@ -18012,16 +18013,16 @@ def remove_garbage_on_right_margine(inputstring): #this fixes garbage characters
 			#need to check if last 2 are )) only cut off one, otherwise
 			# if it's only ) and then don't cut it off
 			
-			print("FIRST SCENARIO :, ),u, #")
+			#print("FIRST SCENARIO :, ),u, #")
 			adder += line[:-1] + "\n" #this deletes the last character from the line
-			print("last_char=",last_char)
+			#print("last_char=",last_char)
 			
 			
 		########### if line ends with a space 	
 		if last_char == "": #meaning it is an empty space
-			print("THIRD SCENARIOlast char is a SPACE")
+			#print("THIRD SCENARIOlast char is a SPACE")
 			adder += line + "\n"
-			print("last_char=",last_char)
+			#print("last_char=",last_char)
 			
 			
 			######## this handles if the line ends with a number
@@ -18029,7 +18030,7 @@ def remove_garbage_on_right_margine(inputstring): #this fixes garbage characters
 			#	print("SECOND SCENARIOthe last character is a NUMBER")
 			#	adder += line + "\n"
 			#	print("last_char=",last_char)
-		print("counter=",counter)
+		#print("counter=",counter)
 		counter += 1
 	###########################################################
 	############################################################	
@@ -18104,17 +18105,11 @@ def method3(output2):
      concat += " \nrain fall heavy"
      return concat
 
-print("above the rocket launch")
+#print("above the rocket launch")
 
 
 ####===========================================================
 def try_these_chain_methods(inputstring):
-    print("=====try_these_chain_methods=====")
-    print("=====try_these_chain_methods=====")
-    print("=====try_these_chain_methods=====")
-    print("=====try_these_chain_methods=====")
-    print("=====try_these_chain_methods=====")
-    print("looping through inputstring to see the starting state")
     #for line in inputstring.splitlines():
     #    print(line)
     ##==========    
@@ -18159,32 +18154,32 @@ devious_list=[]
 peachtree=[]
 #so this function loops thru quail list and checks if endswitch in a string in quail
 def swap_endswitch_with_curlybrace(): #using testlist_of_strings
-    print("=== swap_endswitch_with_curlybrace() ===========")
-    print("this requires that quail list must already be filled with switch strings")
+    #print("=== swap_endswitch_with_curlybrace() ===========")
+    #print("this requires that quail list must already be filled with switch strings")
     counter=0
     #assert len(quail) > 0 #it did say quail list 
     if len(gold_list_results) > 0: #meaning there is something in quail list
         #looping thru quail list
         for item in gold_list_results:  #notice that this works by looping thru quail list and changing strings with endswitch
             if "endswitch" in item:
-                print("yes endswitch is in this string")
+                #print("yes endswitch is in this string")
                 #it happens here TAKE OUT ENDSWITCH(ITEM)
                 take_out_endswitch(item) #calling take_out_endswitch saved to holdon[0]
                 #print(holdon[0])
-                print("its appended to devious_list here via holdon[0]")
+                #print("its appended to devious_list here via holdon[0]")
                 devious_list.append(holdon[0])#this line just might not be working correctly need to look at it further
                # testlist_of_strings[counter] = holdon[0] #this puts it back into testlist slot
                 holdon[0]=''
                 counter += 1
                 continue
             else:
-                print("nope no endswitches")
+                #print("nope no endswitches")
                 counter += 1
                 continue
     else:
-        print("testlist_of_strings list is empty so can't do swap endswitch with curylbrace")
-    print("let's see if this works or not does this thing actually work")
-    print('strawberrie fields are forever')
+        pass#print("testlist_of_strings list is empty so can't do swap endswitch with curylbrace")
+    #print("let's see if this works or not does this thing actually work")
+    #print('strawberrie fields are forever')
     # see if it takes endswitch out and puts } in its place
 #end function
 
@@ -18194,21 +18189,22 @@ def swap_endswitch_with_curlybrace(): #using testlist_of_strings
 
 
 
-print("===== hard code filling testlist_of_strings   ====")
+#print("===== hard code filling testlist_of_strings   ====")
 testlist_of_strings=[]
 
 
-print("===== testing this using a loop =====")
-print("this left shifts and indents each switch string to prepare for going thru bypass205()")
+#print("===== testing this using a loop =====")
+#print("this left shifts and indents each switch string to prepare for going thru bypass205()")
 counter=0  #this shifts (indents) the whole switch string to the left with 1 tab in front of switch
-print("this prints out the switch strings after left Red Shift== to one tab")
+#print("this prints out the switch strings after left Red Shift== to one tab")
 cow_hide=[]
 fuel=''
 ##==============================================
 ##  starting_what_switch_strings_look_like():
 ##==============================================
 def starting_what_switch_strings_look_like():
-    print("starting we have...")
+    return
+    #print("starting we have...")
     #for item in testlist_of_strings:
     #   print(item)
 
@@ -18216,10 +18212,10 @@ def starting_what_switch_strings_look_like():
 ##  left_shift_all_switch_strings():
 ##==============================================    
 def left_shift_all_switch_strings(): #this goes thru testlist_of_strings
-    print("now we will shift the switch to the left margine")
+    #print("now we will shift the switch to the left margine")
     counter=0
     for item in testlist_of_strings:
-        print("counter =",counter)
+        #print("counter =",counter)
         manipulate_string(item) #this calls manipulate_string(item) to shift the switch string to the left
         #adds change to axis put into newloop appended 
         counter += 1
@@ -18234,27 +18230,27 @@ def left_shift_all_switch_strings(): #this goes thru testlist_of_strings
 #for item in devious_list:
  #   print(item)
 critical_list=[]
-print('plum tree test') #hours spent getting this tow ork oct 17th, 2021 9;52pm
+#print('plum tree test') #hours spent getting this tow ork oct 17th, 2021 9;52pm
 def goodtimes():
     return
-    print("good times()")
-    print("looping thru gold list results list")
+    #print("good times()")
+    #print("looping thru gold list results list")
     for item in gold_list_results:
         #print(item)
         del several_three_tab_switches_list[:] #delete it first to erase the chalkboard
         stringname=item
         get_second_switch_numbers_check_if_many(stringname) #output here
-        print("several_three_tab_switches_list=",several_three_tab_switches_list)
-        print(several_three_tab_switches_list)
+        #print("several_three_tab_switches_list=",several_three_tab_switches_list)
+        #print(several_three_tab_switches_list)
         why= several_three_tab_switches_list
         #print("why=",why)
-        print(type(why)) #gets the type of var why is.
+        #print(type(why)) #gets the type of var why is.
         results=list(map(int,why)) #changing the string numbers into ints then it works
         #this adds to this list the inner switch numbers for each switch string
-        print('results=',results)
+        #print('results=',results)
         #some will have none, some will have 1, and some will have more than 1
         critical_list.append(results)
-        print('critical_list=',critical_list)
+        #print('critical_list=',critical_list)
         #print(peachtree)
 #goodtimes()    
 #print("end of show")    
@@ -18262,7 +18258,8 @@ def goodtimes():
 
 
 def cool():
-    print('==========cool function==== is this working yet====')
+    return
+    #print('==========cool function==== is this working yet====')
     #for item in critical_list:
      #   print(item)
 
@@ -18501,10 +18498,8 @@ doves=[]
 ##   copy_one_nested_switch_case_body()
 #########################################
 def copy_one_nested_switch_case_body(): #uses pears.values()
-    print("======copy one nested switch case body () ....=====.")
-    print("make the impossible into reality VIKING SHIP  fish 1 ")
-    print("show what is in ")
-    print(blueberries) #what is pears have in in it
+   
+    #print(blueberries) #what is pears have in in it
     counter = 1
     #using blueberries dictionary and not pears 
     #just changed this oct 6th wednesday 10am 2021 morgan hill starbucks
@@ -18512,12 +18507,12 @@ def copy_one_nested_switch_case_body(): #uses pears.values()
     # pears is a dictionary with values of start switch and end switch
     ## LOOP ######## this loops thru pears dictionary
     for x in blueberries.values(): #looping thru pears dictionary holding  switch pairs locations in an anonymous list
-        print('this is number',counter)
+        #print('this is number',counter)
         #print(x)
         cool = x #(which is a pair thus only two values)
-        print("cool=",cool)
-        print(cool[0],cool[1]) #this is switch and endswitch line numbers 
-        print("copy one nested switch string")
+        #print("cool=",cool)
+        #print(cool[0],cool[1]) #this is switch and endswitch line numbers 
+        #print("copy one nested switch string")
         #this uses the pair location start switch and end switch numbers
         #the string is in loopstring[0] <<----------------
         copy_one_nested_switch_string(loopstring[0],cool[0],cool[1])  #first is 1 second is 2 
@@ -18525,7 +18520,7 @@ def copy_one_nested_switch_case_body(): #uses pears.values()
         #switch_location[0]=''
         cool='' #this resets it
         counter += 1
-        print("========================")
+        #print("========================")
     #end loop
    
         
@@ -18547,24 +18542,24 @@ def copy_one_nested_switch_case_body(): #uses pears.values()
 #loopstring[0]=red_robin #testing on oct 5th Tuesday
 def copy_one_nested_switch_case_body_blueberries(): #uses pears.values()
     return
-    print("======copy_one_nested_switch_case_body_blueberries() ....=====.")
-    print("make the impossible into reality VIKING SHIP  fish 1 ")
-    print("show what is in ")
-    print(blueberries) #what is pears have in in it
-    print("I think that at this point nest_string whould be empty")
-    print("len(nest_string=",len(nest_string))
+    #print("======copy_one_nested_switch_case_body_blueberries() ....=====.")
+    #print("make the impossible into reality VIKING SHIP  fish 1 ")
+    #print("show what is in ")
+    #print(blueberries) #what is pears have in in it
+    #print("I think that at this point nest_string whould be empty")
+    #print("len(nest_string=",len(nest_string))
     #nest_string=[] #this reinitializes it 
     counter = 1
   
     #right here nov 6 2021 saturday change this to the list of sublists (time to ditch the dictionary
-    print("showing contents of blueberries dictionary values the strings here.")
+    #print("showing contents of blueberries dictionary values the strings here.")
     for x in blueberries.values(): #looping thru pears dictionary holding  switch pairs locations in an anonymous list
-        print('this is number',counter)
-        print(x)
+        #print('this is number',counter)
+        #print(x)
         cool = x #(which is a pair thus only two values)
-        print("cool=",cool)
-        print(cool[0],cool[1]) #this is switch and endswitch line numbers 
-        print("copy one nested switch string")
+        #print("cool=",cool)
+        #print(cool[0],cool[1]) #this is switch and endswitch line numbers 
+        #print("copy one nested switch string")
         #this uses the pair location start switch and end switch numbers
         #the string is in loopstring[0] <<----------------
         copy_one_nested_switch_string(loopstring[0],cool[0],cool[1])  #first is 1 second is 2 
@@ -18572,7 +18567,7 @@ def copy_one_nested_switch_case_body_blueberries(): #uses pears.values()
         #switch_location[0]=''
         cool='' #this resets it
         counter += 1
-        print("========================")
+        #print("========================")
     #end loop
 ##=============oct 5th musing how to maket his puppy work 
 #I need to have switch numbers by line number
@@ -18617,7 +18612,7 @@ holdthis.append(0)
 def take_out_endswitch(stringname):
 	#print("==========take_out_endswitch()and put brace in called=======")
 	x='';x=stringname.count("endswitch") #should be 1
-	print(x)
+	#print(x)
 	counter = 0
 	for line in stringname.splitlines():
 		if "endswitch" in line:
@@ -18637,7 +18632,7 @@ def take_out_endswitch(stringname):
 	holdthis[0] = stringname#now galaxy gets what is in holdthis[0]
 	#print(holdthis[0])#return stringname #and this is returned
 	
-print("testing take out endswitch from string and replace it with a } ")
+#print("testing take out endswitch from string and replace it with a } ")
 #take_out_endswitch(teststring_brace)
 #outpout to holdthis[0]
 #for line in holdthis[0].splitlines():#
@@ -20334,7 +20329,7 @@ result_of_fourth_method=[]
 
 
 
-print("this is after the input stings have already been seperated")
+#print("this is after the input stings have already been seperated")
 ##======================
 ##  move_string_to_left_side()        first method modern tab shifter to left 
 ##======================
@@ -25273,8 +25268,8 @@ def print_out_a_list(target):
 	nicejob= " ".join(str(x) for x in target)
 	nicejob = nicejob.lstrip()
 	nicejob = nicejob.rstrip()
-	for item in eval(nicejob):
-		print(item)
+	#for item in eval(nicejob):
+	#	print(item)
 	
 #target = list_of_lists[0] #get name of list in list by position
 #empty_a_list(target)
@@ -25286,20 +25281,20 @@ def empty_a_list(target):
 	nicejob = nicejob.rstrip()
 	sweet = eval(nicejob) #applepie
 	del sweet[:] # will this work
-	print(sweet) #should be []
+	#print(sweet) #should be []
 
 
 def clear_out_list(i): # clear_out_list('fox')
 	#print("clear_out_list() called")
 	#print('startingit has apps jacks popcorn mtv')
-	print(i)
+	#print(i)
 	nicejob = i
 	nicejob = nicejob.lstrip()
 	nicejob = nicejob.rstrip()
 	sweet = eval(i) #fox
-	print(sweet) #['apps','balls','craps']
+	#print(sweet) #['apps','balls','craps']
 	del sweet[:] # will this work
-	print(sweet) #should be []
+	#print(sweet) #should be []
 
 fox = ['apps','jacks','popcorn','mtv'] #so an outside free floating list not in a list
 
@@ -25308,9 +25303,9 @@ fox = ['apps','jacks','popcorn','mtv'] #so an outside free floating list not in 
 
 ###### empty_this_list_now(x) list name
 def empty_this_list_now(x): #param is listname
-	print("x=",x)
+	#print("x=",x)
 	x=[]
-	print("x=",x)
+	#print("x=",x)
 
 # this means view_all_list_contents()
 ################################
@@ -25334,8 +25329,8 @@ def see_each_list_contents():
 	nicejob = nicejob.rstrip()
 	print(nicejob) #should be the name of the list applepie
 	#print("testing looping thru the list of applepie useing eval")
-	for item in eval(nicejob):
-		print(item)
+	#for item in eval(nicejob):
+	#	print(item)
 	#print("====end of looping ===")
 
 
@@ -25553,6 +25548,10 @@ def get_location_of_case(listname,word):
     
     ##### the bug is here ValueError: None is not in list
     answer =eval("" + listname + ".index("  + word + ")")
+    if answer == None:
+        print('it sees None line 25557')
+    else:
+        pass # print("it seems to be okay")
     #print('====after running get_location_of_case we get this== should be a number==')
     #print("location of case",word," in listname=",answer)
     return answer
@@ -26027,9 +26026,9 @@ def first_test():
 
 
 
-print("======")
-print("practicing with list funnybusiness here for practice and fun")
-print("======")
+#print("======")
+#print("practicing with list funnybusiness here for practice and fun")
+#print("======")
 funnybusiness=['starter','wildone','wildtwo']
 reset_list_to_just_starter(funnybusiness)
 #print(funnybusiness)
@@ -28465,8 +28464,27 @@ def create_case_name_lists(x,y):
 
 
 
+#dreamed this up feb 1st, 2022 1:56pm
+#this was on the left and so when first loaded these are the conditions
+def initial_starting_of_crucial_lists():
+    print("=====initial_starting_of_crucial_lists()=======")
+    snowman=[]
+    homer=[]
+    gti=[]
+    gti.append("starter")
+    funny=''
+    seal=[]
+    homer.append('starter')
+    solution=''
+    snowman.append('starter')
+    wilecoyote=[]  #I was clearing it out here good thing I noticed it
+    casecaptured=''
 
+    reset_list_to_just_starter(wilecoyote)
+    #print("wilecoyote list",wilecoyote)
+    #wilecoyote.pop()
 
+    mrcase=''
 
 
 
@@ -28492,6 +28510,8 @@ reset_list_to_just_starter(wilecoyote)
 
 mrcase=''
 def case_tail_list_maker(x,y):  #two vars x and y are case locations from digitalcandy
+    #added feb 1, 2022
+    #initial_starting_of_crucial_lists()
     mytrace('case_trail_list_maker')
     #print("=######	C A S E    T A I L   M A K E R  searches for breaks and fallthrus  ")
     #print("digitalcandy=",digitalcandy)
@@ -28700,7 +28720,7 @@ def case_tail_list_maker(x,y):  #two vars x and y are case locations from digita
 penguin=[]  #defining a new list here 
 def crashing_waves_at_beach():
 	mytrace('crashing_waves_at_beach()')
-	#print("Crashing Waves At Beach function called")
+	#print("=======Crashing Waves At Beach function called=======")
 	######## there is a lot going on here
 	'''
 	loop thru wilecoyote of cases with breaks and
@@ -28723,14 +28743,21 @@ def crashing_waves_at_beach():
 	#print("debugging on june 16th, 2021")
 	#print("palmtrees to see whats in this list")
 	##########################
-
+	#print('=====what is in wilecoyote line 28730======')
 	## this gets the location of the case in wilecoyote inside of palmtrees list
+	#print('=========what is in wilecoyote==============')
+	#print('wilecoyote list')
+	#print(wilecoyote)
+	#print("")
+	#print(len(wilecoyote))
 	for item in wilecoyote: #goes through list of case sections with breaks
-		
+		#print(item)
 		####@@@++++++++++__+++========================
 		toad = get_location_of_case("palmtrees",str(item))
 		roadrunner.append(toad) #this returns a number the index position
-	#print("ROADRUNNER list contains numbers of index locations of cases in palmtrees",roadrunner)
+	#print("ROADRUNNER list contains numbers of index locations of")
+	#print(" cases in palmtrees",roadrunner)
+	#print("what is going on here.....")
 #################################################
 	# make a new list based on digitalcandy
 	#print("in digitalcandy at line 7988 we have",digitalcandy)
@@ -28788,32 +28815,27 @@ def crashing_waves_at_beach():
 	#print("=================-------- waves at abeach -------+++++++++=================")
 	#print("======================= waves at beach and seagulls flying over ice plants =====")
 
-	
+	#print("brisith list is")
+	#print(british)
 	for item in british:
 		penguin.append(item)
 	
-	
+	#print("penguin  list=",penguin)
+	#print("=========== what is in the list here penguin ======")
 	newcounter=0
 
 
 
 	for item in range(0,len(british)):  #should only look inside of items starting with f
 		if british[item].startswith("fallthru"):
-			
 			getnumber= british[newcounter] #gets the fallthruX
-			
 			getnumber = getnumber[8:] #gets the number from cutting off front fallthru
 			getnumber = getnumber.rstrip()
 			getnumber = getnumber.lstrip()
-			
 			newnumber = int(getnumber)
-			
 			casename =palmtrees[newnumber] #has cases in sequence
-		
 			mrfallthru = "fallthru("  + "'" + casename + "'" +  ")"#
-		
 			smart_replace(newnumber-1,mrfallthru)## just added minus 1
-			
 			newcounter += 1
 		else:
 			newcounter += 1
@@ -30030,8 +30052,8 @@ fast_drive_thru.append(0)
 ##==============================
 #make it work!!! feb 1st 2022 
 nested=''
-def nested_or_not(x):
-    print("nested or not sees", x)
+def nestedswitch(x):
+    #print("nested or not sees", x)
     if x == 'True':
         fast_drive_thru[0] = True
         nested = True
@@ -30050,9 +30072,9 @@ def switch_code_gen():
 	###=======flip flag here ========
 	##===nested flag RIGHT HERE february 1st 2022 9:13 am ============================
 	#nested = True  #new on feb 1st 2022 ============
-	print("fast_drive_thru[0]=",fast_drive_thru[0])
+	#print("fast_drive_thru[0]=",fast_drive_thru[0])
 	nested = fast_drive_thru[0]
-	print('nested sees=',nested)
+	#print('nested sees=',nested)
 	#print("so how did it go - flying the minicooper over Londong")
 	#####========================
 	#####=====================
@@ -31161,7 +31183,7 @@ def clever(i): #so it already exists we are changing its value
 	#print(varholder[0]) #to actually see proof
 	
 	angel = varholder[0]
-	print("varholder[0]=",varholder[0])
+	print("\n\nvarholder[0]=",varholder[0])
 	return varholder[0]
 
 
@@ -37496,7 +37518,7 @@ quail=[]
 
 
 def empty_switch_and_endswitch_list_locations():
-    print("=== empty_switch_and_endswitch_list_locations()")
+    #print("=== empty_switch_and_endswitch_list_locations()")
     del endswitch_location[:]
     del switch_location[:]
     

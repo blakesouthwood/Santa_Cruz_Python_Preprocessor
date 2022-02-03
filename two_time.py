@@ -60,8 +60,66 @@ from trex  import *
 # returns True
 #txt = "compnay12"
 #x = txt.islower() #lowercase
+nestedswitch('False')
+#exit()
+clever('PALOMAR')
 
-nested_or_not('False') #means True for nested
+#show_input_switch_string()   #input so what the string right below here
+#hide_generated_code()
+
+print("--------")
+
+ducky =''' 
+	switch(exp) {
+		case CASPER:  
+			print(\"squirt gun!\")
+			print("water everywhere")
+			break
+			
+		case COYOTE:
+			print("Sesame Street")
+			print(" groucho and animal")
+			print("this is so fun")
+			break
+			
+		case PALOMAR:
+			print("it actually works")
+			print(" third  in backyard")
+			print("testing this on january 5th, 2022 at Starbucks")
+			print("deer and quail about")
+			break
+			
+		case LAKE_TAHOE:
+			print("good skiing")
+			print(" alpine meadows")
+			print("all of the stars")
+			print("==========")
+			break
+			
+		case FRANCE:
+			print("massive ship blocking canal in Egypt")
+			print("it was stuck for six days")
+			print("=========")
+			
+		case AMERICA:
+			print('manure')
+			print("no more horses")
+			print("==========")
+		
+				
+		default:
+			print('sorry no matches')
+			print("out of mocha")
+			break #mandatory break
+}
+'''
+endswitch(ducky)
+
+
+#exit()
+
+
+nestedswitch('False') #means True for nested
 
 '''
 print("-------------------")
@@ -75,12 +133,12 @@ clever('PALOMAR')
 
 print("--------")
 
-swan =''' 
+swan1 =''' 
 	switch(exp) {
 		case CASPER:  
 			print(\"squirt gun!\")
 			print("water everywhere")
-			break
+			
 			
 		case COYOTE:
 			print("Sesame Street")
@@ -120,42 +178,44 @@ swan ='''
 			break #mandatory break
 }
 '''
-endswitch(swan)
+endswitch(swan1)
 
 
+
+#nested_or_not('False') #means True for nested
 
 '''
 print("-------------------")
 print("== switch 2 ==")
 print("-------------------")
 '''
-#clever('CASPER')
+clever('COYOTE')
 
 #show_input_switch_string()   #input so what the string right below here
 #hide_generated_code()
 
-#print("--trying duck switch now ------")
+print("--------")
 
-duck =''' 
+swan2 =''' 
 	switch(exp) {
 		case CASPER:  
-			print(\"squirt gun ran out of water again!\")
+			print(\"squirt gun!\")
 			print("water everywhere")
-			break
+			
 			
 		case COYOTE:
 			print("Sesame Street")
 			print(" groucho and animal")
-			print("ernie and bert ")
-			break
+			print("this is so fun")
+			
 			
 		case PALOMAR:
 			print("it actually works")
 			print(" third sitting in car at starbucks testing this sucker")
 			print("testing this on january 5th, 2022 at Starbucks")
-			print("deer and quail about and humming birds galore")
+			print("deer and quail about fast cool humming birds blue jays")
 			print("the quail go in single file across the lush green lawn!!")
-			break
+			
 			
 		case LAKE_TAHOE:
 			print("now we are inside of Lake Tahoe good skiing")
@@ -181,8 +241,10 @@ duck ='''
 			break #mandatory break
 }
 '''
-#endswitch(duck)
+endswitch(swan2)
+#print('END OF SWAN TEST SINGLE SWITCH')
 
+#exit()
 
 
 #exit()
@@ -713,6 +775,126 @@ red_robin5 ='''
 			print(' ')
 }
 '''	
+#exit()
+
+print("-------------------")
+print("==single  switch 1 ==")
+print("-------------------")
+
+clever('CASPER')
+
+#show_input_switch_string()   #input so what the string right below here
+#hide_generated_code()
+
+print("--------")
+
+swan2 =''' 
+	switch(exp) {
+		case CASPER:  
+			print(\"squirt gun!\")
+			print("water everywhere")
+			
+			
+		case COYOTE:
+			print("Sesame Street")
+			print(" groucho and animal")
+			print("this is so fun")
+			break
+			
+		case PALOMAR:
+			print("it actually works")
+			print(" third sitting in car at starbucks testing this sucker")
+			print("testing this on january 5th, 2022 at Starbucks")
+			print("deer and quail about fast cool humming birds blue jays")
+			print("the quail go in single file across the lush green lawn!!")
+			break
+			
+		case LAKE_TAHOE:
+			print("now we are inside of Lake Tahoe good skiing")
+			print(" alpine meadows")
+			print("all of the stars")
+			print("==========")
+			break
+			
+		case FRANCE:
+			print("massive ship blocking canal in Egypt")
+			print("it was stuck for six days")
+			print("=========")
+			
+		case AMERICA:
+			print('manure')
+			print("no more horses")
+			print("==========")
+		
+				
+		default:
+			print('sorry no matches')
+			print("out of mocha")
+			break #mandatory break
+}
+'''
+endswitch(swan2)
+
+
+
+print("-------------------")
+print("==single  switch 1 ==")
+print("-------------------")
+
+clever('PALOMAR')
+
+#show_input_switch_string()   #input so what the string right below here
+#hide_generated_code()
+
+print("--------")
+
+duck =''' 
+	switch(exp) {
+		case CASPER:  
+			print(\"squirt gun!\")
+			print("water everywhere")
+			
+			
+		case COYOTE:
+			print("Sesame Street")
+			print(" groucho and animal")
+			print("this is so fun")
+			break
+			
+		case PALOMAR:
+			print("it actually works")
+			print(" third sitting in car at starbucks testing this sucker")
+			print("testing this on january 5th, 2022 at Starbucks")
+			print("deer and quail about fast cool humming birds blue jays")
+			print("the quail go in single file across the lush green lawn!!")
+			break
+			
+		case LAKE_TAHOE:
+			print("now we are inside of Lake Tahoe good skiing")
+			print(" alpine meadows")
+			print("all of the stars")
+			print("==========")
+			break
+			
+		case FRANCE:
+			print("massive ship blocking canal in Egypt")
+			print("it was stuck for six days")
+			print("=========")
+			
+		case AMERICA:
+			print('manure')
+			print("no more horses")
+			print("==========")
+		
+				
+		default:
+			print('sorry no matches')
+			print("out of mocha")
+			break #mandatory break
+}
+'''
+endswitch(duck)
+
 
 
 #print("on to the next one==5 test now ======")
@@ -720,7 +902,7 @@ red_robin5 ='''
 #import time
 #start_time = time.time()
 
-nested_or_not('True') #means True for nested
+nestedswitch('True') #means True for nested
 
 #exit()
 
@@ -728,10 +910,9 @@ nested_or_not('True') #means True for nested
 print("=====now trying a NESTEd SWITCH attempt===you cna do it =")
 num = 1   
 main_control_sequencer(num,red_robin)#red_robin  #this will be the the modifed endswitch eventually 
-print("==yanks==testing 2 now ")
-print('=======after first pass===before second pass ===')
+#print("==yanks==testing 2 now ")
+#print('=======after first pass===before second pass ===')
 
-exit()
 
 
 
@@ -761,46 +942,33 @@ print("last one now the 5th test ====")
 num = 1   
 main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
 
+print("last one now the 6th test ====")
+num = 7   
+main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
+
+print("last one now the 7th test ====")
+num = 7   
+main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
+
+print("last one now the 8th test ====")
+num = 7   
+main_control_sequencer(num,red_robin3)#red_robin  #this will be the the modifed endswitch eventually 
+
+print("last one now the 9th test ====")
+num = 7   
+main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
+
+print("last one now the 10th test ====")
+num = 7   
+main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
+
+print("last one now the 11th test ====")
+num = 3   
+main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
+
+print("===end of testing demonstration==")
+
 exit()
-##============...............
-
-#cloudy_day =
-
-# 	switch(exp) {  
-# 		case 1 thru 3:
-# 			print("where\'s the dog house!")
-# 			print('first prize')
-# 			print('you block head Charlie Brown')
-# 			fallthru
-# 			
-# 		case 4 to 7:
-# 			print('kangaroo hop hop!')
-# 			exp='more'
-# 			switch(exp){   # === line 10 beginning of single nested switch ======      
-# 				case 'blable':
-# 					print("inside of the inner sw here")
-# 					print("yep")
-# 					fallthru
-# 				case 'more':
-# 					print("nice")
-# 					break
-# 				default:
-# 					print("we are done here")
-# 			endswitch #this is key here =============line 20 end of nested switch ====
-# 			print('taught me how to write code')
-# 			fallthru
-# 			
-# 		 
-# 		case 8 to 10:
-# 			print('mocha blast')
-# 			print('== baskin robins ice cream on El Camino Real===')
-# 			fallthru
-# 		
-# 		default:
-# 			print('the end')
-# }
-	
-
 
 #num = 1#1    
 #main_control_sequencer(num,cloudy_day)
