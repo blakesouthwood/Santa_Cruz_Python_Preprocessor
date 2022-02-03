@@ -833,6 +833,9 @@ swan2 ='''
 			break #mandatory break
 }
 '''
+for line in swan2.splitlines():
+    print(line)
+    
 endswitch(swan2)
 
 
@@ -893,6 +896,8 @@ duck ='''
 			break #mandatory break
 }
 '''
+for line in duck.splitlines():
+    print(line)
 endswitch(duck)
 
 
@@ -907,7 +912,11 @@ nestedswitch('True') #means True for nested
 #exit()
 
 #print(" === 1st test === nested==")
+print("")
+print("")
 print("=====now trying a NESTEd SWITCH attempt===you cna do it =")
+print("")
+print("")
 for line in red_robin.splitlines():
     print(line)
 num = 1   
@@ -919,15 +928,19 @@ main_control_sequencer(num,red_robin)#red_robin  #this will be the the modifed e
 
 
 #show_it_to_me()  
-
+print("")
+print("")
 print(" === 2nd test === nested==")
 for line in red_robin2.splitlines():
     print(line)
+print("")
+print("")
 num = 7   
 main_control_sequencer(num,red_robin2)#red_robin  #this will be the the modifed endswitch eventually 
 #print("====after second pass== before 3rd pass=== ")
 #show_it_to_me()
-
+print("")
+print("")
 print(" === 3rd test === nested==")
 #print("about to do second call of a second nested switch string")
 #print("this is the third PASS doing regular red_robon second now")
@@ -938,13 +951,16 @@ main_control_sequencer(num,red_robin3)#red_robin  #this will be the the modifed 
 #print("=====after 3rd pass ======")
 #show_it_to_me()
 #print("go I want to fly like superman")
+print("")
+print("")
 print("================number 4 test ======")
 
 for line in red_robin4.splitlines():
     print(line)
 num = 1   
 main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
-
+print("")
+print("")
 print("last one now the 5th test ====")
 for line in red_robin5.splitlines():
     print(line)
@@ -956,19 +972,22 @@ for line in red_robin4.splitlines():
     print(line)
 num = 7   
 main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
-
+print("")
+print("")
 print("last one now the 7th test ====")
 for line in red_robin5.splitlines():
     print(line)
 num = 7   
 main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
-
+print("")
+print("")
 print("last one now the 8th test ====")
 for line in red_robin3.splitlines():
     print(line)
 num = 7   
 main_control_sequencer(num,red_robin3)#red_robin  #this will be the the modifed endswitch eventually 
-
+print("")
+print("")
 print("last one now the 9th test ====")
 for line in red_robin5.splitlines():
     print(line)
@@ -980,7 +999,8 @@ for line in red_robin4.splitlines():
     print(line)
 num = 7   
 main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
-
+print("")
+print("")
 print("last one now the 11th test ====")
 for line in red_robin5.splitlines():
     print(line)
