@@ -42,16 +42,9 @@ from official_switch_case_silver  import *
 #	importlib.reload(switchmodtrial7)
 	
 
-print('drinkcoffee file being used here"')
-print("==================")
 
 #this is  input variable exp for switch(exp)
-print("===== FIRST 1st switch =====")
-print("===== FIRST 1st switch =====")
-print("===== FIRST 1st switch =====")
 
-
-print("now to string switch see what happens")
 
 #show_generated_code()
 # I don't know if this works yet

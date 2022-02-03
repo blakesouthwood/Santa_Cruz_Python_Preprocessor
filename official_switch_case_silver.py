@@ -1118,7 +1118,7 @@ switch is the first switch call rather than calling reload module.
 #   reset_list_to_just_starter(listname)
 ############################################
 def reset_list_to_just_starter(listname):
-	print("reset_list_to_just_starter() called")
+	#print("reset_list_to_just_starter() called")
 	if len(listname) > 1:         # checks if list length greater than 1
 		for item in listname:     # loop through entire list
 			if len(listname) > 1: # if length of list > 1
@@ -1457,7 +1457,7 @@ exp =''; case =''
 exp = ""
 
 #exec(betterworknow)
-print("=== executin betterwork now test bit")
+#print("=== executin betterwork now test bit")
 
 
 
@@ -4265,7 +4265,7 @@ def empty_a_list(target):
 	nicejob = nicejob.rstrip()
 	sweet = eval(nicejob) #applepie
 	del sweet[:] # will this work
-	print(sweet) #should be []
+	#print(sweet) #should be []
 
 
 def clear_out_list(i): # clear_out_list('fox')
@@ -4278,7 +4278,7 @@ def clear_out_list(i): # clear_out_list('fox')
 	sweet = eval(i) #fox
 	print(sweet) #['apps','balls','craps']
 	del sweet[:] # will this work
-	print(sweet) #should be []
+	#print(sweet) #should be []
 
 fox = ['apps','jacks','popcorn','mtv'] #so an outside free floating list not in a list
 
@@ -4846,9 +4846,9 @@ input = ''
 #apparently this needs to exist in this file
 # I need to number them because I have several functions called clever()
 def clever(i): #so it already exists we are changing its value
-	print("clever() line 4851")
+	#print("clever() line 4851")
 	#sw_reset()
-	print("this is the clever() that is being called line 4850")
+	#print("this is the clever() that is being called line 4850")
 
 	 #this reloads the module
 	varholder[0]='' #this should reset it to nothing
@@ -4857,9 +4857,9 @@ def clever(i): #so it already exists we are changing its value
 	print("clever() called in switch_mgrcat")
 	#faucet_valve()
 	#print("valve[0]",valve[0])
-	print("if true then number in first case in switch so using numbers")
-	print("if false then string word in first case in switch using words or char")
-	print("clever called for input to switch case exp")
+	#print("if true then number in first case in switch so using numbers")
+	#print("if false then string word in first case in switch using words or char")
+	#print("clever called for input to switch case exp")
 	varholder[0]= i
 	#===this works and it fills a list with input from an argument
 	#print('varholder[0]=',varholder[0])
@@ -5055,9 +5055,9 @@ def make_list_of_first_cases():
 			print("this list is wrong should be length 1", len(birdsong))
 	else:
 		if len(birdsong) == 1:
-			print('the length of',birdsong, 'is 1')
+			pass #print('the length of',birdsong, 'is 1')
 		else:
-			print("this one slipped though and has a length greater than 1 ",birdsong)
+			pass #print("this one slipped though and has a length greater than 1 ",birdsong)
 
 
 ####################
@@ -5247,10 +5247,10 @@ def get_last_break_in_string(): #but what if no break??? march 1st bad assumptio
 	#print("the number of breaks = ",counter," if none then nobreaks = ",nobreaks)
 	if len(listofbreaks) >= 1:
 		baby = listofbreaks[-1] #the last one
-		print("the last break line number is ", baby)
+		#print("the last break line number is ", baby)
 	else:
-		print("the number of breaks in the string is None",0)
-		
+		#print("the number of breaks in the string is None",0)
+		pass
 	return baby #which is a string
 	
 	
@@ -7773,7 +7773,7 @@ penguin=[]  #defining a new list here
 ### crashing waves at beach ()   ####
 #####################################
 def crashing_waves_at_beach():
-	print("============crashing_waves_at_beac() ==============")
+	#print("============crashing_waves_at_beac() ==============")
 	mytrace('crashing_waves_at_beach()')
 	#print("Crashing Waves At Beach function called")
 	######## there is a lot going on here
@@ -7795,17 +7795,17 @@ def crashing_waves_at_beach():
 	#print('in crashing waves at beach we have wilecoyote line 7975',wilecoyote)
 	#print("palmtrees at line 7977 we have ",palmtrees)
 	###=================
-	print('wilecoyote list')
-	print(wilecoyote)
+	#print('wilecoyote list')
+	#print(wilecoyote)
 	## this gets the location of the case in wilecoyote inside of palmtrees list
 	for item in wilecoyote: #goes through list of case sections with breaks
 		toad = get_location_of_case("palmtrees",str(item))
-		print("toad=",toad)
+		#print("toad=",toad)
 		
 		#print("we have this in toad=",toad)
 
 		roadrunner.append(toad) #this returns a number the index position
-	print("===ROADRUNNER list contains numbers of index locations of cases in palmtrees",roadrunner)
+	#print("===ROADRUNNER list contains numbers of index locations of cases in palmtrees",roadrunner)
 #################################################
 	# make a new list based on digitalcandy
 	#print("in digitalcandy at line 7988 we have",digitalcandy)
@@ -7890,7 +7890,7 @@ def crashing_waves_at_beach():
 	for item in british:
 		penguin.append(item)
 	
-	print('penguin at line 8066',penguin)
+	#print('penguin at line 8066',penguin)
 
 	#penguin.append('break')
 	#print("penguin= ", penguin)
@@ -7942,8 +7942,8 @@ def crashing_waves_at_beach():
 	#print("00000000000000000000000000000000")
 	#print("british=",british)
 	penguin[-1] = "break"
-	print("out of curiosity printing penguin listline 7944")
-	print('penguin=',penguin)
+	#print("out of curiosity printing penguin listline 7944")
+	#print('penguin=',penguin)
 	#### I can change the contents of british or makea  new list so as to not mess it up.
 	oceanwaves =[]
 
@@ -7983,6 +7983,11 @@ def f22_fighter_jet(): #makes critical cranberries list which is the taillist fo
   #this makes the cranberries list which is the tail list used on codegen page
 #diamonds=[[2,7],[7,17],[17,24],[24,34]]
 #this makes the cranberries list
+
+
+
+
+
 
 ##===========================
 ##      def p51_mustange()  ==  adds the number to  fallthru(3) like that
@@ -9418,9 +9423,9 @@ def switch_code_gen():
 	#############===================
 	#################################
 	#################################
-	print("show_code =",show_code[0])
+	#print("show_code =",show_code[0])
 	if show_code[0] == True:
-	    print(sweet)
+	    pass #print(sweet)  #not printing the generated code right now on purpose
 	else:
 	    #print(sweet)  #otherewise don't print it
 	    pass # do nothing
@@ -9433,7 +9438,7 @@ def switch_code_gen():
 	print("the input exp in clever was:: ",varholder[0]) #varholder[0]
 	#print("")
 	#this is where the generated python code (shown above) is executed
-	
+	#EXECUTION HERE OF SWEET
 	exec(sweet)  #this is the building of the string of python code strings
 	
 	# this runs the python switch code as ifs with the input
@@ -9804,7 +9809,7 @@ def flush_lists_previous():
 ##################################
 #this is for parsing and codegen of cases with words only
 def starter_sequence_mode_1():
-	print("it SEES in valve[0]",valve[0])
+	#print("it SEES in valve[0]",valve[0])
 	#print("the if vavle[0] = False is the setting in here ")
 	# valve[0] is False if words, it is True if numbers
 	#this if means this can only run if valve[0] is False not numbers
@@ -9850,7 +9855,7 @@ def starter_sequence_mode_1():
 		global switchcasetester
 		switchcasetester =''
 		smartcasemanager=[]
-		print("smartcasemanager=",smartcasemanager)
+		#print("smartcasemanager=",smartcasemanager)
 		british=[]
 		#print("british=",british)
 		penguin=[]
