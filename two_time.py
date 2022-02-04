@@ -67,7 +67,7 @@ clever('PALOMAR')
 #show_input_switch_string()   #input so what the string right below here
 #hide_generated_code()
 
-print("--------")
+print("----single switch 0----")
 
 ducky =''' 
 	switch(exp) {
@@ -119,11 +119,11 @@ endswitch(ducky)
 #exit()
 
 
-nestedswitch('False') #means True for nested
+#means True for nested
 
 '''
 print("-------------------")
-print("== switch 1 ==")
+print("=single = switch 1 ==")
 print("-------------------")
 '''
 clever('PALOMAR')
@@ -186,7 +186,7 @@ endswitch(swan1)
 
 '''
 print("-------------------")
-print("== switch 2 ==")
+print("==single  switch 2 ==")
 print("-------------------")
 '''
 clever('COYOTE')
@@ -253,6 +253,11 @@ endswitch(swan2)
 #smartlistlocations= [13, 9, 6, 6, 7, 13, 9, 6, 6, 7, 13, 9, 6, 6, 6, 7]
 
 ##===================================================================
+
+
+
+
+
 
 red_robin ='''
 	switch(exp){  
@@ -672,7 +677,7 @@ red_robin4 ='''
 			print(' ')
 }
 '''	
-#33289
+
 
 
 
@@ -778,7 +783,7 @@ red_robin5 ='''
 #exit()
 
 print("-------------------")
-print("==single  switch 1 ==")
+print("==single  switch 3 ==")
 print("-------------------")
 
 clever('CASPER')
@@ -833,15 +838,14 @@ swan2 ='''
 			break #mandatory break
 }
 '''
-for line in swan2.splitlines():
-    print(line)
+
     
 endswitch(swan2)
 
 
 
 print("-------------------")
-print("==single  switch 1 ==")
+print("==single  switch 4 ==")
 print("-------------------")
 
 clever('PALOMAR')
@@ -893,11 +897,10 @@ duck ='''
 		default:
 			print('sorry no matches')
 			print("out of mocha")
-			break #mandatory break
+			break #mandatory 
 }
 '''
-for line in duck.splitlines():
-    print(line)
+
 endswitch(duck)
 
 
@@ -909,6 +912,9 @@ endswitch(duck)
 
 nestedswitch('True') #means True for nested
 
+
+
+
 #exit()
 
 #print(" === 1st test === nested==")
@@ -916,9 +922,9 @@ print("")
 print("")
 print("=====now trying a NESTEd SWITCH attempt===you cna do it =")
 print("")
+print("input 1")
 print("")
-for line in red_robin.splitlines():
-    print(line)
+
 num = 1   
 main_control_sequencer(num,red_robin)#red_robin  #this will be the the modifed endswitch eventually 
 #print("==yanks==testing 2 now ")
@@ -927,96 +933,158 @@ main_control_sequencer(num,red_robin)#red_robin  #this will be the the modifed e
 
 
 
+
+
+elcapitan='''
+	switch(exp){   
+		case 1 thru 6: 
+			print("mocha morning!")
+			print('a walk in the park')
+			print('listening to neo music ')
+			break
+
+		case 7 thru 10: 
+			print("two !")
+			print('cold tennis')
+			print('who will win? ')
+			fallthru
+			
+			exp ='red'
+			switch(exp)   
+				case 'red':
+					print("we are red blood cells ")
+					print("3 billionof them ...")
+					break
+				case 'blue':
+					print("we are red blood cells ")
+					print("3 billionof them ...")
+					break
+				default:
+					print('this was missing')
+					print(' darn it')
+			endswitch
+			break
+		default:
+			print('no matches so sorry about that chap')
+			print(' ')
+			
+}
+'''	
+
+#nestedswitch('True') #means True for nested
+print("==== testing elcapitan new switch string all kinds of probs why==")
+
+num = 1   
+main_control_sequencer(num,elcapitan)#
+
+print("second attempt go high")
+num = 7   
+main_control_sequencer(num,elcapitan)#
+
+# I was missing a : after a case and missing default: at bottom
+#exit()
+
+
 #show_it_to_me()  
 print("")
-print("")
-print(" === 2nd test === nested==")
-for line in red_robin2.splitlines():
-    print(line)
-print("")
+
+print("input 7")
 print("")
 num = 7   
 main_control_sequencer(num,red_robin2)#red_robin  #this will be the the modifed endswitch eventually 
 #print("====after second pass== before 3rd pass=== ")
 #show_it_to_me()
 print("")
+print("input 1")
 print("")
 print(" === 3rd test === nested==")
 #print("about to do second call of a second nested switch string")
 #print("this is the third PASS doing regular red_robon second now")
-for line in red_robin3.splitlines():
-    print(line)
+
 num = 1   
 main_control_sequencer(num,red_robin3)#red_robin  #this will be the the modifed endswitch eventually 
 #print("=====after 3rd pass ======")
 #show_it_to_me()
 #print("go I want to fly like superman")
 print("")
+print("input 1")
 print("")
 print("================number 4 test ======")
 
-for line in red_robin4.splitlines():
-    print(line)
 num = 1   
 main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
+print("input 1")
 print("")
 print("last one now the 5th test ====")
-for line in red_robin5.splitlines():
-    print(line)
+
 num = 1   
 main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
-
+print("")
+print("input 7")
+print("")
 print("last one now the 6th test ====")
-for line in red_robin4.splitlines():
-    print(line)
+
 num = 7   
 main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
+print("")
+print("")
+print("input 7")
 print("")
 print("")
 print("last one now the 7th test ====")
-for line in red_robin5.splitlines():
-    print(line)
+
 num = 7   
 main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("")
+print("input 7")
+print("")
+print("")
 print("last one now the 8th test ====")
-for line in red_robin3.splitlines():
-    print(line)
+
 num = 7   
 main_control_sequencer(num,red_robin3)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("")
+print("input 7")
+print("")
+print("")
 print("last one now the 9th test ====")
-for line in red_robin5.splitlines():
-    print(line)
+
 num = 7   
 main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
 
+print("")
+print("input 7")
+print("")
 print("last one now the 10th test ====")
-for line in red_robin4.splitlines():
-    print(line)
+
 num = 7   
 main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("")
+print("input 3")
+print("")
+print("")
 print("last one now the 11th test ====")
-for line in red_robin5.splitlines():
-    print(line)
+
 num = 3   
 main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
 
 print("===end of testing demonstration==")
-
-exit()
+print("rising torrain at 12 miles ...")
+##=======================
+print("what are the values of the lists that are clearly")
+print("messing up the inputs for the single switch")
 
 #num = 1#1    
 #main_control_sequencer(num,cloudy_day)
 #red_robin  #this will be the the modifed endswitch eventually 
 
 #print("after doing SECOND nested switch")
-
+print("trying a single switch here at teh bottom which will crash")
+### this is crashign at the bottom 
 
 
 #print("result of the seconds it took to run is..")

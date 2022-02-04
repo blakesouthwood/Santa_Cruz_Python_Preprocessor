@@ -1889,15 +1889,15 @@ def get_switch_and_endswitch_locations_in_string(string_name):
 	switchcount=0
 	counter = 0
 	for line in string_name.splitlines():
-	    tabdepth = line.count("\t")
-	    if "switch" in line and "end" not in line and tabdepth == 3:
-	        switchcount += 1 #doesn't have ++
-	        total_switches_at_3tabs_depth.append(counter)
-	        counter += 1
-	        continue
-	    else:
-	        counter += 1
-	        continue
+		tabdepth = line.count("\t")
+		if "switch" in line and "end" not in line and tabdepth == 3:
+			switchcount += 1 #doesn't have ++
+			total_switches_at_3tabs_depth.append(counter)
+			counter += 1
+			continue
+		else:
+			counter += 1
+			continue
 	####===================
 	#print("total switch at 3 tabs in this string",len(total_switches_at_3tabs_depth))
 	#print("they start on these lines",total_switches_at_3tabs_depth)
@@ -25489,9 +25489,6 @@ valve=[]
 #             faucet_valve()
 ##########################################
 def faucet_valve():
-	#print("=====faucet VALVE=======")
-	#print("=====faucet VALVE=======")
-	#print("=====faucet VALVE=======")
 	mytrace('faucet_valve()')
 	icetea =finbar()  #method finbar() determines if case has a number like case 4:
 	print("icetea =",icetea) #True if numbers
@@ -25540,18 +25537,15 @@ def get_case_name(y):  #y will be the line
     ############################
     #debugging june 16th, 2021
 def get_location_of_case(listname,word):
-    #print("called get_location_of_case(listname,word) line 5220")
     #print("listname,word=",listname,word)
-    #print("get location of case () called ")
-    #print("this is searching for ",word)  #below took out  + "'" + both sides of word
-    ## june16th2021
-    
+    ############################################### 
     ##### the bug is here ValueError: None is not in list
     answer =eval("" + listname + ".index("  + word + ")")
     if answer == None:
-        print('it sees None line 25557')
+        print('it sees None line 25,552')
     else:
-        pass # print("it seems to be okay")
+        return answer
+        #pass # print("it seems to be okay")
     #print('====after running get_location_of_case we get this== should be a number==')
     #print("location of case",word," in listname=",answer)
     return answer
@@ -28749,7 +28743,12 @@ def crashing_waves_at_beach():
 	#print('wilecoyote list')
 	#print(wilecoyote)
 	#print("")
+	#print("looking in palmtres line 28771")
+	#print("palmtrees list length=", len(palmtrees))
+	#print("palmtrees=",palmtrees)
+	#print("=====================")
 	#print(len(wilecoyote))
+	#print("wilecoyote=",wilecoyote)
 	for item in wilecoyote: #goes through list of case sections with breaks
 		#print(item)
 		####@@@++++++++++__+++========================
