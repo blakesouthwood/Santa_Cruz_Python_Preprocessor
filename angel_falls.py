@@ -1,3 +1,11 @@
+Feb 4th 2022 8:40 am PST Morgan Hill, California
+::IMPORTANT ANNOUNCEMENT::
+IT WORKS!!!!!!!!!!!!!!!!
+I can run both nested and single switches anywhere. What a rush. Pure nirvana.
+https://www.youtube.com/watch?v=gGdGFtwCNBE&list=RDMM&index=5
+	
+	
+
 Feb  3rd 2022
 Since single switch works in it's module and nested switch works in it's module I will do a diff
 to determine what subtle differences exist so that I can integrate them together so that they work flawlessly.
