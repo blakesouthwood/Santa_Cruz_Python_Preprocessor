@@ -1,5 +1,10 @@
 Feb 4th 2022 8:40 am PST Morgan Hill, California
 ::IMPORTANT ANNOUNCEMENT::
+I imported the single switch engine into the file that has the nested engine imported.
+Now I can "suddenly" run nested and single switches. Previously singles worked fine. Then I ran some nested
+that ran fine and then afterwards a single switch and it crashed.
+So I tried importing the single switch engine and it works!!!!!!
+
 IT WORKS!!!!!!!!!!!!!!!!
 I can run both nested and single switches anywhere. What a rush. Pure nirvana.
 https://www.youtube.com/watch?v=gGdGFtwCNBE&list=RDMM&index=5
