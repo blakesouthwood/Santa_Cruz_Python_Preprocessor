@@ -1,6 +1,15 @@
 Feb 4th 2022 8:40 am PST Morgan Hill, California
 https://www.youtube.com/watch?v=HEe3xfWfkG8&list=RDMM&index=9
 ::IMPORTANT ANNOUNCEMENT::
+
+files:
+running_switch_case_engine.py
+trex.py
+official_switch_case_silver.py
+
+				
+This is the beta but it's stable now and I will now clean it up and finish the last steps to make it presentable.
+This is mind blowing.
 I imported the single switch engine into the file that has the nested engine imported.
 Now I can "suddenly" run nested and single switches. Previously singles worked fine. Then I ran some nested
 that ran fine and then afterwards a single switch and it crashed.
