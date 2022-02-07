@@ -1,8 +1,10 @@
 Feb 6th
 
-demonstration beta of macros when,unless, until showing it's possible to add
+Demonstration beta of macros when,unless, until showing it's possible to add
 macros and further exploration of adding more expressiveness to python to speed
-up programming and increase comprehension.
+up programming and increase comprehension. to avoid an uproar I showed restrating and
+didn't use these macros in the implimentation of my switch case module because I didn't
+want to cause any dicontent and outrage. 
 
 https://github.com/blakesouthwood/Santa_Cruz_Python_Preprocessor/blob/master/macros_playing.py
 	
