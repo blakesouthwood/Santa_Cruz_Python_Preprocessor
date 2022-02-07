@@ -1,4 +1,7 @@
-Feb 6th
+Feb 6th 2022
+working on allowing C style comments // and /*  */ multiline
+Works. Now refactoring the code. 
+
 
 Demonstration beta of macros when,unless, until showing it's possible to add
 macros and further exploration of adding more expressiveness to python to speed
