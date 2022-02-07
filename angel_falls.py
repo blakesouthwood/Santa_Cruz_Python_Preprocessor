@@ -1,3 +1,13 @@
+Feb 6th
+
+demonstration beta of macros when,unless, until showing it's possible to add
+macros and further exploration of adding more expressiveness to python to speed
+up programming and increase comprehension.
+
+https://github.com/blakesouthwood/Santa_Cruz_Python_Preprocessor/blob/master/macros_playing.py
+	
+
+
 Feb 4th 2022 8:40 am PST Morgan Hill, California
 https://www.youtube.com/watch?v=HEe3xfWfkG8&list=RDMM&index=9
 ::IMPORTANT ANNOUNCEMENT::
