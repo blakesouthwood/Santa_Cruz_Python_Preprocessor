@@ -116,8 +116,76 @@ def on_the_fly_comment_changer(stringname):
 	for line in buildstring.splitlines():
 		print(line)
     ##################################
-    
+==OUTPUT GENERATED==   
+this is the on-the-fly test
+==BIG CHANGE NOW=====on_the_fly_comment_changer()===big flies====
+smarttabs= 3
+cat bird time let's see what the resulting concatted string looks like now
 
+	switch(exp) {
+		case 'ufos':  
+			print("ww2!")
+			print('nimitz')
+			print("==area 51==")
+			#testing this out
+
+		
+		case 'Star Wars':
+			print('return of the jedi')
+			print("Luke Skywalker ")
+			#
+			#c style comment her mult-line
+			#more comments here
+			#
+		
+		case 'Darth Vader':
+			print('flying in it tie-fighter')
+			print("the force is strong in this one...")
+			break
+			
+		default:
+			print('no results')
+			print("that is all")
+			break
+}
+==BIG CHANGE NOW=====on_the_fly_comment_changer()===big flies====
+smarttabs= 3
+smarttabs= 2
+cat bird time let's see what the resulting concatted string looks like now
+
+	switch(exp) {
+		case 'ufos':  
+			print("ww2!")
+			print('nimitz')
+			print("==area 51==")
+			#testing this out
+			#this is so true 
+		
+		case 'Star Wars':
+			print('return of the jedi')
+			print("Luke Skywalker ")
+			#
+			#fudge this is not fair
+			#way to go make it work
+			#right now on time
+			#
+		case 'Darth Vader':
+			print('flying in it tie-fighter')
+			print("the force is strong in this one...")
+			break
+			
+		#
+		#still testing this out
+		#to see how it works
+		#
+		default:
+			print('no results')
+			print("that is all")
+			break
+			# some comments here for fun
+}
+
+	
 
 Feb 6th 2022
 working on allowing C style comments // and /*  */ multiline
