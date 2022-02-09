@@ -1,3 +1,124 @@
+Feb 8th, 2022
+Just got on-the-fly C comment changer to work in one pass. It has smart tabs so that
+it places the comments at the tab depth that they were created to mirror the intent of the developer.
+Of course this is for code inside of a doctstring.
+#the goal is being able to copy and paste JavaScript code in and just have it run
+
+
+fishyone2 ='''
+	switch(exp) {
+		case 'ufos':  
+			print(\"ww2!\")
+			print('nimitz')
+			print("==area 51==")
+			//testing this out
+
+		
+		case 'Star Wars':
+			print('return of the jedi')
+			print("Luke Skywalker ")
+			/*
+			c style comment her mult-line
+			more comments here
+			*/
+		
+		case 'Darth Vader':
+			print('flying in it tie-fighter')
+			print("the force is strong in this one...")
+			break
+			
+		default:
+			print('no results')
+			print("that is all")
+			break
+}
+'''
+
+
+
+razzle ='''
+	switch(exp) {
+		case 'ufos':  
+			print(\"ww2!\")
+			print('nimitz')
+			print("==area 51==")
+			//testing this out
+			//this is so true 
+		
+		case 'Star Wars':
+			print('return of the jedi')
+			print("Luke Skywalker ")
+			/*
+			fudge this is not fair
+			way to go make it work
+			right now on time
+			*/
+		case 'Darth Vader':
+			print('flying in it tie-fighter')
+			print("the force is strong in this one...")
+			break
+			
+		/*
+		still testing this out
+		to see how it works
+		*/
+		default:
+			print('no results')
+			print("that is all")
+			break
+			// some comments here for fun
+}
+'''
+
+#the idea is go thru once actually
+#the rule is if within /*  and */ then can't have // inside of it
+def on_the_fly_comment_changer(stringname):
+	print("==BIG CHANGE NOW=====on_the_fly_comment_changer()===big flies====")
+	smarttabs=''
+	buildstring=''
+	series_comment= False  
+	smarttabs='' 
+	for line in stringname.splitlines():
+		###=================================================================
+		#checks if // in line  this chnages it into #
+		if "//" in line: #presuming /* and */ are not in this line
+			buildstring += line.replace("//", "#") + "\n" #for a single line obviously
+		###=================================================================
+		#checks if /* in line and changes it to # and sets series_comment to True
+		if "/*" in line and "*/" not in line and "//" not in line and series_comment == False:
+			series_comment = True  #notice set flag to True here 
+			tabcount = line.count("\t")
+			smarttabs = tabcount #this is new
+			print('smarttabs=',smarttabs)
+			buildstring += line.replace("/*", "#") + "\n" #top brilliant 
+		###=================================================================
+		#checks if */ in line and series_comment == True this puts # at front of line 
+		if "*/" not in line and "/*" not in line and "//" not in line and series_comment == True:
+			line = line.strip()
+			#this is where it's putting in three tabs
+			tabresult = smarttabs * '\t'
+			aline = tabresult + "#" + line + '\n'  #the issue is 3 tabs by default
+			buildstring += aline
+		###=================================================================
+		#check if line starts with */ which is closing multiline comment 
+		# this puts # at the front of the line and sets flag back to False
+		#THIS IS FOR ENDING MULTILINE COMMENT 
+		if "*/" in line and series_comment == True:
+			series_comment= False #this is where and when I set it to False here we set the flag back to False
+			buildstring += line.replace("*/", "#") + "\n" 
+
+		if series_comment == False and "//" not in line and "/*" not in line and "*/" not in line:
+			#print(line)
+			buildstring +=  line + "\n";
+
+	print("cat bird time let's see what the resulting concatted string looks like now") 
+
+	for line in buildstring.splitlines():
+		print(line)
+    ##################################
+    
+
+
 Feb 6th 2022
 working on allowing C style comments // and /*  */ multiline
 Works. Now refactoring the code. 
