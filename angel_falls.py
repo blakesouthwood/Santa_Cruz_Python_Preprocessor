@@ -1,3 +1,72 @@
+Feb 12th 2022 12:32 just got endswitch(stringname) to manage single and nested switches.
+For testing it looks like this in alpha form.
+So this means that I can use one method to call both single and nested strings and it just started working
+This is a relief because it was a pain. Currently def two_choices(mystring): is in the running code file
+and I will create a third import file next to put it into.
+The good news is I finally solved the conflict of what was where and what was being called and when.
+
+
+##  two_choices(mystring ##
+####======== two_choices(mystring):============
+def two_choices(mystring):  #this will become endswitch(mystring)
+	print("==this is TWO_CHOICES testing this sucker===")
+	nested =count_switches_in_inputstring(mystring)
+	print("nested =",nested)
+	if nested == True:
+		smart_endswitch(mystring)  #nested switch is in trex module
+	else:
+		cool_endswitch(mystring)   #single switch is in silver module
+	
+	
+	
+##=============================================
+##  count_switches_in_inputstring(thestring)
+##=============================================
+## modified on feb 12th 2022 at 9am
+#  two conditional tests switch at 3 tabs and switchcount to verify a nested switch
+def count_switches_in_inputstring(thestring):
+	print("=====make it so right now=====count_switches_in_inputstring called===feb 12th=====")
+	number_of_switches ='';number_of_endswitches=''
+	number_of_switches =thestring.count("switch")
+	#just remembered need to count if a switch at three tabs
+	####################################
+	print("this section uses the tab count to detect at least ONE inner switch at 3 tabs")
+	nestedswitch= False #by default setting starting out
+	for line in thestring.splitlines():
+		print(line)
+		tabcount = line.count("\t")
+		if "switch" in line and tabcount == 3:
+			print(line) #since seeing is believing
+			print("this is by definition has a nested switch = TRUE")
+			nestedswitch= True
+			break
+	if nestedswitch == True:
+		print('tab test nested = True')
+	else:
+		print('tab test nested = False')
+	###########################################=       
+	number_of_endswitches=thestring.count("endswitch")
+	print("extra counts this many switch(s) in  string",number_of_switches)
+	print("extra counts this many endswitch(s) in  string",number_of_endswitches)
+	if number_of_switches > 2 and number_of_endswitches > 1:
+		switch_count_test= True
+		print("yes it is a multi switch")
+	else:
+		print("nope just a single switcharoo")
+		switch_count_test= False
+	print("the result of second condition = ",switch_count_test)
+	print("===at the bottom we determine with two conditions if Nested Switch===")
+	#this is testing two conditions tab depth switch at 3 and switch count
+	if nestedswitch == True and switch_count_test == True:
+		print("verified NESTED SWITCH = True")
+		return True
+	else:
+		print("verified NESTED SWITCH = False")
+		return False
+	#############################################
+	
+	
+
 Feb 8th, 2022
 Just got on-the-fly C comment changer to work in one pass. It has smart tabs so that
 it places the comments at the tab depth that they were created to mirror the intent of the developer.
