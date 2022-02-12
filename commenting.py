@@ -355,6 +355,7 @@ multiline_C_comment_changer()
 #the idea is go thru once actually
 #the rule is if within /*  and */ then can't have // inside of it
 def on_the_fly_comment_changer(stringname):
+	breakpoint()
 	print("==BIG CHANGE NOW=====on_the_fly_comment_changer()===big flies====")
 	smarttabs='';buildstring='';series_comment= False;smarttabs='';megaline='' 
 	for line in stringname.splitlines():
@@ -417,79 +418,6 @@ for line in cool2.splitlines():
 	print(line)
 
 '''        
-OUTPUT
- switch(exp) {
-                case 'ufos':  
-                        print("ww2!")
-                        print('nimitz')
-                        print("==area 51==")
-                        #testing this out
-
-
-                case 'Star Wars':
-                        print('return of the jedi')
-                        print("Luke Skywalker ")
-                        #
-                        #c style comment her mult-line
-                        #more comments here
-                        #
-                # weird and wild here 
-
-                case 'Darth Vader': 
-                        print('flying in it tie-fighter')
-                        print("the force is strong in this one...")
-                        break
-
-                default:
-                        print('no results')
-                        print("that is all")
-                        break
-}
-==BIG CHANGE NOW=====on_the_fly_comment_changer()===big flies====
-smarttabs= 3
-smarttabs= 2
-
-        switch(exp) {
-                case 'ufos':  
-                        print("ww2!") # did this one work 
-
-                        print('nimitz')
-                        print("==area 51==")
-                        #testing this out
-                        #this is so true 
-                        print("ww2!") # did this one work 
-                        # now putting it here 
-
-
-                case 'Star Wars':
-                        print("ww2!") # did this one work 
-                        # now putting it here 
-                        # go for the money 
-
-                        print('return of the jedi')
-                        print("Luke Skywalker ")
-                        #
-                        #fudge this is not fair
-                        #way to go make it work
-                        #right now on time
-                        #
-                case 'Darth Vader':
-                        print('flying in it tie-fighter')
-                        print("the force is strong in this one...")
-                        break
-
-                #
-                #still testing this out
-                #to see how it works
-                #
-                default:
-                        print('no results')
-                        print("that is all")
-                        break
-                        # some comments here for fun
-}
-
-
 #thought I could go thru the whole string in a loop
 # this is an idea
 #and when I detect /*  replace that line and subsequent lines with // until 
