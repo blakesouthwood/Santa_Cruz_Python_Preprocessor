@@ -65,6 +65,177 @@ def count_switches_in_inputstring(thestring):
 		return False
 	#############################################
 	
+
+	
+clever2('PALOMAR') #so it calls clever in silver module
+#need to share clever perhaps different name ah yes
+#show_input_switch_string()   #input so what the string right below here
+#hide_generated_code()
+
+print("--------")
+
+duck =''' 
+	switch(exp) {
+		case CASPER:  
+			print(\"squirt gun!\")
+			print("water everywhere")
+			
+			
+		case COYOTE:
+			print("Sesame Street")
+			print(" groucho and animal")
+			print("this is so fun")
+			break
+			
+		case PALOMAR:
+			print("it actually works")
+			print(" third sitting in car at starbucks testing this sucker")
+			print("testing this on january 5th, 2022 at Starbucks")
+			print("deer and quail about fast cool humming birds blue jays")
+			print("the quail go in single file across the lush green lawn!!")
+			break
+			
+		case LAKE_TAHOE:
+			print("now we are inside of Lake Tahoe good skiing")
+			print(" alpine meadows")
+			print("all of the stars")
+			print("==========")
+			break
+			
+		case FRANCE:
+			print("massive ship blocking canal in Egypt")
+			print("it was stuck for six days")
+			print("=========")
+			
+		case AMERICA:
+			print('manure')
+			print("no more horses")
+			print("==========")
+		
+				
+		default:
+			print('sorry no matches')
+			print("out of mocha")
+			break #mandatory 
+}
+'''
+print("=== duck changes =====testing if duck is single switch or multiswitch")
+#count_switches_in_inputstring(duck) #testing on feb 12th 
+#cool_endswitch(duck)  #inside of silver
+two_choices(duck)
+
+
+
+
+num = 1
+feedinput(num) #puts num into dino[0] for testing purposes only
+#this will just take in as input the string now not num,red_robin
+
+red_robin ='''
+	switch(exp){  
+		case 1 thru 6: 
+			print("green lantern green lantern green aliens!")
+			print('this green green green . it actually works')
+			print('how green green green, yes way ')
+			
+			
+		case 7 to 10:
+			print('green lantern green lantern green  between 7 and 10 !')
+			
+			#############
+			exp ='blable'
+			
+			switch(exp)  
+				case 'blable':
+					print("we are blable here   inside of sw itch 11 this is really cool ")
+					print("this is really working, fantastic...")
+					result[0]="Blake did it"
+					break
+					####################
+					exp = 'tahoe'
+					switch(exp){ 
+						case 'tahoe':
+							print("do THIS IS SO COOLinside of sw 15")
+							print("oh is this going to really work now ... really it is")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							result[0]='fallen leaf lake waterskiing fell'
+							
+							####################
+							exp = 'winter'
+							switch(exp){    
+								case 'winter':
+									print("this is possibly sw 25")
+									print("listening to mit debugging session in summer")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice kayaking race")
+									break
+								default:
+									print("we are done here")
+							endswitch 
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			#exp = 3
+			print('this should write this line still within bounds of outer sw')
+			switch(exp)
+				case 'burger':
+					print("do something")
+					####################
+					switch(exp){   
+						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch
+			##############
+			print('taught me how to write code')
+			fallthru
+		case 11 to 15:
+			print('big numbers here this is 11 thru 15  ')
+			print('=this is the last c ase ==')
+			print('-----------------')
+			break 
+		default:
+			print('no matches so sorry about that chap')
+			print(' ')
+}
+'''
+two_choices(red_robin)
+
+#smart_endswitch(red_robin)  #NESTEd in TREX
+
+
+
 	
 
 Feb 8th, 2022
