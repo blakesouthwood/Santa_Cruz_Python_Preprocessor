@@ -4845,7 +4845,7 @@ input = ''
 # this calls faucet_valve to determine if cases are numbers or words
 #apparently this needs to exist in this file
 # I need to number them because I have several functions called clever()
-def clever(i): #so it already exists we are changing its value
+def clever2(i): #so it already exists we are changing its value
 	#print("clever() line 4851")
 	#sw_reset()
 	#print("this is the clever() that is being called line 4850")
@@ -4854,6 +4854,9 @@ def clever(i): #so it already exists we are changing its value
 	varholder[0]='' #this should reset it to nothing
 	reset()  #reset() is hidden inside of clever for input to the switch
 	mytrace('clever()')
+	varholder[0] = i
+	print("varholder[0] in cler2 in silver shows",varholder[0])
+	
 	print("clever() called in switch_mgrcat")
 	#faucet_valve()
 	#print("valve[0]",valve[0])
@@ -10007,10 +10010,12 @@ def pink1():
 #only doing one switch
 	
 ########################
-##     endswitch(y)      this calls flow_valve_input which checks if cases are numbers or words
+##   cool_endswitch(y)      this calls flow_valve_input which checks if cases are numbers or words
 ########################  and if numbers = True then call parser_mode_2(y); If numbers = False parser_mode_1(y)
 #this final version only does the string mode and numbers are done by making them strings
-def endswitch(y): #pulls in sw 
+def cool_endswitch(y): #pulls in sw 
+	print("==cool_endswitch() called =SILVER CODE ENDSWITCH=====")
+	print("varholder[0]=",varholder[0]) #should say PALOMAR
 	switchcasetester='';switchcasetester=None;
 	del switchcasetester;switchcasetester='';
 	mytrace("endswitch() in switch_cat called")

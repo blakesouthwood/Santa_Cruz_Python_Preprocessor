@@ -1,69 +1,29 @@
-import trex   #toying around with site_b and site_c
+import trex  
 from trex  import * 
 
 import official_switch_case_silver
 from official_switch_case_silver  import *  
 
-
-#### this one below is good onemay 27th
-# official_switch_case_silver
-#from official_switch_case_silver  import *  
-
-
-
-
-################################################
-#      soon drum roll macros module 
-#import blender_macros
-#from blender_macros  import *  #may 25th, 2021 
-########################################################
-
-
-#import switchmodtrial7  #the one I ahve been using
-#import switch_module3
-#from switchmodtrial7  import *  #april 29th, 2021 flailing
-
-#import switch_mod2backup
-#from switch_mod2backup  import *  #april 29th, 2021 flailing
-
-#from pre_versionworkingfallsjan26th import *
-
-######################
-##   clear()
-#######################
-#reset switchmodtrial7 module
-#def clear():#reset sw
-#	importlib.reload(switchmodtrial7)
+##========================================
+##  two_choices(mystring ##
+####======== two_choices(mystring):============
+def two_choices(mystring):
+	print("==this is TWO_CHOICES testing this sucker===")
+	nested =count_switches_in_inputstring(mystring)
+	print("nested =",nested)
+	if nested == True:
+		smart_endswitch(mystring)  #nested switch
+	else:
+		cool_endswitch(mystring)   #single switch
 	
 
-#print('drinkcoffee file being used here"')
-#print("==================")
 
-#this is  input variable exp for switch(exp)
-#print("===== FIRST 1st switch =====")
-#print("===== FIRST 1st switch =====")
-#print("===== FIRST 1st switch =====")
+print("I have tested these and they work inside of functions too")
 
 
-#print("now to string switch see what happens")
 
-#show_generated_code()
-# I don't know if this works yet
-
-#this is the code being run
-#this needs to be sensed to turn it 
-# into strings, just stringifying it
-#triggered after determing it's NOT A NUMBER case
-#it can be alphanumeric words3 example
-#txt = "Company12"
-#print(x)
-#x = txt.isupper()
-#x = txt.isalnum() #alphanumeric
-# returns True
-#txt = "compnay12"
-#x = txt.islower() #lowercase
 nestedswitch('False')
-#exit()
+
 clever('PALOMAR')
 
 #show_input_switch_string()   #input so what the string right below here
@@ -89,7 +49,7 @@ ducky ='''
 			print(" third  in backyard")
 			print("testing this on january 5th, 2022 at Starbucks")
 			print("deer and quail about")
-			break
+			fallthru
 			
 		case LAKE_TAHOE:
 			print("good skiing")
@@ -117,11 +77,6 @@ ducky ='''
 '''
 endswitch(ducky)
 
-
-#exit()
-
-
-#means True for nested
 
 '''
 print("-------------------")
@@ -184,7 +139,6 @@ endswitch(swan1)
 
 
 
-#nested_or_not('False') #means True for nested
 
 '''
 print("-------------------")
@@ -193,8 +147,7 @@ print("-------------------")
 '''
 clever('COYOTE')
 
-#show_input_switch_string()   #input so what the string right below here
-#hide_generated_code()
+
 
 print("--------")
 
@@ -244,17 +197,6 @@ swan2 ='''
 }
 '''
 endswitch(swan2)
-#print('END OF SWAN TEST SINGLE SWITCH')
-
-#exit()
-
-
-#exit()
-#if switch numbers to transfer > length of snowtime
-#smartlistlocations[13, 9, 6, 6, 7, 13, 9, 6, 6, 7]
-#smartlistlocations= [13, 9, 6, 6, 7, 13, 9, 6, 6, 7, 13, 9, 6, 6, 6, 7]
-
-##===================================================================
 
 
 
@@ -461,7 +403,7 @@ red_robin2 ='''
 			print(' ')
 }
 '''	
-#33289
+
 
 red_robin3 ='''
 	switch(exp){  
@@ -782,7 +724,7 @@ red_robin5 ='''
 			print(' ')
 }
 '''	
-#exit()
+
 
 print("-------------------")
 print("==single  switch 3 ==")
@@ -790,8 +732,7 @@ print("-------------------")
 
 clever('CASPER')
 
-#show_input_switch_string()   #input so what the string right below here
-#hide_generated_code()
+
 
 print("--------")
 
@@ -844,14 +785,20 @@ swan2 ='''
     
 endswitch(swan2)
 
-
-
+print("===TEST TEST====TEST TEST====TEST TEST====TEST TEST====TEST TEST==")
+print("===TEST TEST====TEST TEST====TEST TEST====TEST TEST====TEST TEST==")
+print("===TEST TEST====TEST TEST====TEST TEST====TEST TEST====TEST TEST==")
+print("===TEST TEST====TEST TEST====TEST TEST====TEST TEST====TEST TEST==")
+print("===TEST TEST====TEST TEST====TEST TEST====TEST TEST====TEST TEST==")
+print("===TEST TEST====TEST TEST====TEST TEST====TEST TEST====TEST TEST==")
+print("===TEST TEST====TEST TEST====TEST TEST====TEST TEST====TEST TEST==")
+print("===TEST TEST====TEST TEST====TEST TEST====TEST TEST====TEST TEST==")
 print("-------------------")
 print("==single  switch 4 ==")
 print("-------------------")
 
-clever('PALOMAR')
-
+clever2('PALOMAR') #so it calls clever in silver module
+#need to share clever perhaps different name ah yes
 #show_input_switch_string()   #input so what the string right below here
 #hide_generated_code()
 
@@ -902,8 +849,32 @@ duck ='''
 			break #mandatory 
 }
 '''
+print("=== duck changes =====testing if duck is single switch or multiswitch")
+#count_switches_in_inputstring(duck) #testing on feb 12th 
+#cool_endswitch(duck)  #inside of silver
+two_choices(duck)
 
-endswitch(duck)
+#=== feb 12th 2022 testing ==========================
+#what if I call smart_endswitch
+#and if it's a single switch which I check for
+#call cool_endswitch(stringname)
+##==============================
+
+#dual_modes(duck)
+#smart_endswitch(duck) #single string test 
+#main_control_sequencer(num,red_robin)
+
+
+####### FEBRUARY 12TH GOODNESS ##########################
+#idea. I will put count_switches_in_inputstring(string)
+#inside of endswitch(string)
+#count_switches_in_inputstring(duck) 
+#if nested == True
+#    nestedswitch('True')
+#    main_control_sequencer(num,red_robin)#
+#else:
+# regular endswitch code
+
 
 
 
@@ -916,7 +887,6 @@ nestedswitch('True') #means True for nested
 
 
 
-
 #exit()
 
 #print(" === 1st test === nested==")
@@ -926,11 +896,109 @@ print("=====now trying a NESTEd SWITCH attempt===you cna do it =")
 print("")
 print("input 1")
 print("")
+print("=== beginning of test to make it to Tahoe looks like it will be C#====")
+  
+num = 1
+feedinput(num) #puts num into dino[0] for testing purposes only
 
-num = 1   
-main_control_sequencer(num,red_robin)#red_robin  #this will be the the modifed endswitch eventually 
-#print("==yanks==testing 2 now ")
+print("===///===testing if multi switch here===///=====")
+#count_switches_in_inputstring(red_robin) #tested successfully 
+
+#this will just take in as input the string now not num,red_robin
+#main_control_sequencer(red_robin)#red_robin  #this will be the the modifed endswitch eventually 
+
+
+#smart_endswitch(red_robin)  #NESTEd in TREX
+two_choices(red_robin)
+
+#dual_modes(red_robin)
+#this calls TREX module for the nested switch 
+
+#the idea is that it tests if nested switch
+#and if so calls main_control_sequencer
+# and if NOT nestd then calls regular endswitch
+
+#######===================
+
+clever2('LAKE_TAHOE') #this existgs only in the silver module 
+
+
+
+print("--------")
+
+swan2 =''' 
+	switch(exp) {
+		case CASPER:  
+			print(\"how to make money in one easy lesson!\")
+			print("write code nobody else on earth can")
+			
+			
+		case COYOTE:
+			print("Sesame Street")
+			print(" groucho and animal")
+			print("this is so fun")
+			break
+			
+		case PALOMAR:
+			print("it actually works")
+			print(" third sitting in car at starbucks testing this sucker")
+			print("testing this on january 5th, 2022 at Starbucks")
+			print("deer and quail about fast cool humming birds blue jays")
+			print("the quail go in single file across the lush green lawn!!")
+			break
+			
+		case LAKE_TAHOE:
+			print("now we are inside of Lake Tahoe good skiing")
+			print(" alpine meadows")
+			print("all of the stars and the milky way galaxy crisp air")
+			print("==========")
+			break
+			
+		case FRANCE:
+			print("massive ship blocking canal in Egypt")
+			print("it was stuck for six days")
+			print("=========")
+			
+		case AMERICA:
+			print('manure')
+			print("no more horses")
+			print("==========")
+		
+				
+		default:
+			print('sorry no matches')
+			print("out of mocha")
+			break #mandatory break
+}
+'''
+
+#dual_modes(swan2)    
+#===========================
+#cool_endswitch(swan2) #this exists only in teh silver module 
+two_choices(swan2)
+
+#this calls teh silver module for single switch 
+
+
+	    
+###=======================================
+#this will only take in one input now print("==yanks==testing 2 now ")
+print("prematurly quitting to see if it worked or not")
+print("===END TEST=====")
+
+
+
+	
+exit()  #just to see where we stand at this point
 #print('=======after first pass===before second pass ===')
+
+
+
+
+
+
+
+
 
 
 
@@ -1346,9 +1414,24 @@ swt ='''
 '''
 endswitch(swt)
 
+print("=====================")
+print('now doing more nested switches ')
+num = 7   
+main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
 
-	
+print("")
+print("input 7")
+print("")
+print("last one now the 10th test ====")
 
+num = 7   
+main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
+print("")
+print("")
+print("input 3")
+print("")
+print("")
+print("last one now the 11th test ====")
 
 
 #num = 1#1    
@@ -1362,4 +1445,36 @@ endswitch(swt)
 
 #print("result of the seconds it took to run is..")
 #print("--- %s seconds ---" % (time.time() - start_time))
- 
+clever('ufos') #this would change varholder[0] 
+show_input_switch_string()   #input so what the string right below here
+hide_generated_code()
+#hide_generated_code() #from this point forward
+
+
+swt ='''
+	switch(exp) {
+		case 'ufos':  
+			print(\"ww2!\")
+			print('nimitz')
+			print("==area 51==")
+			
+	
+		
+		case 'Star Wars':
+			print('return of the jedi')
+			print("Luke Skywalker ")
+			
+		
+		case 'Darth Vader':
+			print('flying in it tie-fighter')
+			print("the force is strong in this one...")
+			break
+			
+		default:
+			print('no results')
+			print("that is all")
+			break
+}
+'''
+endswitch(swt) 
+

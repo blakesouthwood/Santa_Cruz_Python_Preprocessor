@@ -6,6 +6,8 @@ passcounter=[]
 passcounter.append(0)
 #so we have passcounter[0] dreamed up on saturday january 29th 2021
 
+dino=[]
+dino.append(0)
 
 #this actually works dec 31st, 2021 11:17am PST California, Menlo Park
 # Blake Southwood Software Engineer 
@@ -57,6 +59,51 @@ def show_quail():
 def empty_quail():
     del quail[:]
 
+##=============================================
+##  count_switches_in_inputstring(thestring)
+##=============================================
+## modified on feb 12th 2022 at 9am
+#  two conditional tests switch at 3 tabs and switchcount to verify a nested switch
+def count_switches_in_inputstring(thestring):
+	print("=====make it so right now=====count_switches_in_inputstring called===feb 12th=====")
+	number_of_switches ='';number_of_endswitches=''
+	number_of_switches =thestring.count("switch")
+	#just remembered need to count if a switch at three tabs
+	####################################
+	print("this section uses the tab count to detect at least ONE inner switch at 3 tabs")
+	nestedswitch= False #by default setting starting out
+	for line in thestring.splitlines():
+		print(line)
+		tabcount = line.count("\t")
+		if "switch" in line and tabcount == 3:
+			print(line) #since seeing is believing
+			print("this is by definition has a nested switch = TRUE")
+			nestedswitch= True
+			break
+	if nestedswitch == True:
+		print('tab test nested = True')
+	else:
+		print('tab test nested = False')
+	###########################################=       
+	number_of_endswitches=thestring.count("endswitch")
+	print("extra counts this many switch(s) in  string",number_of_switches)
+	print("extra counts this many endswitch(s) in  string",number_of_endswitches)
+	if number_of_switches > 2 and number_of_endswitches > 1:
+		switch_count_test= True
+		print("yes it is a multi switch")
+	else:
+		print("nope just a single switcharoo")
+		switch_count_test= False
+	print("the result of second condition = ",switch_count_test)
+	print("===at the bottom we determine with two conditions if Nested Switch===")
+	#this is testing two conditions tab depth switch at 3 and switch count
+	if nestedswitch == True and switch_count_test == True:
+		print("verified NESTED SWITCH = True")
+		return True
+	else:
+		print("verified NESTED SWITCH = False")
+		return False
+	#############################################
 '''
 print("stsrt")
 fill_bluejay_list()
@@ -5721,7 +5768,9 @@ def get_first_switch_number_from_all_strings():
 # for the python outoput strings in the stanford list
 # to use to make the nested_method names for the defs
 
-
+##================ feedinput() ======
+def feedinput(x):
+    dino[0] = x
 #exit();
 
 #
@@ -20936,12 +20985,16 @@ varholder.append('0')
 #apparently this needs to exist in this file
 def clever(i): #so it already exists we are changing its value
 	print("clever() on line 276==================")
-	varholder[0]='' #this should reset it to nothing
+	#varholder[0]='' #this should reset it to nothing
 	mytrace('clever()')
 	varholder[0]= i
+	sackvill[0]= i
+	print("inside of clever we have...")
+	print("sackvill[0] = ",sackvill[0])
 	#===this works and it fills a list with input from an argument
 	#print('varholder[0]=',varholder[0])
 	#print(varholder[0]) #to actually see proof
+	print("at bottom of clever() we have",varholder[0])
 	return varholder[0]
 	angel = varholder[0]
 
@@ -28728,38 +28781,15 @@ def crashing_waves_at_beach():
 	and replace index number in british with "break"
 	
 	'''
-	#print("this is what is in wilecoyote",wilecoyote)
-	#print("I got this working the other day at motel 6 on Tuesday night")
-	################################################
-	#print('in crashing waves at beach we have wilecoyote line 7975',wilecoyote)
-	#print("palmtrees at line 7977 we have ",palmtrees)
-	###=================#######@@@@@@@@@@@@@@@@@@@@@@@
-	#print("debugging on june 16th, 2021")
-	#print("palmtrees to see whats in this list")
-	##########################
-	#print('=====what is in wilecoyote line 28730======')
-	## this gets the location of the case in wilecoyote inside of palmtrees list
-	#print('=========what is in wilecoyote==============')
-	#print('wilecoyote list')
-	#print(wilecoyote)
-	#print("")
-	#print("looking in palmtres line 28771")
-	#print("palmtrees list length=", len(palmtrees))
-	#print("palmtrees=",palmtrees)
-	#print("=====================")
-	#print(len(wilecoyote))
-	#print("wilecoyote=",wilecoyote)
+	
 	for item in wilecoyote: #goes through list of case sections with breaks
 		#print(item)
 		####@@@++++++++++__+++========================
 		toad = get_location_of_case("palmtrees",str(item))
 		roadrunner.append(toad) #this returns a number the index position
-	#print("ROADRUNNER list contains numbers of index locations of")
-	#print(" cases in palmtrees",roadrunner)
-	#print("what is going on here.....")
+	
 #################################################
-	# make a new list based on digitalcandy
-	#print("in digitalcandy at line 7988 we have",digitalcandy)
+	
 	thecounter=0
 	for item in range(0,len(digitalcandy)): #using this for length of case sections sequence
 		#filling list with fallthrus
@@ -28783,23 +28813,7 @@ def crashing_waves_at_beach():
 		else:
 			mycounter += 1
 			
-	#print("============================")
-	#print("british is ",british) #break and fallthru list
-	#this changes the first position slot to starter
-
-	#this assigns values to specific elements in the british list
-	#british[0] = "starter"
-	#this ensures that the last one is a break no matter what it's force fed in. 
-	#british[-1] = "break" #makes sure last one is break which is absolutely must be. 
-	#print("here is the finished british list before adding teh fallthru with case")
-	#print("british now =",british)
-	##############
-	#print("british list at line 8024=",british)
-	#############
-	#do this first  assuming of course default (worry about adding defaeult laster
-	#check if "break" in switchcasetester
-	#if False then add it to bottom of default
-	#if no break in switch case it won't parse - sooo funny 
+	
 	
 	####==================================================
 	#print("=== OFFICIAL BRITISH LIST ==== USING SMART BREAKS AND FALLTHRUS NUMBERED == ")
@@ -28807,12 +28821,6 @@ def crashing_waves_at_beach():
 	########################################################
 	british[0]  = "starter"
 	british[-1] = "break" #just to be sure 
-	#print("####################E#######################")
-	#print("February 25th, 2021 Beach Coding with seagulls flying just above the waves ")
-	#print('totally NEW OCEAN BEACH CODE TO MAKE NEW FALLTHRU INTO LIST OCEANWAVES')
-	#print("which will be put into cranberries replacing what's in cranberries ")
-	#print("=================-------- waves at abeach -------+++++++++=================")
-	#print("======================= waves at beach and seagulls flying over ice plants =====")
 
 	#print("brisith list is")
 	#print(british)
@@ -28874,10 +28882,6 @@ def f22_fighter_jet(): #makes critical cranberries list which is the taillist fo
 	
 
 ###################################################
- 
-  #this makes the cranberries list which is the tail list used on codegen page
-#diamonds=[[2,7],[7,17],[17,24],[24,34]]
-#this makes the cranberries list
 
 ##===========================
 ##      def p51_mustange()  ==  adds the number to  fallthru(3) like that
@@ -28923,10 +28927,8 @@ def p51_mustang():
 			item=item.strip()
 			#print("item=",item)
 			item =item[-1]
-			
 			item = int(item)   #is this returning a number?
 			## yea this is retrieving the number from the end of the word fallthru
-			
 			
 			doggy =palmtrees[item] #just added -1   this is like fallthru('cherry')  #was starbucks
 			#print("doggy",doggy)
@@ -31177,6 +31179,7 @@ def clever(i): #so it already exists we are changing its value
 	varholder[0]='' #this should reset it to nothing
 	#mytrace('clever()')
 	varholder[0]= i
+	dino[0]= i #what the hell figured I would try it
 	#===this works and it fills a list with input from an argument
 	#print('varholder[0]=',varholder[0])
 	#print(varholder[0]) #to actually see proof
@@ -31186,13 +31189,79 @@ def clever(i): #so it already exists we are changing its value
 	return varholder[0]
 
 
+#############################=========================
+##  main_control_sequencer()
+##############################=========
+#num=''
+def main_control_sequencer(mystring):#====================
+    num = dino[0] #this is new 
+    print("====main_control_sequencer() called====")
+    #add 1 to pass counter
+    
+    #attempting to clear the lists 
+    passcounter[0] += 1 #this is where the counter resides and is added too. 
+    #print("----------===== main_control_sequencer()=====-----")
+    
+    switch_numbers_to_transfer=[] #should delete it starting out
+    real_switch_numbers_to_transfer=[]
+    real_switch_numbers_to_transfer=[]
+    thenumbers=[]
+    snowtime=[] #make sure this sucker is emptied
+    result_of_first_method=[]
+    result_of_second_method=[]
+    result_of_third_method=[]
+    result_of_fourth_method=[]
+    radical_list=[]
+    smart_switch_numbers=[]
+    testlist_of_strings=[] #just added this today
+    columbia_river=[]
+    stanford=[]
+    quail=[]
+    smartlist=[]
+
+   
+    check_if_lists_switch_numbers_to_transfer_and_thenumbers_are_empty()
+    #if the lists are not empty they get emptied here; they are tested separately
+    #print("=================///=================///=============")
+    
+    sliver=''
+    pobox[0]= mystring
+    sliver = pobox[0]
+  
+        
+    mystring=''
+    ## CALLS BOTTOM_STAGES(NUM,SILVER) HERE
+    ############################################
+    #bottom_stages called here #this is the method that does it all above 
+    bottom_stages(num,sliver) #and calls bypass205 just before it too
+    ############################################
+    num=''
+    mystring=''
+    sliver=''
+    
+
+
+    
 #from silver file feb 1, 2022 tuesday cold 
 ########################
 ##     endswitch(y)      this calls flow_valve_input which checks if cases are numbers or words
 ########################  and if numbers = True then call parser_mode_2(y); If numbers = False parser_mode_1(y)
 #this final version only does the string mode and numbers are done by making them strings
 def endswitch(y): #pulls in sw 
-	#endswitch code test
+	print("endswitch called inside of trex  ...")
+	print("the input thru clever shows varholder[0]=",varholder[0])
+	#inside of endswitch(string)
+	###### modified on Feb 12th, 2022###################################
+	#### there might be a problem if endswitch is also in silver code module
+	####################################
+	#nested =count_switches_in_inputstring(y) #this has to return True or False
+	#
+	#if nested == True:
+	#	nestedswitch('True')
+	#	main_control_sequencer(num,red_robin)#
+	#else:  #weird idea function with num as input that I access
+	#	nestedswitch('False')
+	##########################################
 	#print("new endswit h single switch test feb 1st")
 	switchcasetester='';switchcasetester=None;
 	del switchcasetester;switchcasetester='';
@@ -31206,27 +31275,47 @@ def endswitch(y): #pulls in sw
 	check_if_uppercase_constant_cases(y)
 	if baseline[0] != "nada": #means it converted to uppercase
 		y = baseline[0]
-	#####################
-	#this checks if first case is a number like case 2: returning True if numbers is positive
-	flow_valve_input1(y)   #puts True or False into valve[0] added April 2nd, 2021
-	#####################
-	# if numbers are true in case line
-	#modified recently to reduce the lines here with a one line if
-	# either way flush list sand parsermode1 is called whether valve[0] is true 
-	# the key is macro expansion is only called if numbers are True
-	#print("made it to here... valve[0]=",valve[0])
-	if valve[0] == True:  #meaning numbers like case 12:
-		macro_expansion(y); #checks if macros and expands them and converts numbers to strings
-		y=None; del y; y = cray[0];
-	#end if
-	#####################################
-	#print("made it to top of flush_lists()")
-	flush_lists() 
-	parser_mode_1(y) #y comes from cray[0] above flowing downwards
+		#####################
+		#this checks if first case is a number like case 2: returning True if numbers is positive
+		flow_valve_input1(y)   #puts True or False into valve[0] added April 2nd, 2021
+		#####################
+		# if numbers are true in case line
+		#modified recently to reduce the lines here with a one line if
+		# either way flush list sand parsermode1 is called whether valve[0] is true 
+		# the key is macro expansion is only called if numbers are True
+		#print("made it to here... valve[0]=",valve[0])
+		if valve[0] == True:  #meaning numbers like case 12:
+			macro_expansion(y); #checks if macros and expands them and converts numbers to strings
+			y=None; del y; y = cray[0];
+		#end if
+		#####################################
+		#print("made it to top of flush_lists()")
+		flush_lists() 
+		parser_mode_1(y) #y comes from cray[0] above flowing downwards
 		
-	 
-
-
+## critical testing of smart_endswitch feb 12th saturday 2022 starbucks	
+##==================================================================
+##  smart_endswitch to take in single switch and nested switches 
+##===================================================================
+def smart_endswitch(mystring):
+	print("==INSIDE OF SMART_ENDSWITCH called==== SUPER CRITICAL TEST testing of theory =======")
+	print("==this is inside of trex==================================================")
+	nested =count_switches_in_inputstring(mystring) #this has to return True or False
+	if nested == True:
+		nestedswitch('True')
+		print("===NESTED SWITCH IS TRUE==")
+		print('dino[0]=',dino[0])
+		main_control_sequencer(mystring) 	
+	else:  #weird idea function with num as input that I access
+		print("=== SINGLE SWITCH ==")
+		#varholder[0] = "PALOMAR"
+		#print("varholder[0]=",varholder[0])
+		#varholder[0] = dino[0] #so clever here
+		cool_endswitch(mystring) #which is in silver code one
+     
+#for some strange reason varholder[0] is getting emptied figure out where
+     
+     
 
 #this part hasn't been tested yet.
 # I have to make sure that the normal endswitch() continues to work 
@@ -32783,9 +32872,6 @@ bottom='''main_switch('1')''' #this calls it this triggers the generated code to
 #mrendswitch(red_robin)
 
 
-#=================================================
-####======   BYPASS205() ========   ##############
-##=================================================
 # BYPASS205() takes in the quail list
 # and outputs the stanford list of python switch cases code 
 ########### bypass 205 ########### july 1st 2021 testing starbucks in gilroy
@@ -32794,93 +32880,33 @@ bottom='''main_switch('1')''' #this calls it this triggers the generated code to
 #this bypass205 is different then elsewhere in other files apparently - plus this one works
 
 
+#=================================================
+####======   BYPASS205() ========   ##############
+##=================================================
+
+
 def bypass205(y): #this runs the input strings thru parser and code gen 
 	#print("-------------bypass205(y)---------------") 
-	#print("looking in radical_list")
-	#for item in radical_list: #this loops thru radical_list that had quail in it 
-	#	print(item)
-	#print("in m31 list")
-	#for item in m31: #was in quail
-	#	print(item)
-	# what if I put it(mission control) which is really
-	# getting the pairs of switches and endswitches and sseparting the strings
-	# and filling the quail list and then doing chian methods on it here JUST IN TIME
-	
-	#print('a theory here to call bypass 205 by attaching it above ')
-	#print("THIS IS BYPASS205() officially called translating javascript switch to python switch")
-	#print("bypass205() called HERE") #print("==== bypass205 test === it calls parser guts====") #and puts them into stanford list
-	#print("this one loops thru the quail list already filled up with strings of switches prepped")#dec 14th notes
 	del stanford[:] #this empties the stanford list
-	#=======================================================================
-	#the goodies are in radical_list and in thenumbers
-	#print("inside of bypass205 at top what is in readical_list")
-	#print("radical_list=",radical_list)
-	#before bypass the first stage fills the quail list of separates switches
-	#and runs chain methods and then fills radical_list
-	#print("what is the length of radical_list inside of top of bypass205",len(radical_list))
-	#print("adding this on line 32578 on January 25th 2020")
-	#for item in radical_list:
-	#    print(item)
-	#print('line 32634 length of radical_list=',len(radical_list))    
-	    
-	##===============
+	
 	del quail[:] #ah it's in radical list 
 	for item in radical_list: #from starship running chain methods
 		quail.append(item)
-	#========== new years eve surgery to fix bug by putting radical_list into quail
-	#print("the length of quail list=",len(quail))
-	#print("let's loop thru quail first")
+	
 	if len(quail) == 0:
 		pass #print("quail list is empty ERROR")
-		#print("quail=",quail)
-		#print("ABORT ABORT ABORT quail is empty at beginning of bypass failure failure")
-		
+	
 	else:
 		pass #print("length of quail list = ",len(quail))
-	#loop thru quail list 
-	#for item in quail:
-	#	print(item)
+	
 		
 	del switch_numbers_to_transfer[:]
 	#print("GET LENGTH HERE FOR ==  thenumbers=", len(thenumbers))
 	#print("right here thenumbers are fed into switch_nubmers_to_transfer")
 	for item in thenumbers:
 		switch_numbers_to_transfer.append(item)
-	##====== brainstorming here ===== dec 31st ==============
-	#this is calling parser_guts() on each switch string in quail 
-	#this would be after the big switch has been separated into individual strings
-	#and reduced by chain methods and then put into quail list
-	#print("inside of start of bypass205() let's look at quail input")
-	#print("this is after the input strings have gone thru the chain_methods")
-	#print("============== inside bypass205 =============")
-	#print("===== number of strings in quail=",len(quail))
-	#print("============== inside bypass205 =============")
-	#print("quail list length =",len(quail))
-	##### test code ########
-	#######################
-	### january 16th saturday testing ########
-	#######################
-	##### deleting quail to see the effect ##################
-	#######################
-	#del quail[:] #deleting quail list to see the effect
-	#######################
-	#######################
-	#######################
-	#######################
-	#print("programmablly empteid quail list to see what happens")
-	#print('quail length =',len(quail))
-	#######################
-	#######################
-	#########################################
-	#if len(quail) == 0:
-	#	print("ERROR inside top beginning of bypass205()")
-	#	print("WARNING this will not work")
-	#else:
-	#	print("quail length=",len(quail))
-	#########################################
-	#for item in quail:
-	#	print(item)
-	#	print("====================")
+	
+	
 	for item in quail: # 0, 1, 2 #so it should call the parser and code gen three times
 		y = item #this puts the contents of each string in quail into y 
 		#everything below here is the same in parser code
@@ -32891,19 +32917,7 @@ def bypass205(y): #this runs the input strings thru parser and code gen
 		###############
 		parser_guts(y) #y is put in as a param to paser_guts(y) while looping thru quail list grabbing item(string)
 		###############
-	#new at this point delete helper lists
-	# wednesday january 26th 2022 10:19am
-	#print("bypass205 has finished and now I am deleting the input lists after")
-	#print("showing what their respective lengths are and then after clearing them")
-	#print("==this is the moment after completing bypass205() ====================================")
-	#check what their contents are first
-	#print("length of testlist_of_strings=",len(testlist_of_strings))
-	#print("length of columbia_river=", len(columbia_river)) 
-	#print("length of taurus=", len(taurus)) 
-	#print("length of gemini=", len(gemini)) 
-	#print("length of radical_list=", len(radical_list)) 
-	#print("length of m31=", len(m31)) 
-	#print("length of quail=", len(quail)) 
+	
 	
 	
 	del testlist_of_strings[:]
@@ -32914,13 +32928,7 @@ def bypass205(y): #this runs the input strings thru parser and code gen
 	del radical_list[:]
 	del m31[:]
 	del quail[:]
-	#print("length of testlist_of_strings=",len(testlist_of_strings))
-	#print("length of columbia_river=", len(columbia_river)) 
-	#print("length of taurus=", len(taurus)) 
-	#print("length of gemini=", len(gemini)) 
-	#print("length of radical_list=", len(radical_list)) 
-	#print("length of m31=", len(m31)) 
-	#print("length of quail=", len(quail)) 
+	
 	
 ##################################################==========================	
 	
@@ -37501,11 +37509,7 @@ def add_comment_and_line_number_to_all_switches(inputstring): #this modifies the
 			newstring += line + "\n"
 			counter += 1
 	awesome = newstring #it was concatted to newstring
-	#for line in newstring.splitlines(): #was redrobin.splitlines()
-	#	print(line)
-	#print("AFTER ADDING the line number as comments to the switches in red robin baby ")	
-	#print(newstring)   #it prints red_robin switch combo string with the line numbers added in comments
-	#print("smart_switch_numbers=",smart_switch_numbers)  #this is new here too 
+	
 	return newstring #this way I can capture the changed string
 
 
@@ -37530,11 +37534,7 @@ endswitch_location=[]
 together_pair=[]
 def get_switch_and_endswitch_locations(z): #from string z input parameter
 	return #this is not called !!!!
-	#return we START BUILDING
-	#print("thbis is what I am testing now now now")
-	#print("  get switch and endswitch locations###  called line 322 #####")
-	#print("######get switch and endswitch locations########")
-	#this empties switch and endswitch lists
+	
 	empty_switch_and_endswitch_list_locations()
 	
 	counter=0 #it was 0 starting counting from 1
@@ -37560,25 +37560,13 @@ def get_switch_and_endswitch_locations(z): #from string z input parameter
 		#'''
 	#print("at this point this is what we have...after testing BIG YELLOW BIRD go bird")
 	del switch_location[0] #takes out first number not needed
-	#print("switch_location=",switch_location)
-	#print("endswitch_location=",endswitch_location)
-	#test_string1exit()
-	#print("this over writes the contents of these two lists ")		
 	
-	#print(z)                #now I remember that is the first switch which doesn't matter
-	#print("I deleted the first switch since I'm not bothering with it")
-	#print("switchlocations=",switch_location)
-	#print("on line 180 endswitchlocation=",endswitch_location)
 	
 	#print("the length of switch list =",len(switch_location))
 	answer = len(switch_location)
 	answer = answer -1
 	
-	#print('switch_location=',switch_location)
-	#print('endswitch_location=',endswitch_location)
-	#the input is above
 	
-
 
 
 
@@ -37595,18 +37583,12 @@ def get_switch_and_endswitch_locations(z): #from string z input parameter
 	counter=0
 	print("starting at counter =0")
 	
-	#print("=============== starbucks morgan hill =====")
-	#print(switch_location)
-	#print(endswitch_location)
-	#print("emptying together pair here")
+	
 	del together_pair[:] #delete it just in case to start with clear chalkboard
-	#print("=======") #THIS FILLS THE TOGETHER_PAIR LIST OF SWITCH,ENDSWITCH 
-	#print("this loop fills the together_pair list of switch,endswitch numbers")
-	#print("this is so much dam fun oh yeah")
+	
 	total1 = len(switch_location)
 	total2 = len(endswitch_location)
-	##print("total1 =",total1)
-	#print("todal2=",total2)
+	
 	#print("this is where we START BUILDING the ===TOGETHER PAIR =====")
 	for item in switch_location:
 		solution = "[" + str(switch_location[counter]) + "," + str(endswitch_location[counter]) + "]" 
@@ -37994,18 +37976,10 @@ def bottom_stages(num,mystring): #calls concat_items_in_list() and exec(string)
     #print("===========")
     #print("radical_list=",radical_list)
     neutralize_list(radical_list)
-    #print("radical_list=",radical_list)
-    #print("m31=",m31)
     neutralize_list(m31)
     del snowboarding[:]
     # print("snowboarding=",snowboarding)
-    #print("m31=",m31)
-    #print("now for the Grand finally===>>>>")
-    #print("switch_numbers_to_transfer=",switch_numbers_to_transfer)
-    #show_these_lists_at_bottom_after_a_run()
-    #print("smart_switch_numbers=",smart_switch_numbers)
-    #neutralize_list(smartlistlocations)
-    #print("smartlistlocations=",smartlistlocations)
+ 
     for x in smart_switch_numbers:
         smart_switch_numbers.pop()
     del smart_switch_numbers[:]
@@ -38016,11 +37990,7 @@ def bottom_stages(num,mystring): #calls concat_items_in_list() and exec(string)
     del smartlistlocations[:]
     #print("smartlistlocations=",smartlistlocations)
     show_quail_and_stanford_lists()
-    #print("contents of smartcasemanager=",smartcasemanager)
-    
-    #print("see if this helps empty it smartcasemanager")
-    #for item in smartcasemanager:
-    #smartcasemanager.pop()
+   
 
 
   
@@ -38042,13 +38012,8 @@ wilson=[]
 def check_if_lists_switch_numbers_to_transfer_and_thenumbers_are_empty():
     #print("=========checking if list switch_numbers_to_transfer is empty=======")
     if len(switch_numbers_to_transfer) > 0:
-        #print("==RED==ERROR switch numbers to transfer is NOT empty")
-        #print("pleaseswitch_numbers_to_transfer=",switch_numbers_to_transfer)
-        #print('will now proceed emptying it')
+       
         neutralize_list(switch_numbers_to_transfer)#should empty it
-        #print('after neutralizing the list we have: should be empty now')
-        #print("switch_numbers_to_transfer=",switch_numbers_to_transfer)
-        #print("now..[GREEN]")
     else:
         pass
         # print("[GREEN]  switch_numbers_to_transfer list is empty good")
@@ -38056,94 +38021,59 @@ def check_if_lists_switch_numbers_to_transfer_and_thenumbers_are_empty():
     #####===============================================
     #print('checking if list thenumbers is empty')
     if len(thenumbers) > 0:
-        #print("==RED==ERROR thenumbers is NOT empty")
-        #print("thenumbers=",thenumbers)
-        #print("will now proceed emptying it")
+      
         neutralize_list(thenumbers) #should empty this list
-        #print("after neutralizing the list we have should be empty now")
-        #print("thenumbers=",thenumbers)
-        #print("now [GREEN]")
+    
     else:
         pass
-        #print("[GREEN] thenumbers is empty good")
-        #print("thenumbers=",thenumbers)
-        
-    #print("end of test of lists switch_numbers_to_transfer and thenumbers")
-
+      
 #I will ahve the endswitch down here which will be the main for calling the sequence list here.
-#############################=========================
-##  main_control_sequencer()
-##############################=========
-num =''
-def main_control_sequencer(num,mystring):#====================
-    #add 1 to pass counter
-    
-    #attempting to clear the lists 
-    passcounter[0] += 1 #this is where the counter resides and is added too. 
-    #print("----------===== main_control_sequencer()=====-----")
-    
-    switch_numbers_to_transfer=[] #should delete it starting out
-    real_switch_numbers_to_transfer=[]
-    real_switch_numbers_to_transfer=[]
-    thenumbers=[]
-    snowtime=[] #make sure this sucker is emptied
-    result_of_first_method=[]
-    result_of_second_method=[]
-    result_of_third_method=[]
-    result_of_fourth_method=[]
-    radical_list=[]
-    smart_switch_numbers=[]
-    testlist_of_strings=[] #just added this today
-    columbia_river=[]
-    stanford=[]
-    quail=[]
-    smartlist=[]
-    # print('right here when we start what do we have to see')
-    #     print("switch_numbers_to_transfer=",switch_numbers_to_transfer)
-    #     print("real_switch_numbers_to_transfer=",real_switch_numbers_to_transfer)
-    #     print("real_switch_numbers_to_transfer=",real_switch_numbers_to_transfer)
-    #     print("thenumbers=",thenumbers)
-    #     print("snowtime=",snowtime)
-    #     print("result_of_first_method=",result_of_first_method)
-    #     print("result_of_second_method=",result_of_second_method)
-    #     print("result_of_third_method=",result_of_third_method)
-    #     print("result_of_fourth_method=",result_of_fourth_method)
-    #     print("radical_list=",radical_list)
-    #     print("smart_switch_numbers=",smart_switch_numbers)
-    #     print("testlist_of_strings=",testlist_of_strings)
-    #     print("columbia_river=",columbia_river)
-    #     print("stanford=",stanford)
-    #     print("quail=",quail)
-    #     print("smartlist=",smartlist)
-    #     #added this on jan 22nd to clear out mystring bug
-    #     ###===============================================
-    #     print("==defensive programming ===============///=============")
-    #print("at the beginning of a new nested switch verifying that")
-    #print("thenumbers list and switch_numbers_to_transfer are empty")
-    #check_if_words_red_white_blue_in_string(mystring)
-    #print("and if not then automatically emptying them both")
-    check_if_lists_switch_numbers_to_transfer_and_thenumbers_are_empty()
-    #if the lists are not empty they get emptied here; they are tested separately
-    #print("=================///=================///=============")
-    
-    sliver=''
-    pobox[0]= mystring
-    sliver = pobox[0]
-    #print(" in main control sequencor the input string is")
-    #print("=======0=0=0=0=0=0=00=0========")
-    #for line in sliver.splitlines():
-    #    print(line)
-        
-    mystring=''
-    #bottom_stages called here #this is the method that does it all above 
-    bottom_stages(num,sliver) #and calls bypass205 just before it too
-    num=''
-    mystring=''
-    sliver=''
-    
 
-   
+
+
+
+
+##===============================
+##  smart_endswitch
+##================================
+def smart_endswitch(mystring):
+	print("==INSIDE OF SMART_ENDSWITCH called==== SUPER CRITICAL TEST testing of theory =======")
+	print("==this is inside of trex==================================================")
+	nested =count_switches_in_inputstring(mystring) #this has to return True or False
+	if nested == True:
+		nestedswitch('True')
+		print("===NESTED SWITCH IS TRUE==")
+		print('dino[0]=',dino[0])
+		main_control_sequencer(mystring) 	
+	else:  #weird idea function with num as input that I access
+		print("=== SINGLE SWITCH ==")
+		#varholder[0] = "PALOMAR"
+		#print("varholder[0]=",varholder[0])
+		#varholder[0] = dino[0] #so clever here
+		cool_endswitch(mystring) #which is in silver code one
+		  
 ##############
+
+##======= dual modes ====feb 12th 2022====
+def dual_modes(stringname):
+	print("======dual modes called=====")
+	#this will just take in as input the string now not num,red_robin
+	#main_control_sequencer(red_robin)#red_robin  #this will be the the modifed endswitch eventually 
+	nested =count_switches_in_inputstring(mystring)
+	if nested == True:
+		nestedswitch('True')
+		print("===NESTED SWITCH IS TRUE==")
+		print('dino[0]=',dino[0])
+		print("about to call smart_endswitch(stringnam)")
+		smart_endswitch(stringname) #NESTED switch in TREX MODULE
+	else:  #weird idea function with num as input that I access
+		print("=== SINGLE SWITCH ==")
+		print("about to call cool_endswitch in silver module")
+		cool_endswitch(mystring) #which is in silver code one
+
+
+
+
 #print("doing testing now....")
 #num = 1#1    
 #main_control_sequencer(num,red_robin)#red_robin  #this will be the the modifed endswitch eventually 
