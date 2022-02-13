@@ -1,26 +1,17 @@
-import trex  
-from trex  import * 
-
-import official_switch_case_silver
-from official_switch_case_silver  import *  
-
-##========================================
-##  two_choices(mystring ##
-####======== two_choices(mystring):============
-def two_choices(mystring):
-	print("==this is TWO_CHOICES testing this sucker===")
-	nested =count_switches_in_inputstring(mystring)
-	print("nested =",nested)
-	if nested == True:
-		smart_endswitch(mystring)  #nested switch
-	else:
-		cool_endswitch(mystring)   #single switch
-	
+#import working_on_dual_mode
+#from working_on_dual_mode import *
+#I imported into trex to see if that works 
+import mocha  
+from mocha  import * 
+print("this is mocha at the top this DID NOT ACTUALLY work")
 
 
-print("I have tested these and they work inside of functions too")
 
 
+
+#print("I have tested these and they work inside of functions too")
+
+print("we are sitting in starbucks in Morgan HIll waiting for mocha")
 
 nestedswitch('False')
 
@@ -75,7 +66,8 @@ ducky ='''
 			break #mandatory break
 }
 '''
-endswitch(ducky)
+
+two_choices(ducky)
 
 
 '''
@@ -135,7 +127,7 @@ swan1 ='''
 			break #mandatory break
 }
 '''
-endswitch(swan1)
+two_choices(swan1)
 
 
 
@@ -196,7 +188,7 @@ swan2 ='''
 			break #mandatory break
 }
 '''
-endswitch(swan2)
+two_choices(swan2)
 
 
 
@@ -783,7 +775,7 @@ swan2 ='''
 '''
 
     
-endswitch(swan2)
+two_choices(swan2)
 
 print("===TEST TEST====TEST TEST====TEST TEST====TEST TEST====TEST TEST==")
 print("===TEST TEST====TEST TEST====TEST TEST====TEST TEST====TEST TEST==")
@@ -989,7 +981,7 @@ print("===END TEST=====")
 
 
 	
-exit()  #just to see where we stand at this point
+#exit()  #just to see where we stand at this point
 #print('=======after first pass===before second pass ===')
 
 
@@ -1012,7 +1004,7 @@ elcapitan='''
 			print('a walk in the park')
 			print('listening to neo music ')
 			break
-
+		
 		case 7 thru 10: 
 			print("two !")
 			print('cold tennis')
@@ -1043,9 +1035,25 @@ elcapitan='''
 
 #nestedswitch('True') #means True for nested
 print("==== testing elcapitan new switch string all kinds of probs why==")
+#num = 1
+#feedinput(num) #puts num into dino[0] for testing purposes only
 
-num = 1   
-main_control_sequencer(num,elcapitan)#
+#count_switches_in_inputstring(red_robin) #tested successfully 
+
+#this will just take in as input the string now not num,red_robin
+#main_control_sequencer(red_robin)#red_robin  #this will be the the modifed endswitch eventually 
+
+print("testing el capitan here")
+
+
+
+num = 8   
+feedinput(num)
+main_control_sequencer(elcapitan)#
+
+exit()
+
+
 
 print("second attempt go high")
 num = 7   

@@ -10014,7 +10014,7 @@ def pink1():
 ########################  and if numbers = True then call parser_mode_2(y); If numbers = False parser_mode_1(y)
 #this final version only does the string mode and numbers are done by making them strings
 def cool_endswitch(y): #pulls in sw 
-	print("==cool_endswitch() called =SILVER CODE ENDSWITCH=====")
+	print("==cool_endswitch() called =SILVER CODE ENDSWITCH===line 10017==")
 	print("varholder[0]=",varholder[0]) #should say PALOMAR
 	switchcasetester='';switchcasetester=None;
 	del switchcasetester;switchcasetester='';
@@ -10048,8 +10048,15 @@ def cool_endswitch(y): #pulls in sw
 
 
 
-	
 
+##========================================
+##  two_choices(mystring ##
+####======== two_choices(mystring):============
+# two_choices where is this being called??
+
+
+
+	
 
 	
 
