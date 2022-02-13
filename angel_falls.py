@@ -1,7 +1,10 @@
 Figured out bug fixed it. 12:40pm Sun Feb 13, 2022
 Grateful but definitely lucky through perseverance.
 
-Found bug in processing elcapitan string detected that the fuzzy logic needs to be modified
+Found bug ( I had two conditions to determine if nested. reduced it to 1 which is if tab depth of as switch
+is 3 then it's nested.
+while processing elcapitan string detected that the fuzzy logic needs to be modified and I wasn't using two_choices method
+	   
 because it mistakenly thought that the nested switch was a single switch to fixing that now.
 time 12:27pm Feb 13th, 2022  This proves the importance of continuous testing and print statements.
 
