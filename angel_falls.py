@@ -1,3 +1,6 @@
+Figured out bug fixed it. 12:40pm Sun Feb 13, 2022
+Grateful but definitely lucky through perseverance.
+
 Found bug in processing elcapitan string detected that the fuzzy logic needs to be modified
 because it mistakenly thought that the nested switch was a single switch to fixing that now.
 time 12:27pm Feb 13th, 2022  This proves the importance of continuous testing and print statements.
