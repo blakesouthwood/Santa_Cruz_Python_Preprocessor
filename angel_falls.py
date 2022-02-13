@@ -1,4 +1,6 @@
 Sun Feb 13, 2022 12:46 pm 
+https://www.youtube.com/watch?v=TsTFVdcpLrE&list=RDveHqJSC-9Lo&index=10
+	
 Just tested newest code in Sublime Text 3 and it runs no bugs and hella fast.
 I still need to do some refactoring and will cut out half of the code soon.
 
