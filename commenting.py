@@ -24,7 +24,7 @@ fishyone2 ='''
 		default:
 			print('no results')
 			print("that is all")
-			break
+			break //what about here too
 }
 '''
 
@@ -355,7 +355,7 @@ multiline_C_comment_changer()
 #the idea is go thru once actually
 #the rule is if within /*  and */ then can't have // inside of it
 def on_the_fly_comment_changer(stringname):
-	breakpoint()
+	#breakpoint()
 	print("==BIG CHANGE NOW=====on_the_fly_comment_changer()===big flies====")
 	smarttabs='';buildstring='';series_comment= False;smarttabs='';megaline='' 
 	for line in stringname.splitlines():
@@ -406,7 +406,7 @@ def on_the_fly_comment_changer(stringname):
 	
 	
 print("this is the on-the-fly test")
-cool1= on_the_fly_comment_changer(fishyone2) #this is the input string for testing
+cool1 =on_the_fly_comment_changer(fishyone2) #this is the input string for testing
 
 for line in cool1.splitlines():
 	print(line)
