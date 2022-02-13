@@ -75,11 +75,11 @@ def count_switches_in_inputstring(thestring):
 	print("this section uses the tab count to detect at least ONE inner switch at 3 tabs")
 	nestedswitch= False #by default setting starting out
 	for line in thestring.splitlines():
-		print(line)
+		#print(line)
 		tabcount = line.count("\t")
-		if "switch" in line and tabcount == 3:
-			print(line) #since seeing is believing
-			print("this is by definition has a nested switch = TRUE")
+		if "switch" in line and tabcount == 3:  #only test that truley matters at 3 tabs
+			#print(line) #since seeing is believing
+			#print("this is by definition has a nested switch = TRUE")
 			nestedswitch= True
 			break
 	if nestedswitch == True:
@@ -87,6 +87,7 @@ def count_switches_in_inputstring(thestring):
 	else:
 		print('tab test nested = False')
 	###########################################=       
+	'''
 	number_of_endswitches=thestring.count("endswitch")
 	print("extra counts this many switch(s) in  string",number_of_switches)
 	print("extra counts this many endswitch(s) in  string",number_of_endswitches)
@@ -99,24 +100,15 @@ def count_switches_in_inputstring(thestring):
 	print("the result of second condition = ",switch_count_test)
 	print("===at the bottom we determine with two conditions if Nested Switch===")
 	#this is testing two conditions tab depth switch at 3 and switch count
-	if nestedswitch == True and switch_count_test == True:
+	'''
+	if nestedswitch == True:# and switch_count_test == True:
 		print("verified NESTED SWITCH = True")
 		return True
 	else:
 		print("verified NESTED SWITCH = False")
 		return False
 	#############################################
-'''
-print("stsrt")
-fill_bluejay_list()
-show_bluejay()
-fill_quail_from_bluejay()
-clearbluejay()
-show_quail()
-show_bluejay()
-empty_quail()
-show_quail()
-'''
+
 #Sent from my iPhone
 
 

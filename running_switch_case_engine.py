@@ -1014,8 +1014,8 @@ elcapitan='''
 			exp ='red'
 			switch(exp)   
 				case 'red':
-					print("we are red blood cells ")
-					print("3 billionof them ...")
+					print("we are RED BLOOD cells ")
+					print("3 billion of them .go baby go make it happen..")
 					break
 				case 'blue':
 					print("we are red blood cells ")
@@ -1045,11 +1045,12 @@ print("==== testing elcapitan new switch string all kinds of probs why==")
 
 print("testing el capitan here")
 
-
+#nestedswitch('True')
 
 num = 8   
 feedinput(num)
-main_control_sequencer(elcapitan)#
+two_choices(elcapitan)
+#main_control_sequencer(elcapitan)#
 
 exit()
 
