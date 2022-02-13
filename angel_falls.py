@@ -2,6 +2,13 @@ Feb 13th, 2022
 SOLVED THE BUG - it works as designed PURE ECSTACY. WHAT A HIGH. High as a kite.
 Wow. Sucker works. 
 
+Right now it says two_choices(stringname) and I will change that to endswitch(stringname) next.
+I am so thrilled that I solved it. Just fired up Visual Studio Code but realized I just needed to try what
+should work and it worked. I was swapping methods around and it just messed it up and then I realized that
+I need to add the key fork function in a separate file with the imported files and then import that one file
+which is mocah.py and it worked - as if it was destined to work. I am speechless with happiness right now.
+
+
 
 Feb 12th 2022 12:32 just got endswitch(stringname) to manage single and nested switches.
 For testing it looks like this in alpha form.
