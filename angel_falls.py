@@ -1,5 +1,18 @@
 Sun Feb 13, 2022 12:46 pm 
 https://www.youtube.com/watch?v=TsTFVdcpLrE&list=RDveHqJSC-9Lo&index=10
+I made a method to allow C style comments within the switch case code input
+like this  in file commenting.py
+/*
+comment
+comment
+comment
+*/
+
+// and like this
+
+#but you can't put /* inside of code */ that has actual code on each side; can only add side comment after on right
+It replaces the block of code with # on the left side of each line
+
 
 switch engine for python files for beta2
 #================================
