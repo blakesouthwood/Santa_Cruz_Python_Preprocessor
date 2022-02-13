@@ -3,7 +3,7 @@
 #I imported into trex to see if that works 
 import mocha  
 from mocha  import * 
-print("this is mocha at the top this DID NOT ACTUALLY work")
+print("this is mocha at the top this DID NOT ACTUALLY work(yes it did and does")
 
 
 
