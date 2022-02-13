@@ -1,3 +1,8 @@
+Feb 13th, 2022
+SOLVED THE BUG - it works as designed PURE ECSTACY. WHAT A HIGH. High as a kite.
+Wow. Sucker works. 
+
+
 Feb 12th 2022 12:32 just got endswitch(stringname) to manage single and nested switches.
 For testing it looks like this in alpha form.
 So this means that I can use one method to call both single and nested strings and it just started working
