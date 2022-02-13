@@ -8,6 +8,11 @@ should work and it worked. I was swapping methods around and it just messed it u
 I need to add the key fork function in a separate file with the imported files and then import that one file
 which is mocah.py and it worked - as if it was destined to work. I am speechless with happiness right now.
 
+I will trigger this method to be done automatically next.
+Right now it's forced fed with nestedswitch('True') before the function and that can be triggered
+once it detects if it's either nested or not thru the endswitch beginning methods.
+
+
 
 
 Feb 12th 2022 12:32 just got endswitch(stringname) to manage single and nested switches.
