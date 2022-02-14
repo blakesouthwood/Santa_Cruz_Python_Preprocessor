@@ -1,3 +1,91 @@
+MOnday, Feb 14th, 2022
+All switches - single and nested - running from same one method currently called two_choices()
+which will become endswitch(stringname).
+
+code music the moment switch ran inside of a function
+https://www.youtube.com/watch?v=wAObbLeRIEQ
+	
+Just ran a single switch inside of a function.
+Will now test running a nested switch inside of a function.
+
+###################################################
+###################################################
+def an_internal_test():
+	print("====an_internal_test()===!!!==")
+	clever('gone fishing')
+	swu2 = '''
+	switch(exp) {
+		case 'rasberries and cream':  
+			print("==where's the cream house!")
+			print("===tastes good====")
+			varholder[0]= "Tahoe Cabin in BLIZZARD"
+			print(varholder[0])
+			break
+			
+		case 'gone fishing':
+			print('fallen leaf lake')
+			fallthrough	
+			
+		case 'driving car':
+			print('where is the gti')
+			print("really a porsche GT...")
+			varholder[0]= "Porsche GT sounds nice"
+			print(varholder[0])
+			break
+			
+		case 'macbook pro':
+			print('fast laptop')
+			print("when will the code work...")
+			fallthrough
+			
+		default:
+			print('six walking duck de fa ul t')
+			print("flying geese")
+			break
+	}
+	''' #this calls the internal switch case 
+	two_choices(swu2) #this will say endswitch(swu2)
+	print(varholder[0])
+	
+	
+an_internal_test()
+
+##==========================================================================
+NOTE: the implimentation of the switch case is completely dependent on tabs
+which is necessary for the whole thing to work. So I have Text Display > Show Invisibles
+in BBEdit to see the triangles representing the triangles for indentation.
+##==========================================================================
+::OUTPUT::
+==at the very bottom now ====testing single switch inside of a function now ======
+====an_internal_test()===!!!==
+clever() on line 276
+two_choices called 
+=====make it so right now=====count_switches_in_inputstring called===feb 12th=====
+this section uses the tab count to detect at least ONE inner switch at 3 tabs
+tab test nested = False
+verified NESTED SWITCH = False
+==cool_endswitch() called =SILVER CODE ENDSWITCH===line 10017==
+varholder[0]= gone fishing
+
+varholder[0] = gone fishing
+['gone fishing']
+
+the input exp in clever was::  gone fishing
+we are inside of switch now gone fishing
+case = gone fishing
+fallen leaf lake
+we are inside of switch now driving car
+case = driving car
+where is the gti
+really a porsche GT...
+Porsche GT sounds nice
+clearit()
+a list
+['starter']
+Porsche GT sounds nice
+
+##===========================================================================
+
 Sun Feb 13, 2022 12:46 pm 
 https://www.youtube.com/watch?v=TsTFVdcpLrE&list=RDveHqJSC-9Lo&index=10
 I made a method to allow C style comments within the switch case code input
