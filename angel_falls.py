@@ -84,6 +84,12 @@ a list
 ['starter']
 Porsche GT sounds nice
 
+============ FEB 14th Monday 9:38 AM ================
+Working on bug with nested switch.
+The parser is moving the break from it's position to after a case block that has nested switches.
+Looking at the output code generation the break is AFTER where it should be below nested switches.
+So it's a logic error so I will investigate it further.
+
 ##===========================================================================
 
 Sun Feb 13, 2022 12:46 pm 
