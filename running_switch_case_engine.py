@@ -1052,14 +1052,15 @@ feedinput(num)
 two_choices(elcapitan)
 #main_control_sequencer(elcapitan)#
 
-exit()
+#exit()
 
 
 
 print("second attempt go high")
 num = 7   
-main_control_sequencer(num,elcapitan)#
-
+#main_control_sequencer(num,elcapitan)#
+feedinput(num)
+two_choices(elcapitan)
 # I was missing a : after a case and missing default: at bottom
 #exit()
 
@@ -1070,7 +1071,9 @@ print("")
 print("input 7")
 print("")
 num = 7   
-main_control_sequencer(num,red_robin2)#red_robin  #this will be the the modifed endswitch eventually 
+feedinput(num)
+two_choices(red_robin2)
+#main_control_sequencer(num,red_robin2)#red_robin  #this will be the the modifed endswitch eventually 
 #print("====after second pass== before 3rd pass=== ")
 #show_it_to_me()
 print("")
@@ -1081,7 +1084,9 @@ print(" === 3rd test === nested==")
 #print("this is the third PASS doing regular red_robon second now")
 
 num = 1   
-main_control_sequencer(num,red_robin3)#red_robin  #this will be the the modifed endswitch eventually 
+feedinput(num)
+two_choices(red_robin3)
+#main_control_sequencer(num,red_robin3)#red_robin  #this will be the the modifed endswitch eventually 
 #print("=====after 3rd pass ======")
 #show_it_to_me()
 #print("go I want to fly like superman")
@@ -1091,21 +1096,27 @@ print("")
 print("================number 4 test ======")
 
 num = 1   
-main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
+feedinput(num)
+two_choices(red_robin4)
+#main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("input 1")
 print("")
 print("last one now the 5th test ====")
 
+
 num = 1   
-main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
+feedinput(num)
+two_choices(red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("input 7")
 print("")
 print("last one now the 6th test ====")
 
 num = 7   
-main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
+feedinput(num)
+two_choices(red_robin4)
+#main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("")
 print("input 7")
@@ -1114,7 +1125,9 @@ print("")
 print("last one now the 7th test ====")
 
 num = 7   
-main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
+feedinput(num)
+two_choices(red_robin5)
+#main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("")
 print("input 7")
@@ -1123,7 +1136,9 @@ print("")
 print("last one now the 8th test ====")
 
 num = 7   
-main_control_sequencer(num,red_robin3)#red_robin  #this will be the the modifed endswitch eventually 
+feedinput(num)
+two_choices(red_robin3)
+#main_control_sequencer(num,red_robin3)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("")
 print("input 7")
@@ -1132,7 +1147,9 @@ print("")
 print("last one now the 9th test ====")
 
 num = 7   
-main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
+feedinput(num)
+two_choices(red_robin5)
+#main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
 
 print("")
 print("input 7")
@@ -1140,7 +1157,9 @@ print("")
 print("last one now the 10th test ====")
 
 num = 7   
-main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
+feedinput(num)
+two_choices(red_robin4)
+#main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("")
 print("input 3")
@@ -1149,7 +1168,9 @@ print("")
 print("last one now the 11th test ====")
 
 num = 3   
-main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
+feedinput(num)
+two_choices(red_robin5)
+#main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
 
 print("===end of testing demonstration==")
 print("rising torrain at 12 miles ...")
@@ -1175,7 +1196,7 @@ hide_generated_code()
 
 print("--------")
 
-sw =''' 
+sw1 =''' 
 	switch(exp) {
 		case CASPER:  
 			print(\"squirt gun!\")
@@ -1219,11 +1240,13 @@ sw ='''
 			break #mandatory break
 }
 '''
-endswitch(sw)
+two_choices(sw1)
 
 print("===now testing a nested switch again===")
 num = 3   
-main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
+feedinput(num)
+two_choices(red_robin4)
+#main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("")
 print("input 3")
@@ -1287,7 +1310,7 @@ swy ='''
 			break #mandatory break
 }
 '''
-endswitch(swy)
+two_choices(swy)
 
 ####=== show me the money =========
 ##==========================
@@ -1326,7 +1349,7 @@ swi ='''
 			break
 }
 '''
-endswitch(swi)
+two_choices(swi)
 
 
 
@@ -1378,7 +1401,7 @@ swu = '''
 			break
 }
 '''
-endswitch(swu)
+two_choices(swu)
 
 
 
@@ -1421,12 +1444,13 @@ swt ='''
 			break
 }
 '''
-endswitch(swt)
+two_choices(swt)
 
 print("=====================")
 print('now doing more nested switches ')
 num = 7   
-main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
+feedinput(num)
+two_choices(red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
 
 print("")
 print("input 7")
@@ -1434,7 +1458,8 @@ print("")
 print("last one now the 10th test ====")
 
 num = 7   
-main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
+feedinput(num)
+two_choices(red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("")
 print("input 3")
@@ -1485,5 +1510,5 @@ swt ='''
 			break
 }
 '''
-endswitch(swt) 
+two_choices(swt) 
 
