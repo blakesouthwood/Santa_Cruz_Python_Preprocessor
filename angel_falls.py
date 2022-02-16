@@ -1,3 +1,187 @@
+
+Wednesday, Feb 16th, 2022 12:28pm PST
+Single switches and nested switches now work inside of functions.
+
+
+def an_internal_test():
+	print("====an_internal_test()===!!!==")
+	clever('gone fishing')
+	swu2 = '''
+	switch(exp) {
+		case 'rasberries and cream':  
+			print("==where's the cream house!")
+			print("===tastes good====")
+			varholder[0]= "Tahoe Cabin in BLIZZARD"
+			print(varholder[0])
+			break
+			
+		case 'gone fishing':
+			print('fallen leaf lake')
+			fallthrough	
+			
+		case 'driving car':
+			print('where is the gti')
+			print("really a porsche GT...")
+			varholder[0]= "Porsche GT sounds nice"
+			print(varholder[0])
+			break
+			
+		case 'macbook pro':
+			print('fast laptop')
+			print("when will the code work...")
+			fallthrough
+			
+		default:
+			print('six walking duck de fa ul t')
+			print("flying geese")
+			break
+	}
+	''' #this calls the internal switch case 
+	two_choices(swu2) #this will say endswitch(swu2)
+	print(varholder[0])
+	
+	
+an_internal_test()
+
+
+
+
+def a_second_internal_test():
+	print("====a_second_internal_test()==nested switch test=!!!==")
+	num = 12   
+	feedinput(num)
+	red_robin4_brain ='''
+	switch(exp){  
+		case 1 thru 6: 
+			print("====zebra black and white =====")
+			print("====   zebra   =====")
+			print("===    tahoe summiting    ======")
+			print("sitting at starbucks analzying my code")
+			varholder[0]= "tahoe is now in reach"
+			break
+			#it should stop here
+		case 7 to 10:
+			print("Lex Fridman MIT UFO investigations=== ")
+			print('driving up to Tahoe on highway 80  !')
+			print(" driving through snow ")
+			varholder[0]= "driving up to Tahoe on highway 80"
+			
+			#############
+			exp ='blable'
+			switch(exp)  
+				case 'blable':
+					print("this is the second string to try of sw itch 11 this is really cool ")
+					print("this is really working, fantastic...")
+					result[0]="Blake did it"
+					break
+					####################
+					exp = 'tahoe'
+					switch(exp){ 
+						case 'tahoe':
+							print("do THIS IS SO COOLinside of sw 15")
+							print("oh is this going to really work now ... really it is")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							result[0]='fallen leaf lake waterskiing fell'
+							
+							####################
+							exp = 'winter'
+							switch(exp){    
+								case 'winter':
+									print("this is possibly sw 25")
+									print("listening to mit debugging session in summer")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("morgan hill starbucks nesting works")
+									break
+								default:
+									print("we are done here")
+							endswitch 
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			#exp = 3
+			switch(exp)
+				case 'burger':
+					print("do something")
+					####################
+					switch(exp){   
+						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch
+			##############
+			print('this should be the last line here for output')
+			break #was f a l l t h r u
+		case 11 to 15:
+			print("11 to 15 in ==zebra black and white==")
+			print('big numbers here this is 11 thru 15  ')
+			print('=this is the last c ase ==')
+			print('-----------------')
+			####################
+			exp ='snow fire'
+			switch(exp){   
+				case 'fishy':
+					print("do something")
+					print("yep")
+					fallthru
+				case 'snow fire':
+					print("inside of snow fire from zeba black white")
+					#############
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			break 
+		default:
+			print('no matches so sorry about that chap')
+			print(' ')
+	}
+	'''	
+	two_choices(red_robin4_brain) #this will be endswitch(stringname)
+	print("bottom of the same function")
+	print("now at the bottom of the Drake Equation")
+
+print("testing nested switch switch in a function=====>>>>>")
+def alien_civilization():
+	varholder[0]=''
+	print("testing alien civilization nested switch")
+	a_second_internal_test()
+	print("varholder[0]=",varholder[0])	
+	
+alien_civilization()
+
+
+
 MOnday, Feb 14th, 2022
 All switches - single and nested - running from same one method currently called two_choices()
 which will become endswitch(stringname).
