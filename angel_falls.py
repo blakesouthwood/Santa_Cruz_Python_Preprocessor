@@ -1,3 +1,8 @@
+thursday, feb 17th, 2022  3:10pm
+I figured out how I will impliment the var exp expressions at the top of a nested switch
+I am in the process of making this phase reality now.
+
+
 
 Wednesday, Feb 16th, 2022 12:28pm PST
 Single switches and nested switches now work inside of functions.
