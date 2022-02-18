@@ -1,6 +1,63 @@
 friday, feb 18th, 2022 8:36 am
 New implimentation works 
 
+resultstring=[]
+resultstring.append(0)
+
+samplelist=[]
+samplelist.append('red')
+samplelist.append('green')
+def add_line_to_string(stringname):  
+	print("======add_line_to_string======")
+	print("starting input string")
+	for line in stringname.splitlines():
+		print(line)
+	codeking=''
+	# go thru each line and based on the number add a line above switch
+	mycounter =0
+	for line in stringname.splitlines():
+		tabcount = line.count("\t")
+		#this is THIS LINE we are talking about =====
+		if "switch(exp)" in line and tabcount > 2:
+			#so we are adding the exp='word'  above the switch line
+			print("mycounter =",mycounter)
+			tabcount = line.count("\t")
+			print('tabcount=',tabcount)
+			word = samplelist[mycounter]
+			print("word=",word)
+			tabs = tabcount * '\t'  #multiplies the tabcount by tab symbol stored in tabs creating a string of tabs
+			print('tabs=',tabs)
+			adding_exp = "exp='" + str(word) + "'"
+			codeking += tabs + adding_exp + '\n' + line + '\n' #this cleverly puts it on the line above the switch line
+			mycounter += 1
+			
+		else:
+			codeking += line  + '\n'
+			#mycounter += 1
+			
+		
+	print('AFTER INSERTING BLANK LINE ABOVE where inner switch line was what does the reuslt look like is there an empty line above switch(exp)')
+	for line in codeking.splitlines():
+		print(line)
+	resultstring[0]=  codeking
+	
+	newcounter=0
+	print("LOOK HERE FOR aCTUAL switch lines now ====::::::====")
+	for line in codeking.splitlines():
+		if "switch(exp)" in line:
+			print("SWITCH in this line", newcounter)
+			
+			newcounter += 1
+		else:
+			newcounter +=1
+	
+	print("what can see now")       
+	
+	
+
+add_line_to_string(elcapitan)  #verified works becomes codeking string
+
+
 #exp1= 8, exp2='blue', exp3='green'
 #it will skip the first switch(exp)
 elcapitan='''
