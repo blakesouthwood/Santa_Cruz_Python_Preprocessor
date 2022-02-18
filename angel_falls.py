@@ -1,3 +1,162 @@
+friday, feb 18th, 2022 8:36 am
+New implimentation works 
+
+#exp1= 8, exp2='blue', exp3='green'
+#it will skip the first switch(exp)
+elcapitan='''
+	switch(exp){   
+		case 1 thru 6: 
+			print("mocha morning!")
+			print('a walk in the park')
+			print('listening to neo music ')
+			break
+		
+		case 7 thru 10: 
+			print("two !")
+			print('cold tennis')
+			print('who will win? ')
+			fallthru
+			
+			switch(exp)   
+				case 'red':
+					print("we are inside of the nested sw i tch now I did it ")
+					print("3 billion of them .go baby go make it happen..")
+					fallthru
+				case 'blue':
+					print("we are blue blood cells ")
+					print("1 zillion of them this should have printeded...")
+					break
+				default:
+					print('this was missing')
+					print(' darn it')
+			endswitch
+			
+			switch(exp)   
+				case 'green':
+					print("the green room now I did it ")
+					print("the matrix make it happen..")
+					fallthru
+				case 'purple':
+					print("panama canal 3 levels ")
+					print("needs 4 lanes have printeded...")
+					break
+				default:
+					print('this was missing')
+					print(' darn it')
+			endswitch
+			break
+		default:
+			print('no matches so sorry about that ')
+			print(' ')
+			
+}
+'''	
+
+is converted to this output to become the new input string modified
+AFTER INSERTING BLANK LINE ABOVE where inner switch line was what does the reuslt look like is there an empty line above switch(exp)
+Bear in mind that the first starting switch is fed exp separately so is skipped in implimentation.
+Now I need to do the top part in the line below that is the input which just reads the line. Another victory.
+Each new stage gets closer to the NATURAL look and feel of C for a switch case. 
+exp1 = 8, exp2 = 'red', exp3 = 'green'
+	switch(exp){   
+		case 1 thru 6: 
+			print("mocha morning!")
+			print('a walk in the park')
+			print('listening to neo music ')
+			break
+		
+		case 7 thru 10: 
+			print("two !")
+			print('cold tennis')
+			print('who will win? ')
+			fallthru
+			
+			exp='1'
+			switch(exp)   
+				case 'red':
+					print("we are inside of the nested sw i tch now I did it ")
+					print("3 billion of them .go baby go make it happen..")
+					fallthru
+				case 'blue':
+					print("we are blue blood cells ")
+					print("1 zillion of them this should have printeded...")
+					break
+				default:
+					print('this was missing')
+					print(' darn it')
+			endswitch
+			
+			exp='2'
+			switch(exp)   
+				case 'green':
+					print("the green room now I did it ")
+					print("the matrix make it happen..")
+					fallthru
+				case 'purple':
+					print("panama canal 3 levels ")
+					print("needs 4 lanes have printeded...")
+					break
+				default:
+					print('this was missing')
+					print(' darn it')
+			endswitch
+			break
+		default:
+			print('no matches so sorry about that ')
+			print(' ')
+			
+}
+
+generated with red and green and instead of switch it will be a nested_switch(exp) function triggered
+	switch(exp){   
+		case 1 thru 6: 
+			print("mocha morning!")
+			print('a walk in the park')
+			print('listening to neo music ')
+			break
+		
+		case 7 thru 10: 
+			print("two !")
+			print('cold tennis')
+			print('who will win? ')
+			fallthru
+			
+			exp='red'
+			switch(exp)   
+				case 'red':
+					print("we are inside of the nested sw i tch now I did it ")
+					print("3 billion of them .go baby go make it happen..")
+					fallthru
+				case 'blue':
+					print("we are blue blood cells ")
+					print("1 zillion of them this should have printeded...")
+					break
+				default:
+					print('this was missing')
+					print(' darn it')
+			endswitch
+			
+			exp='green'
+			switch(exp)   
+				case 'green':
+					print("the green room now I did it ")
+					print("the matrix make it happen..")
+					fallthru
+				case 'purple':
+					print("panama canal 3 levels ")
+					print("needs 4 lanes have printeded...")
+					break
+				default:
+					print('this was missing')
+					print(' darn it')
+			endswitch
+			break
+		default:
+			print('no matches so sorry about that ')
+			print(' ')
+			
+}
+	
 thursday, feb 17th, 2022  3:10pm
 I figured out how I will impliment the var exp expressions at the top of a nested switch
 I am in the process of making this phase reality now.
