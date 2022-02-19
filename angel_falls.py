@@ -1,3 +1,68 @@
+
+saturday, feb 19th, 2022 10:52 am
+code is flowing nicely
+This is nearly working now.
+
+elcapitan='''
+	exp= '8';
+	exp='red';
+	exp='green';
+	
+	switch(exp){   
+		case 1 thru 6: 
+			print("mocha morning!")
+			print('a walk in the park')
+			print('listening to neo music ')
+			break
+		
+		case 7 thru 10: 
+			print("two !")
+			print('cold tennis')
+			print('who will win? ')
+			fallthru
+			
+			switch(exp)   
+				case 'red':
+					print("this is red we are inside of the nested sw i tch now I did it ")
+					print("3 billion of them .go baby go make it happen..")
+					fallthru
+				case 'blue':
+					print("this is blue we are blue blood cells ")
+					print("1 zillion of them this should have printeded...")
+					break
+				case 'orange':
+					print("this is orange saturday morning coding== ")
+					print("figuring out where to apply next...")
+					break
+				default:
+					print('this is default this was missing')
+					print(' darn it')
+			endswitch
+			
+			switch(exp)   
+				case 'green':
+					print("this is  green  now I did it ")
+					print("the matrix make it happen..")
+					fallthru
+				case 'purple':
+					print("this is purple panama canal 3 levels ====")
+					print("needs 4 lanes have printeded...")
+					break
+				default:
+					print('this is lower def ault this was missing')
+					print(' darn it')
+			endswitch
+			break
+		default:
+			print('no matches so sorry about that ')
+			print(' ')
+			
+}
+'''	
+
+
+
+
 friday, feb 18th, 2022 8:36 am
 New implimentation works 
 
