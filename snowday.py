@@ -1,3 +1,15 @@
+'''
+stack trace for this method chain is
+===now we will see the call stack as party list===
+
+detect_input_exps_above_first_switch():
+add_exp_var_above_each_switch(stringname):
+ manage_exps_prepare_for_processing()
+take_input_vars_for_switches_convert_to_list(switch_input_vars):
+show_list_resultstring_to_verify_output():
+remove_exps_at_top_now(instringname)
+take_out_first_line():
+'''
 
 
 import mocha  
