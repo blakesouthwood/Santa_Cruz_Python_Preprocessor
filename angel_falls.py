@@ -1,3 +1,139 @@
+Wed Feb 23rd 2022 9;32 AM PST 
+progress.
+https://www.youtube.com/watch?v=icgGyR3iusU  trance coding music
+
+I can translate this now for input
+elcapitan='''
+	exp= '9';
+	exp='orange';
+	exp='purple';
+	
+	switch(exp){   
+		case 1 thru 6: 
+			print("mocha morning!")
+			print('a walk in the park')
+			print('listening to neo music ')
+			break
+		
+		case 7 thru 10: 
+			print("two !")
+			print('cold tennis')
+			print('who will win? ')
+			fallthru
+			
+			switch(exp)   
+				case 'red':
+					print("this is red we are inside of the nested sw i tch now I did it ")
+					print("3 billion of them .go baby go make it happen..")
+					fallthru
+				case 'blue':
+					print("this is blue we are blue blood cells ")
+					print("1 zillion of them this should have printeded...")
+					break
+				case 'orange':
+					print("this is orange saturday morning coding== ")
+					print("figuring out where to apply next...")
+					break
+				default:
+					print('this is default this was missing')
+					print(' darn it')
+			endswitch
+			
+			switch(exp)   
+				case 'green':
+					print("this is  green  now I did it ")
+					print("the matrix make it happen..")
+					fallthru
+				case 'purple':
+					print("this is purple panama canal 3 levels ====")
+					print("needs 4 lanes have printeded...")
+					break
+				default:
+					print('this is lower def ault this was missing')
+					print(' darn it')
+			endswitch
+			break
+		default:
+			print('no matches so sorry about that ')
+			print(' ')
+			
+}
+'''	
+Correctly transforms into this string now:
+'''	
+	switch(exp){ 
+		case 1 thru 6: 
+			print("mocha morning!")
+			print('a walk in the park')
+			print('listening to neo music ')
+			break
+		
+		case 7 thru 10: 
+			print("two !")
+			print('cold tennis')
+			print('who will win? ')
+			fallthru
+			
+			exp='orange'
+			switch(exp){
+				case 'red':
+					print("this is red we are inside of the nested sw i tch now I did it ")
+					print("3 billion of them .go baby go make it happen..")
+					fallthru
+				case 'blue':
+					print("this is blue we are blue blood cells ")
+					print("1 zillion of them this should have printeded...")
+					break
+				case 'orange':
+					print("orange orange orange orange orange this is orange saturday morning coding== ")
+					print("figuring out where to apply next...")
+					break
+				default:
+					print('this is default this was missing')
+					print(' darn it')
+			endswitch
+			
+			exp='purple'
+			switch(exp){
+				case 'green':
+					print("this is  green  now I did it ")
+					print("the matrix make it happen..")
+					fallthru
+				case 'purple':
+					print("purple purple purple purple ==== is purple panama canal 3 levels ====")
+					print("needs 4 lanes have printeded...")
+					break
+				default:
+					print('this is lower def ault this was missing')
+					print(' darn it')
+			endswitch
+			break
+		default:
+			print('no matches so sorry about that ')
+			print(' ')
+			
+}
+'''
+print("THIS IS second attempt elcapitan test ======")
+num = 9   
+#main_control_sequencer(num,elcapitan)#
+for line in elcapitan235.splitlines():  #was elcapitan2
+    print(line)
+feedinput(num)
+two_choices(elcapitan235)
+
+======  OUTPUT  =====
+two !
+cold tennis
+who will win? 
+orange orange orange orange orange this is orange saturday morning coding== 
+figuring out where to apply next...
+purple purple purple purple ==== is purple panama canal 3 levels ====
+needs 4 lanes have printeded...
+=========
+
+		
+
 
 saturday, feb 19th, 2022 10:52 am
 code is flowing nicely
