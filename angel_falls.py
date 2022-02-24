@@ -1,3 +1,19 @@
+thursday feb 24th 2022  10:07 AM PST
+In respect for C and C++ having vars at the top of the first switch in a nested switch
+(the nested switch input vars) are now inserted automatically so the nested switches work correctly.
+
+cleaned up code in snowday.py which preprocesses for nested switches
+and scans the exp vars at top of the first switch designed to look and feel like C
+and then adds the exp vars above each nested switch (line above) in sequential order.
+Code totally cleaned up and efficient.
+
+Next I will add it the TREX.py module so it will automatically
+be called 
+
+transform_nested_switch_string_for_parser(stringname)
+#again it adds the exp='varname' above each nested switch and then makes nested switches work
+
+
 Wed Feb 23rd 2022 9;32 AM PST 
 progress.
 https://www.youtube.com/watch?v=icgGyR3iusU  trance coding music
