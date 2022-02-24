@@ -127,7 +127,7 @@ def detect_input_exps_above_first_switch(stringname): #above top of nested switc
 			collection.append(counter) #adds line number
 			counter += 1
 		else:
-			if "\texp=" not in line  or line.startswitch("switch(exp)"):
+			if "\texp=" not in line  or line.startswith("switch(exp)"):
 				active = False
 				stopline = counter -1 #the previous line obviously
  
