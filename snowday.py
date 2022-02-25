@@ -1,7 +1,7 @@
 
 
 
-elcapitan='''
+z='''
 	exp= '7';
 	exp='red';
 	exp='purple';
@@ -263,7 +263,7 @@ def add_exp_var_above_each_switch(stringname): #from samplelist
 			tabs = tabcount * '\t'                
 			##========================
 			if word[-1] == "'": #this says: if last char in word = '
-				word= word[:-1]
+				word= word[:-1] #cuts off last char of word
 			else:
 				pass
 			##===========================
@@ -302,48 +302,72 @@ def take_out_first_line():
 			counter += 1
 	
 	serious[0]= morebuilding
-	
 
 
-
-##===============================================
-##  transform_nested_switch_string_for_parser():
-##===============================================
-def transform_nested_switch_string_for_parser(stringname):
+#sniffer to detect exp= above first switch
+#and if so then call the transform method otherwise don't call tranform method
+#===========  designed on Friday, February 25th, 2022 ==== 10:17 am ===
+if_exps_at_top=[]
+if_exps_at_top.append(0)
+##======================================================
+## determine_if_exps_above_first_switch(stringname):
+##======================================================	
+def determine_if_exps_above_first_switch(stringname): #sniffer
+	print("=@@@@===determine_if_exps_above_first_switch(stringname): ===@@@@==")
+	if_exps_at_top[0] = 'False' ;#sets default setting of if_exps_at_top[0] to 'False'
+	counter =0; endpoint =''; #line number of first switch// also clears it out as reset here
+	#get location of first switch( at tab depth 1 )	
 	for line in stringname.splitlines():
-		print(line)
+		tabsdepth = line.count("\t")#how do I say if exp= above first switch
+		if "\tswitch(" in line and tabsdepth == 1:
+			endpoint = counter #sets endpoint to counter
+			#print("endpoint =",endpoint)
+			break
+		else:
+			counter += 1
+	#this looks to determine if exp= ABOVE first switch at 1 tab depth
+	counter =0  #the endpoint constant is the line number of the first switch at tab depth 1
+	print("enpoint line number with first switch at 1 tab depth =",endpoint)
+	for line in stringname.splitlines():
+		if "\texp=" in line and counter < endpoint: #this is gleaned above
+			if_exps_at_top[0] = 'True'; #sets if_exps_at_top[0] to 'True'
+			#print('right here if_exps_at_top[0] should = True')
+			break  #the moment this is True end this loop obviously
+		else:
+			counter += 1
+
+
+##==========================================================================
+## take_out_exps_at_top_and_adds_exps_above_nested_switches(stringname):
+##==========================================================================
+def take_out_exps_at_top_and_adds_exps_above_nested_switches(stringname):
+	loop_thru_the_string(stringname)
 	detect_input_exps_above_first_switch(stringname)
 	add_exp_var_above_each_switch(stringname)
 	show_list_resultstring_to_verify_output()
 	gauge[0]=resultstring[0];trouble = gauge[0]
 	remove_exps_at_top_now(trouble)
-	take_out_first_line()  # I think it's mistakenly taking out wrong line
-	 
+	take_out_first_line()  
+	
+	
+##===============================================
+##  transform_nested_switch_string_for_parser():
+##===============================================
+def transform_nested_switch_string_for_parser(stringname):
+	determine_if_exps_above_first_switch(stringname) #sets if_exps_at_top[0] to True or False
+	if if_exps_at_top[0] == 'True':
+		take_out_exps_at_top_and_adds_exps_above_nested_switches(stringname)
+	else:
+		pass
+		
 	
 
-transform_nested_switch_string_for_parser(elcapitan) #this should work now I hope
-#print("finished here")
-# oh what this does is tranform the switch string adding the 
-# exp above each nested switch and cutting out all exp= at top of switch
-
-
+transform_nested_switch_string_for_parser(z) #this should work now I hope
 
        
 exit()
 
 
-'''
-===now we will see the call stack as party list===
-
-detect_input_exps_above_first_switch():
-add_exp_var_above_each_switch(stringname):
-manage_exps_prepare_for_processing()
-take_input_vars_for_switches_convert_to_list(switch_input_vars):
-show_list_resultstring_to_verify_output():
-#this_comments_out_the_exps_above_switch_case_input():
-remove_exps_at_top_now(instringname)
-take_out_first_line(): #which is above first switch
-'''
 
 
 
