@@ -1,3 +1,91 @@
+friday, feb 25th, 2022
+added sniffer to detect if exps vars above first switch for trigger to 
+cut them out and add them above each nested switch below.
+
+
+#===========  designed on Friday, February 25th, 2022 ==== 10:17 am ===
+if_exps_at_top=[]
+if_exps_at_top.append(0)
+##======================================================
+## determine_if_exps_above_first_switch(stringname):
+##======================================================	
+def determine_if_exps_above_first_switch(stringname): #sniffer
+	print("=@@@@===determine_if_exps_above_first_switch(stringname): ===@@@@==")
+	if_exps_at_top[0] = 'False' #by default setting
+	#get location of first switch( at tab depth 1 and know look before that line number
+	counter =0
+	endpoint ='' #line number of first switch// also clears it out as reset here
+	print("=====starting first loop here ====")
+	#this determines the line number of the first switch at 1 tab depth
+	print("let us see what the input string actually looks like at this stage")
+	for line in stringname.splitlines():
+		print(line)
+	print("=====****=======********========*******=======")	
+	for line in stringname.splitlines():
+		tabsdepth = line.count("\t")#how do I say if exp= above first switch
+		if "\tswitch(" in line and tabsdepth == 1:
+			print(line)
+			endpoint = counter
+			print("endpoint =",endpoint)
+			break
+		else:
+			counter += 1
+	#this looks to determine if exp= ABOVE first switch at 1 tab depth
+	print("====stating second loop here====")
+	counter =0  #the endpoint constant is the line number of the first switch at tab depth 1
+	print("enpoint line number with first switch at 1 tab depth =",endpoint)
+	for line in stringname.splitlines():
+		if "\texp=" in line and counter < endpoint: #this is gleaned above
+			print(line)
+			if_exps_at_top[0] = 'True'
+			print('right here if_exps_at_top[0] should = True')
+			break  #the moment this is True end this loop obviously
+		else:
+			counter += 1
+	#loop finished here
+	print("at this point it  has =====", if_exps_at_top[0])
+	
+	
+	#continue is implicit obviously
+
+
+##===============================================
+##  transform_nested_switch_string_for_parser():
+##===============================================
+def transform_nested_switch_string_for_parser(stringname):
+	for line in stringname.splitlines():
+		print(line)
+	print(" === transform_nested_switch_string_for_parser(stringname): called ===")
+	print("modified to detect if exps vars above first switch") 
+	determine_if_exps_above_first_switch(stringname) #result in if_exps_at_top[0] True or False
+	print("sniff if exps above first switch")
+	print("result of sniff =",if_exps_at_top[0])
+	print("-----------------------------------------")
+	#this boolean is determined from running determine_if_exps_above_first_switch(stringname)
+	if if_exps_at_top[0] == 'True': #exps above first switch then proceed
+		print("THIS HAS BEEN TRIGGERED BECAUSE EXPS = TRUE")
+		loop_thru_the_string(stringname)
+		detect_input_exps_above_first_switch(stringname)
+		add_exp_var_above_each_switch(stringname)
+		show_list_resultstring_to_verify_output()
+		gauge[0]=resultstring[0];trouble = gauge[0]
+		remove_exps_at_top_now(trouble)
+		take_out_first_line()  # I think it's mistakenly taking out wrong line
+	
+	else:
+		
+		print("if_exps_at_top[0] == 'False' ",if_exps_at_top[0])
+		print("This switch case does not have exps at the top")
+		print("if_exps_at_top[0] = False",if_exps_at_top[0])
+		print("therefore not going to add nonexistent exps to nested switches")
+	
+
+transform_nested_switch_string_for_parser(inputstring)  
+
+
+
+
+
 thursday feb 24th 2022  10:07 AM PST
 In respect for C and C++ having vars at the top of the first switch in a nested switch
 (the nested switch input vars) are now inserted automatically so the nested switches work correctly.
