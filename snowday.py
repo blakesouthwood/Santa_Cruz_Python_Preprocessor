@@ -371,6 +371,9 @@ def scan_thru_string_at_top_for_exps(stringname):
 		soclever[0] = mystring
 	else:
 		soclever[0]= stringname
+
+
+
 resultstring=[]
 resultstring.append(0)
 samplelist=[]
@@ -415,16 +418,6 @@ def take_input_vars_for_switches_convert_to_list(switch_input_vars):
 		mytest_list[counter] = string   #puts string into mytest_list[counter]
 		counter += 1
 	
-	#samplelist=[]
-	#feed mytest_list into samplelist
-	#if len(samplelist) != 0:
-	#	print('clearing samplelist to fix bug here')
-	#	del samplelist[:]
-	#	samplelist=[]
-	#	samplelist.clear()
-	#else:
-	#	pass
-		
 	print("show samplelist starting here=",samplelist)
 	for item in mytest_list:
 		samplelist.append(item)  #fills samplelist which is used to feed into adding
@@ -446,7 +439,6 @@ def add_exp_var_above_each_switch(stringname): #from samplelist
 	mycounter =1
 	#loop_thru_the_string(stringname)
 	#print("inside of add_exp_var_above_each_switch(stringname)")
-
 	#print("samplelist=",samplelist)
 
 	for line in stringname.splitlines():
@@ -546,28 +538,21 @@ def take_out_exps_at_top_and_adds_exps_above_nested_switches(stringname):
 	mytest_list=[]
 	mytest_list.clear() #new
 	relay[0]=''
-	
-	#print('stage 1 ==')
 	loop_thru_the_string(stringname)
-	#print('stage 2 ==')
 	detect_input_exps_above_first_switch(stringname)
-	#print('stage 3 ==')
 	add_exp_var_above_each_switch(stringname)
-	#print('stage 4 ==')
 	show_list_resultstring_to_verify_output()
-	#print('stage 5 ==')
 	gauge[0]=resultstring[0];trouble = gauge[0]
-	#print('stage 6 ==')
 	remove_exps_at_top_now(trouble)
-	#print('stage 7 ==')
 	take_out_first_line() 
-	#print('stage 8 ==') 
 	answer =serious[0]
 	for line in answer.splitlines():
 		print(line)
 	return answer #resulting concatted string
 	guage[0]='';resultstring[0]='';trouble='';serious[0]='';answer='';samplelist=[]
 	
+
+
 finaloutput=[]
 finaloutput.append(0)	
 ##===============================================
@@ -579,6 +564,7 @@ def transform_nested_switch_string_for_parser(stringname):
 	#HERE 
 	stringname = soclever[0] #now this should fix it
 	determine_if_exps_above_first_switch(stringname) #sets if_exps_at_top[0] to True or False
+	#if exp at top then use them otherwise skip
 	if if_exps_at_top[0] == 'True':
 		print("==exps at top True=>>>>>>>>>=")
 		outputis=take_out_exps_at_top_and_adds_exps_above_nested_switches(stringname)
@@ -588,22 +574,21 @@ def transform_nested_switch_string_for_parser(stringname):
 		print("this switch string doesn't have exps at the top")
 		loop_thru_the_string(stringname)
 		pass
-		
+
+#question is the output from this put back into stringname 
+#if not then that is what I need to do next
+# saturday morning coding fixing bugs and testing marathon		
+
+def prepare_string(stringname):
+	transform_nested_switch_string_for_parser(stringname)
 	
-transform_nested_switch_string_for_parser(raw)
-#transform_nested_switch_string_for_parser(z) #this should work now I hope
-#print okay this worked the resulting concatted outoput is in finaloutput[0]
+	
+prepare_string(raw)
 
-#for line in finaloutput[0].splitlines():
-#	print(line)
+prepare_string(dr) #this should work now I hope
 
-transform_nested_switch_string_for_parser(dr) #this should work now I hope
-#finaloutput[0]=''
-#print('=====testing the massive nested now==0000000000==')
-transform_nested_switch_string_for_parser(z) #this should work now I hope
-#print okay this worked the resulting concatted outoput is in finaloutput[0]
-#for line in finaloutput[0].splitlines():
-#	print(line)       
+prepare_string(z) #this should work now I hope
+      
 exit()
 
 
