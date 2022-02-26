@@ -1,3 +1,110 @@
+raw ='''
+	exp = '7';
+	exp = 'blable';
+	exp = 'tahoe';
+	exp = 'winter';
+	exp = 'burger';
+	exp = 'fishy';
+	
+	switch(exp){ 
+		case 1 thru 6: 
+			print("====   purple    =====")
+			print("====   purple   =====")
+			print("===    poka dots    ======")
+			print(" working on january 27th, 2022 8:56 am")
+			print('== hamburger sounds good right about now')
+			break
+			#it should stop here
+		case 7 to 10:
+			print('pass drive in the snow to tahoe !')
+			
+			
+			switch(exp){
+				case 'blable':
+					print("this is the second string to try of sw itch 11 this is really cool ")
+					print("this is really working, fantastic...")
+					result[0]=" did it"
+					break
+					####################
+					
+					switch(exp){ 
+						case 'tahoe':
+							print("do  of sw 15")
+							print("oh is this going to really work now ... really it is")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							result[0]='fallen leaf lake waterskiing fell'
+							
+							####################
+							
+							switch(exp){    
+								case 'winter':
+									print("this is possibly sw 25")
+									print("listening to mit debugging session in summer")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("morgan hill starbucks nesting works")
+									break
+								default:
+									print("we are done here")
+							endswitch 
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			
+			switch(exp){
+				case 'burger':
+					print("do something")
+					####################
+					
+					switch(exp){   
+						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch
+			##############
+			print('this should be the last line here for output')
+			break #was f a l l t h r u
+		case 11 to 15:
+			print('big numbers here this is 11 thru 15  ')
+			print('=this is the last c ase ==')
+			print('-----------------')
+			break 
+		default:
+			print('no matches so sorry about that chap')
+			print(' ')
+}
+'''
+
 
 
 
@@ -58,6 +165,63 @@ z='''
 }
 '''	
 
+
+
+dr='''
+	switch(exp){
+		case 1 thru 6:
+			print("mocha morning!")
+			print('a walk in the park')
+			print('listening to neo music ')
+			break
+		
+		case 7 thru 10: 
+			print("two !")
+			print('cold tennis')
+			print('who will win? ')
+			fallthru
+			
+			switch(exp){
+				case 'red':
+					print("this is red we are inside of the nested sw i tch now I did it ")
+					print("3 billion of them .go baby go make it happen..")
+					fallthru
+				case 'blue':
+					print("this is blue we are blue blood cells ")
+					print("1 zillion of them this should have printeded...")
+					break
+				case 'orange':
+					print("this is orange saturday morning coding== ")
+					print("figuring out where to apply next...")
+					break
+				default:
+					print('this is default this was missing')
+					print(' darn it')
+			endswitch
+			
+			switch(exp){
+				case 'green':
+					print("this is  green  now I did it ")
+					print("the matrix make it happen..")
+					fallthru
+				case 'purple':
+					print("this is purple panama canal 3 levels ====")
+					print("needs 4 lanes have printeded...")
+					break
+				default:
+					print('this is lower def ault this was missing')
+					print(' darn it')
+			endswitch
+			break
+		default:
+			print('no matches so sorry about that ')
+			print(' ')
+			
+}
+'''	
+soclever=[]
+soclever.append(0)
+
 partylist=[]
 
 def mystacktrace(stringhere):
@@ -81,6 +245,7 @@ gauge.append(0)
 collection=[]   #this gets the inputs exps for the NESTED SWITCHES INPUT
 serious=[]
 serious.append(0)
+
 ##==========================================
 ## remove_exps_at_top_now(instringname):
 ##==========================================
@@ -148,7 +313,8 @@ def detect_input_exps_above_first_switch(stringname): #above top of nested switc
 	really=testing_switch_input_vars.count('"')
 
 
-
+#work on this
+#do replace of "exp =" change to 'exp='
 
 
 ##============================================
@@ -188,9 +354,23 @@ def manage_exps_prepare_for_processing(stringname):
 # the next switch that a line is added above means it moved down 2 and not 1
 # and so on and so forth
 
-
-
-
+##====================================================
+##  scan_thru_string_at_top_for_exps(stringname):
+##====================================================
+def scan_thru_string_at_top_for_exps(stringname):
+	print(" ====scan_thru_string_at_top_for_exps(stringname): ==:::::===")
+	mystring=''
+	if "exp =" in stringname: #tests if exp = in string presumably at the top
+		for line in stringname.splitlines():
+			if "exp =" in line:
+				#so concat and build new stirng
+				fixedline = line.replace("exp =","exp=") #looks for exp = changes to exp=
+				mystring += fixedline + "\n"
+			else:
+				mystring += line + "\n"
+		soclever[0] = mystring
+	else:
+		soclever[0]= stringname
 resultstring=[]
 resultstring.append(0)
 samplelist=[]
@@ -201,6 +381,8 @@ def take_input_vars_for_switches_convert_to_list(switch_input_vars):
 	mystacktrace("take_input_vars_for_switches_convert_to_list(switch_input_vars):")
 	mytest_list = switch_input_vars.split(",") #split at commas put into a list 
 	counter =0
+	print("look in mytest_list now", mytest_list)
+	print("=========what the hell is in this list=========================================")
 	for item in mytest_list: #loops thru list made from switch_input_vars string split up
 		#this says look at the first char in this item
 		if item[0].startswith(' ') == False: #meaning if var doesn't start with space
@@ -233,10 +415,20 @@ def take_input_vars_for_switches_convert_to_list(switch_input_vars):
 		mytest_list[counter] = string   #puts string into mytest_list[counter]
 		counter += 1
 	
+	#samplelist=[]
 	#feed mytest_list into samplelist
+	#if len(samplelist) != 0:
+	#	print('clearing samplelist to fix bug here')
+	#	del samplelist[:]
+	#	samplelist=[]
+	#	samplelist.clear()
+	#else:
+	#	pass
+		
+	print("show samplelist starting here=",samplelist)
 	for item in mytest_list:
 		samplelist.append(item)  #fills samplelist which is used to feed into adding
-	
+	print("at this point the contesnts of samplelist ??")
 	
 	
 
@@ -247,11 +439,15 @@ def add_exp_var_above_each_switch(stringname): #from samplelist
 	mystacktrace("add_exp_var_above_each_switch(stringname):")
 	manage_exps_prepare_for_processing(stringname)
 	cool = relay[0]
+	samplelist.clear() #new here 
 	take_input_vars_for_switches_convert_to_list(cool) 
 	codeking=''
 	# go thru each line and based on the number add a line above switch
 	mycounter =1
-	loop_thru_the_string(stringname)
+	#loop_thru_the_string(stringname)
+	#print("inside of add_exp_var_above_each_switch(stringname)")
+
+	#print("samplelist=",samplelist)
 
 	for line in stringname.splitlines():
 		tabcount = line.count("\t")
@@ -291,6 +487,7 @@ def show_list_resultstring_to_verify_output():
 def take_out_first_line():
 	mystacktrace("take_out_first_line():")
 	morebuilding=''
+	#this is right::: it must be -1 for setting the counter
 	counter = -1  #note this is now -1 it was 0 previously but first case was getting cut out
 	for line in serious[0].splitlines():
 		if counter == 1:
@@ -302,6 +499,7 @@ def take_out_first_line():
 			counter += 1
 	
 	serious[0]= morebuilding
+	morebuilding=''
 
 
 #sniffer to detect exp= above first switch
@@ -327,8 +525,9 @@ def determine_if_exps_above_first_switch(stringname): #sniffer
 			counter += 1
 	#this looks to determine if exp= ABOVE first switch at 1 tab depth
 	counter =0  #the endpoint constant is the line number of the first switch at tab depth 1
-	print("enpoint line number with first switch at 1 tab depth =",endpoint)
+	print("endpoint line number with first switch at 1 tab depth =",endpoint)
 	for line in stringname.splitlines():
+	#I can change it if exp = change to exp= #work on it
 		if "\texp=" in line and counter < endpoint: #this is gleaned above
 			if_exps_at_top[0] = 'True'; #sets if_exps_at_top[0] to 'True'
 			#print('right here if_exps_at_top[0] should = True')
@@ -341,30 +540,70 @@ def determine_if_exps_above_first_switch(stringname): #sniffer
 ## take_out_exps_at_top_and_adds_exps_above_nested_switches(stringname):
 ##==========================================================================
 def take_out_exps_at_top_and_adds_exps_above_nested_switches(stringname):
+	print("==== take_out_exps_at_top_and_adds_exps_above_nested_switches(stringname):==")
+	samplelist=[]
+	samplelist.clear() #new
+	mytest_list=[]
+	mytest_list.clear() #new
+	relay[0]=''
+	
+	#print('stage 1 ==')
 	loop_thru_the_string(stringname)
+	#print('stage 2 ==')
 	detect_input_exps_above_first_switch(stringname)
+	#print('stage 3 ==')
 	add_exp_var_above_each_switch(stringname)
+	#print('stage 4 ==')
 	show_list_resultstring_to_verify_output()
+	#print('stage 5 ==')
 	gauge[0]=resultstring[0];trouble = gauge[0]
+	#print('stage 6 ==')
 	remove_exps_at_top_now(trouble)
-	take_out_first_line()  
+	#print('stage 7 ==')
+	take_out_first_line() 
+	#print('stage 8 ==') 
+	answer =serious[0]
+	for line in answer.splitlines():
+		print(line)
+	return answer #resulting concatted string
+	guage[0]='';resultstring[0]='';trouble='';serious[0]='';answer='';samplelist=[]
 	
-	
+finaloutput=[]
+finaloutput.append(0)	
 ##===============================================
 ##  transform_nested_switch_string_for_parser():
 ##===============================================
 def transform_nested_switch_string_for_parser(stringname):
+	print("===is this even called ==")
+	scan_thru_string_at_top_for_exps(stringname)
+	#HERE 
+	stringname = soclever[0] #now this should fix it
 	determine_if_exps_above_first_switch(stringname) #sets if_exps_at_top[0] to True or False
 	if if_exps_at_top[0] == 'True':
-		take_out_exps_at_top_and_adds_exps_above_nested_switches(stringname)
+		print("==exps at top True=>>>>>>>>>=")
+		outputis=take_out_exps_at_top_and_adds_exps_above_nested_switches(stringname)
+		finaloutput[0] = outputis
+	
 	else:
+		print("this switch string doesn't have exps at the top")
+		loop_thru_the_string(stringname)
 		pass
 		
 	
+transform_nested_switch_string_for_parser(raw)
+#transform_nested_switch_string_for_parser(z) #this should work now I hope
+#print okay this worked the resulting concatted outoput is in finaloutput[0]
 
+#for line in finaloutput[0].splitlines():
+#	print(line)
+
+transform_nested_switch_string_for_parser(dr) #this should work now I hope
+#finaloutput[0]=''
+#print('=====testing the massive nested now==0000000000==')
 transform_nested_switch_string_for_parser(z) #this should work now I hope
-
-       
+#print okay this worked the resulting concatted outoput is in finaloutput[0]
+#for line in finaloutput[0].splitlines():
+#	print(line)       
 exit()
 
 
