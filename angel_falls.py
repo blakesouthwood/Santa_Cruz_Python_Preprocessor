@@ -1,5 +1,17 @@
+March 2nd 2022 found some bugs working on them.
+For nested switch case if the first cases aren't numbers but words it crashes and can't digest the case words
+so I'm working on a hybrid for that scenario.
+
+Doing more testing of switch cases inside of functions too and then nested switches inside of functions.
+
+At least the switch and nested switches finally work. The remaining bugs are small and can be conquored
+with a few lines of fuzzy logic. 
+
+
+
+
 tuesday march 1st, 2022
-IT ALL WORKS!!! what a triumph.
+IT ALL WORKS!!! what a triumph.  two_choices method works initially.
 Nested switches work as designed.
 
 #this will all go into mocha #right now it worked in this format
