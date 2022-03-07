@@ -1,3 +1,11 @@
+March 7th, 2022  9:51am PST
+endswitch(stringname) implimented successfully
+This would be at the end of the input doc string var of the switch case code
+which actually triggers the translation and execution of the switch case
+
+
+
+
 March 2nd 2022 found some bugs working on them.
 For nested switch case if the first cases aren't numbers but words it crashes and can't digest the case words
 so I'm working on a hybrid for that scenario.
