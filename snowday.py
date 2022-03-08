@@ -1,3 +1,5 @@
+
+   
 raw ='''
 	exp = '7';
 	exp = 'blable';
@@ -582,16 +584,14 @@ def transform_nested_switch_string_for_parser(stringname):
 def prepare_string(stringname):
 	transform_nested_switch_string_for_parser(stringname)
 	
-	
+print("first attempt")	
 prepare_string(raw)
 
+print('second attempt')
 prepare_string(dr) #this should work now I hope
 
+print('third attempt')
 prepare_string(z) #this should work now I hope
       
 exit()
-
-
-
-
 

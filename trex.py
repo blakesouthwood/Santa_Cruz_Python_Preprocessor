@@ -21,6 +21,12 @@ holdinput=[]
 holdinput.append(0)
 pobox=[]
 pobox.append(0)
+
+###============= clever3 =====
+def clever3(x):
+    print('clever3(x) called with',x)
+    dino[0] = x
+    
 #pobox[0]
 #import official_switch_case_silver
 #from official_switch_case_silver  import *  
@@ -31235,14 +31241,15 @@ def main_control_sequencer(mystring):#====================
     
 
 
+#So this was endswitch in trex changed to wasendswitch(y) on march 7th 
     
 #from silver file feb 1, 2022 tuesday cold 
 ########################
-##     endswitch(y)      this calls flow_valve_input which checks if cases are numbers or words
+##     old_endswitch(y) was endswitch(y) not used march 7th 2022      this calls flow_valve_input which checks if cases are numbers or words
 ########################  and if numbers = True then call parser_mode_2(y); If numbers = False parser_mode_1(y)
 #this final version only does the string mode and numbers are done by making them strings
-def endswitch(y): #pulls in sw 
-	print("endswitch called inside of trex  ...")
+def old_endswitch(y): #pulls in sw  #who is calling endswitch(y)??? march 7th 
+	print("===@@@@@@@@@@@@===endswitch called inside of trex  ...====")
 	print("the input thru clever shows varholder[0]=",varholder[0])
 	#inside of endswitch(string)
 	###### modified on Feb 12th, 2022###################################
@@ -31293,7 +31300,7 @@ def endswitch(y): #pulls in sw
 ##===================================================================
 def smart_endswitch(mystring):
 	print("==INSIDE OF SMART_ENDSWITCH called==== SUPER CRITICAL TEST testing of theory =======")
-	print("==this is inside of trex==================================================")
+	print("==thisis smart_endswitch maybe this is it this is inside of trex==================================================")
 	nested =count_switches_in_inputstring(mystring) #this has to return True or False
 	if nested == True:
 		nestedswitch('True')
@@ -38023,7 +38030,41 @@ def check_if_lists_switch_numbers_to_transfer_and_thenumbers_are_empty():
       
 #I will ahve the endswitch down here which will be the main for calling the sequence list here.
 
+##============================ from another file in testing march 6th 2022  ====
 
+check_if_number=[]
+check_if_number.append(0)
+#in here march 3rd thursday add look at first case if number, thru, or word in string
+def check_what_is_in_first_case_in_nested_switch(lestring):
+	print("====inside of trex ======check what is in first case in nested switch()======")
+	#I could also look if in line "case" in line and either "thru" or "to" in line also
+	#the issue is if it's just case 2:  then there would be thru or to in the line
+	acounter =0
+	for line in lestring.splitlines():  #all this does is 
+	#get word or number after  first case a
+		if "case" in line:
+			print(line)
+			barbra= line.split()  #how it works is it converts the string line into a list
+			print("barbra=",barbra)
+			barbra[1] #should be after word case which is position 0 #this gets the second list element
+			print("barbra[1]=",barbra[1])
+			whynot = barbra[1].strip()
+			numbertest =  whynot.isnumeric()   #this determines if the second element is a number
+			print('tesing use of txt.isnumeric()')
+			print(numbertest)  #either True or False
+
+			if whynot.isdigit(): #if True
+				print("this is a number",int(whynot))
+				check_if_number[0] = 'True' #a number
+			else: #this means that what is after case is a word and NOT a number
+				print("this is NOT!!! a number")
+				check_if_number[0] = 'False' #not a number	
+				#this would set a flag to do a different nested switch route
+			print("acounter=",acounter)
+			#do stuff here
+			break
+		else:
+			acounter += 1
 
 
 
@@ -38032,6 +38073,10 @@ def check_if_lists_switch_numbers_to_transfer_and_thenumbers_are_empty():
 ##================================
 def smart_endswitch(mystring):
 	print("==INSIDE OF SMART_ENDSWITCH called==== SUPER CRITICAL TEST testing of theory =======")
+	print("THIS IS NEW TESTING WHAT IS after first case of main nested switch")
+	print("-=-=-sunday march 6th testing 2022  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-")
+	check_what_is_in_first_case_in_nested_switch(mystring)
+	print("check_if_number[0]=",check_if_number[0])
 	print("==this is inside of trex==================================================")
 	nested =count_switches_in_inputstring(mystring) #this has to return True or False
 	if nested == True:
@@ -38048,7 +38093,7 @@ def smart_endswitch(mystring):
 		  
 ##############
 
-##======= dual modes ====feb 12th 2022====
+##======= dual modes ====feb 12th 2022====this is not currently used or turned on
 def dual_modes(stringname):
 	print("======dual modes called=====")
 	#this will just take in as input the string now not num,red_robin

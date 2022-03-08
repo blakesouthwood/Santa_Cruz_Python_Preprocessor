@@ -67,7 +67,7 @@ ducky ='''
 }
 '''
 
-two_choices(ducky)
+endswitch(ducky) #was two_choices(string)
 
 
 '''
@@ -127,7 +127,7 @@ swan1 ='''
 			break #mandatory break
 }
 '''
-two_choices(swan1)
+endswitch(swan1)
 
 
 
@@ -188,7 +188,7 @@ swan2 ='''
 			break #mandatory break
 }
 '''
-two_choices(swan2)
+endswitch(swan2)
 
 
 
@@ -198,13 +198,13 @@ two_choices(swan2)
 red_robin ='''
 	switch(exp){  
 		case 1 thru 6: 
-			print("green lantern green lantern green aliens!")
+			print("GREEN STARBUCKS lantern green lantern green aliens!")
 			print('this green green green . it actually works')
 			print('how green green green, yes way ')
 			
 			
 		case 7 to 10:
-			print('green lantern green lantern green  between 7 and 10 !')
+			print('GREEN LANTERN green lantern green  between 7 and 10 !')
 			
 			#############
 			exp ='blable'
@@ -254,19 +254,20 @@ red_robin ='''
 				default:
 					print("we are done here")
 			endswitch 
-			#exp = 3
-			print('this should write this line still within bounds of outer sw')
+			
+			exp = 'burger'
 			switch(exp)
 				case 'burger':
 					print("do something")
 					####################
+					exp='snow fire'
 					switch(exp){   
 						case 'fishy':
 							print("do something")
 							print("yep")
 							fallthru
 						case 'snow fire':
-							print("nice")
+							print("THIS IS SNOW FIRE HERE")
 							#############
 							break
 						default:
@@ -287,6 +288,7 @@ red_robin ='''
 		case 11 to 15:
 			print('big numbers here this is 11 thru 15  ')
 			print('=this is the last c ase ==')
+			print('result[0]=',result[0])
 			print('-----------------')
 			break 
 		default:
@@ -295,6 +297,115 @@ red_robin ='''
 }
 '''	
 
+#===================
+
+## lantern, ship, easter =========testing march 6th 2022 sunday morning coding ===
+
+red_robin0 ='''
+	switch(exp){  
+		case 'lantern': 
+			print("pigion point light house!")
+			print('this green green green . it actually works')
+			print('how green green green, yes way ')
+			break
+			
+		case 'ship':
+			print('are we nearly up at Tahoe yet  !')
+			
+			#############
+			exp ='blable'
+			
+			switch(exp)  
+				case 'blable':
+					print("inside of first nested swi tch here ")
+					print("this is really working, fantastic...")
+					result[0]="very cool stoopping here "
+					#break
+					####################
+					exp = 'tahoe'
+					switch(exp){ 
+						case 'tahoe':
+							print("we are inside of tahoe swi tch now")
+							print("oh is this going to really work now ... really it is")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							result[0]='fallen leaf lake waterskiing fell'
+							
+							####################
+							exp = 'winter'
+							switch(exp){    
+								case 'winter':
+									print("ththis is inside of winter now")
+									print("listening to mit debugging session in summer")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice kayaking race")
+									break
+								default:
+									print("we are done here")
+							endswitch 
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			
+			exp = 'burger'
+			switch(exp)
+				case 'burger':
+					print("go to wendys today")
+					####################
+					exp='snow fire'
+					switch(exp){   
+						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("THIS IS SNOW FIRE HERE")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch
+			##############
+			print('taught me how to write code should be last line ')
+			break
+		case 'easter':
+			print('big numbers here this is 11 thru 15  ')
+			print('=this is the last c ase ==')
+			result[0]='sip some mocha now'
+			print('result[0]=',result[0])
+			print('-----------------')
+			break 
+		default:
+			print('no matches so sorry about that chap')
+			print(' ')
+}
+'''	
+
+
+##=========================
 
 red_robin2 ='''
 	switch(exp){  
@@ -775,7 +886,7 @@ swan2 ='''
 '''
 
     
-two_choices(swan2)
+endswitch(swan2)
 
 print("===TEST TEST====TEST TEST====TEST TEST====TEST TEST====TEST TEST==")
 print("===TEST TEST====TEST TEST====TEST TEST====TEST TEST====TEST TEST==")
@@ -844,7 +955,7 @@ duck ='''
 print("=== duck changes =====testing if duck is single switch or multiswitch")
 #count_switches_in_inputstring(duck) #testing on feb 12th 
 #cool_endswitch(duck)  #inside of silver
-two_choices(duck)
+endswitch(duck)
 
 #=== feb 12th 2022 testing ==========================
 #what if I call smart_endswitch
@@ -901,7 +1012,21 @@ print("===///===testing if multi switch here===///=====")
 
 
 #smart_endswitch(red_robin)  #NESTEd in TREX
-two_choices(red_robin)
+endswitch(red_robin)
+#exit()
+
+##================================
+print("now testing using words in cases of nested switch to get it working")
+print("====")
+print("======000000000010101010101010000=====")
+#need to have dino[0] inserted input into dino[0]
+clever2('easter')
+print("BIG TEST here to see if we can feed the input into dino[0]")
+#dino[0] = 'ship' #see if this helps  #need to modify feedinput( to do num or word)
+clever3('easter')
+endswitch(red_robin0)
+#exit()
+
 
 #dual_modes(red_robin)
 #this calls TREX module for the nested switch 
@@ -967,8 +1092,8 @@ swan2 ='''
 #dual_modes(swan2)    
 #===========================
 #cool_endswitch(swan2) #this exists only in teh silver module 
-two_choices(swan2)
-
+endswitch(swan2)
+#exit()
 #this calls teh silver module for single switch 
 
 
@@ -1043,7 +1168,7 @@ print("==== testing elcapitan new switch string all kinds of probs why==")
 #this will just take in as input the string now not num,red_robin
 #main_control_sequencer(red_robin)#red_robin  #this will be the the modifed endswitch eventually 
 
-print("testing el capitan here")
+print("testing el capitan her==-=-=--===----wow moment ----e")
 
 #nestedswitch('True')
 
@@ -1060,7 +1185,7 @@ print("second attempt go high")
 num = 7   
 #main_control_sequencer(num,elcapitan)#
 feedinput(num)
-two_choices(elcapitan)
+endswitch(elcapitan)
 # I was missing a : after a case and missing default: at bottom
 #exit()
 
@@ -1072,7 +1197,7 @@ print("input 7")
 print("")
 num = 7   
 feedinput(num)
-two_choices(red_robin2)
+endswitch(red_robin2)
 #main_control_sequencer(num,red_robin2)#red_robin  #this will be the the modifed endswitch eventually 
 #print("====after second pass== before 3rd pass=== ")
 #show_it_to_me()
@@ -1085,7 +1210,7 @@ print(" === 3rd test === nested==")
 
 num = 1   
 feedinput(num)
-two_choices(red_robin3)
+endswitch(red_robin3)
 #main_control_sequencer(num,red_robin3)#red_robin  #this will be the the modifed endswitch eventually 
 #print("=====after 3rd pass ======")
 #show_it_to_me()
@@ -1097,7 +1222,7 @@ print("================number 4 test ======")
 
 num = 1   
 feedinput(num)
-two_choices(red_robin4)
+endswitch(red_robin4)
 #main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("input 1")
@@ -1107,7 +1232,7 @@ print("last one now the 5th test ====")
 
 num = 1   
 feedinput(num)
-two_choices(red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
+endswitch(red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("input 7")
 print("")
@@ -1115,7 +1240,7 @@ print("last one now the 6th test ====")
 
 num = 7   
 feedinput(num)
-two_choices(red_robin4)
+endswitch(red_robin4)
 #main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("")
@@ -1126,7 +1251,7 @@ print("last one now the 7th test ====")
 
 num = 7   
 feedinput(num)
-two_choices(red_robin5)
+endswitch(red_robin5)
 #main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("")
@@ -1137,7 +1262,7 @@ print("last one now the 8th test ====")
 
 num = 7   
 feedinput(num)
-two_choices(red_robin3)
+endswitch(red_robin3)
 #main_control_sequencer(num,red_robin3)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("")
@@ -1148,7 +1273,7 @@ print("last one now the 9th test ====")
 
 num = 7   
 feedinput(num)
-two_choices(red_robin5)
+endswitch(red_robin5)
 #main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
 
 print("")
@@ -1158,7 +1283,7 @@ print("last one now the 10th test ====")
 
 num = 7   
 feedinput(num)
-two_choices(red_robin4)
+endswitch(red_robin4)
 #main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("")
@@ -1169,7 +1294,7 @@ print("last one now the 11th test ====")
 
 num = 3   
 feedinput(num)
-two_choices(red_robin5)
+endswitch(red_robin5)
 #main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
 
 print("===end of testing demonstration==")
@@ -1240,12 +1365,12 @@ sw1 ='''
 			break #mandatory break
 }
 '''
-two_choices(sw1)
+endswitch(sw1)
 
 print("===now testing a nested switch again===")
 num = 3   
 feedinput(num)
-two_choices(red_robin4)
+endswitch(red_robin4)
 #main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("")
@@ -1310,7 +1435,7 @@ swy ='''
 			break #mandatory break
 }
 '''
-two_choices(swy)
+endswitch(swy)
 
 ####=== show me the money =========
 ##==========================
@@ -1349,9 +1474,9 @@ swi ='''
 			break
 }
 '''
-two_choices(swi)
+endswitch(swi)
 
-
+#exit()
 
 
 
@@ -1401,7 +1526,7 @@ swu = '''
 			break
 }
 '''
-two_choices(swu)
+endswitch(swu)
 
 
 
@@ -1444,13 +1569,13 @@ swt ='''
 			break
 }
 '''
-two_choices(swt)
+endswitch(swt)
 
 print("=====================")
 print('now doing more nested switches ')
 num = 7   
 feedinput(num)
-two_choices(red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
+endswitch(red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
 
 print("")
 print("input 7")
@@ -1459,7 +1584,7 @@ print("last one now the 10th test ====")
 
 num = 7   
 feedinput(num)
-two_choices(red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
+endswitch(red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("")
 print("input 3")
@@ -1483,7 +1608,6 @@ clever('ufos') #this would change varholder[0]
 show_input_switch_string()   #input so what the string right below here
 hide_generated_code()
 #hide_generated_code() #from this point forward
-
 
 swt ='''
 	switch(exp) {
@@ -1510,5 +1634,7 @@ swt ='''
 			break
 }
 '''
-two_choices(swt) 
+endswitch(swt)
 
+
+exit() 

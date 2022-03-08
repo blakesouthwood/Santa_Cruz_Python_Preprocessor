@@ -1,3 +1,4 @@
+
 #mrcoffee module 
   
 # -*- coding: utf-8 -*-
@@ -1744,7 +1745,6 @@ defaultlist=[]  #here defaultlist is declared as empty
 #===============
 #defaultlist=[]
 '''
-
 '''
 ###====================
 ####======== find_last_break_in_string  ========= in switchcasetester input switch
@@ -1769,7 +1769,6 @@ def find_last_break_in_string_2():
 
 #working on this December 17th new functions
 '''
-
    
 '''
 
@@ -3034,7 +3033,6 @@ def switch_code_gen_2():
 	'''
 	mytrace('switch_code_gen')
 	print("this is the code gen 2 for doing numbers switches")
-
 	#here will be the caselists for each case section that will be generated
 	#I have to make a doctring with a name for the output python that will be run.
 	print("=== march 7th, 2021 testing===================///================================")
@@ -3043,13 +3041,11 @@ def switch_code_gen_2():
 	print('=========')
 	print('what is in cranberries')
 	print(cranberries)
-
 	 #name of  generated docstring switch_python_gen
 	#print("varholder.append(exp)")
 	#this is the final input code of switchcasetester
 	#print("================== finalized input of switch case code =======")
 	#print(switchcasetester) #to see what it sees
-
 	#remembering one is printing
 	#the other is generating (and printing to see it)
 	#before it's executed the python switch case form
@@ -3061,15 +3057,10 @@ def switch_code_gen_2():
 		cranberries.insert(0,'starter')
 	else:
 		pass
-
-
 	##############
 	topvars2 = "\nexp = varholder[0]\n\n"
-
-
 	#this builds the case lists for each case section
 	#which are used when it says: if case in caselist2:
-
 	numb = 1
 	counter = 1
 	#thedefault = "['default']"
@@ -3079,20 +3070,16 @@ def switch_code_gen_2():
 	print("what we have for length is (len(smartcasemanager) -1")
 	
 	numberofcaselists = len(einstein)-1
-
 	print("numberofcaselists we have =",einstein)
-
 	###################################################
 	#   this is printing out the caselists at the top
 	###################################################
-
 	#--- testing dec 24th for varholder[0] input word ----
 	#------------------------------------
 	top_input_of_exp = "exp = varholder[0]"
 	# "varholder.append(exp)\n" +
 	print("varholder[0] =",varholder[0])
 	#how do I determine if it's empty
-
 	if not varholder:
 		print("List is empty")
 	else:
@@ -3109,7 +3096,6 @@ def switch_code_gen_2():
 	#add default to end of einstein; this is because there is no actual default case
 	#it's used as a lifesafter in case someone wantsto fallthru into default
 	#I decided to create a default case but in the input it's not there
-
 	einstein.append("default")  #adding default to the end of einstein copy list
 	
 	#print('after the appending of default we have..')
@@ -3119,7 +3105,6 @@ def switch_code_gen_2():
 	print("einstein=",einstein)
 	print("the length is",len(einstein))
 	print("the bug has to be in here somewhere")
-
 	for item in range(1,len(einstein)):     #first loop was smartcasemanager
 		trains =  str(counter)
 		merge = "caselist" + trains    #caselist1
@@ -3134,21 +3119,16 @@ def switch_code_gen_2():
 		######################
 		#inside1 = caselist  #this is only apparently capturing the last one
 		#####################
-
 		counter += 1
 		numb += 1
 	#after loop finished we have the caselists generated captured inside of 
 	
-
 	##############################################
 	switchy= "switch(exp)\n" +"while True:\n\n" #=====
 	##############################################
-
 	print("")
-
 	mycounter =1 #it was 0
 	#size=  #notice -1
-
 	front="case in caselist"
 	print("below might be missing 'starter' at beginning if so add it")
 	case_main_body_list.insert(0,'starter')
@@ -3164,70 +3144,49 @@ def switch_code_gen_2():
 	thirdpart =[]
 	extremelysmart=[]
 	print("for generating teh case sections we have case_main_body_list ",case_main_body_list)
-
 	for item in range(1,len(case_main_body_list)):       #second loop
 		if mycounter == 1:
 		#============  first section case=============
-
 			first_if= tabs[1] + "if " + front+str(mycounter)   + ": #"
 			toosmart = eval("caselist" + str(mycounter))
-
 			newlist = [first_if, toosmart]
-
-
 			###########################
 			sofrustrated =str(newlist[0]) + " " + str(newlist[1]) #=== only catching last one==
 			extremelysmart.append(sofrustrated)
 			###### firstpart adding if line ###########
 			firstpart.append(sofrustrated) #this feeds the if line into first part list
-
-
-
 		else:    #rest of cases after first case ======
 			restofifs= tabs[1] + "elif " + front+str(mycounter)+ ": #"
 			toosmart = eval("caselist" + str(mycounter))
 			newlist = [restofifs, toosmart] #comments put case names to right of caselistnumber
-
-
 			caselistline = str(newlist[0]) + " " + str(newlist[1]) #=====
 			extremelysmart.append(caselistline)
 			firstpart.append(caselistline) #this ffeeds elif line into first part list
-
 		######################
 		#=== second part of each case section
 		weasel= case_main_body_list[mycounter]
 		secondpart.append(weasel) #this feeds the string body into secondpart
-
 		######################
 		#=== third part of each case section
 		#this is the tail either break or fallthru(name)
 		crans =tabs[2] + cranberries[mycounter]  #=====
 		thirdpart.append(crans) #this feeds the tail into thirdpart
-
-
 		mycounter += 1     #loop counter
 	###===== this is for the ELSE: at bottom of switch case
 	#this is the default section else
 	# end of regular cases
 	#=== END LOOP  =========================
-
 	################
 	theelse = tabs[1] + "else:"  #this is just once
 	firstpart.append(theelse) #this feeds the else clause into first part
 	#this is the last real case after the regular caes
-
 	##################3
 	 #last case body for default
-
 	lastishcase =case_main_body_list[-1]
-
 	secondpart.append(lastishcase)  #this feeds the body into secondpar
-
 	##########################
 	trying = tabs[2] + cranberries[-1] #=====
 	thirdpart.append(trying) #this feeds the tail into thirdpart
-
-
 	#practice printint out the three tier cakes for each section
 	#print("below this line is the concatted output in strings")
 	#print("first is the castlists from the top")
@@ -3235,14 +3194,12 @@ def switch_code_gen_2():
 ###============================================
 # caselists concatted to string cool
 	cool=''
-
 	#== LOOP === these are stored in list called testlist
 	for item in testlist: #to see if the caselist names are in here  in this list
 		cool += item + "\n"
 		#print(item)
 	#print("this is printing the string of each case from cool")
 	cool += "\n\n"
-
 	#===case sections three parts at once ==")
 	rocks=''
  #=====================
@@ -3267,7 +3224,6 @@ def switch_code_gen_2():
 	#a -----main list so sublists in the main list
 	# so I only use ONE LIST for all three
 	#adding strings together here
-
 	sweet = topvars2 + cool + switchy + rocks
 	#for debugging I will have a flag here to see output and test separately for user
 	#print(switchcasetester)
@@ -3278,10 +3234,8 @@ def switch_code_gen_2():
 	else:
 		#print('not showing generated python switch case code since flag = False')
 		pass
-
 	#print('testing executing generated string of code...')
 	#print(" =================")
-
 	exec(sweet)  #this is the building of the string of python code strings
 	'''
 	####################################################
@@ -10057,10 +10011,4 @@ def cool_endswitch(y): #pulls in sw
 
 
 	
-
-	
-
-	
-
-
 
