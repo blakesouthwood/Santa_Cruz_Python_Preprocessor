@@ -301,22 +301,24 @@ def remove_exps_at_top_now(instringname):
 def detect_input_exps_above_first_switch(stringname): #above top of nested switch string
 	mystacktrace("detect_input_exps_above_first_switch():")
 	testing_switch_input_vars='';counter =0;switch_input_vars='';active = False
-	#I can concat them to the growing string daaaa
+	#I can concat them to the growing string data
 	for line in stringname.splitlines():  #looks in sample 3 line string above for testing
 		if line.startswith("\texp="):
 			#print(line)
 			startline = counter;active = True;
 			switch_input_vars += line
+			#==== this adds the line number with exp= to list collection =======
 			collection.append(counter) #adds line number
 			counter += 1
 		else:
+			#this says if line doesn't start with "exp="" nor start with "switch(exp)"
 			if "\texp=" not in line  or line.startswith("switch(exp)"):
 				active = False
 				stopline = counter -1 #the previous line obviously
  
-	clean = switch_input_vars.replace(";",",")
+	clean = switch_input_vars.replace(";",",") #replaces ; with ,
 	switch_input_vars = clean
-	switch_input_vars = switch_input_vars[:-1]
+	switch_input_vars = switch_input_vars[:-1] #this cuts off the last char at end
 	relay[0] = switch_input_vars 
 
 	######################################################
@@ -382,6 +384,7 @@ def scan_thru_string_at_top_for_exps(stringname):
 		for line in stringname.splitlines():
 			if "exp =" in line:
 				#so concat and build new stirng
+				#this changes (exp =) to (exp=) so that they are consistent
 				fixedline = line.replace("exp =","exp=") #looks for exp = changes to exp=
 				mystring += fixedline + "\n"
 			else:
