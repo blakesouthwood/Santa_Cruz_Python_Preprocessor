@@ -247,27 +247,35 @@ gauge.append(0)
 collection=[]   #this gets the inputs exps for the NESTED SWITCHES INPUT
 serious=[]
 serious.append(0)
+russia=[]
+russia.append(0)
 
-##==========================================
-## remove_exps_at_top_now(instringname):
-##==========================================
-def remove_exps_at_top_now(instringname):
-	mystacktrace("remove_exps_at_top_now(instringname)")
-	#print("=====remove_exps_at_top_now()=== this is called HERE 5:00 pm ====")
+##============================================
+## get_first_switch_location(instringname):
+##============================================
+def get_first_switch_location(instringname):
+	#this gets the location of first switch ---------------
 	fuel_level=''  #here it is initialized
 	counter =0
 	for line in instringname.splitlines():
 		tabs = line.count("\t")
 		#print("tabs =",tabs)
-		if "switch(exp)" in line and tabs == 1: 
+		if "switch(exp)" in line and tabs == 1:  
 			grabit =counter 
+			russia[0]=grabit #pouts grabit into russia[0]
 			break
 		else:
 			counter += 1
-	#this will start concatting the line with the first switch in it
-	#only copy the string once it sees number in solution[0]
-	
+
+##===========================================================
+## copy_switch_string_from_first_switch_down(instringname):
+##==========================================================			
+def copy_switch_string_from_first_switch_down(instringname):
+	# this copies the switch string from the first switch word down to the bottom of string
 	counter = 0
+	fuel_level =''
+	grabit = russia[0] #here it puts var into grabit
+	print("russia[0]=",russia[0])
 	for line in instringname.splitlines():
 		if counter >= grabit:   #only concatting from first switch line number forwards
 			fuel_level += line + "\n"
@@ -276,7 +284,15 @@ def remove_exps_at_top_now(instringname):
 			counter += 1
 
 	serious[0] = fuel_level
-    
+
+##==========================================
+## remove_exps_at_top_now(instringname):
+##==========================================
+def remove_exps_at_top_now(instringname):
+	mystacktrace("remove_exps_at_top_now(instringname)")
+	get_first_switch_location(instringname)                  #method
+	copy_switch_string_from_first_switch_down(instringname)  #method
+	
 
 
 ##==========================================
@@ -325,9 +341,9 @@ def detect_input_exps_above_first_switch(stringname): #above top of nested switc
 def manage_exps_prepare_for_processing(stringname):
 	mystacktrace(" manage_exps_prepare_for_processing()")
 	concrete='';fool='';counter =0;
-	for line in stringname.splitlines():
 	#what this does is skip this switch(exp) line at the top 
 	#so when it reacheds the first switch it stops immediately
+	for line in stringname.splitlines():
 		if "switch(exp)" in line: #this should stop it
 			break
 		else:
@@ -379,15 +395,12 @@ def scan_thru_string_at_top_for_exps(stringname):
 resultstring=[]
 resultstring.append(0)
 samplelist=[]
-##=========================================================================
-##  take_input_vars_for_switches_convert_to_list(switch_input_vars):
-##=========================================================================
-def take_input_vars_for_switches_convert_to_list(switch_input_vars):
-	mystacktrace("take_input_vars_for_switches_convert_to_list(switch_input_vars):")
-	mytest_list = switch_input_vars.split(",") #split at commas put into a list 
+
+def do_first_stage(mytest_list):
+	print("do first stage")
 	counter =0
 	print("look in mytest_list now", mytest_list)
-	print("=========what the hell is in this list=========================================")
+	print("=========what the hell is in this list=================")
 	for item in mytest_list: #loops thru list made from switch_input_vars string split up
 		#this says look at the first char in this item
 		if item[0].startswith(' ') == False: #meaning if var doesn't start with space
@@ -397,8 +410,10 @@ def take_input_vars_for_switches_convert_to_list(switch_input_vars):
 			counter += 1
 		else:
 			counter += 1
-			
-	#######==================================================================	
+
+
+def do_second_stage(mytest_list):
+	print("calling do second stage()======")
 	counter=0 
 	#chop off from before and including =
 	for item in mytest_list: #now this takes out the front part with exp=f from '='
@@ -408,10 +423,10 @@ def take_input_vars_for_switches_convert_to_list(switch_input_vars):
 		#print(y)
 		mytest_list[counter] = y
 		counter += 1
-	##=======================================
-	#take out spaces on both sides of string 
-	#cut off first char and last char
-	#feed each word into list myhtest_list
+		
+
+def do_third_stage(mytest_list):
+	print("calling do second stage()======")
 	counter =0
 	for item in mytest_list:            #print("now mytest_list=",mytest_list)
 		string = item
@@ -424,6 +439,18 @@ def take_input_vars_for_switches_convert_to_list(switch_input_vars):
 	for item in mytest_list:
 		samplelist.append(item)  #fills samplelist which is used to feed into adding
 	print("at this point the contesnts of samplelist ??")
+
+
+						
+##=========================================================================
+##  take_input_vars_for_switches_convert_to_list(switch_input_vars):
+##=========================================================================
+def take_input_vars_for_switches_convert_to_list(switch_input_vars):
+	mystacktrace("take_input_vars_for_switches_convert_to_list(switch_input_vars):")
+	mytest_list = switch_input_vars.split(",") #split at commas put into a list 
+	do_first_stage(mytest_list)  #method
+	do_second_stage(mytest_list) #method
+	do_third_stage(mytest_list)  #method
 	
 	
 
@@ -432,16 +459,13 @@ def take_input_vars_for_switches_convert_to_list(switch_input_vars):
 ##==================================================
 def add_exp_var_above_each_switch(stringname): #from samplelist
 	mystacktrace("add_exp_var_above_each_switch(stringname):")
-	manage_exps_prepare_for_processing(stringname)
+	manage_exps_prepare_for_processing(stringname)       #method
 	cool = relay[0]
 	samplelist.clear() #new here 
-	take_input_vars_for_switches_convert_to_list(cool) 
+	take_input_vars_for_switches_convert_to_list(cool)   #method
 	codeking=''
 	# go thru each line and based on the number add a line above switch
 	mycounter =1
-	#loop_thru_the_string(stringname)
-	#print("inside of add_exp_var_above_each_switch(stringname)")
-	#print("samplelist=",samplelist)
 
 	for line in stringname.splitlines():
 		tabcount = line.count("\t")
@@ -464,6 +488,8 @@ def add_exp_var_above_each_switch(stringname): #from samplelist
 		else:
 			codeking += line  + '\n'
 	resultstring[0]=  codeking
+	
+	
 	
 		
 
@@ -529,27 +555,27 @@ def determine_if_exps_above_first_switch(stringname): #sniffer
 		else:
 			counter += 1
 
+##==============================
+##  loop_thru_answer()
+##==============================
+def loop_thru_answer(answer):
+	for line in answer.splitlines():
+		print(line)
 
 ##==========================================================================
 ## take_out_exps_at_top_and_adds_exps_above_nested_switches(stringname):
 ##==========================================================================
 def take_out_exps_at_top_and_adds_exps_above_nested_switches(stringname):
 	print("==== take_out_exps_at_top_and_adds_exps_above_nested_switches(stringname):==")
-	samplelist=[]
-	samplelist.clear() #new
-	mytest_list=[]
-	mytest_list.clear() #new
-	relay[0]=''
-	loop_thru_the_string(stringname)
-	detect_input_exps_above_first_switch(stringname)
-	add_exp_var_above_each_switch(stringname)
-	show_list_resultstring_to_verify_output()
+	samplelist=[];samplelist.clear() ;mytest_list=[]; mytest_list.clear();relay[0]=''
+	loop_thru_the_string(stringname)                 #method
+	detect_input_exps_above_first_switch(stringname) #method
+	add_exp_var_above_each_switch(stringname)        #method
+	show_list_resultstring_to_verify_output()        #method
 	gauge[0]=resultstring[0];trouble = gauge[0]
-	remove_exps_at_top_now(trouble)
-	take_out_first_line() 
-	answer =serious[0]
-	for line in answer.splitlines():
-		print(line)
+	remove_exps_at_top_now(trouble)                  #method
+	take_out_first_line(); answer =serious[0]        #method
+	loop_thru_answer(answer)                         #method
 	return answer #resulting concatted string
 	guage[0]='';resultstring[0]='';trouble='';serious[0]='';answer='';samplelist=[]
 	
@@ -557,16 +583,11 @@ def take_out_exps_at_top_and_adds_exps_above_nested_switches(stringname):
 
 finaloutput=[]
 finaloutput.append(0)	
-##===============================================
-##  transform_nested_switch_string_for_parser():
-##===============================================
-def transform_nested_switch_string_for_parser(stringname):
-	print("===is this even called ==")
-	scan_thru_string_at_top_for_exps(stringname)
-	#HERE 
-	stringname = soclever[0] #now this should fix it
-	determine_if_exps_above_first_switch(stringname) #sets if_exps_at_top[0] to True or False
-	#if exp at top then use them otherwise skip
+
+##=======================
+## bottom_method()
+##=======================
+def bottom_method(stringname):
 	if if_exps_at_top[0] == 'True':
 		print("==exps at top True=>>>>>>>>>=")
 		outputis=take_out_exps_at_top_and_adds_exps_above_nested_switches(stringname)
@@ -576,13 +597,31 @@ def transform_nested_switch_string_for_parser(stringname):
 		print("this switch string doesn't have exps at the top")
 		loop_thru_the_string(stringname)
 		pass
+		
+		
+##===============================================
+##  transform_nested_switch_string_for_parser():
+##===============================================
+def transform_nested_switch_string_for_parser(stringname):
+	print("===transform netsedswithdstring  ==")
+	scan_thru_string_at_top_for_exps(stringname) #method
+	stringname = soclever[0] #now this should fix it
+	determine_if_exps_above_first_switch(stringname) #method sets if_exps_at_top[0] to True or False
+	#if exp at top then use them otherwise skip
+	bottom_method(stringname)
 
 #question is the output from this put back into stringname 
 #if not then that is what I need to do next
 # saturday morning coding fixing bugs and testing marathon		
 
+
+##===============================
+## prepare_string(stringname)
+##===============================
 def prepare_string(stringname):
 	transform_nested_switch_string_for_parser(stringname)
+
+
 	
 print("first attempt")	
 prepare_string(raw)
