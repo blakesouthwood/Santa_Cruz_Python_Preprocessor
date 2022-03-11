@@ -1,9 +1,15 @@
 March 11th Friday 2022
-Implimenting "goto label" which is in  C and C++ and C#.
+Implimenting "goto label" which is in 
+##=============================
+Assembly(1949)      JMP label
+C       (1978)      goto label
+C++     (1985)      goto label     
+C#      (2000)      goto label
+##===============================
 The way it works is using a skeleton of the switch case underneath.
 If inside of deeply nested for loops or while loops it actually puts nested loops within a separate function
-and exits using a return. The goto label feature actually will use the fallthru('label') feature in the switch case.
-The fallthru() actually calls switch() so it can jump up or down from anywhere in the switch case - pure genius.
+and exits using a return and then the goto('label') is triggered, The goto label feature actually will use the fallthru('label') feature in the switch case.
+The fallthru() actually calls switch(word) so it can jump up or down from anywhere in the switch case - pure genius.
 By default it goes thru a starter 1st case above a function to enter the realm of the function and then behaves
 at the whim of the goto flow logic. For flexibility the word jump can be substituted for goto.
 Labels can be lower case, mixed case, or upper case. I tested it over a year ago but I just recently tamed the 
