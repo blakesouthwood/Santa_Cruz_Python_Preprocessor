@@ -3,21 +3,25 @@ Implimenting "goto label" which is in  C and C++ and C#.
 The way it works is using a skeleton of the switch case underneath.
 If inside of deeply nested for loops or while loops it actually puts nested loops within a separate function
 and exits using a return. The goto label feature actually will use the fallthru('label') feature in the switch case.
+The fallthru() actually calls switch() so it can jump up or down from anywhere in the switch case - pure genius.
 By default it goes thru a starter 1st case above a function to enter the realm of the function and then behaves
 at the whim of the goto flow logic. For flexibility the word jump can be substituted for goto.
-Labels can be lower case, mixed case, or upper case.
+Labels can be lower case, mixed case, or upper case. I tested it over a year ago but I just recently tamed the 
+true switch case code. 
 The way it works will be just like the switch case code that is in a var'd triple string docstring
 Example:
 	
-some code here
+some code here which would be within a chunk of code. 
    goto mylabel; #semicolon optional
-   jump mylabel; #this is also valid
+   jump mylabel; #this is also valid in hommage to Grace Hopper's preferred word
 	
 mylabel:  #must be one tab from left margine to be valid
 	some code here 
-
+	
+##=====================================
 March 7th, 2022  9:51am PST Morgan Hill, California Starbucks 
-endswitch(stringname) implimented successfully
+endswitch(stringname) implimented successfully :: this is the trigger for activating a switch case string before it was
+called two_choices() for testing since it did the 2 modes of single switch and nested switch.
 This would be at the end of the input doc string var of the switch case code
 which actually triggers the translation and execution of the switch case
 
