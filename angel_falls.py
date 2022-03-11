@@ -1,7 +1,9 @@
 March 11th Friday 2022
-Implimenting "goto label" which is in 
+Implimenting "goto label" in Python which is generated dynamically embedded within a switch case construct
+goto label is in the following programming langauges.
 ##=============================
 Assembly(1949)      JMP label
+Ada     (1983)      goto label
 LISP    (1984)      do, do*, dotimes, dolist, loop)  macros that expand into goto :note Common Lisp 
 C       (1978)      goto label
 C++     (1985)      goto label     
