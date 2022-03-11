@@ -2,6 +2,7 @@ March 11th Friday 2022
 Implimenting "goto label" which is in 
 ##=============================
 Assembly(1949)      JMP label
+LISP    (1984)      do, do*, dotimes, dolist, loop)  macros that expand into goto :note Common Lisp 
 C       (1978)      goto label
 C++     (1985)      goto label     
 C#      (2000)      goto label
