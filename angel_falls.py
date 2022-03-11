@@ -1,9 +1,27 @@
-March 7th, 2022  9:51am PST
+March 11th Friday 2022
+Implimenting "goto label" which is in  C and C++ and C#.
+The way it works is using a skeleton of the switch case underneath.
+If inside of deeply nested for loops or while loops it actually puts nested loops within a separate function
+and exits using a return. The goto label feature actually will use the fallthru('label') feature in the switch case.
+By default it goes thru a starter 1st case above a function to enter the realm of the function and then behaves
+at the whim of the goto flow logic. For flexibility the word jump can be substituted for goto.
+Labels can be lower case, mixed case, or upper case.
+The way it works will be just like the switch case code that is in a var'd triple string docstring
+Example:
+	
+some code here
+   goto mylabel; #semicolon optional
+   jump mylabel; #this is also valid
+	
+mylabel:  #must be one tab from left margine to be valid
+	some code here 
+
+March 7th, 2022  9:51am PST Morgan Hill, California Starbucks 
 endswitch(stringname) implimented successfully
 This would be at the end of the input doc string var of the switch case code
 which actually triggers the translation and execution of the switch case
 
-
+I will upload the example working code Saturday. I have to tend to some other responsiblities now.
 
 
 March 2nd 2022 found some bugs working on them.
