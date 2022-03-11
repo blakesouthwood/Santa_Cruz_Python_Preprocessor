@@ -1,8 +1,14 @@
 March 11th Friday 2022
+I know that this is considered sacrilegious but what this is does create THE BEHAVIOR of a goto jump to label.
+There isn't actually a goto though it's a function call it's really manipulating a fallthru in a switch case that
+can jump anywhere within the body of a switch case which is a lattice struture above python and the equivalent running
+behaviors is created in python code that is generated.
+
 Implimenting "goto label" in Python which is generated dynamically embedded within a switch case construct
 goto label is in the following programming langauges.
 ##=============================
 Assembly(1949)      JMP label
+Cobol   (1959)      GOTO label
 Ada     (1983)      goto label
 LISP    (1984)      do, do*, dotimes, dolist, loop)  macros that expand into goto :note Common Lisp 
 C       (1978)      goto label
