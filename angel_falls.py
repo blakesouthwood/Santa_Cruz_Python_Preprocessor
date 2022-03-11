@@ -15,6 +15,7 @@ LISP    (1984)      do, do*, dotimes, dolist, loop)  macros that expand into got
 C       (1978)      goto label
 C++     (1985)      goto label     
 C#      (2000)      goto label
+Go      (2007)      goto label   
 Python  (2022)      goto label   #so proud to make this reality!
 ##===============================
 The way it works is using a skeleton of the switch case underneath.
