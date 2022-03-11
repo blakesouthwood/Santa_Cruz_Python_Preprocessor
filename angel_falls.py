@@ -2,7 +2,8 @@ March 11th Friday 2022
 I know that this is considered sacrilegious but what this is does create THE BEHAVIOR of a goto jump to label.
 There isn't actually a goto though it's a function call it's really manipulating a fallthru in a switch case that
 can jump anywhere within the body of a switch case which is a lattice struture above python and the equivalent running
-behaviors is created in python code that is generated.
+behaviors is created in python code that is generated. Again what is being used is a clever switch case to mimic
+the behavior of a goto label to jump anywhere within a function.
 
 Implimenting "goto label" in Python which is generated dynamically embedded within a switch case construct
 goto label is in the following programming langauges.
@@ -28,9 +29,9 @@ Example:
 	
 some code here which would be within a chunk of code. 
    goto mylabel; #semicolon optional
-   jump mylabel; #this is also valid in hommage to Grace Hopper's preferred word
+   jump mylabel; #this will also be valid in hommage to Grace Hopper's preferred word when she designed 
 	
-mylabel:  #must be one tab from left margine to be valid
+mylabel:  #must be one tab from left margin to be valid
 	some code here 
 	
 ##=====================================
