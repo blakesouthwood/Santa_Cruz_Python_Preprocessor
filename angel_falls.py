@@ -1,3 +1,220 @@
+March 15th 2022 10:09 AM PST Morgan Hill, California
+# example single switch and nested switch inside of functions running.
+
+
+
+def make_it_happen():
+
+	input_flow('ufos')
+	s ='''
+	switch(exp) {
+		case 'ufos':  
+			print(\"ww2!\")
+			print('nimitz')
+			print("==area 51==")
+			fallthrough
+	
+		
+		case 'Star Wars':
+			print('return of the jedi')
+			print("Luke Skywalker =====")
+			
+		
+		case 'Darth Vader':
+			print('flying in it tie-fighter')
+			print("the force is strong in this one...")
+			print("all too easy===")
+			break
+			
+		default:
+			print('no results')
+			print("that is all")
+			break
+	}
+	'''
+	endswitch(s)
+
+
+
+def really_risky():
+	num = 7   
+	input_flow(num)
+	r ='''
+	switch(exp){  
+		case 1 thru 6: 
+			print("====zebra black and white =====")
+			print("====   zebra   =====")
+			print("===    tahoe summiting    ======")
+			
+			#it should stop here
+		case 7 to 10:
+			print("this is =====zebra black and white ====== ")
+			print('pass Dutch Flat, Cisco, and Kings Beach to NorthStar !')
+			print(" this is 7 to 10 here we are")
+			break
+			#############
+			exp ='blable'
+			switch(exp)  
+				case 'blable':
+					print("this is the second string to try of sw itch 11 this is really cool ")
+					print("this is really working, fantastic...")
+					result[0]="Blake did it"
+					break
+					####################
+					exp = 'tahoe'
+					switch(exp){ 
+						case 'tahoe':
+							print("do THIS IS SO COOLinside of sw 15")
+							print("oh is this going to really work now ... really it is")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							result[0]='fallen leaf lake waterskiing fell'
+							
+							####################
+							exp = 'winter'
+							switch(exp){    
+								case 'winter':
+									print("this is possibly sw 25")
+									print("listening to mit debugging session in summer")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("morgan hill starbucks nesting works")
+									break
+								default:
+									print("we are done here")
+							endswitch 
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			#exp = 3
+			switch(exp)
+				case 'burger':
+					print("do something")
+					####################
+					switch(exp){   
+						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("nice")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch
+			##############
+			print('this should be the last line here for output')
+			break #was f a l l t h r u
+		case 11 to 15:
+			print("11 to 15 in ==zebra black and white==")
+			print('big numbers here this is 11 thru 15  ')
+			print('=this is the last c ase ==')
+			print('-----------------')
+			####################
+			exp ='snow fire'
+			switch(exp){   
+				case 'fishy':
+					print("do something")
+					print("yep")
+					fallthru
+				case 'snow fire':
+					print("inside of snow fire from zeba black white")
+					#############
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			break 
+		default:
+			print('no matches so sorry about that chap')
+			print(' ')
+	}
+	'''	
+	endswitch(r)
+
+
+print("this is the major test right here on Tuesday 10am right away")
+print(".......=====single switch==========.......")
+make_it_happen()
+print("........===nested switch example========...")
+really_risky()
+
+exit() 
+#OUTPUT
+varholder[0] = ufos
+['ufos']
+
+the input exp in clever was::  ufos
+we are inside of switch now ufos
+case = ufos
+ww2!
+nimitz
+==area 51==
+we are inside of switch now star wars
+case = star wars
+return of the jedi
+Luke Skywalker =====
+we are inside of switch now darth vader
+case = darth vader
+flying in it tie-fighter
+the force is strong in this one...
+all too easy===
+clearit()
+a list
+['starter']
+........===nested switch example========...
+dino[0]= 7
+====main_control_sequencer() called====
+IS THIS ONE CALLED build_list_input_list()  line 34132perhaps maybe march 8th 
+inside of practice_list looping == EXPERIMENTAL = march 8th==
+
+
+
+
+
+
+
+this is =====zebra black and white ====== 
+pass Dutch Flat, Cisco, and Kings Beach thru NorthStar !
+ this is 7 thru 10 here we are
+this is the second string to try of sw itch 11 this is really cool 
+this is really working, fantastic...
+do THIS IS SO COOLinside of sw 15
+oh is this going to really work now ... really it is
+nice
+this is possibly sw 25
+listening to mit debugging session in summer
+yep
+morgan hill starbucks nesting works
+yep
+we are done here
+this should be the last line here for output
+
+
+
 March 11th Friday 2022
 I know that this is considered sacrilegious but what this is does create THE BEHAVIOR of a goto jump to label.
 There isn't actually a goto though it's a function call it's really manipulating a fallthru in a switch case that
