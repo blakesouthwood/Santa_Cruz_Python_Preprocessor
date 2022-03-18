@@ -1,3 +1,10 @@
+dogged determination is what it takes
+March 17th, 2022
+I can parse a nested switch and move the exp vars at the top to the correct location above each nested switch
+and then convert it into python and run it. That was a pain. Now works.
+
+
+
 March 15th 2022 10:09 AM PST Morgan Hill, California
 # example single switch and nested switch inside of functions running.
 
