@@ -1,3 +1,127 @@
+
+March 18th 2022 10;25am Friday
+Pure Nirvana.
+
+#so this is a demonstration of the endswitch(stringname) method having some smarts
+so it can sort thru the type  and kind of switch and if exps at the top for a nested
+switch it correctly first distributes them above each inner switch in sequence
+and then generates the correct python code and executes it.
+This utilizes the snowflake module.
+
+
+this is parsed and runs now. what a rush.
+dino[0]= 'ship'
+starshiptest ='''
+	exp= 'ship';
+	exp= 'blable';
+	exp= 'tahoe';
+	exp= 'winter';
+	exp= 'burger';
+	exp= 'snow fire';
+
+	switch(exp){  
+		case 'lantern': 
+			print("pigion point light house!")
+			print('this green green green . it actually works')
+			print('how green green green, yes way ')
+			break
+			
+		case 'ship':
+			print('are we nearly up at Tahoe yet  !')
+			
+			#############
+			
+			switch(exp)  
+				case 'blable':
+					print("inside of first nested swi tch here ")
+					print("this is really working, fantastic...")
+					result[0]="very cool stoopping here "
+					#break
+					####################
+					
+					switch(exp){ 
+						case 'tahoe':
+							print("we are inside of tahoe swi tch now")
+							print("oh is this going to really work now ... really it is")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							result[0]='fallen leaf lake waterskiing fell'
+							
+							####################
+							
+							switch(exp){    
+								case 'winter':
+									print("ththis is inside of winter now")
+									print("listening to mit debugging session in summer")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice kayaking race")
+									break
+								default:
+									print("we are done here")
+							endswitch 
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			
+			switch(exp)
+				case 'burger':
+					print("go to wendys today")
+					####################
+					
+					switch(exp){   
+						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("THIS IS SNOW FIRE HERE")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch
+			##############
+			print('taught me how to write code should be last line ')
+			break
+		case 'easter':
+			print('big numbers here this is 11 thru 15  ')
+			print('=this is the last c ase ==')
+			result[0]='sip some mocha now'
+			print('result[0]=',result[0])
+			print('-----------------')
+			break 
+		default:
+			print('no matches so sorry about that chap')
+			print(' ')
+}
+'''	
+endswitch(starshiptest)
+
+
+
 dogged determination is what it takes
 March 17th, 2022
 I can parse a nested switch and move the exp vars at the top to the correct location above each nested switch
