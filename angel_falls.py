@@ -3,7 +3,7 @@ March 18th 2022 10;25am Friday
 Pure Nirvana.
 
 #so this is a demonstration of the endswitch(stringname) method having some smarts
-so it can sort thru the type  and kind of switch and if exps at the top for a nested
+so it can sort thru the type  and kind of switch and if exps are at the top for a nested
 switch it correctly first distributes them above each inner switch in sequence
 and then generates the correct python code and executes it.
 This utilizes the snowflake module.
