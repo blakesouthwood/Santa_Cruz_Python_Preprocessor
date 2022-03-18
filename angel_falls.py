@@ -120,7 +120,33 @@ starshiptest ='''
 '''	
 endswitch(starshiptest)
 
-Code Tree
+
+== OUTPUT==
+
+===NESTED SWITCH IS TRUE==
+dino[0]= ship
+====main_control_sequencer() called====
+
+are we nearly up at Tahoe yet  !
+inside of first nested swi tch here 
+this is really working, fantastic...
+we are inside of tahoe swi tch now
+oh is this going to really work now ... really it is
+nice
+ththis is inside of winter now
+listening to mit debugging session in summer
+yep
+nice kayaking race
+yep
+go to wendys today
+THIS IS SNOW FIRE HERE
+yep
+nice
+taught me how to write code should be last line 
+
+==== END OF OUTPUT ====
+
+Code Tree the relevant methods for the new code behaviors
 status_of_exps=[]
 status_of_exps.append(0)
 ##=================================================
