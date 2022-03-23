@@ -1,4 +1,8 @@
 
+March 23rd, 2022 Wednesday, 10:22am PST
+Just tested the switch module now called strawberry in Sublime Text and it runs beautifully.
+I normally do my coding in BBEdit and occassionally in Visual Studio Code to step thru code when debugging.
+
 March 18th 2022 10;25am Friday
 Pure Nirvana.
 
