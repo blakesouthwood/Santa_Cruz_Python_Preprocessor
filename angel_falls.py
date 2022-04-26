@@ -1,3 +1,12 @@
+In the file that you are doing to use a badass true blue switch case (will make style guide this week)
+you just need to put this at the top of each file that will use the NEW switch case for Python kicks ass over match case garbage.
+It's based more on JavaScript which I adore way more than C.
+
+import strawberry            
+from strawberry  import *     
+
+#=============================
+
 Today is Tuesday, April 26th, 2022 and it's 12 noon (eerie) and I feel like I have been gone a year. I was a bit preoccupied.
 I started a new blog called Space Invaders on blogger. Should be pretty interesting stuff into a different dimension and realm.
 
