@@ -1,4 +1,4 @@
-In the file that you are doing to use a badass true blue switch case (will make style guide this week)
+In the file that you are going to use a badass true blue switch case (will make style guide this week)
 you just need to put this at the top of each file that will use the NEW switch case for Python kicks ass over match case garbage.
 It's based more on JavaScript which I adore way more than C.
 
