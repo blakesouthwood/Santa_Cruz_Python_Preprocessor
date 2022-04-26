@@ -1,3 +1,27 @@
+Today is Tuesday, April 26th, 2022 and it's 12 noon (eerie) and I feel like I have been gone a year. I was a bit preoccupied.
+I started a new blog called Space Invaders on blogger. Should be pretty interesting stuff into a different dimension and realm.
+
+Dam, sorry about the delay I got distracted for the past month with other things.
+I had actually finished the nested switch case engine and I neglected to upload the final golden master code
+which I still need to document and create a golden user guide - but all in good time.
+I haven't posted here in centuries and even forgot how to log in.
+
+So the module is based on what my parents grew in the back yard garden that was sweet.
+The javascript/C style switch case with nesting and macros is called strawberry.
+
+I will now update these files:
+mocha.py
+macros_exps.py
+strawberry.py
+official_switch_case_silver.py
+running_switchcase_engine.py
+snowflake.py
+trex.py
+
+Please bear with me the past month has been the most fascinating
+and mentally draining and strange in my life. I wouldn't wish upon
+anyone what I have experienced. Good music helps. KFJC, KKUP, KOHL, KZSU.
+
 
 March 23rd, 2022 Wednesday, 10:22am PST
 Just tested the switch module now called strawberry in Sublime Text and it runs beautifully.
