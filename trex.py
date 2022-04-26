@@ -56,6 +56,7 @@ def show_bluejay(): #show the bluejay list
 def clearbluejay():
     del bluejay[:]
 
+
 def fill_quail_from_bluejay():
     for item in bluejay:
       quail.append(item)
@@ -73,7 +74,7 @@ def empty_quail():
 ## modified on feb 12th 2022 at 9am
 #  two conditional tests switch at 3 tabs and switchcount to verify a nested switch
 def count_switches_in_inputstring(thestring):
-	print("=====make it so right now=====count_switches_in_inputstring called===feb 12th=====")
+	print("=====count_switches_in_inputstring called===feb 12th=====")
 	number_of_switches ='';number_of_endswitches=''
 	number_of_switches =thestring.count("switch")
 	#just remembered need to count if a switch at three tabs
@@ -84,8 +85,7 @@ def count_switches_in_inputstring(thestring):
 		#print(line)
 		tabcount = line.count("\t")
 		if "switch" in line and tabcount == 3:  #only test that truley matters at 3 tabs
-			#print(line) #since seeing is believing
-			#print("this is by definition has a nested switch = TRUE")
+
 			nestedswitch= True
 			break
 	if nestedswitch == True:
@@ -183,7 +183,7 @@ def add_to_the_main_sequence(x):
 ## empty_this_list(me)
 ##======================================
 def empty_this_list(me):  #use like this:  empty_this_list(listname)
-    if len(me) > 0:
+    if len(me) > 0:  #checks if length of string me greater than 0
         for item in range(0,len(me)):
             me.pop()
         else:
@@ -38035,6 +38035,9 @@ def check_if_lists_switch_numbers_to_transfer_and_thenumbers_are_empty():
 check_if_number=[]
 check_if_number.append(0)
 #in here march 3rd thursday add look at first case if number, thru, or word in string
+
+
+
 def check_what_is_in_first_case_in_nested_switch(lestring):
 	print("====inside of trex ======check what is in first case in nested switch()======")
 	#I could also look if in line "case" in line and either "thru" or "to" in line also

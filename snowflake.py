@@ -127,18 +127,18 @@ def manage_exps_prepare_for_processing(stringname):
 	mystacktrace(" manage_exps_prepare_for_processing()")
 	concrete='';fool='';counter =0;
 	#what this does is skip this switch(exp) line at the top 
-	#so when it reacheds the first switch it stops immediately
+	#so when it reaches the first switch it stops immediately
 	for line in stringname.splitlines():
 		if "switch(exp)" in line: #this should stop it
 			break
-		else:
-			if "exp" in line:
+		else:	#this means copy the line into string fool line by line
+			if "exp" in line: 
 				line = line[5:]  #cut off first 5 chars
 				line = line[:-1] #cut off end char
 				fool += line  + "\n"  
 
 	#here it is building a string 
-	concrete = concrete[:-2] #gets rid of space and , at front
+	concrete = concrete[:-2]         #gets rid of space and , at front
 	concrete = '"' + concrete + '"'  # new on feb 21st monday
 	new_switch_input_vars=concrete
 	
@@ -227,7 +227,7 @@ def do_third_stage(mytest_list):
 	print("at this point the contesnts of samplelist ??")
 
 
-						
+
 ##=========================================================================
 ##  take_input_vars_for_switches_convert_to_list(switch_input_vars):
 ##=========================================================================
@@ -251,15 +251,14 @@ def add_exp_var_above_each_switch(stringname): #from samplelist
 	codeking=''
 	# go thru each line and based on the number add a line above switch
 	mycounter =1
-
 	for line in stringname.splitlines():
 		tabcount = line.count("\t")
 		if "switch(exp)" in line and tabcount > 2:  #if a line with switch(exp)at 3 or greater in it
 			tabcount = line.count("\t")
 			###========================================================
 			#here the sameplelist contains just the number or word after the exp=
-			word = samplelist[mycounter]          
-			tabs = tabcount * '\t'                
+			word = samplelist[mycounter]
+			tabs = tabcount * '\t'
 			##========================
 			if word[-1] == "'": #this says: if last char in word = '
 				word= word[:-1] #cuts off last char of word
@@ -357,7 +356,7 @@ def take_out_exps_at_top_and_adds_exps_above_nested_switches(stringname):
 	detect_input_exps_above_first_switch(stringname) #method
 	add_exp_var_above_each_switch(stringname)        #method
 	show_list_resultstring_to_verify_output()        #method
-	gauge[0]=resultstring[0];trouble = gauge[0]
+	gauge[0]=resultstring[0]; trouble = gauge[0]
 	remove_exps_at_top_now(trouble)                  #method
 	take_out_first_line(); answer =serious[0]        #method
 	loop_thru_answer(answer)                         #method
@@ -381,7 +380,7 @@ def bottom_method(stringname):
 		finaloutput[0] = outputis
 		##==================================================
 		# ====thursday march 17th, 2022 at 9:34 am=========
-		print("now creating teh radical= output string I need")
+		print("now creating the radical= output string I need")
 		#this changes the output by putting radical var at front
 		# and putting the string into triple ''' front and tail
 		radical='' #this should empty it and not concat it
@@ -402,6 +401,7 @@ def bottom_method(stringname):
 		pass
 		
 		
+
 ##===============================================
 ##  transform_nested_switch_string_for_parser():
 ##===============================================
@@ -435,25 +435,5 @@ def prepare_my_string(stringname):
 	
 
 
-  
-#print('second attempt')
-#prepare_string(dr) #this should work now I hope
 
-#print('third attempt')
-#prepare_string(z) #this should work now I hope
-##result is in finaloutput[0]
-##print("output resulting string is in finaloutput[0]")
-
-
-	
-#print("first attempt")	
-#prepare_my_string(starshiptest)
-
-#print('=====intermission ====')
-
-#print('second attempt')
-#prepare_my_string(red_robin0)
-
-        
-#exit()
 

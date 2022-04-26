@@ -1,13 +1,17 @@
-#import working_on_dual_mode
-#from working_on_dual_mode import *
-#I imported into trex to see if that works 
-import mocha  
-from mocha  import * 
-print("this is mocha at the top this DID NOT ACTUALLY work(yes it did and does")
+
+import strawberry             #was mocha  
+from strawberry  import *     #was mocha
 
 
 
 
+
+
+#def sly_endswitch(stringname):
+#    return
+#    #print('sly_endswitch() called =======>>>::::::0008080808080880======')
+#    #mystring=prepare_my_string(stringname) #should convert raw switch input distribute exps
+#    #endswitch(mystring) #short for radical
 
 #print("I have tested these and they work inside of functions too")
 
@@ -80,7 +84,7 @@ clever('PALOMAR')
 #show_input_switch_string()   #input so what the string right below here
 #hide_generated_code()
 
-print("--------")
+print("--swan1 test single switch  case Palomar------")
 
 swan1 =''' 
 	switch(exp) {
@@ -516,7 +520,7 @@ red_robin3 ='''
 			print("===    poka dots    ======")
 			print(" working on january 27th, 2022 8:56 am")
 			print('== hamburger sounds good right about now')
-			break
+			
 			#it should stop here
 		case 7 to 10:
 			print('pass drive in the snow to tahoe !')
@@ -614,7 +618,7 @@ red_robin4 ='''
 	switch(exp){  
 		case 1 thru 6: 
 			print("====zebra black and white =====")
-			print("====   zebra   =====")
+			print("====   zebra   good thing I backed up the code =====")
 			print("===    tahoe summiting    ======")
 			
 			#it should stop here
@@ -725,6 +729,112 @@ red_robin4 ='''
 }
 '''	
 
+
+#this is after translating rocky with snowflake in other file need to do it here
+rocky='''
+	switch(exp){  
+		case 'lantern': 
+			print('this green green green . it actually works')
+			print('how green green green, yes way ')
+			break
+			
+		case 'ship':
+			print('are we nearly up at Tahoe yet  !')
+			
+			#############
+			
+			exp='blable'
+			switch(exp)  
+				case 'blable':
+					print("inside of first nested swi tch here ")
+					print("this is really working, fantastic...")
+					result[0]="very cool stoopping here "
+					#break
+					####################
+					
+					exp='tahoe'
+					switch(exp){ 
+						case 'tahoe':
+							print("we are inside of tahoe swi tch now")
+							print("oh is this going to really work now ... really it is")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							result[0]='fallen leaf lake waterskiing fell'
+							
+							####################
+							
+							exp='winter'
+							switch(exp){    
+								case 'winter':
+									print("ththis is inside of winter now")
+									print("listening to mit debugging session in summer")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice kayaking race")
+									break
+								default:
+									print("we are done here")
+							endswitch 
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			
+			exp='burger'
+			switch(exp)
+				case 'burger':
+					print("go to wendys today")
+					####################
+					
+					exp='snow fire'
+					switch(exp){   
+						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("THIS IS SNOW FIRE HERE")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch
+			##############
+			print('taught me how to write code should be last line ')
+			break
+		case 'easter':
+			print('big numbers here this is 11 thru 15  ')
+			print('=this is the last c ase ==')
+			result[0]='sip some mocha now'
+			print('result[0]=',result[0])
+			print('-----------------')
+			break 
+		default:
+			print('no matches so sorry about that chap')
+			print(' ')
+}
+'''
 
 
 
@@ -1172,9 +1282,8 @@ print("testing el capitan her==-=-=--===----wow moment ----e")
 
 #nestedswitch('True')
 
-num = 8   
-feedinput(num)
-two_choices(elcapitan)
+#num = 8   
+##two_choices(elcapitan)
 #main_control_sequencer(elcapitan)#
 
 #exit()
@@ -1184,8 +1293,8 @@ two_choices(elcapitan)
 print("second attempt go high")
 num = 7   
 #main_control_sequencer(num,elcapitan)#
-feedinput(num)
-endswitch(elcapitan)
+#feedinput(num)
+#endswitch(elcapitan)
 # I was missing a : after a case and missing default: at bottom
 #exit()
 
@@ -1196,8 +1305,8 @@ print("")
 print("input 7")
 print("")
 num = 7   
-feedinput(num)
-endswitch(red_robin2)
+#feedinput(num)
+#endswitch(red_robin2)
 #main_control_sequencer(num,red_robin2)#red_robin  #this will be the the modifed endswitch eventually 
 #print("====after second pass== before 3rd pass=== ")
 #show_it_to_me()
@@ -1209,8 +1318,9 @@ print(" === 3rd test === nested==")
 #print("this is the third PASS doing regular red_robon second now")
 
 num = 1   
-feedinput(num)
-endswitch(red_robin3)
+#feedinput(num)
+#endswitch(red_robin3)
+print("wow did it do 1 for red robin 3 really")
 #main_control_sequencer(num,red_robin3)#red_robin  #this will be the the modifed endswitch eventually 
 #print("=====after 3rd pass ======")
 #show_it_to_me()
@@ -1221,8 +1331,9 @@ print("")
 print("================number 4 test ======")
 
 num = 1   
-feedinput(num)
-endswitch(red_robin4)
+#feedinput(num)
+#endswitch(red_robin4)
+print("wow did this actually really work")
 #main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("input 1")
@@ -1230,17 +1341,17 @@ print("")
 print("last one now the 5th test ====")
 
 
-num = 1   
-feedinput(num)
-endswitch(red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
+#num = 1   
+#feedinput(num)
+#endswitch(red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("input 7")
 print("")
 print("last one now the 6th test ====")
 
-num = 7   
-feedinput(num)
-endswitch(red_robin4)
+#num = 7   
+#feedinput(num)
+#endswitch(red_robin4)
 #main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("")
@@ -1249,9 +1360,9 @@ print("")
 print("")
 print("last one now the 7th test ====")
 
-num = 7   
-feedinput(num)
-endswitch(red_robin5)
+#num = 7   
+#feedinput(num)
+#endswitch(red_robin5)
 #main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("")
@@ -1260,9 +1371,9 @@ print("")
 print("")
 print("last one now the 8th test ====")
 
-num = 7   
-feedinput(num)
-endswitch(red_robin3)
+#num = 7   
+#feedinput(num)
+#endswitch(red_robin3)
 #main_control_sequencer(num,red_robin3)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("")
@@ -1281,9 +1392,9 @@ print("input 7")
 print("")
 print("last one now the 10th test ====")
 
-num = 7   
-feedinput(num)
-endswitch(red_robin4)
+#num = 7   
+#feedinput(num)
+#endswitch(red_robin4)
 #main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("")
@@ -1292,9 +1403,9 @@ print("")
 print("")
 print("last one now the 11th test ====")
 
-num = 3   
-feedinput(num)
-endswitch(red_robin5)
+#num = 3   
+#feedinput(num)
+#endswitch(red_robin5)
 #main_control_sequencer(num,red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
 
 print("===end of testing demonstration==")
@@ -1312,7 +1423,7 @@ print("trying something totally differentnow a different module attempt")
 print("-------------------")
 print("== switch 1 ==")
 print("-------------------")
-clever('PALOMAR')
+#clever('PALOMAR')
 #right now it NEEDS to take strings to digest and parse it"
 #I need to add my new code for this to work properly"
 ##=====================
@@ -1365,12 +1476,12 @@ sw1 ='''
 			break #mandatory break
 }
 '''
-endswitch(sw1)
+#endswitch(sw1)
 
 print("===now testing a nested switch again===")
-num = 3   
-feedinput(num)
-endswitch(red_robin4)
+#num = 3   
+#feedinput(num)
+#endswitch(red_robin4)
 #main_control_sequencer(num,red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
 print("")
 print("")
@@ -1382,7 +1493,7 @@ print("now testing another single switch at bottom of tar pit")
 print("-------------------")
 print("=bottom = single switch 2 ==")
 print("-------------------")
-clever('LAKE_TAHOE')
+#clever('LAKE_TAHOE')
 #right now it NEEDS to take strings to digest and parse it"
 #I need to add my new code for this to work properly"
 ##=====================
@@ -1435,7 +1546,7 @@ swy ='''
 			break #mandatory break
 }
 '''
-endswitch(swy)
+#endswitch(swy)
 
 ####=== show me the money =========
 ##==========================
@@ -1474,7 +1585,7 @@ swi ='''
 			break
 }
 '''
-endswitch(swi)
+#endswitch(swi)
 
 #exit()
 
@@ -1497,7 +1608,7 @@ hide_generated_code()
 print("-------------------")
 print("=bottom = switch 4 ==")
 print("-------------------")
-clever('gone fishing') #this would change varholder[0] 
+#clever('gone fishing') #this would change varholder[0] 
 
 swu = '''
 	switch(exp) {
@@ -1526,7 +1637,7 @@ swu = '''
 			break
 }
 '''
-endswitch(swu)
+#endswitch(swu)
 
 
 
@@ -1538,7 +1649,7 @@ endswitch(swu)
 print("-------------------")
 print("== bottom switch 5 ==")
 print("-------------------")
-clever('star wars') #this would change varholder[0] 
+#clever('star wars') #this would change varholder[0] 
 show_input_switch_string()   #input so what the string right below here
 hide_generated_code()
 #hide_generated_code() #from this point forward
@@ -1571,21 +1682,159 @@ swt ='''
 '''
 endswitch(swt)
 
+
+starshiptest ='''
+	exp= 'ship';
+	exp= 'blable';
+	exp= 'tahoe';
+	exp= 'winter';
+	exp= 'burger';
+	exp= 'snow fire';
+
+	switch(exp){  
+		case 'lantern': 
+			print("pigion point light house!")
+			print('this green green green . it actually works')
+			print('how green green green, yes way ')
+			break
+			
+		case 'ship':
+			print('this is totally unbelieveable and bizarre  !')
+			
+			#############
+			
+			switch(exp)  
+				case 'blable':
+					print("inside of first nested swi tch here ")
+					print("this is really working, fantastic.the aliens in the sky..")
+					result[0]="very cool stoopping here "
+					#break
+					####################
+					
+					switch(exp){ 
+						case 'tahoe':
+							print("we are inside of tahoe swi tch now")
+							print("oh is this going to really work now ... really it is")
+							fallthru
+						case 'fallen leaf lake':
+							print("nice")
+							result[0]='fallen leaf lake waterskiing fell'
+							
+							####################
+							
+							switch(exp){    
+								case 'winter':
+									print("ththis is inside of winter now")
+									print("listening to mit debugging session in summer")
+									print("yep")
+									fallthru
+								case 'fallen leaf lake':
+									print("nice kayaking race")
+									break
+								default:
+									print("we are done here")
+							endswitch 
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch 
+			
+			switch(exp)
+				case 'burger':
+					print("go to wendys today")
+					####################
+					
+					switch(exp){   
+						case 'fishy':
+							print("do something")
+							print("yep")
+							fallthru
+						case 'snow fire':
+							print("THIS IS SNOW FIRE HERE")
+							#############
+							break
+						default:
+							print("we are done here")
+					endswitch 
+					#############
+					print("yep")
+					fallthru
+				case 'more':
+					print("nice")
+					break
+				default:
+					print("we are done here")
+			endswitch
+			##############
+			print('taught me how to write code should be last line ')
+			break
+		case 'easter':
+			print('big numbers here this is 11 thru 15  ')
+			print('=this is the last c ase ==')
+			result[0]='sip some mocha now'
+			print('result[0]=',result[0])
+			print('-----------------')
+			break 
+		default:
+			print('no matches so sorry about that chap')
+			print(' ')
+}
+'''	
+
+
+
+
 print("=====================")
 print('now doing more nested switches ')
-num = 7   
-feedinput(num)
-endswitch(red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
+#num = 7   
+#feedinput(num)
+#endswitch(red_robin5)#red_robin  #this will be the the modifed endswitch eventually 
 
 print("")
 print("input 7")
 print("")
 print("last one now the 10th test ====")
 
-num = 7   
-feedinput(num)
-endswitch(red_robin4)#red_robin  #this will be the the modifed endswitch eventually 
-print("")
+#num = 7   
+#feedinput(num)
+#dino[0]= 'star trek'
+#endswitch(swt)            #red_robin  #this will be the the modifed endswitch eventually 
+print("===...===....===....tags.=....=...===..==")
+print("===...===....===....tags.=....=...===..==")
+print("===...===....===....tags.=....=...===..==")
+print("===...===....===....tags.=....=...===..==")
+print("===...===....===....tags.=....=...===..==")
+#feedinput('ship')
+
+############# this finally works ###############$
+## what I am doing is I have a raw input nested string with exps at the top
+## these are moved down to just above each inner switch
+##########################
+### I have to put these into a method 
+
+print("right here what do we have here...")
+dino[0]= 'ship'
+
+print('about to do starshiptest')
+endswitch(starshiptest) #short for radical
+
+print('testing a second nested switch now here')
+
+exit()
+
+
+
+
 print("")
 print("input 3")
 print("")
@@ -1637,4 +1886,3 @@ swt ='''
 endswitch(swt)
 
 
-exit() 

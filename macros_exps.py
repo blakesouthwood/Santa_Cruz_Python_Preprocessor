@@ -1,17 +1,4 @@
-import trex  
-from trex  import * 
 
-import official_switch_case_silver
-from official_switch_case_silver  import *  
-
-### experimental moved this into mocha 
-import snowflake
-from snowflake import *
-from snowflake import weasel
-
-
-#import preprocessor_exps
-#from preprocessor_exps import *
 
 switch_location=''
 the_exps= False
@@ -21,10 +8,6 @@ get location of first switch by line number in the string
 check if exp in line before first switch
 
 '''
-
-
-
-
 
 status_of_exps=[]
 status_of_exps.append(0)
@@ -62,15 +45,9 @@ def look_in_mystring_for_exps_at_top(mystring):
 	status_of_exps[0] = the_exps
 
 
-
-
 ##==============================
 ##  two_choices(mystring)
 ##==============================
-'''
-this does the two modes single switch and nested switch 
-
-'''
 def two_choices(mystring):
 	#determines here if mystring is a nested switch or not 
 	nested =count_switches_in_inputstring(mystring)  #method  count_switches_in_inputstring(mystring)
@@ -83,13 +60,20 @@ def two_choices(mystring):
 	if nested == True:
 		print("nested is obviously TRUE this is necessary at this phase")
 		look_in_mystring_for_exps_at_top(mystring)   #method look_in_mystring_for_exps_at_top(mystring)
-		#print("status of the_exps=",status_of_exps[0])
-		if status_of_exps[0] == True:      #means at least one exp= above first switch
+		print("------------------------------")
+		print("status of the_exps=",status_of_exps[0])
+		print("------------------------------")
+		if status_of_exps[0] == True: #means at least one exp= above first switch
 			#this is then called to redistribute the exps below ONLY if they were at top
-			mystring=prepare_my_string(mystring)    
+			mystring=prepare_my_string(mystring)     #method  prepare_my_string(mystring)
+			###################################
+			#print("let us look at the exps moved down from the top if this is really true")
+			#for line in mystring.splitlines():
+			#	print(line)
+				
 		else:
 			pass
-		
+		# else skip it
 		###########################################################
 		smart_endswitch(mystring) #was (mystring)  #nested switch is in trex
 	else:
