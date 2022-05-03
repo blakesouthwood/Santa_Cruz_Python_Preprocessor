@@ -8,7 +8,6 @@ from strawberry  import *
 #=============================
 
 Today is Tuesday, April 26th, 2022 and it's 12 noon (eerie) and I feel like I have been gone a year. I was a bit preoccupied.
-I started a new blog called Space Invaders on blogger. Should be pretty interesting stuff into a different dimension and realm.
 
 Dam, sorry about the delay I got distracted for the past month with other things.
 I had actually finished the nested switch case engine and I neglected to upload the final golden master code
