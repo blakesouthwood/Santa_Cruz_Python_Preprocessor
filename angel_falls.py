@@ -1,3 +1,13 @@
+May 6th, 2022
+Converting the code so output is as originally designed.
+This means I am turning off print statements that I used for debugging and commenting them out.
+Also adding more documentation throughout the code base. 
+I will also add a sequence list of functions called for each behavior.
+
+This will take a few days. So the code runs but I need to make it market ready.
+#=========================
+
+
 May 5th, 2022
 I will next work on adding the Error codes for the switch case 
 And I will write the style guides with examples and style rules
