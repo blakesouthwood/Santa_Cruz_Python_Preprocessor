@@ -1,3 +1,15 @@
+May 10th, 2022
+Was doing more testing on switch case in real-world situations.
+Took out showing the input which was redundant and took out print statements that were unnecessary.
+
+Cleaning up code right now. Running more tests with switch case inside of functions.
+Doing testing today of nested switches.
+Will add error messages to fail gracefully if a switch case is malformed or missing something
+such as an endswitch. Within the switch case indentation matters.
+
+Still need to write the style guide documentation paper.
+
+
 May 6th, 2022
 Converting the code so output is as originally designed.
 This means I am turning off print statements that I used for debugging and commenting them out.
