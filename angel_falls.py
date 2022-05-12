@@ -1,3 +1,7 @@
+May 12th, 2022
+Testing now for final release golden master of switch case for python.
+
+
 May 10th, 2022
 Was doing more testing on switch case in real-world situations.
 Took out showing the input which was redundant and took out print statements that were unnecessary.
