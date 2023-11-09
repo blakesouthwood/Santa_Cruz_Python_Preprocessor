@@ -1,4 +1,8 @@
 # Santa_Cruz_Python_Preprocessor
+UPDATE: November 9th, 2023
+I will refactor all of the code using Chat GTP and Bard before Christmas 2023.
+
+
 What is unique and different about how this switch case works is to break the rules of Python
 it works inside of a docstring that has a variable name sw to break the constraining restraints of Python
 so think of it like a plastic window on an envelope and this freestyle C looking code is converted into python.
