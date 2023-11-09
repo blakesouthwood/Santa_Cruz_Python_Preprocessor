@@ -1,6 +1,6 @@
 # Santa_Cruz_Python_Preprocessor
 UPDATE: November 9th, 2023
-I will refactor all of the code using Chat GTP and Bard before Christmas 2023.
+I will refactor all of the code using Chat GPT and Bard before Christmas 2023.
 
 
 What is unique and different about how this switch case works is to break the rules of Python
