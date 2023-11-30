@@ -1475,7 +1475,89 @@ def magictimenow():   ### this builds the list for line_numbers_of_first_cases
 
 
 
+this is chat gpt refactoring below nov 30 2023 for a comparison
+def magictimenow():
+    """Analyzes the switch case code and identifies various elements, including
+    first case lines, trontime locations, fallthru locations, break positions,
+    and first case list."""
 
+    global switchcasetester
+    global woodstock
+    global candy
+
+    # Initialize variables
+    counter = 1
+    word = 0
+    mycounter = 0
+
+    # Create lists to store various information
+    firstcaselist = []
+    smartnewlist = []
+    smartlistlocations = []
+    fallthrulocations = []
+    breakposition = []
+    getfirstword = []
+    trontime = []
+    line_numbers_of_first_cases = []
+
+    # Iterate through the lines of the switch case
+    for line in switchcasetester.splitlines():
+        genius = line.split()
+        mycounter += 1
+
+        # Check for specific keywords and add them to the corresponding lists
+        if "case" in line:
+            trontime.append("case")
+        elif "switch" in line:
+            getfirstword.append("switch")
+            trontime.append("switch")
+        elif "fallthru" in line or "fallthrough" in line:
+            getfirstword.append("fallthru")
+            trontime.append("fallthru")
+            smartlistlocations.append(mycounter)
+            fallthrulocations.append(mycounter)
+        elif "break" in line:
+            trontime.append("break")
+            breakposition.append(mycounter)
+        elif "default" in line:
+            getfirstword.append("default")
+            trontime.append("default")
+        elif len(line.strip()) == 0:
+            getfirstword.append("empty")
+            trontime.append("empty")
+        else:
+            getfirstword.append("code;")
+            trontime.append("code;")
+
+    # Identify the line numbers of the first cases
+    acounter = 0
+    for line in switchcasetester.splitlines():
+        if "case" in line and "case" not in trontime[acounter - 1]:
+            line_numbers_of_first_cases.append(acounter)
+            woodstock.append(acounter)
+            genius = line.split()
+            strng = genius[1]
+            angel = strng[:-1]
+            firstcaselist.append(angel)
+            acounter += 1
+            continue
+        else:
+            acounter += 1
+            continue
+
+    # Construct the `smartnewlist` by removing quotation marks from case names
+    for item in firstcaselist:
+        if item != "default":
+            item = item[1:-1]
+            smartnewlist.append(item)
+        if item == "default":
+            smartnewlist.append(item)
+
+    # Update global variables
+    woodstock = line_numbers_of_first_cases
+    candy = smartnewlist
+
+#==========================
 ###################################################################################
 
 
