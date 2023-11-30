@@ -1692,7 +1692,32 @@ def snowtime(x,y):  #this grabs the body from one case section at a time
 	practicestring1 ='' #clears it out
 
 #=========================================================================
+## refactored on bard nov 30 2023
+def snowtime(start_line, end_line):
+    """Extracts the body of code for a specific case section."""
 
+    global practicestring1
+
+    practicestring1 = ""  # Initialize an empty string
+    sublist = []  # Initialize an empty list
+
+    for index, line in enumerate(switchcasetester.splitlines()):
+        if start_line < index < end_line \
+                and "case" not in line and "break" not in line \
+                and "fallthrough" not in line and "fallthru" not in line:
+
+            if len(line.strip()) == 0:  # Check if the line is empty
+                continue  # Skip empty lines
+
+            practicestring1 += line + "\n"  # Concatenate lines into the string
+            sublist.append(line.strip())  # Append the stripped line to the list
+
+    case_main_body_list.append(practicestring1)  # Add the case body code to the global list
+
+    del practicestring1  # Delete the temporary string object
+    practicestring1 = ""  # Clear the string variable
+
+//======
 def cotton_candy():
 	mytrace('cotton_candy')
 	print("===========cotton candy debugging jan 15th 2021==========")
