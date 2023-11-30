@@ -2189,7 +2189,59 @@ def rule_the_earth():
 
 
 
+##refactored rule the earth with bard on nov 30 2023
+def rule_the_earth():
+    """Extracts the case words from the case body."""
 
+    print("========rule the earth called========")
+    print("line_numbers_of_first_cases")
+    print(line_numbers_of_first_cases)
+
+    palmtrees = []  # Initialize an empty list to store case words
+
+    # Iterate through the switch case code
+    for index, line in enumerate(switchcasetester.splitlines()):
+        # Check if the current line is the first line of a case section
+        if index in line_numbers_of_first_cases:
+            # Extract the case words
+            case_words = line.split()[1:]  # Ignore the "case" keyword
+
+            # Handle cases with multiple words
+            if len(case_words) > 1:
+                case_word = " ".join(case_words)  # Combine words into a single string
+
+                # Remove trailing colon and apostrophes
+                if case_word.endswith(":"):
+                    case_word = case_word[:-1]
+                case_word = case_word.replace("'", "")
+
+                palmtrees.append(case_word)
+            else:
+                # Handle cases with a single word
+                palmtrees.append(case_words[0])
+
+    # Append the "default" keyword to the list
+    palmtrees.append("default")
+
+    # Update the global list with the extracted case words
+    global starbuckslist
+    starbuckslist = palmtrees[:]  # Create a copy of the palmtrees list
+
+    # Remove unnecessary quotes and trailing colons
+    mochalist = ["'starter'"]
+    for item in starbuckslist:
+        if item != "starter":
+            item = item[:-1]  # Remove trailing colon
+            mochalist.append(item)
+        else:
+            mochalist.append(item)
+    mochalist.append("'default'")
+
+    greenmilelist = []
+    for item in mochalist:
+        if item != "starter" and item != "default":
+            greenmilelist.append(item[1:-1])  # Remove leading and trailing quotes
+		
 
 
 
