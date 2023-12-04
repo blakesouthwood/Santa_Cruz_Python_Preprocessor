@@ -353,7 +353,21 @@ def build_list_input_list():
         super_listinput.append(item) #fills super_listinput list
     
   
-  
+## refactored by bard on dec 3 2023
+super_listinput = []
+
+def put(x):
+    listinput.append(x)
+
+def build_list_input_list():
+    listinput.clear()  # Clear the listinput list before adding new items
+    max_value = holding_themax[0]  # Get the maximum value from holding_themax
+    # Iterate from 3 to the maximum value, adding each value to the listinput list
+    for value in range(3, max_value + 1, 2):
+        put(value)
+    # Copy the contents of listinput to super_listinput
+    super_listinput.extend(listinput)
+	
 ##=================================
 ##  list_tabs_lists_by_depth():
 ##================================== 
