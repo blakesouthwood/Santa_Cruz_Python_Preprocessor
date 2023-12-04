@@ -461,7 +461,13 @@ def combine_the_lists_together(x):
         #print('all of the tab lists are empty')
         #print("don't bother trying to extend empty tab lists")
        
-
+#google bard refactor on dec 3 2023
+def combine_the_lists_together(x):
+    lists = [threetabs, fivetabs, seventabs, ninetabs, eleventabs, thirteentabs]
+    for list_index, list_name in enumerate(lists):
+        if len(list_name) > 0 and x >= (3 + 2 * list_index):
+            christmastree.extend(list_name)
+		
 ##========================================================
 ##  build_tab_list_added_together(largest_tab_number):   Thursday, Nov 4th, 2021 
 #   this does this combined_tabs = threetabs + fivetabs + seventabs etc
