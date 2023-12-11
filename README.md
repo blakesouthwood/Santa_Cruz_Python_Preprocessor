@@ -2,6 +2,8 @@
 UPDATE: November 9th, 2023
 I will refactor all of the code using Chat GPT and Bard before Christmas 2023.
 
+UPDATE: December 10th, 2023  I will implement my macro so that the switch case works
+as a method and that way it won't look funky in a triple string assigned to a var.
 
 What is unique and different about how this switch case works is to break the rules of Python
 it works inside of a docstring that has a variable name sw to break the constraining restraints of Python
