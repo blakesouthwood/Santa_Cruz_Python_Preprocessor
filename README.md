@@ -2,6 +2,18 @@
 UPDATE: November 9th, 2023
 I will refactor all of the code using Chat GPT and Bard before Christmas 2023.
 
+I had absolutely no idea how hard this project was going to be but I just kept coding.
+The problem that I endured was there was no design and no map and I kept the design in
+my head. I has massive scope creep but I had big hopes and dreams for my softwar working
+because I  adore switch cases because they are so elegant so I kept going.
+So essentially this project was making a parser and codegen and macros which is just a replace
+using a preprocessor scan before running the code which is sweet to see run. 
+I was in no rush whatsoever and I would listen to college radio music and go into a trance
+and half a day would go by in a second and it was like the code was channeled to me because
+when I am out of the trance I can't understand the code. I learned some hard lessons like
+the need to precomment and design before jumping into coding anything. 
+
+
 UPDATE: December 10th, 2023  I will implement my macro so that the switch case works
 as a method and that way it won't look funky in a triple string assigned to a var.
 
