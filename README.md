@@ -6,6 +6,9 @@ I also need to add exceptions and error flagging for mangled switch case form or
 a case where there should be one or a missing endswitch. I just realized that because I
 had initially forgotten to add that error-sensing scenario. 
 
+I might rewrite the whole codebase in Cython for greater speed and/or write some parts
+in C.
+
 I had absolutely no idea how hard this project was going to be but I just kept coding.
 The problem that I endured was there was no design and no map and I kept the design in
 my head. I has massive scope creep but I had big hopes and dreams for my softwar working
