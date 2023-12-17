@@ -9,7 +9,8 @@ had initially forgotten to add that error-sensing scenario.
 I will add a flag debugger to prescan through each switch case to make sure they are all
 syntactically correct before proceeding and if not it will return with an error message
 if something in the syntax is wrong like a missing case or misspelled switch or if there
-is an indentation error somewhere within the switch case.
+is an indentation error somewhere within the switch case. This is necessary to prevent
+translation errors by the whole program which would otherwise prevent correct translation.
 
 I might rewrite the whole codebase in Cython for greater speed and/or write some parts
 in C.
