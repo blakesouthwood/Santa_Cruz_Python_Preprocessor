@@ -6,6 +6,11 @@ I also need to add exceptions and error flagging for mangled switch case form or
 a case where there should be one or a missing endswitch. I just realized that because I
 had initially forgotten to add that error-sensing scenario. 
 
+I will add a flag debugger to prescan through each switch case to make sure they are all
+syntactically correct before proceeding and if not it will return with an error message
+if something in the syntax is wrong like a missing case or misspelled switch or if there
+is an indentation error somewhere within the switch case.
+
 I might rewrite the whole codebase in Cython for greater speed and/or write some parts
 in C.
 
