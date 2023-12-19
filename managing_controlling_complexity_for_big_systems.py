@@ -84,5 +84,57 @@ So I am writing a kindle book about how I saved
 a huge project that was on the brink of failing
 due to unimaginable complexity.
 
+This project was the size of a woolly mammoth and
+I was not intimidated by the size of the codebase but
+the complexity was mind-boggling. I repeatedly referred
+to this system project as scaling El Capitan
+in Yosemite in the winter. The progress so slow. 
+
+I would build a small part of a feature and fight 
+the computer trying to get it working due to the
+unreal innumerable bugs. The bugs were super
+confusing and they had to do with sometimes bad 
+logic but other times not knowing if the code
+was doing the right behavior or even if the
+behavior was even being run. There were so many
+unknowns.
+
+Enlightenment only came to me when I switched to using
+Visual Studio Code so that I could step through my
+code and see the values of all of the variables 
+at each step and that made all of the difference in the
+world.
+
+The complexity meant I had no idea how the system worked
+because I never designed it - I winged it - and I didn't
+actually know how the system worked when it was running
+and what was being called (functions) and I also didn't
+know how to to zero in on the bugs which were deeply inside
+of the code base. The bugs wouldn't say "here we are" rather
+I had to add phases with print statements to show me
+what had been reached and what the var values were
+SO THAT I COULD SEE WHAT THE DUMB MACHINE SAW WHEN AND WHERE
+and only then could I move forward. So I was essentially
+creating a tool to understand what the code was doing
+'and how to debug my bloody code that was pissing me off.
+
+I wanted to move forward with momentum and I kept getting
+bogged down in the swamp of what the code was doing and
+trying to pinpoint where the code instructions (the logic)
+was wrong and the road map course that the cursor like
+a Tron motorcycle was running through. I look at the code as
+if it's on a grid-like in the Tron movie on a flat surface
+rather than top-down so that I can visualize it better.
+
+I started making real progress when I split up the system
+into submodules and put each feature into a separate file
+to prevent bugs from propagating throughout the system. 
+
+
+
+
+
+
+
 Blake Southwood
 
