@@ -11,7 +11,8 @@ order of occurence.
 
 
 UPDATE: November 9th, 2023
-I will refactor all of the code using Chat GPT and Bard before Christmas 2023.
+I will refactor all of the code using Chat GPT and Bard before Christmas 2023. This is going to be pushed out
+two weeks due to other issues I am having right now. 
 
 I also need to add exceptions and error flagging for mangled switch case form or missing
 a case where there should be one or a missing endswitch. I just realized that because I
