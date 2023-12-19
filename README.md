@@ -1,5 +1,16 @@
 # Santa_Cruz_Python_Preprocessor
 
+Dec 18th 2023 9:10pm
+I am looking forward to refactoring the code for the switch case and cleaning it up a little more
+and simultaneously I'm writing a book about my experience of taking on a large complex project
+and I will note the mistakes that I made. I will then cover what I did precisely to fix
+this mammoth project. The whole project was like climbing up El Capitan sevearl times in the
+winter. The first version only used stackoverflow for help a few times. The second version
+will be refactored with chat gpt and bard. I only attempted this project because I really
+wanted a switch case for python that looked identical to javascript with the same behavior
+and halfway through I added macros which came in handy doing cool C style code in the fallthroughs. 
+
+
 UPdate Dec 18th, 2023
 for esthetics the switch case can be in the regular code and a comment #startswitch will be above first switch
 and a comment #end switch will be at the bottom and a macro will be triggered to put the switch into
