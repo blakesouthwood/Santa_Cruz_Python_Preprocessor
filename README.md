@@ -6,7 +6,8 @@ and a comment #end switch will be at the bottom and a macro will be triggered to
 a method by the preprocessor so it will look good and run the tricky way that it's implimented. That was my dream.
 I wanted it not to be in a triple string quote which looks horrible. So I just came up with that final view
 and I will make a method make that happen. And each switch will be numbered to differentiate them
-based in their order of occurrence starting with 0 for the first one.
+based in their order of occurrence starting with 0 for the first one. The numbering will be done based on 
+order of occurence.
 
 
 UPDATE: November 9th, 2023
