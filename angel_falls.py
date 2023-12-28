@@ -1,6 +1,12 @@
 May 12th, 2022
 Testing now for final release golden master of switch case for python.
 
+NEW dec 27, 2023 I just realized I make it optional to use braces in the switch case
+since Python doesn't use {  } braces in most of it's code and I was just reviewing my
+switch case and I have a brace after each switch in the code and it just dawned on me 
+that that violates the syntax structure of Python. Good thing that I just caught that.
+So I will make the brace optional and just remove it if inserted and make it unnecessary
+if a coder is writing the switch case it will accept it either way with or without.
 
 May 10th, 2022
 Was doing more testing on switch case in real-world situations.
