@@ -1,5 +1,10 @@
 # Santa_Cruz_Python_Preprocessor
 
+Jan 1, 2024
+I will create new files so the difference can be seen and so the original code isn't destroyed.
+The point is there will be the old and new and I will use a different main directory for the refactored
+version which will be done with Bard and GPT when I find the time. 
+
 Dec 18th 2023 9:10pm
 I am looking forward to refactoring the code for the switch case and cleaning it up a little more
 and simultaneously I'm writing a book about my experience of taking on a large complex project
