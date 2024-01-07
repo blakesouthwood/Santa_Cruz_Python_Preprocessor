@@ -4,7 +4,15 @@ January 6, 2024
 I learned more about coding and design on this project than on anything else I have ever coded
 and I am realizing the importance of this book that I'm writing. I will carefully plan it and
 write it and edit it thoroughly so that it is clear and concise and short and to the point. If there is only one thing that I'm known for thousands of years from now it will be this book which will ensure the success of any software project. And this is my title, let me see if it
-it's available. 
+it's available. It is. I am so happy. 
+
+This software project was a labor of love and then it crashed and burned and I have never
+felt so low in my entire life. I wanted this feature to work so badly and I made many blunders along the way and there was scoope creep and rushing and not documenting and not designing or rather just in time design on the fly really. There was no pseudocodeing. Not a method anywhere within the code base. 
+
+What saved this project was the realization of what I did right on a project that I built
+'for fun to make my job easier as a phone rep in the financial industry" that I built
+in my free time on weekends mostly bit by bit. That is what saved this project a previously 
+successful project that was built in stages and was literally bug free. 
 
 
 Jan 1, 2024
