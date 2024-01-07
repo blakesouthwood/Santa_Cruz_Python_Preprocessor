@@ -6,6 +6,10 @@ and I am realizing the importance of this book that I'm writing. I will carefull
 write it and edit it thoroughly so that it is clear and concise and short and to the point. If there is only one thing that I'm known for thousands of years from now it will be this book which will ensure the success of any software project. And this is my title, let me see if it
 it's available. It is. I am so happy. 
 
+Ensure the Success of 
+Any Software Project
+And Finish Your System
+
 This software project was a labor of love and then it crashed and burned and I have never
 felt so low in my entire life. I wanted this feature to work so badly and I made many blunders along the way and there was scoope creep and rushing and not documenting and not designing or rather just in time design on the fly really. There was no pseudocodeing. Not a method anywhere within the code base. 
 
