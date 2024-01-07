@@ -1,4 +1,11 @@
 # Santa_Cruz_Python_Preprocessor
+January 6, 2024
+
+I learned more about coding and design on this project than on anything else I have ever coded
+and I am realizing the importance of this book that I'm writing. I will carefully plan it and
+write it and edit it thoroughly so that it is clear and concise and short and to the point. If there is only one thing that I'm known for thousands of years from now it will be this book which will ensure the success of any software project. And this is my title, let me see if it
+it's available. 
+
 
 Jan 1, 2024
 I will create new files so the difference can be seen and so the original code isn't destroyed.
