@@ -1,4 +1,9 @@
 # Santa_Cruz_Python_Preprocessor
+January 18, 2024
+Playing with Bard and Chat GPT I think that the codebase will be reduced by at least 90%
+after I refactor it using Bard and GPT.
+
+
 January 6, 2024
 
 I learned more about coding and design on this project than on anything else I have ever coded
