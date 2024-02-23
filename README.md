@@ -1,4 +1,11 @@
 # Santa_Cruz_Python_Preprocessor
+Feb 22 2024
+Lot going on. Will add error correction code soon. 
+
+all code will be cleaned up and commented as soon as I find the time. 
+
+
+
 January 18, 2024
 Playing with Bard and Chat GPT I think that the codebase will be reduced by at least 90%
 after I refactor it using Bard and GPT.
