@@ -4,7 +4,7 @@ Lot going on. Will add error correction code soon.
 
 all code will be cleaned up and commented as soon as I find the time. 
 
-
+I have been dreaming up a new project that answers Dijkstra's Turing Lecture about the future of programming and it's really exciting. I need to make a  prototype for my theory in stages. 
 
 January 18, 2024
 Playing with Bard and Chat GPT I think that the codebase will be reduced by at least 90%
