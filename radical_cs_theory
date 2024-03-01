@@ -16,82 +16,13 @@ streamline the development process and enhance dynamic behavior comprehension.
 
 
 
-My theory: Bypass communicating with the dumb machine that can't learn
-and don't use the programming language to write functions. Instead what we do is
-go  through the design side with abstraction levels giving us latitude and we can have human knowledge
-programmed in using fuzzy logic AND use AI such as  Chat GPT and describe the running behavior
-desired that we want to create (LET ME SAY THIS AGAIN WE DESCRIBE THE DYNAMIC BEHAVIOR THAT
-THE FUNCTION CREATES)
-Readable structured pseudocode which is generated from the coder's description what the function 
-does when it runs in terms of the dynamic behavior it creates..
 
 
 
-Dijkstra: "A Program is an Implementation of a Design"
-Perlis:   "I want a programming language where I say what I want done."
-Perlis:   "Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.”
-Dijkstra: "The vision is that, well before the seventies have run to completion, we shall be 
-          able to design and implement the kind of systems that are now straining our programming 
-          ability, at the expense of only a few percent in man-years of what they 
-          cost us now, and that besides that, these systems will be virtually free of bugs. 
-          You cannot expect society to accept this, and therefore we must learn to program an 
-          order of magnitude more effectively.
-          We must not forget that it is not our business to make programs, it is our business 
-          to design classes of computations that will display a desired behavior. 
-          We all know that the only mental tool by means of which a very finite piece of reasoning 
-          can cover a myriad cases is called “abstraction”; as a result the effective exploitation
-          of his powers of abstraction must be regarded as one of the most vital activities of 
-          a competent programmer. In this connection, it might be worthwhile to point out that 
-          the purpose of abstracting is not to be vague, but to create a new semantic level in 
-          which one can be absolutely precise.
-          Finally, in one respect one hopes that tomorrow’s programming languages will differ 
-          greatly from what we are used to now: to a much greater extent than hitherto they 
-          should invite us to reflect in the structure of what we write down all abstractions 
-          needed to cope conceptually with the complexity of what we are designing
-          The wider applicability of nicely factored solutions is my sixth and last 
-          argument for the technical feasibility of the revolution that might take place 
-          in the current decade."
-
-
-Theory: Bypass communicating with the computer directly and don't use the programming language but
-instead, communicate through the design interface program with abstraction levels with  Chat GPT 
-and in English describe a function's dynamic behavior as you would to a human. The design of all functions
-is in structured pseudocode that has verbs and has more latitude and flexibility.
-
-The code that is generated is running pseudocode (so it's human readable) which runs and uses methods
-and macros. The pseudocode is structured and converted to a sequence of small reusable methods like the 
-DNA sequence (nicely factored solutions)that creates the internal behavior of all functions to create the desired dynamic 
-behavior. This promotes reuse and involves less thinking. There will be a pseudocode debugger too.
-
-
-I wanted to be able to build the same project that I just coded in Python which
-took me two years to design and build it in a week instead. What I meant is 
-I just want to design it. I don't want to code it at all. I want the code 
-completely generated. Oh I want to be able to design the program with an interactive tool
-that uses AI to assist me. I just want to describe what each function needs 
-to do when it runs but now how to make the function work internally, because 
-I shouldn't have to think at that level anymore. This solution will use GPT.
-
-I recently wrote a switch case for python and macros and it works
-using a preprocessor. After completing this project I realized that
-there needed to be a better way to code. 
-
-I have been playing around with Chat GPT and Gemini and previously
-I used to look up how to do a behavior on stack overflow.
 
 
 
-So this then creates a dilemma. The computer doesn't know what a behavior is. But at the
-design level we can describe behaviors. The issue is when we create behaviors we forced 
-to think at the machine level of nothingness and use pseudocode as the blue print for 
-creating internal behavior that is in boolean logic with no verbs to create the effect 
-of the dynamic behavior of a function.
 
-What is programming? It is communicating how to create behavior in functions that tells the
-dumb unlearning computer how to create the dynamic behavior THAT IS NOT DESCRIBED.
-
-I have been chatting with Chat GPT for a week hashing out the merits of this theory since
-there will be doubters. Here is the log of the discussions.
 
 
 
