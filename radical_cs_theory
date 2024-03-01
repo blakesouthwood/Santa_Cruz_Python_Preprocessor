@@ -13,7 +13,7 @@ and facilitate the desired dynamic behavior. By structuring the code in this way
 it encourages reuse and minimizes thinking in boolean logic and in code. Additionally,
 a pseudocode debugger will aid in identifying and resolving issues during development.
 It is also possible to design functions in pseudocode on the fly quickly if desired
-since pseudocode is a design level and is runnable.
+since pseudocode is a design level and is runnable. There will be a pseudocode library.
 
 Overall, this approach proposes a shift towards more intuitive and reusable programming
 practices, leveraging natural language communication and structured pseudocode to
