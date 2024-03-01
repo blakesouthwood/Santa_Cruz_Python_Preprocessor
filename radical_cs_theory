@@ -6,9 +6,9 @@ programmed in using fuzzy logic or AI such as  Chat GPT and describe the running
 desired that we want to create (LET ME SAY THIS AGAIN WE DESCRIBE THE DYNAMIC BEHAVIOR THAT
 THE FUNCTION CREATES) or for diehards  use a methodized pseudocode language with macros 
 that runs and this pseudocode language calls a sequence of methods that work that create the 
-behavior of the pseudocode which is the internal behavior. So we don't ever have to think
+behavior of the pseudocode which is the actual function behavior. So we don't ever have to think
 at the boolean logic level to compose pseudocode and then in the programming language
-if we don't want to.
+if we don't want to, but you can if you must.
 
 Dijkstra: "A Program is an Implementation of a Design"
 Perlis:   "I want a programming language where I say what I want done."
