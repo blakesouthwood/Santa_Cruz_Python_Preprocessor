@@ -8,6 +8,8 @@ THE FUNCTION CREATES)
 Readable structured pseudocode which is generated from the coder's description what the function 
 does when it runs in terms of the dynamic behavior it creates..
 
+
+
 Dijkstra: "A Program is an Implementation of a Design"
 Perlis:   "I want a programming language where I say what I want done."
 Perlis:   "Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.”
