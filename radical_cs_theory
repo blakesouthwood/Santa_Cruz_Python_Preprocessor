@@ -1,8 +1,19 @@
 
+My theory: Bypass communicating with the dumb machine that can't learn
+and don't use the programming language to write functions. Instead what we do is
+go through the design side with abstraction levels and we can have human knowledge
+programmed in using fuzzy logic or AI such as  Chat GPT and describe the running behavior
+desired that we want to create (LET ME SAY THIS AGAIN WE DESCRIBE THE DYNAMIC BEHAVIOR THAT
+THE FUNCTION CREATES) or for diehards  use a methodized pseudocode language with macros 
+that runs and this pseudocode language calls a sequence of methods that work that create the 
+behavior of the pseudocode which is the internal behavior. So we don't ever have to think
+at the boolean logic level to compose pseudocode and then in the programming language
+if we don't want to.
+
 Dijkstra: "A Program is an Implementation of a Design"
 Perlis:   "I want a programming language where I say what I want done."
 Perlis:   "Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.”
-Dikustra: The vision is that, well before the seventies have run to completion, we shall be 
+Dijkstra: "The vision is that, well before the seventies have run to completion, we shall be 
           able to design and implement the kind of systems that are now straining our programming 
           ability, at the expense of only a few percent in man-years of what they 
           cost us now, and that besides that, these systems will be virtually free of bugs. 
@@ -22,17 +33,17 @@ Dikustra: The vision is that, well before the seventies have run to completion, 
           needed to cope conceptually with the complexity of what we are designing
           The wider applicability of nicely factored solutions is my sixth and last 
           argument for the technical feasibility of the revolution that might take place 
-          in the current decade.
+          in the current decade."
 
 
 Theory: Bypass communicating with the computer directly and don't use the programming language but
-instead, communicate through the design interface program with abstraction levels with OpenAI Chat GPT 
+instead, communicate through the design interface program with abstraction levels with  Chat GPT 
 and in English describe a function's dynamic behavior as you would to a human. The design of all functions
 is in structured pseudocode that has verbs and has more latitude and flexibility.
 
 The code that is generated is running pseudocode (so it's human readable) which runs and uses methods
 and macros. The pseudocode is structured and converted to a sequence of small reusable methods like the 
-DNA sequence that creates the internal behavior of all functions to create the desired dynamic 
+DNA sequence (nicely factored solutions)that creates the internal behavior of all functions to create the desired dynamic 
 behavior. This promotes reuse and involves less thinking. There will be a pseudocode debugger too.
 
 
@@ -51,16 +62,7 @@ there needed to be a better way to code.
 I have been playing around with Chat GPT and Gemini and previously
 I used to look up how to do a behavior on stack overflow.
 
-My theory is this: Bypass communicating with the dumb machine that can't learn
-and don't use the programming language to write functions. Instead what we do is
-go through the design side with abstraction levels and we can have human knowledge
-programmed in using fuzzy logic or AI such as  Chat GPT and describe the running behavior
-desired that we want to create (LET ME SAY THIS AGAIN WE DESCRIBE THE DYNAMIC BEHAVIOR THAT
-THE FUNCTION CREATES) or for diehards  use a methodized pseudocode language with macros 
-that runs and this pseudocode language calls a sequence of methods that work that create the 
-behavior of the pseudocode which is the internal behavior. So we don't ever have to think
-at the boolean logic level to compose pseudocode and then in the programming language
-if we don't want to.
+
 
 So this then creates a dilemma. The computer doesn't know what a behavior is. But at the
 design level we can describe behaviors. The issue is when we create behaviors we forced 
