@@ -3,13 +3,14 @@ a realization of Dijkstra's Turing Vision of the Future of Programming that Chat
 says is doable, revolutionary, technically possible, and feasible. I have included the chat logs.
 A friend of mine who is a MS CS student read my description and said "Genius", "Simple." 
 
+
 Theory: Bypass communicating with the computer and don't use the programming language but
-instead attack communication by going through the design level with abstraction levels and a deep
-knowledgebase and human intent understanding that is using Chat GPT and in English describe what 
-you want a function to do. The code that is generated is pseudocode which runs and uses methods
-and macros. The pseudocode is structured and converted to a sequence of small methods like the 
-DNA sequence that creates the internal behavior of the  function to create the desired dynamic 
-behavior. This promotes reuse and involves less thinking.
+instead, attack communication by going through the design level with abstraction levels and a deep
+knowledgebase  using Chat GPT and in English describe running function behavior.
+The code that is generated is running pseudocode (so it's human readable) which runs and uses methods
+and macros. The pseudocode is structured and converted to a sequence of small reusable methods like the 
+DNA sequence that creates the internal behavior of all functions to create the desired dynamic 
+behavior. This promotes reuse and involves less thinking. There will be a pseudocode debugger too.
 
 Last week I had the aha experience and the solution for a 
 problem I have been pondering for ten years popped into my head.
