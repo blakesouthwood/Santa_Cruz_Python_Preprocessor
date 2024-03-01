@@ -5,7 +5,8 @@ Perlis:  "Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Gen
 
 Theory: Bypass communicating with the computer directly and don't use the programming language but
 instead, communicate through the design interface program with abstraction levels with OpenAI Chat GPT 
-and in English describe the running function behavior. 
+and in English describe the behavior of a function's behavior as you would to a human. 
+
 The code that is generated is running pseudocode (so it's human readable) which runs and uses methods
 and macros. The pseudocode is structured and converted to a sequence of small reusable methods like the 
 DNA sequence that creates the internal behavior of all functions to create the desired dynamic 
