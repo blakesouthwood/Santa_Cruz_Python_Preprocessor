@@ -2,6 +2,13 @@
 Dijkstra: "A Program is an Implementation of a Design"
 Perlis:   "I want a programming language where I say what I want done."
 Perlis:   "Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.”
+Dikustra: The vision is that, well before the seventies have run to completion, we shall be 
+          able to design and implement the kind of systems that are now straining our programming 
+          ability, at the expense of only a few percent in man-years of what they 
+          cost us now, and that besides that, these systems will be virtually free of bugs. 
+u cannot expect society to accept this, and therefore we must learn to program an order of magnitude more effectively.
+
+
 
 Theory: Bypass communicating with the computer directly and don't use the programming language but
 instead, communicate through the design interface program with abstraction levels with OpenAI Chat GPT 
