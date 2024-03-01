@@ -7,8 +7,9 @@ desired that we want to create (LET ME SAY THIS AGAIN WE DESCRIBE THE DYNAMIC BE
 THE FUNCTION CREATES) or for diehards  use a methodized pseudocode language with macros 
 that runs and this pseudocode language calls a sequence of methods that work that create the 
 behavior of the pseudocode which is the actual function behavior. So we don't ever have to think
-at the boolean logic level to compose pseudocode and then in the programming language
-if we don't want to, but you can if you must. Readable psuedocode is imperative and regular code sucks.
+at the boolean logic level to compose pseudocode and again if we don't want to.
+Readable structured pseudocode which is generated from the coder's description what the function 
+does when it runs in terms of the dynamic behavior it creates..
 
 Dijkstra: "A Program is an Implementation of a Design"
 Perlis:   "I want a programming language where I say what I want done."
