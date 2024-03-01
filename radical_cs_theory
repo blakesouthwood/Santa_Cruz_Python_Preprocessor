@@ -1,5 +1,33 @@
-this is a test to see if this works 
+Last week I had the aha experience and the solution for a 
+problem I have been pondering for ten years popped into my head.
 
-adding more stuff here to make sure it is saved. 
+I recently wrote a switch case for python and macros and it works
+using a preprocessor. After completing this project I realized that
+there needed to be a better way to code. 
 
-practicing easy to update now. 
+I have been playing around with Chat GPT and Gemini and previously
+I used to look up how to do a behavior on stack overflow.
+
+My theory is this: Bypass communicating with the dumb machine that can't learn
+and don't use the programming language to write functions. Instead what we do is
+go through the design side with abstraction levels and we can have human knowledge
+programmed in using fuzzy logic or AI such as  Chat GPT and describe the running behavior
+desired that we want to create (LET ME SAY THIS AGAIN WE DESCRIBE THE DYNAMIC BEHAVIOR THAT
+THE FUNCTION CREATES) or for diehards  use a methodized pseudocode language with macros 
+that runs and this pseudocode language calls a sequence of methods that work that create the 
+behavior of the pseudocode which is the internal behavior. So we don't ever have to think
+at the boolean logic level to compose pseudocode and then in the programming language
+if we don't want to.
+
+So then this creates a dilemma. The computer doesn't know what a behavior is. But at the
+design level we can describe behaviors. The issue is when we create behaviors we forced 
+to think at the machine level of nothingness and use pseudocode as the blue print for 
+creating internal behavior that is in boolean logic with no verbs to create the effect 
+of the dynamic behavior of a function.
+
+What is programming? It is communicating how to create behavior in functions that tells the
+dumb unlearning computer how to create the dynamic behavior THAT IS NOT DESCRIBED.
+
+
+
+
