@@ -30,7 +30,8 @@ that is really runnable code.
 Using fuzzy logic I need to make a model to convert the dynamic running behavior effect 
 description into a structured language description that can be automatically converted
 into creating the pseudocode representation which will stem from action sequence 
-descriptions. 
+descriptions. I will then also need a design language to accurately describe the
+running behavior effect in a structured way.
 
 
 
