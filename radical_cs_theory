@@ -9,7 +9,20 @@ Dikustra: The vision is that, well before the seventies have run to completion, 
           You cannot expect society to accept this, and therefore we must learn to program an 
           order of magnitude more effectively.
           We must not forget that it is not our business to make programs, it is our business 
-          to design classes of computations that will display a desired behaviour. 
+          to design classes of computations that will display a desired behavior. 
+          We all know that the only mental tool by means of which a very finite piece of reasoning 
+          can cover a myriad cases is called “abstraction”; as a result the effective exploitation
+          of his powers of abstraction must be regarded as one of the most vital activities of 
+          a competent programmer. In this connection, it might be worthwhile to point out that 
+          the purpose of abstracting is not to be vague, but to create a new semantic level in 
+          which one can be absolutely precise.
+          Finally, in one respect one hopes that tomorrow’s programming languages will differ 
+          greatly from what we are used to now: to a much greater extent than hitherto they 
+          should invite us to reflect in the structure of what we write down all abstractions 
+          needed to cope conceptually with the complexity of what we are designing
+          The wider applicability of nicely factored solutions is my sixth and last 
+          argument for the technical feasibility of the revolution that might take place 
+          in the current decade.
 
 
 Theory: Bypass communicating with the computer directly and don't use the programming language but
