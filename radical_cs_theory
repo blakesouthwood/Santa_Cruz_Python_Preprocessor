@@ -1,7 +1,7 @@
 
 Dijkstra: "A Program is an Implementation of a Design"
-Perlis:    "I want a programming language where I say what I want done."
-Perlis:  "Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.”
+Perlis:   "I want a programming language where I say what I want done."
+Perlis:   "Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.”
 
 Theory: Bypass communicating with the computer directly and don't use the programming language but
 instead, communicate through the design interface program with abstraction levels with OpenAI Chat GPT 
