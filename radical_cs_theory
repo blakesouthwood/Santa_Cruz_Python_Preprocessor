@@ -27,6 +27,12 @@ the function works internally. The internal function behavior code is generated 
 function's running behavior description but the internal behavior is generated pseudocode 
 that is really runnable code.
 
+Using fuzzy logic I need to make a model to convert the dynamic running behavior effect 
+description into a structured language description that can be automatically converted
+into creating the pseudocode representation which will stem from action sequence 
+descriptions. 
+
+
 
 
 
