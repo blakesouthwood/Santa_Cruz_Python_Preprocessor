@@ -1,9 +1,9 @@
 Blake Southwood Theory For Faster Software Design and Development With A Design Tool
 
 My theory suggests a novel approach to programming by bypassing direct communication with 
-the computer and the programming langauge and instead utilizing a design interface program
+the computer and the programming language and instead utilizing a design interface program
 to interact with ChatGPT in English.  This approach aims to describe a function's runtime
-behavior in a human-readable manner. 
+behavior in a human-readable manner. The function's running behavior is the goal.
  
 The generated code in the function operates in readable pseudocode and utilizes methods 
 and verb macros to execute. This structured pseudocode converts to a method sequence, 
