@@ -5,8 +5,8 @@ Perlis:   "Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Ge
 
 Theory: Bypass communicating with the computer directly and don't use the programming language but
 instead, communicate through the design interface program with abstraction levels with OpenAI Chat GPT 
-and in English describe a function's dynamic behavior as you would to a human. The design of all fuctions
-is in pseudocode that has verbs and is racier.
+and in English describe a function's dynamic behavior as you would to a human. The design of all functions
+is in structured pseudocode that has verbs and has more latitude and flexibility.
 
 The code that is generated is running pseudocode (so it's human readable) which runs and uses methods
 and macros. The pseudocode is structured and converted to a sequence of small reusable methods like the 
