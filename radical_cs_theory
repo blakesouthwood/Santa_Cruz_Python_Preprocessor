@@ -1,7 +1,7 @@
 
 My theory: Bypass communicating with the dumb machine that can't learn
 and don't use the programming language to write functions. Instead what we do is
-go through the design side with abstraction levels and we can have human knowledge
+go through the back door the design side with abstraction levels and we can have human knowledge
 programmed in using fuzzy logic or AI such as  Chat GPT and describe the running behavior
 desired that we want to create (LET ME SAY THIS AGAIN WE DESCRIBE THE DYNAMIC BEHAVIOR THAT
 THE FUNCTION CREATES) or for diehards  use a methodized pseudocode language with macros 
