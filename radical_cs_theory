@@ -1,7 +1,7 @@
 My theory suggests a novel approach to programming by abstracting away direct communication with 
-computers and instead utilizing a design interface program to interact with ChatGPT in English. 
-This approach aims to describe a function's dynamic behavior in a human-readable manner, using 
-structured pseudocode that is designed with verbs and provides more flexibility.
+the computer and instead utilize a design interface program to interact with ChatGPT in English. 
+This approach aims to describe a function's dynamic behavior in a human-readable manner 
+which generates a structured pseudocode designed with verbs and provides more flexibility.
 
 The generated code operates in pseudocode, ensuring readability, and utilizes methods 
 and macros to execute tasks. This structured pseudocode converts to a method sequence, 
