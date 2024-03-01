@@ -1,3 +1,20 @@
+My theory suggests a novel approach to programming by abstracting away direct communication with 
+computers and instead utilizing a design interface program to interact with ChatGPT in English. 
+This approach aims to describe a function's dynamic behavior in a human-readable manner, using 
+structured pseudocode that is designed with verbs and provides more flexibility.
+
+The generated code operates in pseudocode, ensuring readability, and utilizes methods 
+and macros to execute tasks. This structured pseudocode is akin to a DNA sequence, 
+offering neatly organized solutions that define the internal behavior of functions
+and facilitate the desired dynamic behavior. By structuring the code in this way, 
+it encourages reuse and minimizes cognitive load. Additionally, a pseudocode debugger
+would aid in identifying and resolving issues during development.
+
+Overall, this approach proposes a shift towards more intuitive and reusable programming
+practices, leveraging natural language communication and structured pseudocode to
+streamline the development process and enhance dynamic behavior comprehension.
+
+
 
 My theory: Bypass communicating with the dumb machine that can't learn
 and don't use the programming language to write functions. Instead what we do is
