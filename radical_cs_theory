@@ -1,6 +1,8 @@
 
-Theory: Dijkstra: A Program is an Implementation of a Design
-Bypass communicating with the computer directly and don't use the programming language but
+Dijkstra: "A Program is an Implementation of a Design"
+Peris: "I want a programming language where I say what I want done."
+
+Theory: Bypass communicating with the computer directly and don't use the programming language but
 instead, attack communication by going through the design level interface program with abstraction levels and a deep
 a knowledgebase  using Chat GPT and in English describe running function behavior. 
 The code that is generated is running pseudocode (so it's human readable) which runs and uses methods
