@@ -13,18 +13,19 @@ and facilitate the desired dynamic behavior. By structuring the code in this way
 it encourages reuse and minimizes thinking in boolean logic and in code.
 
 Additionally, a pseudocode debugger will aid in identifying and resolving bugs during 
-development. It is also possible to design functions in pseudocode quickly if 
+development. It is also possible to design functions in pseudocode quickly if so
 desired since pseudocode is a design level and is runnable. There will be a pseudocode
 library and a pseudocode language guide. The pseudocode will be converted on the fly
-into methods and macros and then run. 
+into methods and macros and then run. I just added this feature for flexibility.
 
 Overall, this approach proposes a shift towards more intuitive and reusable programming
 practices, leveraging natural language communication and structured pseudocode to
 streamline the development process and enhance dynamic behavior comprehension.
 
-The main difference is describing the running dynamic behavior of functions instead of how the function 
-works internally. The internal function behavior code is generated from the function's running 
-behavior description but the internal behavior is generated pseudocode that is actually code
+The main difference is describing the running dynamic behavior of functions instead of how
+the function works internally. The internal function behavior code is generated from the
+function's running behavior description but the internal behavior is generated pseudocode 
+that is really runnable code.
 
 
 
