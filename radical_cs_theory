@@ -4,13 +4,13 @@ says is doable, technically possible, and feasible. I have included the chat log
 
 Last week I had the aha experience and the solution for a 
 problem I have been pondering for ten years popped into my head.
-I wanted to be able to write code faster. I wanted to write code 
+I wanted to be able to write code faster - way faster. I wanted to write code 
 based on how I think at the intent level. Then I decided that I
-didn't actually want to write code nor think in the programming language
+didn't want to write code nor think in the programming language nor boolean logic
 whatsoever nor did I want to write the pseudocode structure for a function,
 I just wanted to describe the dynamic running behavior of functions. 
 
-I wanted to be able to build the same project that I just coded in Python that
+I wanted to be able to build the same project that I just coded in Python which
 took me two years to design and build it in a week instead. What I meant is 
 I just want to design it. I don't want to code it at all. I want the code 
 completely generated. Oh I want to be able to design the program with an interactive tool
