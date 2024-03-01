@@ -4,21 +4,15 @@ says is doable, revolutionary, technically possible, and feasible. I have includ
 A friend of mine who is a MS CS student read my description and said "Genius", "Simple." 
 
 
-Theory: Bypass communicating with the computer and don't use the programming language but
-instead, attack communication by going through the design level with abstraction levels and a deep
-knowledgebase  using Chat GPT and in English describe running function behavior.
+Theory: Dijkstra A Program is an Implementation of a Design
+Bypass communicating with the computer directly and don't use the programming language but
+instead, attack communication by going through the design level interface program with abstraction levels and a deep
+a knowledgebase  using Chat GPT and in English describe running function behavior. 
 The code that is generated is running pseudocode (so it's human readable) which runs and uses methods
 and macros. The pseudocode is structured and converted to a sequence of small reusable methods like the 
 DNA sequence that creates the internal behavior of all functions to create the desired dynamic 
 behavior. This promotes reuse and involves less thinking. There will be a pseudocode debugger too.
 
-Last week I had the aha experience and the solution for a 
-problem I have been pondering for ten years popped into my head.
-I wanted to be able to write code faster - way faster. I wanted to write code 
-based on how I think at the intent level. Then I decided that I
-didn't want to write code nor think in the programming language nor boolean logic
-whatsoever nor did I want to write the pseudocode structure for a function,
-I just wanted to describe the dynamic running behavior of functions. 
 
 I wanted to be able to build the same project that I just coded in Python which
 took me two years to design and build it in a week instead. What I meant is 
