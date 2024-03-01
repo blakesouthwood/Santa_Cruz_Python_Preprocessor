@@ -1,5 +1,14 @@
 Last week I had the aha experience and the solution for a 
 problem I have been pondering for ten years popped into my head.
+I wanted to be able to write code faster. I wanted to write code 
+based on how I think at the intent level.
+
+I wanted to be able to build the same project that I just coded in Python that
+took me two years and design and build it in a week. What I meant is 
+I just want to design it. I don't want to code it at all. I want the code 
+completely generated. Oh I want to be able to design it with an interactive tool
+that uses AI to assist me too. I just want to describe what each function needs 
+to do when it runs but now how to make the function work internally.
 
 I recently wrote a switch case for python and macros and it works
 using a preprocessor. After completing this project I realized that
@@ -19,7 +28,7 @@ behavior of the pseudocode which is the internal behavior. So we don't ever have
 at the boolean logic level to compose pseudocode and then in the programming language
 if we don't want to.
 
-So then this creates a dilemma. The computer doesn't know what a behavior is. But at the
+So this then creates a dilemma. The computer doesn't know what a behavior is. But at the
 design level we can describe behaviors. The issue is when we create behaviors we forced 
 to think at the machine level of nothingness and use pseudocode as the blue print for 
 creating internal behavior that is in boolean logic with no verbs to create the effect 
@@ -27,6 +36,9 @@ of the dynamic behavior of a function.
 
 What is programming? It is communicating how to create behavior in functions that tells the
 dumb unlearning computer how to create the dynamic behavior THAT IS NOT DESCRIBED.
+
+I have been chatting with Chat GPT for a week hashing out the merits of this theory since
+there will be doubters. Here is the log of the discussions.
 
 
 
