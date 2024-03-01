@@ -6,8 +6,10 @@ Dikustra: The vision is that, well before the seventies have run to completion, 
           able to design and implement the kind of systems that are now straining our programming 
           ability, at the expense of only a few percent in man-years of what they 
           cost us now, and that besides that, these systems will be virtually free of bugs. 
-u cannot expect society to accept this, and therefore we must learn to program an order of magnitude more effectively.
-
+          You cannot expect society to accept this, and therefore we must learn to program an 
+          order of magnitude more effectively.
+          We must not forget that it is not our business to make programs, it is our business 
+          to design classes of computations that will display a desired behaviour. 
 
 
 Theory: Bypass communicating with the computer directly and don't use the programming language but
