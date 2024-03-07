@@ -1,37 +1,17 @@
-Blake Southwood Theory For Faster Software Design and Development With A Design Tool
+Blake Southwood 
+Theory For Faster Software Design and Development With A Design Tool
 
-My theory suggests a novel approach to programming by bypassing direct communication with 
-the computer and the programming language and instead utilizing a design interface program
-to interact with ChatGPT in English.  This approach aims to describe a function's runtime
-behavior in a human-readable manner. The function's running behavior is the goal. The 
-objective is the human doesn't have to create the function's internal code whatsoever.
- 
-The generated code in the function operates in readable pseudocode and utilizes methods 
-and verb macros to execute. This structured pseudocode converts to a method sequence, 
-offering neatly organized solutions that define the internal behavior of functions
-and facilitate the desired dynamic behavior. By structuring the code in this way, 
-it encourages reuse and minimizes thinking in boolean logic and in code.
+The idea is going backward. Instead of telling the dumb computer how to create a behavior function in
+a programming language like Python we completely bypass the computer and  programming language
+and instead, go through the design level that has abstraction levels and can have encased human thinking
+which is based on the Turing lecture by Dijkstra. The computer's inability to learn and dumbness and the
+cryptic confusing nature of the programming language are both bottlenecks that this approach bypasses.
+This theory is based on Goldratt's The Theory of Constraints to increase throughput by eliminating the 
+bottlenecks.
 
-Additionally, a pseudocode debugger will aid in identifying and resolving bugs during 
-development. It is also possible to design functions in pseudocode quickly if so
-desired since pseudocode is a design level and is runnable. There will be a pseudocode
-library and a pseudocode language guide. The pseudocode will be converted on the fly
-into methods and macros and then run. I just added this feature for flexibility.
+There will be naysayers so I had a conversation with Chat GPT for the past two weeks. I have included today's
+conversation for you to read and digest the possibilities.
 
-Overall, this approach proposes a shift towards more intuitive and reusable programming
-practices, leveraging natural language communication and structured pseudocode to
-streamline the development process and enhance dynamic behavior comprehension.
-
-The main difference is describing the running dynamic behavior of functions instead of how
-the function works internally. The internal function behavior code is generated from the
-function's running behavior description but the internal behavior is generated pseudocode 
-that is really runnable code.
-
-Using fuzzy logic I need to make a model to convert the dynamic running behavior effect 
-description into a structured language description that can be automatically converted
-into creating the pseudocode representation which will stem from action sequence 
-descriptions. I will then also need a design language to accurately describe the
-running behavior effect in a structured way.
 
 
 
