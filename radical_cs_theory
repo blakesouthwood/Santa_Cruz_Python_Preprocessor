@@ -2,7 +2,7 @@ Blake Southwood
 Theory For Faster Software Design and Development With An Interactive Design and Knowledge Tool
 This would solve the No Silver Bullet proposal by Fred Brooks 10X faster initially and doubling 
 in speed every two years like hardware speed improvements.
-This implements Dikustra's Theory on the future of programming and we need to  prepare ourselves for the shock.
+This implements Dijkustra's Theory on the future of programming and we need to  prepare ourselves for the shock.
 
 The idea is going backwards. Instead of telling the dumb computer that can't learn  how to create a behavior 
 function in a programming language like Python we completely bypass the computer and  programming language
