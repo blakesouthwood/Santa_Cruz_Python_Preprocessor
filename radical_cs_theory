@@ -9,8 +9,10 @@ it seems like it will work. It's an unorthodox backward approach to bypass tradi
 that circumvents the traditional bottlenecks that slow down the creation of software programs. 
 
 The initial idea stemmed from Dijkstra's Turing lecture mentioning neatly factored solutions and abstraction
-levels which are design levels. The idea is going backwards or in other words to "reverse it" (Got the idea
-from the movie Apollo 13). Instead  of telling the dumb computer that can't learn  how to create a behavior 
+levels which are design levels. The idea is going backwards or in other words to "reverse it" 
+Rough Quote "Why can't we reverse the flow?"
+(Got the ideafrom the movie Apollo 13). Instead  of telling the dumb computer that can't learn 
+how to create a behavior 
 function in a programming language like Python we completely bypass the computer and  programming language
 and instead, go through the design level with growing knowledge that has abstraction levels and can have
 encased human thinking which is based on the Turing lecture by Dijkstra. The computer's inability to learn 
@@ -3364,38 +3366,78 @@ Documentation and Visualization: Clear documentation and visual
 representations aid in communication and understanding, reducing the 
 risk of misinterpretation and promoting alignment among team members. 
 Visualizations, such as diagrams and models, provide intuitive insights 
-into system architecture and behavior, facilitating collaboration and decision-making.
+into system architecture and behavior, facilitating collaboration and 
+decision-making.
 
 Error Analysis and Correction: When errors occur, the system analyzes 
-their root causes and provides guidance on how to correct them. It identifies flaws in boolean logic, human logic, and system behavior, offering insights and recommendations for improvement. This feedback loop helps developers learn from mistakes and prevent similar issues in the future.
+their root causes and provides guidance on how to correct them. It 
+identifies flaws in boolean logic, human logic, and system behavior,
+offering insights and recommendations for improvement. This feedback loop
+helps developers learn from mistakes and prevent similar issues in the future.
 
-Training and Adaptation: Over time, the system becomes more adept at identifying and correcting errors, thanks to ongoing training and adaptation. It incorporates new knowledge, refines its algorithms, and adjusts its recommendations based on user feedback, contributing to continuous improvement and project success.
+Training and Adaptation: Over time, the system becomes more adept at
+identifying and correcting errors, thanks to ongoing training and adaptation.
+It incorporates new knowledge, refines its algorithms, and adjusts its 
+recommendations based on user feedback, contributing to continuous improvement 
+and project success.
 
-By fostering a culture of continual improvement, emphasizing reuse and refinement, and leveraging feedback to drive learning and adaptation, the proposed approach aims to optimize software development processes and deliver high-quality, reliable solutions.
+By fostering a culture of continual improvement, emphasizing reuse and
+refinement, and leveraging feedback to drive learning and adaptation, the proposed
+approach aims to optimize software development processes and deliver high-quality,
+reliable solutions.
 
 User
-24/7 operation so it is active even when not in use to improve efficiencies and spot possible bottlenecks and solve current bottlenecks and representations that have not yet translated from intent into pseudocode and running code.  also the ability to describe the running behavior desired of a function with a behavior language for functions that can be converted into structured pseudodocode
+24/7 operation so it is active even when not in use to improve efficiencies
+and spot possible bottlenecks and solve current bottlenecks and representations
+that have not yet translated from intent into pseudocode and running code.  
+also the ability to describe the running behavior desired of a function with 
+a behavior language for functions that can be converted into structured pseudodocode
 ChatGPT
-Operating the system 24/7 to continuously monitor, analyze, and improve efficiencies is a powerful concept that can yield significant benefits in software development. Here's how it can work:
+Operating the system 24/7 to continuously monitor, analyze, and improve 
+efficiencies is a powerful concept that can yield significant benefits in
+software development. Here's how it can work:
 
 Continuous Monitoring and Analysis: By running the system continuously,
 it can monitor various aspects of the development process, such as code 
-changes, build processes, performance metrics, and user interactions. This constant monitoring allows the system to detect patterns, identify bottlenecks, and proactively address issues as they arise.
+changes, build processes, performance metrics, and user interactions. This 
+constant monitoring allows the system to detect patterns, identify bottlenecks,
+and proactively address issues as they arise.
 
 Real-time Optimization: With real-time data and insights, the system can 
-dynamically optimize development workflows, resource utilization, and system performance. It can allocate resources efficiently, prioritize tasks based on their impact, and adjust its recommendations to meet evolving needs, leading to improved efficiency and productivity.
+dynamically optimize development workflows, resource utilization, and system 
+performance. It can allocate resources efficiently, prioritize tasks based on 
+their impact, and adjust its recommendations to meet evolving needs, leading to
+improved efficiency and productivity.
 
 Spotting Bottlenecks: The system's continuous operation enables it to 
-identify bottlenecks in the development pipeline, such as slow build times, inefficient processes, or resource constraints. By pinpointing these bottlenecks early, the system can suggest optimizations, propose alternative workflows, or allocate additional resources to keep the development process running smoothly.
+identify bottlenecks in the development pipeline, such as slow build times, 
+inefficient processes, or resource constraints. By pinpointing these bottlenecks
+early, the system can suggest optimizations, propose alternative workflows, or 
+allocate additional resources to keep the development process running smoothly.
 
-Addressing Bottlenecks: Once bottlenecks are identified, the system can take proactive measures to address them. This may involve optimizing code, streamlining workflows, parallelizing tasks, or scaling infrastructure to handle increased demand. By addressing bottlenecks promptly, the system ensures that development progress remains unhindered and project timelines are met.
+Addressing Bottlenecks: Once bottlenecks are identified, the system can take 
+proactive measures to address them. This may involve optimizing code, streamlining
+workflows, parallelizing tasks, or scaling infrastructure to handle increased 
+demand. By addressing bottlenecks promptly, the system ensures that development 
+progress remains unhindered and project timelines are met.
 
-Translation from Intent to Pseudocode: The system can assist developers in translating design intent into structured pseudocode or running code. Through natural language processing (NLP) techniques and behavior languages for functions, developers can describe the desired behavior of functions in a high-level, intuitive manner. The system then translates these descriptions into structured pseudocode, accelerating the implementation process and reducing the risk of misinterpretation.
+Translation from Intent to Pseudocode: The system can assist developers in 
+translating design intent into structured pseudocode or running code. Through 
+natural language processing (NLP) techniques and behavior languages for functions, 
+developers can describe the desired behavior of functions in a high-level, intuitive
+manner. The system then translates these descriptions into structured pseudocode, 
+accelerating the implementation process and reducing the risk of misinterpretation.
 
-Overall, operating the system 24/7 enhances its effectiveness in improving efficiencies, addressing bottlenecks, and facilitating the translation of design intent into executable code. By leveraging real-time data, continuous monitoring, and proactive optimization, the system contributes to smoother development workflows, faster delivery cycles, and higher-quality software products.
+Overall, operating the system 24/7 enhances its effectiveness in improving efficiencies,
+addressing bottlenecks, and facilitating the translation of design intent into 
+executable code. By leveraging real-time data, continuous monitoring, and proactive 
+optimization, the system contributes to smoother development workflows, faster delivery
+cycles, and higher-quality software products.
 
 User
-to put this in perspective I just spent 2 years building a software system that I think with the design and development tool I just described to you could have been done in 1 month
+to put this in perspective I just spent 2 years building a software system that
+I think with the design and development tool I just described to you could have 
+been done in 1 month
 ChatGPT
 The potential efficiency gains you're envisioning with the described design and development tool are indeed substantial. Transitioning from a two-year development timeline to just one month is a dramatic improvement that highlights the transformative impact of streamlining software development processes. Here's how the tool could have facilitated such a significant reduction in development time:
 
