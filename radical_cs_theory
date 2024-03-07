@@ -6,11 +6,11 @@ This implements Dijkstra's Theory on the future of programming and we need to  p
 
 The idea is going backwards. Instead of telling the dumb computer that can't learn  how to create a behavior 
 function in a programming language like Python we completely bypass the computer and  programming language
-and instead, go through the design level that has abstraction levels and can have encased human thinking
-which is based on the Turing lecture by Dijkstra. The computer's inability to learn and dumbness and the
-cryptic confusing nature of the programming language are both bottlenecks that this approach bypasses.
-This theory is based on Goldratt's The Theory of Constraints to increase throughput by eliminating the 
-bottlenecks.
+and instead, go through the design level with growing knoweldge that has abstraction levels and can have
+encased human thinkingwhich is based on the Turing lecture by Dijkstra. The computer's inability to learn 
+and dumbness and the cryptic confusing nature of the programming language are both bottlenecks that this 
+approach bypasses. This theory is based on Goldratt's The Theory of Constraints to increase throughput
+by eliminating the bottlenecks.
 
 There will be naysayers so I had a conversation with Chat GPT for the past two weeks. I have included today's
 conversation for you to read and digest the possibilities.
