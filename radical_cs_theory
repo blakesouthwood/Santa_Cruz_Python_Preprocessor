@@ -4,14 +4,18 @@ This would solve the No Silver Bullet proposal by Fred Brooks 10X faster initial
 in speed every two years like hardware speed improvements.
 This implements Dijkstra's Theory on the future of programming which will be altogether different
 from how we build programs now.
+I have not implemented this theory. The idea came to me in the aha experience two weeks ago and
+it seems like it will work. It's an unorthodox backward approach to bypass traditional programming
+that circumvents the traditional bottlenecks that slow down the creation of software programs. 
 
-The idea is going backwards. Instead of telling the dumb computer that can't learn  how to create a behavior 
-function in a programming language like Python we completely bypass the computer and  programming language
-and instead, go through the design level with growing knoweldge that has abstraction levels and can have
-encased human thinkingwhich is based on the Turing lecture by Dijkstra. The computer's inability to learn 
+The idea is going backwards or in other words in reverse it (Got the idea from the movie Apollo 13). Instead 
+of telling the dumb computer that can't learn  how to create a behavior function in a programming language
+like Python we completely bypass the computer and  programming language
+and instead, go through the design level with growing knowledge that has abstraction levels and can have
+encased human thinking which is based on the Turing lecture by Dijkstra. The computer's inability to learn 
 and dumbness and the cryptic confusing nature of the programming language are both bottlenecks that this 
-approach bypasses. This theory is based on Goldratt's The Theory of Constraints to increase throughput
-by eliminating the bottlenecks.The computer is also oblivious to the design.
+approach bypasses. This theory is based on Goldratt's Theory of Constraints to increase throughput
+by eliminating the bottlenecks. The computer is also oblivious to the design.
 
 There will be naysayers so I had a conversation with Chat GPT for the past two weeks. I have included today's
 conversation for you to read and digest the possibilities.
