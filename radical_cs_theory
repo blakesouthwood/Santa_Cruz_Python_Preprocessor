@@ -1,8 +1,8 @@
 Blake Southwood 
 Theory For Faster Software Design and Development With An Interactive Design and Knowledge Tool
 
-The idea is going backward. Instead of telling the dumb computer how to create a behavior function in
-a programming language like Python we completely bypass the computer and  programming language
+The idea is going backwards. Instead of telling the dumb computer that can't learn  how to create a behavior 
+function in a programming language like Python we completely bypass the computer and  programming language
 and instead, go through the design level that has abstraction levels and can have encased human thinking
 which is based on the Turing lecture by Dijkstra. The computer's inability to learn and dumbness and the
 cryptic confusing nature of the programming language are both bottlenecks that this approach bypasses.
@@ -24,49 +24,44 @@ ChatGPT 3.5
 
 User
 
-User
-advice on how to rescue a failing software project that is complex, designed on the fly, buggy, doesn't work, and a runaway train
-ChatGPT
-Rescuing a failing software project that is complex, poorly designed, buggy, and seemingly out of control can be a daunting task. However, with careful planning, effective leadership, and the right strategies, it's possible to turn things around. Here's some advice on how to approach the situation:
+Clear Goals: Define clear and achievable goals for rescuing the project. 
+Determine what success looks like and establish milestones to track progress towards those goals.
 
-Assess the Situation: Start by conducting a thorough assessment of the project to understand the scope of the issues and challenges. Identify the root causes of the problems, including technical, organizational, and process-related issues.
-
-Establish Clear Goals: Define clear and achievable goals for rescuing the project. Determine what success looks like and establish milestones to track progress towards those goals.
-
-Build a Competent Team: Assemble a team of skilled and motivated individuals who are capable of addressing the project's challenges. Ensure that the team has the necessary expertise and resources to tackle the problems effectively.
-
-Stabilize the Project: Focus on stabilizing the project by addressing critical issues and prioritizing fixes that will have the most significant impact on improving the software's functionality and reliability.
-
-Develop a Plan: Develop a detailed plan for addressing the project's problems and implementing necessary changes. Break down the plan into manageable tasks and allocate resources effectively to ensure timely execution.
-
-Improve Communication: Foster open and transparent communication within the team and with stakeholders. Keep everyone informed about the project's status, challenges, and progress towards goals.
-
-Address Technical Debt: Identify and address technical debt—areas of the codebase that are poorly designed, outdated, or inefficient. Prioritize refactoring and rewriting code as needed to improve maintainability, performance, and stability.
-
-Implement Quality Assurance Processes: Establish robust quality assurance processes to identify and address bugs, defects, and other issues early in the development lifecycle. Implement automated testing, code reviews, and other best practices to improve software quality.
-
-Iterate and Adapt: Embrace an iterative and adaptive approach to development, where you continuously evaluate progress, gather feedback, and make adjustments as needed. Be willing to adapt your plans and strategies based on changing circumstances and new information.
-
-Seek External Assistance if Necessary: Consider seeking external assistance from consultants, experts, or third-party vendors with experience in rescuing troubled software projects. They can provide valuable insights, guidance, and support to help overcome challenges and achieve success.
-
-Rescuing a failing software project requires patience, perseverance, and a willingness to tackle difficult problems head-on. By taking a systematic and strategic approach, along with the support of a capable team, it's possible to turn even the most troubled projects around and deliver successful outcomes.
 
 User
 what about this for a theory of building software. make an interactive design tool 
 that has growing knowledge how to create behaviors that can be described at the intent
-level and new knowledge is constantly added from previous projects and then for the magic after the multiple level design interface is fed the design it generates the code for the project
+level and new knowledge is constantly added from previous projects and then for the magic after
+the multiple level design interface is fed the design it generates the code for the project
 ChatGPT
-Your idea suggests an innovative approach to software development that combines interactive design tools with AI-driven code generation. Let's break down the components and implications of your proposed theory:
+Your idea suggests an innovative approach to software development that combines interactive
+design tools with AI-driven code generation. Let's break down the components and implications
+of your proposed theory:
 
-Interactive Design Tool with Growing Knowledge: The concept of an interactive design tool that learns and grows from previous projects is intriguing. Such a tool could potentially leverage machine learning algorithms to analyze patterns in design choices, code structures, and project outcomes. By accumulating knowledge over time, the tool could become increasingly adept at suggesting design solutions and avoiding common pitfalls.
+Interactive Design Tool with Growing Knowledge: The concept of an interactive design tool 
+that learns and grows from previous projects is intriguing. Such a tool could potentially 
+leverage machine learning algorithms to analyze patterns in design choices, code structures,
+and project outcomes. By accumulating knowledge over time, the tool could become 
+increasingly adept at suggesting design solutions and avoiding common pitfalls.
 
-Describing Behaviors at the Intent Level: Focusing on describing behaviors at the intent level aligns with principles of high-level design and abstraction. This approach can help clarify the purpose and functionality of different components within the software, making it easier to understand and modify the design as needed.
+Describing Behaviors at the Intent Level: Focusing on describing behaviors at the intent 
+level aligns with principles of high-level design and abstraction. This approach can help
+clarify the purpose and functionality of different components within the software, making
+it easier to understand and modify the design as needed.
 
-AI-Driven Code Generation: Automating code generation based on design specifications is a promising idea that has gained traction in recent years. Machine learning algorithms can analyze design inputs and generate code snippets or even entire modules tailored to the desired functionality. This approach has the potential to speed up development time, reduce manual errors, and improve code quality.
+AI-Driven Code Generation: Automating code generation based on design specifications is a
+promising idea that has gained traction in recent years. Machine learning algorithms can
+analyze design inputs and generate code snippets or even entire modules tailored to the 
+desired functionality. This approach has the potential to speed up development time, 
+reduce manual errors, and improve code quality.
 
-Integration of Multiple-Level Design Interface: Integrating multiple levels of design interfaces can provide flexibility and scalability in the software development process. Developers can work at different levels of abstraction, from high-level conceptualization to low-level implementation details, depending on their preferences and project requirements.
+Integration of Multiple-Level Design Interface: Integrating multiple levels of design 
+interfaces can provide flexibility and scalability in the software development process. 
+Developers can work at different levels of abstraction, from high-level conceptualization 
+to low-level implementation details, depending on their preferences and project requirements.
 
-While your theory presents an exciting vision for the future of software development, there are several considerations to keep in mind:
+While your theory presents an exciting vision for the future of software development,
+there are several considerations to keep in mind:
 
 Complexity and Robustness: Building such a sophisticated system would require robust algorithms, large datasets, and extensive testing to ensure reliability and accuracy. Handling the complexity of real-world software projects and accommodating diverse design preferences would be significant challenges.
 
@@ -96,9 +91,17 @@ Action Description in Methods: Embedding action descriptions within method names
 Overall, your proposed approach combines the strengths of AI-driven automation with human expertise and collaboration to streamline the software development process. By leveraging knowledge from previous projects, adopting expressive methods, and embracing Agile practices, developers can build high-quality software more efficiently and effectively.
 
 User
-so this approach bypasses the usual coding approach by bypassing the computer and bypassing the programming language oh also all code within each function is readable because it's a method and macro built correct pseudocode that converts into the the action sequence methods that are expressive that are in a sequence like the DNA sequence so they can be reused little behaviors . and so in this plan of attack like Rommel what I am doing is taking advantage of the design side which is unknown to the computer and it can have multiple abstration levels ala Dijkstra and all of these levels double as documentation 
+so this approach bypasses the usual coding approach by bypassing the computer and bypassing
+the programming language oh also all code within each function is readable because it's a 
+method and macro built correct pseudocode that converts into the the action sequence 
+methods that are expressive that are in a sequence like the DNA sequence so they can be
+reused little behaviors . and so in this plan of attack like Rommel what I am doing is
+taking advantage of the design side which is unknown to the computer and it can have
+multiple abstration levels ala Dijkstra and all of these levels double as documentation 
 ChatGPT
-Your approach seems to propose a significant departure from traditional software development methodologies by leveraging AI-driven automation to bypass direct programming and instead focus on designing systems using expressive, reusable methods. Let's break down the key elements of your approach:
+Your approach seems to propose a significant departure from traditional software 
+development methodologies by leveraging AI-driven automation to bypass direct programming 
+and instead focus on designing systems using expressive, reusable methods. Let's break down the key elements of your approach:
 
 Bypassing Traditional Coding: By using AI systems to generate code based on design specifications and patterns learned from previous projects, your approach aims to streamline the software development process and reduce the need for manual coding. This can potentially speed up development time and reduce human error.
 
