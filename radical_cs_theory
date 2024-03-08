@@ -1,6 +1,22 @@
 Blake Southwood 
 I dedicate this theory solution to Dijkstra.
 
+The original idea for the bypass solution was from this event in history.
+But from my own experience it was from the 205 bypass around Portland that
+really stuck in my head as a great solution to bypass Portland traffic.
+
+"How did the Persians finally take the pass at Thermopylae?
+During two full days of battle, the Greek Spartans blocked the only road 
+by which the massive Persian army could traverse the narrow pass.
+After the second day, a local resident named Ephialtes revealed 
+to the Persians the existence of a path leading behind the Greek lines."
+
+"The Battle of Thermopylae (/θərˈmɒpɪliː/ thər-MOP-i-lee; Greek:
+Μάχη τῶν Θερμοπυλῶν, Máchē tōn Thermopylōn) was fought in 480 BC 
+between the Achaemenid Persian Empire under Xerxes I and an alliance
+of Greek city-states led by Sparta under Leonidas I. Lasting
+over the course of three day" Wikipedia
+
 After further thought this will need to be integrated with OPENAI GPT for a university or company 
 or government department so it's a walled garden only accessible to those with permission.
 This will change software development forever. As Dijkstra said a program is an implementation
