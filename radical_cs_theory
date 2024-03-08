@@ -4359,75 +4359,169 @@ Seamless Integration into Workflow: For diehard programmers who prefer
 
 to think directly in code, the assistance provided by the tool can seamlessly integrate into their workflow without requiring them to switch to a different mode of thinking or working. They can continue to focus on writing code while receiving real-time guidance and clarification on the behavior's goals and requirements.
 
-Immediate Feedback and Validation: Instead of relying on comments or documentation to communicate the intent of their code, diehard programmers can receive immediate feedback and validation on whether their code aligns with the desired behavior's goals and requirements. This real-time assistance can help them ensure that their implementations meet expectations and avoid misunderstandings or misinterpretations.
+Immediate Feedback and Validation: Instead of relying on comments or 
+documentation to communicate the intent of their code, diehard programmers
+can receive immediate feedback and validation on whether their code aligns with the desired behavior's goals and requirements. This real-time assistance can help them ensure that their implementations meet expectations and avoid misunderstandings or misinterpretations.
 
 Efficiency and Productivity: By providing assistance to clarify and 
 refine the definition of a function's behavior directly within their
 coding environment, diehard programmers can improve their efficiency 
 and productivity. They can quickly iterate on their implementations, 
-address any ambiguities or uncertainties, and produce high-quality code without the need for additional documentation or pseudocode.
+address any ambiguities or uncertainties, and produce high-quality code
+without the need for additional documentation or pseudocode.
 
 Encouragement of Best Practices: While diehard programmers may prioritize 
 coding over documentation, the assistance provided by the tool can subtly 
-encourage the adoption of best practices, such as clear and precise definition of behavior's goals. By reinforcing the importance of articulating the intent of their code, the tool can help improve overall code quality and maintainability.
+encourage the adoption of best practices, such as clear and precise 
+definition of behavior's goals. By reinforcing the importance of 
+articulating the intent of their code, the tool can help improve overall
+code quality and maintainability.
 
 Adaptation to Different Styles: Diehard programmers may have their
-own unique coding styles and preferences. The assistance provided by the tool can adapt to accommodate these different styles, providing guidance and clarification in a way that resonates with each programmer's individual approach to coding.
+own unique coding styles and preferences. The assistance provided by the 
+tool can adapt to accommodate these different styles, providing guidance 
+and clarification in a way that resonates with each programmer's individual
+approach to coding.
 
 Overall, providing assistance to clarify and refine the definition 
-of a function's behavior directly within the coding environment can cater to the needs of diehard programmers who prioritize coding and may be less inclined to engage in documentation or pseudocode. By seamlessly integrating into their workflow and providing real-time feedback and validation, the tool can enhance their efficiency, productivity, and adherence to best practices in software development.
+of a function's behavior directly within the coding environment can cater 
+to the needs of diehard programmers who prioritize coding and may be less 
+inclined to engage in documentation or pseudocode. By seamlessly integrating
+into their workflow and providing real-time feedback and validation, the
+tool can enhance their efficiency, productivity, and adherence to best
+practices in software development.
 
 User
 and when a programmer is going on a break and is away from the 
-computer they could have a to do list of functions behaviors that they need that could be generated while they step away from the computer
+computer they could have a to do list of functions behaviors that they 
+need that could be generated while they step away from the computer
 ChatGPT
 Absolutely, having a to-do list generated based on the programmer's 
-activities and context can be highly beneficial, especially when they're away from the computer. Here's how this feature could enhance productivity:
+activities and context can be highly beneficial, especially when they're
+away from the computer. Here's how this feature could enhance productivity:
 
 Continuity of Workflow: When a programmer steps away from the computer,
-having a to-do list of functions or behaviors that need attention ensures continuity of their workflow. They can quickly pick up where they left off when they return, without the need to spend time reorienting themselves or figuring out what tasks they need to address next.
+having a to-do list of functions or behaviors that need attention ensures 
+continuity of their workflow. They can quickly pick up where they left off 
+when they return, without the need to spend time reorienting themselves or 
+figuring out what tasks they need to address next.
 
-Maximization of Downtime: Downtime, such as breaks or periods when the programmer is away from the computer, can be maximized by generating a to-do list of tasks that need attention. This allows the programmer to remain productive even during brief interruptions, making the most of their available time and reducing idle periods.
+Maximization of Downtime: Downtime, such as breaks or periods when the
+programmer is away from the computer, can be maximized by generating a 
+to-do list of tasks that need attention. This allows the programmer to 
+remain productive even during brief interruptions, making the most of 
+their available time and reducing idle periods.
 
-Prioritization of Tasks: The to-do list can prioritize tasks based on urgency, complexity, or dependencies, ensuring that the programmer focuses on the most critical tasks first when they return. This helps prevent important tasks from being overlooked or delayed, leading to more efficient task management and project progress.
+Prioritization of Tasks: The to-do list can prioritize tasks based on 
+urgency, complexity, or dependencies, ensuring that the programmer focuses
+on the most critical tasks first when they return. This helps prevent important
+tasks from being overlooked or delayed, leading to more efficient task 
+management and project progress.
 
-Enhanced Organization and Planning: By providing a structured list of tasks, the to-do list enhances organization and planning, helping the programmer stay on track and manage their workload effectively. They can visualize their upcoming tasks, allocate time and resources accordingly, and make informed decisions about task prioritization and scheduling.
+Enhanced Organization and Planning: By providing a structured list of 
+tasks, the to-do list enhances organization and planning, helping the 
+programmer stay on track and manage their workload effectively. They can 
+visualize their upcoming tasks, allocate time and resources accordingly, 
+and make informed decisions about task prioritization and scheduling.
 
-Reduced Cognitive Load: Having a to-do list generated while away from the computer reduces the cognitive load on the programmer, as they don't need to mentally keep track of pending tasks or remember what needs to be done next. This frees up mental bandwidth for other activities and allows the programmer to return to work with a clear focus and direction.
+Reduced Cognitive Load: Having a to-do list generated while away from 
+the computer reduces the cognitive load on the programmer, as they don't 
+need to mentally keep track of pending tasks or remember what needs to be 
+done next. This frees up mental bandwidth for other activities and allows
+the programmer to return to work with a clear focus and direction.
 
-Overall, generating a to-do list of functions or behaviors while the programmer is away from the computer can streamline task management, enhance productivity, and ensure continuity of workflow. By leveraging contextual information and task prioritization, the to-do list helps programmers make the most of their time and resources, ultimately contributing to improved project outcomes and success.
+Overall, generating a to-do list of functions or behaviors while the
+programmer is away from the computer can streamline task management, 
+enhance productivity, and ensure continuity of workflow. By leveraging
+contextual information and task prioritization, the to-do list helps 
+programmers make the most of their time and resources, ultimately contributing 
+to improved project outcomes and success.
 
 User
-and when they stop at teh ened of the night what they are going to work on the next day with a desicrpion of thebvvioars that they plan on working on
+and when they stop at teh ened of the night what they are going to work on the 
+next day with a desicrpion of thebvvioars that they plan on working on
 ChatGPT
-Absolutely, having a clear plan of action for the next day can greatly enhance a programmer's productivity and focus. Here's how including a description of the behaviors they plan to work on can be beneficial:
+Absolutely, having a clear plan of action for the next day can greatly enhance 
+a programmer's productivity and focus. Here's how including a description of 
+the behaviors they plan to work on can be beneficial:
 
-Focused Start: By outlining the behaviors they plan to work on the next day, programmers can start their day with a clear focus and direction. This helps them avoid wasting time deciding what tasks to tackle and allows them to dive straight into their work, maximizing their productivity from the outset.
+Focused Start: By outlining the behaviors they plan to work on the next day,
+programmers can start their day with a clear focus and direction. This helps 
+them avoid wasting time deciding what tasks to tackle and allows them to dive 
+straight into their work, maximizing their productivity from the outset.
 
-Task Prioritization: Including descriptions of behaviors helps programmers prioritize their tasks effectively. They can identify which behaviors are most critical or time-sensitive and allocate their time and resources accordingly, ensuring that they address the most important tasks first.
+Task Prioritization: Including descriptions of behaviors helps programmers 
+prioritize their tasks effectively. They can identify which behaviors are 
+most critical or time-sensitive and allocate their time and resources 
+accordingly, ensuring that they address the most important tasks first.
 
-Contextual Understanding: Describing the behaviors they plan to work on provides programmers with a deeper understanding of the task at hand. It allows them to consider the requirements, dependencies, and potential challenges associated with each behavior, enabling more informed decision-making and problem-solving.
+Contextual Understanding: Describing the behaviors they plan to work on 
+provides programmers with a deeper understanding of the task at hand. It
+allows them to consider the requirements, dependencies, and potential 
+challenges associated with each behavior, enabling more informed 
+decision-making and problem-solving.
 
-Efficient Workflow: Having a plan in place for the next day streamlines the programmer's workflow and reduces unnecessary delays or distractions. They can hit the ground running as soon as they start working, minimizing idle time and maximizing their overall efficiency and output.
+Efficient Workflow: Having a plan in place for the next day streamlines
+the programmer's workflow and reduces unnecessary delays or distractions. 
+They can hit the ground running as soon as they start working, minimizing 
+idle time and maximizing their overall efficiency and output.
 
-Improved Time Management: Including descriptions of behaviors helps programmers manage their time more effectively. They can estimate the time and effort required for each task based on its description and plan their day accordingly, ensuring that they make progress on their projects in a structured and systematic manner.
+Improved Time Management: Including descriptions of behaviors helps 
+programmers manage their time more effectively. They can estimate the time
+and effort required for each task based on its description and plan their
+day accordingly, ensuring that they make progress on their projects in a 
+structured and systematic manner.
 
-Overall, including descriptions of behaviors that programmers plan to work on the next day helps them start their day with clarity, focus, and purpose. It facilitates task prioritization, contextual understanding, efficient workflow, and improved time management, ultimately contributing to greater productivity and success in their software development endeavors.
+Overall, including descriptions of behaviors that programmers plan to 
+work on the next day helps them start their day with clarity, focus, 
+and purpose. It facilitates task prioritization, contextual understanding,
+efficient workflow, and improved time management, ultimately contributing 
+to greater productivity and success in their software development endeavors.
 
 User
-are you familiar with any other theory that describes that I have described to you for my theory to stteramline and accelerate software devleopmemt
+are you familiar with any other theory that describes that I have
+described to you for my theory to stteramline and accelerate software
+devleopmemt
 ChatGPT
-The approach you've described shares similarities with several established methodologies and theories in software development. While it combines various concepts, here are a few theories and methodologies that align with different aspects of your approach:
+The approach you've described shares similarities with several 
+established methodologies and theories in software development. While
+it combines various concepts, here are a few theories and methodologies 
+that align with different aspects of your approach:
 
-Agile Methodology: Your emphasis on continuous learning, adaptation, and collaboration resonates with the Agile methodology. Agile promotes iterative development, frequent collaboration between cross-functional teams, and a focus on delivering valuable software incrementally. Your approach of focusing on design levels, real-time feedback, and collaboration aligns well with Agile principles.
+Agile Methodology: Your emphasis on continuous learning, adaptation, and
+collaboration resonates with the Agile methodology. Agile promotes iterative
+development, frequent collaboration between cross-functional teams, and a
+focus on delivering valuable software incrementally. Your approach of focusing
+on design levels, real-time feedback, and collaboration aligns well with Agile
+principles.
 
-Lean Software Development: Lean Software Development emphasizes maximizing customer value while minimizing waste. Your focus on streamlining processes, reducing miscommunication, and improving efficiency aligns with Lean principles. By identifying and eliminating bottlenecks, your approach aims to optimize the software development process and deliver value to customers more effectively.
+Lean Software Development: Lean Software Development emphasizes maximizing 
+customer value while minimizing waste. Your focus on streamlining processes,
+reducing miscommunication, and improving efficiency aligns with Lean principles.
+By identifying and eliminating bottlenecks, your approach aims to optimize the
+software development process and deliver value to customers more effectively.
 
-Design Thinking: Design Thinking emphasizes understanding user needs, generating innovative solutions, and prototyping ideas to address complex problems. Your emphasis on clarifying behaviors, refining designs, and integrating feedback aligns with Design Thinking principles. By focusing on user-centric design and continuous improvement, your approach aims to create software solutions that meet the needs of users effectively.
+Design Thinking: Design Thinking emphasizes understanding user needs, 
+generating innovative solutions, and prototyping ideas to address complex
+problems. Your emphasis on clarifying behaviors, refining designs, and 
+integrating feedback aligns with Design Thinking principles. By focusing on
+user-centric design and continuous improvement, your approach aims to create
+software solutions that meet the needs of users effectively.
 
-Theory of Constraints (TOC): The Theory of Constraints focuses on identifying and addressing bottlenecks in processes to improve overall efficiency and productivity. Your approach of identifying bottlenecks in software development, such as miscommunication or inefficient coding practices, and implementing strategies to overcome them aligns with TOC principles. By optimizing the flow of work and resources, your approach aims to accelerate software development and improve project outcomes.
+Theory of Constraints (TOC): The Theory of Constraints focuses on identifying
+and addressing bottlenecks in processes to improve overall efficiency and 
+productivity. Your approach of identifying bottlenecks in software
+development, such as miscommunication or inefficient coding practices, and 
+implementing strategies to overcome them aligns with TOC principles. By 
+optimizing the flow of work and resources, your approach aims to accelerate
+software development and improve project outcomes.
 
-Continuous Improvement: Your emphasis on learning from previous projects, incorporating feedback, and adapting to changing requirements reflects the principles of continuous improvement. By continuously refining processes, updating knowledge bases, and leveraging new technologies, your approach aims to drive ongoing improvements in software development practices and outcomes.
+Continuous Improvement: Your emphasis on learning from previous projects, 
+incorporating feedback, and adapting to changing requirements reflects the 
+principles of continuous improvement. By continuously refining processes,
+updating knowledge bases, and leveraging new technologies, your approach 
+aims to drive ongoing improvements in software development practices and 
+outcomes.
 
 While your approach may not directly correspond to any single theory or 
 methodology, it incorporates elements from various established frameworks 
@@ -4549,7 +4643,9 @@ User
 list of bheaviors yet to be implimented
 ChatGPT
 Creating a list of behaviors yet to be implemented can help
-prioritize tasks and ensure that development efforts remain focused on addressing outstanding requirements. Here's an example of how such a list might be structured:
+prioritize tasks and ensure that development efforts remain focused
+on addressing outstanding requirements. Here's an example of how 
+such a list might be structured:
 
 User Authentication
 
