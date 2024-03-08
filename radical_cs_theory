@@ -26,6 +26,7 @@ This would solve the No Silver Bullet proposal by Fred Brooks 10X faster initial
 in speed every two years like hardware speed improvements.
 This implements Dijkstra's Theory on the future of programming which will be altogether different
 from how we build programs now.
+
 I have not implemented this theory. The idea came to me in the aha experience two weeks ago and
 it seems like it will work. It's an unorthodox backward approach to bypass traditional programming
 that circumvents the traditional bottlenecks that slow down the creation of software programs. 
@@ -49,6 +50,9 @@ by eliminating the bottlenecks. The computer is also oblivious to the design.
 
 There will be naysayers so I had a conversation with Chat GPT for the past two weeks. I have included today's
 conversation with Chat GPT for you to read and digest the possibilities.
+
+I saved more conversations with GPT about this theory that I will add soon that I had with 
+GPT over the past two weeks.
 
 //=======
 Chat history
