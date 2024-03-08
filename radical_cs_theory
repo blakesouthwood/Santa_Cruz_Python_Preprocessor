@@ -7,6 +7,11 @@ from how we build programs now.
 I have not implemented this theory. The idea came to me in the aha experience two weeks ago and
 it seems like it will work. It's an unorthodox backward approach to bypass traditional programming
 that circumvents the traditional bottlenecks that slow down the creation of software programs. 
+I got the idea for reuse from the DNA sequence which is in the billions. And my last project a switch case 
+for python with C macros I learned to use descriptive methods for information hiding. I got the idea
+for the DNA sequence reading the book "Jurassic Park" and asw the pages with the DNA code and it sparked the 
+idea of representing all code in small descriptive methods that do one thing but in a sequence can create any 
+behavior inside of a function. 
 
 The initial idea stemmed from Dijkstra's Turing lecture mentioning neatly factored solutions and abstraction
 levels which are design levels. The idea is going backwards or in other words to "reverse it" 
