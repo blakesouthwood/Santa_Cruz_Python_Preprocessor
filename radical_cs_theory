@@ -7423,6 +7423,18 @@ practices and maintaining a focus on delivering high-quality software
 that meets user needs, teams can increase their chances of success in 
 software development.
 
+working on a psueocode design tool with verbs that will convert
+into action methods in a sequence and design tool wll have a debugger feature
+to determine if the pseudocode is valid boolean logic. 
+
+I also thought of the bridge between the design intent level to pseudocode will
+be hard-wired together since the design level doesn't actually readd the intent level
+it is just text to it and the pseudocode will be validated so they are matched once
+and then persevered (so we aren't constantly reinving the wheel) after the pseudocode runs and then searchable based on the intent
+Search and then just add it to a database.  so eventually it will be possible to write
+code at the intent DESIGN level which geneats the structured pseudocode that is a design level
+that converts into methodized with macros and verbs so it's readable.
+
 
 
 
