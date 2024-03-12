@@ -7433,7 +7433,16 @@ it is just text to it and the pseudocode will be validated so they are matched o
 and then persevered (so we aren't constantly reinving the wheel) after the pseudocode runs and then searchable based on the intent
 Search and then just add it to a database.  so eventually it will be possible to write
 code at the intent DESIGN level which geneats the structured pseudocode that is a design level
-that converts into methodized with macros and verbs so it's readable.
+that converts into methodized with macros and verbs so it's readable. So it works from
+matching hard coded definition translatino by a human. 
+
+Essentially all coding is translation and communicating with other humans and the dumb CPU.
+But we gain a speed edge by making the psueocode runnable by being methodizied and add macros 
+vers so it's expressive - so we break the rules. And the intent level is merely a comment
+matched to the pseudocode base don how the human want and wishes they could think in. 
+Perlis "I want a programming language where I say what I want done." 
+
+-Blake Southwood
 
 
 
