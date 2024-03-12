@@ -7437,10 +7437,13 @@ that converts into methodized with macros and verbs so it's readable. So it work
 matching hard coded definition translatino by a human. 
 
 Essentially all coding is translation and communicating with other humans and the dumb CPU.
-But we gain a speed edge by making the psueocode runnable by being methodizied and add macros 
-vers so it's expressive - so we break the rules. And the intent level is merely a comment
+But we gain a speed edge by making the pseudocode runnable by being methodized and add macros 
+verbs so it's expressive - so we break the rules. And the intent level is merely a comment
 matched to the pseudocode base don how the human want and wishes they could think in. 
-Perlis "I want a programming language where I say what I want done." 
+It works by being translated once and reused forever. It is not interpreted it returns the
+pseudocode, but the pseudocode actually runs and conceals the complexity of the actual code. 
+This is to reduce complexity and embrace simplicity and clarity. 
+Perlis "I want a programming language where I just say what I want done." 
 
 -Blake Southwood
 
