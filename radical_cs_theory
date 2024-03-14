@@ -19130,7 +19130,74 @@ Visual Design Tools:  The  environment  could  integrate  visual  design  tools 
 By  combining  these  elements,  your   vision  can  transform  software  development  into  a  more  efficient,  creative,  and  collaborative  process.
 
 
+ikustra wrote this please see if my theory parallels and supports dikustra's prediction  	Let me sketch for you one of the possible futures. At first sight, this vision of programming in perhaps already the near future may strike you as utterly fantastic. Let me therefore also add the considerations that might lead one to the conclusion that this vision could be a very real possibility.
+	The vision is that, well before the seventies have run to completion, we shall be able to design and implement the kind of systems that are now straining our programming ability, at the expense of only a few percent in man-years of what they cost us now, and that besides that, these systems will be virtually free of bugs. These two improvements go hand in hand. In the latter respect software seems to be different from many other products, where as a rule a higher quality implies a higher price. Those who want really reliable software will discover that they must find means of avoiding the majority of bugs to start with, and as a result the programming process will become cheaper. If you want more effective programmers, you will discover that they should not waste their time debugging, they should not introduce the bugs to start with. In other words: both goals point to the same change.
+	Such a drastic change in such a short period of time would be a revolution, and to all persons that base their expectations for the future on smooth extrapolation of the recent past —appealing to some unwritten laws of social and cultural inertia— the chance that this drastic change will take place must seem negligible. But we all know that sometimes revolutions do take place! And what are the chances for this one?
+	There seem to be three major conditions that must be fulfilled. The world at large must recognize the need for the change; secondly the economic need for it must be sufficiently strong; and, thirdly, the change must be technically feasible. Let me discuss these three conditions in the above order.
+Show drafts
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Your theory and Dikstra's prediction do indeed parallel and support each other! Here's a breakdown of the key points:
+
+Dikstra's Vision:
+
+Future of Programming: Dikstra predicts a significant improvement in software development within a short timeframe (before the 1970s end).
+Focus on Design: He emphasizes that high-quality, bug-free systems can be achieved through better design methodologies, reducing development effort and cost.
+Shift from Debugging to Prevention: Dikstra argues that effective programmers prevent bugs from being introduced in the first place, rather than spending time debugging them later.
+Your Theory and its Alignment:
+
+Your theory focuses on design-centric development with AI assistance for automating tasks and promoting code reuse. This aligns with Dikstra's emphasis on better design methodologies.
+Potential for Faster Development: By automating repetitive tasks and leveraging pre-built components, your idea can potentially reduce development effort, as envisioned by Dikstra.
+Reduced Debugging Time: Automatic testing and AI-assisted debugging in your concept can help prevent and fix bugs earlier, reducing debugging time as Dikstra predicted.
+Overall, your theory complements and strengthens Dikstra's prediction.  Both  ideas  converge  on  the  importance  of  design  and  focus  on  approaches  that  can  lead  to  faster  development  of  higher-quality  software.
+
+Addressing Dikstra's Conditions for Change:
+
+Recognition of Need:  The  growing  complexity  of  software  systems  and  the  high  cost  of  bugs  have  made  the  need  for  better  development  methods  widely  recognized,  fulfilling  Dikstra's  first  condition.
+
+Economic Need:  The  economic  benefits  of  faster  development  and  more  reliable  software  are  significant,  strengthening  the  economic  need  for  change  mentioned  by  Dikstra.
+
+Technical Feasibility:  Advancements  in  AI,  programming  languages,  and  development  tools  are  making  Dikstra's  vision  of  design-centric  development  with  reduced  coding  effort  more  technically  feasible  than  ever  before.
+
+Conclusion:
+
+Dikstra's prediction,  though  made  decades  ago,  remains  relevant  today.  Your  theory,  with  its  emphasis  on  design  and  AI-powered  development,  provides  a  potential  path  toward  fulfilling  his  vision  of  a  future  with  faster,  more  efficient,  and  higher-quality  software  development.
 
 
 
