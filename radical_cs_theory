@@ -17600,27 +17600,48 @@ Overall, quantum computing is incredibly fast for specific purposes, but it's st
 
 profile picture
 hey I have a theory about speeding up software devleopment by bypassing the computer and bypassing the programming langauge and communicating through teh design abstraction levels which is a separate program that wiould allow humans to describe functions at the intent level and design a program and then have the AI generate the functions. How feasible is that. also teh functions would be written in a structured pseucoode made up of methods and macros and verbs so it's methodifized pseudoocde. 
-Your theory has merit!  There's ongoing research in the field of natural language processing (NLP) to achieve a similar goal  of  automatically generating code from natural language descriptions. Here's how it relates to your idea:
+Your theory has merit!  There's ongoing research in the field of 
+natural language processing (NLP) to achieve a similar goal  of 
+automatically generating code from natural language descriptions.
+Here's how it relates to your idea:
 
-Feasibility:  Partially feasible.  There are tools that can translate simple code or generate code snippets based on user intent.  However,  understanding complex functionalities and generating entire programs remains a challenge for AI.
+Feasibility:  Partially feasible.  There are tools that can translate
+simple code or generate code snippets based on user intent.  However,
+understanding complex functionalities and generating entire programs 
+remains a challenge for AI.
 
-Benefits:  Absolutely!  Bypassing the computer and programming languages for initial design could streamline development:
+Benefits:  Absolutely!  Bypassing the computer and programming 
+languages for initial design could streamline development:
 
-Faster prototyping: Describe functionalities instead of writing code, allowing for quicker iteration on ideas.
+Faster prototyping: Describe functionalities instead of writing
+code, allowing for quicker iteration on ideas.
 Reduced errors: Less chance of bugs introduced through manual coding.
-Accessibility: Open development to a wider range of people who might not be programmers.
+Accessibility: Open development to a wider range of people who might
+not be programmers.
 Challenges:  Here's where your idea gets interesting:
 
-Natural language ambiguity: Translating natural language intent into precise code requires advanced NLP to handle ambiguities and context.
-Complexities: AI needs to understand the intricacies of different programming paradigms and libraries to generate efficient code.
+Natural language ambiguity: Translating natural language intent 
+into precise code requires advanced NLP to handle ambiguities and
+context.
+Complexities: AI needs to understand the intricacies of different
+programming paradigms and libraries to generate efficient code.
 Here's how your concept of "methododified pseudocode" aligns
 
-Structured approach: A middle ground between natural language and formal code could be helpful. Defining a set of verbs and methods provides a more structured way to express intent while remaining relatively human-readable.
-Overall, your idea represents a potential future direction for software development.  While completely bypassing programming languages might be a distant goal, AI-assisted development with tools like you described is definitely on the horizon!
+Structured approach: A middle ground between natural language
+and formal code could be helpful. Defining a set of verbs and 
+methods provides a more structured way to express intent while
+remaining relatively human-readable.
+Overall, your idea represents a potential future direction for
+software development.  While completely bypassing programming 
+languages might be a distant goal, AI-assisted development with
+tools like you described is definitely on the horizon!
 
 profile picture
-the intent would have comments for clarification so tarnslation and implied meaning can be stated and so metraphors and analogeis would be possible too once defined
-You're absolutely right about incorporating comments and metaphors into your intent-based design system. Here's how they can play a crucial role:
+the intent would have comments for clarification so tarnslation and
+implied meaning can be stated and so metraphors and analogeis 
+would be possible too once defined
+You're absolutely right about incorporating comments and 
+metaphors into your intent-based design system. Here's how they can play a crucial role:
 
 Comments for Clarification:
 
@@ -17633,9 +17654,15 @@ Documenting Assumptions:  Comments can document assumptions the user makes about
 
 Metaphors and Analogies for Complex Concepts:
 
-Bridging the Gap:  Metaphors and analogies can help bridge the gap between human thought processes and the rigid structure of code.  By comparing a function's intent to a familiar concept, users can explain complex functionalities in a more intuitive way.
+Bridging the Gap:  Metaphors and analogies can help bridge the gap
+between human thought processes and the rigid structure of code. 
+By comparing a function's intent to a familiar concept, users can
+explain complex functionalities in a more intuitive way.
 
-AI Learning:  The system can learn from these metaphors and analogies over time.  By understanding how users map real-world concepts to code, the AI can improve its ability to translate natural language descriptions into efficient code.
+AI Learning:  The system can learn from these metaphors and 
+analogies over time.  By understanding how users map real-world
+concepts to code, the AI can improve its ability to translate
+natural language descriptions into efficient code.
 
 Here are some additional points to consider:
 
