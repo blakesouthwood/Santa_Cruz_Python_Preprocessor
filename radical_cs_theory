@@ -12648,7 +12648,8 @@ Verb Macros for Expressiveness and Flexibility: Verb macros add an extra layer o
 Overall, by combining human intent expressed in English with pseudocode representations, steps of methods with expressive names, and verb macros, you create a comprehensive and flexible approach to designing function behavior. This approach ensures that the resulting designs accurately reflect user intent while providing stakeholders with a clear and intuitive representation of how the function will work.
 
 
-
+//for the reader of this I need this solution for this theory to work so I never gave up. 
+// These were the hardest problems I've ever solved. 
 
 
 
