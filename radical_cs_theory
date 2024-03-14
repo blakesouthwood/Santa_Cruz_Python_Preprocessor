@@ -14912,6 +14912,25 @@ Hopes for the Future: Hopper hoped for a future where software development would
 In summary, Dijkstra, Sammet, and Hopper each made significant contributions to the field of computer science and shared concerns and hopes for the future of programming. While their perspectives differed in some respects, they all emphasized the importance of rigor, clarity, and accessibility in software development practices.
 
 
+//=======
+tony hoare was an advocate like watts humphrey with design up front
+ChatGPT
+Indeed, Tony Hoare, along with Watts Humphrey, advocated for a more structured and disciplined approach to software development, which often included design upfront as a key component. Watts Humphrey, known for his work in software engineering process improvement, emphasized the importance of planning and design in the early stages of a project to ensure its success.
+
+Similarly, Tony Hoare stressed the benefits of careful planning and organization in software projects, which often involved designing the system upfront to establish a clear roadmap for development. This approach aimed to mitigate risks, manage complexity, and ensure that the resulting software met the desired requirements.
+
+Designing upfront allowed developers to establish a solid foundation for the software, including defining its architecture, specifying its components, and outlining its behavior. By investing time and effort in upfront design, developers could identify potential issues early, make informed decisions about the system's structure and functionality, and reduce the likelihood of costly rework later in the development process.
+
+While both Hoare and Humphrey supported design upfront as part of a disciplined approach to software development, they also recognized the need for flexibility and adaptability in response to changing requirements and circumstances. Thus, their approaches to upfront design were often complemented by iterative and incremental development practices, where designs were refined and adjusted based on feedback and evolving understanding of the problem domain.
+
+Overall, Hoare and Humphrey's advocacy for design upfront reflects a commitment to systematic and disciplined approaches to software development, with the goal of delivering high-quality, reliable, and maintainable software systems. Their contributions have had a lasting impact on the field of software engineering, shaping the practices and processes used by developers and organizations worldwide.
+
+
+
+
+
+
+
 
 
 
