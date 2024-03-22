@@ -1,3 +1,10 @@
+read in this order March 21,2024 Thursday evening PST Silicon Valley
+radical_cs_theory.py
+revised_cs_theory.py
+
+//both are in raw form because of big files.
+// I made more discoveries for the revised theory for more speed in revised_cs_theory.py
+
 # Santa_Cruz_Python_Preprocessor
 Feb 22 2024
 Lot going on. Will add error correction code soon. 
