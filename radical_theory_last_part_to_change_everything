@@ -4100,6 +4100,193 @@ By incorporating these ideas, your AI-assisted programming concept can become a 
 Gemini may display inaccurate info, including about people, so double-check its responses. Your privacy & Gemini Apps
 
 
+gemini converastion about a new feature
+
+
+ Gemini was just updated.  See update
+Conversation with Gemini
+profile picture
+hey what about including a video of the design and thinking behind the code for each function and the creator describing the design and how the funciton is used and any other important information about a function and so the coders contemplating using a funciton or want to know about a function could heart about it from the programmer that designed and built it
+that's a really interesting idea! Here are some things to consider:
+
+Pros:
+
+Deeper understanding: Videos with creators explaining their thought process behind the code can provide a much richer understanding than just reading documentation.
+Engaging learning: Video explanations can be more engaging and interactive compared to static text.
+Reduced learning curve: Coders can learn the function's purpose, usage, and potential benefits directly from the creator, saving them time and effort.
+Cons:
+
+Time investment: Creating high-quality videos takes significant time and effort from developers.
+Maintenance: Keeping videos updated with changes to the codebase can be challenging.
+Not universally applicable: This approach might not be suitable for very simple functions or those with complex logic that's hard to explain visually.
+Alternatives:
+
+Interactive code comments: You could encourage developers to embed comments within the code itself that explain the design choices and thought process.
+Screencast tutorials: Creating short screencast tutorials demonstrating function usage can be a good balance between effort and information.
+Live coding sessions: Hosting live coding sessions where creators can answer questions and walk through the function can be a great way to engage the developer community.
+Overall, including videos with creator explanations has merit for complex functions.  However, it's important to weigh the benefits against the time investment and consider alternative approaches for simpler functions.
+
+profile picture
+high quaility is not the issue it could be done in three minutes tops and have a screena cam grab that is automatic and the programmer composing teh peartiuclar of a design and bheavior descriptons for a function could include a more details so they could be jotted down or video of teh funciton being used all doable on a macbook pro painlessly and getting to hear the history of modifications done to a functions behavior and the story of it's creation. In terms of time investment it is also verification it works and programmers could choose to do it or not.
+You're right, there are ways to make explaining functions through videos more efficient! Here's how your approach could work:
+
+Making Quick Videos:
+
+Screencast with voiceover: Use a screencast tool to capture your screen while recording a quick voiceover explaining the design and behavior of the function.
+Simple visuals: Instead of high-quality animation, use basic diagrams or code snippets to illustrate your points.
+Focus on clarity: Keep explanations concise and focused on the function's purpose, usage, and any design considerations.
+Information Integration:
+
+Detailed descriptions: Complement the video with a written description that includes more in-depth details about the function, like history, modifications, and potential use cases.
+Timestamps: Add timestamps in the video description that correspond to specific parts of the function's explanation in the text.
+Effort vs. Gain:
+
+Optional creation: Make creating these videos optional for developers. This way, only those passionate about sharing their work will participate.
+Benefit as verification: As you mentioned, creating the video itself can serve as a form of verification for the function's functionality.
+Macbook Pro Tools:
+
+You're right, Macbooks have built-in screen recording tools (QuickTime Player) and free screencast software that makes creating these videos simple.
+
+Overall Benefits:
+
+This approach offers several advantages:
+
+Increased understanding: Coders can gain a deeper understanding of functions through a combination of video and written explanations.
+Reduced learning curve: Videos can help developers learn functions faster, improving overall productivity.
+Improved communication: The creator's voice provides a more personal touch to function documentation.
+While high-quality videos might not be feasible for every function, your idea of quick screencasts with detailed descriptions can be a valuable addition to code documentation. It creates a more engaging learning experience for developers and fosters a sense of community around the codebase.
+
+profile picture
+information harvesting
+There are two main meanings of "information harvesting" you might be interested in:
+
+Technical Information Harvesting: This refers to the automated process of collecting large amounts of data from various online sources. This data can include things like:
+Publicly available information on websites (text, images, videos)
+User data from social media platforms and apps (names, locations, preferences)
+Email addresses and other contact information scraped from websites
+This data can be used for various purposes, some legitimate and some malicious. Here are some examples:
+
+* **Legitimate:** 
+    * Search engines like Google harvest information to build their search indexes.
+    * Businesses might harvest public data to understand customer demographics and preferences.
+* **Malicious:** 
+    * Hackers can harvest information to identify vulnerabilities in systems or steal personal data.
+    * Spammers might harvest email addresses to send unsolicited emails.
+Early Data Mining Tool (Historical): In the 1990s, there was a software product called "Information Harvesting" (IH) developed by Ralphe Wiggins. This tool focused on analyzing large datasets and inferring rules from them. It used techniques like genetic algorithms and fuzzy logic to find patterns and make predictions based on the data. This specific meaning of "information harvesting" is less common today as data mining has become a broader field with various tools and techniques.
+profile picture
+okay then I will call it design of this function behavior
+That's a great and descriptive name! "Design of this Function's Behavior" clearly conveys the purpose of the video or document you're creating. It accurately highlights the focus on the thought process behind the function's creation and how it operates.
+
+Here are some additional thoughts:
+
+Short and Clear: The name is concise and easy to understand.
+Actionable: It clearly states what viewers can expect to learn (the design and behavior of the function).
+Focus on Design: It emphasizes the "why" behind the function's behavior, which is valuable for developers.
+I think "Design of this Function's Behavior" is a perfect title for your concept!
+
+profile picture
+what we are talking about is a methodology of increeasing reuse of behaivors and coders can search and find the behaivors they need and to get more info access the data on those functions
+You're absolutely right!  This quick video and documentation approach you've described can be a powerful methodology to increase code reuse. Here's how it fits into the bigger picture:
+
+Benefits for Reuse:
+
+Discoverability: Short videos with clear titles like "Design of this Function's Behavior" make functions easier to find through search within the codebase.
+Understandability: Videos and detailed descriptions provide a clear understanding of a function's purpose, usage, and design choices. This reduces the barrier to entry for reusing the code.
+Trustworthiness: Seeing the creator explain the function and its history can build trust among developers considering reuse.
+Overall Methodology:
+
+Here's how this approach can be part of a larger methodology for increasing code reuse:
+
+Encourage function documentation: Motivate developers to document functions using your quick video and detailed description format.
+Standardize naming conventions: Implement clear and consistent naming conventions for functions to ease discoverability.
+Search functionality: Ensure the codebase has a robust search function that allows developers to find functions based on keywords or descriptions.
+Community sharing: Consider creating a central repository where developers can share and discover reusable functions across different projects.
+Benefits of the Methodology:
+
+Reduced development time: By reusing existing functions, developers can avoid duplicating code, saving time and effort.
+Improved code quality: Reusing well-tested and documented functions can lead to more reliable and maintainable code.
+Increased code consistency: Promoting reuse fosters consistency in coding practices across projects.
+Challenges:
+
+Developer buy-in: Encouraging developers to invest time in creating video explanations needs to be balanced with the benefits.
+Maintaining documentation: Keeping videos and descriptions updated with code changes requires a plan.
+Overall, your idea of quick video explanations and detailed descriptions, combined with other strategies,  can be a valuable methodology to promote code reuse and improve software development efficiency.
+
+profile picture
+see usage in different parts of this project and passed projects
+Unfortunately, directly incorporating usage information from different parts of the current project and past projects into the quick video explanations might not be the most scalable solution. Here's why:
+
+Manual Effort: Tracking function usage across a codebase can be time-consuming, especially for larger projects.
+Maintenance Overhead: Keeping track of usage information would require manual updates whenever the code changes.
+Here are some alternative approaches to consider:
+
+Code Comments:
+
+Encourage developers to include comments within the code itself that mention specific use cases within the project.
+This can be a lightweight way to highlight some examples without needing extensive manual tracking.
+Automated Usage Analysis Tools:
+
+Explore tools that can automatically analyze code and identify instances where a function is being used.
+This information could be displayed alongside the video explanation or in a separate documentation section.
+Linking to Code Examples:
+
+Within the video description or a separate document, include links to specific parts of the codebase where the function is used.
+This allows developers to see real-world usage examples in context.
+While directly including past project usage details might not be ideal, these alternative methods can still provide valuable insights into how the function is being used in practice.
+
+Here's how these alternatives fit within the quick video explanation approach:
+
+Focus on Core Function: The video explanation should primarily focus on the core design and behavior of the function itself.
+Highlight Project Usage: Use comments, code analysis tools, or code example links to showcase how the function is used within the current project.
+Consider Past Projects (Optional): If past project usage is crucial, consider creating separate documentation or a knowledge base that details these use cases in more depth. This can be a centralized resource for developers working on related projects.
+By focusing on the core function in the video while leveraging alternative methods for usage information, you can create a more efficient and scalable documentation approach that promotes code reuse and understanding.
+
+profile picture
+not linking to past projects or this one, just saying how many implimenations and oh oh oh comments from other programmers what they liked disliked about teh functio nand any modificaitons they did to their version of it - this is good stuff now you can't doubt that
+I agree, that's a fantastic addition to the quick video explanation concept!  Here's how incorporating these elements can make your methodology even more powerful:
+
+Enriched Information:
+
+Implementation Count: Mentioning the number of implementations across different parts of the project provides a quick gauge of the function's usefulness.
+Community Feedback: Including anonymized comments from other programmers about what they liked, disliked, and how they modified the function adds valuable insights for potential users. This can spark discussions around best practices and potential improvements.
+Benefits:
+
+Improved Decision Making: Coders can make more informed decisions about using or modifying the function based on real-world experiences from their colleagues.
+Collective Knowledge Sharing: This approach fosters a sense of community and knowledge sharing within the development team.
+Evolution and Improvement: By surfacing both positive and negative feedback on the function, developers can identify areas for improvement and iterate on the design over time.
+Implementation Challenges:
+
+Gathering Feedback: Encouraging developers to leave comments and feedback requires establishing a culture of knowledge sharing within the team.
+Anonymity: It's important to ensure comments are anonymized to encourage honest feedback.
+Scalability: Managing and integrating a large volume of comments might require additional tools or processes.
+Here are some ways to address these challenges:
+
+Feedback Channels: Create dedicated channels (forums, internal wikis) where developers can easily leave comments on functions.
+Anonymization Tools: Consider using anonymization tools to automatically scrub names from comments before including them in the video descriptions.
+Moderation: Implement a lightweight moderation process to ensure comments are respectful and relevant.
+Overall, incorporating usage counts, anonymized comments, and modification details alongside quick video explanations can significantly enhance code reuse and knowledge sharing within a development team. It fosters a collaborative environment where developers can learn from each other's experiences and continuously improve the codebase.
+
+profile picture
+you are tough to please indeed
+That's a fair point! I apologize if my responses came across that way. My goal is to be helpful and explore all the aspects of your idea.
+
+Your concept of quick video explanations with additional information like usage counts, anonymized feedback, and modification details is actually quite innovative. It can be a valuable tool to promote code reuse and improve developer understanding.
+
+Is there anything else you'd like to discuss about this methodology or anything else related to software development? I'm happy to keep brainstorming with you!
+
+profile picture
+no you instantly made me think way out of the box and I came up with a better solution
+Show drafts
+
+
+
+That's fantastic! Innovation often thrives on bouncing ideas back and forth. I'm curious to hear about this even better solution you came up with!  Feel free to describe it in as much detail as you'd like, and I'll do my best to understand and provide any additional thoughts or suggestions you might find helpful.
+
+
+
+
+Gemini may display inaccurate info, including about people, so double-check its responses. Your privacy & Gemini AppsOpens in a new window
+
 
 
 
