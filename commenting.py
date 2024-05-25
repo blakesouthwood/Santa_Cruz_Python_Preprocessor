@@ -440,3 +440,130 @@ for line in cool2.splitlines():
 # and copy the lines below the multileinc coment
 # and then glue the modified 3 lines and concat them together
 
+///refactroed by gpt on may 25, 2024
+
+It seems like you're trying to refactor some code, particularly handling C-style comments in Python. Here's the refactored version of your code:
+
+python
+Copy code
+def change_C_style_single_line_comment(input_string):
+    new_string = ""
+    for line in input_string.splitlines():
+        if "//" in line:
+            new_string += line.replace("//", "#") + "\n"
+        else:
+            new_string += line + "\n"
+    return new_string
+
+def multiline_C_comment_changer(input_string):
+    new_string = ""
+    inside_comment = False
+    for line in input_string.splitlines():
+        if "/*" in line:
+            inside_comment = True
+            new_string += line.replace("/*", "#") + "\n"
+        elif "*/" in line:
+            inside_comment = False
+            new_string += line.replace("*/", "#") + "\n"
+        elif inside_comment:
+            new_string += "\t\t\t#" + line.strip() + "\n"
+        else:
+            new_string += line + "\n"
+    return new_string
+
+def on_the_fly_comment_changer(input_string):
+    new_string = ""
+    inside_comment = False
+    for line in input_string.splitlines():
+        if "//" in line:
+            new_string += line.replace("//", "#") + "\n"
+        elif "/*" in line:
+            inside_comment = True
+            new_string += line.replace("/*", "#") + "\n"
+        elif "*/" in line:
+            inside_comment = False
+            new_string += line.replace("*/", "#") + "\n"
+        elif inside_comment:
+            new_string += "\t\t\t#" + line.strip() + "\n"
+        else:
+            new_string += line + "\n"
+    return new_string
+
+fishyone2 = '''
+    switch(exp) {
+        case 'ufos':  
+            print("ww2!")
+            print('nimitz')
+            print("==area 51==")
+            //testing this out
+
+        
+        case 'Star Wars':
+            print('return of the jedi')
+            print("Luke Skywalker ")
+            /*
+            c style comment her mult-line
+            more comments here
+            */
+        /* weird and wild here */
+        case 'Darth Vader': 
+            print('flying in it tie-fighter')
+            print("the force is strong in this one...")
+            break
+            
+        default:
+            print('no results')
+            print("that is all")
+            break //what about here too
+    }
+'''
+
+razzle = '''
+    switch(exp) {
+        case 'ufos':  
+            print("ww2!") /* did this one work */
+            print('nimitz')
+            print("==area 51==")
+            //testing this out
+            //this is so true 
+            /* now putting it here */
+        
+        case 'Star Wars':
+            /* go for the money */
+            print('return of the jedi')
+            print("Luke Skywalker ")
+            /*
+            fudge this is not fair
+            way to go make it work
+            right now on time
+            */
+        case 'Darth Vader':
+            print('flying in it tie-fighter')
+            print("the force is strong in this one...")
+            break
+            
+        /*
+        still testing this out
+        to see how it works
+        */
+        default:
+            print('no results')
+            print("that is all")
+            break
+            // some comments here for fun
+    }
+'''
+
+print("Refactored fishyone2:")
+print(change_C_style_single_line_comment(fishyone2))
+print("\nRefactored razzle:")
+print(multiline_C_comment_changer(razzle))
+
+print("\nRefactored fishyone2 with on-the-fly comment changer:")
+print(on_the_fly_comment_changer(fishyone2))
+print("\nRefactored razzle with on-the-fly comment changer:")
+print(on_the_fly_comment_changer(razzle))
+I've separated your code into functions to handle different types of comments: single-line comments, multiline comments, and a version that changes comments on-the-fly as it processes each line. Each function takes an input string and returns the modified string. You can use these functions to refactor your code more efficiently.
+
+
+
