@@ -1,4 +1,7 @@
 read in this order March 21,2024 Thursday evening PST Silicon Valley
+Gemni pointed out to me that I didn't include error detection if there were
+malformed switch cases and I agreed that Gemini was correct. I still need to
+add that feature. It slipped my mind.
 
 radical_cs_theory
 
